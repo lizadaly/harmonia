@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>{{ htmlWebpackPlugin.options.title }}</title>
+
+      <meta name="keywords" content="{{ htmlWebpackPlugin.options.keywords }}" />
+      <meta name="description" content="{{ htmlWebpackPlugin.options.description }}" />
+      <meta name="author" content="{{ htmlWebpackPlugin.options.author }}" />
+      <meta name="copyright" content="{{ htmlWebpackPlugin.options.license }}" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" />
+      <link rel="stylesheet" href="css/windrift.css" />
+  </head>
+
+  <body class="pagination-{{ htmlWebpackPlugin.options.pagination }}">
+
+      <nav class="top-bar">
+        <div class="top-bar-title">
+          {{ htmlWebpackPlugin.options.title }}
+        </div>
+        <div>
+          <div class="top-bar-right">
+            <a href="#" onClick="resetGame(event)">Restart</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <article id="article" class="row columns"></article>
+      </div>
+
+  </body>
+
+</html>
