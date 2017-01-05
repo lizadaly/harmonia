@@ -1,166 +1,107 @@
 const React = require('react')
-import { Map, List, RenderSection, FromInventory, NextChapter} from 'windrift'
+import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection} from 'windrift'
 
 
 
 export default ({currentSection, inventory}) => {
+  const books = {
+    age: <p>"<i>A Crystal Age</i> is by W. H. Hudson and was written in 1887. It's about a
+          man who awakes in the future among a utopian community that has given up
+          romantic love and attachment."
+          </p>,
+    backward: <p>"<i>Looking Backward</i> was written in 1888 by Edward Bellamy.
+    It is the story of a man who falls into a trance in a kind of fallout shelter
+    and wakes up in the year 2000. Bellamy uses the framing story to explore his
+    ideas about a perfect society."</p>
+  }
   const sections = [
     <section>
-      <style>{`/* Some styles for this demo. Delete this when starting your own project. */
-        .game-text { margin: 1rem; padding: 1rem; font-size: 1rem; border-left: 1px dotted gray; font-family: Georgia; color: #485C5A }
-        pre { margin: .5rem; padding: .5rem; font-family: Consolas, Menlo, monospace; background: rgb(240,240,240)}
-      `}
-      </style>
-      <h2>Windrift Starter</h2>
       <p>
-        Welcome to the starter application for <a href="https://github.com/lizadaly/windrift/">Windrift</a>, a framework
-        for writing interactive stories. The source code for this demo is available in
-        the <a href="https://github.com/lizadaly/windrift-starter">windrift-starter</a> repository.
-      </p>
-      <h4>Read me first</h4>
-      <p>
-        If you have not yet read the <a href="https://github.com/lizadaly/windrift">Windrift core README</a>,
-        you should do that first! It explains the high level design of Windrift as well as the key
-        concepts you’ll need to follow along with the rest of this tutorial.
+      "Good morning class," you say, still out of breath and already sweating. You haven't yet
+      taken off your coat, and the radiator behind you is banging and boiling.
+      You shrug out of the coat and it falls to the floor; you notice that you forgot to
+      take off the tags. When you bend over
+      to pick it up, you bang your head against the chalk tray. The students titter.
+      "You can call me Margaret, Margaret Cohen."
       </p>
       <p>
-        This page will walk through some of the most common features of a Windrift story,
-        and can be used as a way to bootstrap your own story.
+        A blonde girl in the front row with perfectly ironed hair raises her hand
+        with military precision. "Professor Cohen, where is Professor West?"
       </p>
-      <h4>A List of two choices</h4>
       <p>
-        You can choose an item, and both items will remain displayed:
-      </p>
-      <pre>{`<List expansions={[["dogs", "cats"], ["dogs", "cats"]}} tag="animal" conjunction="or"/>`}</pre>
 
-      <p className="game-text">
-        Do you prefer <List expansions={[["dogs", "cats"], ["dogs", "cats"]]} tag="animal" conjunction="or"/>?
+        "Professor
+        West is on indefinite leave," you say curtly.
+        "And please just call me Margaret." You're just a postdoc, though this doesn't seem like the time to mention that.
+        Your tone forestalls further questions, which is a relief since
+        honestly that's all you know.
+      </p>
+      <p>You were hoping to join West's research group, not
+        take over his class load, but early-career Marxist historians take what
+        they can get. When the university called with the unexpected job offer,
+        you drove your shuddering VW Bug
+        nonstop from Ft. Lauderdale to Vermont. A few hours of fishtailing
+        over icy rural roads and you ended up here, at St. Isidore's—four weeks into
+        the winter semester and no time to prepare. You'd never even seen snow until this morning.
+      </p>
+      <p>
+        "So, this is Histories of the Future: Utopias and Romanticism in 19th Century Literature,"
+        you say, stalling for time. Someone coughs. "I'm familiar with the syllabus, but can
+        someone, uh, remind me: have you covered <List expansions={[["Looking Backward", "A Crystal Age"], ["Looking Backward", "A Crystal Age"]]} conjunction="or" tag="c1_novels"/>?
       </p>
     </section>,
     <section>
-      <p>To display the user‘s response, just evaluate the inventory value in the markup directly:</p>
-
-      <pre>{`<p>Hmm, {inventory.animal}, really?</p>`}</pre>
-      <p className="game-text">
-        Hmm, {inventory.animal}, really?
-      </p>
-
-      <h4>Doing transformations on responses</h4>
       <p>
-        If you want to modify the user’s response somehow, like by pluralizing it,
-        you can use the {`<FromInventory>`} component to do so safely (even if the
-        value wasn’t yet set by the user):
-      </p>
-      <pre>{`One <FromInventory from={inventory.animal} onLoad={(from) => from.substring(0, from.length -1)} />, two{' '}
-{inventory.animal}. <FromInventory from={inventory.animal} onLoad={(from) => from.charAt(0).toUpperCase() + from.slice(1)} /> are great.
-`}</pre>
-      <p className="game-text">
-        One <FromInventory from={inventory.animal} onLoad={(from) => from.substring(0, from.length -1)} />, two{' '}
-        {inventory.animal}. <FromInventory from={inventory.animal} onLoad={(from) => from.charAt(0).toUpperCase() + from.slice(1)} /> are great.
+        <Map from={inventory.c1_novels} to={{
+          _any: 'A relaxed student in the front row says, "Yeah."'
+        }} />
       </p>
       <p>
-        If you expect to do a lot of these transformations, you could make a function or component
-        to wrap them:
+        "And your thoughts on it, young man?" You're probably no more than five years older than
+        him but never mind that.
       </p>
-      <pre>{`YOU MUST REALLY LOVE <AllCaps text={inventory.animal} /> HUH`}</pre>
-
-      <p className="game-text">
-        YOU MUST REALLY LOVE <AllCaps text={inventory.animal} /> HUH
+      <p>
+        He looks surprised by the followup; maybe Professor West wasn't one for Socratic dialogue.
+        <Map from={inventory.c1_novels} to={{
+          backward: ` "It's about a guy who goes to sleep and wakes up in the future?"`,
+          age: ` "It's about some guy who falls asleep in a hole and wakes up in a cult?"`
+        }} />
       </p>
-
-      <h4>Expanding in-place for effect</h4>
-      <pre>{`<List expansions={["acceptable", "understandable", "admirable"]} tag="adj1" />`}</pre>
-      <p className="game-text">
-        I suppose that’s an <List expansions={["acceptable", "understandable", "admirable"]} tag="adj1" /> choice...
+      <p>
+        "Yes, that's—basically right. Does anyone want to <List expansions={[
+          ["expand on that",
+          "tell me about " + ["Looking Backward", "A Crystal Age"].filter((item) =>
+            inventory.c1_novels != item
+          )[0]]
+          , "_last"]
+        }
+        conjunction="or"
+        tag="c1_expand"/>?"
       </p>
     </section>,
     <section>
-      <h4>Pick one, retain the answer</h4>
-      <pre>{`<List expansions={[["Vladimir", "Xiùlán", "Ikiaq"], "_last"]} tag="name1" conjunction="or" />`}</pre>
-      <p className="game-text">
-        What would you like to name your pet {inventory.animal ? inventory.animal.substring(0, inventory.animal.length -1): null}:{' '}
-        <List expansions={[["Vladimir", "Xiùlán", "Ikiaq"], "_last"]} tag="name1" conjunction="or" />
+      <Map from={inventory.c1_expand} to={{
+        that: <div>
+            <p>The woman with the straight hair puts her hand up again, and again
+              doesn't wait for you to call on her.</p>
+              <Map from={inventory.c1_novels} to={books} />
+            </div>,
+      "_any": <div>
+        <p>A student towards the back raises his hand politely. You call on him.</p>
+        <Map from={["Looking Backward", "A Crystal Age"].filter((item) =>
+          inventory.c1_novels != item
+        )[0]} to={books} />
+      </div>
+      }} />
+      <p>
+        You nod. "Very good."
+        <Map from={inventory.c1_expand} to={{
+          that: <Map from={["Looking Backward", "A Crystal Age"].filter((item) =>
+            inventory.c1_novels != item
+          )[0]} to={books} />
+        }} />
       </p>
-    </section>,
-  <section>
-    <h4>Evaluating two different choices</h4>
-
-    <pre>{`<List expansions={[["Vladimir", "Xiùlán", "Ikiaq"], "_last"]} tag="name2" conjunction="or" />`}</pre>
-    
-    <p className="game-text">If you had two {inventory.animal}, what would you name the other one:{' '}
-      <List expansions={[["Vladimir", "Xiùlán", "Ikiaq"], "_last"]} tag="name2" conjunction="or" />
-    </p>
-  </section>,
-  <section>
-
-    <p>
-      You can evaluate inventory values in ordinary JavaScript directly:
-    </p>
-
-    <pre>{`Looks like you’ll have two {inventory.animal} named
-    { inventory.name1 === inventory.name2 ? "the same" : "differently" }.`}</pre>
-
-    <p className="game-text">
-      Looks like you’ll have two {inventory.animal} named { inventory.name1 === inventory.name2 ? "the same" : "differently" }.
-    </p>
-
-    <h4>Using Maps</h4>
-
-    <p>
-      Maps can be used to simply return canned responses to choices:
-    </p>
-
-    <pre>{`<Map from={inventory.name2} to={{
-      vladimir: " that’s a fine Russian name",
-      xiùlán: " that’s a fine Chinese name",
-      ikiaq: " that’s a fine Inuit name"
-    }}/>`}</pre>
-
-    <p className="game-text">
-      {inventory.name2}:
-      <Map from={inventory.name2} to={{
-        vladimir: " that’s a fine Russian name",
-        xiùlán: " that’s a fine Chinese name",
-        ikiaq: " that’s a fine Inuit name"
-      }}/>.
-    </p>
-
-    <p>
-      But since Maps can return markup themselves, they can also be used to build up further choices:
-    </p>
-
-    <pre>{`<Map from={inventory.name2} to={{
-      vladimir: <p>Since you like Russian names, why not pick a second one from this set:{' '}
-      <List expansions={[["Alexei", "Darya", "Elena"], "_last"]} tag="name3" conjunction="or" /></p>,
-      xiùlán: <p>Since you like Chinese names, why not pick a second one from this set:{' '}
-      <List expansions={[["Li Jing", "Zhang Yan", "Wang Jie"], "_last"]} tag="name3" conjunction="or" /></p>,
-      ikiaq: <p>Since you like Inuit names, why not pick a second one from this set:{' '}
-      <List expansions={[["Naaqtuuq", "Pakak", "Toklo"], "_last"]} tag="name3" conjunction="or" /></p>,
-    }}/>`}</pre>
-
-    <div className="game-text">
-      <Map from={inventory.name2} to={{
-        vladimir: <p>Since you like Russian names, why not pick a second one from this set:{' '}
-          <List expansions={[["Alexei", "Darya", "Elena"], "_last"]} tag="name3" conjunction="or" /></p>,
-        xiùlán: <p>Since you like Chinese names, why not pick a second one from this set:{' '}
-          <List expansions={[["Li Jing", "Zhang Yan", "Wang Jie"], "_last"]} tag="name3" conjunction="or" /></p>,
-        ikiaq: <p>Since you like Inuit names, why not pick a second one from this set:{' '}
-          <List expansions={[["Naaqtuuq", "Pakak", "Toklo"], "_last"]} tag="name3" conjunction="or" /></p>,
-      }}/>
-    </div>
-
-  </section>,
-  <section>
-    <p>
-      For more advanced uses of Maps and Lists, see the <a href="https://lizadaly.github.io/windrift/examples/advanced/">Advanced demo</a> and <a href="https://github.com/lizadaly/windrift/blob/master/examples/advanced/chapters/chapter1.js">sample code</a>.
-    </p>
-    <p className="game-text">
-      Great, you can now begin your story with your two {inventory.animal}, {inventory.name1} and {inventory.name3}.
-    </p>
-
-    <NextChapter chapter={2}/>
-
-  </section>
+    </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }
