@@ -3,6 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var config = require("./story.json");
+const path = require('path')
 
 module.exports = [{
   context: __dirname,
@@ -12,12 +13,12 @@ module.exports = [{
     ]),
   },
   output: {
-    path: 'dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: "story.js"
   },
   module: {
-    loaders: [{ test: /.js/, loaders: ['babel?cacheDirectory']},
-              { test: /\.json$/, loader: 'json' },
+    loaders: [{ test: /.js/, loaders: ['babel-loader?cacheDirectory']},
+              { test: /\.json$/, loader: 'json-loader' },
               { test: /\.html$/, loader: 'html-loader'},
               { test: /\.hbs/, loader: 'handlebars-loader'}
     ]
