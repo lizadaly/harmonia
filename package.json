@@ -22,7 +22,6 @@
     "windrift": "^1.0.2"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -45,6 +44,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^3.4.1",
     "react-addons-test-utils": "^15.5.1",
+    "redux-devtools-extension": "^2.13.2",
     "redux-test-utils": "^0.1.2",
     "rewire": "^2.5.2",
     "sinon": "^2.2.0",

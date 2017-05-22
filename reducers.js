@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux'
-import CARD_CREATED from "./actions"
-import { gameReducers } from 'windrift'
+import { CARD_CREATED } from "./actions"
 
-function cards(state=[], action) {
+export const cards = (state=[], action) => {
   switch (action.type) {
     case CARD_CREATED:
       return [...state, action.card]
@@ -10,7 +9,3 @@ function cards(state=[], action) {
       return state
   }
 }
-
-export const archiveReducers = combineReducers({
-  gameReducers
-})

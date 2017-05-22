@@ -1,5 +1,63 @@
 const React = require('react')
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
+import * as actions from '../actions'
+
+
+const Card = ({tag, card}) => {
+  return <span className="card">
+    { card }
+  </span>
+}
+
+class _ListCard extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.onComplete = this.onComplete.bind(this)
+    this.list = <List {...props} onComplete={this.onComplete}/>
+  }
+  onComplete() {
+    this.props.onAddCard(this.props.card)
+  }
+  render() {
+    // var cards = []
+    // for (var c of this.props.cards) {
+    //   cards.push(<Card card={c} tag={this.props.tag} />)
+    // }
+    return <span>
+      { this.list }
+      <Card card={this.props.cards[0]} tag={this.props.tag} />
+    </span>
+
+  }
+}
+_ListCard.propTypes = {
+  nextUnit: PropTypes.oneOf(['chapter', 'section', 'none']),
+  tag: PropTypes.string.isRequired,
+  expansions: PropTypes.array.isRequired,
+  config: PropTypes.object,
+  currentExpansion: PropTypes.number,
+  conjunction: PropTypes.string,
+  persistLast: PropTypes.bool,
+  onLoad: PropTypes.func
+}
+
+const mapStateToProps = (state) => {
+  return {
+    cards: state.cards
+  }
+}
+
+const ListCard = connect(
+  mapStateToProps,
+  {
+    onAddCard: actions.cardCreated
+  }
+)(_ListCard)
+
 
 export default ({currentSection, inventory}) => {
   const sections = [
@@ -39,14 +97,11 @@ export default ({currentSection, inventory}) => {
 
   <section>
     <p>
-      You're in front of a squat brick building. There's an imposing wooden door which is marked by a <List
+      You're in front of a squat brick building. There's an imposing wooden door which is marked by a <ListCard
         expansions={[["plaque"], ['plaque which reads, "English Department"'], ['plaque which reads, "English Department"']]}
         tag="c1-plaque"
-        onComplete={() => {
-          var card = showCard()
-          cards.push(card)
-          console.log("after oncomplete: ", cards)
-        }}
+        card={`You prefer "literature" to "English", but early career Marxist historians take what they can get.`}
+
       /> and lit by a yellowish bulb.
     </p>
   </section>,
@@ -90,18 +145,3 @@ export default ({currentSection, inventory}) => {
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
 }
-
-const showCard = function(sel, tag) {
-  var text
-  if (tag === 'c1-plaque') {
-    text = `You prefer "literature" to "English", but early career Marxist historians take what they can get.`
-  }
-  var card = <Card tag={tag} text={text} />
-  return card
-}
-
-const Card = ({tag, text}) => (
-  <div className="card">
-    {{ text }}
-  </div>
-)
