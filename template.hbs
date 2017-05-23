@@ -12,22 +12,39 @@
       <meta name="author" content="{{ htmlWebpackPlugin.options.author }}" />
       <meta name="copyright" content="{{ htmlWebpackPlugin.options.license }}" />
 
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Archivo+Narrow|Comfortaa|Lora" rel="stylesheet">
 
-      <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" />
       <link rel="stylesheet" href="css/windrift.css" />
       <style>
+      h1, h2, h3, h4, h5, h6 {
 
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+      }
+      .card .note {
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        line-height: 1em;
+        display: block;
+      }
+      p {
+        font-family: 'Lora', serif;
+        font-size: 18px;
+      }
       .card {
 
-        font-family: 'Pragati Narrow', sans-serif;
 
-        font-size: 20px;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 18px;
         position: absolute;
-        border: 1px solid gray;
         width: 30%;
         right: 5%;
-        padding: .5rem 2rem;
+        padding: 0;
       }
       </style>
   </head>

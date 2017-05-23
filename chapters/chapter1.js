@@ -65,7 +65,7 @@ const ListCard = connect(
 export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
-    <h3>February, 1970</h3>
+    <h2>February 3, 1970</h2>
     <p>It's nearly midnight when you finally find the exit off the highway. The snow has
       gotten worse—you almost missed the sign for the college—and the windshield wipers are
       now flapping so aggressively they may fly off. You were relieved when the heater
@@ -78,13 +78,19 @@ export default ({currentSection, inventory, cards}) => {
       ailing VW is fishtailing everywhere, and you nearly sideswipe a
       couple trees and what looked like a gigantic pockmarked boulder. You pull up
       to the first building you find and stop, yank the parking break, and
-      instinctively <ListCard
-        expansions={[["reach for your notebook"], ["reach for your notebook and jot down your jumbled thoughts"]]}
+      take your <ListCard
+        expansions={[["first sigh"], ["first sigh on this long trip"]]}
         tag="c1-notebook"
-        card={<span>An 18-hour drive, with one break for a fitful long nap in a creepy Maryland motel.
-            The engine is off but the car's still ticking and shuddering. What are the odds it'll even
-            start again?
-            It's probably done for the day, not that you can blame it.
+        card={<span>
+            An 18-hour drive, with one break for a fitful nap in this creepy Maryland motel.
+            You picked up a postcard and memorialized it in your notebook:
+            <span className="note"
+              style={{top: '160px', fontSize: '30px', marginLeft: '12px',
+              transform: 'rotate(-2deg)',
+              backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
+              Sticky floor. <br/>Guy stared at me too long.</span>
+              <img src="images/c1-motel.jpg" />
+
           </span>
         }
       />.
