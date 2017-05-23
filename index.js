@@ -6,7 +6,7 @@ import { cards } from './reducers'
 
 function start() {
   var chaptersList = require.context('./chapters', true, /\.js$/)
-  var game = <Game chaptersList={chaptersList} config={config}/>
+  var game = <ArchiveGame chaptersList={chaptersList} config={config} />
   var reducers = { cards }
   var store = startGame(game, reducers)
 }
@@ -14,3 +14,22 @@ function start() {
 document.addEventListener('DOMContentLoaded', function () {
   start()
 })
+
+
+
+class ArchiveGame extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return <div className="row">
+      <div className="columns medium-8">
+        <Game chaptersList={this.props.chaptersList} config={this.props.config}/>
+      </div>
+      <div className="columns medium-3">
+      </div>
+    </div>
+
+  }
+}

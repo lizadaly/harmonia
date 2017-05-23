@@ -12,12 +12,22 @@
       <meta name="author" content="{{ htmlWebpackPlugin.options.author }}" />
       <meta name="copyright" content="{{ htmlWebpackPlugin.options.license }}" />
 
+
+      <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" />
       <link rel="stylesheet" href="css/windrift.css" />
       <style>
+
       .card {
-        position: "absolute";
+
+        font-family: 'Pragati Narrow', sans-serif;
+
+        font-size: 20px;
+        position: absolute;
         border: 1px solid gray;
+        width: 30%;
+        right: 5%;
+        padding: .5rem 2rem;
       }
       </style>
   </head>
@@ -35,8 +45,8 @@
         </div>
       </nav>
 
-      <div class="container">
-        <article id="article" class="row columns"></article>
+      <div class="container row">
+        <article id="article"></article>
       </div>
 
   </body>

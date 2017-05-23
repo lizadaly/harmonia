@@ -1,9 +1,8 @@
 export const CARD_CREATED = "CARD_CREATED"
 
-export const cardCreated = (card) => {
-  console.log("Returning ", CARD_CREATED, " with ", card)
+export const cardCreated = (tag, text) => {
   return {
     type: CARD_CREATED,
-    card
+    tag
   }
 }

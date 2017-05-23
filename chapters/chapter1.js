@@ -5,11 +5,15 @@ import { connect } from 'react-redux'
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
 import * as actions from '../actions'
 
+var CardData = {}
 
-const Card = ({tag, card}) => {
-  return <span className="card">
-    { card }
-  </span>
+const Card = ({tag, text}) => {
+  if (text) {
+    return <span className="card" id={"card-" + tag}>
+      { text }
+    </span>
+  }
+  else return null
 }
 
 class _ListCard extends React.Component {
@@ -20,16 +24,15 @@ class _ListCard extends React.Component {
     this.list = <List {...props} onComplete={this.onComplete}/>
   }
   onComplete() {
-    this.props.onAddCard(this.props.card)
+    CardData[this.props.tag] = this.props.card
+    this.props.onAddCard(this.props.tag)
   }
   render() {
-    // var cards = []
-    // for (var c of this.props.cards) {
-    //   cards.push(<Card card={c} tag={this.props.tag} />)
-    // }
+    var card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
+
     return <span>
       { this.list }
-      <Card card={this.props.cards[0]} tag={this.props.tag} />
+      { card }
     </span>
 
   }
@@ -59,7 +62,7 @@ const ListCard = connect(
 )(_ListCard)
 
 
-export default ({currentSection, inventory}) => {
+export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
     <h3>February, 1970</h3>
@@ -74,14 +77,20 @@ export default ({currentSection, inventory}) => {
       The road to campus is barely paved and not at all plowed. Your
       ailing VW is fishtailing everywhere, and you nearly sideswipe a
       couple trees and what looked like a gigantic pockmarked boulder. You pull up
-      to the first building you find and stop, yank the parking brake and lean back,
-      every muscle aching.
+      to the first building you find and stop, yank the parking break, and
+      instinctively <ListCard
+        expansions={[["reach for your notebook"], ["reach for your notebook and jot down your jumbled thoughts"]]}
+        tag="c1-notebook"
+        card={<span>An 18-hour drive, with one break for a fitful long nap in a creepy Maryland motel.
+            The engine is off but the car's still ticking and shuddering. What are the odds it'll even
+            start again?
+            It's probably done for the day, not that you can blame it.
+          </span>
+        }
+      />.
     </p>
-    <p>
-      An 18-hour drive, with one break for a fitful long nap in a creepy Maryland motel.
-      The engine is off but the car's still ticking and shuddering. What are the odds it'll even
-      start again? It's probably done for the day, not that you can blame it.
-      </p>
+  </section>,
+  <section>
     <p>
       You thought you'd be here hours ago, enough time to check in with the dean's office
       and find out where you're supposed to be living. But St. Isidore College is dark and sleepy.
