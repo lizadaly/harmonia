@@ -66,6 +66,7 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
     <h2>February 3, 1970</h2>
+
     <p>It's nearly midnight when you finally find the exit off the highway. The snow has
       gotten worse—you almost missed the sign for the college—and the windshield wipers are
       now flapping so aggressively they may fly off. You were relieved when the heater
@@ -79,21 +80,22 @@ export default ({currentSection, inventory, cards}) => {
       couple trees and what looked like a gigantic pockmarked boulder. You pull up
       to the first building you find and stop, yank the parking break, and
       take your <ListCard
-        expansions={[["first sigh"], ["first sigh on this long trip"]]}
+        expansions={[["first sigh."], ["first sigh on this long trip."]]}
         tag="c1-notebook"
         card={<span>
-            An 18-hour drive, with one break for a fitful nap in this creepy Maryland motel.
-            You picked up a postcard and memorialized it in your notebook:
+            I thought an 18-hour drive sounded like an adventure, but nobody
+            seemed to like meeting a woman traveling alone. The worst was
+            the creepy Maryland motel. I needed to sleep but I couldn't. I kept
+            imagining the owner was going to slip in my room with a master key.
             <span className="note"
-              style={{top: '160px', fontSize: '30px', marginLeft: '12px',
-              transform: 'rotate(-2deg)',
+              style={{top: '260px', fontSize: '30px', marginLeft: '12px',
               backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
               Sticky floor. <br/>Guy stared at me too long.</span>
               <img src="images/c1-motel.jpg" />
 
           </span>
         }
-      />.
+      />
     </p>
   </section>,
   <section>
@@ -106,23 +108,13 @@ export default ({currentSection, inventory, cards}) => {
       If you just keep sitting here you're going to slowly turn to ice.
       You grab your notebook, your purse, and your winter coat. You notice it still has the tags
       on it. You reach for the <List expansions={[["door handle"],
-      ["door handle and step out into the lot, your feet crunching on the snow for the first time in your life"]]} tag="c1-carhandle" />.
+      ["door handle and step out into the lot, your feet crunching on snow for the first time in your life"]]} tag="c1-carhandle" />.
     </p>
   </section>,
 
   <section>
     <p>
-      You're in front of a squat brick building. There's an imposing wooden door which is marked by a <ListCard
-        expansions={[["plaque"], ['plaque which reads, "English Department"'], ['plaque which reads, "English Department"']]}
-        tag="c1-plaque"
-        card={`You prefer "literature" to "English", but early career Marxist historians take what they can get.`}
-
-      /> and lit by a yellowish bulb.
-    </p>
-  </section>,
-  <section>
-    <p>
-      Finally, some luck: it's your department. Even better,&nbsp;
+      By sheer chance, it appears you've stopped in front of the English literature building—your department. Even better,&nbsp;
       <List
         expansions={[["the door is unlocked"], ["the door is unlocked and no alarms ring as you step into the building"]]}
         tag="c1-doorknob"/>.
@@ -132,31 +124,69 @@ export default ({currentSection, inventory, cards}) => {
     <p>It's just as you expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
       professors and adjuncts. You recognize a few, from papers, but you're looking for one in particular—</p>
     <p>
-      Nearly at the end of the row, Professor Jeffrey Lynn, 19th Century American Studies, foremost scholar
-      in turn of the century mysticism.
+      Nearly at the end of the row, Professor Jeffrey Lynn, 19th Century American Studies,&nbsp;
+      <ListCard expansions={[["distinguished scholar."], ["foremost scholar in turn of the century mysticism."]]}
+        nextUnit={null}
+        tag="c1-scholar"
+        card={<span>
+            I was a self-described "Marxist feminist radical working to
+            surface the hidden history of the oppressed." The pseudoscientific rambling of bored Puritans
+            was the furthest thing from my work. But I knew I'd never liberate anybody if I didn't
+            publish. Taking the offer for a semester replacement teaching position at an obscure but
+            well-respected liberal arts college was a no-brainer, even if it meant a last-minute
+            thousand-mile drive from Miami.
+        </span>}
+      />
     </p>
     <p>
-      You have mixed feelings about the topic, even though you drove a thousand miles to be here to teach it.
-      At home, in Miami, it all seemed so dusty and academic. You're a Marxist feminist radical working to
-      surface the hidden history of the oppressed; the pseudoscientific ramblings of some bored Puritans
-      is the furthest thing from your research.
-    </p>
-    <p>
-      But first, you're not going to liberate anyone if you can't publish. Teaching remedial American Lit at
-      a community college is noble, and maybe you should feel a little bad about giving it up, but dammit,
-      you worked hard and you deserve to be taken seriously.
-    </p>
-    <p>
-      And second, well, being up here, the coldest you've ever been, in this dark and lonely old
-      building, ideas about the permeability of the spirit world don't seem so crazy. And there's the matter
-      of Professor Lynn's sudden disappearance.
-    </p>
-    <p>
-      Anyway, while his research might not inspire you, his course you've been hired to teach is right
-      in your wheelhouse.
-    </p>
+      His door is closed but not locked, and curling up under the doorframe
+      is <List expansions={[["a glowing light"], ["an unnatural glow, a color out of nature"]]}
+        tag="c1-glow"
+      />.
 
+    </p>
+  </section>,
+  <section>
+    <p>
+      You open the door.
+    </p>
+    <p>
+      Lynn's office is small, made smaller by the absolute riot of stacked papers, notes, and library books.
+      The floor is a forest of teetering cardboard boxes, many slumped under their own weight. A narrow path leads through
+      to a desk in the center of the room, strangely devoid of any paper at all.
+    </p>
+    <p>
+      On the desk is what appears to be some kind
+      of <ListCard expansions={[["video terminal."], ["advanced video terminal."]]}
+      tag="c1_tty"
+      nextUnit={null}
+      card={<span>
+        I was familiar with teletypes and video terminals from my trips to the University of Miami library, where a friend helped
+        me navigate their newly computerized card catalog. She remarked that I got the hang of it
+        faster than anybody she'd taught. This machine was different, though.
+      </span>}
+    /> It has a <List expansions={[["glowing screen"], ["glowing_screen"]]} tag="c1_screen" /> but seems to be
+      missing a keyboard. There's a small box on the table with
+      a <List expansions={[["large round button on the top"], ["large round button on the top emits a satisfying click when you press it"]]}
+        tag="c1_mousebutton"
+        nextUnit={null}
+
+      />, and a cord
+      disappearing into the back of the machine.
+    </p>
+  </section>,
+  <section>
+    <Map from={inventory.c1_mousebutton} to={{
+      "_undefined": <p>The teletypes you've used would display a few lines of uppercase text, but you just see a blank amber screen.</p>,
+      "_any": <div>
+        <p>The amber screen wipes slowly from top to bottom and a <List expansions={[["complex display"], ["complex display"]]}
+          tag="c1-display" nextUnit="chapter" /> appears in its place:</p>
+      </div>
+
+    }}
+  />
   </section>
+
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
 }

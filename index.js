@@ -24,7 +24,7 @@ class ArchiveGame extends React.Component {
 
   render() {
     return <div className="row">
-      <div className="columns medium-8">
+      <div className="columns medium-8 small-12">
         <Game chaptersList={this.props.chaptersList} config={this.props.config}/>
       </div>
       <div className="columns medium-3">
