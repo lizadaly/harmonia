@@ -1,43 +1,74 @@
 const React = require('react')
+import { connect } from 'react-redux'
+
 import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
+
+const defaultSearch = "sleep"
 
 export default ({currentSection, inventory}) => {
   const sections = [
     <section className="computer">
-      <SearchBar phrase={"awaken"} />
-      <SearchRemaining count={1} />
-      <Doc doc={bellamy} />
+      <header>
+        <SearchBar phrase={inventory.search || defaultSearch} />
+        <SearchRemaining count={1} />
+        <Help />
+      </header>
+      <Doc doc={bellamy} search={inventory.search || defaultSearch}/>
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }
 
-class Doc extends React.Component {
+class _Doc extends React.Component {
   constructor(props) {
     super(props)
+    if (props.search === defaultSearch) {
+
+    }
   }
   render() {
     return <div className="doc">
       <header>
-        <h3>{this.props.doc.title}</h3>
-        <h4>{this.props.doc.author}</h4>
-        <h4>{this.props.doc.year}</h4>
+        <h4>{this.props.doc.title} by {this.props.doc.author} ({this.props.doc.year})</h4>
       </header>
       <div className="pages">
         <div className="recto">{this.props.doc.page}</div>
         <div className="verso">{this.props.doc.page + 1}</div>
+        <Article text={this.props.doc.text} search={this.props.search} />
       </div>
-      <article className="article">{this.props.doc.text}</article>
+
     </div>
   }
 }
+const mapStateToProps = (state, ownProps) => {
+  return {
+
+  }
+}
+export const Doc = connect(
+  mapStateToProps,
+  {
+
+  }
+)(_Doc)
 
 const SearchBar = ({phrase}) => {
-  return <h6>Current search: <span className="phrase">{phrase}</span></h6>
+  return <h6 className="search-bar">Current search: <span className="phrase">{phrase}</span></h6>
 }
 
 const SearchRemaining = ({count}) => {
-  return <h6>Remaining searches: <span className="remaining">{count}</span></h6>
+  return <h6 className="search-remaining">Remaining searches: <span className="remaining">{count}</span></h6>
+}
+
+const Help = ({}) => {
+  return <h6 className="search-help"><span>Help</span></h6>
+}
+
+const Article = ({text, search}) => {
+
+  text = text.split(search).join('<span class="phrase">' + search + '</span>')
+  return <article className="article" dangerouslySetInnerHTML={{__html: text}}></article>
+
 }
 
 const bellamy = {
@@ -45,9 +76,9 @@ const bellamy = {
   title: "Looking Backward",
   year: 1888,
   page: 28,
-  text: <div>
+  text: `<div>
         <p>
-          ...There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
+          There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
         </p>
         <p>
           "You have just been roused from a deep sleep, or, more properly, trance. May I ask you when you went to sleep?"
@@ -74,5 +105,5 @@ const bellamy = {
       </p>
 
 </div>
-
+`
 }

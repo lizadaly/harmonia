@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
 }
@@ -8,13 +13,16 @@ p {
   font-size: 18px;
 }
 
-
-.section > section, .current-section > section {
+.current-section > section,
+.section > section {
   width: 60%;
+  display: none;
 }
 
-.section>.computer, .current-section>.computer {
+.current-section > .computer,
+.section > .computer {
   width: 100%;
+  display: grid;
 }
 
 .card {
@@ -37,41 +45,95 @@ p {
   }
 }
 
+/* Computer UI */
+$computer-margin: 1rem;
+$highlight: yellow;
+$page-divider: rgb(200,200,200);
 
 
 .computer {
-  background: rgb(252, 240, 204);
-  padding: 2rem;
-  background: radial-gradient(ellipse at center, rgba(252, 240, 204, 0) 0%, rgba(252, 240, 204, .5) 100%);
-  border-radius: 10px;
-  border: 1px solid transparent;
-  border-top: none;
-  border-bottom: 1px solid #DDD;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 
-  article.article {
-    clear: both;
-    column-count: 2;
-    column-gap: 4rem;
-    p {
-      font-family: 'Playfair Display', serif;
-      text-align: justify;
-    }
-  }
+  padding: $computer-margin;
+
 
   & > header {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    .search-bar {
+      text-align: left;
+    }
+    .search-remaining {
+       text-align: center;
+    }
+    .search-help {
+      text-align: right;
+    }
+
   }
 
-  .pages {
-    font-family: 'Playfair Display', serif;
-    .recto {
-      text-align: left;
-      float: left;
+  /* The actual scanned book */
+  .doc {
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h4 {
+        font-size: 20px;
+      }
     }
-    .verso {
-      text-align: right;
-      float: right;
+    .pages {
+      & ::selection {
+        background: $highlight;
+      }
+      padding: 1rem;
+      margin: $computer-margin;
+      background: radial-gradient(ellipse farthest-corner at 10% 10%,
+                                        rgba(0, 10, 10, .05) 0%,
+                                        rgba(200, 200, 210, .8) 100%);
+
+      font-family: 'Playfair Display', serif;
+
+      border-radius: 2px;
+      border: 1px solid transparent;
+      border-top: none;
+      border-bottom: 1px solid #DDD;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+
+      .recto, .verso {
+        margin-bottom: 1rem;
+      }
+      .recto {
+        text-align: left;
+        float: left;
+      }
+      .verso {
+        text-align: right;
+        float: right;
+      }
+
+      article.article {
+        clear: both;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: solid $page-divider 1px;
+
+        text-indent: 1em;
+
+        p {
+          font-family: 'Playfair Display', serif;
+          text-align: justify;
+        }
+      }
+
+      & > header {
+        display: grid;
+      }
     }
+  }
+  .phrase {
+    background-color: $highlight;
   }
 }
