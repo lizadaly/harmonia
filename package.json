@@ -31,6 +31,7 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^3.5.0",
     "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
     "enzyme": "^2.8.2",
     "enzyme-redux": "^0.1.6",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -43,11 +44,14 @@
     "jsdom-global": "3.0.2",
     "json-loader": "^0.5.4",
     "mocha": "^3.4.1",
+    "node-sass": "^4.5.3",
     "react-addons-test-utils": "^15.5.1",
     "redux-devtools-extension": "^2.13.2",
     "redux-test-utils": "^0.1.2",
     "rewire": "^2.5.2",
+    "sass-loader": "^6.0.5",
     "sinon": "^2.2.0",
+    "style-loader": "^0.18.1",
     "webpack-dev-server": "^2.4.5"
   }
 }

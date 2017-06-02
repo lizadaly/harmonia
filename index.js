@@ -3,6 +3,9 @@ import config from './story.json'
 import {Map, Game, startGame} from 'windrift'
 import { cards } from './reducers'
 
+require('./scss/archive.scss')
+
+
 
 function start() {
   var chaptersList = require.context('./chapters', true, /\.js$/)

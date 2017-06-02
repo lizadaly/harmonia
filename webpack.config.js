@@ -20,7 +20,8 @@ module.exports = [{
     loaders: [{ test: /.js/, loaders: ['babel-loader?cacheDirectory']},
               { test: /\.json$/, loader: 'json-loader' },
               { test: /\.html$/, loader: 'html-loader'},
-              { test: /\.hbs/, loader: 'handlebars-loader'}
+              { test: /\.hbs/, loader: 'handlebars-loader'},
+              { test: /\.scss/, loaders: ['style-loader', 'css-loader', 'sass-loader']}
     ]
   },
   plugins: [
