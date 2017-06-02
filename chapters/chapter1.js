@@ -152,8 +152,8 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       Lynn's office is small, made smaller by the absolute riot of stacked papers, notes, and library books.
-      The floor is a forest of teetering cardboard boxes, many slumped under their own weight. A narrow path leads through
-      to a desk in the center of the room, strangely devoid of any paper at all.
+      A narrow path leads through
+      to a desk in the center of the room. Oddly, the desk is devoid of any paper at all.
     </p>
     <p>
       On the desk is what appears to be some kind
@@ -165,21 +165,20 @@ export default ({currentSection, inventory, cards}) => {
         me navigate their newly computerized card catalog. She remarked that I got the hang of it
         faster than anybody she'd taught. This machine was different, though.
       </span>}
-    /> It has a <List expansions={[["glowing screen"], ["glowing_screen"]]} tag="c1_screen" /> but seems to be
-      missing a keyboard. There's a small box on the table with
-      a <List expansions={[["large round button on the top"], ["large round button on the top emits a satisfying click when you press it"]]}
-        tag="c1_mousebutton"
+    /> It has a <List expansions={[["glowing screen"], ["glowing screen"]]} tag="c1_screen" /> but seems to be
+      missing a keyboard. There's a curiously <List expansions={[["fat pen"], ["fat pen"]]}
+        tag="c1_pen"
         nextUnit={null}
-
-      />, and a cord
+      />, tethered to a cord
       disappearing into the back of the machine.
     </p>
   </section>,
   <section>
-    <Map from={inventory.c1_mousebutton} to={{
+    <Map from={inventory.c1_pen} to={{
       "_undefined": <p>The teletypes you've used would display a few lines of uppercase text, but you just see a blank amber screen.</p>,
       "_any": <div>
-        <p>The amber screen wipes slowly from top to bottom and a <List expansions={[["complex display"], ["complex display"]]}
+        <p>You lift up the pen, which is metal and heavy in your hand. On a whim, you touch it to the video terminal screen, and the
+          computer emits a loud beep. The amber screen wipes slowly from top to bottom and a <List expansions={[["complex display"], ["complex display"]]}
           tag="c1-display" nextUnit="chapter" /> appears in its place:</p>
       </div>
 
