@@ -1,40 +1,91 @@
 const React = require('react')
 import { connect } from 'react-redux'
+import { docs } from '../docs'
 
 import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
 
-const defaultSearch = "sleep"
+const topics = {
+  sleeping: {
+    label: "sleeping or waking",
+    terms: ["sleep",  "overslept", "slept", "wake", "awoken"],
+    docs: [docs.bellamy1, docs.age1]
+  }
+}
 
 export default ({currentSection, inventory}) => {
   const sections = [
-    <section className="computer">
-      <header>
-        <SearchBar phrase={inventory.search || defaultSearch} />
-        <SearchRemaining count={1} />
-        <Help />
-      </header>
-      <Doc doc={bellamy} search={inventory.search || defaultSearch}/>
-    </section>
+    <Computer inventory={inventory} topic={topics.sleeping} />
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }
 
+
+class Computer extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.toggleModal = this.toggleModal.bind(this)
+    this.changeDoc = this.changeDoc.bind(this)
+    this.state = {
+      modal: false,
+      doc: props.topic.docs[0]
+    }
+  }
+  toggleModal(e) {
+    e.preventDefault()
+    e.stopPropagation()
+
+    this.setState({
+      modal: !this.state.modal
+    })
+  }
+  changeDoc(e, id) {
+    e.preventDefault()
+    e.stopPropagation()
+    // Find a matching doc
+    let doc = this.props.topic.docs.filter((d) => d.id === id)[0]
+    this.setState({
+      doc: doc
+    })
+  }
+  render () {
+    return <section className="computer">
+      <header>
+        <SearchBar topic={this.props.topic} />
+        <Help toggleModal={this.toggleModal}/>
+      </header>
+      <Doc doc={this.state.doc} topic={this.props.topic} modal={this.state.modal}/>
+      <footer>
+        <h4>Other documents in this collection:</h4>
+        <DocsList onChange={this.changeDoc} docs={this.props.topic.docs.filter((doc) =>
+            doc != this.state.doc
+        )} />
+      </footer>
+    </section>
+  }
+}
+
+const DocsList = ({docs, onChange}) => {
+  return <ul>{docs.map((doc) => <li key={doc.title}><a onClick={() => onChange(event, doc.id)}>{doc.title}</a></li>)}</ul>
+}
+
+
 class _Doc extends React.Component {
   constructor(props) {
     super(props)
-    if (props.search === defaultSearch) {
-
-    }
   }
   render() {
     return <div className="doc">
+      <div className={'help-modal ' + this.props.modal}>
+        This is the help text
+      </div>
       <header>
         <h4>{this.props.doc.title} by {this.props.doc.author} ({this.props.doc.year})</h4>
       </header>
       <div className="pages">
         <div className="recto">{this.props.doc.page}</div>
         <div className="verso">{this.props.doc.page + 1}</div>
-        <Article text={this.props.doc.text} search={this.props.search} />
+        <Article text={this.props.doc.text} topic={this.props.topic} />
       </div>
 
     </div>
@@ -52,58 +103,31 @@ export const Doc = connect(
   }
 )(_Doc)
 
-const SearchBar = ({phrase}) => {
-  return <h6 className="search-bar">Current search: <span className="phrase">{phrase}</span></h6>
+const SearchBar = ({topic}) => {
+  return <h6 className="search-bar">Current topic: <span className="phrase">{topic.label}</span></h6>
 }
 
-const SearchRemaining = ({count}) => {
-  return <h6 className="search-remaining">Remaining searches: <span className="remaining">{count}</span></h6>
+
+class Help extends React.Component {
+  constructor(props) {
+    super(props)
+
+  }
+  render() {
+    return <div className="search-help">
+      <h6><a onClick={this.props.toggleModal}>Help</a></h6>
+
+    </div>
+
+  }
+
+
 }
 
-const Help = ({}) => {
-  return <h6 className="search-help"><span>Help</span></h6>
-}
-
-const Article = ({text, search}) => {
-
-  text = text.split(search).join('<span class="phrase">' + search + '</span>')
+const Article = ({text, topic}) => {
+  for (var term of topic.terms) {
+    text = text.split(term).join('<span class="phrase">' + term + '</span>')
+  }
   return <article className="article" dangerouslySetInnerHTML={{__html: text}}></article>
 
-}
-
-const bellamy = {
-  author: "Edward Bellamy",
-  title: "Looking Backward",
-  year: 1888,
-  page: 28,
-  text: `<div>
-        <p>
-          There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
-        </p>
-        <p>
-          "You have just been roused from a deep sleep, or, more properly, trance. May I ask you when you went to sleep?"
-        </p>
-        <p>
-        "Why, last evening, of course, at about ten o'clock. I left my man Sawyer orders to call me at nine o'clock. What has become of Sawyer?"
-      </p>
-      <p>
-
-        "I can't precisely tell you that," replied my companion, regarding me with a curious expression, "but I am sure that he is excusable for not being here. And now can you tell me a little more explicitly when it was that you fell into that sleep, the date, I mean?"
-    </p>
-    <p>
-        "Why, last night, of course; I said so, didn't I? that is, unless I have overslept an entire day. Great heavens! that cannot be possible; and yet I have an odd sensation of having slept a long time. It was Monday, May 30th."
-    </p>
-
-    <p>
-        "May I ask of what year?"
-    </p>
-    <p>
-        I stared blankly at him, incapable of speech, for some moments.  "It was the year 1887," I said.
-    </p>
-    <p>
-        "My dear sir," he said, "that you should be startled by what I shall tell you is to be expected; but I am confident that you will not permit it to affect your equanimity unduly. Your appearance is that of a young man of barely thirty, and your bodily condition seems not greatly different from that of one just roused from a somewhat too long and profound sleep, and yet this is the tenth day of September in the year 2000, and you have slept exactly one hundred and thirteen years, three months, and eleven days."
-      </p>
-
-</div>
-`
 }

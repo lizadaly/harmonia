@@ -16,7 +16,7 @@ p {
 .current-section > section,
 .section > section {
   width: 60%;
-  display: none;
+/*  display: none; */
 }
 
 .current-section > .computer,
@@ -47,7 +47,7 @@ p {
 
 /* Computer UI */
 $computer-margin: 1rem;
-$highlight: yellow;
+$highlight: lightyellow;
 $page-divider: rgb(200,200,200);
 
 
@@ -71,6 +71,22 @@ $page-divider: rgb(200,200,200);
       text-align: right;
     }
 
+  }
+  /* The help modal */
+  .help-modal {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed black;
+    width: 50%;
+    height: 100px;
+    background: white;
+    &.true {
+      display: flex;
+
+    }
   }
 
   /* The actual scanned book */

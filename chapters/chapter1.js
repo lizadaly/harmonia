@@ -65,7 +65,7 @@ const ListCard = connect(
 export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
-    <h2>February 3, 1970</h2>
+    <h2>February 3, 1980</h2>
 
     <p>It's nearly midnight when you finally find the exit off the highway. The snow has
       gotten worse—you almost missed the sign for the college—and the windshield wipers are
@@ -87,11 +87,6 @@ export default ({currentSection, inventory, cards}) => {
             seemed to like meeting a woman traveling alone. The worst was
             the creepy Maryland motel. I needed to sleep but I couldn't. I kept
             imagining the owner was going to slip in my room with a master key.
-            <span className="note"
-              style={{top: '260px', fontSize: '30px', marginLeft: '12px',
-              backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
-              Sticky floor. <br/>Guy stared at me too long.</span>
-              <img src="images/c1-motel.jpg" />
 
           </span>
         }
@@ -165,20 +160,20 @@ export default ({currentSection, inventory, cards}) => {
         me navigate their newly computerized card catalog. She remarked that I got the hang of it
         faster than anybody she'd taught. This machine was different, though.
       </span>}
-    /> It has a <List expansions={[["glowing screen"], ["glowing screen"]]} tag="c1_screen" /> but seems to be
-      missing a keyboard. There's a curiously <List expansions={[["fat pen"], ["fat pen"]]}
-        tag="c1_pen"
+    /> It has a <List expansions={[["brightly lit screen"], ["brightly lit screen"]]} tag="c1_screen" /> but seems to be
+      missing a keyboard. There's a <List expansions={[["small box"], ["small box topped with a round button"]]}
+        tag="c1_mouse"
         nextUnit={null}
       />, tethered to a cord
       disappearing into the back of the machine.
     </p>
   </section>,
   <section>
-    <Map from={inventory.c1_pen} to={{
+    <Map from={inventory.c1_mouse} to={{
       "_undefined": <p>The teletypes you've used would display a few lines of uppercase text, but you just see a blank amber screen.</p>,
       "_any": <div>
-        <p>You lift up the pen, which is metal and heavy in your hand. On a whim, you touch it to the video terminal screen, and the
-          computer emits a loud beep. The amber screen wipes slowly from top to bottom and a <List expansions={[["complex display"], ["complex display"]]}
+        <p>You lift up the box; there's a wheel underneath. On a whim, you press the button and the
+          computer emits a loud beep. The black and white display wipes slowly from top to bottom and a <List expansions={[["complex interface"], ["complex interface"]]}
           tag="c1-display" nextUnit="chapter" /> appears in its place:</p>
       </div>
 
