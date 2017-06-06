@@ -7,7 +7,7 @@ import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} 
 const topics = {
   sleeping: {
     label: "sleeping or waking",
-    terms: ["sleep",  "overslept", "slept", "wake", "awoken"],
+    terms: ["sleep",  "overslept", "slept", "wake", "awoken", "unconscious"],
     docs: [docs.bellamy1, docs.age1]
   }
 }
