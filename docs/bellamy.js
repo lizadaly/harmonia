@@ -1,7 +1,8 @@
 const React = require('react')
 
 const bellamy = {
-  bellamy1: <div>
+  bellamy1: [
+    <div>
         <p>
           There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
         </p>
@@ -28,7 +29,10 @@ const bellamy = {
     <p>
         "My dear sir," he said, "that you should be startled by what I shall tell you is to be expected; but I am confident that you will not permit it to affect your equanimity unduly. Your appearance is that of a young man of barely thirty, and your bodily condition seems not greatly different from that of one just roused from a somewhat too long and profound sleep, and yet this is the tenth day of September in the year 2000, and you have slept exactly one hundred and thirteen years, three months, and eleven days."
       </p>
-    </div>
-
+  </div>,
+  <div>
+    <p>Page 2</p>
+  </div>
+]
 }
 export default bellamy

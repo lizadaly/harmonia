@@ -1,4 +1,3 @@
-import jsxToString from 'jsx-to-string'
 
 import bellamy from './bellamy'
 import age from './age'
@@ -10,7 +9,7 @@ export const docs = {
     id: "bellamy1",
     year: 1888,
     page: 28,
-    text: jsxToString(bellamy.bellamy1)
+    text: bellamy.bellamy1
   },
   age1: {
     author: "W. H. Hudson",
@@ -18,6 +17,6 @@ export const docs = {
     id: "age1",
     year: 1887,
     page: 1,
-    text: jsxToString(age.age1)
+    text: age.age1
   }
 }
