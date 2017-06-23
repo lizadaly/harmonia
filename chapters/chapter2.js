@@ -16,7 +16,41 @@ const topics = {
 
 export default ({currentSection, inventory}) => {
   const sections = [
-    <Computer inventory={inventory} topic={topics.sleeping} />
+//    <Computer inventory={inventory} topic={topics.sleeping} />,
+    <section>
+      <p>"Hello, what are you doing?"</p>
+      <p>I was startled by the unexpected voice guiltily pulled back from the computer. A <List
+        expansions={[["plain-looking woman"],
+        ["plain-looking woman, with drap hair and a long-sleeved, ankle length dress"]]} tag="c2-woman"/> stood in the office doorway, regarding me with suspicion.
+      </p>
+      <p>When I didn't answer she said, "Who are you?"</p>
+      <p>I reminded myself that I was <em>invited</em> here and didn't need to <List expansions={[["apologize"],
+      ["apologize (except maybe for breaking into someone's office)"]]} nextUnit={null} tag="c2-apologize" />.
+        "I'm Miriam Kemper. I'm substituting for Jeffrey Lynn."
+      </p>
+      <p>The transformation on her face was immediate. She stepped forward, arms out and palms
+        open. "Of course, I'm so sorry. I heard you were coming. Welcome to St. Isidore."
+      </p>
+      <p>I've always been bad at knowing what to do with my hands so I settled on an awkward shake.
+        "Thanks," I said. "There was no one here when I arrived so I—" I gestured vaguely.
+      </p>
+      <p>She laughed so loudly in response that I was taken aback, but she seemed to mean well. "I know where your room is,
+        shall I bring you to it?"
+      </p>
+      <Map from={inventory.c2_qs} to={{
+        "_undefined": <p>
+          I hesitated, torn between <List expansions={[["utter exhaustion", "all my questions"], "_last"]} tag="c2_qs" conjunction="and" />.
+        </p>,
+        "questions": <p>
+          I hesitated, and then asked, "What happened to Professor Lynn?"
+        </p>,
+        "exhaustion": <p>
+          I hesitated, then nodded. "Yes, I'm exhausted." She turns without saying anything further, and you follow her
+          out, leaving the curious computer behind. 
+        </p>
+      }} />
+
+    </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }

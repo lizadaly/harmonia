@@ -75,8 +75,8 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       The road to campus is barely paved, and on this night it hadn't been plowed. My
-      old beater car was fishtailing everywhere. I nearly sideswiped a
-      couple trees and just missed hitting what I thought was a strangely pockmarked boulder.
+      old beater car was fishtailing everywhere and I nearly sideswiped a
+      couple trees.
       I pulled up to the first real building I saw, yanked on
       the parking brake, and leaned back to take my <ListCard
         expansions={[["first deep breath."], ["first deep breath on this long trip."]]}
