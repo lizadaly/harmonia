@@ -41,17 +41,45 @@ export default ({currentSection, inventory}) => {
         "_undefined": <p>
           I hesitated, torn between <List expansions={[["utter exhaustion", "all my questions"], "_last"]} tag="c2_qs" conjunction="and" />.
         </p>,
-        "questions": <p>
-          I hesitated, and then asked, "What happened to Professor Lynn?"
-        </p>,
+        "questions": <div>
+          <p>I hesitated, and then asked, "What happened to Professor Lynn?"</p>
+          <p>She seemed taken back by my directness. "He didn't come back after winter break. I understand that finding a
+            last-minute replacement was difficult."
+          </p>
+          <p>I knew well enough they only called me because I had a (previously unanswered) job application
+            on file. "Yes," I said, "but what I mean is—"
+          </p>
+          <p>"Shall I bring you to your room?" she repeated. I was too tired to press her further, so I just nodded and
+            followed her out, leaving the curious computer behind.
+          </p>
+        </div>,
         "exhaustion": <p>
-          I hesitated, then nodded. "Yes, I'm exhausted." She turns without saying anything further, and you follow her
-          out, leaving the curious computer behind. 
+          I hesitated, then nodded. "Yes, I'm exhausted." She turned without saying anything further, and I followed her
+          out, leaving the curious computer behind.
         </p>
       }} />
 
+    </section>,
+    <section>
+      <p>She told me her name was Abigail, but otherwise said little after taking me back to my car to get my things.
+        She didn't offer to help with my bags, which were pathetically small anyway, but she seemed to know the
+        college by heart, cutting through dark buildings and pitch black paths as the snow settled in around us.
+        In
+        the gloom, the buildings looked the same to me, all brick, rectangular, and severe, but one of them
+        was faculty housing and we walked right in. I had no idea how I'd find my
+        way back to Lynn's office, but that was a problem for another day and a full night's sleep.
+      </p>
+      <p>Apparently none of the professors were night owls as
+        the residence was as dark and quiet as the classrooms. "You're in here," she said, opening another
+        unlocked door and gesturing into a room with a single small window and spartan wooden furnishings.
+        I wasn't in a snow-filled ditch on the side of the road and the room had a
+        bed, so I was happy. I dropped everything in place, mumbled my thanks, and remember nothing
+        else after my face hit the pillow.
+      </p>
+      <NextChapter chapter={3} />
+
     </section>
-  ]
+        ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }
 
