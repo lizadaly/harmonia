@@ -4,6 +4,7 @@ import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} 
 
 import { docs } from '../docs'
 import jsxToString from 'jsx-to-string'
+import ListCard from '../components/listCard'
 
 
 export default ({currentSection, inventory}) => {
@@ -29,8 +30,9 @@ export default ({currentSection, inventory}) => {
       but in fact it was quite compact. I couldn't tell any of the buildings apart.
     </p>
     <p>
-      A clock tower somewhere chimed eight and as if they'd sprung forth from its
-      mechanism, students began pouring out into the quad. St. Isadore is a fairly
+      A clock tower somewhere chimed eight and students began pouring out into the quad
+      as if they'd sprung forth from its
+      mechanism. St. Isadore is a fairly
       conservative Catholic school, and while there was no formal dress code, the girls
       seemed to have agreed upon their own—neutral slacks, long skirts, lots of beige.
       I'm from Miami so I'd needed weather-appropiate new clothes anyway, and while I'd tried to
@@ -73,14 +75,14 @@ export default ({currentSection, inventory}) => {
       the quad, so I walked up to it.</p>
     }}/>
 
+    <figure>
+      <img src="images/meteorite.jpg" />
+      <figcaption>I sketched this a few weeks later, when it became clear how important the astrolith would be.</figcaption>
+    </figure>
+
     <p>
-      <figure>
-        <img src="images/meteorite.jpg" />
-        <figcaption>I sketched this a few weeks later, when it became clear how important the astrolith would be.</figcaption>
-      </figure>
-    </p>
-    <p>
-      It was a rectangular boulder, a couple meters square and one meter tall.  There were bumps and depressions
+      It was a rectangular boulder, a couple meters square and one meter tall. Someone had
+      cleared the entire area of snow. There were bumps and depressions
       across its surface which had been smoothed by age. The surface was largely flat, inviting one to sit on it.
       The earth had been dug out around it in a
       circular depression, with concentric rings of steps, like a tiny Greek ampitheater. I stooped to read
@@ -97,20 +99,44 @@ export default ({currentSection, inventory}) => {
       being the Hoba meteorite in Namibia.
     </blockquote>
     <p>
-      Beneath that, a typewritten addendum tucked into a weathered clear plastic sleeve:
+      Beneath that, a typewritten addendum was tucked into a weathered clear plastic sleeve:
     </p>
-    <blockquote class="typewritten">
+    <blockquote className="typewritten">
       PLEASE NOTE:
-      As of Winter 1980 the Astrolith will be removed to the Museum of Science in Boston and
-      <ListCard
+      As of Winter 1980 the Astrolith will be removed to the Museum of Science in Boston
+      and <ListCard
         expansions={[["replaced with a replica"], ["replaced with a replica"]]}
         tag="c3_addendum"
         card={<span>
-          I wondered at the time whether I was viewing the real thing or a replica.
+          I wondered at the time whether I was viewing the real or ersatz meteorite.
           I'd be sure of that soon enough.
         </span>
         } />. We apologize for any inconvenience.
     </blockquote>
+    <Map from={inventory.c3_dean}
+      to={{
+        science: <div>
+          <p>
+            I looked up from the plaque and scanned the area around the quad. Sure enough,
+            a thin path through the snow lead up to the only non-brick building in sight,
+            a dreary concrete bunker marked SCIENCE CENTER. One wing of the building
+            looked brand new, its gray blocks gleaming but no less ugly.
+          </p>
+          <p>Once inside,
+            I saw that the new wing was labelled "Computer Lab." Curious, I
+            opened the lab door and paused, wondering if I should <List expansions={[["go inside", "find the Humanities dean after all"],
+            ["go inside", "find the Humanities dean after all"]]} conjunction="or" tag="c3_computerlab" />.
+          </p>
+        </div>
+      }} />
+  </section>,
+  <section>
+    <Map from={(inventory.c3_dean === "Dean of Humanities" || inventory.c3_computerlab === "find the Humanities dean after all").toString()}
+      to={{
+        true: "Dean of English picked ",
+        false: "Not dean"
+      }} />
+
   </section>
 
   ]

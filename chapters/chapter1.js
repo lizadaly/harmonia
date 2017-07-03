@@ -4,63 +4,7 @@ import { connect } from 'react-redux'
 
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
 import * as actions from '../actions'
-
-var CardData = {}
-
-const Card = ({tag, text}) => {
-  if (text) {
-    return <span className="card" id={"card-" + tag}>
-      { text }
-    </span>
-  }
-  else return null
-}
-
-class _ListCard extends React.Component {
-
-  constructor(props) {
-    super(props)
-    this.onComplete = this.onComplete.bind(this)
-    this.list = <List {...props} onComplete={this.onComplete}/>
-  }
-  onComplete() {
-    CardData[this.props.tag] = this.props.card
-    this.props.onAddCard(this.props.tag)
-  }
-  render() {
-    var card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
-
-    return <span>
-      { this.list }
-      { card }
-    </span>
-
-  }
-}
-_ListCard.propTypes = {
-  nextUnit: PropTypes.oneOf(['chapter', 'section', 'none']),
-  tag: PropTypes.string.isRequired,
-  expansions: PropTypes.array.isRequired,
-  config: PropTypes.object,
-  currentExpansion: PropTypes.number,
-  conjunction: PropTypes.string,
-  persistLast: PropTypes.bool,
-  onLoad: PropTypes.func
-}
-
-const mapStateToProps = (state) => {
-  return {
-    cards: state.cards
-  }
-}
-
-const ListCard = connect(
-  mapStateToProps,
-  {
-    onAddCard: actions.cardCreated
-  }
-)(_ListCard)
-
+import ListCard from '../components/listCard'
 
 export default ({currentSection, inventory, cards}) => {
   const sections = [
@@ -82,14 +26,14 @@ export default ({currentSection, inventory, cards}) => {
         expansions={[["first deep breath."], ["first deep breath on this long trip."]]}
         tag="c1-notebook"
         card={<span>
-            I thought an 18-hour drive sounded like an adventure, but nobody
-            seemed to like meeting a woman traveling alone. The worst was
-            the creepy Maryland motel. I needed to sleep but I couldn't. I kept
-            imagining the owner was going to slip in my room with a master key.
+          I thought an 18-hour drive sounded like an adventure, but nobody
+          seemed to like meeting a woman traveling alone. The worst was
+          the creepy Maryland motel. I needed to sleep but I couldn't. I kept
+          imagining the owner was going to slip in my room with a master key.
 
-          </span>
+        </span>
         }
-      />
+                                                    />
     </p>
   </section>,
   <section>
