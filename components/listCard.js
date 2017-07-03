@@ -7,7 +7,7 @@ import * as actions from '../actions'
 import jsPlumb from 'jsPlumb'
 
 var j = jsPlumb.jsPlumb
-j.setContainer(document.getElementById("article"))
+j.setContainer(document.getElementById("container"))
 
 var CardData = {}
 
@@ -36,20 +36,19 @@ class _ListCard extends React.Component {
     this.props.onAddCard(this.props.tag)
   }
   componentDidUpdate() {
-    window.setTimeout(function () {
-      j.ready(function() {
-          j.connect({
-              source:"c1-coat-2",
-              target:"c1-coat",
-              endpoint:"Rectangle"
-          });
-      })}, 1000)
+      j.connect({
+        source: 'source-' + this.props.tag,
+        target: 'card-' + this.props.tag,
+        endpoint: "Blank",
+        anchors: [ "Right", //["Perimeter", {shape:"Circle"}],
+                  "Left"]
+      });
   }
   render() {
     var card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
 
     return <span>
-      <span id={this.props.tag}>{ this.list }</span>
+      <span id={'source-' + this.props.tag}>{ this.list }</span>
       { card }
     </span>
 

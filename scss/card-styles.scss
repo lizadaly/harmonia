@@ -1,0 +1,29 @@
+.card {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  width: 30%;
+  right: 5%;
+  padding: 0 0 0 20px;
+  margin-top: -5rem;
+
+  .note {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    line-height: 1em;
+    display: block;
+  }
+}
+
+.chapter p, .current-chapter p {
+//  background-color: rgba(255, 255, 255, .9);
+background: linear-gradient(to right,
+            rgba(255, 255, 255, 1) 60%,
+            rgba(255, 255, 255, 0)
+  );
+}
+
+.jtk-connector { z-index: -1; }

@@ -1,5 +1,6 @@
 @import 'book-styles';
-
+@import 'card-styles';
+ 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
@@ -22,25 +23,10 @@ p {
   display: grid;
 }
 
-.card {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 18px;
-  position: absolute;
-  width: 30%;
-  right: 5%;
-  padding: 0;
-  margin-top: -5rem;
-
-  .note {
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    position: absolute;
-    line-height: 1em;
-    display: block;
-  }
+.strikethrough {
+  text-decoration: line-through;
 }
+
 
 /* Computer UI */
 $computer-margin: 1rem;
