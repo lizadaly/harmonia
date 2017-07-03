@@ -6,8 +6,87 @@ import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, 
 import * as actions from '../actions'
 import ListCard from '../components/listCard'
 
+
+
 export default ({currentSection, inventory, cards}) => {
   const sections = [
+    <section>
+      <h2>February 4, 1980</h2>
+      <p>
+        I was late to my first class, for the job that I needed so badly I'd driven
+        a thousand miles to get here.
+      </p>
+      <p>
+        I dropped my armful of notes on the desk, some of which slid off and fanned
+        out onto the floor. I ignored them. Thirty young women seated in neat
+        rows stared back at me. I brushed my hair out of my face. I was sweating
+        even though I'd jogged across campus  <ListCard expansions={["without a coat"]}
+          tag="c1-coat"
+          card={<span id="c1-coat-2">I didn't own a coat.</span>} />.
+      </p>
+      <p>"Welcome to 19th Century Utopian Literature," I said.</p>
+      <p>"Can't hear you," someone in the back yelled.</p>
+      <p>I repeated myself, a little more confidently. I'd never taught to a room
+        full of other women before. Their <ListCard expansions={["undivided attention"]}
+          tag="c1-women"
+          card={<span>I loved my students at Miami Dade Community College, but let's just
+          say their committment to the material was variable.</span>} /> was disconcerting.</p>
+
+      <p>
+        I <List expansions={[["moved to continue my introduction", "a woman was raising her hand"],
+        ["moved to continue my introduction", "a woman was raising her hand"]]}
+          conjunction="but"
+            tag="c1_question" />.
+
+      </p>
+    </section>,
+    <section>
+      <Map from={inventory.c1_question}
+        to={{
+          introduction: <p>I held up my hand, asking her to hold the question.</p>,
+          hand: <div>
+            <p>Flustered, I called on her and asked her name.</p>
+            <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
+              probably featured on the cover of the school brochure. "What happened to Professor Lynn?"
+            </p>
+            <p>Ah. "I'm afraid <ListCard expansions={["I can't talk about that right now."]}
+              tag="c1-question2"
+              card={<span>Because I had no idea.</span>} />. I'm substituting for him until further notice."
+            </p>
+          </div>
+        }}
+      />
+      <p>
+        "Utopian Literature," I began{inventory.c1_question === "a woman was raising her hand" ? " again" : ""}.
+        "The term was first used as the title of Thomas More's 1561 work,
+        <i>Utopia</i>." Another <List expansions={[["hand shot up"], ["hand shot up, this time in the front row"]]}
+          tag="c1_question3" />.
+      </p>
+    </section>,
+    <section>
+      <p>I could see this was going to be one of those classes. "Yes?" The earnest student in a peasant dress
+        told me I had the wrong date. "Right, sorry, <i>Utopia</i> was 1516. Did Professor Lynn already cover this?"</p>
+      <p>A sea of perfectly permed heads nodded. I looked back down at the notes I'd jotted when I'd gotten
+      the call for an emergency subtitute position.</p>
+      <blockquote>
+        <ol>
+          <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopia Fiction</li>
+          <li className={inventory.c1_correction2 ? "strikethrough" : ""}>British fiction, 1820-1860</li>
+          <li>American fiction, 1830-1900</li>
+          <li>Early science fiction</li>
+          <li>Influences</li>
+        </ol>
+      </blockquote>
+      <p>"Okay, thanks, <List expansions={[["I'll make a note"], ["I'll make a note of where we left off"]]}
+        tag="c1_correction" />."</p>
+    </section>,
+    <section>
+      <p>"Did he cover <List expansions={[["British fiction"], ["British fiction"]]}
+        tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
+      </section>,
+    <section>
+      <p>"Right, so, American Utopian fiction."</p>
+    </section>,
   <section>
     <h2>February 3, 1980</h2>
 
@@ -23,7 +102,7 @@ export default ({currentSection, inventory, cards}) => {
       couple trees.
       I pulled up to the first real building I saw, yanked on
       the parking brake, and leaned back to take my <ListCard
-        expansions={[["first deep breath."], ["first deep breath on this long trip."]]}
+        expansions={["first deep breath."]}
         tag="c1-notebook"
         card={<span>
           I thought an 18-hour drive sounded like an adventure, but nobody

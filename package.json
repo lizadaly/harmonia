@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/lizadaly/windrift-starter#readme",
   "dependencies": {
+    "jsplumb": "^2.4.3",
     "windrift": "^1.0.2"
   },
   "devDependencies": {
