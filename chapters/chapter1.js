@@ -13,21 +13,25 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <h2>November 4, 1980</h2>
       <p>
-        I was late to my first class, for the job that I'd needed so badly I'd driven
-        a thousand miles from home.
+        I needed this job so badly I'd driven a thousand miles, and now I was late to my first class.
       </p>
       <p>
-        I dropped my armful of notes on the desk, some of which slid off and fanned
-        out onto the floor. I ignored them. Thirty young women seated in neat
-        rows stared back at me. I brushed my hair out of my face. I was sweating
+        Thirty young women, seated in neat
+        rows, stared back at me.
+        I dropped my armful of papers on the lecturn. Half of them slid off and fanned
+        out onto the floor. I brushed my hair out of my face. I was sweating
         even though I'd jogged across campus  <ListCard expansions={["without a coat"]}
           tag="c1-coat"
           card={<span>I didn't own a coat.</span>} />.
       </p>
-      <p>"Welcome to 19th Century Utopian Literature," I said.</p>
+      <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
       <p>"Can't hear you," someone in the back yelled.</p>
-      <p>I repeated myself, a little more confidently. I'd never taught to a room
-        full of other women before. Their <ListCard expansions={["undivided attention"]}
+      <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
+        My name is <ListCard expansions={["Miriam Kemper"]}
+          tag="c1-name"
+          card={<span>Not <i>Professor Kemper</i>, I was just a post-doc.</span>} />."
+        I'd never taught a room
+        full of women before. Their <ListCard expansions={["undivided attention"]}
           tag="c1-women"
           card={<span>I loved my students at Miami Dade Community College, but let's just
           say their committment to the material was variable.</span>} /> was disconcerting.</p>
@@ -49,38 +53,43 @@ export default ({currentSection, inventory, cards}) => {
             <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
               probably featured on the cover of the school brochure. "What happened to Professor Lynn?"
             </p>
-            <p>Ah. "I'm afraid <ListCard expansions={["I can't talk about that right now."]}
-              tag="c1-question2"
-              card={<span>Because I had no idea.</span>} />. I'm substituting for him until further notice."
+            <p>Ah. "I'm substituting for him until further notice.
+              I'm afraid <ListCard expansions={["I can't disclose further details"]}
+                tag="c1-question2"
+                card={<span>Because I had no idea.</span>} />. "
             </p>
           </div>
         }}
       />
       <p>
         "Utopian Literature," I began{inventory.c1_question === "a woman was raising her hand" ? " again" : ""}.
-        "The term was first used as the title of Thomas More's 1561 work,
-        <i>Utopia</i>." Another <List expansions={[["hand shot up"], ["hand shot up, this time in the front row"]]}
+        "The term was first used as the title of Thomas More's 1561 work, <i>Utopia</i>."
+        Another <List expansions={[["hand shot up"], ["hand shot up, this time in the front row"]]}
           tag="c1_question3" />.
       </p>
     </section>,
     <section>
-      <p>I could see this was going to be one of those classes. "Yes?" The earnest student in a peasant dress
-        told me I had the wrong date. "Right, sorry, <i>Utopia</i> was 1516. Did Professor Lynn already cover this?"</p>
-      <p>A sea of perfectly permed heads nodded. I looked back down at the notes I'd jotted when I'd gotten
-      the call for an emergency subtitute position.</p>
+      <p>I could see this was going to be one of those classes. "Yes?"</p>
+      <p>"It says in my notes that <i>Utopia</i> was actually published in <i>1516</i>."</p>
+      <p>"Right, sorry." I fanned through my notes, stalling for time.
+      "Did Professor Lynn already cover this material?"</p>
+      <p>A sea of perfectly permed heads nodded. I looked back down at the syllabus I'd jotted
+        down when I'd gotten
+      the call for an emergency subtitute position:</p>
       <blockquote>
         <ol>
-          <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopia Fiction</li>
-          <li className={inventory.c1_correction2 ? "strikethrough" : ""}>British fiction, 1820-1860</li>
+          <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopian Fiction</li>
+          <li className={inventory.c1_correction2 ? "strikethrough" : ""}>British works, 1820-1860</li>
           <li>American fiction, 1830-1900</li>
           <li>Early science fiction</li>
-          <li>Influences</li>
+          <li>Later influences</li>
         </ol>
       </blockquote>
-      <p>"Okay, thanks, <List expansions={[["I'll make a note"], ["I'll make a note of where we left off"]]}
+      <p>"Okay, thanks, <List expansions={[["I'll make a note"], ["I'll make a note"]]}
         tag="c1_correction" />."</p>
     </section>,
     <section>
+      <p>I struck a line through the first lecture. No matter how bad things get, I always have a pen.</p>
       <p>"Did he cover <List expansions={[["British fiction"], ["British fiction"]]}
         tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
       </section>,

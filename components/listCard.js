@@ -36,19 +36,36 @@ class _ListCard extends React.Component {
     this.props.onAddCard(this.props.tag)
   }
   componentDidUpdate() {
+    let sourceId = 'source-' + this.props.tag
+    let targetId = 'card-' + this.props.tag
+    let source = document.getElementById(sourceId)
+    let target = document.getElementById(targetId)
+
+    if (source && target) {
+      let width = document.documentElement.clientWidth
+      let srcWidth = source.getBoundingClientRect().right
+      let anchors = ["Left", "Right"]
+
+      if (srcWidth < width / 2) {
+        target.classList.add('left')
+      }
+      else {
+        target.classList.add('right')
+        anchors = ["Right", "Left"]
+      }
       j.connect({
-        source: 'source-' + this.props.tag,
-        target: 'card-' + this.props.tag,
+        source: sourceId,
+        target: targetId,
         endpoint: "Blank",
-        anchors: [ "Right", //["Perimeter", {shape:"Circle"}],
-                  "Left"]
-      });
+        anchors: anchors
+      })
+    }
   }
   render() {
-    var card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
-
+    let card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
+    // Stick the element in a stupid nobr so jsPlumb doesn't get confused about the bounding box
     return <span>
-      <span className="link-source" id={'source-' + this.props.tag}>{ this.list }</span>
+      <nobr className="link-source" id={'source-' + this.props.tag}>{ this.list }</nobr>
       { card }
     </span>
 

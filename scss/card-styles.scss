@@ -1,35 +1,34 @@
 .card {
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
-  width: 30%;
-  right: 5%;
-  padding: 0 0 0 20px;
   margin-top: -5rem;
+  width: 18%;
 
-  .note {
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    position: absolute;
-    line-height: 1em;
-    display: block;
+  &.right {
+    right: 2%;
+    text-align: left;
+    padding: 0 0 0 20px;
+  }
+  &.left {
+    left: 2%;
+    text-align: right;
+    padding: 0 20px 0 0;
   }
 }
 
 .chapter p, .current-chapter p {
-//  background-color: rgba(255, 255, 255, .9);
-background: linear-gradient(to right,
-            rgba(255, 255, 255, 1) 60%,
+  background: radial-gradient(ellipse at center,
+            rgba(255, 255, 255, .8) 60%,
             rgba(255, 255, 255, 0)
   );
 }
 
+
 .jtk-connector {
   z-index: -1;
-  filter: url(#filter);
-  -webkit-filter: url(#filter);
+  filter: url(#filter-line-wiggle);
+  -webkit-filter: url(#filter-line-wiggle);
 }
 
 .link-source span span {

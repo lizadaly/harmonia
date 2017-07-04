@@ -1,6 +1,9 @@
 @import 'book-styles';
 @import 'card-styles';
- 
+
+.container {
+  margin: 4em auto;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
@@ -13,7 +16,8 @@ p {
 
 .current-section > section,
 .section > section {
-  width: 60%;
+  width: 50%;
+  margin: auto;
 /*  display: none; */
 }
 
