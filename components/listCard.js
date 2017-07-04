@@ -48,7 +48,7 @@ class _ListCard extends React.Component {
     var card = <Card text={CardData[this.props.tag]} tag={this.props.tag} />
 
     return <span>
-      <span id={'source-' + this.props.tag}>{ this.list }</span>
+      <span className="link-source" id={'source-' + this.props.tag}>{ this.list }</span>
       { card }
     </span>
 

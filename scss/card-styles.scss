@@ -26,4 +26,15 @@ background: linear-gradient(to right,
   );
 }
 
-.jtk-connector { z-index: -1; }
+.jtk-connector {
+  z-index: -1;
+  filter: url(#filter);
+  -webkit-filter: url(#filter);
+}
+
+.link-source span span {
+  background: rgba(255, 255, 0, .2);
+}
+.link-source span span a {
+  background: white;
+}

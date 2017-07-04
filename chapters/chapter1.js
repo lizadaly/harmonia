@@ -11,10 +11,10 @@ import ListCard from '../components/listCard'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <h2>February 4, 1980</h2>
+      <h2>November 4, 1980</h2>
       <p>
-        I was late to my first class, for the job that I needed so badly I'd driven
-        a thousand miles to get here.
+        I was late to my first class, for the job that I'd needed so badly I'd driven
+        a thousand miles from home.
       </p>
       <p>
         I dropped my armful of notes on the desk, some of which slid off and fanned
@@ -22,7 +22,7 @@ export default ({currentSection, inventory, cards}) => {
         rows stared back at me. I brushed my hair out of my face. I was sweating
         even though I'd jogged across campus  <ListCard expansions={["without a coat"]}
           tag="c1-coat"
-          card={<span id="c1-coat-2">I didn't own a coat.</span>} />.
+          card={<span>I didn't own a coat.</span>} />.
       </p>
       <p>"Welcome to 19th Century Utopian Literature," I said.</p>
       <p>"Can't hear you," someone in the back yelled.</p>
