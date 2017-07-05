@@ -70,12 +70,12 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>I could see this was going to be one of those classes. "Yes?"</p>
-      <p>"It says in my notes that <i>Utopia</i> was actually published in <i>1516</i>."</p>
+      <p>"It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
       <p>"Right, sorry." I fanned through my notes, stalling for time.
       "Did Professor Lynn already cover this material?"</p>
       <p>A sea of perfectly permed heads nodded. I looked back down at the syllabus I'd jotted
         down when I'd gotten
-      the call for an emergency subtitute position:</p>
+      the call:</p>
       <blockquote>
         <ol>
           <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopian Fiction</li>
@@ -94,7 +94,8 @@ export default ({currentSection, inventory, cards}) => {
         tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
       </section>,
     <section>
-      <p>"Right, so, American Utopian fiction."</p>
+      <p>"Right, so, that's all set. American Utopian fiction?"</p>
+
     </section>,
   <section>
     <h2>February 3, 1980</h2>

@@ -44,6 +44,25 @@ class _ListCard extends React.Component {
     if (source && target) {
       let width = document.documentElement.clientWidth
       let srcWidth = source.getBoundingClientRect().right
+
+      // Check whether the card overlaps and if so, move it down
+      let cards = document.getElementsByClassName('card')
+      let targetTop = target.getBoundingClientRect().top + window.scrollY
+      let targetBottom = targetTop + target.getBoundingClientRect().height
+
+      for (let card of cards) {
+        let box = card.getBoundingClientRect()
+        if (card != source) {
+          let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
+          if (cardBottom > targetTop && cardBottom < targetBottom) {
+            // Move the target down until it doesn't overlap
+            console.log(card)
+            console.log(cardBottom)
+            target.style.top = (cardBottom + 30) + 'px'
+            target.style.marginTop = 0
+          }
+        }
+      }
       let anchors = ["Left", "Right"]
 
       if (srcWidth < width / 2) {
