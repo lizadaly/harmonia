@@ -18,23 +18,23 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Thirty young women, seated in neat
         rows, stared back at me.
-        I dropped my armful of papers on the lecturn. Half of them slid off and fanned
+        I dropped my armful of papers on the lecturn and most of them slid off and fanned
         out onto the floor. I brushed my hair out of my face. I was sweating
         even though I'd jogged across campus  <ListCard expansions={["without a coat"]}
           tag="c1-coat"
-          card={<span>I didn't own a coat.</span>} />.
+          card={<span>At this point I didn't even own a coat.</span>} />.
       </p>
       <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
-      <p>"Can't hear you," someone in the back yelled.</p>
+      <p>"Can't hear you," said someone in the back.</p>
       <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
         My name is <ListCard expansions={["Miriam Kemper"]}
           tag="c1-name"
           card={<span>Not <i>Professor Kemper</i>, I was just a post-doc.</span>} />."
-        I'd never taught a room
-        full of women before. Their <ListCard expansions={["undivided attention"]}
+        I'd never taught college students before, nor an all-women class.
+        Their <ListCard expansions={["undivided attention"]}
           tag="c1-women"
-          card={<span>I loved my students at Miami Dade Community College, but let's just
-          say their committment to the material was variable.</span>} /> was disconcerting.</p>
+          card={<span>I genuinely liked being a high school substitute, but let's just
+          say student commitment could be "variable."</span>} /> was disconcerting.</p>
 
       <p>
         I <List expansions={[["moved to continue my introduction", "a woman was raising her hand"],
@@ -47,7 +47,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Map from={inventory.c1_question}
         to={{
-          introduction: <p>I held up my hand, asking her to hold the question.</p>,
+          introduction: <p>I nodded to acknowledge her, but continued on:</p>,
           hand: <div>
             <p>Flustered, I called on her and asked her name.</p>
             <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
@@ -71,9 +71,11 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>I could see this was going to be one of those classes. "Yes?"</p>
       <p>"It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
-      <p>"Right, sorry." I fanned through my notes, stalling for time.
+      <p>"<ListCard expansions={["Sorry, sorry."]}
+        tag="c1-sorry"
+        card={<span>I apologize too much.</span>} /> I fanned through my notes, stalling for time.
       "Did Professor Lynn already cover this material?"</p>
-      <p>A sea of perfectly permed heads nodded. I looked back down at the syllabus I'd jotted
+      <p>Many perfectly permed heads nodded. I looked back down at the syllabus I'd jotted
         down when I'd gotten
       the call:</p>
       <blockquote>
@@ -81,7 +83,7 @@ export default ({currentSection, inventory, cards}) => {
           <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopian Fiction</li>
           <li className={inventory.c1_correction2 ? "strikethrough" : ""}>British works, 1820-1860</li>
           <li>American fiction, 1830-1900</li>
-          <li>Early science fiction</li>
+          <li>Early sci-fi</li>
           <li>Later influences</li>
         </ol>
       </blockquote>
@@ -89,12 +91,24 @@ export default ({currentSection, inventory, cards}) => {
         tag="c1_correction" />."</p>
     </section>,
     <section>
-      <p>I struck a line through the first lecture. No matter how bad things get, I always have a pen.</p>
+      <p>I <ListCard expansions={["struck a line"]}
+        tag="c1-line"
+        card={<span>No matter how screwed up my life gets, at least I always have a pen.</span>} /> through
+      the first lecture. </p>
       <p>"Did he cover <List expansions={[["British fiction"], ["British fiction"]]}
         tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
       </section>,
     <section>
       <p>"Right, so, that's all set. American Utopian fiction?"</p>
+      <p>
+        <Map from={inventory.c1_question}
+          to={{
+            introduction: "The woman whose question I'd previously ignored answered: ",
+              hand: "Charlotte spoke up again:"
+          }}/>
+        "We were supposed to start on Belamy this week."
+      </p>
+
 
     </section>,
   <section>
