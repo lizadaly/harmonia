@@ -16,7 +16,7 @@ const topics = {
 
 export default ({currentSection, inventory}) => {
   const sections = [
-//    <Computer inventory={inventory} topic={topics.sleeping} />,
+    <Computer inventory={inventory} topic={topics.sleeping} />,
     <section>
       <p>"Hello, what are you doing?"</p>
       <p>I was startled by the unexpected voice guiltily pulled back from the computer. A <List

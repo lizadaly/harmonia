@@ -108,54 +108,35 @@ export default ({currentSection, inventory, cards}) => {
           }}/>
         "We were supposed to start on Belamy this week."
       </p>
-
-
+      <p>"Terrific, <Map from={inventory.c1_question}
+        to={{hand: "Charlotte, "}}/> thank you. Could you summarize the story for us?"</p>
+      <p>
+        She looked pleased, and I was finally able to lean back, let the students lead the
+        discussion from here, and reflect on these <List expansions={[["last crazy twenty-four hours"], ["last crazy twenty-four hours"]]}
+                                                     tag="c1-hours"/>.
+      </p>
     </section>,
-  <section>
-    <h2>February 3, 1980</h2>
+    <section>
+      <hr />
 
-    <p>It was nearly midnight when I finally found the exit off the highway. The snow had
-      gotten worse—I'd almost missed the sign for the college—and the windshield wipers were
-      flapping so aggressively I thought they'd fly off. I've driven in some pretty torrential
-      rainstorms, even hurricanes, down in Miami. Blinding snow in a black New England night
-      was far worse.
-    </p>
-    <p>
-      The road to campus is barely paved, and on this night it hadn't been plowed. My
-      old beater car was fishtailing everywhere and I nearly sideswiped a
-      couple trees.
-      I pulled up to the first real building I saw, yanked on
-      the parking brake, and leaned back to take my <ListCard
-        expansions={["first deep breath."]}
-        tag="c1-notebook"
-        card={<span>
-          I thought an 18-hour drive sounded like an adventure, but nobody
-          seemed to like meeting a woman traveling alone. The worst was
-          the creepy Maryland motel. I needed to sleep but I couldn't. I kept
-          imagining the owner was going to slip in my room with a master key.
-
-        </span>
-        }
-                                                    />
-    </p>
-  </section>,
-  <section>
-    <p>
-      I wanted to be here hours ago, enough time to check in with the dean's office
-      and at least figure out where I was supposed to be living. It was midnight now,
-      and St. Isidore College
-      was dark and sleepy.
-    </p>
-    <p>
-      I knew if I just kept sitting there I'd slowly turn to ice, so
-      I grabbed this notebook, my purse, and my winter coat (which I noticed still had the tags on it).
-      I reached for the <List expansions={[["door handle"],
-      ["door handle and stepped out into the lot, my feet crunching on snow for the first time in my life"]]} tag="c1-carhandle" />.
-    </p>
-  </section>,
-
-  <section>
-    <p>
+      <p>It was nearly midnight when I finally found the exit off the highway. The snow had
+        gotten worse—I'd almost missed the sign for the college—and the windshield wipers were
+        flapping so aggressively I thought they'd fly off. I've driven in some pretty torrential
+        rainstorms, even hurricanes, down in Miami. Blinding snow in a black New England night
+        was far worse.
+      </p>
+      <p>
+        The road to campus is barely paved, and on this night the early winter
+        snow turned it into a slippery deathtrap. My
+        old beater car was fishtailing everywhere and I nearly sideswiped a
+      couple trees. I parked in the first lot I found.</p>
+      <p>
+        I'd wanted to arrive hours earlier, to check in with the dean's office
+        and at least figure out where I was supposed to be living. Instead it was
+        late and St. Isidore College
+        was dark and sleepy.
+      </p>
+      <p>
       By dumb luck, I'd stopped in front of the English literature building—my department. Even better,&nbsp;
       <List
         expansions={[["the door was unlocked"], ["the door was unlocked and no alarms rang as I stepped into the building"]]}
@@ -203,8 +184,8 @@ export default ({currentSection, inventory, cards}) => {
           faster than anybody she'd taught. This machine was different, though.
         </span>}
                                                                                              />.
-      It had a <List expansions={[["brightly lit screen"], ["brightly lit screen"]]} tag="c1_screen" />
-      and instead of a keyboard, there was a <List expansions={[["small box"], ["small box topped with a round button"]]}
+      It had a <List expansions={[["brightly lit screen"], ["brightly lit screen"]]} tag="c1_screen" /> and
+      instead of a keyboard, there was a <List expansions={[["small box"], ["small box topped with a round button"]]}
         tag="c1_mouse"
         nextUnit={null} />, tethered to a cord
       disappearing into the back of the machine.
