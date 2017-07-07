@@ -88,7 +88,7 @@ export default ({currentSection, inventory, cards}) => {
       "_any": <div>
         <p>Curious, I picked up the box; there was a wheel underneath. I turned it back over in my hand and
           pressed the button. The
-          computer emitted a <ListCard expansions={["loud beep"]} tag="c1-beep" card={<span>I admit I jumped.</span>} />.
+          computer emitted a <ListCard expansions={["sudden loud beep"]} tag="c1-beep" card={<span>Okay, I jumped.</span>} />.
           The display wiped slowly from top to bottom and
           a <List expansions={[["complex interface"], ["complex interface"]]}
               tag="c1-display" nextUnit="chapter" /> appeared in its place:</p>
