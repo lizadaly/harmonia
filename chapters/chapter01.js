@@ -33,7 +33,7 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>When I picture them now I see rows of squinting brick facades, judging my tardiness.</span>} />.
       </p>
       <p>
-      I parked in the first lot I found, and in a stroke of good luck it faced my own department, English literature.
+      I parked in the first lot I found, and in a stroke of good luck it faced the English literature department.
       I unclenched my hands from the steering wheel—they'd been in a death grip since Connecticut—and hurried up
       to the entryway. <List
         expansions={[["The front door was unlocked"], ["The front door was unlocked and no alarms rang as I stepped into the building"]]}
@@ -88,7 +88,7 @@ export default ({currentSection, inventory, cards}) => {
       "_any": <div>
         <p>Curious, I picked up the box; there was a wheel underneath. I turned it back over in my hand and
           pressed the button. The
-          computer emitted a <ListCard expansions={["sudden loud beep"]} tag="c1-beep" card={<span>Okay, I jumped.</span>} />.
+          computer emitted a <ListCard expansions={["harsh loud beep"]} tag="c1-beep" card={<span>Okay, I jumped.</span>} />.
           The display wiped slowly from top to bottom and
           a <List expansions={[["complex interface"], ["complex interface"]]}
               tag="c1-display" nextUnit="chapter" /> appeared in its place:</p>

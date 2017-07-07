@@ -1,6 +1,6 @@
 const React = require('react')
 import { connect } from 'react-redux'
-import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
+import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection, showNextSection } from 'windrift'
 
 import jsxToString from 'jsx-to-string'
 
