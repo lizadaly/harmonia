@@ -1,11 +1,13 @@
 const React = require('react')
+import PropTypes from 'prop-types'
+
 import { connect } from 'react-redux'
-import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection, showNextSection } from 'windrift'
+import { showNextSection } from 'windrift'
 
 import jsxToString from 'jsx-to-string'
 
 
-export class Computer extends React.Component {
+class _Computer extends React.Component {
 
   constructor(props) {
     super(props)
@@ -24,6 +26,7 @@ export class Computer extends React.Component {
   changeDoc(id) {
     // Find a matching doc
     let doc = this.props.topic.docs.filter((d) => d.id === id)[0]
+    this.props.onCompleteSession()
     this.setState({
       doc: doc
     })
@@ -44,11 +47,23 @@ export class Computer extends React.Component {
     </section>
   }
 }
+_Computer.propTypes = {
+  topic: PropTypes.object.isRequired
+}
+
+const Computer = connect(
+  (state) => { return { } },
+  {
+    onCompleteSession: showNextSection
+  }
+)(_Computer)
+
+export default Computer
 
 const DocsList = ({docs, onChange}) => {
   return <ul>{docs.map((doc) => <li key={doc.title}><a onClick={() => onChange(doc.id)}>{doc.title}</a></li>)}</ul>
 }
-4
+
 class _Doc extends React.Component {
   constructor(props) {
     super(props)
