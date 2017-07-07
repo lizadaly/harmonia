@@ -36,6 +36,7 @@ class _ListCard extends React.Component {
     CardData[this.props.tag] = this.props.card
     this.props.onAddCard(this.props.tag)
   }
+
   // TODO plumb lines get left behind when going back
   // TODO call a re-render on the SVG after a window resize event
   componentDidUpdate() {
@@ -53,15 +54,21 @@ class _ListCard extends React.Component {
       let targetTop = target.getBoundingClientRect().top + window.scrollY
       let targetBottom = targetTop + target.getBoundingClientRect().height
 
+      console.log("Evaling target ", target)
       for (let card of cards) {
-        let box = card.getBoundingClientRect()
-        if (card != source) {
+        console.log(card.id, target.id)
+
+        if (card.id != target.id) {
+          console.log("Checking card " ,card)
+          let box = card.getBoundingClientRect()
           let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
           if (cardBottom > targetTop && cardBottom < targetBottom) {
             // Move the target down until it doesn't overlap
             target.style.top = (cardBottom + 30) + 'px'
             target.style.marginTop = 0
           }
+          // Either way, probably safe to break here
+          break
         }
       }
       let anchors = ["Left", "Right"]
@@ -107,9 +114,12 @@ _ListCard.propTypes = {
 _ListCard.defaultProps = {
   nextUnit: "none"
 }
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps, added=undefined) => {
+  if (state.cards.hasOwnProperty(ownProps.tag)) {
+    added = state.cards[ownProps.tag]
+  }
   return {
-    cards: state.cards
+    added
   }
 }
 
