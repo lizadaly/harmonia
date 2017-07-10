@@ -129,8 +129,8 @@ _ListCard.defaultProps = {
 }
 
 const mapStateToProps = (state, ownProps, added=false) => {
-  if (state.cards.present.hasOwnProperty(ownProps.tag)) {
-    added = state.cards.present[ownProps.tag]
+  if (state.inventory.present.hasOwnProperty(ownProps.tag)) {
+    added = true
   }
   return {
     added: added
