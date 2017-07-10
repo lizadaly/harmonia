@@ -10,10 +10,8 @@ import jsPlumb from 'jsPlumb'
 var j = jsPlumb.jsPlumb
 j.setContainer(document.getElementById("container"))
 
-var CardData = {}
-
-const Card = ({tag, text}) => {
-  if (text) {
+const Card = ({tag, text, visible}) => {
+  if (visible) {
     return <span className="card" id={"card-" + tag}>
       { text }
     </span>
@@ -33,55 +31,33 @@ class _ListCard extends React.Component {
     }
   }
   onComplete() {
-    CardData[this.props.tag] = this.props.card
     this.props.onAddCard(this.props.tag)
   }
 
   // TODO plumb lines get left behind when going back
   // TODO call a re-render on the SVG after a window resize event
   componentDidUpdate() {
-    let sourceId = 'source-' + this.props.tag
-    let targetId = 'card-' + this.props.tag
-    let source = document.getElementById(sourceId)
-    let target = document.getElementById(targetId)
+    var sourceId = 'source-' + this.props.tag
+    var targetId = 'card-' + this.props.tag
+    var source = document.getElementById(sourceId)
+    var target = document.getElementById(targetId)
 
-    if (source && target) {
-      let width = document.documentElement.clientWidth
-      let srcWidth = source.getBoundingClientRect().right
+    if (source && target) { // Gross
+      var pos = this.positionTargetX(source)
+      var anchors = ["Right", "Left"]
 
-      // Check whether the card overlaps and if so, move it down
-      let cards = document.getElementsByClassName('card')
-      let targetTop = target.getBoundingClientRect().top + window.scrollY
-      let targetBottom = targetTop + target.getBoundingClientRect().height
-
-      console.log("Evaling target ", target)
-      for (let card of cards) {
-        console.log(card.id, target.id)
-
-        if (card.id != target.id) {
-          console.log("Checking card " ,card)
-          let box = card.getBoundingClientRect()
-          let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
-          if (cardBottom > targetTop && cardBottom < targetBottom) {
-            // Move the target down until it doesn't overlap
-            target.style.top = (cardBottom + 30) + 'px'
-            target.style.marginTop = 0
-          }
-          // Either way, probably safe to break here
-          break
-        }
-      }
-      let anchors = ["Left", "Right"]
-
-      if (srcWidth < width / 2) {
-        target.classList.remove('right') // Possible this moved after a render event
-        target.classList.add('left')
-      }
-      else {
+      if (pos === 'right') {
         target.classList.add('right')
         target.classList.remove('left')
-        anchors = ["Right", "Left"]
       }
+      else {
+        target.classList.add('left')
+        target.classList.remove('right')
+        anchors = ["Left", "Right"]
+      }
+
+      this.positionTargetY(source, target)
+
       j.connect({
         source: sourceId,
         target: targetId,
@@ -90,13 +66,50 @@ class _ListCard extends React.Component {
       })
     }
   }
+  positionTargetY(source, target) {
+    // Move the card down if necessary to avoid overlapping other cards
+
+    let cards = document.getElementsByClassName('card')
+    let targetTop = target.getBoundingClientRect().top + window.scrollY
+    let targetBottom = targetTop + target.getBoundingClientRect().height
+
+    for (let card of cards) {
+
+      if (card.id != target.id) {
+        let box = card.getBoundingClientRect()
+        let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
+        if (cardBottom > targetTop && cardBottom < targetBottom) {
+          // Move the target down until it doesn't overlap
+          target.style.top = (cardBottom + 30) + 'px'
+          target.style.marginTop = 0
+        }
+        // Either way, probably safe to break here
+        break
+      }
+    }
+  }
+
+  positionTargetX(source) {
+    // Position the card in the right or left margin relative to the source link and the current viewport.
+    // Returns the left/right position of the card
+    let width = document.documentElement.clientWidth
+    let srcWidth = source.getBoundingClientRect().right
+
+    if (srcWidth < width / 2) {
+      return 'left'
+    }
+    else {
+      return 'right'
+    }
+  }
+
   render() {
     // Stick the element in a stupid nobr so jsPlumb doesn't get confused about the bounding box
     return <span>
       <nobr className="link-source" id={'source-' + this.props.tag}>
         <List {...this.props} expansions={this.expansions} onComplete={this.onComplete} />
       </nobr>
-      <Card text={CardData[this.props.tag]} tag={this.props.tag} />
+      <Card text={this.props.card} tag={this.props.tag} visible={this.props.added} />
     </span>
 
   }
@@ -114,12 +127,13 @@ _ListCard.propTypes = {
 _ListCard.defaultProps = {
   nextUnit: "none"
 }
-const mapStateToProps = (state, ownProps, added=undefined) => {
-  if (state.cards.hasOwnProperty(ownProps.tag)) {
-    added = state.cards[ownProps.tag]
+
+const mapStateToProps = (state, ownProps, added=false) => {
+  if (state.cards.present.hasOwnProperty(ownProps.tag)) {
+    added = state.cards.present[ownProps.tag]
   }
   return {
-    added
+    added: added
   }
 }
 

@@ -1,13 +1,16 @@
-import { combineReducers } from 'redux'
+import undoable from 'redux-undo'
+
 import { CARD_CREATED } from "./actions"
 
-export const cards = (state=[], action) => {
+const _cards = (state={}, action) => {
   switch (action.type) {
     case CARD_CREATED:
-      var card = {}
+      let card = {}
       card[action.tag] = true
       return Object.assign({}, state, card)
     default:
       return state
   }
 }
+
+export const cards = undoable(_cards)
