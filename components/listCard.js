@@ -9,6 +9,9 @@ import jsPlumb from 'jsPlumb'
 
 var j = jsPlumb.jsPlumb
 j.setContainer(document.getElementById("container"))
+j.importDefaults({
+  ConnectionsDetachable: false
+})
 
 const Card = ({tag, text, visible}) => {
   if (visible) {
@@ -29,6 +32,7 @@ class _ListCard extends React.Component {
     if (props.expansions.length === 1) {
       this.expansions.push(props.expansions[0])
     }
+
   }
   onComplete() {
     this.props.onAddCard(this.props.tag)
@@ -36,6 +40,7 @@ class _ListCard extends React.Component {
 
   // TODO plumb lines get left behind when going back
   // TODO call a re-render on the SVG after a window resize event
+
   componentDidUpdate() {
     var sourceId = 'source-' + this.props.tag
     var targetId = 'card-' + this.props.tag
@@ -64,6 +69,9 @@ class _ListCard extends React.Component {
         endpoint: "Blank",
         anchors: anchors
       })
+    }
+    else {
+      j.deleteConnectionsForElement(sourceId)
     }
   }
   positionTargetY(source, target) {
