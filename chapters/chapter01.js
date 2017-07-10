@@ -43,7 +43,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
     professors and adjuncts. I recognized a few names, but I was hunting for one door in particular. I found it at the
-  end of the row, <ListCard expansions={['"Professor Jeffrey Lynn"']}
+    end of the row, <ListCard expansions={['"Professor Jeffrey Lynn"']}
     tag="c1-scholar"
         card={<span>
           Lynn's area of scholarship was 19th century mysticism. Mine was Civil War-era pre-feminist
@@ -61,6 +61,7 @@ export default ({currentSection, inventory, cards}) => {
       His desk was a disaster, but a small worktable by the doorway had just a single stack of papers
       with my class's syllabus on top. I set it aside and <ListCard expansions={["started to flip through the rest:"]}
         tag="c1-pile"
+        nextUnit="chapter"
         card={<span>Look if he didn't want his stuff read, he shouldn't have gone AWOL.</span>} />
 
     </p>

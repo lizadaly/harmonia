@@ -32,47 +32,52 @@ class _ListCard extends React.Component {
     if (props.expansions.length === 1) {
       this.expansions.push(props.expansions[0])
     }
-
+    this.onRender()
   }
   onComplete() {
     this.props.onAddCard(this.props.tag)
   }
 
-  // TODO plumb lines get left behind when going back
-  // TODO call a re-render on the SVG after a window resize event
+  onRender() {
+    window.requestAnimationFrame(() => {
+      // console.log("Updating ", this.props.tag)
+      var sourceId = 'source-' + this.props.tag
+      var targetId = 'card-' + this.props.tag
+      var source = document.getElementById(sourceId)
+      var target = document.getElementById(targetId)
 
-  componentDidUpdate() {
-    var sourceId = 'source-' + this.props.tag
-    var targetId = 'card-' + this.props.tag
-    var source = document.getElementById(sourceId)
-    var target = document.getElementById(targetId)
+      if (source && target) { // Gross
+        var pos = this.positionTargetX(source)
+        var anchors = ["Right", "Left"]
 
-    if (source && target) { // Gross
-      var pos = this.positionTargetX(source)
-      var anchors = ["Right", "Left"]
+        if (pos === 'right') {
+          target.classList.add('right')
+          target.classList.remove('left')
+        }
+        else {
+          target.classList.add('left')
+          target.classList.remove('right')
+          anchors = ["Left", "Right"]
+        }
 
-      if (pos === 'right') {
-        target.classList.add('right')
-        target.classList.remove('left')
+        this.positionTargetY(source, target)
+
+        j.connect({
+          source: sourceId,
+          target: targetId,
+          endpoint: "Blank",
+          anchors: anchors
+        })
       }
       else {
-        target.classList.add('left')
-        target.classList.remove('right')
-        anchors = ["Left", "Right"]
+        j.deleteConnectionsForElement(sourceId)
       }
+    })
+  }
 
-      this.positionTargetY(source, target)
-
-      j.connect({
-        source: sourceId,
-        target: targetId,
-        endpoint: "Blank",
-        anchors: anchors
-      })
-    }
-    else {
-      j.deleteConnectionsForElement(sourceId)
-    }
+  // TODO call a re-render on the SVG after a window resize event
+  componentDidUpdate() {
+    this.onRender()
   }
   positionTargetY(source, target) {
     // Move the card down if necessary to avoid overlapping other cards

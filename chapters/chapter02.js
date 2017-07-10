@@ -1,22 +1,20 @@
 const React = require('react')
 import { connect } from 'react-redux'
 import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
-import Computer  from '../components/computer'
+import Reader  from '../components/reader'
 import ListCard from '../components/listCard'
 
 import { docs } from '../docs'
 
 const topics = {
-  sleeping: {
-    label: "sleeping or waking",
-    terms: ["sleep",  "overslept", "slept", "wake", "awoken", "unconscious"],
+  intro: {
     docs: [docs.bellamy1, docs.age1]
   }
 }
 
 export default ({currentSection, inventory}) => {
   const sections = [
-    <Computer inventory={inventory} topic={topics.sleeping} />,
+    <Reader inventory={inventory} topic={topics.intro} />,
     <section>
       <p>The computer was abruptly shut off, and I looked down to see a finger on the power button.
         "Excuse me," a woman said. "What are you doing?"</p>

@@ -7,7 +7,7 @@ import { showNextSection } from 'windrift'
 import jsxToString from 'jsx-to-string'
 
 
-class _Computer extends React.Component {
+class _Reader extends React.Component {
 
   constructor(props) {
     super(props)
@@ -32,12 +32,8 @@ class _Computer extends React.Component {
     })
   }
   render () {
-    return <section className="computer">
-      <header>
-        <SearchBar topic={this.props.topic} />
-        <Help toggleModal={this.toggleModal}/>
-      </header>
-      <Doc doc={this.state.doc} topic={this.props.topic} modal={this.state.modal}/>
+    return <section className="reader">
+      <Doc doc={this.state.doc} modal={this.state.modal}/>
       <footer>
         <h4>Other documents in this collection:</h4>
         <DocsList onChange={this.changeDoc} docs={this.props.topic.docs.filter((doc) =>
@@ -47,18 +43,18 @@ class _Computer extends React.Component {
     </section>
   }
 }
-_Computer.propTypes = {
+_Reader.propTypes = {
   topic: PropTypes.object.isRequired
 }
 
-const Computer = connect(
+const Reader = connect(
   (state) => { return { } },
   {
     onCompleteSession: showNextSection
   }
-)(_Computer)
+)(_Reader)
 
-export default Computer
+export default Reader
 
 const DocsList = ({docs, onChange}) => {
   return <ul>{docs.map((doc) => <li key={doc.title}><a onClick={() => onChange(doc.id)}>{doc.title}</a></li>)}</ul>
@@ -87,14 +83,11 @@ class _Doc extends React.Component {
   }
   render() {
     return <div className="doc">
-      <div className={'help-modal ' + this.props.modal}>
-        This is the help text
-      </div>
       <header>
         <h4>{this.props.doc.title} by {this.props.doc.author} ({this.props.doc.year})</h4>
       </header>
 
-      <div className="reader">
+      <div className="reader-container">
         <Pagination dir="prev" page={this.state.page} changePage={() => this.changePage('prev')}/>
         <div className={'pages ' + this.props.doc.id}>
           <div className="recto">{this.props.doc.page}</div>
@@ -122,17 +115,6 @@ const SearchBar = ({topic}) => {
   return <h6 className="search-bar">Current topic: <span className="phrase">{topic.label}</span></h6>
 }
 
-class Help extends React.Component {
-  constructor(props) {
-    super(props)
-
-  }
-  render() {
-    return <div className="search-help">
-      <h6><a onClick={this.props.toggleModal}>Help</a></h6>
-    </div>
-  }
-}
 
 class Article extends React.Component {
   constructor(props) {
@@ -141,9 +123,6 @@ class Article extends React.Component {
 
   render() {
     var text = jsxToString(this.props.text[this.props.page])
-    for (var term of this.props.topic.terms) {
-      text = text.split(term).join('<span class="phrase">' + term + '</span>')
-    }
     return <article className="article" dangerouslySetInnerHTML={{__html: text}}></article>
   }
 }

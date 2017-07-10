@@ -21,8 +21,8 @@ p {
 /*  display: none; */
 }
 
-.current-section > .computer,
-.section > .computer {
+.current-section > .reader,
+.section > .reader {
   width: 100%;
   display: grid;
 }
@@ -30,17 +30,17 @@ p {
 .strikethrough {
   text-decoration: line-through;
 }
+ 
 
-
-/* Computer UI */
-$computer-margin: 1rem;
+/* Reader UI */
+$reader-margin: 1rem;
 $highlight: lightyellow;
 $page-divider: rgb(200,200,200);
 
 
-.computer {
+.reader {
 
-  padding: $computer-margin;
+  padding: $reader-margin;
 
 
   & > header {
@@ -86,7 +86,7 @@ $page-divider: rgb(200,200,200);
         font-size: 20px;
       }
     }
-    .reader {
+    .reader-container {
       display: flex;
       .prev, .next {
         min-height: 100%;
@@ -96,7 +96,7 @@ $page-divider: rgb(200,200,200);
           background: $highlight;
         }
         padding: 1rem;
-        margin: $computer-margin;
+        margin: $reader-margin;
         background: radial-gradient(ellipse farthest-corner at 10% 10%,
                                           rgba(0, 10, 10, .05) 0%,
                                           rgba(200, 200, 210, .8) 100%);
