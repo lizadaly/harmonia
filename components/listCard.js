@@ -13,9 +13,13 @@ j.importDefaults({
   ConnectionsDetachable: false
 })
 
-const Card = ({tag, text, visible}) => {
+const Card = ({tag, text, visible, author, forceDir}) => {
   if (visible) {
-    return <span className="card" id={"card-" + tag}>
+    let cls = 'card ' + author
+    if (forceDir) {
+      cls += ' force-' + forceDir
+    }
+    return <span className={cls} id={"card-" + tag}>
       { text }
     </span>
   }
@@ -34,6 +38,7 @@ class _ListCard extends React.Component {
     }
     this.onRender()
   }
+
   onComplete() {
     this.props.onAddCard(this.props.tag)
   }
@@ -54,10 +59,15 @@ class _ListCard extends React.Component {
           target.classList.add('right')
           target.classList.remove('left')
         }
+
         else {
           target.classList.add('left')
           target.classList.remove('right')
           anchors = ["Left", "Right"]
+        }
+
+        if (this.props.forceDir === 'down') {
+          anchors = ["Bottom", "Top"]
         }
 
         this.positionTargetY(source, target)
@@ -122,7 +132,11 @@ class _ListCard extends React.Component {
       <nobr className="link-source" id={'source-' + this.props.tag}>
         <List {...this.props} expansions={this.expansions} onComplete={this.onComplete} />
       </nobr>
-      <Card text={this.props.card} tag={this.props.tag} visible={this.props.added} />
+      <Card text={this.props.card}
+            tag={this.props.tag}
+            visible={this.props.added}
+            author={this.props.author}
+            forceDir={this.props.forceDir}/>
     </span>
 
   }
@@ -135,10 +149,13 @@ _ListCard.propTypes = {
   currentExpansion: PropTypes.number,
   conjunction: PropTypes.string,
   persistLast: PropTypes.bool,
-  onLoad: PropTypes.func
+  onLoad: PropTypes.func,
+  author: PropTypes.string,
+  forceDir: PropTypes.string
 }
 _ListCard.defaultProps = {
-  nextUnit: "none"
+  nextUnit: "none",
+  author: "main"
 }
 
 const mapStateToProps = (state, ownProps, added=false) => {

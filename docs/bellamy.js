@@ -1,4 +1,5 @@
 const React = require('react')
+import ListCard from '../components/listCard'
 
 const bellamy = {
   bellamy1: [
@@ -7,7 +8,15 @@ const bellamy = {
           There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
         </p>
         <p>
-          "You have just been roused from a deep sleep, or, more properly, trance. May I ask you when you went to sleep?"
+          "You have just been roused from a <ListCard author="lynn"
+            tag="bel1-sleep"
+            expansions={["deep sleep"]}
+            card={<span>This theme of sleeping and
+            reawakening will occur frequently. <ListCard tag="bel1-card"
+                forceDir="down"
+                expansions={["Remind students!!"]}
+                card={<span>This was Lynn's note, not one of mine.</span>} /> </span>}
+          /> or, more properly, trance. May I ask you when you went to sleep?"
         </p>
         <p>
         "Why, last evening, of course, at about ten o'clock. I left my man Sawyer orders to call me at nine o'clock. What has become of Sawyer?"

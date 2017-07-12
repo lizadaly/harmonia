@@ -1,9 +1,11 @@
 .card {
   font-family: 'Archivo Narrow', sans-serif;
+  color: black;
   font-size: 16px;
   position: absolute;
   margin-top: -5rem;
   width: 18%;
+  min-width: 100px;
 
   &.right {
     right: 2%;
@@ -14,6 +16,14 @@
     left: 2%;
     text-align: right;
     padding: 0 20px 0 0;
+  }
+  &.lynn {
+    color: red;
+  }
+
+  &.force-down {
+    margin-top: 10rem;
+    padding: 0;
   }
 }
 

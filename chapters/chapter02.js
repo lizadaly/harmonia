@@ -8,7 +8,8 @@ import { docs } from '../docs'
 
 const topics = {
   intro: {
-    docs: [docs.notes01, docs.bellamy1, docs.age1]
+//    docs: [docs.notes01, docs.bellamy1, docs.age1]
+    docs: [docs.bellamy1, docs.age1]
   }
 }
 

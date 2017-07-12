@@ -23,8 +23,9 @@ p {
 
 .current-section > .reader,
 .section > .reader {
-  width: 100%;
+  width: 55%;
 }
+
 
 .strikethrough {
   text-decoration: line-through;
@@ -32,7 +33,7 @@ p {
 
 
 /* Reader UI */
-$reader-margin: 1rem;
+$reader-margin: 0rem;
 $highlight: lightyellow;
 $page-divider: rgb(200,200,200);
 
@@ -47,7 +48,7 @@ $page-divider: rgb(200,200,200);
         min-height: 100%;
       }
       .pages {
-        width: 100%;
+        min-height: 600px;
 
         & ::selection {
           background: $highlight;
@@ -91,17 +92,21 @@ $page-divider: rgb(200,200,200);
 
         article.article {
           clear: both;
-          text-indent: 2em;
+          text-indent: 1em;
 
           p {
             font-family: 'Playfair Display', serif;
+            font-size: 16px;
             background: none;
+            margin: 0;
           }
-          .book {
+          &.book {
+            padding: 1rem;
+            /*
             column-count: 2;
             column-gap: 4rem;
             column-rule: solid $page-divider 1px;
-
+            */
             p {
               text-align: justify;
             }
