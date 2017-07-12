@@ -24,74 +24,31 @@ p {
 .current-section > .reader,
 .section > .reader {
   width: 100%;
-  display: grid;
 }
 
 .strikethrough {
   text-decoration: line-through;
 }
- 
+
 
 /* Reader UI */
 $reader-margin: 1rem;
 $highlight: lightyellow;
 $page-divider: rgb(200,200,200);
 
-
 .reader {
-
   padding: $reader-margin;
-
-
-  & > header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-
-    .search-bar {
-      text-align: left;
-    }
-    .search-remaining {
-       text-align: center;
-    }
-    .search-help {
-      text-align: right;
-    }
-
-  }
-  /* The help modal */
-  .help-modal {
-    display: none;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px dashed black;
-    width: 50%;
-    height: 100px;
-    background: white;
-    &.true {
-      display: flex;
-
-    }
-  }
 
   /* The actual scanned book */
   .doc {
-
-    header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      h4 {
-        font-size: 20px;
-      }
-    }
     .reader-container {
       display: flex;
       .prev, .next {
         min-height: 100%;
       }
       .pages {
+        width: 100%;
+
         & ::selection {
           background: $highlight;
         }
@@ -111,32 +68,44 @@ $page-divider: rgb(200,200,200);
 
         .recto, .verso {
           margin-bottom: 1rem;
+          .title {
+            display: inline-block;
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
         }
         .recto {
+          .title {
+            margin-left: 2rem;
+          }
           text-align: left;
           float: left;
         }
         .verso {
+          .title {
+            margin-right: 2rem;
+          }
           text-align: right;
           float: right;
         }
 
         article.article {
           clear: both;
-
-          column-count: 2;
-          column-gap: 4rem;
-          column-rule: solid $page-divider 1px;
-          text-indent: 1em;
+          text-indent: 2em;
 
           p {
             font-family: 'Playfair Display', serif;
-            text-align: justify;
+            background: none;
           }
-        }
+          .book {
+            column-count: 2;
+            column-gap: 4rem;
+            column-rule: solid $page-divider 1px;
 
-        & > header {
-
+            p {
+              text-align: justify;
+            }
+          }
         }
       }
     }

@@ -4,9 +4,6 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { showNextSection } from 'windrift'
 
-import jsxToString from 'jsx-to-string'
-
-
 class _Reader extends React.Component {
 
   constructor(props) {
@@ -34,14 +31,16 @@ class _Reader extends React.Component {
   render () {
     return <section className="reader">
       <Doc doc={this.state.doc} modal={this.state.modal}/>
-      <footer>
-        <h4>Other documents in this collection:</h4>
-        <DocsList onChange={this.changeDoc} docs={this.props.topic.docs.filter((doc) =>
-            doc != this.state.doc
-        )} />
-      </footer>
     </section>
   }
+  /*
+  <footer>
+    <h4>Other documents in this collection:</h4>
+    <DocsList onChange={this.changeDoc} docs={this.props.topic.docs.filter((doc) =>
+        doc != this.state.doc
+    )} />
+  </footer>
+    */
 }
 _Reader.propTypes = {
   topic: PropTypes.object.isRequired
@@ -68,6 +67,7 @@ class _Doc extends React.Component {
       page: 0
     }
   }
+  // Fixme if we keep this
   changePage(dir) {
     let page = this.state.page
     if (dir === 'prev') {
@@ -82,17 +82,24 @@ class _Doc extends React.Component {
     })
   }
   render() {
+    let nextPage = null
+    if (this.props.doc.type === 'book') {
+      nextPage = this.props.doc.page + 1
+    }
     return <div className="doc">
-      <header>
-        <h4>{this.props.doc.title} by {this.props.doc.author} ({this.props.doc.year})</h4>
-      </header>
 
       <div className="reader-container">
         <Pagination dir="prev" page={this.state.page} changePage={() => this.changePage('prev')}/>
         <div className={'pages ' + this.props.doc.id}>
-          <div className="recto">{this.props.doc.page}</div>
-          <div className="verso">{this.props.doc.page + 1}</div>
-          <Article text={this.props.doc.text} topic={this.props.topic} page={this.state.page}/>
+          <div className="recto">
+            <span className="page">{this.props.doc.page}</span>
+            <span className="title">{this.props.doc.title}</span>
+          </div>
+          <div className="verso">
+            <span className="title">{this.props.doc.author} </span>
+            <span className="page">{nextPage}</span>
+          </div>
+          <Article text={this.props.doc.text} topic={this.props.topic} type={this.props.doc.type} page={this.state.page}/>
         </div>
         <Pagination dir="next" page={this.state.page} changePage={() => this.changePage('next')}/>
       </div>
@@ -100,7 +107,9 @@ class _Doc extends React.Component {
   }
 }
 const Pagination = ({page, dir, changePage}) => {
-  return <div className={dir}><a onClick={changePage}>{dir}</a></div>
+//  return <div className={dir}><a onClick={changePage}>{dir}</a></div>
+// Note sure if I'll use this
+  return null
 }
 
 const mapStateToProps = (state, ownProps) => {
@@ -122,7 +131,7 @@ class Article extends React.Component {
   }
 
   render() {
-    var text = jsxToString(this.props.text[this.props.page])
-    return <article className="article" dangerouslySetInnerHTML={{__html: text}}></article>
+    const cls = "article " + this.props.type
+    return <article className={cls}>{this.props.text[this.props.page]}</article>
   }
 }

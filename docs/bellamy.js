@@ -29,10 +29,7 @@ const bellamy = {
     <p>
         "My dear sir," he said, "that you should be startled by what I shall tell you is to be expected; but I am confident that you will not permit it to affect your equanimity unduly. Your appearance is that of a young man of barely thirty, and your bodily condition seems not greatly different from that of one just roused from a somewhat too long and profound sleep, and yet this is the tenth day of September in the year 2000, and you have slept exactly one hundred and thirteen years, three months, and eleven days."
       </p>
-  </div>,
-  <div>
-    <p>Page 2</p>
   </div>
-]
+  ]
 }
 export default bellamy
