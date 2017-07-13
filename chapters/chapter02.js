@@ -6,16 +6,9 @@ import ListCard from '../components/listCard'
 
 import { docs } from '../docs'
 
-const topics = {
-  intro: {
-//    docs: [docs.notes01, docs.bellamy1, docs.age1]
-    docs: [docs.bellamy1, docs.age1]
-  }
-}
-
 export default ({currentSection, inventory}) => {
   const sections = [
-    <Reader inventory={inventory} topic={topics.intro} />,
+    <Reader inventory={inventory} docs={[docs.bellamy, docs.age1]} />,
     <section>
       <p>The papers were abruptly snatched out of my hand. "Excuse me, what are you doing?" I looked up to
         see a <ListCard

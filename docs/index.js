@@ -13,22 +13,22 @@ export const docs = {
     text: notes.notes01,
     type: null
   },
-  bellamy1: {
+  bellamy: {
     author: "Edward Bellamy",
     title: "Looking Backward",
-    id: "bellamy1",
+    id: "bellamy",
     year: 1888,
     page: 28,
-    text: bellamy.bellamy1,
+    text: bellamy,
     type: "book"
   },
   age1: {
     author: "W. H. Hudson",
     title: "A Crystal Age",
-    id: "age1",
+    id: "age",
     year: 1887,
     page: 1,
-    text: age.age1,
+    text: age,
     type: "book"
   }
 }

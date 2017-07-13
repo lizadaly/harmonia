@@ -1,8 +1,7 @@
 const React = require('react')
 
-const age = {
-  age1: [
-    <div>
+const age = () =>  {
+  return <div>
       <p>
         I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
         While hunting for some variety of plants in the mountains, I sat down to rest on the edge of a ravine.
@@ -30,6 +29,5 @@ const age = {
         There was one large house in sight, but no town, nor even a hamlet, and not one solitary spire.
       </p>
     </div>
-  ]
 }
 export default age

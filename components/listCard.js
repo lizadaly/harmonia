@@ -67,7 +67,7 @@ class _ListCard extends React.Component {
         }
 
         if (this.props.forceDir === 'down') {
-          anchors = ["Bottom", "Top"]
+          anchors = ["Left", "Top"]
         }
 
         this.positionTargetY(source, target)
@@ -76,7 +76,8 @@ class _ListCard extends React.Component {
           source: sourceId,
           target: targetId,
           endpoint: "Blank",
-          anchors: anchors
+//          anchors: anchors
+          anchor: ["Perimeter", { shape:"Ellipse" } ]
         })
       }
       else {
@@ -87,8 +88,14 @@ class _ListCard extends React.Component {
 
   // TODO call a re-render on the SVG after a window resize event
   componentDidUpdate() {
+    console.log("updated")
     this.onRender()
   }
+  componentWillUnmount() {
+    var sourceId = 'source-' + this.props.tag
+    j.deleteConnectionsForElement(sourceId)
+  }
+
   positionTargetY(source, target) {
     // Move the card down if necessary to avoid overlapping other cards
 

@@ -1,5 +1,10 @@
 @import 'book-styles';
 @import 'card-styles';
+@import 'colors';
+
+body {
+  color: $black;
+}
 
 .container {
   margin: 4em auto;
@@ -101,7 +106,7 @@ $page-divider: rgb(200,200,200);
             margin: 0;
           }
           &.book {
-            padding: 1rem;
+            padding: 1rem 2rem;
             /*
             column-count: 2;
             column-gap: 4rem;
