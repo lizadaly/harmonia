@@ -1,0 +1,17 @@
+.section-enter, .section-appear {
+  opacity: 0.01;
+}
+
+.section-enter.section-enter-active, .section-appear.section-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.section-leave {
+  opacity: 1;
+}
+
+.section-leave.section-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

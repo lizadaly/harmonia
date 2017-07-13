@@ -1,13 +1,19 @@
 const React = require('react')
+import { List } from 'windrift'
+import ListCard from '../components/listCard'
 
-const age = () =>  {
+const age = ({nextDoc, prevDoc}) =>  {
   return <div>
       <p>
         I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
         While hunting for some variety of plants in the mountains, I sat down to rest on the edge of a ravine.
         The ground suddently gave way all about me,
         precipitating me below. The fall was a very considerable one—probably thirty or forty feet, or more,
-        and I was rendered unconscious.
+        and I was <ListCard author="lynn"
+          tag="age1-unconscious"
+          expansions={["rendered unconscious"]}
+          card={<span>Another case of "fall asleep, wake in future. Discuss with class!</span>}
+        />.
       </p>
       <p>
         How long I lay there under the heap of earth and stones carried down in my fall

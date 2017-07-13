@@ -88,7 +88,6 @@ class _ListCard extends React.Component {
 
   // TODO call a re-render on the SVG after a window resize event
   componentDidUpdate() {
-    console.log("updated")
     this.onRender()
   }
   componentWillUnmount() {

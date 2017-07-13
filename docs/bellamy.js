@@ -1,15 +1,10 @@
 const React = require('react')
+import { List } from 'windrift'
 import ListCard from '../components/listCard'
 
 
 const bellamy = ({nextDoc, prevDoc}) => {
-  var nextLink, prevLink
-  if (nextDoc) {
-    nextLink = <a onClick={nextDoc}>Next page</a>
-  }
-  if (prevDoc) {
-    prevLink = <a onClick={prevDoc}>Previous page</a>
-  }
+
   return <div>
         <p>
           There was a rustle of garments and I opened my eyes. A fine looking man of perhaps sixty was bending over me. He was an utter stranger. I raised myself on an elbow and looked around the room. I certainly had never been in it before, or one furnished like it. "Where am I?" I demanded.
@@ -23,10 +18,11 @@ const bellamy = ({nextDoc, prevDoc}) => {
                 forceDir="down"
                 expansions={["Remind students!!"]}
                 card={<span>Lynn's note to himself was scribbled in the page margin.
-                  There were <ListCard tag="bel1-pages"
-                    forceDir="down"
-                    expansions={["two more pages"]}
-                    card={<span>Next page</span>} /> beneath this photocopy from the book.
+                  There were <List tag="bel1-pages"
+                    expansions={[["two more pages"], ["two more pages"]]}
+                    onComplete={nextDoc}
+                    nextUnit="none"
+                     /> beneath this photocopy from the book.
 
                 </span>} /> </span>}
           /> or, more properly, trance. May I ask you when you went to sleep?"
@@ -51,9 +47,6 @@ const bellamy = ({nextDoc, prevDoc}) => {
     <p>
         "My dear sir," he said, "that you should be startled by what I shall tell you is to be expected; but I am confident that you will not permit it to affect your equanimity unduly. Your appearance is that of a young man of barely thirty, and your bodily condition seems not greatly different from that of one just roused from a somewhat too long and profound sleep, and yet this is the tenth day of September in the year 2000, and you have slept exactly one hundred and thirteen years, three months, and eleven days."
       </p>
-    {prevLink}
-    {nextLink}
-
   </div>
 }
 export default bellamy

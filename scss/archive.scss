@@ -1,6 +1,7 @@
 @import 'book-styles';
 @import 'card-styles';
 @import 'colors';
+@import 'transitions';
 
 body {
   color: $black;
@@ -103,7 +104,7 @@ $page-divider: rgb(200,200,200);
             font-family: 'Playfair Display', serif;
             font-size: 16px;
             background: none;
-            margin: 0;
+            margin: 0 0 1em 0;
           }
           &.book {
             padding: 1rem 2rem;

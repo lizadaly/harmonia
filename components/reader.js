@@ -67,12 +67,19 @@ class Doc extends React.Component {
     super(props)
   }
   render() {
+    let nextPage, nextLink, prevLink
     const cls = "article " + this.props.doc.type
     const Article = this.props.doc.text
 
-    let nextPage = null
     if (this.props.doc.type === 'book') {
       nextPage = this.props.doc.page + 1
+    }
+
+    if (this.props.nextDoc) {
+      nextLink = <a onClick={this.props.nextDoc}>Next page</a>
+    }
+    if (this.props.prevDoc) {
+      prevLink = <a onClick={this.props.prevDoc}>Previous page</a>
     }
 
     return <div className="doc">
@@ -90,7 +97,10 @@ class Doc extends React.Component {
 
           <article className={cls}>
             <Article nextDoc={this.props.nextDoc} prevDoc={this.props.prevDoc} />
+            {nextLink}
+            {prevLink}
           </article>
+
         </div>
       </div>
     </div>
