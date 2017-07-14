@@ -2,3 +2,10 @@
 .chapter .computer p, .current-chapter .computer p {
   background: none;
 }
+
+.reader .doc .reader-container .pages {
+
+  &.frag1 {
+    background: tan;
+  }
+}

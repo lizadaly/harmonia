@@ -2,8 +2,18 @@
 import bellamy from './bellamy'
 import age from './age'
 import notes from './notes'
+import {frag1} from './frags'
 
 export const docs = {
+  frag1: {
+    author: "XXX",
+    title: "Notes from a Journey",
+    id: "frag1",
+    year: 1880,
+    text: frag1,
+    type: "frag",
+    page: null
+  },
   notes01: {
     author: "Lynn",
     title: "Lecture 3 notes",
