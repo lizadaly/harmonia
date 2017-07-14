@@ -50,6 +50,7 @@ class _ListCard extends React.Component {
       var targetId = 'card-' + this.props.tag
       var source = document.getElementById(sourceId)
       var target = document.getElementById(targetId)
+      var containment = document.getElementById("container")
 
       if (source && target) { // Gross
         var pos = this.positionTargetX(source)
@@ -76,7 +77,6 @@ class _ListCard extends React.Component {
           source: sourceId,
           target: targetId,
           endpoint: "Blank",
-//          anchors: anchors
           anchor: ["Perimeter", { shape:"Ellipse" } ]
         })
       }
@@ -161,7 +161,7 @@ _ListCard.propTypes = {
 }
 _ListCard.defaultProps = {
   nextUnit: "none",
-  author: "main"
+  author: "main",
 }
 
 const mapStateToProps = (state, ownProps, added=false) => {

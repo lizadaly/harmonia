@@ -46,13 +46,14 @@ class _Reader extends React.Component {
       nextDoc = this.nextDoc
     }
     return <section className="reader">
-      <Doc doc={doc} nextDoc={nextDoc} prevDoc={prevDoc}/>
+      <Doc doc={doc} nextDoc={nextDoc} prevDoc={prevDoc} inventory={this.props.inventory}/>
     </section>
   }
 }
 
 _Reader.propTypes = {
-  docs: PropTypes.array.isRequired
+  docs: PropTypes.array.isRequired,
+  inventory: PropTypes.object.isRequired
 }
 
 const Reader = connect(
@@ -96,7 +97,9 @@ class Doc extends React.Component {
           </div>
 
           <article className={cls}>
-            <Article nextDoc={this.props.nextDoc} prevDoc={this.props.prevDoc} />
+            <Article nextDoc={this.props.nextDoc}
+                     prevDoc={this.props.prevDoc}
+                     inventory={this.props.inventory} />
             {nextLink}
             {prevLink}
           </article>
@@ -105,6 +108,11 @@ class Doc extends React.Component {
       </div>
     </div>
   }
+}
+Doc.propTypes = {
+  inventory: PropTypes.object.isRequired,
+  nextDoc: PropTypes.func,
+  prevDoc: PropTypes.func
 }
 
 

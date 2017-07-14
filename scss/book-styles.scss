@@ -6,6 +6,10 @@
 .reader .doc .reader-container .pages {
 
   &.frag1 {
-    background: tan;
+
+    background-image: url(/images/textures/paper1.jpg);
+    article {
+      padding: 1rem 3rem;
+    }
   }
 }
