@@ -12,10 +12,10 @@ export default ({currentSection, inventory}) => {
     <section>
       <p>The papers were abruptly snatched out of my hand. "Excuse me, what are you doing?" I looked up to
         see a <ListCard
-        expansions={["plain-looking"]}
-        tag="c2-woman-intro"
-        card={<span>Her hair was limp, unstyled, and wore and she a long-sleeved, ankle length dress.</span>}
-      /> woman standing over me and regarding me with suspicion.
+          expansions={["plain-looking"]}
+          tag="c2-woman-intro"
+          card={<span>Her hair was limp, unstyled, and wore and she a long-sleeved, ankle length dress.</span>}
+              /> woman standing over me and regarding me with suspicion.
       </p>
       <p>I reminded myself that I was invited here and didn't need to <ListCard
         expansions={["apologize"]}
@@ -23,7 +23,7 @@ export default ({currentSection, inventory}) => {
         card={<span>Except maybe for breaking into someone's office.</span>} />.
         "I'm Miriam Kemper. I'm substituting for Jeffrey Lynn."
       </p>
-      <p>"Oh, yes, of course, I heard someone was coming." She looked surprised, as if I wasn't what she had expected.
+      <p>She looked surprised, as if I wasn't what she had expected. "Oh, yes, of course, I heard someone was coming.
         "Welcome to St. Isidore."
       </p>
       <p>
@@ -31,7 +31,7 @@ export default ({currentSection, inventory}) => {
         "Do you know where I'm supposed to be staying?"
       </p>
       <p>"I assume the guest faculty quarters. Shall I take you to them?" She glanced down at the papers in her hand,
-        which she did move to return to the desk.
+        which she did not move to return to the desk.
       </p>
       <Map from={inventory.c2_qs} to={{
         "_undefined": <p>

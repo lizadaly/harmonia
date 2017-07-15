@@ -71,7 +71,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>I could see this was going to be one of those classes. "Yes?"</p>
     <p>"It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
-    <p>"<ListCard expansions={["Sorry, sorry."]}
+    <p>"<ListCard expansions={["I'm sorry."]}
       tag="c1-sorry"
       card={<span>I apologize too much.</span>} /> I fanned through my notes.
     "Did Professor Lynn already cover this material?"</p>
@@ -125,82 +125,82 @@ export default ({currentSection, inventory, cards}) => {
     <p><List expansions={[["Continue"], ["Continue"]]} tag="c3-xxx" /></p>
   </section>,
   <section>
-  <p>
-    Last night the campus had seemed immense and labrynthine,
-    but in fact it was quite compact. Many of the campus buildings, including my residence, faced out onto the main
-    quad. The snow had turned to rain overnight, and the stone paths and leafless trees were black and glistening.
-    After my morning class I had the rest of my afternoon to myself, though I knew I needed to work in
-    a conversation with my dean, who I'd yet to find.
-  </p>
-  <p>
-    A clock somewhere chimed noon and students began pouring out into the quad
-    as if they'd sprung forth from its
-    mechanism. St. Isadore is a fairly
-    conservative Catholic school, and while there was no formal dress code, the girls
-    seemed to have agreed upon their own—neutral slacks, long skirts, <ListCard expansions={["lots of beige"]}
-      tag="c3-beige"
-      card={<span>I'm from Miami and so was my wardrobe.
+    <p>
+      Last night the campus had seemed immense and labrynthine,
+      but in fact it was quite compact. Many of the campus buildings, including my residence, faced out onto the main
+      quad. The snow had turned to rain overnight, and the stone paths and leafless trees were black and glistening.
+      After my morning class I had the rest of my afternoon to myself, though I knew I needed to work in
+      a conversation with my dean, whom I'd yet to find.
+    </p>
+    <p>
+      A clock somewhere chimed noon and students began pouring out into the quad
+      as if they'd sprung forth from its
+      mechanism. St. Isadore is a fairly
+      conservative school, and while there was no formal dress code, the girls
+      seemed to have agreed upon their own—neutral slacks, long skirts, <ListCard expansions={["lots of beige"]}
+        tag="c3-beige"
+        card={<span>I'm from Miami and so was my wardrobe.
         I hoped these kids could handle the excitement of the occasional pastel.</span>} />.
-  </p>
-  <p>I approached a young woman who seemed to be in less of a hurry than her classmates.
-    "Excuse me, do you know where the dean's office is?"
-  </p>
-  <p>
-    "<List expansions={[["Dean of Science", "Dean of Humanities"], ["Dean of Science", "Dean of Humanities"]]}
-       conjunction="or" tag="c3_dean"/>?" she asked.
-  </p>
-</section>,
-<section>
-  <Map from={inventory.c3_dean} to={{
-    humanities: <div>
-      <p>"Humanities," I said, adding, "I'm Professor Lynn's replacement."</p>
-      <p>She shrugged. "I'm premed. Dean Orellana's office is next to the History building, you know where that is?"</p>
-      <p>"Kind of."</p>
-      <p>"Great," she answered, and walked off. </p>
-      <p>"<List expansions={[["Wait, I mean—"], ["Hello?"], ["Oh nevermind."]]} tag="c3-hello" />"</p>
+    </p>
+    <p>I approached a young woman who seemed to be in less of a hurry than her classmates.
+      "Excuse me, do you know where the dean's office is?"
+    </p>
+    <p>
+      "<List expansions={[["Dean of Science", "Dean of Humanities"], ["Dean of Science", "Dean of Humanities"]]}
+         conjunction="or" tag="c3_dean"/>?" she asked.
+    </p>
+  </section>,
+  <section>
+    <Map from={inventory.c3_dean} to={{
+      humanities: <div>
+        <p>"Humanities," I said, adding, "I'm Professor Lynn's replacement."</p>
+        <p>She shrugged. "I'm premed. Dean Orellana's office is next to the History building, you know where that is?"</p>
+        <p>"I think—"</p>
+        <p>"Great," she replied, and walked off. </p>
+        <p>"<List expansions={[["Wait, I mean—"], ["Hello?"], ["Oh nevermind."]]} tag="c3-hello" />"</p>
 
-    </div>,
-    science: <div>
-      <p>"Science," I answered. I wasn't quite ready to meet my new boss.</p>
-      <p>"Oh yeah? What do you teach?"</p>
-      <p>"I'm stepping in for Professor Lynn, teaching Utopian Lit this semester."</p>
-      <p>"Oh," she said, biting her lip. "I don't take those classes. Dean Reilly's office is right there, in
-        front of the <List expansions={[["astrolith"], ["astrolith"]]} tag="c3_astro1" />." She walked away, humming to herself.
-      </p>
-    </div>
-  }}/>
-</section>,
-<section>
+      </div>,
+      science: <div>
+        <p>"Science," I answered. I was stalling a bit, nervous about meeting my new boss.</p>
+        <p>"Oh yeah? I'm premed. What do you teach?"</p>
+        <p>"I'm stepping in for Professor Lynn, teaching Utopian Lit this semester."</p>
+        <p>"Oh," she said, biting her lip. "I don't take those classes. Dean Reilly's office is right there, in
+          front of the <List expansions={[["astrolith"], ["astrolith"]]} tag="c3_astro1" />." She walked away, humming to herself.
+        </p>
+      </div>
+    }}/>
+  </section>,
+  <section>
 
-  <Map from={inventory.c3_dean} to={{
-    humanities: <p>I sighed, and walked to the center of the quad to look around for a sign. I stopped in front of
-    an odd sculpture.</p>,
-    science: <p>"The what?" I called after her, to no response. I assumed she meant the large rock in the center of
-    the quad, so I walked up to it.</p>
-  }}/>
+    <Map from={inventory.c3_dean} to={{
+      humanities: <p>I sighed, and walked to the center of the quad to look around for a sign. I stopped in front of
+      an odd sculpture.</p>,
+      science: <p>"The what?" I called after her, to no response. I assumed she meant the large rock in the center of
+      the quad, so I walked up to it.</p>
+    }}/>
 
-  <figure>
-    <img src="images/meteorite.jpg" />
-    <figcaption>I sketched this a few weeks later, when it became clear how important
-      the <Map from={inventory.c3_astro1} to={{
-        _undefined: <span><ListCard tag="c3_astro1a" expansions={["astrolith"]}
-          card={<span>You'll find out soon enough.
-          <Map from={inventory.c3_plaque}
-          to={{steps: <span><br/>(Told you.)</span>}} /></span>}
+    <figure>
+      <img src="images/meteorite.jpg" />
+      <figcaption>I sketched this a few weeks later, when it became clear how important
+        the <Map from={inventory.c3_astro1} to={{
+          _undefined: <span><ListCard tag="c3_astro1a" expansions={["astrolith"]}
+            card={<span>You'll find out what it means soon enough.
+              <Map from={inventory.c3_plaque}
+                to={{steps: <span><br/>(Told you.)</span>}} /></span>}
 
-        /></span>,
+                            /></span>,
         astrolith: "astrolith"}} /> would turn out to be.
       </figcaption>
-  </figure>
+    </figure>
 
-  <p>
-    It was a rectangular boulder, a couple meters square and one meter tall. There were bumps and depressions
-    across its surface which had been smoothed by age. The surface was largely flat, inviting one to sit on it.
-    The earth had been dug out around it in a
-    circular depression, with concentric rings of steps, like a tiny Greek ampitheater. I stooped to read
-    a <List expansions={[["small plaque embedded in one of the steps"], ["small plaque embedded in one of the steps"]]} tag="c3_plaque" />.
-  </p>
-</section>,
+    <p>
+      It was a rectangular boulder, a couple meters square and one meter tall. There were bumps and depressions
+      across its surface which had been smoothed by age. The surface was largely flat, inviting one to sit on it.
+      The earth had been dug out around it in a
+      circular depression, with concentric rings of steps, like a tiny Greek ampitheater. I stooped to read
+      a <List expansions={[["small plaque embedded in one of the steps"], ["small plaque embedded in one of the steps"]]} tag="c3_plaque" />.
+    </p>
+  </section>,
 <section>
   <blockquote>
     THE "ASTROLITH"<br/>
@@ -208,7 +208,7 @@ export default ({currentSection, inventory, cards}) => {
     Center in 1857 (originally the Center for Physical Studies). The meteorite was named "The Astrolith"
     by the Class of 1931. The circular seating was added in 1968 by the gift of an anonymous donor.
     Its weight is estimated at 30 tons. Only five other iron meteorites are know to be larger, the largest
-    being the Hoba meteorite in Namibia.
+    is the Hoba meteorite in Namibia.
   </blockquote>
   <p>
     Beneath that, a typewritten addendum was tucked into a weathered clear plastic sleeve:
@@ -220,8 +220,7 @@ export default ({currentSection, inventory, cards}) => {
       expansions={[["replaced with a replica"], ["replaced with a replica"]]}
       tag="c3_addendum"
       card={<span>
-        I wondered at the time whether I was viewing the real or ersatz meteorite.
-        I'd be sure of that soon enough.
+        I would soon learn for sure that this was the real one.
       </span>
       } />. We apologize for any inconvenience.
   </blockquote>
@@ -235,11 +234,32 @@ export default ({currentSection, inventory, cards}) => {
           looked brand new, its gray blocks gleaming but no less ugly.
         </p>
         <p>Once inside,
-          I saw that the new wing was labelled "Computer Lab." Curious, I
-          opened the lab door and paused, wondering if I should <List expansions={[["go inside", "find the Humanities dean after all"],
-          ["go inside", "find the Humanities dean after all"]]} conjunction="or" tag="c3_computerlab" />.
+          I saw that the new wing was labelled "Computer Lab" and was still under construction,
+          swathed in plastic sheeting and warning tape. The dean's secretary was friendy,
+          but told me he was off-campus and wasn't returning today. "Sorry about the mess.
+          Did you want to meet with Dean Orellana in Humanities instead?"
         </p>
-      </div>
+        <p>I wasn't going to be able to put this off, so I thanked her and took up her
+          offer to lead me there. "Things are a bit upside-down right now," she said, leading
+          me down a stairwell. "The computer
+          lab expansion should've been done before the school year started but there was a
+          complication with the library."
+        </p>
+        <p>
+          "Oh?" I asked, politely.
+        </p>
+        <p>
+          "We're beneath the library now. When they broke ground on the lab they found a sub-basement
+          nobody knew about, some old storage room." She wrinkled her nose. "Lots of water damage,
+          smelled really bad. I had to help pull out some moldy crates. Some things were salvagable,
+          and pretty rare, I hear. The history faculty were pretty excited, they've been putting
+          together an exhibit about the founding of the college. It's actually pretty interesting,
+          do you—oh, we're here."
+        </p>
+        <p>We went up again, surfacing in a very different department. Dean Orellana's assistant
+          was out but my new friend ducked in and introduced me.
+        </p>
+        </div>
     }} />
 </section>,
 <section>
