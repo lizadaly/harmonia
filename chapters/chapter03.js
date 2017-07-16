@@ -235,12 +235,12 @@ export default ({currentSection, inventory, cards}) => {
         </p>
         <p>Once inside,
           I saw that the new wing was labelled "Computer Lab" and was still under construction,
-          swathed in plastic sheeting and warning tape. The dean's secretary was friendy,
-          but told me he was off-campus and wasn't returning today. "Sorry about the mess.
+          swathed in plastic sheeting and warning tape. The dean's young assistant was friendy,
+          but he told me he was off-campus and wasn't returning today. "Sorry about the mess.
           Did you want to meet with Dean Orellana in Humanities instead?"
         </p>
-        <p>I wasn't going to be able to put this off, so I thanked her and took up her
-          offer to lead me there. "Things are a bit upside-down right now," she said, leading
+        <p>I couldn't put this meeting off forever, so I thanked him and took up his
+          offer to lead me there. "Things are a bit upside-down right now," he said, leading
           me down a stairwell. "The computer
           lab expansion should've been done before the school year started but there was a
           complication with the library."
@@ -250,26 +250,90 @@ export default ({currentSection, inventory, cards}) => {
         </p>
         <p>
           "We're beneath the library now. When they broke ground on the lab they found a sub-basement
-          nobody knew about, some old storage room." She wrinkled her nose. "Lots of water damage,
+          nobody knew about, some old storage room." He wrinkled his nose. "Lots of water damage,
           smelled really bad. I had to help pull out some moldy crates. Some things were salvagable,
-          and pretty rare, I hear. The history faculty were pretty excited, they've been putting
-          together an exhibit about the founding of the college. It's actually pretty interesting,
-          do you—oh, we're here."
+          and pretty rare, I hear. The history faculty were excited, they've been putting
+          together an exhibit about the founding of the college. You know about how this place started?
+          It's actually pretty interesting—oh, we're here."
         </p>
-        <p>We went up again, surfacing in a very different department. Dean Orellana's assistant
-          was out but my new friend ducked in and introduced me.
+        <p>We went up again, surfacing in a very different department. Dean Orellana's secretary
+          was out, but my new friend ducked in to her office.
         </p>
-        </div>
+      </div>,
+      humanities: <div>
+        <p>
+          I looked up from the plaque and scanned the area around the quad until I noticed a formal
+          wood-carved sign marked "History Department." It was a grand old building, obviously once
+          some kind of residence, with a gently curved stairwell leading up, and an open doorway
+          marked "Current Exhibit." I stepped in.
+        </p>
+        <p>
+          An older woman was gently placing some manuscripts into a glass-topped display case. "Excuse me,"
+          I said, as quietly as possible, and she jumped in surprise. I introduced myself.
+        </p>
+        <p>
+          "Oh hello, so lovely you made it up here. You came all the way from Florida?"
+        </p>
+        <p>
+          "Miami, yes."
+        </p>
+        <p>"You drove all the way from Miami here by yourself! Alone!"</p>
+        <p>
+          I could tell it was meant kindly rather than condescendingly. I approached the display
+          case. "What are you working on?"
+        </p>
+        <p>"Oh, you'll find this very interesting," she assured me, as if we were old friends. "Do you know
+        much of the history of the college?"</p>
+        <p>"No, I don't," I said, truthfully.</p>
+        <p>She retrieved a small and yellowed pamphlet from the case and
+          put it in my hands. "You may have seen they're expanding the math and science building," she said,
+          shrugging. "Well, during the construction project they found the most amazing old basement, completely
+          sealed up since 1900 or so. So many wonderful artifacts from before this was a college, I mean, just look."
+          She nodded eagerly at
+          the <List expansions={[["pamphlet in my hand"], ["pamphlet in my hand, which I unfolded"]]}
+            tag="c3_pamphlet"
+                nextUnit="none" />
+        </p>
+        <Map from={inventory.c3_pamphlet}
+          to={{
+            hand: <Reader inventory={inventory} docs={[docs.pamphlet]} />
+
+          }} />
+
+      </div>
     }} />
 </section>,
 <section>
-  <Map from={(inventory.c3_dean === "Dean of Humanities" || inventory.c3_computerlab === "find the Humanities dean after all").toString()}
+  <Map from={inventory.c3_dean}
     to={{
-      true: "Dean of English picked ",
-      false: "Not dean"
+      humanities: <div>
+        <p>
+          We were interrupted by an officious-looking woman in the doorway. "Did you not hear me, Louisa?"
+        </p>
+        <p>
+          The curator apologized meekly. "I'm sorry, Dean, I was showing—"
+        </p>
+        <p>The woman turned to me. "Who are you?"</p>
+        <p>"I'm your new Literature instructor," I said carefully.</p>
+        <p>She frowned. "Where have you been? I expected you several days ago."</p>
+        <p>"I arrived last night. My class was 8am, and I was on my way to meet with you now." Before she could
+        continue I said, "May we speak in your office?"</p>
+        <p>She nodded, and turned back to the curator. "Louisa, some faculty from Harvard will be here this afternoon
+        for a symposium. Please have the exhibit ready before lunch." </p>
+        <p>Louisa looked down at the piles of cardboard boxes. "Yes ma'am."</p>
+        <p>The dean looked at me disapprovingly. <List expansions={[['"Follow me."'], ['"Follow me." I did.']]}
+          tag="c3_follow_dean" /></p>
+      </div>,
+      science: <div>
+        <p>"I expected her last night," I heard. The voice was sour and impatient. "Fine, let her in, but I don't have long."</p>
+        <p>He stepped back and gave me an apologetic look. "Good luck."</p>
+        <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
+          tag="c3_dean_meet" nextUnit="chapter" />
+        </p>
+      </div>
     }} />
-
-</section>
+  
+  </section>
 ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
 }
