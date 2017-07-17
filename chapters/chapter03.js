@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
 import * as actions from '../actions'
 import ListCard from '../components/listCard'
-
+import Reader  from '../components/reader'
 
 
 export default ({currentSection, inventory, cards}) => {
@@ -236,8 +236,8 @@ export default ({currentSection, inventory, cards}) => {
         <p>Once inside,
           I saw that the new wing was labelled "Computer Lab" and was still under construction,
           swathed in plastic sheeting and warning tape. The dean's young assistant was friendy,
-          but he told me he was off-campus and wasn't returning today. "Sorry about the mess.
-          Did you want to meet with Dean Orellana in Humanities instead?"
+          but told me the dean was off-campus and wasn't returning today. "Sorry about the mess,"
+          the young man added. "Did you want to meet with Dean Orellana in Humanities instead?"
         </p>
         <p>I couldn't put this meeting off forever, so I thanked him and took up his
           offer to lead me there. "Things are a bit upside-down right now," he said, leading
@@ -256,8 +256,14 @@ export default ({currentSection, inventory, cards}) => {
           together an exhibit about the founding of the college. You know about how this place started?
           It's actually pretty interesting—oh, we're here."
         </p>
-        <p>We went up again, surfacing in a very different department. Dean Orellana's secretary
-          was out, but my new friend ducked in to her office.
+        <p>We went up again, surfacing in a very different department, built out of what looked
+          like an old manor house. Dean Orellana's secretary
+          was out, but the office looked occupied. My new friend ducked in to announce me.
+        </p>
+        <p>"I expected her last night," I heard. The voice was sour and impatient. "Fine, let her in, but I don't have long."</p>
+        <p>He stepped back and gave me an apologetic look. "Good luck."</p>
+        <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
+          tag="c3_dean_meet" nextUnit="chapter" />.
         </p>
       </div>,
       humanities: <div>
@@ -296,7 +302,7 @@ export default ({currentSection, inventory, cards}) => {
         </p>
         <Map from={inventory.c3_pamphlet}
           to={{
-            hand: <Reader inventory={inventory} docs={[docs.pamphlet]} />
+            hand: "reader here " // <Reader inventory={inventory} docs={[docs.pamphlet]} />
 
           }} />
 
@@ -324,15 +330,9 @@ export default ({currentSection, inventory, cards}) => {
         <p>The dean looked at me disapprovingly. <List expansions={[['"Follow me."'], ['"Follow me." I did.']]}
           tag="c3_follow_dean" /></p>
       </div>,
-      science: <div>
-        <p>"I expected her last night," I heard. The voice was sour and impatient. "Fine, let her in, but I don't have long."</p>
-        <p>He stepped back and gave me an apologetic look. "Good luck."</p>
-        <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
-          tag="c3_dean_meet" nextUnit="chapter" />
-        </p>
-      </div>
+
     }} />
-  
+
   </section>
 ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
