@@ -4,6 +4,11 @@ import ListCard from '../components/listCard'
 
 const age = ({nextDoc, prevDoc}) =>  {
   return <div>
+    <h1>A Crystal Age</h1>
+    <h4>by</h4>
+    <h3>W.H. Hudson</h3>
+    <h6>Author of "The Purple Land," "A Shepherd's Life," etc.</h6>
+    <h2><br/><br/>I</h2>
       <p>
         I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
         While hunting for some variety of plants in the mountains, I sat down to rest on the edge of a ravine.
@@ -12,7 +17,7 @@ const age = ({nextDoc, prevDoc}) =>  {
         and I was <ListCard author="lynn"
           tag="age1-unconscious"
           expansions={["rendered unconscious"]}
-          card={<span>Another case of "fall asleep, wake in future. Discuss with class!</span>}
+          card={<span>Another case of "fall asleep, wake in future". Discuss with class!</span>}
         />.
       </p>
       <p>

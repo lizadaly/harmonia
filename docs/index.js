@@ -16,7 +16,7 @@ export const docs = {
   },
   notes: {
     author: "Lynn",
-    title: "Lecture 3 notes",
+    title: "Draft syllabus",
     id: "notes",
     year: 1980,
     page: null,

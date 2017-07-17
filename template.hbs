@@ -12,7 +12,7 @@
       <meta name="author" content="{{ htmlWebpackPlugin.options.author }}" />
       <meta name="copyright" content="{{ htmlWebpackPlugin.options.license }}" />
 
-      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Archivo+Narrow|Comfortaa|Lora|Playfair+Display|Shadows+Into+Light" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Archivo+Narrow|Lora|Playfair+Display|Shadows+Into+Light" rel="stylesheet"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" />
       <link rel="stylesheet" href="css/windrift.css" />
 
@@ -41,6 +41,11 @@
                 <feTurbulence result="TURBULENCE" baseFrequency="0.01" numOctaves="5" seed="1" />
                 <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
             </filter>
+            <filter id="filter-line-warp">
+                <feTurbulence result="TURBULENCE" baseFrequency="0.001" numOctaves="5" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
+            </filter>
+
           </defs>
         </svg>
   </body>

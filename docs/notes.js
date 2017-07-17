@@ -4,19 +4,35 @@ import ListCard from '../components/listCard'
 const notes = ({nextDoc, prevDoc}) => {
 
     return <div>
-      <p>Introduction to Utopian literature:</p>
+      <p>
+        Coined by Thomas More, <i>Utopia</i> (1516), utopian literature flourished
+        in the late 19th century. Often intertwined with real-life intentional communities.
+        Many stories are thin narrative window-dressing over socialist tracts—heavy
+        on excruciating detail about food production, civic engagement, gender politics.
+      </p>
+      <p>Students should come away with an understanding of the political landscapes
+      that shaped utopian thinking, and be prepared to discuss their influence on later
+      fantasy/science fiction/dystopian writing.
+      </p>
+      <h5>Themes</h5>
       <ul>
         <li>Optimism:
-          USA was seen as a blank slate for utopians without historical European class baggage
+          USA was seen as a blank slate, lacking historical European class baggage
         </li>
-        <li>Many early 19th c US utopian communities had failed (e.g. Owenism) or were shrinking
-          (Shakers)</li>
-        <li>Devastation of Civil War and dehumanizing effects of industrial revolution</li>
-        <li>As a result many utopian stories were set in the future, but based in the real
-          communities of the beginning of the century</li>
+        <li>Feminism: Many utopias were envisioned with women's suffrage in mind,
+        but traditional gender roles persisted</li>
+        <li>Racism and xenophobia: Despite liberal attitudes about women, many
+        utopians were enthusiastic eugenists or segregationists.</li>
+        <li>Industrialization: Dual-edged sword, mechanization was seen as a way
+          to free workers from drudgery and enable collective society, but also
+          as a threat to creativity.</li>
+        <li>
+          The devastation of the Civil War and the failure of earlier utopian
+        communities meant that many of these stories were set in the "far future"
+        (e.g. year 2000)</li>
       </ul>
       <p>
-        Reading list for first weeks?
+        Reading list
       </p>
       <ul>
         <li><ListCard expansions={["Looking Backwards"]}
@@ -27,9 +43,9 @@ const notes = ({nextDoc, prevDoc}) => {
             tag="r1-hudson"
             card={<span>Creepy utopian romance about a guy who meets a post-apocalyptic family of
             de-sexualized agarians.</span>} />, Hudson (1887)</li>
-
+          <li>???</li>
       </ul>
-      <p>Reminder: look up that manuscript from the college archives</p>
+      <p className="lynn-font">Reminder: look up that manuscript from the college archives!</p>
     </div>
 }
 

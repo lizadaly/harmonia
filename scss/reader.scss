@@ -1,0 +1,109 @@
+@import 'colors';
+@import 'transitions';
+@import 'fonts';
+
+/* Reader UI */
+$reader-margin: 3rem;
+
+.reader {
+  margin-top: $reader-margin !important;
+  margin-bottom: $reader-margin !important;
+
+  /* The actual scanned book */
+  .doc {
+    .reader-container {
+
+      .pages {
+
+        min-height: 600px;
+
+        padding: 3rem 2rem;
+
+        background: radial-gradient(ellipse farthest-corner at 10% 10%,
+                                          rgba(0, 10, 10, .05) 0%,
+                                          rgba(200, 200, 210, .8) 100%);
+
+        font-family: 'Playfair Display', serif;
+
+        border-radius: 2px;
+        border: 1px solid transparent;
+        border-top: none;
+        border-bottom: 1px solid #DDD;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+
+        .recto, .verso {
+          margin-bottom: 1rem;
+          .title {
+            display: inline-block;
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
+        }
+        .recto {
+          .title {
+            margin-left: 2rem;
+          }
+          text-align: left;
+          float: left;
+        }
+        .verso {
+          .title {
+            margin-right: 2rem;
+          }
+          text-align: right;
+          float: right;
+        }
+
+        article.article {
+          clear: both;
+          text-indent: 1em;
+
+          p {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            background: none;
+            margin: 0 0 1em 0;
+          }
+          &.book {
+            padding: 1rem 2rem;
+            /*
+            column-count: 2;
+            column-gap: 4rem;
+            column-rule: solid $page-divider 1px;
+            */
+            p {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+
+  .next-link {
+    position: absolute;
+    width: 18%;
+    min-width: 100px;
+    right: 2%;
+    text-align: left;
+  }
+  .prev-link {
+    position: absolute;
+    width: 18%;
+    min-width: 100px;
+    left: 2%;
+    text-align: right;
+  }
+
+}

@@ -2,17 +2,41 @@
 @import 'card-styles';
 @import 'colors';
 @import 'transitions';
+@import 'fonts';
+@import 'reader';
 
 body {
   color: $black;
+  background: $white;
+}
+a {
+  color: $darkgray;
+}
+a:hover {
+  color: $orange;
+  border-bottom: 1px solid $orange;
 }
 
+a {
+  border-bottom: 1px solid $darkgray;
+}
 .container {
   margin: 4em auto;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Lora', serif;
   font-weight: bold;
+}
+heading {
+  h2 {
+    padding-top: 2rem;
+  }
+  text-align: center;
+  h6 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+  }
 }
 
 p {
@@ -35,93 +59,4 @@ p {
 
 .strikethrough {
   text-decoration: line-through;
-}
-
-
-/* Reader UI */
-$reader-margin: 0rem;
-$highlight: lightyellow;
-$page-divider: rgb(200,200,200);
-
-.reader {
-  padding: $reader-margin;
-
-  /* The actual scanned book */
-  .doc {
-    .reader-container {
-      display: flex;
-      .prev, .next {
-        min-height: 100%;
-      }
-      .pages {
-        min-height: 600px;
-
-        & ::selection {
-          background: $highlight;
-        }
-        padding: 1rem;
-        margin: $reader-margin;
-        background: radial-gradient(ellipse farthest-corner at 10% 10%,
-                                          rgba(0, 10, 10, .05) 0%,
-                                          rgba(200, 200, 210, .8) 100%);
-
-        font-family: 'Playfair Display', serif;
-
-        border-radius: 2px;
-        border: 1px solid transparent;
-        border-top: none;
-        border-bottom: 1px solid #DDD;
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
-
-        .recto, .verso {
-          margin-bottom: 1rem;
-          .title {
-            display: inline-block;
-            font-size: 1rem;
-            text-transform: uppercase;
-          }
-        }
-        .recto {
-          .title {
-            margin-left: 2rem;
-          }
-          text-align: left;
-          float: left;
-        }
-        .verso {
-          .title {
-            margin-right: 2rem;
-          }
-          text-align: right;
-          float: right;
-        }
-
-        article.article {
-          clear: both;
-          text-indent: 1em;
-
-          p {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            background: none;
-            margin: 0 0 1em 0;
-          }
-          &.book {
-            padding: 1rem 2rem;
-            /*
-            column-count: 2;
-            column-gap: 4rem;
-            column-rule: solid $page-divider 1px;
-            */
-            p {
-              text-align: justify;
-            }
-          }
-        }
-      }
-    }
-  }
-  .phrase {
-    background-color: $highlight;
-  }
 }

@@ -11,7 +11,13 @@ import Reader  from '../components/reader'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
-    <h2>November 4, 1980</h2>
+    <heading>
+      <h2>Chapter 2</h2>
+      <h3>A Lecture</h3>
+      <figure><img src="images/lecture.png" width="200"/></figure>
+      <h6>November 4, 1990</h6>
+    </heading>
+
     <p>
       I needed this job so badly I'd driven a thousand miles, and now I was late to my first class.
     </p>
@@ -135,7 +141,7 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       A clock somewhere chimed noon and students began pouring out into the quad
       as if they'd sprung forth from its
-      mechanism. St. Isadore is a fairly
+      mechanism. Blithedale is a fairly
       conservative school, and while there was no formal dress code, the girls
       seemed to have agreed upon their own—neutral slacks, long skirts, <ListCard expansions={["lots of beige"]}
         tag="c3-beige"
@@ -257,7 +263,7 @@ export default ({currentSection, inventory, cards}) => {
           It's actually pretty interesting—oh, we're here."
         </p>
         <p>We went up again, surfacing in a very different department, built out of what looked
-          like an old manor house. Dean Orellana's secretary
+          like an old dormitory. Dean Orellana's secretary
           was out, but the office looked occupied. My new friend ducked in to announce me.
         </p>
         <p>"I expected her last night," I heard. The voice was sour and impatient. "Fine, let her in, but I don't have long."</p>

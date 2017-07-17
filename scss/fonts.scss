@@ -1,0 +1,27 @@
+
+$lynn-font: 'Shadows Into Light', sans-serif;
+
+.lynn-font {
+  font-family: $lynn-font !important;
+  font-size: 25px !important;
+  color: $lynn-color;
+}
+
+$word-font: 'Arial', 'Helvetica', sans-serif;
+
+.word-font {
+  font-family: $word-font;
+}
+
+.warp {
+  filter: url(#filter-line-warp);
+  -webkit-filter: url(#filter-line-warp);
+}
+
+@font-face {
+    font-family: 'giglio_wfregular';
+    src: url('../fonts/giglio-webfont.woff2') format('woff2'),
+         url('../fonts/giglio-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

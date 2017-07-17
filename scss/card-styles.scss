@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'fonts';
 
 .card {
   font-family: 'Archivo Narrow', sans-serif;
@@ -22,8 +23,8 @@
     padding: 0 20px 0 0;
   }
   &.lynn {
-    font-family: 'Shadows Into Light', sans-serif;
-    color: $black;
+    font-family: $lynn-font;
+    color: $lynn-color;
     font-size: 24px;
     line-height: 1.4rem;
   }
@@ -55,5 +56,5 @@
   border-bottom: 1px dotted $gray;
 }
 .link-source span span a {
-  background: white;
+/*  background: $white; */
 }

@@ -77,10 +77,14 @@ class Doc extends React.Component {
     }
 
     if (this.props.nextDoc) {
-      nextLink = <a onClick={this.props.nextDoc}>Next page</a>
+      nextLink = <div className="next-link">
+        <a onClick={this.props.nextDoc}>Next page</a>
+      </div>
     }
     if (this.props.prevDoc) {
-      prevLink = <a onClick={this.props.prevDoc}>Previous page</a>
+      prevLink = <div className="prev-link">
+        <a onClick={this.props.prevDoc}>Previous page</a>
+      </div>
     }
 
     return <div className="doc">
@@ -98,10 +102,10 @@ class Doc extends React.Component {
 
           <article className={cls}>
             <Article nextDoc={this.props.nextDoc}
-                     prevDoc={this.props.prevDoc}
+                     prevDoc={this.props.prevDoc}nlicsa
                      inventory={this.props.inventory} />
-            {nextLink}
             {prevLink}
+            {nextLink}
           </article>
 
         </div>

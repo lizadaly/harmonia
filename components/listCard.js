@@ -50,7 +50,6 @@ class _ListCard extends React.Component {
       var targetId = 'card-' + this.props.tag
       var source = document.getElementById(sourceId)
       var target = document.getElementById(targetId)
-      var containment = document.getElementById("container")
 
       if (source && target) { // Gross
         var pos = this.positionTargetX(source)

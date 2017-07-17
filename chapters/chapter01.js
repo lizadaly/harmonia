@@ -9,7 +9,12 @@ import ListCard from '../components/listCard'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <h2>November 3, 1980</h2>
+      <heading>
+        <h2>Chapter 1</h2>
+        <h3>My Arrival</h3>
+        <figure><img src="images/carriage.png" width="200"/></figure>
+        <h6>November 3, 1990</h6>
+      </heading>
       <p>It was nearly midnight when I finally arrived on campus, after more than a thousand
         miles of solo driving. The days had gotten shorter and colder and lonelier the further
         I went from home. <ListCard expansions={["Blithedale College"]}
