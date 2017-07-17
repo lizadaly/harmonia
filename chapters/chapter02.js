@@ -1,6 +1,7 @@
 const React = require('react')
 import { connect } from 'react-redux'
 import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
+
 import Reader  from '../components/reader'
 import ListCard from '../components/listCard'
 
@@ -8,7 +9,7 @@ import { docs } from '../docs'
 
 export default ({currentSection, inventory}) => {
   const sections = [
-    <Reader inventory={inventory} docs={[docs.bellamy, docs.age1, docs.frag1]} />,
+    <Reader inventory={inventory} docs={[docs.notes, docs.bellamy, docs.age1, docs.frag1]} />,
     <section>
       <p>The papers were abruptly snatched out of my hand. "Excuse me, what are you doing?" I looked up to
         see a <ListCard

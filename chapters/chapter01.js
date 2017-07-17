@@ -67,11 +67,12 @@ export default ({currentSection, inventory, cards}) => {
       It had the feel of having been abandoned by its owner.
     </p>
     <p>
-      His desk was a special kind of academic disaster, but a small worktable by the doorway had just a single stack of papers
-      with my class's syllabus on top. I set it aside and <ListCard expansions={["started to flip through the rest:"]}
+      His desk was a special kind of academic disaster, but a small worktable by the doorway had just a single stack of papers.
+      I was overjoyed to recognize a draft of <ListCard expansions={["my class's syllabus"]}
         tag="c1-pile"
         nextUnit="chapter"
-        card={<span>Look if he didn't want his stuff read, he shouldn't have gone missing.</span>} />
+        card={<span>Look if he didn't want his stuff read, he shouldn't have gone missing.</span>} /> along with some
+        photocopies of relevant chapters.
 
     </p>
 

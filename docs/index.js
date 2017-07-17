@@ -14,13 +14,13 @@ export const docs = {
     type: "frag",
     page: null
   },
-  notes01: {
+  notes: {
     author: "Lynn",
     title: "Lecture 3 notes",
-    id: "notes01",
+    id: "notes",
     year: 1980,
     page: null,
-    text: notes.notes01,
+    text: notes,
     type: null
   },
   bellamy: {

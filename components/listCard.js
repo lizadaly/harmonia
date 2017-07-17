@@ -98,7 +98,8 @@ class _ListCard extends React.Component {
   positionTargetY(source, target) {
     // Move the card down if necessary to avoid overlapping other cards
 
-    let cards = document.getElementsByClassName('card')
+    let cards = Array.from(document.getElementsByClassName('card'))
+    cards.reverse()
     let targetTop = target.getBoundingClientRect().top + window.scrollY
     let targetBottom = targetTop + target.getBoundingClientRect().height
 
@@ -107,13 +108,15 @@ class _ListCard extends React.Component {
       if (card.id != target.id) {
         let box = card.getBoundingClientRect()
         let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
+        console.log(card.id, cardBottom, targetTop, targetBottom)
         if (cardBottom > targetTop && cardBottom < targetBottom) {
           // Move the target down until it doesn't overlap
-          target.style.top = (cardBottom + 30) + 'px'
+          target.style.top = (cardBottom + 50) + 'px'
           target.style.marginTop = 0
         }
-        // Either way, probably safe to break here
-        break
+        else {
+          break
+        }
       }
     }
   }
