@@ -33,9 +33,9 @@ export default ({currentSection, inventory, cards}) => {
     <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
     <p>"Can't hear you," said someone in the back.</p>
     <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
-      My name is <ListCard expansions={["Miriam Kemper"]}
+      My name is <ListCard expansions={["Abby Fuller"]}
         tag="c1-name"
-        card={<span>Not <i>Professor Kemper</i> at this point in my career.</span>} />."
+        card={<span>Not <i>Professor Fuller</i> at this point in my career.</span>} />."
       I'd never taught college students before, nor an all-women class.
       Their <ListCard expansions={["undivided attention"]}
         tag="c1-women"

@@ -22,10 +22,10 @@ export default ({currentSection, inventory}) => {
         expansions={["apologize"]}
         tag="c2-apologize"
         card={<span>Except maybe for breaking into someone's office.</span>} />.
-        "I'm Miriam Kemper. I'm substituting for Jeffrey Lynn."
+        "I'm Abby Fuller. I'm substituting for Jeffrey Lynn."
       </p>
-      <p>She looked surprised, as if I wasn't what she had expected. "Oh, yes, of course, I heard someone was coming.
-        "Welcome to St. Isidore."
+      <p>Her expression suggested I wasn't what she had expected. "Oh, yes, of course, I heard someone was coming.
+        Welcome to Blithedale."
       </p>
       <p>
         "Thank you," I said cautiously. "There was no one here when I arrived so I—" When she didn't respond, I said,
