@@ -16,8 +16,8 @@ export default ({currentSection, inventory, cards}) => {
         <h6>November 3, 1990</h6>
       </heading>
       <p>It was nearly midnight when I finally arrived on campus, after more than a thousand
-        miles of solo driving. The days had gotten shorter and colder and lonelier the further
-        I went from home. <ListCard expansions={["Blithedale College"]}
+        miles of solo driving. The further I went from home, the shorter and colder
+        and lonelier the days had gotten. Now <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
           Massachusetts like a bookmark.</span>} /> would be my home now.
@@ -25,7 +25,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         At this point in my career I would've taken any kind of teaching job, but an emergency
         substitute position—in Massachusetts through winter term—was maybe not
-        an ideal toehold in academia for someone who'd barely left Florida in her whole life.
+        an ideal toehold in academia for someone who'd barely left Florida.
         I'd received a letter extending the offer, and had a brief phone call with
         the <ListCard expansions={["dean"]}
           tag="c1-dean"
@@ -56,14 +56,16 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
-    professors and adjuncts. I recognized a few names, but I was hunting for one door in particular. I found it at the
+    professors and adjuncts. I called out a hello, but no one answered.
+  </p>
+  <p>I recognized a few names on the door, but I was hunting for one door in particular. I found it at the
     end of the row, <ListCard expansions={['"Professor Jeffrey Lynn"']}
     tag="c1-scholar"
         card={<span>
           Lynn's area of scholarship was 19th century mysticism. Mine was Civil War-era pre-feminist
           movements. Close enough.
         </span>}
-      />. His door was <List expansions={[["ajar"], ["ajar, so I let myself in"]]} tag="c1-in" />.
+      />. His door was <List expansions={[["ajar"], ["ajar, so I let myself in and flipped on a light"]]} tag="c1-in" />.
     </p>
   </section>,
   <section>

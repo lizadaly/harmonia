@@ -28,8 +28,8 @@ export default ({currentSection, inventory}) => {
         Welcome to Blithedale."
       </p>
       <p>
-        "Thank you," I said cautiously. "There was no one here when I arrived so I—" When she didn't respond, I said,
-        "Do you know where I'm supposed to be staying?"
+        "Thank you," I said cautiously. "There was no one here when I arrived so—I'm sorry,
+        do you know where I'm supposed to be staying?"
       </p>
       <p>"I assume the guest faculty quarters. Shall I take you to them?" She glanced down at the papers in her hand,
         which she did not move to return to the desk.
@@ -40,7 +40,9 @@ export default ({currentSection, inventory}) => {
         </p>,
         "curiosity": <div>
           <p>I hesitated, and then asked, "What happened to Professor Lynn?"</p>
-          <p>She seemed taken back by my directness. "He didn't come back after winter break. I understand that finding a
+          <p>She seemed taken back by my directness. "He has been <ListCard expansions={["absent since mid-September"]}
+            tag="c2-absent"
+            card={<span>I noticed she didn't answer my question.</span>} />. I understand that finding a
             last-minute replacement was difficult."
           </p>
           <p>"Yes, luckily the university had <ListCard expansions={["my credentials on file."]} tag="c2-creds"

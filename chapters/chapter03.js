@@ -81,14 +81,13 @@ export default ({currentSection, inventory, cards}) => {
       tag="c1-sorry"
       card={<span>I apologize too much.</span>} /> I fanned through my notes.
     "Did Professor Lynn already cover this material?"</p>
-    <p>Many perfectly permed heads nodded. I looked back down at the syllabus I'd jotted
-      down when I'd gotten
-    the call:</p>
+    <p>Many perfectly permed heads nodded. I looked back down at the syllabus I'd thrown together
+      this morning:</p>
     <blockquote>
       <ol>
-        <li className={inventory.c1_correction ? "strikethrough" : ""}>Introduction to Utopian Fiction</li>
-        <li className={inventory.c1_correction2 ? "strikethrough" : ""}>British works, 1820-1860</li>
-        <li>American fiction, 1830-1900</li>
+        <li className={inventory.c1_correction ? "strikethrough" : ""}>Early works and influences</li>
+        <li className={inventory.c1_correction2 ? "strikethrough" : ""}>Utopian communities</li>
+        <li>British and American works, 1830-1900</li>
         <li>Early sci-fi</li>
         <li>Later influences</li>
       </ol>
@@ -101,7 +100,7 @@ export default ({currentSection, inventory, cards}) => {
       tag="c1-line"
       card={<span>No matter how screwed up my life gets, I make sure to always have a pen.</span>} /> through
     the first lecture. </p>
-    <p>"Did he cover <List expansions={[["British fiction"], ["British fiction"]]}
+    <p>"Did he cover <List expansions={[["intentional communities"], ["intentional communities"]]}
       tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
     </section>,
   <section>
@@ -120,7 +119,7 @@ export default ({currentSection, inventory, cards}) => {
       She looked pleased. "Looking Backward by Edward Bellamy, tells the story of a Boston man who <ListCard
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
-        card={<span>These utopian novels didn't spend a lot of time on exposition.</span>} /> in 1887 and awakens
+        card={<span>These books didn't spend a lot of time on exposition.</span>} /> in 1887 and awakens
       in the year 2000. Most of the novel is a dialogue between the time-traveler and the future Bostonians who find him,
       outlining the author's ideas about a more just society."
     </p>
