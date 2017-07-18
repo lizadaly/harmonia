@@ -13,7 +13,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <heading>
       <h2>Chapter 2</h2>
-      <h3>A Lecture</h3>
+      <h3>A lecture</h3>
       <figure><img src="images/lecture.png" width="200"/></figure>
       <h6>November 4, 1990</h6>
     </heading>
@@ -125,17 +125,25 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       She paused, looking for affirmation. I smiled and told her to continue. After that rocky start,
-      the class went great. This was going to be <ListCard expansions={["okay"]} tag="c3-okay" card={<span>It wasn't.</span>} />.
+      the class went great. This was going to be <ListCard
+        expansions={["okay"]} tag="c3-okay" card={<span>It wasn't.</span>}
+      nextUnit="section" />.
     </p>
-    <p><List expansions={[["Continue"], ["Continue"]]} tag="c3-xxx" /></p>
   </section>,
   <section>
+    <heading>
+      <h2>Chapter 3</h2>
+      <figure><img src="images/eyeglasses.png" width="200"/></figure>
+      <h3>A necessary meeting</h3>
+    </heading>
+    <p>
+      After my morning class I had the rest of my afternoon to myself, though I knew I needed to work in
+      a conversation with my dean, whom I'd yet to find.
+    </p>
     <p>
       Last night the campus had seemed immense and labrynthine,
       but in fact it was quite compact. Many of the campus buildings, including my residence, faced out onto the main
       quad. The snow had turned to rain overnight, and the stone paths and leafless trees were black and glistening.
-      After my morning class I had the rest of my afternoon to myself, though I knew I needed to work in
-      a conversation with my dean, whom I'd yet to find.
     </p>
     <p>
       A clock somewhere chimed noon and students began pouring out into the quad
@@ -159,7 +167,7 @@ export default ({currentSection, inventory, cards}) => {
     <Map from={inventory.c3_dean} to={{
       humanities: <div>
         <p>"Humanities," I said, adding, "I'm Professor Lynn's replacement."</p>
-        <p>She shrugged. "I'm premed. Dean Orellana's office is next to the History building, you know where that is?"</p>
+        <p>She shrugged. "I'm pre-med. Dean Orellana's office is next to the History building, you know where that is?"</p>
         <p>"I think—"</p>
         <p>"Great," she replied, and walked off. </p>
         <p>"<List expansions={[["Wait, I mean—"], ["Hello?"], ["Oh nevermind."]]} tag="c3-hello" />"</p>
@@ -167,7 +175,7 @@ export default ({currentSection, inventory, cards}) => {
       </div>,
       science: <div>
         <p>"Science," I answered. I was stalling a bit, nervous about meeting my new boss.</p>
-        <p>"Oh yeah? I'm premed. What do you teach?"</p>
+        <p>"Oh yeah? I'm pre-med. What do you teach?"</p>
         <p>"I'm stepping in for Professor Lynn, teaching Utopian Lit this semester."</p>
         <p>"Oh," she said, biting her lip. "I don't take those classes. Dean Reilly's office is right there, in
           front of the <List expansions={[["astrolith"], ["astrolith"]]} tag="c3_astro1" />." She walked away, humming to herself.
@@ -194,7 +202,7 @@ export default ({currentSection, inventory, cards}) => {
                 to={{steps: <span><br/>(Told you.)</span>}} /></span>}
 
                             /></span>,
-        astrolith: "astrolith"}} /> would turn out to be.
+        astrolith: "astrolith"}} /> would turn out to be. [KEY SKETCH]
       </figcaption>
     </figure>
 
@@ -207,13 +215,14 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
 <section>
-  <blockquote>
-    THE "ASTROLITH"<br/>
+  <blockquote className="sign">
+    <h4>THE "ASTROLITH"</h4>
+    <p>
     This very large ataxite meteorite was first discovered during the construction of the Science
     Center in 1857 (originally the Center for Physical Studies). The meteorite was named "The Astrolith"
     by the Class of 1931. The circular seating was added in 1968 by the gift of an anonymous donor.
-    Its weight is estimated at 30 tons. Only five other iron meteorites are know to be larger, the largest
-    is the Hoba meteorite in Namibia.
+    Its weight is estimated at 30 tons; only five other iron meteorites are known to be larger.
+  </p>
   </blockquote>
   <p>
     Beneath that, a typewritten addendum was tucked into a weathered clear plastic sleeve:
@@ -225,7 +234,7 @@ export default ({currentSection, inventory, cards}) => {
       expansions={[["replaced with a replica"], ["replaced with a replica"]]}
       tag="c3_addendum"
       card={<span>
-        I would soon learn for sure that this was the real one.
+        Boy was this ever the real one.
       </span>
       } />. We apologize for any inconvenience.
   </blockquote>
@@ -236,18 +245,18 @@ export default ({currentSection, inventory, cards}) => {
           I looked up from the plaque and scanned the area around the quad. Sure enough,
           a thin path lead up to the only non-brick building in sight,
           a dreary concrete bunker marked SCIENCE CENTER. One wing of the building
-          looked brand new, its gray blocks gleaming but no less ugly.
+          looked brand-new, its gray blocks gleaming but no less ugly.
         </p>
         <p>Once inside,
           I saw that the new wing was labelled "Computer Lab" and was still under construction,
-          swathed in plastic sheeting and warning tape. The dean's young assistant was friendy,
+          swathed in plastic sheeting and warning tape. The science dean's young assistant was friendy,
           but told me the dean was off-campus and wasn't returning today. "Sorry about the mess,"
-          the young man added. "Did you want to meet with Dean Orellana in Humanities instead?"
+          he added. "Did you want to meet with Dean Orellana in Humanities instead?"
         </p>
         <p>I couldn't put this meeting off forever, so I thanked him and took up his
           offer to lead me there. "Things are a bit upside-down right now," he said, leading
           me down a stairwell. "The computer
-          lab expansion should've been done before the school year started but there was a
+          lab should've been done before the school year started but there was a
           complication with the library."
         </p>
         <p>
@@ -256,17 +265,17 @@ export default ({currentSection, inventory, cards}) => {
         <p>
           "We're beneath the library now. When they broke ground on the lab they found a sub-basement
           nobody knew about, some old storage room." He wrinkled his nose. "Lots of water damage,
-          smelled really bad. I had to help pull out some moldy crates. Some things were salvagable,
-          and pretty rare, I hear. The history faculty were excited, they've been putting
-          together an exhibit about the founding of the college. You know about how this place started?
+          smelled really bad. I had to help pull out some moldy crates. The history faculty were excited
+          about it all, though. They've been using the material for an exhibit about the founding of the
+          college. Do you know the history?
           It's actually pretty interesting—oh, we're here."
         </p>
         <p>We went up again, surfacing in a very different department, built out of what looked
           like an old dormitory. Dean Orellana's secretary
-          was out, but the office looked occupied. My new friend ducked in to announce me.
+          was out but the dean herself was here. My new friend ducked in to announce me.
         </p>
         <p>"I expected her last night," I heard. The voice was sour and impatient. "Fine, let her in, but I don't have long."</p>
-        <p>He stepped back and gave me an apologetic look. "Good luck."</p>
+        <p>He returned and gave me an apologetic look. "Good luck."</p>
         <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
           tag="c3_dean_meet" nextUnit="chapter" />.
         </p>
@@ -279,8 +288,8 @@ export default ({currentSection, inventory, cards}) => {
           marked "Current Exhibit." I stepped in.
         </p>
         <p>
-          An older woman was gently placing some manuscripts into a glass-topped display case. "Excuse me,"
-          I said, as quietly as possible, and she jumped in surprise. I introduced myself.
+          An older woman was placing some manuscripts into a glass-topped display case. "Excuse me,"
+          I said, as quietly as possible, and she jumped. I introduced myself.
         </p>
         <p>
           "Oh hello, so lovely you made it up here. You came all the way from Florida?"
@@ -289,28 +298,37 @@ export default ({currentSection, inventory, cards}) => {
           "Miami, yes."
         </p>
         <p>"You drove all the way from Miami here by yourself! Alone!"</p>
+
         <p>
-          I could tell it was meant kindly rather than condescendingly. I approached the display
-          case. "What are you working on?"
+          I could tell it was meant kindly rather than condescendingly. "I did," I answered. "Say, do you happen
+          to<List expansions={[[" know where Dean Orellana's office is—"], ["—"]]}
+            tag="c3_wheres_dean"
+            nextUnit="none"/>"
         </p>
-        <p>"Oh, you'll find this very interesting," she assured me, as if we were old friends. "Do you know
-        much of the history of the college?"</p>
-        <p>"No, I don't," I said, truthfully.</p>
-        <p>She retrieved a small and yellowed pamphlet from the case and
-          put it in my hands. "You may have seen they're expanding the math and science building," she said,
-          shrugging. "Well, during the construction project they found the most amazing old basement, completely
-          sealed up since 1900 or so. So many wonderful artifacts from before this was a college, I mean, just look."
-          She nodded eagerly at
-          the <List expansions={[["pamphlet in my hand"], ["pamphlet in my hand, which I unfolded"]]}
-            tag="c3_pamphlet"
-                nextUnit="none" />
-        </p>
-        <Map from={inventory.c3_pamphlet}
+        <Map from={inventory.c3_wheres_dean}
           to={{
-            hand: "reader here " // <Reader inventory={inventory} docs={[docs.pamphlet]} />
+            "is—": <div>
+              <p>"Come here, you'll find this so interesting," she interrupted. "Do you know
+              much of the history of the college?"</p>
+              <p>"No, I don't," I said, truthfully.</p>
+              <p>She retrieved a small and yellowed pamphlet from the case and
+                put it in my hands. "You may have seen they're expanding the math and science building," she said.
+                "Well, during the construction project they found the most amazing old basement, completely
+                sealed up since 1900 or so. So many wonderful artifacts from before this was a college, I mean, just look."
+                She nodded eagerly at
+                the <List expansions={[["pamphlet in my hand"], ["pamphlet in my hand, which I unfolded"]]}
+                  tag="c3_pamphlet"
+                      nextUnit="none" />.
+              </p>
+              <Map from={inventory.c3_pamphlet}
+                to={{
+                  hand: "reader here " // <Reader inventory={inventory} docs={[docs.pamphlet]} />
 
-          }} />
+                }} />
 
+            </div>
+          }}
+        />
       </div>
     }} />
 </section>,

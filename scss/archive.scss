@@ -56,7 +56,29 @@ p {
   width: 55%;
 }
 
-
 .strikethrough {
   text-decoration: line-through;
+}
+
+blockquote {
+  color: $darkgray;
+  border: none;
+}
+.sign {
+  background: radial-gradient(ellipse farthest-corner at 90% 90%,
+                                    rgba(70, 60, 60, .8) 0%,
+                                    rgba(65, 60, 60, 1) 100%);
+
+  color: $white;
+  padding: 2rem;
+  text-align: center;
+
+  h4 {
+    font-family: $sign-font;
+  }
+  p {
+    background: none;
+    color: $white;
+    text-align: justify;
+  }
 }

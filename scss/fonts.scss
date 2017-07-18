@@ -18,6 +18,18 @@ $word-font: 'Arial', 'Helvetica', sans-serif;
   -webkit-filter: url(#filter-line-warp);
 }
 
+$sign-font: 'Cinzel Decorative', cursive;
+
+.sign-font {
+  font-family: $sign-font;
+}
+
+$typewritten-font: 'Inconsolata', monospace;
+
+.typewritten {
+  font-family: $typewritten-font;
+}
+
 @font-face {
     font-family: 'giglio_wfregular';
     src: url('fonts/giglio-webfont.woff2') format('woff2'),

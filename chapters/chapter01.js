@@ -11,7 +11,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <heading>
         <h2>Chapter 1</h2>
-        <h3>My Arrival</h3>
+        <h3>My arrival</h3>
         <figure><img src="images/carriage.png" width="200"/></figure>
         <h6>November 3, 1990</h6>
       </heading>
