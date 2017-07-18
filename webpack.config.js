@@ -34,7 +34,7 @@ module.exports = [{
                 {
                   loader: 'sass-loader',
                   options: {url: false}
-                }                  
+                }
                 ]},
               { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
               { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"}
@@ -57,6 +57,7 @@ module.exports = [{
     new CopyWebpackPlugin([
       { from: 'css', to: 'css' },
       { from: 'images', to: 'images' },
+      { from: 'fonts', to: 'fonts'},
       { from: 'story.json'}
     ])
   ]
