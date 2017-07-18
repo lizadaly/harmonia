@@ -11,22 +11,26 @@
   min-width: 100px;
   text-indent: 0;
   line-height: 1.3rem;
+  visibility: hidden; /* Might want to do an animation transition here */
 
   &.right {
     right: 2%;
     text-align: left;
     padding: 0 0 0 20px;
+    visibility: visible;
   }
   &.left {
     left: 2%;
     text-align: right;
     padding: 0 20px 0 0;
+    visibility: visible;
   }
   &.lynn {
     font-family: $lynn-font;
     color: $lynn-color;
     font-size: 24px;
     line-height: 1.4rem;
+    visibility: visible;
   }
 
   &.force-down {
@@ -34,6 +38,7 @@
     color: $black;
     width: 100%;
     margin-top: 10rem;
+    visibility: visible;
   }
 }
 

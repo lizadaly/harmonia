@@ -36,7 +36,10 @@ class _ListCard extends React.Component {
     if (props.expansions.length === 1) {
       this.expansions.push(props.expansions[0])
     }
-    this.onRender()
+    this.onRender = this.onRender.bind(this)
+
+    // Wait until we're sure everything has rendered before firing this
+    window.setTimeout(this.onRender, 2000)
   }
 
   onComplete() {
@@ -107,9 +110,8 @@ class _ListCard extends React.Component {
       if (card.id != target.id) {
         let box = card.getBoundingClientRect()
         let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
-        console.log(card.id, cardBottom, targetTop, targetBottom)
         if (cardBottom > targetTop && cardBottom < targetBottom) {
-          // Move the target down until it doesn't overlap
+                    // Move the target down until it doesn't overlap
           target.style.top = (cardBottom + 50) + 'px'
           target.style.marginTop = 0
         }
