@@ -218,11 +218,11 @@ export default ({currentSection, inventory, cards}) => {
   <blockquote className="sign">
     <h4>THE "ASTROLITH"</h4>
     <p>
-    This very large ataxite meteorite was first discovered during the construction of the Science
-    Center in 1857 (originally the Center for Physical Studies). The meteorite was named "The Astrolith"
-    by the Class of 1931. The circular seating was added in 1968 by the gift of an anonymous donor.
-    Its weight is estimated at 30 tons; only five other iron meteorites are known to be larger.
-  </p>
+      This very large ataxite meteorite was first discovered during the construction of the Science
+      Center in 1857 (originally the Center for Physical Studies). The meteorite was named "The Astrolith"
+      by the Class of 1931. The circular seating was added in 1968 by the gift of an anonymous donor.
+      Its weight is estimated at 30 tons; only five other iron meteorites are known to be larger.
+    </p>
   </blockquote>
   <p>
     Beneath that, a typewritten addendum was tucked into a weathered clear plastic sleeve:
@@ -303,7 +303,7 @@ export default ({currentSection, inventory, cards}) => {
           I could tell it was meant kindly rather than condescendingly. "I did," I answered. "Say, do you happen
           to<List expansions={[[" know where Dean Orellana's office is—"], ["—"]]}
             tag="c3_wheres_dean"
-            nextUnit="none"/>"
+              nextUnit="none"/>"
         </p>
         <Map from={inventory.c3_wheres_dean}
           to={{
@@ -351,7 +351,7 @@ export default ({currentSection, inventory, cards}) => {
         for a symposium. Please have the exhibit ready before lunch." </p>
         <p>Louisa looked down at the piles of cardboard boxes. "Yes ma'am."</p>
         <p>The dean looked at me disapprovingly. <List expansions={[['"Follow me."'], ['"Follow me." I did.']]}
-          tag="c3_follow_dean" /></p>
+          tag="c3_follow_dean" nextUnit="chapter"/></p>
       </div>,
 
     }} />
