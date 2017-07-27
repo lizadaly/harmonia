@@ -76,7 +76,7 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>I could see this was going to be one of those classes. "Yes?"</p>
-    <p>"It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
+    <p>A student in the very front row: "It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
     <p>"<ListCard expansions={["I'm sorry."]}
       tag="c1-sorry"
       card={<span>I apologize too much.</span>} /> I fanned through my notes.
@@ -109,7 +109,7 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c1_question}
         to={{
           introduction: "The woman whose question I'd previously ignored answered: ",
-            hand: "Charlotte again :"
+            hand: "Charlotte again: "
         }}/>
       "We were supposed to start on Bellamy this week."
     </p>
@@ -119,13 +119,15 @@ export default ({currentSection, inventory, cards}) => {
       She looked pleased. "Looking Backward by Edward Bellamy, tells the story of a Boston man who <ListCard
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
-        card={<span>These books didn't spend a lot of time on exposition.</span>} /> in 1887 and awakens
+        card={<span>The 19th century wasn't big on exposition. Usually heroes in utopian novels just fall into holes or
+        take a ship to the center of the earth.</span>} /> in 1887 and awakens
       in the year 2000. Most of the novel is a dialogue between the time-traveler and the future Bostonians who find him,
       outlining the author's ideas about a more just society."
     </p>
     <p>
       She paused, looking for affirmation. I smiled and told her to continue. After that rocky start,
-      the class went great. This was going to be <ListCard
+      the class went pretty well. One student, who told me her name was Meredith, even stopped to say thank you.
+      I started to think this gig was going to be <ListCard
         expansions={["okay"]} tag="c3-okay" card={<span>It wasn't.</span>}
       nextUnit="section" />.
     </p>
@@ -161,6 +163,9 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       "<List expansions={[["Dean of Science", "Dean of Humanities"], ["Dean of Science", "Dean of Humanities"]]}
          conjunction="or" tag="c3_dean"/>?" she asked.
+    </p>
+    <p>
+      I meant the latter, but maybe the former would be a useful first step.
     </p>
   </section>,
   <section>
@@ -218,10 +223,9 @@ export default ({currentSection, inventory, cards}) => {
   <blockquote className="sign">
     <h4>THE "ASTROLITH"</h4>
     <p>
-      This very large ataxite meteorite was first discovered during the construction of the Science
-      Center in 1857 (originally the Center for Physical Studies). The meteorite was named "The Astrolith"
+      This very large ataxite meteorite formed the centerpiece of the ____ community. The meteorite was named "The Astrolith"
       by the Class of 1931. The circular seating was added in 1968 by the gift of an anonymous donor.
-      Its weight is estimated at 30 tons; only five other iron meteorites are known to be larger.
+      Its weight is estimated at 30 tons, though it has never been fully excavated.
     </p>
   </blockquote>
   <p>
@@ -229,14 +233,8 @@ export default ({currentSection, inventory, cards}) => {
   </p>
   <blockquote className="typewritten">
     PLEASE NOTE:
-    As of Winter 1980 the Astrolith will be removed to the Museum of Science in Boston
-    and <ListCard
-      expansions={[["replaced with a replica"], ["replaced with a replica"]]}
-      tag="c3_addendum"
-      card={<span>
-        Boy was this ever the real one.
-      </span>
-      } />. We apologize for any inconvenience.
+    As part of the Science Center expansion, the Astrolith will be removed to the Museum of Science in Boston.
+    We apologize for any inconvenience.
   </blockquote>
   <Map from={inventory.c3_dean}
     to={{
@@ -256,15 +254,14 @@ export default ({currentSection, inventory, cards}) => {
         <p>I couldn't put this meeting off forever, so I thanked him and took up his
           offer to lead me there. "Things are a bit upside-down right now," he said, leading
           me down a stairwell. "The computer
-          lab should've been done before the school year started but there was a
-          complication with the library."
+          lab should've been done before the school year started but there was a... complication."
         </p>
         <p>
-          "Oh?" I asked, politely.
+          "Oh?" I asked.
         </p>
         <p>
-          "We're beneath the library now. When they broke ground on the lab they found a sub-basement
-          nobody knew about, some old storage room." He wrinkled his nose. "Lots of water damage,
+          "When they broke ground on the lab they found a sub-basement, a cellar really,
+          nobody knew about." He wrinkled his nose. "Lots of water damage,
           smelled really bad. I had to help pull out some moldy crates. The history faculty were excited
           about it all, though. They've been using the material for an exhibit about the founding of the
           college. Do you know the history?

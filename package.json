@@ -1,5 +1,5 @@
 {
-  "name": "windrift-starter",
+  "name": "utopia-game",
   "version": "1.0.0",
   "description": "A simple framework for getting started with a Windrift story",
   "main": "index.js",
@@ -15,9 +15,9 @@
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/lizadaly/windrift-starter/issues"
+    "url": "https://github.com/lizadaly/archive-game/issues"
   },
-  "homepage": "https://github.com/lizadaly/windrift-starter#readme",
+  "homepage": "https://github.com/lizadaly/archive-game#readme",
   "dependencies": {
     "jsplumb": "^2.4.3",
     "windrift": "1.0.3"

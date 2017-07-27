@@ -101,11 +101,12 @@ class Doc extends React.Component {
           </div>
 
           <article className={cls}>
+            {prevLink}
+            {nextLink}
+
             <Article nextDoc={this.props.nextDoc}
                      prevDoc={this.props.prevDoc}nlicsa
                      inventory={this.props.inventory} />
-            {prevLink}
-            {nextLink}
           </article>
 
         </div>
