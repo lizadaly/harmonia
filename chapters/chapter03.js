@@ -76,11 +76,9 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>I could see this was going to be one of those classes. "Yes?"</p>
-    <p>A student in the very front row: "It says in my notes that <i>Utopia</i> was actually published in 1516."</p>
-    <p>"<ListCard expansions={["I'm sorry."]}
-      tag="c1-sorry"
-      card={<span>I apologize too much.</span>} /> I fanned through my notes.
-    "Did Professor Lynn already cover this material?"</p>
+    <p>A student in the very front row: "Hi Professor Fuller. I'm Meredith ___. It says in my
+      notes that <i>Utopia</i> was actually published in 1516."</p>
+    <p>"Yes, fine, sorry." I paged through my notes, flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many perfectly permed heads nodded. I looked back down at the syllabus I'd thrown together
       this morning:</p>
     <blockquote>
@@ -126,7 +124,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       She paused, looking for affirmation. I smiled and told her to continue. After that rocky start,
-      the class went pretty well. One student, who told me her name was Meredith, even stopped to say thank you.
+      the class went pretty well. Meredith even came by at the end to say thank you.
       I started to think this gig was going to be <ListCard
         expansions={["okay"]} tag="c3-okay" card={<span>It wasn't.</span>}
       nextUnit="section" />.
@@ -139,7 +137,7 @@ export default ({currentSection, inventory, cards}) => {
       <h3>A necessary meeting</h3>
     </heading>
     <p>
-      After my morning class I had the rest of my afternoon to myself, though I knew I needed to work in
+      After my morning class I had the rest of the afternoon to myself, though I knew I needed to work in
       a conversation with my dean, whom I'd yet to find.
     </p>
     <p>
@@ -157,57 +155,22 @@ export default ({currentSection, inventory, cards}) => {
         card={<span>I'm from Miami and so was my wardrobe.
         I hoped these kids could handle the excitement of the occasional pastel.</span>} />.
     </p>
-    <p>I approached a young woman who seemed to be in less of a hurry than her classmates.
-      "Excuse me, do you know where the dean's office is?"
+    <p>I considered stopping one of them to ask about the dean's office, but they were traveling in
+      close-knit packs and I'd sound like a complete idiot.
     </p>
-    <p>
-      "<List expansions={[["Dean of Science", "Dean of Humanities"], ["Dean of Science", "Dean of Humanities"]]}
-         conjunction="or" tag="c3_dean"/>?" she asked.
+    <p>I drifted into the main quadrangle, crisscrossed by worn paths through the grass. The paths all veered
+      around a central clearing, a sunken circle of steps around a curious stone bench:
     </p>
-    <p>
-      I meant the latter, but maybe the former would be a useful first step.
-    </p>
-  </section>,
-  <section>
-    <Map from={inventory.c3_dean} to={{
-      humanities: <div>
-        <p>"Humanities," I said, adding, "I'm Professor Lynn's replacement."</p>
-        <p>She shrugged. "I'm pre-med. Dean Orellana's office is next to the History building, you know where that is?"</p>
-        <p>"I think—"</p>
-        <p>"Great," she replied, and walked off. </p>
-        <p>"<List expansions={[["Wait, I mean—"], ["Hello?"], ["Oh nevermind."]]} tag="c3-hello" />"</p>
-
-      </div>,
-      science: <div>
-        <p>"Science," I answered. I was stalling a bit, nervous about meeting my new boss.</p>
-        <p>"Oh yeah? I'm pre-med. What do you teach?"</p>
-        <p>"I'm stepping in for Professor Lynn, teaching Utopian Lit this semester."</p>
-        <p>"Oh," she said, biting her lip. "I don't take those classes. Dean Reilly's office is right there, in
-          front of the <List expansions={[["astrolith"], ["astrolith"]]} tag="c3_astro1" />." She walked away, humming to herself.
-        </p>
-      </div>
-    }}/>
-  </section>,
-  <section>
-
-    <Map from={inventory.c3_dean} to={{
-      humanities: <p>I sighed, and walked to the center of the quad to look around for a sign. I stopped in front of
-      an odd sculpture.</p>,
-      science: <p>"The what?" I called after her, to no response. I assumed she meant the large rock in the center of
-      the quad, so I walked up to it.</p>
-    }}/>
-
     <figure>
       <img src="images/meteorite.jpg" />
-      <figcaption>I sketched this a few weeks later, when it became clear how important
-        the <Map from={inventory.c3_astro1} to={{
-          _undefined: <span><ListCard tag="c3_astro1a" expansions={["astrolith"]}
-            card={<span>You'll find out what it means soon enough.
-              <Map from={inventory.c3_plaque}
-                to={{steps: <span><br/>(Told you.)</span>}} /></span>}
-
-                            /></span>,
-        astrolith: "astrolith"}} /> would turn out to be. [KEY SKETCH]
+      <figcaption>I sketched this a few days later, when the importance of the
+        the <ListCard tag="c3_astro1a"
+                      expansions={["astrolith"]}
+                      card={<span>You'll find out what it means soon enough.
+                        <Map from={inventory.c3_plaque}
+                          to={{steps: <span><br/>(Told you.)</span>}} /></span>}
+                          />,
+       became clear.
       </figcaption>
     </figure>
 
@@ -236,32 +199,58 @@ export default ({currentSection, inventory, cards}) => {
     As part of the Science Center expansion, the Astrolith will be removed to the Museum of Science in Boston.
     We apologize for any inconvenience.
   </blockquote>
-  <Map from={inventory.c3_dean}
+  <p>
+    I looked up from the plaque and scanned the area around the quad. Sure enough,
+    a thin path lead up to the only non-brick building in sight,
+    a dreary concrete bunker marked SCIENCE CENTER. One wing of the building
+    looked brand-new, its gray blocks gleaming but no less ugly. A backhoe was parked nearby,
+    lying in wait.
+  </p>
+  <p>I caught a glimpse of the <ListCard expansions={["odd woman"]} tag="c4_woman" card={<span>She was the only adult I really knew at this point.</span>} /> who
+    had let me in the building last night, darting into the <List expansions={[["Science Center"], ["Science Center."]]}
+      tag="c4_direction_science" />.
+    On the other hand, I could now clearly see the building marked <List expansions={[['"Office of the Dean."'], [`"Office of the Dean." I decided I couldn't put this meeting off forever.`]]}
+    tag="c4_direction_dean" />
+  </p>
+</section>,
+<section>
+  <Map from={inventory.c4_direction_science}
     to={{
-      science: <div>
-        <p>
-          I looked up from the plaque and scanned the area around the quad. Sure enough,
-          a thin path lead up to the only non-brick building in sight,
-          a dreary concrete bunker marked SCIENCE CENTER. One wing of the building
-          looked brand-new, its gray blocks gleaming but no less ugly.
+      "center": <div>
+        <p>I wanted to thank her for her help last night [and put off meeting my boss a little longer], so I followed her.</p>
+        <p>I had entered into the newly-constructed space, still
+          swathed in plastic sheeting and warning tape. The floor was covered by sheets of plain tan paper, stamped over with
+          boot marks from workers. The woman was nowhere to be seen.
         </p>
-        <p>Once inside,
-          I saw that the new wing was labelled "Computer Lab" and was still under construction,
-          swathed in plastic sheeting and warning tape. The science dean's young assistant was friendy,
-          but told me the dean was off-campus and wasn't returning today. "Sorry about the mess,"
-          he added. "Did you want to meet with Dean Orellana in Humanities instead?"
-        </p>
-        <p>I couldn't put this meeting off forever, so I thanked him and took up his
-          offer to lead me there. "Things are a bit upside-down right now," he said, leading
-          me down a stairwell. "The computer
-          lab should've been done before the school year started but there was a... complication."
+        <p>I followed the path of heaviest boot prints down the hallway. Most of the new rooms looked to be
+          labs and other functional spaces, with lots of cabling dangling from unpaneled ceilings. Everything
+          was bright white, though still dusty and rough.</p>
+          <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fire-safe stairwell. The stairs
+            leading up were incomplete, without handrails, and the stairs leading down were—
+          </p>
+          <p>"Can I help you find something?" a male voice behind me asked.</p>
+          <p>"Oh, sorry, I'm probably not supposed to be here am I?"</p>
+          <p>
+            He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
+          </p>
+          <p>
+            "I am," I said, shaking hands. He was young and I assumed at first that he was a student until I
+            remembered that was highly unlikely.
+          </p>
+          <p>"I'm ___, Dean Orellana's assistant." He paused delicately. "She's looking for you and I thought it'd be better
+            if you came of your own accord."</p>
+
+          <p>"Am I in that much trouble already?"</p>
+          <p>"It's okay. Things are a bit upside-down right now," he said, leading
+          me away from the stairwell. "This wing
+          should've been opened in time for the start of the school year but there was a... complication."
         </p>
         <p>
           "Oh?" I asked.
         </p>
         <p>
           "When they broke ground on the lab they found a sub-basement, a cellar really,
-          nobody knew about." He wrinkled his nose. "Lots of water damage,
+          that nobody knew about." He wrinkled his nose. "Lots of water damage,
           smelled really bad. I had to help pull out some moldy crates. The history faculty were excited
           about it all, though. They've been using the material for an exhibit about the founding of the
           college. Do you know the history?
@@ -277,7 +266,7 @@ export default ({currentSection, inventory, cards}) => {
           tag="c3_dean_meet" nextUnit="chapter" />.
         </p>
       </div>,
-      humanities: <div>
+      "forever.": <div>
         <p>
           I looked up from the plaque and scanned the area around the quad until I noticed a formal
           wood-carved sign marked "History Department." It was a grand old building, obviously once
@@ -328,6 +317,7 @@ export default ({currentSection, inventory, cards}) => {
         />
       </div>
     }} />
+
 </section>,
 <section>
   <Map from={inventory.c3_dean}
