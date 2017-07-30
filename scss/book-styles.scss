@@ -8,14 +8,23 @@
 .reader .doc .reader-container .pages {
 
   &.frag1 {
-    background-image: url('images/textures/paper1.jpg');
-    article {
-      padding: 1rem 3rem;
+    .recto, .verso {
+      display: none;
     }
+    article.article {
+      padding: 0rem 1rem;
+      p, h1, h2, h3, h4, h5, h6 {
+        font-family: $utopian-font;
+        font-size: 1.3rem;
+        text-indent: 0;
+      }
+    }
+    background: radial-gradient(ellipse farthest-corner at 90% 90%,
+                                      rgba(102, 96, 20, .05) 0%,
+                                      rgba(220, 220, 210, .8) 100%);
+
   }
   &.notes {
-    background: none;
-
     article.article {
       text-indent: 0;
       margin: 2rem;
@@ -38,9 +47,10 @@
       font-size: .4rem;
       text-transform: uppercase;
     }
+    /*
     background: radial-gradient(ellipse farthest-corner at 90% 90%,
                                       rgba(0, 10, 10, .05) 0%,
                                       rgba(220, 220, 210, .8) 100%);
-
+  */
   }
 }

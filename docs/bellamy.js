@@ -20,8 +20,7 @@ const bellamy = ({nextDoc, prevDoc}) => {
                 card={<span>Lynn's note to himself was scribbled in the page margin.
                   There were <List tag="bel1-pages"
                     expansions={[["two more pages"], ["two more pages"]]}
-                    onComplete={nextDoc}
-                    nextUnit="none"
+                    nextUnit="section"
                      /> beneath this photocopy from the book.
 
                 </span>} /> </span>}

@@ -4,29 +4,40 @@ import ListCard from '../components/listCard'
 
 export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
   return <div>
-    <p> <ListCard tag="frag1_last"
-      expansions={["I settled into my reverie as usual"]}
+    <h1>October 30, 1890</h1>
+    <p><ListCard expansions={["A TRUE BREAKTHROUGH"]}
+      tag="frag1_first"
       author="lynn"
-      card={<span>Found this fragment in the archives, not sure which
-      book it's from?</span>} />, with a sense of foreboding that this
-      time would be different. The veil between the worlds seemed especially
-      thin, even before I completed the ritual.</p>
-      <p>A shadow fell across my vision, and my extremities went utterly
-        numb. If I moved my head, I could see a curious doubling of the world,
-        as if there were two copies of reality, one becoming unstuck from the
-        other.</p>
-      <p>I shook my head, and I could feel the world physically becoming
-        unmoored, peeling off and rattling around like a broken valve. </p>
-      <p>Then, without warning, the reality I'd known dropped away, the
-          rusting hinge connecting me and my old life snapped, as if under
-          a great load. <Map from={inventory.frag1_last}
-            to={{ _undefined: "And I could see",
+      card={<span>[The Archivist] brought this to my attention. Logically it
+        must have belonged to one of the Harmonists; were they the author?</span>} />
+
+    </p>
+    <p> At last! The veil between the worlds seemed especially
+    thin, the weather fine, and my spirits uplifted. I was determined that this was the day to
+    try again. Z— was less willing, but ever is she so. What will it take to convince her?
+    </p>
+    <p>Once the machine was engaged, the familiar shadow fell across my vision and the
+      nerves in extremities became excited. I felt the roots of the cellar floor grow up beneath
+      my legs, enveloping my feet and then my upper legs. At the same time I could feel myself pulled upward,
+      toward the great rock.
+    </p>
+    <p>I was pinned in place between these two great forces of Nature. How long
+      this went on I cannot say, but at last some cosmic force gave way and I was released.
+      I still entangled by the roots, but now spiritually free and my sensibilities
+      were wholly in the New Paradise.
+    </p>
+    <p>Z— of course, was gone, and everything around me was covered in a thick layer of dust and
+      debris. I freed myself from the earth and set about exploring this miraculous place again.
+    </p>
+    <p>I was struck this time by the carriages: great enclosures of iron and glass, which moved without the aid
+      of <Map from={inventory.frag1_first}
+            to={{ _undefined: "beasts or men, and which gave off no steam.",
                 _any: <span>
-                        <List tag="frag1-last"
-                          expansions={[["And I could see"], ["And I could see"]]}
+                        <List tag="frag1_last"
+                          expansions={[["beasts or men, and which gave off no steam."], ["beasts or men—"]]}
                            />
                       </span>
-          }} />...
+          }} />
       </p>
     </div>
 }

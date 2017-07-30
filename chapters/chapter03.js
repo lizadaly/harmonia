@@ -12,14 +12,11 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
     <heading>
-      <h2>Chapter 2</h2>
-      <h3>A lecture</h3>
-      <figure><img src="images/lecture.png" width="200"/></figure>
-      <h6>November 4, 1990</h6>
+      <h2>November 4, 1990</h2>
     </heading>
 
     <p>
-      I needed this job so badly I'd driven a thousand miles, and now I was late to my first class.
+      I'd driven hundreds of icy miles for this job and now I was late to my first class.
     </p>
     <p>
       Thirty young women, seated in neat
@@ -28,7 +25,7 @@ export default ({currentSection, inventory, cards}) => {
       out onto the floor. I brushed my hair out of my face. I was sweating
       even though I'd jogged across campus  <ListCard expansions={["without a coat"]}
         tag="c1-coat"
-        card={<span>At this point I didn't even own a coat.</span>} />.
+        card={<span>I was so tired last night I'd left it in my car.</span>} />.
     </p>
     <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
     <p>"Can't hear you," said someone in the back.</p>
@@ -37,36 +34,26 @@ export default ({currentSection, inventory, cards}) => {
         tag="c1-name"
         card={<span>Not <i>Professor Fuller</i> at this point in my career.</span>} />."
       I'd never taught college students before, nor an all-women class.
-      Their <ListCard expansions={["undivided attention"]}
-        tag="c1-women"
-        card={<span>I genuinely liked being a high school substitute, but let's just
-        say student commitment could be "variable."</span>} /> was disconcerting.</p>
-
+      Their undivided attention was disconcerting.</p>
     <p>
-      I <List expansions={[["moved to continue my introduction", "a woman was raising her hand"],
-      ["moved to continue my introduction", "a woman was raising her hand"]]}
-        conjunction="but"
-          tag="c1_question" />.
-
+      I coughed again, and looked down at the notes I'd hastily scribbled this morning.
+      I had no idea what material Lynn had already covered or even <ListCard expansions={["how many classes he'd taught"]}
+        tag="c3-taught"
+        card={<span>I'd need to ask the dean about that when I saw her.</span>} />.
+    </p>
+    <p>I looked up and saw that a <List expansions={[["hand was raised"], ["hand was raised. I called on her and asked her name."]]}
+      tag="c3_called" />.
     </p>
   </section>,
   <section>
-    <Map from={inventory.c1_question}
-      to={{
-        introduction: <p>I nodded to acknowledge her, but continued on:</p>,
-        hand: <div>
-          <p>Flustered, I called on her and asked her name.</p>
-          <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
-            probably featured on the cover of the school brochure. "What happened to Professor Lynn?"
-          </p>
-          <p>Ah. "I'm substituting for him until further notice.
-            I'm afraid <ListCard expansions={["I can't disclose further details"]}
-              tag="c1-question2"
-              card={<span>Because I had no idea.</span>} />. "
-          </p>
-        </div>
-      }}
-    />
+    <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
+      probably featured on the cover of the school brochure. "What happened to Professor Lynn?"
+    </p>
+    <p>Ah. "I'm substituting for him until further notice.
+      I'm afraid <ListCard expansions={["I can't disclose further details"]}
+        tag="c1-question2"
+        card={<span>Literally couldn't, since I had no idea.</span>} />. "
+    </p>
     <p>
       "Utopian Literature," I began{inventory.c1_question === "a woman was raising her hand" ? " again" : ""}.
       "The term was first used as the title of Thomas More's 1561 work, <i>Utopia</i>."
@@ -96,13 +83,33 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>I <ListCard expansions={["struck a line"]}
       tag="c1-line"
-      card={<span>No matter how screwed up my life gets, I make sure to always have a pen.</span>} /> through
+      card={<span>Say what you will about me, but I always have a pen.</span>} /> through
     the first lecture. </p>
-    <p>"Did he cover <List expansions={[["intentional communities"], ["intentional communities"]]}
-      tag="c1_correction2" /> as well?" {inventory.c1_correction2 ? "More nods." : ""}</p>
+    <p>"Did he cover <List expansions={[["intentional communities", "would you like me to go over that"], ["intentional communities"]]}
+      conjunction="or" tag="c1_correction2" /> as well?" {inventory.c1_correction2 === "intentional communities" ? "More nods." : ""}</p>
     </section>,
   <section>
-    <p>"Right, so, that's all set." I added another strikethrough. "How about American Utopian fiction?"</p>
+    <Map from={inventory.c1_correction2}
+      to={{
+        communities: <div>
+          <p>"Right, so, that's all set." I added another strikethrough. "How about American Utopian fiction?"</p>
+        </div>,
+        that: <div>
+          <p>
+          "Deliberate experiments to build the so-called perfect society began in the US in the early 1800s,"
+          I began, adopting my best professorial voice. "Many of the more successful ones, like the Shakers,"
+          got their start here in New England—"
+          </p>
+          <p>"You mean like here?" the girl named Meredith asked.</p>
+          <p>"What?"</p>
+          <p>"The Harmonists. Before Blithedale was a college."</p>
+          <p>"Oh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
+          card={<span>So much for sounding like an authority.</span>} />."
+        </p>
+
+        </div>
+      }}
+    />
     <p>
       <Map from={inventory.c1_question}
         to={{
@@ -266,7 +273,7 @@ export default ({currentSection, inventory, cards}) => {
           tag="c3_dean_meet" nextUnit="chapter" />.
         </p>
       </div>,
-      "forever.": <div>
+      "dean.": <div>
         <p>
           I looked up from the plaque and scanned the area around the quad until I noticed a formal
           wood-carved sign marked "History Department." It was a grand old building, obviously once

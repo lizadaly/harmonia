@@ -6,8 +6,8 @@ import {frag1} from './frags'
 
 export const docs = {
   frag1: {
-    author: "XXX",
-    title: "Notes from a Journey",
+    author: "",
+    title: "",
     id: "frag1",
     year: 1880,
     text: frag1,

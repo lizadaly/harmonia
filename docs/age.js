@@ -39,6 +39,10 @@ const age = ({nextDoc, prevDoc}) =>  {
         In vain I scanned the horizon, waiting impatiently to see the distant puff of white steam from some passing engine.
         There was one large house in sight, but no town, nor even a hamlet, and not one solitary spire.
       </p>
+      <p className="lynn-font">
+        (Lots here sounds like the <List expansions={[["unknown manuscript"],["unknown manuscript"]]}
+        tag="age1-manuscript" />; was this an influence on that author?)
+      </p>
     </div>
 }
 export default age

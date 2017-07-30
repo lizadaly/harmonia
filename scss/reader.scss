@@ -15,22 +15,20 @@ $reader-margin: 3rem;
 
       .pages {
 
-        min-height: 600px;
-
         padding: 3rem 2rem;
-
+        /*
         background: radial-gradient(ellipse farthest-corner at 10% 10%,
                                           rgba(0, 10, 10, .05) 0%,
                                           rgba(200, 200, 210, .8) 100%);
-
+        */
         font-family: 'Playfair Display', serif;
-
+        /*
         border-radius: 2px;
         border: 1px solid transparent;
         border-top: none;
         border-bottom: 1px solid #DDD;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, .39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
-
+        */
         .recto, .verso {
           margin-bottom: 1rem;
           .title {
@@ -80,17 +78,16 @@ $reader-margin: 3rem;
     }
   }
   box-shadow:
-    /* The top layer shadow */
-    0 1px 1px rgba(0,0,0,0.15),
-    /* The second layer */
-    0 10px 0 -5px #eee,
-    /* The second layer shadow */
-    0 10px 1px -4px rgba(0,0,0,0.15),
-     /* The third layer */
-    0 20px 0 -10px #eee,
-    /* The third layer shadow */
-    0 20px 1px -9px rgba(0,0,0,0.15);
+    0 0 1em rgba(0,0,0,0.15);
 
+  /*
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0,0,0,0.15);
+  */
   .next-link {
     position: absolute;
     width: 18%;

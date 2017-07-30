@@ -10,31 +10,29 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
       <heading>
-        <h2>Chapter 1</h2>
-        <h3>My arrival</h3>
-        <figure><img src="images/carriage.png" width="200"/></figure>
-        <h6>November 3, 1990</h6>
+        <h2>November 3, 1990</h2>
       </heading>
-      <p>It was nearly midnight when I finally arrived on campus, after more than a thousand
-        miles of solo driving. The further I went from home, the shorter and colder
-        and lonelier the days had gotten. Now <ListCard expansions={["Blithedale College"]}
+      <p>It was nearly midnight when I finally arrived on campus, after more than five
+        hours of hazardous weather driving. The last hour had been a slow climb into the
+        deeply forested mountains, with virtually no signs of life. <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
-          Massachusetts like a bookmark.</span>} /> would be my home now.
+          Massachusetts like a bookmark.</span>} />, this remote place, would be my home now.
       </p>
       <p>
-        At this point in my career I would've taken any kind of teaching job, but an emergency
-        substitute position—in Massachusetts through winter term—was maybe not
-        an ideal toehold in academia for someone who'd barely left Florida.
-        I'd received a letter extending the offer, and had a brief phone call with
+        At this point in my career I would've taken any kind of teaching job, but a one-semester emergency
+        substitute position, at an obscure, semi-rural women's college, no less, was maybe not
+        an ideal toehold in academia.
+        I'd received a letter extending the offer and had a brief phone call with
         the <ListCard expansions={["dean"]}
           tag="c1-dean"
-          card={<span>Dean Orellana had made it clear that if I didn't accept the offer
+          card={<span>Dean Orellana had made it clear: if I didn't accept the offer
           promptly, she had plenty more takers on hand.</span>} />.
-        I'd packed up a few essentials and left two days ago.
+        I'd packed up a few essentials and left this morning, stopping twice when the icy rain
+        escalated to zero visibility.
       </p>
       <p>
-        The road to campus was barely paved, and on this night the early winter
+        The road to campus was steep and barely paved, and on this night the early winter
         snow had turned it into a slippery mess. My
         old beater car was fishtailing everywhere and I nearly sideswiped a
         couple trees.</p>
@@ -47,8 +45,8 @@ export default ({currentSection, inventory, cards}) => {
         shuttered, their windows narrow slits against the storm.
       </p>
       <p>
-      I parked in the first lot I found, and in a stroke of good luck it overlooked the English literature department.
-      I unclenched my hands from the steering <nobr>wheel—they'd</nobr> been in a death grip since Connecticut—and hurried up
+      I parked in the first lot I found, and in a stroke of good luck it abutted my department.
+      I unclenched my hands from the steering <nobr>wheel—they</nobr> ached from my death grip—and hurried up
       to the entryway. <List
         expansions={[["The front door was unlocked"], ["The front door was unlocked and no alarms rang as I stepped into the building"]]}
         tag="c1-doorknob"/>.
@@ -56,14 +54,14 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
-    professors and adjuncts. I called out a hello, but no one answered.
-  </p>
-  <p>I recognized a few names on the door, but I was hunting for one door in particular. I found it at the
-    end of the row, <ListCard expansions={['"Professor Jeffrey Lynn"']}
+    professors and adjuncts.</p>
+    <p>I called out a hello, but no one answered.</p>
+  <p>I recognized a few names here and there but I was hunting for one door in particular—the professor I'd bee hired to replace. I found it at the
+    end of the row: <ListCard expansions={['"Professor Jeffrey Lynn"']}
     tag="c1-scholar"
         card={<span>
           Lynn's area of scholarship was 19th century mysticism. Mine was Civil War-era pre-feminist
-          movements. Close enough.
+          movements. Close enough, I guess.
         </span>}
       />. His door was <List expansions={[["ajar"], ["ajar, so I let myself in and flipped on a light"]]} tag="c1-in" />.
     </p>
@@ -74,11 +72,11 @@ export default ({currentSection, inventory, cards}) => {
       It had the feel of having been abandoned by its owner.
     </p>
     <p>
-      His desk was a special kind of academic disaster, but a small worktable by the doorway had just a single stack of papers.
+      His desk was a special kind of academic disaster, but a small worktable by the doorway held just a single stack of papers.
       I was overjoyed to recognize a draft of <ListCard expansions={["my class's syllabus"]}
         tag="c1-pile"
         nextUnit="chapter"
-        card={<span>Look if he didn't want his stuff read, he shouldn't have gone missing.</span>} /> along with some
+        card={<span>Look if he didn't want me nosing around, he shouldn't have gone missing.</span>} /> along with some
         photocopies of relevant chapters.
 
     </p>

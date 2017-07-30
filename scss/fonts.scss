@@ -37,3 +37,9 @@ $typewritten-font: 'Inconsolata', monospace;
     font-weight: normal;
     font-style: normal;
 }
+
+$utopian-font: 'EB Garamond', serif;
+
+.utopian-font {
+  font-family: $utopian-font;
+}
