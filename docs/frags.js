@@ -17,13 +17,13 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
     try again. Z— was less willing, but ever is she so. What will it take to convince her?
     </p>
     <p>Once the machine was engaged, the familiar shadow fell across my vision and the
-      nerves in extremities became excited. I felt the roots of the cellar floor grow up beneath
+      nerves in my extremities became excited. I felt the roots of the cellar floor grow up beneath
       my legs, enveloping my feet and then my upper legs. At the same time I could feel myself pulled upward,
       toward the great rock.
     </p>
-    <p>I was pinned in place between these two great forces of Nature. How long
-      this went on I cannot say, but at last some cosmic force gave way and I was released.
-      I still entangled by the roots, but now spiritually free and my sensibilities
+    <p>I was pinned in place between these two forces of Nature. How long
+      this went on I cannot say, but at last the cosmic force receded and I was released.
+      My sensibilities
       were wholly in the New Paradise.
     </p>
     <p>Z— of course, was gone, and everything around me was covered in a thick layer of dust and

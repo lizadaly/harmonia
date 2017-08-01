@@ -3,6 +3,7 @@ import bellamy from './bellamy'
 import age from './age'
 import notes from './notes'
 import {frag1} from './frags'
+import {paper1} from './newspaper'
 
 export const docs = {
   frag1: {
@@ -40,5 +41,13 @@ export const docs = {
     page: 1,
     text: age,
     type: "book"
+  },
+  paper1: {
+    author: "",
+    title: "",
+    id: "paper1",
+    text: paper1,
+    type: "paper"
+
   }
 }

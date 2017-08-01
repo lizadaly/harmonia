@@ -5,13 +5,15 @@ const notes = ({nextDoc, prevDoc}) => {
 
     return <div>
       <p>
-        Coined by Thomas More, <i>Utopia</i> (1516), utopian literature flourished
-        in the late 19th century. Often intertwined with real-life intentional communities.
-        Many stories are thin narrative window-dressing over socialist tracts—heavy
-        on excruciating detail about food production, civic engagement, gender politics.
+        The term was first coined by Thomas More in <i>Utopia</i> (1516), but
+        utopian literature truly flourished
+        in the late 19th century. It often inspired or was inspired by real-life
+        communes or intentional communities.
+        Stories tend to be thin narrative window-dressing over socialist tracts—heavy
+        on detail about food production, civic engagement, and gender politics.
       </p>
       <p>Students should come away with an understanding of the political landscapes
-      that shaped utopian thinking, and be prepared to discuss their influence on later
+      that shaped utopian thinking, and be prepared to discuss utopians' influence on later
       fantasy/science fiction/dystopian writing.
       </p>
       <h6>

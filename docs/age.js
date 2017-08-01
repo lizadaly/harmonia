@@ -7,9 +7,8 @@ const age = ({nextDoc, prevDoc}) =>  {
     <h1>A Crystal Age</h1>
     <h4>by</h4>
     <h3>W.H. Hudson</h3>
-    <h6>Author of "The Purple Land," "A Shepherd's Life," etc.</h6>
-    <h2><br/><br/>I</h2>
       <p>
+        <br/>
         I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
         While hunting for some variety of plants in the mountains, I sat down to rest on the edge of a ravine.
         The ground suddently gave way all about me,
@@ -29,8 +28,7 @@ const age = ({nextDoc, prevDoc}) =>  {
         I found myself standing in an immense pit. It looked as if the solid earth
         had been indulging in some curious transformation during those moments of insensibility.
         I had a great mass of small fibrous rootlets tightly woven about
-        my whole person, so that I was like a colossal basket-worm in its case, or a big man-shaped bottle covered
-        with wicker-work. It appeared as if the roots had grown round me.
+        my whole person; it appeared as if the roots had grown round me.
       </p>
       <p>
         Grateful at having escaped with unbroken bones from such a dangerous accident, I set out walking along the
