@@ -64,8 +64,8 @@ export const paper1 = () => {
       <p>
         There is known to be a similarity between electricity and the
         power of the will. It follows, then, that by the galvanic battery, it may be
-        possible to put a spirit into soft iron such as
-        <List expansions={[["our Astrolith"], ["our Astrolith"]]}
+        possible to put a spirit into soft iron such
+        as <List expansions={[["our Astrolith"], ["our Astrolith"]]}
           tag="newspaper_astrolith" /> and take it out again.
       </p>
     </div>

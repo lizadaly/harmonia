@@ -26,11 +26,14 @@
     visibility: visible;
   }
   &.center {
-/*    position: static; */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translateX(-50%);
+    width: inherit;
     text-align: center;
     display: block;
     margin: 5rem auto 2rem auto;
-    padding: 20px 0 0 0;
+    padding: 0;
+
     visibility: visible;
   }
 
