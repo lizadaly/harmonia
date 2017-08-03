@@ -50,7 +50,7 @@ export default ({currentSection, inventory}) => {
     </p>
     <p>
       She really could turn on the charm. "I guess it would just help me if
-      you could—tell me a bit more about this place."
+      you could—"
     </p>
     <p>
       "Ms. Fuller, I am very busy and have an appointment in 10 minutes. You're going
@@ -62,7 +62,7 @@ export default ({currentSection, inventory}) => {
         specific: <p>"Could you tell me  <List expansions={[["about the history of the college?",
         "what happened to Professor Lynn?"], "_last"]}
             tag="c4_question"
-            conjunction="or, " />"
+            conjunction="Or, wait, no, " />"
         </p>
       }} />
   </section>,
@@ -71,31 +71,28 @@ export default ({currentSection, inventory}) => {
       to={{
         "lynn?": <div>
           <p>
-            She paused, and then told me to close the door. "___ Lynn had been teaching
-            here for over 10 years. He wasn't adored, but he was well-liked by the students.
-            Never gave me much trouble. [For Orellana this was high praise.]
-            His utopian class is a signature one for us, because as you apparently didn't
-            bother to learn, the college is founded on the grounds of an old utopian community itself."
+            She paused, and then told me to close the door. "Jeffrey Lynn had been teaching
+            here for over 10 years. His class on utopianism is a signature one for the college, given our history.
           </p>
           <p>
-            "I didn't have to time to look into—"
+            "We've been undertaking an expansion of the
+            science wing, as part of a strategic agenda to transform this into a
+            research institute. I plan on my making this my <ListCard expansions={["legacy"]} tag="c3-legacy"
+              card={<span>I got the impression that the dean lets very little stand in her way.</span>} />.
           </p>
           <p>
-            "As you also probably don't know, we have been undertaking an expansion of the
-            science wing, as part of a large grant to transform the college into more of a
-            research institute. I plan on making that my legacy."
-            [I got the impression that very little would stand in her way.]
+            "The historical significance of the campus is a great asset to us, but can be a liability
+            when it comes to modernization and development. I asked Jeffrey to lead the
+            conservation team—to protect the artifacts found during the excavations but to balance that
+            with the need to keep up momentum." She frowned. "He knew very well how important it was
+            to me that we open this school year with the building complete, but he kept slowing us down,
+            until the project was almost at a crawl."
           </p>
           <p>
-            "There were conservation issues that arises as part of the construction
-            project; some old storage facilities that needed to be preserved.
-            Lynn was leading that initiative, he wanted first crack at the material
-            that was recovered." She frowned. "The historical significance of this
-            campus is a great asset for us, but it can be a liability when it comes to
-            modernization and development."
-          </p>
-          <p>
-            "And Lynn," I prompted.
+            "What did Lynn do instead?" I <ListCard tag="c3-asked"
+              expansions={["asked"]}
+              nextUnit="section"
+              card={<span>Meanwhile I tried not to imagine that she'd murdered a faculty member for going off schedule.</span>} />.
           </p>
         </div>,
         "college?": <div> <p> "As you apparently didn't bother to learn before you arrived, the college was
@@ -131,16 +128,35 @@ export default ({currentSection, inventory}) => {
         </p>
       </div>
     }} />
+  </section>,
+  <section>
     <p>
-      She snorted dismissively. "He just disappeared shortly after term started.
-      I suspect he found something in the archives that was too good to pass up
-      and ran off with it." She leaned back. "He can try, but I have an army of
-      lawyers that will not be happy to see college property show up in a museum
-      or at some auction. He'll regret it." [I did not doubt this.]
+      She sniffed. "He halted the construction project abruptly—went out one morning and stood in front of the
+      bulldozers, said everything had to stop. I was furious. I made an appointment for him to see me that afternoon
+      and he never showed.
     </p>
+    <p>"This was just after term started," she explained. "He missed a few classes, and stopped joining the
+      regular meetings with the Historical Committee. <Map from={inventory.c2_direction}
+        to={{
+          curiosity: <span>Ella Merchant, our library archivist, </span>,
+          dean: <span>You met Ella, she's the committee chair, she </span>
+
+        }} /> says he'd started going through materials from one of the old cellars by himself and not
+        involving the group.
+      </p>
+      <p>
+      "I believe he found something in the archives that was too good to pass up
+      and ran off with it." She leaned back. "I have an army of
+      lawyers that will not be happy to see college property show up in a museum
+      or at some auction. He'll <ListCard expansions={["regret"]} tag="c3-regret"
+        nextUnit="section"
+        card={<span>I did not doubt this.</span>} /> it."
+    </p>
+  </section>,
+  <section>
     <p>
       She stood up, and this meant I did too. "Now you'll have to excuse me, Ms. Fuller.
-      I have an appointment with a donor. [It was clear how faculty ranked relative to donors.]"
+      I have an appointment with a donor."
     </p>
     <p>"Thanks again," I muttered, and got up to leave. The dean cleared her throat and I turned back.</p>
     <p>
