@@ -26,9 +26,9 @@ export default ({currentSection, inventory}) => {
     <section>
       <p>Curious, I turned to the last page on the pile. It wasn't a photocopy or
         printout like the others, but instead a fragile piece of
-        yellowed writing paper, <ListCard expansions={["handwritten in a looping, archaic style"]}
+        yellowed writing paper, <ListCard expansions={["handwritten"]}
           tag="c2_writing"
-          card={<span>I've reproduced it here in type to make it more readable.</span>} />:
+          card={<span>I've reproduced it here in type to make it more readable.</span>} />  in a looping, archaic style:
         </p>
       <Reader inventory={inventory} docs={[docs.frag1]} />
     </section>,
@@ -37,9 +37,9 @@ export default ({currentSection, inventory}) => {
       <p>The papers were abruptly snatched out of my hand.
       </p>
       <p> "Excuse me, what are you doing?" I looked up to
-        see a plain-looking woman standing over me and regarding me with suspicion.
-        Her hair was limp, unstyled, and she wore a long-sleeved, ankle length dress and carried a flashlight.
-        The light was pointed directly into my face.
+        see a woman standing over me and regarding me with suspicion.
+        Her hair was long and unstyled, and she wore an ankle-length plain blue dress and carried a flashlight.
+        The beam was pointed directly into my face.
       </p>
       <p>I reminded myself that I was invited here and didn't need to <ListCard
         expansions={["apologize"]}

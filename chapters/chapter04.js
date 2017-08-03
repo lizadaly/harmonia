@@ -10,16 +10,18 @@ import ListCard from '../components/listCard'
 export default ({currentSection, inventory}) => {
   const sections = [<section>
     <p>
-      Dean Orellana's office was too big to be an office, really. Lots of empty space,
-      with her desk pushed up against the far wall and only two thin chairs facing it.
-      To speak with her meant crossing a wide gap, plenty of time to question why
-      you'd come here in the first place. I'm sure it was intentional.
+      Dean Orellana's office was too big to be an office, really—too much empty space,
+      her desk pushed up against the far wall with only two thin chairs facing it.
+      To speak with her meant crossing a wide gap, plenty of time to wonder whether
+      it was a good idea to meet with her at all. I'm sure it was intentional.
     </p>
     <p>
       The decor was almost homey, though, with lots of vintage college memorabilia decorating the walls—
-      group photos of serious-looking young women in bloomers, trophies and awards from through the years.
-      A large oil painting of the quad, with the astrolith in a prominent position
-      [the viewing platform had yet to be built], hung over a massive fireplace.
+      group photos of serious-looking young women in bloomers, sports trophies, leadership awards.
+      A large <ListCard expansions={["oil painting"]}
+        tag="c4_painting"
+        card={<span>It appeared to be the college campus, but in place of the quad was a massive
+        barn-shaped wooden building. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)"</span>} /> hung over a stone fireplace.
     </p>
     <p>
       "You're late," she said, without looking up. She was younger than I expected—mid 40s,

@@ -72,6 +72,11 @@ class _ListCard extends React.Component {
         if (this.props.forceDir === 'down') {
           anchors = ["Left", "Top"]
         }
+        else if (this.props.forceDir === 'inline-down') {
+          anchors = ["Left", "Left"]
+          target.classList.remove('left', 'right')
+          target.classList.add('center')
+        }
 
         this.positionTargetY(source, target)
 

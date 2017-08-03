@@ -14,7 +14,7 @@ export default ({currentSection, inventory, cards}) => {
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
-          rather than never be mistress of a world, I have <i>made a World of my own</i>. <br/><br/>
+          rather than never be mistress of a world, I have made a World of my own. <br/><br/>
           — Preface to <i>The Blazing World</i>, Margaret Lucas Cavendish (1666)
         </blockquote>
       </heading>
@@ -26,26 +26,25 @@ export default ({currentSection, inventory, cards}) => {
           Massachusetts like a bookmark.</span>} />, in this remote place, would be my home now.
       </p>
       <p>
-        At this point in my career I would've taken any kind of teaching job, but a one-semester emergency
-        substitute position, at an obscure, semi-rural women's college, no less, was maybe not
-        an ideal toehold in academia.
-        I'd received a letter extending the offer and had a brief phone call with
+        At this point in my career I would've taken any kind of teaching job, but a single-semester emergency
+        substitute position was not exactly the breakthrough in academia I'd wanted.
+        I'd received a letter extending the offer, had a brief phone call with
         the <ListCard expansions={["dean"]}
           tag="c1-dean"
           card={<span>Dean Orellana had made it clear: if I didn't accept the offer
-          promptly, she had plenty more takers on hand.</span>} />.
-        I'd packed up a few essentials and left this morning, stopping twice when the icy rain
-        escalated to zero visibility.
+          promptly, she had plenty more takers on hand.</span>} />, and started packing.
+        I left from Cape Cod this morning, stopping twice when the icy rain
+        escalated to the point of zero visibility.
       </p>
       <p>
         The road to campus was steep and barely paved, and on this night the early winter
         snow had turned it into a slippery mess. My
         beat-up old car was fishtailing everywhere and I nearly sideswiped a
-        couple trees.</p>
+      couple trees.</p>
       <p>
-        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs of cider"]}
+        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs of brandy"]}
           tag="c1-cider"
-          card={<span>I admit I was hazy on what professors did in their free time.</span>} /> with
+          card={<span>I admit I was hazy on what real professors did in their free time.</span>} /> with
         the rest of the faculty and argue about transcendalism. At the very least I needed to
         know where I'd be sleeping. Nobody was here to welcome me; the buildings were dark and
         shuttered, their windows narrow slits against the storm.

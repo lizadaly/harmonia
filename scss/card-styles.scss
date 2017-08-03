@@ -25,6 +25,15 @@
     padding: 0 20px 0 0;
     visibility: visible;
   }
+  &.center {
+/*    position: static; */
+    text-align: center;
+    display: block;
+    margin: 5rem auto 2rem auto;
+    padding: 20px 0 0 0;
+    visibility: visible;
+  }
+
   &.lynn {
     font-family: $lynn-font;
     color: $lynn-color;
