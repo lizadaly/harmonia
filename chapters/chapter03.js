@@ -147,7 +147,7 @@ export default ({currentSection, inventory}) => {
       <p>
       "I believe he found something in the archives that was too good to pass up
       and ran off with it." She leaned back. "I have an army of
-      lawyers that will not be happy to see college property show up in a museum
+      lawyers who will not be happy to see college property show up in a museum
       or at some auction. He'll <ListCard expansions={["regret"]} tag="c3-regret"
         nextUnit="section"
         card={<span>I did not doubt this.</span>} /> it."
@@ -158,38 +158,63 @@ export default ({currentSection, inventory}) => {
       She stood up, and this meant I did too. "Now you'll have to excuse me, Ms. Fuller.
       I have an appointment with a donor."
     </p>
-    <p>"Thanks again," I muttered, and got up to leave. The dean cleared her throat and I turned back.</p>
+    <p>"Thank you again, Dean," I said, and got up to leave. She cleared her throat and I stopped.</p>
     <p>
       "I'd like to see you succeed with us, Abby. Why don't you speak
-      with [Zenobia], Lynn's TA. She can probably help answer some of your
-      questions and assist with the class."
+      with Sarah Gilman, Lynn's research assistant. She can probably help answer some of your
+      questions and <ListCard expansions={["assist"]} tag="c3-assist"
+        card={<span>If she was Lynn's assistant, why hadn't she mentioned it when we met?</span>} /> with the class."
     </p>
-    <p>
-      I thanked her and closed the door behind me. [Kid] was waiting for me.
-      // FIXME depends on previous choice
-    </p>
-    <p>
-      "Thanks for sticking around," I said.
-    </p>
-    <p>
-      "No problem, I was on break anyway. I know how she can be."
-    </p>
-    <p>
-      "I've seen worse," I replied. "What do you know about [Zenobia]? The Dean told me to find her."
-    </p>
-    <p>
-      His eyes widened. "Ugh, she gives me the creeps. She's awake at all hours,
-      stalking around campus. No idea when she sleeps."
-    </p>
-    <p>
-      "Oh, I think I met her when I arrived." As an outsider myself I felt a little sorry for her.
-      "She wasn't so bad. If she hadn't been
-      around I think I would've spent my first night on Professor Lynn's floor."
-    </p>
-    <p>
-      He was unmoved. "Still creeps me out. Anyway, she's usually in the library
-      if she's not meeting with students. I'll show you where it is."
-    </p>
+    <Map from={inventory.c2_direction}
+        to={{
+          curiosity: <div>
+            <p>
+              I thanked the dean and closed the door behind me. Walter came immediately out of his small adjacent office.
+              I didn't mind that he'd been listening.
+            </p>
+            <p>
+              "That could've been worse," he said.
+            </p>
+            <p>
+              "Great," I sighed. "So what do you know about Sarah Gilman? The Dean told me to find her."
+            </p>
+            <p>
+              His eyes widened and he lowered his voice. "She kinda gives me the creeps. Not just me, though I
+              feel like she stares at me especially weirdly. A lot of the students find her strange."
+            </p>
+            <p>
+              "I think I met her when I arrived."
+            </p>
+            <p>"Probably. She never seems to sleep. Students tell freshman she's the ghost of long-dead utopians,
+              since she's often wandering around the campus at night."
+            </p>
+            <p>I felt a little bad for her. "If she hadn't been
+              around I would've spent my first night sleeping in my car."
+            </p>
+            <p>
+              He was unmoved. "She still creeps me out. Anyway, she's usually in the library
+              if she's not meeting with students. I'll show you where it is."
+            </p>
+            </div>,
+          dean: <div>
+            <p>
+              I was surprised to find my student Lillian waiting for me. "Ella told me you were with the dean," she explained.
+            </p>
+            <p>
+              "Did you want to see me about something?"
+            </p>
+            <p>
+              "Ella is my mentor on my independent study project. I've been cataloging the
+              material we've found." She looked around and lowered her voice. "I've been worried about Professor Lynn."
+            </p>
+            <p>
+              "Why do you say that?"
+            </p>
+            <p>
+
+            </p>
+          </div>
+        }} />
   </section>
 
   ]

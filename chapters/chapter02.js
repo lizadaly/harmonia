@@ -252,7 +252,7 @@ export default ({currentSection, inventory, cards}) => {
 
   </p>
   <p>
-    I hesitated, torn between <List expansions={[["following my curiousity", "meeting with the dean"], ["following my curiousity", "meeting with the dean"]]}
+    I hesitated, torn between <List expansions={[["following my curiosity", "meeting with the dean"], ["following my curiousity", "meeting with the dean"]]}
       tag="c2_direction" />.
   </p>
 </section>,
@@ -311,7 +311,7 @@ export default ({currentSection, inventory, cards}) => {
 <section>
   <Map from={inventory.c2_direction}
     to={{
-      "curiousity": <div>
+      "curiosity": <div>
   <p>"Can I help you find something?" a male voice behind me asked.</p>
   <p>"Oh, sorry, I'm probably not supposed to be here am I?"</p>
   <p>
@@ -321,7 +321,7 @@ export default ({currentSection, inventory, cards}) => {
     "I am," I said, shaking hands. He was young and I assumed at first that he was a student until I
     remembered that was kinda unlikely.
   </p>
-  <p>"I'm ___, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
+  <p>"I'm Walter Browne, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
   if you came of your own accord."</p>
 
   <p>"Am I in trouble already?"</p>
