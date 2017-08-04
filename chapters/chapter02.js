@@ -12,7 +12,7 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
     <heading>
-      <h2>November 4, 1990</h2>
+      <h2>Chapter Two</h2>
       <blockquote>
         Their educational system was a peculiar one, and, as it was the chief interest of the country,
         I shall describe it before proceeding farther with this narrative.<br/>
@@ -153,13 +153,9 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <heading>
-      <h2  style={{marginTop: '5rem'}}>* * * </h2>
-      <blockquote>
-        I was filled with astonishment at women who, qualified by nature and fortune to have the world almost
-        at their command, chose to seclude themselves from it and make a
-        new one for themselves. <br/>
-        —<i>Millennium Hall</i>, Sarah Scott (1762)
-      </blockquote>
+
+      <h6  style={{marginTop: '5rem'}}>* * * </h6>
+
     </heading>
     <p>
       On the night of my arrival the campus had seemed labrynthine
@@ -191,17 +187,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <figure>
       <img src="images/meteorite.jpg" />
-      <figcaption>I sketched this a few days later, when the importance of the
-        the <ListCard tag="c3_astro1a"
-          expansions={["astrolith"]}
-          card={<span>You'll find out what it means soon enough.
-            <Map from={inventory.c3_plaque}
-              to={{steps: <span><br/>(Told you.)</span>}} /></span>}
-            />,
-        became clear.
-      </figcaption>
     </figure>
-
     <p>
       It was a rectangular boulder, a couple meters square and one meter tall. There were bumps and depressions
       across its surface which had been smoothed by age. The top was largely flat, inviting one to sit.
@@ -252,25 +238,24 @@ export default ({currentSection, inventory, cards}) => {
 
   </p>
   <p>
-    I hesitated, torn between <List expansions={[["following my curiosity", "meeting with the dean"], ["following my curiousity", "meeting with the dean"]]}
+    I hesitated, torn between <List expansions={[["following my curiosity", "meeting with the dean"], ["following my curiosity", "meeting with the dean"]]}
       tag="c2_direction" />.
   </p>
 </section>,
 <section>
   <Map from={inventory.c2_direction}
     to={{
-      "curiousity": <div>
-        <p>I decided I'd catch up with her under the guise of thanking her for helping me last night.</p>
-        <p>The main foyer of the Science Center was a little dreary—this building seemed to date from the 60s—and the
-          newly-constructed wing was still
-          swathed in plastic sheeting and warning tape. The floor was covered by sheets of plain tan paper, stamped over with
+      "curiosity": <div>
+        <p>The dean would have to wait.</p>
+        <p>The atrium of the Science Center was only partially finished. Hallways were still
+          swathed in plastic sheeting and warning tape, and sawdust was everywhere. The floor was covered by layers of protective tan paper, pockmarked with
           boot marks from workers.
         </p>
         <p>I didn't see the woman immediately so I followed the path of heaviest footprints down the hallway.
-          Most of the new rooms looked to be
-          labs and other functional spaces, with lots of cabling dangling from unpaneled ceilings. Everything
-        was bright white, though still dusty and rough.</p>
-        <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fire-safe stairwell. The stairs
+          The newer rooms looked to be
+          labs and other functional spaces, with cabling dangling from unpanelled ceilings. Everything
+          was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
+        <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
           leading up were incomplete, without handrails. The stairs leading down were crisscrossed with
           tape and "No Admittance" signs, but they looked easy enough to <List expansions={[["duck under—"], ["duck under—"]]} tag="c2_cellar" />
         </p>
@@ -312,14 +297,14 @@ export default ({currentSection, inventory, cards}) => {
   <Map from={inventory.c2_direction}
     to={{
       "curiosity": <div>
-  <p>"Can I help you find something?" a male voice behind me asked.</p>
-  <p>"Oh, sorry, I'm probably not supposed to be here am I?"</p>
+  <p>"Can I help you find something?" a male voice behind me asked. I turned around.</p>
+  <p>He was young and I assumed at first that he was a student until I
+  remembered that was kinda unlikely. "Oh, sorry, I'm probably not supposed to be here am I?"</p>
   <p>
     He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
   </p>
   <p>
-    "I am," I said, shaking hands. He was young and I assumed at first that he was a student until I
-    remembered that was kinda unlikely.
+    "I am," I said, shaking hands.
   </p>
   <p>"I'm Walter Browne, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
   if you came of your own accord."</p>
@@ -341,14 +326,14 @@ export default ({currentSection, inventory, cards}) => {
   </p>
   <p>"The history faculty were excited
     about it all, though. They've been using the material for an exhibit about the founding of the
-    college, and before, when it was that colony."
+    college, and before."
   </p>
-  <p>In a concession to the New England winter, many of the buildings were interconnected, so we walked
+  <p>We walked
     from the sterile research center to the
-    warm, old administrative building without going back outside. The Dean's office was off a central
-    atrium with a grand winding staircase and near a door marked, "Special Exhibits."
+    warm, Victorian-era administrative building without going back outside—connecting hallways were a concession to the New England winter.
+    The Dean's office was near the main visitors' entrance, beside a grand winding staircase and a room marked "Special Exhibits."
   </p>
-  <p>"I expected her sooner," I heard the Dean call out. "I don't have long."</p>
+  <p>"I expected her sooner, Walter," I heard the Dean call out. "I don't have long."</p>
   <p>He gave me an apologetic look. "Good luck."</p>
   <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
     tag="c3_dean_meet" nextUnit="chapter" />.

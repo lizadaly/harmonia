@@ -12,7 +12,8 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
       <heading>
-        <h2>November 3, 1990</h2>
+        <h2>Chapter One</h2>
+        <h6>November 3, 1990</h6>
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
