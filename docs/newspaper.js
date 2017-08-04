@@ -7,32 +7,35 @@ import ListCard from '../components/listCard'
 export const paper1 = () => {
 
   return <div>
-    <div style={{'columnCount': 2}}>
+    <header>
+      <img src="images/header-glyph.png" />
+      <h1>The Circular</h1>
+      <img src="images/angel.png" />
+      <h2>Together We Shall Shine a Light ~ June 19, 1889</h2>
+    </header>
+    <div className="paper-container">
       <h4>Chemistry Under Difficulties</h4>
       <p>
-        <span className="first-letter">F</span>RIGHTFUL ACCIDENT!—Between
+        <span className="first-letter">F</span>RIGHTFUL ACCIDENT! Between
         twelve and one o'clock last night, the whole neighborhood was
         thrown into the utmost alarm by a terrible explosion in the vicinity
-        of Prof. C.'s Laboratory. On entering that establishment a
+        of Prof. C—'s Laboratory. On entering that establishment a
         scene of devastation plainly indicated that a scene of terrific
         violence had occurred. At first no trace of the Professor could be
         found—except a cloth cap which he was accustomed to wear while
         engaged in his occult investigations. Fortunately he was found
-        several hours later, ___.
+        several hours later, beneath the Phalanstery.
       </p>
-      <p>The Professor is known to be engaged in analyzing new compounds
-        and processes of exceedling dangerous character. While the
+      <p>Professor C—! You are known to be engaged in analyzing new compounds
+        and processes of exceedingly dangerous character. While the
         Community applauds your continued curiousity and Scientific
-        pursuits, we implore you to take heed of our concerns.
-      </p>
-      <p>
-        To guard against sudden incursions of explosive compounds, we
+        pursuits, we implore you to take heed of our concerns. We
         have taken the liberty of attaching large bolts to your door,
         securing them by means of bars through the door-posts.
       </p>
       <h4>The Best Time to Cut Hay</h4>
       <p>
-        Mr. A— writes to share, "The best method I have found is to
+        Our own Mr. A— writes, "The best method I have found is to
         commence about the 10th of June and finish by the 25th.
         Sometimes weather prevents so I cannot finish until the
         first days of July. The quality of the butter derived from
@@ -40,10 +43,9 @@ export const paper1 = () => {
         old customs and adopt this better one."
       </p>
 
-      <h4>Home-Talk</h4>
-      <h5>Professor C—</h5>
+      <h4>Spirituality Rises</h4>
       <p>
-        <span className="first-letter">T</span>HE MAGNET. It might be
+        <span className="first-letter">M</span>AGNETISM. It might be
         said that that the magnet is a body having a spirit in it.
         Besides the body of the iron there is, in and around it,
         an influence—a vibration or something which is entirely
@@ -66,7 +68,7 @@ export const paper1 = () => {
         power of the will. It follows, then, that by the galvanic battery, it may be
         possible to put a spirit into soft iron such
         as <List expansions={[["our Astrolith"], ["our Astrolith"]]}
-          tag="newspaper_astrolith" /> and take it out again.
+          tag="newspaper_astrolith" /> and, then to take it out again.
       </p>
     </div>
 

@@ -43,7 +43,9 @@ export const docs = {
     type: "book"
   },
   paper1: {
-    author: "",
+    author: "Together We Shall Shine a Light",
+    year: "1889",
+    author: "Summer 1889",
     title: "",
     id: "paper1",
     text: paper1,

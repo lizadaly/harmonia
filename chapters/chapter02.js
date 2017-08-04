@@ -154,7 +154,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <heading>
 
-      <h6  style={{marginTop: '5rem'}}>* * * </h6>
+      <h6  style={{marginTop: '10rem'}}>* * * </h6>
 
     </heading>
     <p>
@@ -262,13 +262,13 @@ export default ({currentSection, inventory, cards}) => {
       </div>,
       'dean': <div>
         <p>
-          In the end I decided I'd catch up with her later. It wasn't smart to leave your boss waiting.
+          Thena gain, it wasn't smart to leave your boss waiting.
         </p>
         <p>
           The administration building was a grand old brick edifice, fronted with tidy columns and an oversized door.
-          The entry hall was obviously designed to impress parents and donors: it was dominated by a magestic curved
-          stairwell with elaborate polished banisters and railings. Directly next to the stairs, a doorway lead off
-          to a brightly lit room; a freestanding brass sign read, "Current Exhibit." I leaned in and knocked on the open door.
+          The entry hall was obviously designed to impress parents and donors: it was dominated by a majestic curved
+          stairwell with elaborate banisters and railings. Directly next to the stairs, a doorway was flanked by
+          a freestanding brass sign that read, "Current Exhibit." I leaned in and knocked on the open door.
         </p>
         <p>
           An older woman was placing some manuscripts into a glass-topped display case and didn't seem
@@ -276,12 +276,13 @@ export default ({currentSection, inventory, cards}) => {
           I said, as quietly as possible, and she jumped. I introduced myself.
         </p>
         <p>
-          "Oh hello! I'm sorry I was startled, I get so absorbed by my work sometimes.
+          "Oh hello! Sorry I was startled, I get absorbed by my work sometimes!
           I'm Ella Merchant, I'm the college archivist."
         </p>
         <p>
           The exhibit room was small and square, and probably the first stop on any campus tour. It was divided up
-          by rows of Victorian-style curio cases, most of which were half-filled but surrounded by boxes of material.
+          by rows of Victorian-style curio cases, most of which were half-filled. Boxes were strewn all over
+          the room.
         </p>
         <p>
           "Thank you," I answered. "Say, do you happen
@@ -343,7 +344,7 @@ export default ({currentSection, inventory, cards}) => {
     <p>"Come here, you'll find this so interesting," she interrupted. "Do you know
     much of the history of the college?"</p>
     <p>"I've heard it was a utopian colony before it was a university?"</p>
-    <p>"That's right." She retrieved a small and yellowed pamphlet from a case and
+    <p>"That's right." She retrieved a small and yellowed piece of newsprint from a case and
       put it in my hands. "You may have seen they're expanding the math and science building," she said.
       "The construction project has exposed a network of old tunnels that ran under many of the buildings,
       and we've been finding some wonderful artifacts.
@@ -351,7 +352,7 @@ export default ({currentSection, inventory, cards}) => {
     <p>"Many of these cellars haven't been opened since the 1890s. It's a fascinating peek into how
       they lived at the time."
       She nodded eagerly at
-      the <List expansions={[["pamphlet in my hand"], ["pamphlet in my hand, which I unfolded"]]}
+      the <List expansions={[["broadsheet in my hand"], ["broadsheet in my hand, which I unfolded"]]}
         tag="c3_pamphlet"
       />.</p>
     </div>
