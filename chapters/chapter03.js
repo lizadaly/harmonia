@@ -20,8 +20,8 @@ export default ({currentSection, inventory}) => {
       </blockquote>
     </heading>
     <p>
-      Dean Orellana's office was spacious, with lots of vintage college memorabilia decorating the walls:
-      group photos of serious-looking young women in bloomers, sports trophies, leadership awards.
+      Dean Orellana's office was spacious, comfortably furnished, and adorned with vintage college memorabilia:
+      group photos of serious-looking young women in bloomers, sports trophies, awards for comportment and elocution.
       A large <ListCard expansions={["oil painting"]}
         tag="c4_painting"
         card={<span>It appeared to be the college campus, but in place of the quad was a massive
@@ -37,8 +37,8 @@ export default ({currentSection, inventory}) => {
       "I'm glad to hear; I thought it did too." I paused. "Thank you again for offering me this position," I said.
     </p>
     <p>
-      "You're welcome." She said nothing else, just <ListCard tag="c4_regarded"
-        expansions={["regarded me silently"]}
+      "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
+        expansions={["silently"]}
         card={<span>People like her do this to trick you into <List expansions={[["talking too much"], ["talking too much. I fell for it."]]}
             tag="c4_talking_too" /></span>} />.
     </p>
@@ -93,64 +93,75 @@ export default ({currentSection, inventory}) => {
             "The historical significance of the campus is a great asset to us, but can be a liability
             when it comes to modernization and development. I asked Jeffrey to lead the
             conservation team—to protect the artifacts found during the excavations but to balance that
-            against an aggressive construction schedule." She frowned. "He knew very well how important it was
+            against an aggressive construction schedule."
+          </p>
+          <p>
+            She nodded towards the oil painting. "He was obsessed with that old hall, with why it burned down.
+            I don't know why, it was made of wood and people used candles, what other reason do you need?
+            But Jeffrey was convinced that the artifacts contained
+            first-person accounts of what happened, or even some physical evidence of arson."
+          </p>
+          <p>She frowned. "He <i>knew</i> how important it was
             to me that we open this school year with the building complete, but he kept slowing us down,
-            until the project was almost at a crawl."
+            until the project was almost at a crawl. And then we missed the deadline."
           </p>
           <p>
             "And what happened to him—?" I <ListCard tag="c3-asked"
               expansions={["asked"]}
               nextUnit="section"
-              card={<span>Meanwhile I tried not to imagine that she'd murdered a faculty member for going off schedule.</span>} />.
+              card={<span>I told myself a dean would not actually murder a faculty member for going off schedule.</span>} />.
           </p>
         </div>,
         "college?": <div> <p> She leaned back and I could tell this was a story she told often. "As you may know the college was
-            founded on the grounds of an old utopian community. They called themselves the ____s."
+          founded on the grounds of an old utopian community. They called themselves the ____s."
         </p>
-        <p>
-          "Were they religious?"
-        </p>
-        <p>
-          "They would've considered themselves so, but 'spiritual' might be a better modern word. They were founded
-          with the idea that scientific progress could go hand-in-hand with creating a more Godly society." She nodded
-          towards the oil painting. "The founders uncovered the meteorite when they were tilling the fields and decided it
-          was a sign. They built their great hall around it, as a place of communal worship."
-        </p>
-        <p>
-          "What happened to the community?"
-        </p>
-        <p>
-          "Most of the first founders left over time; the soil up in the mountains is poor and the winters were brutal."
-          Then, something happened in 1899. The Phalanstery caught fire. It's possible it was deliberate—many of the
-          members believed the world was about to end and may have wanted to hasten it along."
-        </p>
-        <p>
-          "Was anyone hurt?"
-        </p>
-        <p>She paused. "You asked about Lynn. Jeffrey was leading the committee overseeing the archival of the
-          material we'd been turning up. He was very interested in the events leading up to the fire. Prior to our
-          digs, there hadn't been much material about the community's last days—few letters, no journals,
-          and their homegrown <Map from={inventory.c2_direction}
-            to={{
-              curiosity: " newspaper ",
-              dean: <span><ListCard expansions={["newspaper"]}
-                tag="c3-newspaper"
-                card={<span>This must've been what Ella had shown me.</span>} /></span>
-            }} />
-          had stopped publication. He was obsessed with that fire, with what had happened.
-        </p>
-        <p>"Once the smoke cleared the community mostly disbanded. People in those days often just melted away and
-          started over. Some of them moved to the Shaker community in Haverhill. A few of the
-          teachers remained and worked to turn it into a women's school."
-        </p>
-        <p>
-          "That's so fascinating. I had no idea," I said.
-        </p>
-        <p>
-          She studied me. "Lynn thought so too. He was always digging into the college
-          history, looking for material for his class. And when we broke ground on this Science Center expansion
-          he was there, getting in the way of the construction
-          teams looking for artifacts."
+          <p>
+            "Were they religious?"
+          </p>
+          <p>
+            "They would've considered themselves so, but 'spiritual' might be a better modern word. They were founded
+            on the idea that scientific progress could go hand-in-hand with creating a more Godly society. Women had
+            almost full participation in social and civic governance, maybe less so in science."
+          </p>
+          <p>She nodded
+            towards the oil painting. "The founders uncovered that meteorite when they were tilling the fields and decided it
+            was a sign. They built their great hall around it, as a place of communal worship."
+          </p>
+          <p>
+            "What happened to the community?"
+          </p>
+          <p>
+            "Most of the first founders left over time; the soil up in the mountains is poor and the winters were brutal."
+            She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then the Phalanstery caught fire.
+            It's possible it was deliberate—many
+            fringe religious groups of the time believed the world was about to end and some members may have wanted to hasten it along."
+          </p>
+          <p>
+            "Was anyone hurt?"
+          </p>
+          <p>She paused. "You asked about Lynn. Jeffrey was leading the committee that cataloged the
+            material we'd been turning up. He was very interested in the events leading up to the fire. Prior to this
+            excavation, there hadn't been much material about the community's last days—few letters, no journals,
+            and their homegrown <Map from={inventory.c2_direction}
+              to={{
+                curiosity: " newspaper ",
+                  dean: <span><ListCard expansions={["newspaper"]}
+                    tag="c3-newspaper"
+                    card={<span>This must've been what Ella had shown me.</span>} /></span>
+              }} /> had
+            stopped publication by then. Jeffrey was obsessed with that fire, with proving that it was arson.
+          </p>
+          <p>"Once the fire burnt itself out, the community mostly disbanded. Some moved to the Shaker
+            community in Haverhill. A few of the
+            teachers remained and worked to turn it into a women's school. But nobody wrote much about how it ended."
+          </p>
+          <p>
+            "That's so fascinating. I had no idea," I said.
+          </p>
+          <p>
+            She studied me. "Lynn thought so too. He was always digging into the college
+            history, looking for material for his class. And when we broke ground on this Science Center extension,
+            his curiosity turned into an obsession."
         </p>
         <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" /></p>
       </div>
@@ -159,10 +170,11 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       She sniffed. "He halted the construction project abruptly—went out one morning and stood in front of the
-      bulldozers, said everything had to stop. I was furious. I made an appointment for him to see me that afternoon
-      and he never showed.
+      bulldozers, said everything had to stop. I was furious. I demanded that he meet me right away,
+      but he never showed.
     </p>
-    <p>"This was just after term started," she explained. "He missed a few classes, and stopped joining the
+    <p>"This was just after term started," she explained. "As far as I was concerned he was already on probation.
+      He'd missed a few classes, and stopped joining the
       regular meetings with the Historical Committee. <Map from={inventory.c2_direction}
         to={{
           curiosity: <span>Ella Merchant, our library archivist, </span>,
@@ -187,50 +199,50 @@ export default ({currentSection, inventory}) => {
     </p>
     <p>
       "I'd like to see you succeed with us, Abby. Why don't you speak
-      with Sarah Gilman, Lynn's research assistant. She can probably help answer some of your
+      with Sarah Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
-        card={<span>If she was Lynn's assistant, why hadn't she mentioned it when we met?</span>} /> with the class."
+        card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class."
     </p>
     <Map from={inventory.c2_direction}
-        to={{
-          curiosity: <div>
-            <p>
-              I thanked the dean and closed the door behind me. Walter came immediately out of his small adjacent office.
-              I didn't mind that he'd been listening.
-            </p>
-            <p>
-              "That could've been worse," he said.
-            </p>
-            <p>
-              "If you say so," I said. "So what do you know about Sarah Gilman? The Dean told me to find her."
-            </p>
-            <p>
-              He made a face. "She kinda gives me the creeps. Not just me, though I
-              feel like she stares at me especially weirdly. A lot of the students find her strange."
-            </p>
-            <p>
-              "I think I met her when I arrived."
-            </p>
-            <p>"Probably, she never seems to sleep. Students tell freshman she's the ghost of long-dead utopians,
-              since she's often wandering around the campus at night."
-            </p>
-            <p>I felt a little bad for her. "If she hadn't been
-              around I would've spent my first night sleeping in my car."
-            </p>
-            <p>
-              He was unmoved. "She still creeps me out. Anyway, she's usually in the library
-              if she's not meeting with students. I'll show you where it is."
-            </p>
-            </div>,
-          dean: <div>
-            <p>
-              I was surprised to find my student Lillian waiting for me. "<ListCard expansions={["Ella"]}
-                tag="c3-ella"
-                card={<span>Lillian was studying to be a librarian and was doing an independent study project with the
-                archivist on the history of the college.</span>} /> said you were with the dean," she explained.
-            </p>
-            <p>
-              "Did you want to see me about something?"
+      to={{
+        curiosity: <div>
+          <p>
+            I thanked the dean and closed the door behind me. Walter came immediately out of his small adjacent office.
+            I didn't mind that he'd been listening.
+          </p>
+          <p>
+            "That could've been worse," he said.
+          </p>
+          <p>
+            "If you say so," I said. "So what do you know about Sarah Gilman? The Dean told me to find her."
+          </p>
+          <p>
+            He made a face. "She kinda gives me the creeps. Not just me, though I
+            feel like she stares at me especially weirdly. A lot of the students find her strange."
+          </p>
+          <p>
+            "I think I met her when I arrived."
+          </p>
+          <p>"Probably, she never seems to sleep. Students tell freshman she's the ghost of long-dead utopians,
+            since she's often wandering around the campus at night."
+          </p>
+          <p>I felt a little bad for her. "If she hadn't been
+            around I would've spent my first night sleeping in my car."
+          </p>
+          <p>
+            He was unmoved. "She still creeps me out. Anyway, she's usually in the library
+            if she's not meeting with students. I'll show you where it is."
+          </p>
+        </div>,
+        dean: <div>
+          <p>
+
+            I thanked the dean and closed the door behind me. I was surprised to find my student Lillian waiting for me in the foyer. "<ListCard expansions={["Ella"]}
+              tag="c3-ella"
+              card={<span>Lillian was studying to be a librarian; she told me later that the archivist was her academic advisor.</span>} /> said you were with the dean," she explained.
+          </p>
+          <p>
+            "Did you want to see me about something?"
             </p>
             <p>
               She looked around and lowered her voice. "I've been worried about Professor Lynn."

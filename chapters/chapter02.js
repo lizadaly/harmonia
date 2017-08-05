@@ -61,17 +61,18 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       "So, Utopian Literature," I began again.
       "The term was first used as the title of Thomas More's 1561 work, <i>Utopia</i>."
-      Another <List expansions={[["hand shot up"], ["hand shot up"]]}
+      Another <List expansions={[["hand went up"], ["hand went up"]]}
         tag="c1_question3" />.
     </p>
   </section>,
   <section>
-    <p>I could see this was going to be one of those classes. "Yes?"</p>
-    <p>A student in the very front row: "Professor Fuller,  I'm Lillian Horace. It says in my
+    <p>I could see this was going to be one of those classes.</p>
+
+    <p>"Hi Professor Fuller,  I'm Lillian Horace. It says in my
       notes that <i>Utopia</i> was actually published in 1516."</p>
     <p>"Yes, fine, sorry." I probably looked flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many heads nodded. I looked back down at the syllabus I'd thrown together
-      this morning:</p>
+    this morning:</p>
     <blockquote>
       <ol>
         <li className={inventory.c1_correction ? "strikethrough" : ""}>Early works and influences</li>
@@ -97,13 +98,15 @@ export default ({currentSection, inventory, cards}) => {
       to={{
         communities: <div>
           <p>"We talked about the Shakers and the other religious colonies," the girl named Lillian said, "and we were supposed to
-             cover  <ListCard expansions={["Brook Farm"]}
+            cover  <ListCard expansions={["Brook Farm"]}
               tag="c2_brook"
               card={<span>A Transcendalist community located just outside of Boston, which was moderately successful until
               a fire destroyed their central meeting hall and bankrupted the village.</span>} /> and the pre-Blithedale community next."</p>
           <p>"The who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
           <p>"They called themselves the Harmonists," Charlotte added.</p>
+          <p>A third girl chimed in: "They believed in equality of the sexes."</p>
+          <p>"That's why they eventually founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
             card={<span>So much for being the voice of authority.</span>} />."
           </p>
@@ -121,6 +124,8 @@ export default ({currentSection, inventory, cards}) => {
           <p>"Hmm?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
           <p>"They called themselves the Harmonists," Charlotte added.</p>
+          <p>A third girl chimed in: "They believed in equality of the sexes."</p>
+          <p>"That's why they eventually founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
             card={<span>So much for being the voice of authority.</span>} />."
           </p>
@@ -131,18 +136,18 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       Lillian again: "We were supposed to start on Bellamy this week." She paused. "I did the reading already?"
     </p>
-    <p>"Excellent. Could you summarize the story for us?"</p>
+    <p>"Excellent. Could you summarize it for us?"</p>
     <p>
       She looked pleased. "<i>Looking Backward</i> by Edward Bellamy tells the story of a Boston man who <ListCard
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
-        card={<span>Heroes in utopian novels just fall into holes or
+        card={<span>Heroes in utopian novels tend to tumble into holes or
         deep sleeps and then the plot begins. The 19th century wasn't big on exposition.</span>} /> in 1887 and awakens
       in the year 2000. Most of the novel is a dialogue between the time-traveler and the future Bostonians who find him,
       outlining the author's ideas about a more just society."
     </p>
     <p>
-      She paused, looking for affirmation. I smiled and told her to continue. After that rocky start,
+      I smiled and thanked her. After that rocky start,
       the class went pretty well. Lillian even stayed after class to welcome me to the college.
       I started to think this gig was going to be <ListCard
         expansions={["okay."]}
@@ -162,17 +167,17 @@ export default ({currentSection, inventory, cards}) => {
       and unwelcoming. In daylight it was quite pleasant, but still unusual.
     </p>
     <p>
-      It was laid out along a long stepped slope into a valley,
+      It was laid out along a long tiered slope in the foothills,
       with a few narrow
-      paved roads running up and down the length. Gravel paths and stone steps
-      switched through the buildings. You could stand almost anywhere and look
-      down into the valley, but for the most part all you saw was more trees and
+      paved roads running up and down the length. Gravel footpaths and stone steps
+      switched back and forth between buildings. You could stand almost anywhere and look
+      down into the valley, but all you saw were more trees and
       a few chimneys and steeples poking above the canopy.
     </p>
     <p>
       The largest area of level ground was a grassy quadrangle, and many of the
       campus buildings, including my residence, faced out onto it.
-      Most were ivy-covered brick, though a few small ones were made of rougher stone,
+      Most structures were ivy-covered brick, though a few small ones were made of rougher stone,
     more like old farmhouses.</p>
     <p>A clock somewhere chimed noon and students poured out of the
       buildings, <ListCard expansions={["trudging up and down"]}
@@ -209,7 +214,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       The circular seating was added in 1968 by the gift of an anonymous donor.
-      Its weight is estimated at 30 tons, though it has never been fully excavated.
+      The meteorite is estimated to weigh 30 tons, though it has never been fully excavated.
     </p>
   </blockquote>
   <p>
@@ -217,9 +222,25 @@ export default ({currentSection, inventory, cards}) => {
   </p>
   <blockquote className="typewritten">
     PLEASE NOTE:
-    As part of the Science Center expansion, the Astrolith will be removed to the Museum of Science in Boston.
+    As part of the Science Center expansion, the Astrolith will
+    be <Map from={inventory.c2_graffiti}
+      to={{
+        _undefined: " relocated to ",
+          graffiti: <span><ListCard tag="c2_graffiti"
+            expansions={[" relocated to "]}
+            card={<span>NO TO REMOVAL! KEEP BLITHESDALE WEIRD!</span>} /></span>
+      }}
+       />
+    the Museum of Science in Boston.
     We apologize for any inconvenience.
   </blockquote>
+  <p>
+    And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["roughly penned graffiti"]]}
+      tag="c2_graffiti"
+                                         />, presumably added by a student.
+  </p>
+</section>,
+<section>
   <p>
     A trail of construction debris lead uphill to a dreary concrete building marked SCIENCE CENTER.
     One wing of the building
@@ -232,14 +253,14 @@ export default ({currentSection, inventory, cards}) => {
   </p>
   <p>
     Amid the students coming and going from the Science Center, I recognized the <ListCard expansions={["odd woman"]}
-          tag="c2_woman"
-          card={<span>I was curious about her, and also she had keys to Lynn's office and his teaching material.</span>} /> who
-          had let me in the building last night.
+      tag="c2_woman"
+      card={<span>I was curious about her, and also she had keys to Lynn's office and his teaching material.</span>} /> who
+    had let me in the building last night.
 
   </p>
   <p>
     I hesitated, torn between <List expansions={[["following my curiosity", "meeting with the dean"], ["following my curiosity", "meeting with the dean"]]}
-      tag="c2_direction" />.
+                                tag="c2_direction" />.
   </p>
 </section>,
 <section>
@@ -254,7 +275,7 @@ export default ({currentSection, inventory, cards}) => {
         <p>I didn't see the woman immediately so I followed the path of heaviest footprints down the hallway.
           The newer rooms looked to be
           labs and other functional spaces, with cabling dangling from unpanelled ceilings. Everything
-          was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
+        was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
           leading up were incomplete, without handrails. The stairs leading down were crisscrossed with
           tape and "No Admittance" signs, but they looked easy enough to <List expansions={[["duck under—"], ["duck under—"]]} tag="c2_cellar" />
@@ -262,11 +283,11 @@ export default ({currentSection, inventory, cards}) => {
       </div>,
       'dean': <div>
         <p>
-          Thena gain, it wasn't smart to leave your boss waiting.
+          I decided it wasn't smart to leave your boss waiting.
         </p>
         <p>
           The administration building was a grand old brick edifice, fronted with tidy columns and an oversized door.
-          The entry hall was obviously designed to impress parents and donors: it was dominated by a majestic curved
+          The entry hall was obviously designed to impress parents and donors and was dominated by a majestic curved
           stairwell with elaborate banisters and railings. Directly next to the stairs, a doorway was flanked by
           a freestanding brass sign that read, "Current Exhibit." I leaned in and knocked on the open door.
         </p>
