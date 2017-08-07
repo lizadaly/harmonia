@@ -37,8 +37,8 @@ export default ({currentSection, inventory, cards}) => {
     <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
       My name is <ListCard expansions={["Abby Fuller"]}
         tag="c1-name"
-        card={<span>Not <i>Professor Fuller</i> at this point in my career.</span>} />."
-      I'd never taught college students before, nor an all-women class.
+        card={<span>Not yet <i>Doctor Fuller</i>—my thesis was at a bit of a standstill.</span>} />."
+      I'd never taught college students solo, nor lead an all-women class.
     Their undivided attention was disconcerting.</p>
     <p>
 
@@ -50,8 +50,8 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <p>"Charlotte," she said. She was impeccably dressed, her hair perfect. She was
-      probably featured on the cover of the school brochure. "What happened to Professor Lynn?"
+    <p>"Charlotte," she said. She was impeccably dressed, her hair perfect; she was
+      probably featured on the school brochure. "What happened to Professor Lynn?"
     </p>
     <p>"I'm substituting for him until further notice.
       I'm afraid I can't <ListCard expansions={["disclose further details"]}
@@ -70,7 +70,7 @@ export default ({currentSection, inventory, cards}) => {
 
     <p>"Hi Professor Fuller,  I'm Lillian Horace. It says in my
       notes that <i>Utopia</i> was actually published in 1516."</p>
-    <p>"Yes, fine, sorry." I probably looked flustered. "Did Professor Lynn already cover this material?"</p>
+    <p>"Yes, fine, sorry." Now I was flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many heads nodded. I looked back down at the syllabus I'd thrown together
     this morning:</p>
     <blockquote>
@@ -116,8 +116,8 @@ export default ({currentSection, inventory, cards}) => {
           professorial voice:</p>
           <p>
             "Intentional communities were deliberate experiments to build the so-called perfect society.
-            They began in the US in the early 1800s. Some were religious, but many were secular and even
-            proto-Communist. Many of the more successful ones, like the Shakers,
+            They began in the US in the early 1800s. Some were religious, others secular or verging on
+            cult-like. Many of the more successful ones, like the Shakers,
             got their start here in New England—"
           </p>
           <p>"You mean like Blithedale?" the girl named Lillian asked.</p>
@@ -127,14 +127,14 @@ export default ({currentSection, inventory, cards}) => {
           <p>A third girl chimed in: "They believed in equality of the sexes."</p>
           <p>"That's why they eventually founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
-            card={<span>So much for being the voice of authority.</span>} />."
+            card={<span>So much for projecting an air of authority on my first day.</span>} />."
           </p>
 
         </div>
       }}
     />
     <p>
-      Lillian again: "We were supposed to start on Bellamy this week." She paused. "I did the reading already?"
+      Lillian again: "We were supposed to start on Bellamy this week." She paused. "I did the reading already."
     </p>
     <p>"Excellent. Could you summarize it for us?"</p>
     <p>
@@ -142,7 +142,7 @@ export default ({currentSection, inventory, cards}) => {
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
         card={<span>Heroes in utopian novels tend to tumble into holes or
-        deep sleeps and then the plot begins. The 19th century wasn't big on exposition.</span>} /> in 1887 and awakens
+        trances that magically transport them to the glorious socialist future. <br/><br/>The 19th century wasn't big on exposition.</span>} /> in 1887 and awakens
       in the year 2000. Most of the novel is a dialogue between the time-traveler and the future Bostonians who find him,
       outlining the author's ideas about a more just society."
     </p>
@@ -164,15 +164,17 @@ export default ({currentSection, inventory, cards}) => {
     </heading>
     <p>
       On the night of my arrival the campus had seemed labrynthine
-      and unwelcoming. In daylight it was quite pleasant, but still unusual.
+      and unwelcoming. In daylight it was quite pleasant, if a bit of a change for someone like me who
+      was used to urban campuses.
     </p>
     <p>
-      It was laid out along a long tiered slope in the foothills,
+      The school was laid out along a long tiered slope in the foothills,
       with a few narrow
-      paved roads running up and down the length. Gravel footpaths and stone steps
+      paved roads running down the length. Gravel footpaths and stone steps
       switched back and forth between buildings. You could stand almost anywhere and look
       down into the valley, but all you saw were more trees and
-      a few chimneys and steeples poking above the canopy.
+      a few chimneys and steeples poking above the canopy. The nearest village, where most of the
+      staff lived, was down at the base of the valley.
     </p>
     <p>
       The largest area of level ground was a grassy quadrangle, and many of the
@@ -210,7 +212,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>It was originally enclosed by the so-called Phalanstery,
       a large communal hall. The four posts around the quadrangle mark the outline of the original construction.
-      The hall's destruction by fire in 1899 precipitated the end of the community; the stone Astrolith was undamaged.
+      The hall's destruction by fire in 1899 precipitated the end of the community; however, the stone Astrolith was undamaged.
     </p>
     <p>
       The circular seating was added in 1968 by the gift of an anonymous donor.
@@ -248,13 +250,14 @@ export default ({currentSection, inventory, cards}) => {
     lying in wait.
   </p>
   <p>
-    Downhill, a wide, paved path ran between the meteorite and the Dean's office. She was almost certainly
-    expecting me to check in.
+    Downhill, a paved path ran between the meteorite and the administration building. I assumed that included the Dean's office;
+    she was almost certainly expecting me to check in.
   </p>
   <p>
     Amid the students coming and going from the Science Center, I recognized the <ListCard expansions={["odd woman"]}
       tag="c2_woman"
-      card={<span>I was curious about her, and also she had keys to Lynn's office and his teaching material.</span>} /> who
+      card={<span>I wanted to thank her for last night, but also knew she had keys to Lynn's office
+        and his teaching material.</span>} /> who
     had let me in the building last night.
 
   </p>
@@ -277,8 +280,8 @@ export default ({currentSection, inventory, cards}) => {
           labs and other functional spaces, with cabling dangling from unpanelled ceilings. Everything
         was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
-          leading up were incomplete, without handrails. The stairs leading down were crisscrossed with
-          tape and "No Admittance" signs, but they looked easy enough to <List expansions={[["duck under—"], ["duck under—"]]} tag="c2_cellar" />
+          leading up were incomplete and without handrails. The stairs leading down were crisscrossed with
+          tape and "No Admittance" signs, but they looked easy enough to <List expansions={[["duck under, so reached to lift the tape—"], ["duck under—"]]} tag="c2_cellar" />
         </p>
       </div>,
       'dean': <div>
@@ -320,8 +323,11 @@ export default ({currentSection, inventory, cards}) => {
     to={{
       "curiosity": <div>
   <p>"Can I help you find something?" a male voice behind me asked. I turned around.</p>
-  <p>He was young and I assumed at first that he was a student until I
-  remembered that was kinda unlikely. "Oh, sorry, I'm probably not supposed to be here am I?"</p>
+  <p>He was very young, with a long, serious face. At another school I might have assumed he was a student
+    with an affectation for dressing like an <ListCard expansions={["adult"]}
+      tag="c2-adult"
+      card={<span>Current fashion standards at co-ed colleges did not rise much above pajamas.</span>} />.
+    "Oh, sorry, I'm probably not supposed to be here am I?"</p>
   <p>
     He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
   </p>
@@ -340,22 +346,23 @@ export default ({currentSection, inventory, cards}) => {
     "Oh?" I asked.
   </p>
   <p>
-    "When they broke ground on the lab they found some old tunnels, like really old,
-    that nobody knew about. Some of them lead to cellars that were beneath the modern basements
-    of the buildings. One was even under the quad." He wrinkled his nose. "Lots of water damage,
-    smelled really bad. I had to help pull out some really moldy stuff.
-
+    "You've heard about the history of the college, right? When they broke ground on this building last spring,
+    they found some old tunnels nobody knew about—mostly root cellars and
+    personal storage for the utopians—all beneath the modern basements and dug way into the
+    hillside. Apparently a whole vault is under the quad."
   </p>
-  <p>"The history faculty were excited
-    about it all, though. They've been using the material for an exhibit about the founding of the
-    college, and before."
+  <p>"I saw the sign about construction down there."</p>
+  <p>He sighed. "The dean's pretty angry that's still not done, but the faculty and the county were both
+    insistent that the excavations be completed first. Then things started to get weird."
   </p>
-  <p>We walked
-    from the sterile research center to the
-    warm, Victorian-era administrative building without going back outside—connecting hallways were a concession to the New England winter.
+  <p>I wanted to ask what he meant by that, but by now we'd <ListCard expansions={["passed"]}
+    tag="c2-passed"
+    card={<span>We'd travelled through connecting corridors without actually going outside, a neat
+    concession to New England winters.</span>} />  from the sterile research center to the
+    warm, Victorian-era administrative building.
     The Dean's office was near the main visitors' entrance, beside a grand winding staircase and a room marked "Special Exhibits."
   </p>
-  <p>"I expected her sooner, Walter," I heard the Dean call out. "I don't have long."</p>
+  <p>"I expected her sooner, Walter," I heard the Dean call out. "I have a call at one."</p>
   <p>He gave me an apologetic look. "Good luck."</p>
   <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
     tag="c3_dean_meet" nextUnit="chapter" />.

@@ -4,12 +4,12 @@ import ListCard from '../components/listCard'
 
 export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
   return <div>
-    <h1>October 30, 1890</h1>
+    <h1>September 30, 1889</h1>
     <p><ListCard expansions={["A TRUE BREAKTHROUGH"]}
       tag="frag1_first"
       author="lynn"
-      card={<span>Ella on the archive team brought this to my attention. Logically it
-        must have belonged to one of the Harmonists; were they the author?</span>} />
+      card={<span>The Historical Committee brought this novel (?) to my attention. Did
+      someone in the community write it? Where are the rest of the pages?</span>} />
 
     </p>
     <p> At last! The veil between the worlds seemed especially

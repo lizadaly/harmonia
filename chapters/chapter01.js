@@ -22,27 +22,28 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>It was nearly midnight when I finally arrived on campus and the weather was
-        getting worse. The last hour had been a dark and lonely ascent into the
-        deeply forested foothills. I hadn't seen a town or village for miles when I finally
-        came up on the single illuminated sign for <ListCard expansions={["Blithedale College"]}
+        getting worse. The last hour of the drive was a dark and lonely ascent into
+        deeply forested foothills. I hadn't seen a town for miles when I finally
+        came up on the sign for <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
-          Massachusetts like a bookmark.</span>} />. This would be my home now.
+          Massachusetts like a bookmark.</span>} />. This little village would be my home now.
       </p>
       <p>
-        At this point in my career I would've taken any kind of teaching job, but a single-semester emergency
-        substitute position was not exactly the breakthrough in academia I'd wanted.
+        A substitute teaching position was not exactly the breakthrough in academia I'd wanted,
+        but at least for now, it was consistent with my credentials, experience, and savings account.
+
         I'd received a letter extending the offer, had a brief phone call with
         the <ListCard expansions={["dean"]}
           tag="c1-dean"
           card={<span>Dean Orellana had made it clear: if I didn't accept the offer
-          promptly, she had plenty more takers on hand.</span>} />, and—unencumbered with
+          promptly, she had plenty more takers on hand.</span>} />, and—unencumbered by
           any other employment—had started packing.
-        I left from Cape Cod this morning, stopping twice when the icy rain
+        I left Boston this morning, stopping twice when the icy rain
         escalated to the point of zero visibility.
       </p>
       <p>
-        The road to campus was steep and barely paved, and on this night the early winter
+        The road to campus was steep and barely paved, and by now the early winter
         snow had turned it into a slippery mess. My
         beat-up old car was fishtailing everywhere and I nearly sideswiped a
       couple trees.</p>
@@ -52,15 +53,15 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>I admit I was hazy on what real professors did in their free time.</span>} /> with
         the rest of the faculty and argue about transcendalism. At the very least I needed to
         know where I'd be sleeping. Nobody was here to welcome me; the buildings were dark and
-        shuttered, their windows narrow slits against the storm.
+        shuttered, with only slivers of weak light peaking out through the storm.
       </p>
       <p>
       I couldn't find the main entrance, but spotted a sign for the English department and
       parked in front of it.
 
       I unclenched my hands from the steering wheel, took a deep breath, and hurried up
-      to the entryway. <List
-        expansions={[["The front door was unlocked"], ["The front door was unlocked and no alarms rang as I stepped into the building"]]}
+      to the entryway. The front door was <List
+        expansions={[["unlocked."], ["unlocked and no alarms rang as I stepped into the building"]]}
         tag="c1-doorknob"/>.
     </p>
   </section>,
@@ -68,7 +69,8 @@ export default ({currentSection, inventory, cards}) => {
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
     professors and adjuncts.</p>
     <p>I called out a hello, but no one answered.</p>
-  <p>I recognized a few names here and there but I was hunting for one door in particular—the man I'd been hired to
+  <p>I recognized a few names here and there but I was hunting for one door in particular—the missing
+    instructor I'd been hired to
     replace. I found it at the
     end of the row: <ListCard expansions={['"Professor Jeffrey Lynn"']}
     tag="c1-scholar"
@@ -89,7 +91,8 @@ export default ({currentSection, inventory, cards}) => {
       I recognized a draft of my class syllabus and <ListCard expansions={["picked it up"]}
         tag="c1_syllabus"
         nextUnit="section"
-        card={<span>Look if he didn't want me going through his things, he shouldn't have disappeared.</span>}
+        card={<span>Look, if he didn't want somebody going through his things, he shouldn't
+          have unexpectedly disappeared.</span>}
         />:
 
     </p>
@@ -123,7 +126,7 @@ export default ({currentSection, inventory, cards}) => {
     <p>The papers were abruptly snatched out of my hand.
     </p>
     <p> "Excuse me, what are you doing?" I looked up to
-      see a woman standing over me and regarding me with suspicion.
+      see a woman standing in the doorway, regarding me with suspicion.
       Her hair was long and unstyled, and she wore an ankle-length plain blue dress and carried a flashlight.
       The beam was pointed directly into my face.
     </p>
@@ -133,7 +136,7 @@ export default ({currentSection, inventory, cards}) => {
       card={<span>I guess technically I was trespassing in someone's office.</span>} />.
       "I'm Abby Fuller. I'm substituting for Jeffrey Lynn."
     </p>
-    <p>"Oh," she said, lowering the light. "I heard someone was coming."
+    <p>"Oh," she said, lowering the light. "I heard a replacement had been found."
     </p>
     <p>
       "That's right," I said cautiously. "There was no one here when I arrived and—

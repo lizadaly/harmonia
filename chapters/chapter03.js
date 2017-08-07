@@ -21,10 +21,10 @@ export default ({currentSection, inventory}) => {
     </heading>
     <p>
       Dean Orellana's office was spacious, comfortably furnished, and adorned with vintage college memorabilia:
-      group photos of serious-looking young women in bloomers, sports trophies, awards for comportment and elocution.
+      group photos of serious-looking young women in bloomers, field hockey trophies, awards for comportment and elocution.
       A large <ListCard expansions={["oil painting"]}
         tag="c4_painting"
-        card={<span>It appeared to be the college campus, but in place of the quad was a massive
+        card={<span>A moody rendition of the college campus. In place of the quad was a massive
         barn-shaped wooden building. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)"</span>} /> hung over a stone fireplace.
 
     </p>
@@ -54,8 +54,8 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       "Expectations? I expect you to teach Utopian Literature to undergrads. Then I expect
-      to decide whether to <ListCard expansions={["bring you back"]}
-        tag="c3-back" card={<span>She really could turn on the charm.</span>} /> next semester."
+      to decide whether to bring you back next semester—despite your <ListCard expansions={["less-than-stellar"]}
+        tag="c3-back" card={<span>She really could turn on the charm.</span>} /> qualifications."
     </p>
     <p>
       "I guess it would just help me if
@@ -120,8 +120,8 @@ export default ({currentSection, inventory}) => {
           </p>
           <p>
             "They would've considered themselves so, but 'spiritual' might be a better modern word. They were founded
-            on the idea that scientific progress could go hand-in-hand with creating a more Godly society. Women had
-            almost full participation in social and civic governance, maybe less so in science."
+            on the idea that scientific progress could go hand-in-hand with creating a more Godly society. Women
+            had <ListCard expansions={["almost"]} tag="c3-almost" card={<span>"Almost."</span>} /> full participation governance."
           </p>
           <p>She nodded
             towards the oil painting. "The founders uncovered that meteorite when they were tilling the fields and decided it
@@ -131,7 +131,7 @@ export default ({currentSection, inventory}) => {
             "What happened to the community?"
           </p>
           <p>
-            "Most of the first founders left over time; the soil up in the mountains is poor and the winters were brutal."
+            "Most of the first founders drifted away over time; the soil up here is poor and the winters were brutal."
             She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then the Phalanstery caught fire.
             It's possible it was deliberate—many
             fringe religious groups of the time believed the world was about to end and some members may have wanted to hasten it along."
@@ -139,8 +139,9 @@ export default ({currentSection, inventory}) => {
           <p>
             "Was anyone hurt?"
           </p>
-          <p>She paused. "You asked about Lynn. Jeffrey was leading the committee that cataloged the
-            material we'd been turning up. He was very interested in the events leading up to the fire. Prior to this
+          <p>"We don't really know." She paused. "You asked about Lynn. Jeffrey was leading the committee that cataloged the
+            material we'd been turning up in the construction. He'd always been interested in the events leading up to
+            that fire. Prior to this
             excavation, there hadn't been much material about the community's last days—few letters, no journals,
             and their homegrown <Map from={inventory.c2_direction}
               to={{
@@ -149,9 +150,10 @@ export default ({currentSection, inventory}) => {
                     tag="c3-newspaper"
                     card={<span>This must've been what Ella had shown me.</span>} /></span>
               }} /> had
-            stopped publication by then. Jeffrey was obsessed with that fire, with proving that it was arson.
+            stopped publication by then. Jeffrey was obsessed with that fire, with proving that it was <ListCard expansions={["arson or worse"]}
+              tag="c3-arson" card={<span>What's worse than arson?</span>} />.
           </p>
-          <p>"Once the fire burnt itself out, the community mostly disbanded. Some moved to the Shaker
+          <p>"Regardless of what happened that night, the community mostly disbanded after the fire. Some moved to the Shaker
             community in Haverhill. A few of the
             teachers remained and worked to turn it into a women's school. But nobody wrote much about how it ended."
           </p>
@@ -163,7 +165,7 @@ export default ({currentSection, inventory}) => {
             history, looking for material for his class. And when we broke ground on this Science Center extension,
             his curiosity turned into an obsession."
         </p>
-        <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" /></p>
+        <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" />"</p>
       </div>
     }} />
   </section>,
@@ -184,7 +186,7 @@ export default ({currentSection, inventory}) => {
         involving the group.
       </p>
       <p>
-      "I believe he found something in the archives that was too good to pass up
+      "I believe he found something down there that was too good to pass up
       and ran off with it." She leaned back. "I have an army of
       lawyers who will not be happy to see college property show up in a museum
       or at some auction. He'll <ListCard expansions={["regret"]} tag="c3-regret"
@@ -195,8 +197,9 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       She stood up, and this meant I did too. "Now you'll have to excuse me, Ms. Fuller.
-      I have an appointment with a donor.
+      I have an appointment with a donor."
     </p>
+    <p>"Thank you again Dean—"</p>
     <p>
       "I'd like to see you succeed with us, Abby. Why don't you speak
       with Sarah Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
@@ -218,16 +221,17 @@ export default ({currentSection, inventory}) => {
           </p>
           <p>
             He made a face. "She kinda gives me the creeps. Not just me, though I
-            feel like she stares at me especially weirdly. A lot of the students find her strange."
+            feel like I get the brunt of it. A lot of the students find her strange."
           </p>
           <p>
-            "I think I met her when I arrived."
+            "I met her when I arrived. She was in the English department <ListCard expansions={["building"]}
+            tag="c3-hallway" card={<span>There was no need to be specific that I was in Lynn's office.</span>} />."
           </p>
-          <p>"Probably, she never seems to sleep. Students tell freshman she's the ghost of long-dead utopians,
-            since she's often wandering around the campus at night."
+          <p>"Probably, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
+            since she's often seen wandering around the campus at night."
           </p>
           <p>I felt a little bad for her. "If she hadn't been
-            around I would've spent my first night sleeping in my car."
+            there I would've spent my first night sleeping in my car."
           </p>
           <p>
             He was unmoved. "She still creeps me out. Anyway, she's usually in the library
