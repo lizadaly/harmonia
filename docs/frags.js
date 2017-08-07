@@ -8,8 +8,11 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
     <p><ListCard expansions={["A TRUE BREAKTHROUGH"]}
       tag="frag1_first"
       author="lynn"
-      card={<span>The Historical Committee brought this novel (?) to my attention. Did
-      someone in the community write it? Where are the rest of the pages?</span>} />
+      card={<span>Historical Committee brought this novel? manuscript? letter? to my attention. Did
+      someone in the community write it? Where are the rest of the pages?
+      <br/>      <br/>
+    [Cataloged as SP-X]
+    </span>} />
 
     </p>
     <p> At last! The veil between the worlds seemed especially

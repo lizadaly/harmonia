@@ -2,7 +2,7 @@
 @import 'fonts';
 
 .card {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: $card-font;
   color: $black;
   font-size: 16px;
   position: absolute;
@@ -40,8 +40,9 @@
   &.lynn {
     font-family: $lynn-font;
     color: $lynn-color;
-    font-size: 24px;
-    line-height: 1.3rem;
+    font-size: 22px;
+    font-weight: normal !important;
+    line-height: 1.2em;
   }
 
   &.force-down {

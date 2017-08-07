@@ -97,7 +97,7 @@ class Doc extends React.Component {
           </div>
           <div className="verso">
             <span className="title">{this.props.doc.author} </span>
-            <span className="page">{nextPage}</span>
+
           </div>
 
           <article className={cls}>

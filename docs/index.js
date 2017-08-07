@@ -2,6 +2,7 @@
 import bellamy from './bellamy'
 import age from './age'
 import notes from './notes'
+import brooks from './brooks'
 import {frag1} from './frags'
 import {paper1} from './newspaper'
 
@@ -45,11 +46,18 @@ export const docs = {
   paper1: {
     author: "Together We Shall Shine a Light",
     year: "1889",
-    author: "Summer 1889",
-    title: "",
+    title: "Summer, 1889",
     id: "paper1",
     text: paper1,
     type: "paper"
-
+  },
+  brooks: {
+    author: "Byron A. Brooks",
+    year: "1893",
+    title: "Earth Revisited",
+    id: "brooks",
+    page: 40,
+    text: brooks,
+    type: "book"
   }
 }

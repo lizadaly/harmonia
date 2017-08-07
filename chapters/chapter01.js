@@ -61,7 +61,7 @@ export default ({currentSection, inventory, cards}) => {
 
       I unclenched my hands from the steering wheel, took a deep breath, and hurried up
       to the entryway. The front door was <List
-        expansions={[["unlocked."], ["unlocked and no alarms rang as I stepped into the building"]]}
+        expansions={[["unlocked"], ["unlocked and no alarms rang as I stepped into the building"]]}
         tag="c1-doorknob"/>.
     </p>
   </section>,

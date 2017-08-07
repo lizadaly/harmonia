@@ -261,6 +261,11 @@ export default ({currentSection, inventory}) => {
             </p>
           </div>
         }} />
+        <p>
+          "Okay," I said. "<List expansions={[["Let's go."], ["Let's go."]]}
+            tag="c3-go"
+            nextUnit="chapter" />
+        </p>
   </section>
 
   ]

@@ -1,11 +1,16 @@
+$card-font: 'Archivo Narrow', sans-serif;
 
-$lynn-font: 'Shadows Into Light', sans-serif;
+.card-font {
+  font-family: $card-font;
+}
+
+$lynn-font: 'BenchNine', sans-serif;
 
 .lynn-font {
   font-family: $lynn-font !important;
-  font-size: 25px !important;
   color: $lynn-color;
-  line-height: 1.5rem;
+  font-size: 22px !important;
+  line-height: 1.2em !important;  
 }
 
 $word-font: 'Arial', 'Helvetica', sans-serif;
