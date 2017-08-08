@@ -4,7 +4,7 @@
 
 .reader .doc .reader-container .pages {
 
-  &.frag1 {
+  &.frag1, &.frag2, &.frag3, &.frag4, &.frag5, &.frag6 {
 
     article.article {
       padding: 0rem 1rem;
@@ -19,7 +19,7 @@
                                       rgba(220, 220, 210, .8) 100%);
 
   }
-  &.notes {
+  &.notes, &.astrolith {
     article.article {
       text-indent: 0;
       margin: 2rem;

@@ -229,6 +229,7 @@ export default ({currentSection, inventory, cards}) => {
       to={{
         _undefined: " relocated to ",
           graffiti: <span><ListCard tag="c2_graffiti"
+            author="graffiti"
             expansions={[" relocated to "]}
             card={<span>NO TO REMOVAL! KEEP BLITHESDALE WEIRD!</span>} /></span>
       }}

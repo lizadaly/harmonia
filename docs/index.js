@@ -3,7 +3,8 @@ import bellamy from './bellamy'
 import age from './age'
 import notes from './notes'
 import brooks from './brooks'
-import {frag1} from './frags'
+import astrolith from './astrolith'
+import {frag1, frag2, frag3} from './frags'
 import {paper1} from './newspaper'
 
 export const docs = {
@@ -16,6 +17,13 @@ export const docs = {
     type: "frag",
     page: null
   },
+  frag2: {
+    author: "", title: "", id: "frag2", year: 1880, text: frag2, type: "frag", page: null
+  },
+  frag3: {
+    author: "", title: "", id: "frag3", year: 1880, text: frag3, type: "frag", page: null
+  },
+
   notes: {
     author: "Lynn",
     title: "Draft syllabus",
@@ -59,5 +67,15 @@ export const docs = {
     page: 40,
     text: brooks,
     type: "book"
+  },
+  astrolith: {
+    author: "",
+    year: "1990",
+    title: "",
+    id: "astrolith",
+    page: null,
+    text: astrolith,
+    type: null
+
   }
 }
