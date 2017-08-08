@@ -9,10 +9,10 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
       tag="frag1_first"
       author="lynn"
       card={<span>Historical Committee brought this novel? manuscript? letter? to my attention. Did
-      someone in the community write it? Where are the rest of the pages?
-      <br/>      <br/>
-    [Cataloged as SP-X]
-    </span>} />
+        one of the Futurians write it? Where are the rest of the pages?
+        <br/>      <br/>
+        [Cataloged as SP-X]
+      </span>} />
 
     </p>
     <p> At last! The veil between the worlds seemed especially

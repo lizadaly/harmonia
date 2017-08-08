@@ -104,9 +104,9 @@ export default ({currentSection, inventory, cards}) => {
               a fire destroyed their central meeting hall and bankrupted the village.</span>} /> and the pre-Blithedale community next."</p>
           <p>"The who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
-          <p>"They called themselves the Harmonists," Charlotte added.</p>
+          <p>"They called themselves the Futurians," Charlotte added.</p>
           <p>A third girl chimed in: "They believed in equality of the sexes."</p>
-          <p>"That's why they eventually founded a women's college," Lillian finished.</p>
+          <p>"That's why they founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
             card={<span>So much for being the voice of authority.</span>} />."
           </p>

@@ -113,14 +113,15 @@ export default ({currentSection, inventory}) => {
           </p>
         </div>,
         "college?": <div> <p> She leaned back and I could tell this was a story she told often. "As you may know the college was
-          founded on the grounds of an old utopian community. They called themselves the ____s."
+          founded on the grounds of an old utopian community. They called themselves the Futurians."
         </p>
           <p>
-            "Were they religious?"
+            "What does the name mean?"
           </p>
           <p>
-            "They would've considered themselves so, but 'spiritual' might be a better modern word. They were founded
-            on the idea that scientific progress could go hand-in-hand with creating a more Godly society. Women
+            "They were founded
+            on the idea that scientific progress could go hand-in-hand with creating a more Godly society, though
+            most of them believed that society would not come for hundreds of years—hence the name. Women
             had <ListCard expansions={["almost"]} tag="c3-almost" card={<span>"Almost."</span>} /> full participation governance."
           </p>
           <p>She nodded
@@ -164,10 +165,10 @@ export default ({currentSection, inventory}) => {
             She studied me. "Lynn thought so too. He was always digging into the college
             history, looking for material for his class. And when we broke ground on this Science Center extension,
             his curiosity turned into an obsession."
-        </p>
-        <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" />"</p>
-      </div>
-    }} />
+          </p>
+          <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" />"</p>
+        </div>
+      }} />
   </section>,
   <section>
     <p>
