@@ -69,11 +69,11 @@ export default ({currentSection, inventory, cards}) => {
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
     professors and adjuncts.</p>
     <p>I called out a hello, but no one answered.</p>
-  <p>I recognized a few names here and there but I was hunting for one door in particular—the missing
-    instructor I'd been hired to
-    replace. I found it at the
-    end of the row: <ListCard expansions={['"Professor Jeffrey Lynn"']}
-    tag="c1-scholar"
+    <p>I recognized a few names here and there but I was hunting for one door in particular—the missing
+      instructor I'd been hired to
+      replace. I found it at the
+      end of the row: <ListCard expansions={['"Professor Jeffrey Lynn"']}
+        tag="c1-scholar"
         card={<span>
           Lynn's area of scholarship was 19th century mysticism. Mine was Civil War-era proto-feminist
           movements. Close enough, I guess.
@@ -146,20 +146,20 @@ export default ({currentSection, inventory, cards}) => {
       tucking the papers under her arm and locking the door on her way out.
     </p>
     <p>We went back to my car to get my things. She didn't offer to help with my <ListCard expansions={["bags"]} tag="c2-bags"
-        card={<span>They were pathetically few of them anyway. Shouldn't a grown woman have more <em>stuff</em>?</span>} />.
-        At least the snow had stopped, turning to a fine, cold mist.
+      card={<span>They were pathetically few of them anyway. Shouldn't a grown woman have more <em>stuff</em>?</span>} />.
+      At least the snow had stopped, turning to a fine, cold mist.
     </p>
     <p>
       The faculty residence was as dark and quiet as the rest of the campus. If anyone else was living there,
       they weren't night owls. "Let's put you in here," she said, gesturing into a room with a single small window
       and <ListCard expansions={["spartan"]} tag="c2-room"
-      card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wooden furnishings.
+        card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wooden furnishings.
       I dropped everything on the floor, mumbled my thanks, and collapsed on the bed as she closed the door. Only
       as I was drifting off did I realize she'd never
       told me her name.
     </p>
     <NextChapter chapter={2} />
-    </section>
+  </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
 }

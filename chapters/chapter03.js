@@ -203,7 +203,7 @@ export default ({currentSection, inventory}) => {
     <p>"Thank you again Dean—"</p>
     <p>
       "I'd like to see you succeed with us, Abby. Why don't you speak
-      with Sarah Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
+      with Alice Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
         card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class."
     </p>
@@ -218,7 +218,7 @@ export default ({currentSection, inventory}) => {
             "That could've been worse," he said.
           </p>
           <p>
-            "If you say so," I said. "So what do you know about Sarah Gilman? The Dean told me to find her."
+            "If you say so," I said. "So what do you know about Alice Gilman? The Dean told me to find her."
           </p>
           <p>
             He made a face. "She kinda gives me the creeps. Not just me, though I
@@ -226,7 +226,7 @@ export default ({currentSection, inventory}) => {
           </p>
           <p>
             "I met her when I arrived. She was in the English department <ListCard expansions={["building"]}
-            tag="c3-hallway" card={<span>There was no need to be specific that I was in Lynn's office.</span>} />."
+              tag="c3-hallway" card={<span>There was no need to be specific that I was in Lynn's office.</span>} />."
           </p>
           <p>"Probably, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
             since she's often seen wandering around the campus at night."
@@ -248,25 +248,19 @@ export default ({currentSection, inventory}) => {
           </p>
           <p>
             "Did you want to see me about something?"
-            </p>
-            <p>
-              She looked around and lowered her voice. "I've been worried about Professor Lynn."
-            </p>
-            <p>
-              "Why do you say that?"
-            </p>
-            <p>
-              "I think I need to <List expansions={[["show you"], ["show you"]]}
-                tag="c3-show-you"
-                nextUnit="chapter" /> what he was working on."
-            </p>
-          </div>
-        }} />
-        <p>
-          "Okay," I said. "<List expansions={[["Let's go."], ["Let's go."]]}
-            tag="c3-go"
-            nextUnit="chapter" />
-        </p>
+          </p>
+          <p>
+            She looked around and lowered her voice. "I've been worried about Professor Lynn."
+          </p>
+          <p>
+            "Why do you say that?"
+          </p>
+          <p>
+            "I think you need to see what he was working on."
+          </p>
+        </div>
+      }} />
+    <NextChapter chapter={4} />
   </section>
 
   ]

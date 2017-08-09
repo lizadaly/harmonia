@@ -258,7 +258,7 @@ export default ({currentSection, inventory, cards}) => {
     Amid the students coming and going from the Science Center, I recognized the <ListCard expansions={["odd woman"]}
       tag="c2_woman"
       card={<span>I wanted to thank her for last night, but also knew she had keys to Lynn's office
-        and his teaching material.</span>} /> who
+      and his teaching material.</span>} /> who
     had let me in the building last night.
 
   </p>
@@ -313,7 +313,7 @@ export default ({currentSection, inventory, cards}) => {
           "Thank you," I answered. "Say, do you happen
           to<List expansions={[[" know where Dean Orellana's office is—"], ["—"]]}
             tag="c3_wheres_dean"
-          />"
+            />"
         </p>
       </div>
     }} />
@@ -323,68 +323,68 @@ export default ({currentSection, inventory, cards}) => {
   <Map from={inventory.c2_direction}
     to={{
       "curiosity": <div>
-  <p>"Can I help you find something?" a male voice behind me asked. I turned around.</p>
-  <p>He was very young, with a long, serious face. At another school I might have assumed he was a student
-    with an affectation for dressing like an <ListCard expansions={["adult"]}
-      tag="c2-adult"
-      card={<span>Current fashion standards at co-ed colleges did not rise much above pajamas.</span>} />.
-    "Oh, sorry, I'm probably not supposed to be here am I?"</p>
-  <p>
-    He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
-  </p>
-  <p>
-    "I am," I said, shaking hands.
-  </p>
-  <p>"I'm Walter Browne, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
-  if you came of your own accord."</p>
+        <p>"Can I help you find something?" a male voice behind me asked. I turned around.</p>
+        <p>He was very young, with a long, serious face. At another school I might have assumed he was a student
+          with an affectation for dressing like an <ListCard expansions={["adult"]}
+            tag="c2-adult"
+            card={<span>Current fashion standards at co-ed colleges did not rise much above pajamas.</span>} />.
+        "Oh, sorry, I'm probably not supposed to be here am I?"</p>
+        <p>
+          He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
+        </p>
+        <p>
+          "I am," I said, shaking hands.
+        </p>
+        <p>"I'm Walter Browne, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
+        if you came of your own accord."</p>
 
-  <p>"Am I in trouble already?"</p>
-  <p>"It's okay. Things are a bit upside-down right now," he said, leading
-    me away from the stairwell. "This wing
-    should've been opened in time for the start of the school year but there was a... complication."
-  </p>
-  <p>
-    "Oh?" I asked.
-  </p>
-  <p>
-    "You've heard about the history of the college, right? When they broke ground on this building last spring,
-    they found some old tunnels nobody knew about—mostly root cellars and
-    personal storage for the utopians—all beneath the modern basements and dug way into the
-    hillside. Apparently a whole vault is under the quad."
-  </p>
-  <p>"I saw the sign about construction down there."</p>
-  <p>He sighed. "The dean's pretty angry that's still not done, but the faculty and the county were both
-    insistent that the excavations be completed first. Then things started to get weird."
-  </p>
-  <p>I wanted to ask what he meant by that, but by now we'd <ListCard expansions={["passed"]}
-    tag="c2-passed"
-    card={<span>We'd travelled through connecting corridors without actually going outside, a neat
-    concession to New England winters.</span>} />  from the sterile research center to the
-    warm, Victorian-era administrative building.
-    The Dean's office was near the main visitors' entrance, beside a grand winding staircase and a room marked "Special Exhibits."
-  </p>
-  <p>"I expected her sooner, Walter," I heard the Dean call out. "I have a call at one."</p>
-  <p>He gave me an apologetic look. "Good luck."</p>
-  <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
-    tag="c3_dean_meet" nextUnit="chapter" />.
-  </p>
-</div>,
-  dean: <div>
-    <p>"Come here, you'll find this so interesting," she interrupted. "Do you know
-    much of the history of the college?"</p>
-    <p>"I've heard it was a utopian colony before it was a university?"</p>
-    <p>"That's right." She retrieved a small and yellowed piece of newsprint from a case and
-      put it in my hands. "You may have seen they're expanding the math and science building," she said.
-      "The construction project has exposed a network of old tunnels that ran under many of the buildings,
-      and we've been finding some wonderful artifacts.
-    </p>
-    <p>"Many of these cellars haven't been opened since the 1890s. It's a fascinating peek into how
-      they lived at the time."
-      She nodded eagerly at
-      the <List expansions={[["broadsheet in my hand"], ["broadsheet in my hand, which I unfolded"]]}
-        tag="c3_pamphlet"
-      />.</p>
-    </div>
+        <p>"Am I in trouble already?"</p>
+        <p>"It's okay. Things are a bit upside-down right now," he said, leading
+          me away from the stairwell. "This wing
+          should've been opened in time for the start of the school year but there was a... complication."
+        </p>
+        <p>
+          "Oh?" I asked.
+        </p>
+        <p>
+          "You've heard about the history of the college, right? When they broke ground on this building last spring,
+          they found some old tunnels nobody knew about—mostly root cellars and
+          personal storage for the utopians—all beneath the modern basements and dug way into the
+          hillside. Apparently a whole vault is under the quad."
+        </p>
+        <p>"I saw the sign about construction down there."</p>
+        <p>He sighed. "The dean's pretty angry that's still not done, but the faculty and the county were both
+          insistent that the excavations be completed first. Then things started to get weird."
+        </p>
+        <p>I wanted to ask what he meant by that, but by now we'd <ListCard expansions={["passed"]}
+          tag="c2-passed"
+          card={<span>We'd travelled through connecting corridors without actually going outside, a neat
+          concession to New England winters.</span>} />  from the sterile research center to the
+          warm, Victorian-era administrative building.
+          The Dean's office was near the main visitors' entrance, beside a grand winding staircase and a room marked "Special Exhibits."
+        </p>
+        <p>"I expected her sooner, Walter," I heard the Dean call out. "I have a call at one."</p>
+        <p>He gave me an apologetic look. "Good luck."</p>
+        <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
+          tag="c3_dean_meet" nextUnit="chapter" />.
+        </p>
+      </div>,
+      dean: <div>
+        <p>"Come here, you'll find this so interesting," she interrupted. "Do you know
+        much of the history of the college?"</p>
+        <p>"I've heard it was a utopian colony before it was a university?"</p>
+        <p>"That's right." She retrieved a small and yellowed piece of newsprint from a case and
+          put it in my hands. "You may have seen they're expanding the math and science building," she said.
+          "The construction project has exposed a network of old tunnels that ran under many of the buildings,
+          and we've been finding some wonderful artifacts.
+        </p>
+        <p>"Many of these cellars haven't been opened since the 1890s. It's a fascinating peek into how
+          they lived at the time."
+          She nodded eagerly at
+          the <List expansions={[["broadsheet in my hand"], ["broadsheet in my hand, which I unfolded"]]}
+            tag="c3_pamphlet"
+              />.</p>
+      </div>
     }} />
 </section>,
 <section>
@@ -393,19 +393,20 @@ export default ({currentSection, inventory, cards}) => {
 <section>
 
   <p>
-        We were interrupted by an unhappy-looking woman in the doorway. "Why are there still boxes everywhere, Ella?"
-        </p>
-        <p>
-          The archivist apologized. "I'm sorry, Dean, I was showing—"
-        </p>
-        <p>The dean turned to me. "Who are you?"</p>
-        <p>"I'm your new English professor," I said.</p>
-        <p>"Hmm." She turned back to Ella. "Some faculty from Harvard will be here this afternoon
-        for a symposium. Please have this mess cleaned up before lunch." </p>
-        <p>"Yes ma'am."</p>
-        <p>The dean looked at me. <List expansions={[['"Follow me."'], ['"Follow me." I did.']]}
-          tag="c3_follow_dean" nextUnit="chapter"/></p>
-  </section>
+    We were interrupted by an unhappy-looking woman in the doorway. "Why are there still boxes everywhere, Ella?"
+  </p>
+  <p>
+    The archivist apologized. "I'm sorry, Dean, I was showing—"
+  </p>
+  <p>The dean turned to me. "Who are you?"</p>
+  <p>"I'm your new English professor," I said.</p>
+  <p>"Hmm." She turned back to Ella. "Some faculty from Harvard will be here this afternoon
+  for a symposium. Please have this mess cleaned up before lunch." </p>
+  <p>"Yes ma'am."</p>
+  <p>The dean looked at me. "Follow me."</p>
+  <NextChapter chapter={3} />
+
+</section>
 ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
 }

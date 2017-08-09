@@ -81,6 +81,17 @@
     }
   }
 }
+.advertisement {
+
+  p {
+    font-family: $utopian-font;
+    text-align: justify;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: giglio_wfregular, serif;
+    text-align: center;
+  }
+}
 
 .first-letter {
   font-size: 50px;

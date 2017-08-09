@@ -45,7 +45,7 @@ export default ({currentSection, inventory, cards}) => {
           }} />
       </p>
       <p>
-        "I'm supposed to be meeting with Sarah Gilman
+        "I'm supposed to be meeting with Alice Gilman
         <Map from={inventory.c2_direction}
           to={{
             curiosity: " here.",
@@ -59,7 +59,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>"This book belonged to Lynn," I said.</p>
       <p>"How did you know?"</p>
-      <p>"I recognize his handwriting. What is SP-X, a catalog number? Lynn referenced it in a note."</p>
+      <p>"I recognize his handwriting. What is SP-X05, a catalog number? Lynn referenced it in a note."</p>
       <p>"It's part of our special collections," she said, taking the book back. "That's what I want to show—"</p>
 
       <p>A student with a clipboard suddenly accosted us. "Help save the Blithesdale Astrolith?"
@@ -69,8 +69,8 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"Thanks," Lillian said dismissively, crumpled the flyer in her hand, and pulled open the doors to the library.</p>
-      <p>"What was that about?"</p>
-      <p>"There's no time for that," she said.</p>
+      <p>"You don't want to stop the meteorite's removal?"</p>
+      <p>"I do, but not for the same reasons," she said, without elaborating.</p>
       <p>
         The current library building <ListCard expansions={["dated back"]}
           tag="c4-library-date"
@@ -145,12 +145,15 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"You're not listening! They're going to resume construction on the Science Center any day now. What if
-      they hit something?"</p>
+      they rupture something dangerous? People could get hurt."</p>
       <p>"Lillian, I just got here two days ago!" I snapped. "What the hell do you want me to do?"</p>
-      <p>"You have access to Lynn's private papers. I've asked, but Ms. Gilman won't let me see them, and
-        I can't go to the Dean without any evidence."
+      <p>"As his substitute, you have access to Lynn's private papers. I've asked, but Ms. Gilman won't let me see them, and
+        I can't go to the Dean without any evidence.
       </p>
-      </section>
+      <p>"Please," she said. "I don't know who else to ask."</p>
+      <NextChapter chapter={5} />
+
+    </section>
 
   ]
 

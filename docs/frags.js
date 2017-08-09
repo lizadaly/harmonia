@@ -11,13 +11,13 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
       card={<span>Historical Committee brought this novel? manuscript? letter? to my attention. Did
         one of the Futurians write it? Where are the rest of the pages?
         <br/>      <br/>
-        [Cataloged as SP-X]
+        [Cataloged as SP-X05-4]
       </span>} />
 
     </p>
     <p> At last! The veil between the worlds seemed especially
       thin, the weather fine, and my spirits uplifted. I was determined that this was the day to
-      try again. Z— was less willing, but ever is she so. What will it take to convince her?
+      try again. E— was less willing, but ever is she so. What will it take to convince her?
     </p>
     <p>Once the machine was engaged, the familiar shadow fell across my vision and the
       nerves in my extremities became excited. I felt the roots of the cellar floor grow up beneath
@@ -29,7 +29,7 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
       My sensibilities
       were wholly in the New Paradise.
     </p>
-    <p>Z— of course, was gone, and everything around me was covered in a thick layer of dust and
+    <p>E— of course, was gone, and everything around me was covered in a thick layer of dust and
       debris. I freed myself from the earth and set about exploring this miraculous place again.
     </p>
     <p>I was struck this time by the carriages: great enclosures of iron and glass, which moved without the aid
@@ -56,8 +56,8 @@ export const frag2 = ({inventory}) =>  {
                tag="frag2-circular" /> for numerous examples: reports of strange explosions, sounds, smells!</span>} /> in their
       complaints. I admit difficulty in containing some of the experiments—there have been fires, and I have had
       to resort to stealing scraps of metal and wood to replace my damaged equipment. By moving the entire apparatus
-      below-ground, I eliminated the danger of prying eyes (and ears), but progress slowed due to
-      poor lighting and the need to further enlarge the natural work-space.
+      below-ground, I eliminated the danger of prying eyes (and ears), but has progress slowed due to
+      the poor lighting and the need to further enlarge the natural work-space.
     </p>
   </div>
 }
@@ -77,7 +77,7 @@ export const frag3 = ({inventory}) =>  {
       that we have failed. The pull of the <i>now</i> is too great, and our once-great
       experiment dissolves faster each day.
     </p>
-    <p>Z— and I will descend beneath the Phalanstery, where I will say my final words to this world,
+    <p>E— and I will descend beneath the Phalanstery, where I will say my final words to this world,
       and together we will operate the device. I only hope to find a way for her to <ListCard
         author="zenobia"
         tag="frag3-z"
