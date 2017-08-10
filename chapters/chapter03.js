@@ -40,7 +40,7 @@ export default ({currentSection, inventory}) => {
       "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
         expansions={["silently"]}
         card={<span>People like her do this to trick you into <List expansions={[["talking too much"], ["talking too much. I fell for it."]]}
-            tag="c4_talking_too" /></span>} />.
+               tag="c4_talking_too" /></span>} />.
     </p>
 
   </section>,
@@ -96,7 +96,7 @@ export default ({currentSection, inventory}) => {
             against an aggressive construction schedule."
           </p>
           <p>
-            She nodded towards the oil painting. "He was obsessed with that old hall, with why it burned down.
+            She nodded towards the oil painting. "He was obsessed with that old hall—with finding out why it burned down.
             I don't know why, it was made of wood and people used candles, what other reason do you need?
             But Jeffrey was convinced that the artifacts contained
             first-person accounts of what happened, or even some physical evidence of arson."
@@ -122,25 +122,27 @@ export default ({currentSection, inventory}) => {
             "They were founded
             on the idea that scientific progress could go hand-in-hand with creating a more Godly society, though
             most of them believed that society would not come for hundreds of years—hence the name. Women
-            had <ListCard expansions={["almost"]} tag="c3-almost" card={<span>"Almost."</span>} /> full participation governance."
+            had <ListCard expansions={["almost"]} tag="c3-almost" card={<span>"Almost."</span>} /> full participation in governance."
           </p>
           <p>She nodded
-            towards the oil painting. "The founders uncovered that meteorite when they were tilling the fields and decided it
+            towards the oil painting. "The initial colonists uncovered that meteorite when they were tilling the fields.
+            The founders decided it
             was a sign. They built their great hall around it, as a place of communal worship."
           </p>
           <p>
             "What happened to the community?"
           </p>
           <p>
-            "Most of the first founders drifted away over time; the soil up here is poor and the winters were brutal."
-            She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then the Phalanstery caught fire.
+            "Most of the first founders drifted away over time; the soil up here is poor and the winters are brutal."
+            She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then their
+            Great Hall caught fire.
             It's possible it was deliberate—many
             fringe religious groups of the time believed the world was about to end and some members may have wanted to hasten it along."
           </p>
           <p>
             "Was anyone hurt?"
           </p>
-          <p>"We don't really know." She paused. "You asked about Lynn. Jeffrey was leading the committee that cataloged the
+          <p>"We don't really know." She paused. "You asked about Lynn too. Jeffrey was leading the committee that cataloged the
             material we'd been turning up in the construction. He'd always been interested in the events leading up to
             that fire. Prior to this
             excavation, there hadn't been much material about the community's last days—few letters, no journals,
@@ -166,7 +168,7 @@ export default ({currentSection, inventory}) => {
             history, looking for material for his class. And when we broke ground on this Science Center extension,
             his curiosity turned into an obsession."
           </p>
-          <p>"<List expansions={[["And is that what he was doing before he disappeared?"], ["And is that what he—"]]} tag="c3-disappeared" />"</p>
+          <p>"And is that what he<List expansions={[[" was doing before he disappeared?"], ["—"]]} tag="c3-disappeared" />"</p>
         </div>
       }} />
   </section>,
@@ -221,21 +223,19 @@ export default ({currentSection, inventory}) => {
             "If you say so," I said. "So what do you know about Alice Gilman? The Dean told me to find her."
           </p>
           <p>
-            He made a face. "She kinda gives me the creeps. Not just me, though I
-            feel like I get the brunt of it. A lot of the students find her strange."
+            He made a face. "She kinda gives me the creeps. Not just me, a lot of the students find her strange."
           </p>
           <p>
-            "I met her when I arrived. She was in the English department <ListCard expansions={["building"]}
-              tag="c3-hallway" card={<span>There was no need to be specific that I was in Lynn's office.</span>} />."
+            "I met her the night I arrived."
           </p>
-          <p>"Probably, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
-            since she's often seen wandering around the campus at night."
+          <p>"I'm not surprised, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
+            haunting the campus at night."
           </p>
-          <p>I felt a little bad for her. "If she hadn't been
+          <p>Now I felt sorry for her. "If she hadn't been
             there I would've spent my first night sleeping in my car."
           </p>
           <p>
-            He was unmoved. "She still creeps me out. Anyway, she's usually in the library
+            He was unmoved. "She still weirds me out. Anyway, she's usually in the library
             if she's not meeting with students. I'll show you where it is."
           </p>
         </div>,
@@ -256,7 +256,7 @@ export default ({currentSection, inventory}) => {
             "Why do you say that?"
           </p>
           <p>
-            "I think you need to see what he was working on."
+            "I think you need to see what he was working on. Come to the library with me. Now."
           </p>
         </div>
       }} />

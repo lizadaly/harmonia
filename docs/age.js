@@ -16,7 +16,7 @@ const age = ({nextDoc, prevDoc}) =>  {
       and I was <ListCard author="lynn"
         tag="age1-unconscious"
         expansions={["rendered unconscious"]}
-        card={<span>Another case of "fall asleep, wake in future". Discuss with class!</span>}
+        card={<span>Another case of "fall asleep, wake in future." Discuss with class!</span>}
                 />.
     </p>
     <p>
@@ -28,19 +28,12 @@ const age = ({nextDoc, prevDoc}) =>  {
       I found myself standing in an immense pit. It looked as if the solid earth
       had been indulging in some curious transformation during those moments of insensibility.
       I had a great mass of small fibrous rootlets tightly woven about
-      my whole person; it appeared as if the roots had grown round me.
+      my whole person; it appeared as if the <ListCard expansions={["grown round me"]}
+        tag="age1-roots"
+        author="lynn"
+        nextUnit="section"
+        card={<span>Echoes of Manuscript SP-X05? Did this work influence that novel?</span>} />.
     </p>
-    <p>
-      Grateful at having escaped with unbroken bones from such a dangerous accident, I set out walking along the
-      edge of the ravine. For an hour or so I followed the valley in its many windings, but, failing to see any
-      dwelling-place, I ascended a hill to get a view of the surrounding country.
-      In vain I scanned the horizon, waiting impatiently to see the distant puff of white steam from some passing engine.
-      There was one large house in sight, but no town, nor even a hamlet, and not one solitary spire.
-    </p>
-    <p className="lynn-font">
-      (Lots here sounds like the <List expansions={[["mystery manuscript"],["mystery manuscript"]]}
-        tag="age1-manuscript" />; was this an influence on that author?)
-      </p>
-    </div>
+  </div>
 }
 export default age

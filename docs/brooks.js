@@ -6,19 +6,19 @@ import ListCard from '../components/listCard'
 const brooks = ({nextDoc, prevDoc}) => {
   return <div>
     <p>
-    My whole mind was in a whirl, but out of the confusion, at length came a conclusion: I could no longer doubt that I,
-    who had lived and died in the latter part of the nineteenth century, was alive and strong in the twentieth,
-    a <ListCard author="lynn"
-      expansions={["hundred years later"]}
-      tag="brooks_years"
-      nextUnit="section"
-      card={<span>Is 100 years a shorthand for a long time (like Biblical "40 years"?)
-        <br/>        <br/>
-        nb same time span appears
-      in <nobr><List tag="brooks_x"
-        expansions={[["SP-X"], ["SP-X"]]} /></nobr>
+      My whole mind was in a whirl, but out of the confusion, at length came a conclusion: I could no longer doubt that I,
+      who had lived and died in the latter part of the nineteenth century, was alive and strong in the twentieth,
+      a <ListCard author="lynn"
+        expansions={["hundred years later"]}
+        tag="brooks_years"
+        nextUnit="section"
+        card={<span>Is 100 years a shorthand for a long time (like Biblical "40 years"?)
+          <br/>        <br/>
+          Note: same time span appears
+          in <nobr><List tag="brooks_x"
+            expansions={[["SP-X05"], ["SP-X05"]]} /></nobr>
 
-      </span>} />.
+        </span>} />.
     </p>
     <p>
       This I could no more doubt than the consciousness that I was alive. Indeed, the impressions wrought into my being
@@ -29,7 +29,7 @@ const brooks = ({nextDoc, prevDoc}) => {
     <p>"But even then," I reflected, "I cannot doubt my own existence: <i>I am</i>.
       My dying prayer has been granted. This is the same world that I have lived in; but how changed!"
     </p>
-    </div>
+  </div>
 }
 
 export default brooks

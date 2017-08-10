@@ -56,8 +56,8 @@ export const frag2 = ({inventory}) =>  {
                tag="frag2-circular" /> for numerous examples: reports of strange explosions, sounds, smells!</span>} /> in their
       complaints. I admit difficulty in containing some of the experiments—there have been fires, and I have had
       to resort to stealing scraps of metal and wood to replace my damaged equipment. By moving the entire apparatus
-      below-ground, I eliminated the danger of prying eyes (and ears), but has progress slowed due to
-      the poor lighting and the need to further enlarge the natural work-space.
+      below-ground, I eliminated the danger of prying eyes (and ears), but progress has slowed due to
+      the poor lighting down there and the need to further enlarge the natural work-space.
     </p>
   </div>
 }

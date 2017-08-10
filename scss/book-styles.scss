@@ -20,9 +20,9 @@
 
   }
   &.notes, &.astrolith {
+
     article.article {
       text-indent: 0;
-      margin: 2rem;
       p, h1, h2, h3, h4, h5, h6 {
         font-family: $word-font;
       }
@@ -44,6 +44,8 @@
     }
   }
   &.paper1 {
+    width: 150%;
+    margin-left: -25%;
     .recto, .verso {
       display: none;
     }

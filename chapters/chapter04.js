@@ -32,7 +32,7 @@ export default ({currentSection, inventory, cards}) => {
 
         the faculty dining room. By this time there were only a few professors still at lunch. They greeted me
         coolly—more so, I felt, after I recited my <ListCard expansions={["academic credentials"]} tag="c4-creds"
-          card={<span>All state and commuter schools.</span>} />. After a round of
+          card={<span>All state and commuter schools, but I still worked my ass off.</span>} />. After a round of
         polite introductions and tepid small talk, they went back to their private conversations. I finished lunch
         in silence.
       </p>
@@ -52,7 +52,7 @@ export default ({currentSection, inventory, cards}) => {
               dean: " now."
           }} />"</p>
       <p>
-        "We'll find her later. This is important." She handed me a worn old book, open towards the front:
+        "We'll find her later. This is important." She handed me a worn old book, opened towards the front:
       </p>
       <Reader inventory={inventory} docs={[docs.brooks]} />
     </section>,
@@ -69,7 +69,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"Thanks," Lillian said dismissively, crumpled the flyer in her hand, and pulled open the doors to the library.</p>
-      <p>"You don't want to stop the meteorite's removal?"</p>
+      <p>"You don't want to stop the removal?"</p>
       <p>"I do, but not for the same reasons," she said, without elaborating.</p>
       <p>
         The current library building <ListCard expansions={["dated back"]}
@@ -105,20 +105,20 @@ export default ({currentSection, inventory, cards}) => {
           dean: <div>
             <p>"I've seen The Circular," I said. "It was the utopians' newspaper?"</p>
             <p>"Yeah, they distributed it widely, to other intentional communities as well. They tended to share
-              ideas even if their ideologies didn't always align."
+              ideas even if their ideologies didn't always align.
             </p>
           </div>,
           curiosity: <div>
             <p>"The Circular?" I asked.</p>
             <p>"The utopians published a monthly newspaper, both for themselves and for distribution among other
               intentional communities. Here, look." From one of her folders she produced a reproduction of a
-              broadsheet newspaper:
+              broadsheet:
             </p>
             <Reader inventory={inventory} docs={[docs.paper1]} />
           </div>
         }} />
       <p>"Professor Lynn found dozens of these journal fragments, all through the years 1898 and 1899. There's no
-        author listed, and many of the fragments were damaged by water or mold. Or fire."
+        author listed, and not all of them were recoverable. Many were damaged by water or mold. Or fire."
       </p>
       <p>"The fire that destroyed the building over the quad? The <List expansions={[["Phila—"], ["Phono—"], "Phanto—"]} tag="c4-phila" />"</p>
     </section>,
@@ -132,11 +132,13 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.frag3]} />
     </section>,
     <section>
+      <p>"What does it—"</p>
       <p>"I think they built a bomb," Lillian said.</p>
-      <p>Despite the fact that these people were long gone, I felt a pang of unease. I pointed out the note in the
+      <p>All these people were long dead anyway, but still, I felt a jolt of fear.</p>
+      <p>Rather than respond directly, I pointed out the note in the
       margin, in pencil and almost illegible. "Who wrote this?"</p>
-      <p>"I don't know, maybe another utopian? But does it matter?"</p>
-      <p>"What do you mean?"</p>
+      <p>"I don't know, maybe another utopian? Does it matter?"</p>
+      <p>"Shouldn't it—"</p>
       <p>Lillian snatched the papers from my hands and shook them. "What if Professor Lynn found something dangerous?
         What if he was hurt, or even killed?
       That happens—people accidentally dig up old mines all the time."</p>
@@ -146,14 +148,17 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>"You're not listening! They're going to resume construction on the Science Center any day now. What if
       they rupture something dangerous? People could get hurt."</p>
-      <p>"Lillian, I just got here two days ago!" I snapped. "What the hell do you want me to do?"</p>
-      <p>"As his substitute, you have access to Lynn's private papers. I've asked, but Ms. Gilman won't let me see them, and
-        I can't go to the Dean without any evidence.
+      <p>"Lillian, I just got here two days ago!" I snapped. "What do you expect me to do?"</p>
+      <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
+        I can't go to the Dean without any iron-clad evidence.
       </p>
       <p>"Please," she said. "I don't know who else to ask."</p>
+      <p>I studied this serious young woman for a long time. I'd like to say she reminded myself of her when I was
+      younger, but she wasn't that much younger than me, and I've never been that passionate about anything.</p>
+      <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />
 
-    </section>
+      </section>
 
   ]
 

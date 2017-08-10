@@ -29,8 +29,8 @@ const notes = ({nextDoc, prevDoc}) => {
           card={<span>I thought this was a natural choice: it's pretty
           readable and it spawned many imitators.</span>} />, Bellamy (1888)</li>
         <li><i>A Crystal Age</i>, Hudson (1887)</li>
+        <li><i>Earth Revisited</i>, Brooks (1893)</li>
       </ul>
-      <p className="lynn-font">(Include that strange manuscript from the college archive? Might be fun for the students!)</p>
     </div>
 }
 

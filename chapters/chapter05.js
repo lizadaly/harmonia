@@ -20,9 +20,10 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>
-        Lillian sent me away with a pile of books, papers, and troubled thoughts. I retreated to my
+        Lillian sent me away with a heavy load of books, papers, and troubled thoughts. I retreated to my
         room, my bed unmade and my things still largely unpacked, and went through <ListCard expansions={["her documents"]}
-          tag="c5-docs" card={<span>It did not escape my notice that my student had given me homework.</span>} />,
+          tag="c5-docs" card={<span>It did not escape my notice that it was only day two and already
+          my student had given me homework.</span>} />,
         one by one.
       </p>
       <p>
@@ -33,7 +34,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <blockquote className="advertisement">
         <h2>A New Paradise</h2>
-        <p>Scholarly men, with full hearts, open minds, and sturdy backs! You are wanted for a new community.
+        <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
           Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
           guided by Science and Spirit alike. Inquire at 10 Broad St. Boston, MA.
         </p>
@@ -46,22 +47,25 @@ export default ({currentSection, inventory, cards}) => {
         families remained at the time of the Great Hall fire.
       </p>
       <p>
-        There was ample evidence that Cadwell was building something that he wished to keep secret, something
+        There was ample evidence in her documents that Cadwell was building something that he wished to keep secret, something
         that caused rumbles in the night, acrid smells, and prolonged absences from community meetings. The
         Futurians <ListCard tag="c5-trade" expansions={["traded"]} card={<span>Like many intentional communities, the
         population was dominated by intellectuals, not farmers, and struggled to feed itself through the long winters.</span>} /> extensively
-        with the local villages, and Cadwell's purchases were strange: immense quantities of
+        with the local villages, and Cadwell's purchases were indeed strange: large quantities of
         copper wire, yards of "India rubber," and so many pounds of brass sheeting that "the horse-carts
-        struggled for hours to climb the steep sodden roads to the village." But I wasn't sure it was a bomb.
+        struggled for hours to climb the steep sodden roads to the village." But I wasn't sure he was building a bomb.
       </p>
       <p>
         I kept coming back to that journal fragment I found in Lynn's office the night I arrived. He'd catalogued
-        it as SP-X05, same as Cadwell's journals, and what I remembered of the handwriting seemed to match.
-        The fragment appeared to be a draft of a fictional story, but the timing was curious. If you're
-        scheming day and night on your grand destructive plot, do you take time out to <ListCard expansions={["work on your novel"]}
+        it as SP-X05, same as Cadwell's journals, and what I remembered of the handwriting was a match.
+        The fragment appeared to be a draft of a fictional story, but the timing was curious: who takes a break from
+        their grand destructive plan to <ListCard expansions={["work on their novel"]}
           card={<span>Or perhaps Cadwell retreated into fantasy in response to the dissolution of the real utopian dream?</span>}
-                                                                                         tag="c5-dream" />?
-          </p>
+                                          tag="c5-dream" />?
+      </p>
+      <p>I needed to get those notes back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
+        his own—at the very least he'd have extensive documentation of the materials recovered from the construction.
+      </p>
     </section>
 
   ]
