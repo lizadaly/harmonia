@@ -204,8 +204,8 @@ export default ({currentSection, inventory}) => {
     </p>
     <p>"Thank you again Dean—"</p>
     <p>
-      "I'd like to see you succeed with us, Abby. Why don't you speak
-      with Alice Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
+      "You seem bright, Abby. I'd like to see you succeed with us. Why don't you speak
+      with Alice Gilman, Lynn's research assistant? You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
         card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class."
     </p>
@@ -256,7 +256,7 @@ export default ({currentSection, inventory}) => {
             "Why do you say that?"
           </p>
           <p>
-            "I think you need to see what he was working on. Come to the library with me. Now."
+            "I think you need to see what he was working on. Come to the library with me."
           </p>
         </div>
       }} />

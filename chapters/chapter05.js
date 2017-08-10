@@ -15,7 +15,7 @@ export default ({currentSection, inventory, cards}) => {
         <h2>Chapter Five</h2>
         <blockquote>
           "It was a beautiful world, but it was not my world."
-          <br/><br/>
+          <br/>
           —<i>Moving the Mountain</i>, Charlotte Perkins Gilman (1911)
         </blockquote>
       </heading>
@@ -32,13 +32,7 @@ export default ({currentSection, inventory, cards}) => {
         one of the founding members of the Futurians. He'd answered an ad for recruits posted in one of the many
         Spiritualist newspapers at the time:
       </p>
-      <blockquote className="advertisement">
-        <h2>A New Paradise</h2>
-        <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
-          Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
-          guided by Science and Spirit alike. Inquire at 10 Broad St. Boston, MA.
-        </p>
-      </blockquote>
+      <Reader inventory={inventory} docs={[docs.paper2]} />
       <p>
         He and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Despite being a colony that
         ostensibly treated women as equals, Alice was featured only sparsely in the records.</span>} /> Alice moved to the

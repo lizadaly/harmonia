@@ -14,11 +14,10 @@
         text-indent: 0;
       }
     }
-    background: radial-gradient(ellipse farthest-corner at 90% 90%,
-                                      rgba(102, 96, 20, .05) 0%,
-                                      rgba(220, 220, 210, .8) 100%);
-
+    background-image: url('../images/textures/paper1.png');
+    z-index: -999999;
   }
+
   &.notes, &.astrolith {
 
     article.article {
@@ -82,16 +81,26 @@
       }
     }
   }
-}
-.advertisement {
-
-  p {
-    font-family: $utopian-font;
-    text-align: justify;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: giglio_wfregular, serif;
-    text-align: center;
+  &.paper2 {
+    max-width: 75%;
+    .recto, .verso {
+      display: none;
+    }
+    p {
+      font-family: $utopian-font;
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+      text-indent: 0;
+      text-align: justify;
+    }
+    small {
+      text-transform: uppercase;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $utopian-font;
+    }
   }
 }
 

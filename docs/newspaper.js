@@ -73,5 +73,13 @@ export const paper1 = () => {
     </div>
 
   </div>
-
+}
+export const paper2 = () => {
+  return <div>
+    <h4>A New Paradise</h4>
+    <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
+      Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
+      guided by Science and Spirit alike. <small>Inquire at 10 Broad St. Boston, MA</small>.
+    </p>
+  </div>
 }

@@ -27,7 +27,7 @@ export default ({currentSection, inventory, cards}) => {
         <Map from={inventory.c2_direction}
           to={{
             curiosity: " after asking Walter for directions, stopped by  ",
-            dean: " after promising to meet Lillian in her cubicle at the library, stopped by "
+            dean: " after promising to meet Lillian at the library as soon as I could, stopped by "
           }} />
 
         the faculty dining room. By this time there were only a few professors still at lunch. They greeted me
@@ -60,7 +60,8 @@ export default ({currentSection, inventory, cards}) => {
       <p>"This book belonged to Lynn," I said.</p>
       <p>"How did you know?"</p>
       <p>"I recognize his handwriting. What is SP-X05, a catalog number? Lynn referenced it in a note."</p>
-      <p>"It's part of our special collections," she said, taking the book back. "That's what I want to show—"</p>
+      <p>"It's part of our special collections," she said, taking the book back. "That's what I want
+        to show—"</p>
 
       <p>A student with a clipboard suddenly accosted us. "Help save the Blithesdale Astrolith?"
         She pushed a flyer at me:
@@ -69,7 +70,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"Thanks," Lillian said dismissively, crumpled the flyer in her hand, and pulled open the doors to the library.</p>
-      <p>"You don't want to stop the removal?"</p>
+      <p>"You don't agree?"</p>
       <p>"I do, but not for the same reasons," she said, without elaborating.</p>
       <p>
         The current library building <ListCard expansions={["dated back"]}
@@ -77,7 +78,7 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>The Futurians, I would learn, had an impressive library for a farming community,
             but that small wooden structure had been
           replaced many times over.</span>} />   to the 60s—there
-        were a few Brutalist touches—but it was generally a quiet and pleasant place to be, with abundant natural
+        were a few Brutalist touches—but it was generally a quiet and pleasant place to study, with abundant natural
         light and a view overlooking the small apple orchard at the edge of campus.
       </p>
       <p>Naturally we were headed for the windowless basement.
@@ -90,7 +91,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal volume of library books and
-        janitorial equipment. "What did you want to show me?" I said, a bit impatiently.
+        janitorial equipment. "What did you want to show me?" I said, trying to hurry this along.
       </p>
       <p>
         "Here, <List expansions={[["read"], ["read"]]} tag="c4-read" /> these," she said. She watched me carefully as I did.
@@ -104,8 +105,8 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           dean: <div>
             <p>"I've seen The Circular," I said. "It was the utopians' newspaper?"</p>
-            <p>"Yeah, they distributed it widely, to other intentional communities as well. They tended to share
-              ideas even if their ideologies didn't always align.
+            <p>"Yeah, they distributed it to other intentional communities as well. That's why so much of it
+              is about farming or housemaking—they tended to share ideas even with communities that had different ideologies.
             </p>
           </div>,
           curiosity: <div>
@@ -117,8 +118,9 @@ export default ({currentSection, inventory, cards}) => {
             <Reader inventory={inventory} docs={[docs.paper1]} />
           </div>
         }} />
-      <p>"Professor Lynn found dozens of these journal fragments, all through the years 1898 and 1899. There's no
-        author listed, and not all of them were recoverable. Many were damaged by water or mold. Or fire."
+      <p>"Professor Lynn found dozens of these journal fragments, all through the years 1898 and 1899.
+        He's pretty sure they belonged to one of the founding members, an amateur scientist.
+        Not all of the fragments were recoverable—many were damaged by water or mold. Or fire."
       </p>
       <p>"The fire that destroyed the building over the quad? The <List expansions={[["Phila—"], ["Phono—"], "Phanto—"]} tag="c4-phila" />"</p>
     </section>,
@@ -132,9 +134,18 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.frag3]} />
     </section>,
     <section>
-      <p>"What does it—"</p>
-      <p>"I think they built a bomb," Lillian said.</p>
-      <p>All these people were long dead anyway, but still, I felt a jolt of fear.</p>
+      <p>"The day after this was written, November 23, 1889, the Phalanstery burned down. It took a lot of other
+        structures with it, and some livestock. The community went
+        bankrupt.<Map from={inventory.c2_brook} to={{_undefined: "", _any: " Just like Brook Farm did."}} />"</p>
+      <p>"But the fire was probably an accident."</p>
+      <p>"Was it? If you read between the lines there—<i>there's no turning back</i>—that sounds like
+      something planned. What if this guy decided his community wasn't going to make it, and wanted to—"</p>
+      <p>"Take everyone with him? Like a suicide pact?"</p>
+      <p>"Except I don't think the rest of the community agreed. After all, many of them stayed on anyway and
+        founded Blithesdale."</p>
+      <p>"What do you think he was building, Lillian?"</p>
+      <p>"A bomb," she said.</p>
+      <p>All these people were long dead anyway, but still, I got chills.</p>
       <p>Rather than respond directly, I pointed out the note in the
       margin, in pencil and almost illegible. "Who wrote this?"</p>
       <p>"I don't know, maybe another utopian? Does it matter?"</p>

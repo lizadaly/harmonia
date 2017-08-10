@@ -5,7 +5,7 @@ import notes from './notes'
 import brooks from './brooks'
 import astrolith from './astrolith'
 import {frag1, frag2, frag3} from './frags'
-import {paper1} from './newspaper'
+import {paper1, paper2} from './newspaper'
 
 export const docs = {
   frag1: {
@@ -59,6 +59,15 @@ export const docs = {
     text: paper1,
     type: "paper"
   },
+  paper2: {
+    author: "",
+    year: "1884",
+    title: "",
+    id: "paper2",
+    text: paper2,
+    type: "paper"
+  },
+
   brooks: {
     author: "Byron A. Brooks",
     year: "1893",

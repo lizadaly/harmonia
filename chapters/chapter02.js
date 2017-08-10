@@ -399,7 +399,7 @@ export default ({currentSection, inventory, cards}) => {
   <p>"Hmm." She turned back to Ella. "Some faculty from Harvard will be here this afternoon
   for a symposium. Please have this mess cleaned up before lunch." </p>
   <p>"Yes ma'am."</p>
-  <p>The dean looked at me. "Follow me."</p>
+  <p>The dean looked at me. "Come to my office."</p>
   <NextChapter chapter={3} />
 
 </section>
