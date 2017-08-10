@@ -21,8 +21,8 @@ export default ({currentSection, inventory, cards}) => {
       </heading>
       <p>
         Lillian sent me away with a heavy load of books, papers, and troubled thoughts. I retreated to my
-        room, my bed unmade and my things still largely unpacked, and went through <ListCard expansions={["her documents"]}
-          tag="c5-docs" card={<span>It did not escape my notice that it was only day two and already
+        room, my things still largely unpacked, and went through <ListCard expansions={["her documents"]}
+          tag="c5-docs" card={<span>It did not escape my notice that
           my student had given me homework.</span>} />,
         one by one.
       </p>
@@ -35,7 +35,7 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.paper2]} />
       <p>
         He and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Despite being a colony that
-        ostensibly treated women as equals, Alice was featured only sparsely in the records.</span>} /> Alice moved to the
+        ostensibly treated women as equals, Elsie was featured only sparsely in the records.</span>} /> Elsie moved to the
         nascent Futuria community in 1885, along with about 75 other would-be utopians. The population waxed and waned
         for several years, peaking at 110 in the summer of 1888, until an irreversible slide meant that only 20
         families remained at the time of the Great Hall fire.
@@ -47,7 +47,7 @@ export default ({currentSection, inventory, cards}) => {
         population was dominated by intellectuals, not farmers, and struggled to feed itself through the long winters.</span>} /> extensively
         with the local villages, and Cadwell's purchases were indeed strange: large quantities of
         copper wire, yards of "India rubber," and so many pounds of brass sheeting that "the horse-carts
-        struggled for hours to climb the steep sodden roads to the village." But I wasn't sure he was building a bomb.
+        struggled for hours to climb the steep roads to the village." But I wasn't sure he was building a bomb.
       </p>
       <p>
         I kept coming back to that journal fragment I found in Lynn's office the night I arrived. He'd catalogued
