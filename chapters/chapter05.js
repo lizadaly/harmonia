@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
 import * as actions from '../actions'
 import ListCard from '../components/listCard'
+import Line from '../components/line'
 import Reader  from '../components/reader'
 import { docs } from '../docs'
 
@@ -60,7 +61,54 @@ export default ({currentSection, inventory, cards}) => {
       <p>I needed to get those notes back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
         his own—at the very least he'd have extensive documentation of the materials recovered from the construction.
       </p>
-    </section>
+      <p>
+        Collecting my thoughts, I <ListCard expansions={["jotted down"]} tag="c5-options"
+        card={<span><Map from={inventory.c2_pen}
+        to={{
+          _undefined: "Personal motto: Always have a pen.",
+          _any: "I said I always have a pen!"
+        }} /></span>} /> three options:
+      </p>
+      <p className="card-inline">
+      1. <List expansions={[["Convince"], ["Convince"]]}
+          tag="c5_alice" />  Lynn's assistant, the elusive Alice Gilman, to let me go through his papers.
+    </p>
+  </section>,
+  <section>
+    <p>In fact I should've done this already, but I was starting to get the sense that this woman
+      was avoiding me. This made me uneasy.
+    </p>
+    <p className="card-inline">
+      2. <List expansions={[["Break"], ["Break"]]}
+        tag="c5_break" /> into his office myself.
+    </p>
+  </section>,
+  <section>
+    <p id="target-c5_testline">Did I know how to do this? I did not.</p>
+    <p className="card-inline">
+      3. <List expansions={[["Forget"], ["Forget"]]}
+        tag="c5_explore" /> the papers and go exploring.
+    </p>
+  </section>,
+   <section>
+     <p>I could start with the Science Center expansion. <Map from={inventory.c2_direction}
+       to={{
+         curiosity: "There were those stairs to the basement, after all.",
+         dean: "Surely the tunnels that the Historical Community were drawing from hadn't been completely explored."
+       }} />
+     </p>
+     <p>
+       There was technically a fourth option:
+     </p>
+     <p className={'card-inline ' + (inventory.c5_drop ? 'strikethrough ': '')}>
+        4. Just <List expansions={[["drop it"], ["drop it"]]} tag="c5_drop" />, keep my head down, and
+        teach this class.
+     </p>
+   </section>,
+   <section>
+     <p>But nah.</p>
+     <Line expansions={["Hello"]} tag="c5_testline" to="target-c5_testline"/>
+   </section>
 
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />

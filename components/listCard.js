@@ -32,6 +32,7 @@ class _ListCard extends React.Component {
     super(props)
     this.onComplete = this.onComplete.bind(this)
     this.expansions = props.expansions
+
     // If the expansions list is one item long, double it (usually these won't change)
     if (props.expansions.length === 1) {
       this.expansions.push(props.expansions[0])
@@ -54,6 +55,13 @@ class _ListCard extends React.Component {
       var source = document.getElementById(sourceId)
       var target = document.getElementById(targetId)
 
+      // If we're going to target the parent node, go up two steps to get the usual block-level parent.
+      if (this.props.targetParent) {
+
+        target.classList.add('inline')
+        source.parentNode.parentNode.appendChild(target)
+      }
+
       if (source && target) { // Gross
         var pos = this.positionTargetX(source)
         var anchors = ["Right", "Left"]
@@ -72,7 +80,7 @@ class _ListCard extends React.Component {
         if (this.props.forceDir === 'down') {
           anchors = ["Left", "Top"]
         }
-        else if (this.props.forceDir === 'inline-down') {
+        else if (this.props.forceDir === 'center-down') {
           anchors = ["Left", "Left"]
           target.classList.remove('left', 'right')
           target.classList.add('center')
@@ -93,13 +101,18 @@ class _ListCard extends React.Component {
     })
   }
 
-  // TODO call a re-render on the SVG after a window resize event
+// TODO call a re-render on the SVG after a window resize event
+// This doens't work
+  componentDidMount() {
+//    window.addEventListener('resize', this.reRender)
+  }
   componentDidUpdate() {
     this.onRender()
   }
   componentWillUnmount() {
     var sourceId = 'source-' + this.props.tag
     j.deleteConnectionsForElement(sourceId)
+//    window.removeEventListener("resize", this.reRender)
   }
 
   positionTargetY(source, target) {
@@ -163,8 +176,10 @@ _ListCard.propTypes = {
   config: PropTypes.object,
   currentExpansion: PropTypes.number,
   conjunction: PropTypes.string,
+  separator: PropTypes.string,
   persistLast: PropTypes.bool,
   onLoad: PropTypes.func,
+  // Game-specific
   author: PropTypes.string,
   forceDir: PropTypes.string
 }

@@ -1,16 +1,25 @@
 @import 'colors';
 @import 'fonts';
 
-.card {
+.card-style {
   font-family: $card-font;
   color: $black;
   font-size: 16px;
+  text-indent: 0;
+  line-height: 1.3rem;
+}
+.card-inline {
+  @extend .card-style;
+  width: 80%;
+  padding-left: 3em;
+}
+
+.card {
+  @extend .card-style;
   position: absolute;
   margin-top: -5rem;
   width: 18%;
   min-width: 100px;
-  text-indent: 0;
-  line-height: 1.3rem;
   visibility: hidden; /* Might want to do an animation transition here */
 
   &.right {
@@ -36,7 +45,12 @@
 
     visibility: visible;
   }
-
+  &.inline {
+    display: block;
+    position: static;
+    width: 70%;
+    margin: 2em 0 0 0 ;
+  }
   &.lynn {
     font-family: $lynn-font;
     color: $lynn-color;
@@ -52,14 +66,6 @@
     margin-top: 10rem;
   }
 }
-
-.chapter p, .current-chapter p {
-  background: radial-gradient(ellipse at center,
-            rgba(255, 255, 255, .8) 60%,
-            rgba(255, 255, 255, 0)
-  );
-}
-
 
 .jtk-connector {
   z-index: -1;

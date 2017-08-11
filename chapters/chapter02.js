@@ -83,7 +83,7 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>I <ListCard expansions={["struck a line"]}
-      tag="c1-line"
+      tag="c2_pen"
       card={<span>I may not be perfect, but I always have a pen.</span>} /> through
     the first lecture. </p>
     <p>"Did he cover <List expansions={[["intentional communities", "would you like me to go over that"], ["intentional communities"]]}
@@ -147,7 +147,7 @@ export default ({currentSection, inventory, cards}) => {
       I started to think this gig was going to turn
       out <ListCard
         expansions={["okay."]}
-        forceDir="inline-down"
+        forceDir="center-down"
         tag="c3-okay"
         card={<span>It wasn't.</span>}
             nextUnit="section" />

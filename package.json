@@ -20,7 +20,7 @@
   "homepage": "https://github.com/lizadaly/archive-game#readme",
   "dependencies": {
     "jsplumb": "^2.4.3",
-    "windrift": "1.0.3"
+    "windrift": "file:../windrift/windrift-1.0.4.tgz"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

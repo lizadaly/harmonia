@@ -28,7 +28,7 @@ const age = ({nextDoc, prevDoc}) =>  {
       I found myself standing in an immense pit. It looked as if the solid earth
       had been indulging in some curious transformation during those moments of insensibility.
       I had a great mass of small fibrous rootlets tightly woven about
-      my whole person; it appeared as if the <ListCard expansions={["grown round me"]}
+      my whole person; it appeared as if the roots had <ListCard expansions={["grown round me"]}
         tag="age1-roots"
         author="lynn"
         nextUnit="section"

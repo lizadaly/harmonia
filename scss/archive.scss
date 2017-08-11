@@ -86,3 +86,10 @@ blockquote {
     text-align: justify;
   }
 }
+
+.chapter section, .current-chapter section  {
+  background: radial-gradient(ellipse at center,
+            rgba(255, 255, 255, .8) 60%,
+            rgba(255, 255, 255, 0)
+  );
+}
