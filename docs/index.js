@@ -4,6 +4,8 @@ import age from './age'
 import notes from './notes'
 import brooks from './brooks'
 import astrolith from './astrolith'
+import mizora from './mizora'
+import hence from './hence'
 import {frag1, frag2, frag3} from './frags'
 import {paper1, paper2} from './newspaper'
 
@@ -85,6 +87,22 @@ export const docs = {
     page: null,
     text: astrolith,
     type: null
-
+  },
+  mizora: {
+    author: "Mary E. Bradley",
+    year: "1889",
+    title: "Mizora",
+    id: "mizora",
+    page: "75",
+    text: mizora,
+    type: "book"
+  },
+  hence: {
+    author: "Mary Griffith",
+    year: "1836",
+    title: "Three Hundred Years Hence",
+    page: "58",
+    text: hence,
+    type: "book"
   }
 }

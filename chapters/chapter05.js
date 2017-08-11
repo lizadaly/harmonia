@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 import { Map, List, RenderSection, FromInventory, NextChapter, AllButSelection, gameReducers} from 'windrift'
 import * as actions from '../actions'
 import ListCard from '../components/listCard'
-import Line from '../components/line'
 import Reader  from '../components/reader'
 import { docs } from '../docs'
 
@@ -106,8 +105,15 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>But nah.</p>
-     <Line expansions={["Hello"]} tag="c5_testline" to="target-c5_testline"/>
+     <p>But nah. I was left to choose between <List expansions={[
+       ["talking my way in there", "committing some light burglary", "playing archaeologist"],
+       ["talking my way in there", "committing some light burglary", "playing archaeologist"],
+     ]} conjunction="or" tag="c5_direction" />.
+     </p>
+   </section>,
+   <section>
+     <p>I knew what I needed to do, but first I'd sleep on it.</p>
+     <NextChapter chapter={6} />
    </section>
 
   ]

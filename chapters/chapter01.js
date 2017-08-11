@@ -13,7 +13,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <heading>
         <h2>Chapter One</h2>
-        <h6>November 3, 1990</h6>
+        <h6>November 3, 1998</h6>
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
