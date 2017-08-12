@@ -1,3 +1,9 @@
+$elsie-font: 'Julee', sans-serif;
+
+.elsie-font {
+  font-family: $elsie-font;
+}
+
 $card-font: 'Archivo Narrow', sans-serif;
 
 .card-font {
@@ -10,7 +16,7 @@ $lynn-font: 'BenchNine', sans-serif;
   font-family: $lynn-font !important;
   color: $lynn-color;
   font-size: 22px !important;
-  line-height: 1.2em !important;  
+  line-height: 1.2em !important;
 }
 
 $word-font: 'Arial', 'Helvetica', sans-serif;

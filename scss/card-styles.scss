@@ -58,7 +58,12 @@
     font-weight: normal !important;
     line-height: 1.2em;
   }
-
+  &.elsie {
+    font-family: $elsie-font;
+    font-size: 24px;
+    line-height: 1.1em;   
+    color: $elsie-color;
+  }
   &.force-down {
     font-family: 'Archivo Narrow', sans-serif;
     color: $black;

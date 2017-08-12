@@ -83,18 +83,44 @@ export const frag3 = ({inventory}) =>  {
 }
 
 export const frag4 = ({inventory, note=false}) =>  {
-  const card = note ? <ListCard expansions={["young women"]} tag="frag4_women" card={<span>It is a college for women, you lumpish mule.</span>} /> : <span>young women</span>
+
+  const card1 = note ? <ListCard expansions={["morning chores"]}
+    tag="frag4_chores"
+    author="elsie"
+    card={<span>As if you ever did such work yourself.</span>}/> : <span>morning chores</span>
+
+  const card2 = note ? <ListCard expansions={["eliminated"]}
+    tag="frag4_eliminated"
+    author="elsie"
+    card={<span>If only that were true.</span>} /> : <span>eliminated</span>
+
+  const card3 = note ? <ListCard expansions={["young women"]}
+    tag="frag4_women"
+    author="elsie"
+    card={<span>Because it is a college for women! Arrogant mule.</span>} /> : <span>young women</span>
+
+    const card4 = note ? <ListCard expansions={["miasma of beasts"]}
+      tag="frag4_beasts"
+      author="elsie"
+      nextUnit="section"
+      card={<span>We are well-rid of them! Animals stink.</span>} /> : <span>miasma of beasts</span>
+
   return <div>
     <h1>October 13, 1889</h1>
     <p>I arrive this time in daylight and not darkness. It was dawn, yet there was a deep
       quiet—no roosters, nor soft murmuring of cows, nor sounds of my neighbors
-      performing their morning chores.
+      performing their {card1}.
     </p>
     <p>
-      Gradually, the village awakened and my alarm deepened. Where are the men? Have they all been eliminated
-      in this time and place? Eventually they appeared, but so few, doing mostly menial work, while
-      tall {card} in strange clothing—some wearing trousers, or next to nothing at all—drift
+      Gradually, the village awakened and my alarm deepened. Where are the men? Have they all been {card2} in
+      this time and place? Eventually they appeared, but so few, doing mostly menial work, while
+      tall {card3} in strange clothing—some wearing trousers, or next to nothing at all—drift
       impassively along without a care in the world.
+    </p>
+    <p>
+      After sound and sight, my next observation, which I faithfully record herein, was smell—or rather,
+      the lack there of it. Gone was the {card4}, nor was it replaced with coal-smoke or even the
+      scene of wood fire.
     </p>
   </div>
 }

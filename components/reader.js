@@ -46,7 +46,7 @@ class _Reader extends React.Component {
       nextDoc = this.nextDoc
     }
     return <section className="reader">
-      <Doc doc={doc} nextDoc={nextDoc} prevDoc={prevDoc} inventory={this.props.inventory}/>
+      <Doc doc={doc} nextDoc={nextDoc} prevDoc={prevDoc} inventory={this.props.inventory} {...this.props}/>
     </section>
   }
 }
@@ -104,9 +104,7 @@ class Doc extends React.Component {
             {prevLink}
             {nextLink}
 
-            <Article nextDoc={this.props.nextDoc}
-                     prevDoc={this.props.prevDoc}nlicsa
-                     inventory={this.props.inventory} />
+            <Article {...this.props} />
           </article>
 
         </div>

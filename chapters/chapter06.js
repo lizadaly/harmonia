@@ -102,20 +102,28 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Reader inventory={inventory} docs={[docs.frag4]} />
       <p>"Isn't that interesting, Ms. Fuller?" she asked me. "It reminded me of the one by Annie Cridge—"</p>
-      <p>Gilman had risen, her arm outstretched. "María, may I see—" she started, but I took the
-      paper from the student instead.</p>
+      <p>Gilman had risen, her arm outstretched. "María, may I see that—" I was closer and took the paper first.</p>
       <p>"I've got it, Ms. Gilman, thank you. <Map from={inventory.c5_direction}
         to={{
-          there: "Perhaps we can return this to Lynn's other papers, after lecture?",
+          there: "Perhaps we can return this to Lynn's other documents, after lecture?",
           burglary: "I'll ensure this is kept somewhere safe.",
           archaeologist: "I'll ensure this is kept somewhere safe."
         }} />"
       </p>
-      <p>"It's funny because it almost sounds as if they're talking about Blithesdale today—"</p>
-      <p>"Yes. It is funny, isn't it?" I looked over her head, at Lillian, whose eyes were wide. I could tell she was thinking
-      the same thing I was.</p>
       <p>
-        It didn't sound like what Professor Ignatius Cadwell had built was a bomb.
+        I looked down at the page, confirming that it was from Cadwell's journal. María hadn't mentioned the note in the
+        margin, from an unknown but familiar hand:
+      </p>
+      <Reader inventory={inventory} docs={[docs.frag4]} note={true} />      
+    </section>,
+    <section>
+      <p>Lots of conversations were happening at once now. María was saying the story was funny because it sounded like someone
+        was writing about Blithesdale itself. Charlotte was asking if this book was on the assigned reading list.
+        Lillian was saying nothing, just staring at me.
+      </p>
+      <p>"Funny," I said, watching as Gilman slowly backed towards the door. "It does sound like that, doesn't it María?" I said.</p>
+      <p>
+        Now I really didn't believe Professor Ignatius Cadwell had built a bomb.
       </p>
     </section>
   ]
