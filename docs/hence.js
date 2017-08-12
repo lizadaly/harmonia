@@ -12,9 +12,12 @@ const hence = () => (
       Their dress was appropriate to their condition, and their bearing had both dignity and grace.
     </p>
     <p>
-    "Well, this surpasses belief," said Hastings. "Are these the descendants of that coarse, vulgar, noisy,
-    ill dressed tribe, one half of whom appeared before their dirty baskets and crazy fixtures with tawdry finery,
-    and the other half in sluttish, uncouth clothes, with their hair hanging about their face, or stuck up behind
+      "Well, this surpasses belief," said Hastings. "Are these the descendants of that coarse, vulgar, noisy,
+      ill dressed tribe, one half of whom appeared before their dirty baskets and crazy fixtures with tawdry finery,
+      and the other half in <ListCard expansions={["sluttish"]}
+        nextUnit="section"
+        tag="hence-sluttish"
+        card={<span>I hesitated about assigning this book—it's awfully racist too—but that's how some women thought.</span>} />, uncouth clothes, with their hair hanging about their face, or stuck up behind
     with a greasy horn comb? What has done all this?"
   </p>
   <p>

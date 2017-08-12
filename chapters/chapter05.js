@@ -93,7 +93,7 @@ export default ({currentSection, inventory, cards}) => {
      <p>I could start with the Science Center expansion. <Map from={inventory.c2_direction}
        to={{
          curiosity: "There were those stairs to the basement, after all.",
-         dean: "Surely the tunnels that the Historical Community were drawing from hadn't been completely explored."
+         dean: "Surely the tunnels that the Historical Community were drawing from hadn't been completely exhausted."
        }} />
      </p>
      <p>
@@ -105,7 +105,8 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>But nah. I was left to choose between <List expansions={[
+     <p>But since that was the likely outcome if any of the others failed, I decided to at least give this a shot.
+       I was left to choose between <List expansions={[
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
      ]} conjunction="or" tag="c5_direction" />.
