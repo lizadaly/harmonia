@@ -68,7 +68,7 @@ export const paper1 = () => {
         power of the will. It follows, then, that by the galvanic battery, it may be
         possible to put a spirit into soft iron such
         as <List expansions={[["our Astrolith"], ["our Astrolith"]]}
-          tag="newspaper_astrolith" /> and, then to take it out again.
+             tag="newspaper_astrolith" /> and, then to take it out again.
       </p>
     </div>
 
@@ -81,5 +81,32 @@ export const paper2 = () => {
       Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
       guided by Science and Spirit alike. <small>Inquire at 10 Broad St. Boston, MA</small>.
     </p>
+  </div>
+}
+
+export const paper3 = () => {
+  return <div>
+    <header>
+      <img src="images/header-glyph.png" />
+      <h1>The Circular</h1>
+      <img src="images/angel.png" />
+      <h2>Together We Shall Shine a Light ~ November 23, 1884</h2>
+    </header>
+    <div className="paper-container">
+      <h4>The Astrolith Emerges</h4>
+      <p>
+        <span className="first-letter">T</span>HE FUTURE IS NOW! <ListCard expansions={["Join us"]}
+          tag="paper-join"
+          nextUnit="section"
+          author="students"
+          card={<span>100 years to the day! Keep Blithedale weird! See you in the quad tomorrow!</span>} />  in the Great Hall to celebrate the commencement of our great
+        journey together.
+      </p>
+      <p>
+        The Astrolith—symbol of our divine providence and rightness of our
+        endeavor—has been unveiled. Prayers, speeches, and readings will
+        continue through the evening. All are welcome.
+      </p>
+    </div>
   </div>
 }

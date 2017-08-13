@@ -30,7 +30,7 @@ export default ({currentSection, inventory, cards}) => {
             dean: " after promising to meet Lillian at the library as soon as I could, stopped by "
           }} />
 
-        the faculty dining room. By this time there were only a few professors still at lunch. They greeted me
+        the faculty dining room. This late in the afternoon, only a few professors still at lunch. They greeted me
         coolly—more so, I felt, after I recited my <ListCard expansions={["academic credentials"]} tag="c4-creds"
           card={<span>All state and commuter schools, but I still worked my ass off.</span>} />. After a round of
         polite introductions and tepid small talk, they went back to their private conversations. I finished lunch
@@ -58,27 +58,26 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"This book belonged to Lynn," I said.</p>
-      <p>"How did you know?"</p>
+      <p>"Yes, how did you know?"</p>
       <p>"I recognize his handwriting. What is SP-X05, a catalog number? Lynn referenced it in a note."</p>
       <p>"It's part of our special collections," she said, taking the book back. "That's what I want
-        to show—"</p>
+      to show—"</p>
 
-      <p>A student with a clipboard suddenly accosted us. "Help save the Blithesdale Astrolith?"
-        She pushed a flyer at me:
+      <p>A student with a clipboard and a stack of flyers suddenly accosted us. "Help save the Blithesdale Astrolith!"
       </p>
-      <Reader inventory={inventory} docs={[docs.astrolith]} />
+      <Reader inventory={inventory} docs={[docs.astrolith1]} />
     </section>,
     <section>
       <p>"Thanks," Lillian said dismissively, crumpled the flyer in her hand, and pulled open the doors to the library.</p>
       <p>"You don't agree?"</p>
       <p>"I do, but not for the same reasons," she said, without elaborating.</p>
       <p>
-        The current library building <ListCard expansions={["dated back"]}
+        The current library building <ListCard expansions={["dated"]}
           tag="c4-library-date"
           card={<span>The Futurians, I would learn, had an impressive library for a farming community,
             but that small wooden structure had been
-          replaced many times over.</span>} />   to the 60s—there
-        were a few Brutalist touches—but it was generally a quiet and pleasant place to study, with abundant natural
+          replaced many times over.</span>} />  back to the 60s, with the accompanying hints of Brutalism,
+        but it was generally a quiet and pleasant place to study, with abundant natural
         light and a view overlooking the small apple orchard at the edge of campus.
       </p>
       <p>Naturally we were headed for the windowless basement.
@@ -104,23 +103,19 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c2_direction}
         to={{
           dean: <div>
-            <p>"I've seen The Circular," I said. "It was the utopians' newspaper?"</p>
-            <p>"Yeah, they distributed it to other intentional communities as well. That's why so much of it
-              is about farming or housemaking—they tended to share ideas even with communities that had different ideologies.
-            </p>
+            <p>"I've seen The Circular," I said. "It was the utopians' newsletter."</p>
           </div>,
           curiosity: <div>
             <p>"The Circular?" I asked.</p>
-            <p>"The utopians published a monthly newspaper, both for themselves and for distribution among other
-              intentional communities. Here, look." From one of her folders she produced a reproduction of a
-              broadsheet:
+            <p>"The utopians published a monthly newsletter. The library has almost a complete archive."
+              From one of her folders she produced a reproduction of a broadsheet:
             </p>
             <Reader inventory={inventory} docs={[docs.paper1]} />
           </div>
         }} />
-      <p>"Professor Lynn found dozens of these journal fragments, all through the years 1898 and 1899.
-        He's pretty sure they belonged to one of the founding members, an amateur scientist.
-        Not all of the fragments were recoverable—many were damaged by water or mold. Or fire."
+      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899.
+        He was quite sure they belonged to a community member named Cadwell, an amateur scientist and one of the founding members.
+        Not all of the fragments were recoverable—some were damaged by water or mold. Many were singed by fire."
       </p>
       <p>"The fire that destroyed the building over the quad? The <List expansions={[["Phila—"], ["Phono—"], "Phanto—"]} tag="c4-phila" />"</p>
     </section>,
@@ -134,38 +129,36 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.frag3]} />
     </section>,
     <section>
-      <p>"The day after this was written, November 23, 1889, the Phalanstery burned down. It took a lot of other
-        structures with it, and some livestock. The community went
+      <p>I pointed out the note in the
+      margin, in colored pencil and almost illegible. "Who wrote this?"</p>
+      <p>"I don't know, maybe another utopian? Does it matter?" She tapped the page. "On November 23, 1889—the day
+        after this was written—the Phalanstery burned down. It took a lot of other
+        structures with it, and some livestock, maybe even some people. The community went
         bankrupt.<Map from={inventory.c2_brook} to={{_undefined: "", _any: " Just like Brook Farm did."}} />"</p>
       <p>"But the fire was probably an accident."</p>
       <p>"Was it? If you read between the lines there—<i>there's no turning back</i>—that sounds like
-      something planned. What if this guy decided his community wasn't going to make it, and wanted to—"</p>
+      something planned. What if this guy Cadwell decided his community wasn't going to make it, and wanted to—"</p>
       <p>"Take everyone with him? Like a suicide pact?"</p>
-      <p>"Except I don't think the rest of the community agreed. After all, many of them stayed on anyway and
-        founded Blithesdale."</p>
-      <p>"What do you think he was building, Lillian?"</p>
-      <p>"A bomb," she said.</p>
-      <p>All these people were long dead anyway, but still, I got chills.</p>
-      <p>Rather than respond directly, I pointed out the note in the
-      margin, in pencil and almost illegible. "Who wrote this?"</p>
-      <p>"I don't know, maybe another utopian? Does it matter?"</p>
-      <p>"Shouldn't it—"</p>
-      <p>Lillian snatched the papers from my hands and shook them. "What if Professor Lynn found something dangerous?
-        What if he was hurt, or even killed?
-      That happens—people accidentally dig up old mines all the time."</p>
-      <p>"Well, yes, but I'd hardly say it was<List expansions={[[` 'all the time'—`], "—"]}
+      <p>"I don't think anyone else was involved. Many of them stayed to rebuild and
+      found Blithesdale. Cadwell and his wife, though, they disappear from the historical record after this."</p>
+      <p>"So you think he set fire to their hall?"</p>
+      <p>"Or blew it up," she said. Even though all these people were long dead, I admit I got chills.</p>
+      <p>Lillian snatched the papers from my hands and shook them. "What if Professor Lynn found something
+        that Cadwell built that was dangerous or still explosive?  Maybe he didn't disappear—maybe he's hurt down there,
+      in some old cellar. People accidentally dig up old mines all the time."</p>
+      <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
         tag="c4-time" />"</p>
     </section>,
     <section>
       <p>"You're not listening! They're going to resume construction on the Science Center any day now. What if
-      they rupture something dangerous? People could get hurt."</p>
-      <p>"Lillian, I just got here two days ago!" I snapped. "What do you expect me to do?"</p>
-      <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
-        I can't go to the Dean without any iron-clad evidence.
+      they rupture something explosive? People could get injured or worse."</p>
+      <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
+      <p>"As his replacement, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
+      I can't go to the Dean without any iron-clad evidence. Please," she said, "I don't know who else to ask."</p>
+      <p>I'd like to say that in her passionate and conviction she reminded myself of her when I was
+        younger, but she wasn't that much younger than me. I felt old before my time, a washed-up English professor
+        just a few years out of school.
       </p>
-      <p>"Please," she said. "I don't know who else to ask."</p>
-      <p>I studied this serious young woman for a long time. I'd like to say she reminded myself of her when I was
-      younger, but she wasn't that much younger than me, and I've never been that passionate about anything.</p>
       <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />
 

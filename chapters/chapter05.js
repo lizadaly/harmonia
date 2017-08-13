@@ -27,9 +27,9 @@ export default ({currentSection, inventory, cards}) => {
         one by one.
       </p>
       <p>
-        Her evidence was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
+        Her evidence that there was a deliberate violent act at work was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised in the newspaper column.</span>} /> was
-        one of the founding members of the Futurians. He'd answered an ad for recruits posted in one of the many
+        indeed one of the founding members of the Futurians. He'd answered an ad for recruits posted in one of the many
         Spiritualist newspapers at the time:
       </p>
       <Reader inventory={inventory} docs={[docs.paper2]} />
@@ -45,19 +45,20 @@ export default ({currentSection, inventory, cards}) => {
         that caused rumbles in the night, acrid smells, and prolonged absences from community meetings. The
         Futurians <ListCard tag="c5-trade" expansions={["traded"]} card={<span>Like many intentional communities, the
         population was dominated by intellectuals, not farmers, and struggled to feed itself through the long winters.</span>} /> extensively
-        with the local villages, and Cadwell's purchases were indeed strange: large quantities of
+        with the local villages, and Cadwell's purchases were quite strange for a fledgling farm community: large quantities of
         copper wire, yards of "India rubber," and so many pounds of brass sheeting that "the horse-carts
         struggled for hours to climb the steep roads to the village." But I wasn't sure he was building a bomb.
       </p>
       <p>
         I kept coming back to that journal fragment I found in Lynn's office the night I arrived. He'd catalogued
         it as SP-X05, same as Cadwell's journals, and what I remembered of the handwriting was a match.
-        The fragment appeared to be a draft of a fictional story, but the timing was curious: who takes a break from
+        But both Lynn and I assumed it was a draft of a fantastical story, and that made for curious timing.
+        Who takes a break from
         their grand destructive plan to <ListCard expansions={["work on their novel"]}
-          card={<span>Or perhaps Cadwell retreated into fantasy in response to the dissolution of the real utopian dream?</span>}
+          card={<span>Even I was not as creative in ways to put off my dissertation.</span>}
                                           tag="c5-dream" />?
       </p>
-      <p>I needed to get those notes back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
+      <p>I needed to get those fragments back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
         his own—at the very least he'd have extensive documentation of the materials recovered from the construction.
       </p>
       <p>
@@ -93,7 +94,7 @@ export default ({currentSection, inventory, cards}) => {
      <p>I could start with the Science Center expansion. <Map from={inventory.c2_direction}
        to={{
          curiosity: "There were those stairs to the basement, after all.",
-         dean: "Surely the tunnels that the Historical Community were drawing from hadn't been completely exhausted."
+         dean: "Surely the tunnels that the Historical Community were excavating hadn't been completely exhausted."
        }} />
      </p>
      <p>
@@ -105,7 +106,7 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>But since that was the likely outcome if any of the others failed, I decided to at least give this a shot.
+     <p>But since that's what I'd end up doing when one of the others inevitably failed or led to a dead-end, 
        I was left to choose between <List expansions={[
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],

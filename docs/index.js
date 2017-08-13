@@ -3,11 +3,11 @@ import bellamy from './bellamy'
 import age from './age'
 import notes from './notes'
 import brooks from './brooks'
-import astrolith from './astrolith'
+import {astrolith1} from './astrolith'
 import mizora from './mizora'
 import hence from './hence'
 import {frag1, frag2, frag3, frag4} from './frags'
-import {paper1, paper2} from './newspaper'
+import {paper1, paper2, paper3} from './newspaper'
 
 export const docs = {
   frag1: {
@@ -71,7 +71,9 @@ export const docs = {
     text: paper2,
     type: "paper"
   },
-
+  paper3: {
+    author: "Together We Shall Shine a Light", year: "1884", title: "Spring, 1884", id: "paper3", text: paper3, type: "paper"
+  },
   brooks: {
     author: "Byron A. Brooks",
     year: "1893",
@@ -81,13 +83,13 @@ export const docs = {
     text: brooks,
     type: "book"
   },
-  astrolith: {
+  astrolith1: {
     author: "",
     year: "1990",
     title: "",
-    id: "astrolith",
+    id: "astrolith1",
     page: null,
-    text: astrolith,
+    text: astrolith1,
     type: null
   },
   mizora: {

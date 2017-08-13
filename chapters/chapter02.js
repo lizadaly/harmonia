@@ -226,9 +226,9 @@ export default ({currentSection, inventory, cards}) => {
       to={{
         _undefined: " relocated",
           graffiti: <span><ListCard tag="c2_graffiti"
-            author="graffiti"
+            author="students"
             expansions={[" relocated"]}
-            card={<span>NO TO REMOVAL! KEEP BLITHESDALE WEIRD!</span>} /></span>
+            card={<span>Say NO to removal! Keep Blithesdale weird!</span>} /></span>
       }}
        /> to the Museum of Science in Boston.
     We apologize for any inconvenience.

@@ -11,7 +11,6 @@ const brooks = ({nextDoc, prevDoc}) => {
       a <ListCard author="lynn"
         expansions={["hundred years later"]}
         tag="brooks_years"
-        nextUnit="section"
         card={<span>Is 100 years a shorthand for a long time (like Biblical "40 years"?)
           <br/>        <br/>
           Note: same time span appears

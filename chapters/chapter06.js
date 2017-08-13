@@ -15,14 +15,13 @@ export default ({currentSection, inventory, cards}) => {
         <h2>Chapter Six</h2>
         <blockquote>
           “It was an experiment. We all risked something, and must bear our losses as we can." <br/>
-            - <i>Transcendental Wild Oats</i>, Louisa May Alcott, (1873)
+          - <i>Transcendental Wild Oats</i>, Louisa May Alcott (1873)
         </blockquote>
       </heading>
       <p>
         "One of the unique properties of speculative fiction is the way it reflects the social
-        context in which it was written," I said. "Can anyone give me some examples from the
-        readings that you found particularly illuminating?" I looked around the class for a moment
-        and called on a shy girl in the back whose hand was barely raised. "María?"
+        context in which it was written," I lectured. "Can anyone give me some examples from the
+        readings that you found particularly illuminating?" I called on a shy girl in the back whose hand was barely raised. "María?"
       </p>
       <p>
         "I was surprised by how many utopias are described as vegetarian," she said in her quiet voice.
@@ -42,24 +41,24 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"Thank you, María, that was an excellent example." She blushed.</p>
-      <p>The door in the back of the lecture hall opened up, and to my surprise, Alice Gilman slid in and
-      took a seat towards the back. I nodded to her in acknowledgment, but she didn't react.</p>
+      <p>The door in the back of the lecture hall opened, and to my surprise, Alice Gilman slid in and
+      took a seat towards the back. I nodded to her in acknowledgment, but she didn't respond.</p>
       <p>I addressed the class again. "Remember," I said, "this was time before refrigeration, when
         food products were frequently spoiled or adulterated. The idea of substituting real foods with
       artificial ones was considered a huge step forward."</p>
       <p>
         "Many of the actual utopian communities of the time practiced vegetarianism," Lillian added.
-        "And believed science was an absolute good," Lillian added.
+        "And believed science was an absolute good."
       </p>
-      <p>"With good reason," Gilman said suddenly. The class turned around in surprise.</p>
-      <p>"Still," María ventured, "I understand vegetarianism, but animals are often completely
-      extinct in these utopias. People don't even have pets—"</p>
-      <p>"Because animals stink," Gilman said. The students were fidgeting, some looking down at their laps.</p>
+      <p>"With reason," Gilman said suddenly. The class turned around in surprise.</p>
+      <p>"Still," María ventured, "I understand vegetarianism, but animals being extinct?
+      People don't even have pets—"</p>
+      <p>"Because animals stink," Gilman said.</p>
       <p>"Thank you for joining us, Ms. Gilman," I said, <ListCard tag="c6_smiling"
         expansions={["smiling"]} card={<span>Through gritted teeth.</span>} />. <Map from={inventory.c5_direction}
           to={{
             there: "I'd already decided I needed to speak to her, so I asked her to stay through the end of lecture.",
-            burglary: "I'd planned on getting into Lynn's office after this, so I'd need to send her on some kind of errand to keep her out of the way.",
+            burglary: "I'd planned on breaking into Lynn's office after class, so I'd need to send her on some kind of errand to keep her out of the way.",
             archaeologist: "I was annoyed she interrupted my class but I didn't need her for what I planned next."
           }} /> "Other examples that you found surprising?" I asked the students.
       </p>
@@ -80,14 +79,13 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"Education reform <i>was</i> important. The system of state-run public schools that we know today was still
-        being formed in the mid-1800s. After the Civil War, educating newly-freed African American children was
-        an imperative." I glanced up at Alice Gilman, who was standing by the back wall, arms crossed.
-        "And while we might take for granted that universal free education is an obvious social good, some thinkers
+        being formed in the mid-1800s. And while we might take universal free education for granted as
+        obvious social good, some thinkers
         in the 19th century—even women—saw education mostly as an opportunity to <ListCard expansions={["remake"]}
-          tag="c6_remake" card={<span>Or worse—many of these utopian novels are enthusiastically eugenecist. I wasn't
+          tag="c6_remake" card={<span>Or worse—many of these utopian novels are enthusiastically eugenicist. I wasn't
           quite ready to tackle that topic with the class.</span>} /> minority and immigrant populations
       in their own idealized image."</p>
-      <p>Gilman looked like she wanted to weigh in, but remained silent. To my surprise, it was María who spoke up
+      <p>Gilman was frowning and sat with her arms crossed, but remained silent. It was María who spoke up
       again: "Can I read from something else?"</p>
       <p>
         "Of course!"
@@ -102,8 +100,8 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Reader inventory={inventory} docs={[docs.frag4]} />
       <p>"Isn't that interesting, Ms. Fuller?" she asked me. "It reminded me of the one by Annie Cridge—"</p>
-      <p>Gilman had risen, her arm outstretched. "María, may I see that—" I was closer and took the paper first.</p>
-      <p>"I've got it, Ms. Gilman, thank you. <Map from={inventory.c5_direction}
+      <p>Gilman had risen, her arm outstretched. "María," she said, "may I see that—" </p>
+      <p>But I was closer and took the paper from her first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}
         to={{
           there: "Perhaps we can return this to Lynn's other documents, after lecture?",
           burglary: "I'll ensure this is kept somewhere safe.",
@@ -111,20 +109,21 @@ export default ({currentSection, inventory, cards}) => {
         }} />"
       </p>
       <p>
-        I looked down at the page, confirming that it was from Cadwell's journal. María hadn't mentioned the note in the
-        margin, from an unknown but familiar hand:
+        I looked down at the page, confirming that it was from Cadwell's journal. This was no facsimile, and
+        was heavily annotated with pencil in a familiar hand:
       </p>
-      <Reader inventory={inventory} docs={[docs.frag4]} note={true} />      
+      <Reader inventory={inventory} docs={[docs.frag4]} note={true} />
     </section>,
     <section>
-      <p>Lots of conversations were happening at once now. María was saying the story was funny because it sounded like someone
-        was writing about Blithesdale itself. Charlotte was asking if this book was on the assigned reading list.
-        Lillian was saying nothing, just staring at me.
+      <p>Lots of conversations were happening at once now. María was asking if anyone else though the story sounded like a
+        description of Blithesdale itself. Charlotte was asking if this book was on the assigned reading list.
+        Lillian was saying nothing, but was sitting very still.
       </p>
-      <p>"Funny," I said, watching as Gilman slowly backed towards the door. "It does sound like that, doesn't it María?" I said.</p>
+      <p>"Thank you, María," I said, watching as Gilman slowly backed towards the door. "I found that very illuminating."</p>
       <p>
         Now I really didn't believe Professor Ignatius Cadwell had built a bomb.
       </p>
+      <NextChapter chapter={7} />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />

@@ -2,6 +2,8 @@
 @import 'fonts';
 
 
+
+
 .reader .doc .reader-container .pages {
 
   &.frag1, &.frag2, &.frag3, &.frag4, &.frag5, &.frag6 {
@@ -18,16 +20,22 @@
     z-index: -999999;
   }
 
-  &.notes, &.astrolith {
+  &.notes, &.astrolith1 {
 
     article.article {
       text-indent: 0;
       p, h1, h2, h3, h4, h5, h6 {
         font-family: $word-font;
       }
-
     }
     font-family: $word-font;
+  }
+  &.astrolith1 {
+    article.article {
+      h1, h2, h3, h4, h5, h6 {
+        font-family: $students-font;
+      }
+    }
   }
   &.age {
     h1, h2, h3, h4, h5, h6 {
@@ -71,17 +79,18 @@
       font-style: italic;
     }
     header {
-      border-bottom: 1px solid $gray;
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      img {
-        margin: auto;
-        max-width: 200px;
-        display: block;
+        border-bottom: 1px solid $gray;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        img {
+          margin: auto;
+          max-width: 200px;
+          display: block;
       }
     }
   }
-  &.paper2 {
+  &.paper2, &.paper3 {
+
     max-width: 75%;
     .recto, .verso {
       display: none;
@@ -100,6 +109,21 @@
       text-align: center;
       text-transform: uppercase;
       font-family: $utopian-font;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: italic;
+    }
+    header {
+        border-bottom: 1px solid $gray;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        img {
+          margin: auto;
+          max-width: 200px;
+          display: block;
+      }
     }
   }
 }

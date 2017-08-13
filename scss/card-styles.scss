@@ -61,8 +61,12 @@
   &.elsie {
     font-family: $elsie-font;
     font-size: 24px;
-    line-height: 1.1em;   
+    line-height: 1.1em;
     color: $elsie-color;
+  }
+  &.students {
+    font-family: $students-font;
+    color: $students-color;
   }
   &.force-down {
     font-family: 'Archivo Narrow', sans-serif;

@@ -1,7 +1,7 @@
 const React = require('react')
 import ListCard from '../components/listCard'
 
-const astrolith = ({nextDoc, prevDoc}) => {
+export const astrolith1 = () => {
 
     return <div>
       <h3>Save the Astrolith!</h3>
@@ -13,11 +13,9 @@ const astrolith = ({nextDoc, prevDoc}) => {
       <p>
         Join us for our <ListCard expansions={["rally"]}
           tag="astro-rally"
-          author="graffiti"          
+          author="students"
           nextUnit="section"
           card={<span>Save the date: Nov 24!!</span>} /> to save the Astrolith and keep Blithedale weird!
       </p>
     </div>
 }
-
-export default astrolith

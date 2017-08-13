@@ -92,7 +92,7 @@ export const frag4 = ({inventory, note=false}) =>  {
   const card2 = note ? <ListCard expansions={["eliminated"]}
     tag="frag4_eliminated"
     author="elsie"
-    card={<span>If only that were true.</span>} /> : <span>eliminated</span>
+    card={<span>Perhaps they should have been.</span>} /> : <span>eliminated</span>
 
   const card3 = note ? <ListCard expansions={["young women"]}
     tag="frag4_women"
@@ -103,24 +103,25 @@ export const frag4 = ({inventory, note=false}) =>  {
       tag="frag4_beasts"
       author="elsie"
       nextUnit="section"
-      card={<span>We are well-rid of them! Animals stink.</span>} /> : <span>miasma of beasts</span>
+      card={<span>Animals stink. We are well-rid of them.</span>} /> : <span>miasma of beasts</span>
 
   return <div>
     <h1>October 13, 1889</h1>
-    <p>I arrive this time in daylight and not darkness. It was dawn, yet there was a deep
+    <p>I arrive this time in daylight and not darkness. To fully convey the strangeness of my journey, I shall
+      describe each sense's impression in turn:
+    </p>
+    <p>It was dawn, yet there was a deep
       quiet—no roosters, nor soft murmuring of cows, nor sounds of my neighbors
       performing their {card1}.
     </p>
-    <p>
-      Gradually, the village awakened and my alarm deepened. Where are the men? Have they all been {card2} in
-      this time and place? Eventually they appeared, but so few, doing mostly menial work, while
+    <p> As the village awakened, I was aware of a profound absence: I saw no men at all.
+      Had they all been {card2} in
+      this time and place? Eventually they did appear, but so few, doing mostly menial work, while
       tall {card3} in strange clothing—some wearing trousers, or next to nothing at all—drift
       impassively along without a care in the world.
     </p>
-    <p>
-      After sound and sight, my next observation, which I faithfully record herein, was smell—or rather,
-      the lack there of it. Gone was the {card4}, nor was it replaced with coal-smoke or even the
-      scene of wood fire.
+    <p>Then all at once, I became aware of my sense of smell. Gone was the {card4}, and it was not replaced with coal-smoke or even the
+      scent of wood fire. There was only the sweet odor of trees and fresh air.
     </p>
   </div>
 }
