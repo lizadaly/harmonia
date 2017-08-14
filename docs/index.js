@@ -6,7 +6,7 @@ import brooks from './brooks'
 import {astrolith1} from './astrolith'
 import mizora from './mizora'
 import hence from './hence'
-import {frag1, frag2, frag3, frag4} from './frags'
+import {frag1, frag2, frag3, frag4, frag5, frag6} from './frags'
 import {paper1, paper2, paper3} from './newspaper'
 
 export const docs = {
@@ -27,6 +27,12 @@ export const docs = {
   },
   frag4: {
     author: "", title: "", id: "frag4", year: 1880, text: frag4, type: "frag", page: null
+  },
+  frag5: {
+    author: "", title: "", id: "frag5", year: 1880, text: frag5, type: "frag", page: null
+  },
+  frag6: {
+    author: "", title: "", id: "frag6", year: 1880, text: frag6, type: "frag", page: null
   },
   notes: {
     author: "Lynn",

@@ -65,7 +65,7 @@ export default ({currentSection, inventory, cards}) => {
                 tag="c7-tables"
                 card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetian prayer flags. One of the students
-              handed me a flyer printed on sepia cardstock, adorned with a sticker:
+              handed me a flyer printed on cardstock, adorned with a sticker:
             </p>
             <Reader inventory={inventory} docs={[docs.paper3]} />
 
@@ -157,6 +157,21 @@ export default ({currentSection, inventory, cards}) => {
               some <ListCard expansions={["library books"]} tag="c7_library" card={<span>Now quite overdue.</span>} />:
               two journal entries, heavily annotated by Lynn himself:
             </p>
+            <Reader inventory={inventory} docs={[docs.frag5]} />
+          </div>,
+          archaeologist: <div></div>
+        }} />
+    </section>,
+    <section>
+      <Map from={inventory.c5_direction}
+        to={{
+          there: <div></div>,
+          burglary: <div>
+            <p>
+              Lynn's annotations were undated, but this seemed to be an early find. The second set of notes were
+              obviously made more recently:
+            </p>
+            <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
           archaeologist: <div></div>
         }} />

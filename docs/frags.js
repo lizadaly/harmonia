@@ -125,3 +125,51 @@ export const frag4 = ({inventory, note=false}) =>  {
     </p>
   </div>
 }
+
+export const frag5 = () =>  (
+  <div>
+    <h1>June 2, 1887</h1>
+    <p>
+      Is there anything more beautiful than Futuria in the summer? We are in high spirits, as yet more members
+      have <ListCard author="lynn" expansions={["joined"]} tag="frag-pop" author="lynn"
+        card={<span>This would be the high point of the population for them. Most of these new recruits were gone by winter.</span>} /> us our grand experiment this Spring. The new men are strong and
+      capable; their wives and sisters handsome. I am confident our harvest this year will be sufficient
+      to all but eliminate our dependence on supplies from North Adams and elsewhere.
+    </p>
+    <p>
+      This month was my turn at the <ListCard author="lynn" expansions={["digging"]} tag="frag-digging"
+        card={<span>More evidence of a network of supply tunnels and cellars for root storage.
+        Do these still exist?</span>} /> work-group. Of course I was too busy with my <ListCard  author="lynn" expansions={["galvanic experiments"]}
+          tag="frag-mit"
+          nextUnit="section"
+          card={<span>Only one Futurian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
+          1882, joined Futuria at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed up E- to find me a replacement, and she succeeded as she does
+      all things. She is so devoted to my work—an example to all of our husbands and wives who seek a more
+      Scientific marriage.
+    </p>
+  </div>
+)
+
+export const frag6 = () =>  (
+  <div>
+    <h1>February 25, 1887</h1>
+    <p>After several prudent trials with chickens and then dogs.  For the most part, they have all returned
+      successfully, and as such I am convinced of the readiness of the device for a human being.
+    </p>
+    <p>Of course, it would be foolish for me to take that first step. If something were to go awry,
+      I would not be here to amend it! After much consternation, I convinced E- of the rightness of my plan,
+      and she consented to be the first to enter. If only all our wives were so rational in their thinking,
+      we would not have seen the departure of so many families this year.
+    </p>
+    <p>
+      As I have detailed in the blueprint, the device requires two to operate (a flaw I will address in a subsequent
+      design). After a final disagreeable conversation, E- ascended to the platform, and engaged the galvanic
+      engine. While achieving sufficient rotational speed the force it generates exceeds the tolerance of its
+      brass enclosure—more and stronger rivets are required, I believe. But I succeeded, and E- underwent the
+      transformation as planned, and I returned her as we agreed no more than ten minutes hence.
+    </p>
+    <p>
+      "Truly," she said, upon return, all her former doubts extinguished, "Truly it is a New Eden."
+    </p>
+  </div>
+)
