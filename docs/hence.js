@@ -17,7 +17,8 @@ const hence = () => (
       and the other half in <ListCard expansions={["sluttish"]}
         nextUnit="section"
         tag="hence-sluttish"
-        card={<span>I hesitated about assigning this book—it's awfully racist too—but that's how some women thought.</span>} />, uncouth clothes, with their hair hanging about their face, or stuck up behind
+        card={<span>I hesitated about assigning this book (it's awfully racist too) but that's how some many
+          people of the period, especially women, regarded the poor.</span>} />, uncouth clothes, with their hair hanging about their face, or stuck up behind
     with a greasy horn comb? What has done all this?"
   </p>
   <p>

@@ -143,7 +143,7 @@ export const frag5 = () =>  (
           tag="frag-mit"
           nextUnit="section"
           card={<span>Only one Futurian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
-          1882, joined Futuria at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed up E- to find me a replacement, and she succeeded as she does
+          1882, joined Futuria at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed upon E- to find me a replacement, and she succeeded as she does
       all things. She is so devoted to my work—an example to all of our husbands and wives who seek a more
       Scientific marriage.
     </p>
@@ -153,23 +153,29 @@ export const frag5 = () =>  (
 export const frag6 = () =>  (
   <div>
     <h1>February 25, 1887</h1>
-    <p>After several prudent trials with chickens and then dogs.  For the most part, they have all returned
+    <p>Have completed our trials with chickens and then dogs.  For the most part, they have all returned
       successfully, and as such I am convinced of the readiness of the device for a human being.
     </p>
-    <p>Of course, it would be foolish for me to take that first step. If something were to go awry,
-      I would not be here to amend it! After much consternation, I convinced E- of the rightness of my plan,
-      and she consented to be the first to enter. If only all our wives were so rational in their thinking,
+    <p>Of course, it would be foolish for <i>me</i> to be the first to enter—if something were to go awry,
+      it would hardly be possible for E- to fix it! After much consternation, I convinced E- of the rightness of my plan. If only all our wives were so rational in their thinking,
       we would not have seen the departure of so many families this year.
     </p>
     <p>
-      As I have detailed in the blueprint, the device requires two to operate (a flaw I will address in a subsequent
-      design). After a final disagreeable conversation, E- ascended to the platform, and engaged the galvanic
-      engine. While achieving sufficient rotational speed the force it generates exceeds the tolerance of its
-      brass enclosure—more and stronger rivets are required, I believe. But I succeeded, and E- underwent the
-      transformation as planned, and I returned her as we agreed no more than ten minutes hence.
+      As I have detailed in the <ListCard author="lynn" expansions={["blueprint"]}
+        tag="frag-blueprint" card={<span>Cataloged as SP-05-9. Given the sensitivity, I am keeping this
+          in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
+      design). After a final disagreeable conversation, we entered the work-space via
+      the <ListCard author="lynn" expansions={["eastern tunnel"]}
+      tag="frag-tunnel" card={<span>No excavation of this tunnel to date, if the work-space is where I believe it to be.</span>} />. E- ascended to the platform, and I engaged the galvanic
+      engine. While achieving sufficient rotational speed, the engine exceeds the tolerance of its
+      brass enclosure—stronger rivets are required, I believe. But I succeeded, and E- underwent
+      the <ListCard author="lynn" expansions={["transfiguration"]}
+        nextUnit="section"
+        tag="tag-transformation" card={<span>Frustrating lack of detail here!</span>} /> of her spirit
+         as planned, and I returned her to our world as we agreed, no more than ten minutes thence.
     </p>
     <p>
-      "Truly," she said, upon return, all her former doubts extinguished, "Truly it is a New Eden."
+      "I have no words," she said, upon return, all her former doubts extinguished, "Truly it is a New Eden."
     </p>
   </div>
 )

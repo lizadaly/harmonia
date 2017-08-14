@@ -29,9 +29,12 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Her evidence that there was a deliberate violent act at work was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised in the newspaper column.</span>} /> was
-        indeed one of the founding members of the Futurians. He'd answered an ad for recruits posted in one of the many
-        Spiritualist newspapers at the time:
+        indeed one of the founding members of the Futurians. He'd answered an <List expansions={[["classified ad"], ["classified ad"]]}
+          tag="c5-ad" /> for recruits posted in one of the many
+        Spiritualist newspapers at the time.
       </p>
+    </section>,
+    <section>
       <Reader inventory={inventory} docs={[docs.paper2]} />
       <p>
         He and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Despite being a colony that
@@ -106,7 +109,7 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>But since that's what I'd end up doing when one of the others inevitably failed or led to a dead-end, 
+     <p>But since that's what I'd end up doing when one of the others inevitably failed or led to a dead-end,
        I was left to choose between <List expansions={[
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],

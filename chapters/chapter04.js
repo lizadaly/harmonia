@@ -86,7 +86,7 @@ export default ({currentSection, inventory, cards}) => {
         "Most of the utopians' buildings were wood," Lillian explained. "It was the one resource they had in abundance.
         They were all replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
         led me in. "The only original buildings left are the few that were made of stone, and most of those are
-        faculty residences—Professor Lynn lived in one. They let me use this room for my independent study."
+        faculty residences. They let me use this room for my independent study."
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal volume of library books and
@@ -155,7 +155,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
       <p>"As his replacement, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
       I can't go to the Dean without any iron-clad evidence. Please," she said, "I don't know who else to ask."</p>
-      <p>I'd like to say that in her passionate and conviction she reminded myself of her when I was
+      <p>I'd like to say that in her passion and conviction she reminded myself of her when I was
         younger, but she wasn't that much younger than me. I felt old before my time, a washed-up English professor
         just a few years out of school.
       </p>

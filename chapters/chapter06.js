@@ -50,17 +50,17 @@ export default ({currentSection, inventory, cards}) => {
         "Many of the actual utopian communities of the time practiced vegetarianism," Lillian added.
         "And believed science was an absolute good."
       </p>
-      <p>"With reason," Gilman said suddenly. The class turned around in surprise.</p>
-      <p>"Still," María ventured, "I understand vegetarianism, but animals being extinct?
-      People don't even have pets—"</p>
-      <p>"Because animals stink," Gilman said.</p>
+      <p>"With reason," Gilman said, unexpectedly. A couple students turned around and glared at her.</p>
+      <p>"Still," María ventured, "I understand vegetarianism, but why go to the extreme of
+        eradicating all of them. Didn't people have pets—"</p>
+      <p>"Because animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
       <p>"Thank you for joining us, Ms. Gilman," I said, <ListCard tag="c6_smiling"
         expansions={["smiling"]} card={<span>Through gritted teeth.</span>} />. <Map from={inventory.c5_direction}
           to={{
             there: "I'd already decided I needed to speak to her, so I asked her to stay through the end of lecture.",
             burglary: "I'd planned on breaking into Lynn's office after class, so I'd need to send her on some kind of errand to keep her out of the way.",
             archaeologist: "I was annoyed she interrupted my class but I didn't need her for what I planned next."
-          }} /> "Other examples that you found surprising?" I asked the students.
+          }} /> "Other common themes that you found surprising?" I asked the students.
       </p>
       <p>
         "Education," Charlotte volunteered. "A lot of time is spent on the subject of universal schooling, especially
@@ -93,8 +93,8 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "Ella Merchant, the librarian, gave me this the other day, when I was helping her set up the exhibit. She
         knew I was taking this class and thought we might find it interesting." She stood up, and read
-        in a <ListCard expansions={["strong, confident voice"]} tag="c6_voice" card={<span>Every teacher wants
-        to feel this kind of pride in their students.</span>} nextUnit="section"/>.
+        in a <ListCard expansions={["more confident voice"]} tag="c6_voice" card={<span>I admit,
+          I was proud.</span>} nextUnit="section"/>.
       </p>
     </section>,
     <section>
@@ -109,7 +109,11 @@ export default ({currentSection, inventory, cards}) => {
         }} />"
       </p>
       <p>
-        I looked down at the page, confirming that it was from Cadwell's journal. This was no facsimile, and
+        I <List expansions={[["looked down"], ["looked down"]]} tag="c6-page" /> at the page, confirming that it was from Cadwell's journal.
+      </p>
+    </section>,
+    <section>
+      <p>This was no facsimile, and
         was heavily annotated with pencil in a familiar hand:
       </p>
       <Reader inventory={inventory} docs={[docs.frag4]} note={true} />

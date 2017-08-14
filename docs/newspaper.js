@@ -76,6 +76,7 @@ export const paper1 = () => {
 }
 export const paper2 = () => {
   return <div>
+    <img src="images/hands.png" alt="Woodcut of linked hands in a 19th century style" />
     <h4>A New Paradise</h4>
     <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
       Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
