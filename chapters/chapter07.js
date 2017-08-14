@@ -340,8 +340,9 @@ export default ({currentSection, inventory, cards}) => {
           burglary: <div></div>,
           archaeologist: <div>
             <p>"There isn't time," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> said. "Some inspectors from the city are on their way
-            down here.
+            down into the basement.
             I heard them in the Dean's office. She's going ahead with the next phase of the construction project tomorrow."</p>
+            <NextChapter chapter={8} />
           </div>
         }} />
     </section>

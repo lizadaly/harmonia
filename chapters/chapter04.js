@@ -102,9 +102,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Map from={inventory.c2_direction}
         to={{
-          dean: <div>
-            <p>"I've seen The Circular," I said. "It was the utopians' newsletter."</p>
-          </div>,
+
           curiosity: <div>
             <p>"The Circular?" I asked.</p>
             <p>"The utopians published a monthly newsletter. The library has almost a complete archive."
@@ -112,6 +110,15 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <Reader inventory={inventory} docs={[docs.paper1]} />
           </div>
+        }} />
+      </section>,
+      <section>
+      <Map from={inventory.c2_direction}
+        to={{
+          dean: <div>
+            <p>"I've seen The Circular," I said. "It was the utopians' newsletter."</p>
+          </div>
+
         }} />
       <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899.
         He was quite sure they belonged to a community member named Cadwell, an amateur scientist and one of the founding members.

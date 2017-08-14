@@ -98,7 +98,14 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
-      <Reader inventory={inventory} docs={[docs.frag4]} />
+      <blockquote>
+        <p>As the village awakened, I was aware of a profound absence: I saw no men at all.
+          Had they all been eliminated in
+          this time and place? Eventually they did appear, but so few, doing mostly menial work, while
+          tall women in strange clothing—some wearing trousers, or next to nothing at all—drift
+          impassively along without a care in the world.
+        </p>
+      </blockquote>
       <p>"Isn't that interesting, Ms. Fuller?" she asked me. "It reminded me of the one by Annie Cridge—"</p>
       <p>Gilman had risen, her arm outstretched. "María," she said, "may I see that—" </p>
       <p>But I was closer and took the paper from her first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}

@@ -11,15 +11,18 @@ body {
 }
 a {
   color: $darkgray;
+  border-bottom: 1px solid $darkgray;
 }
 a:hover {
   color: $orange;
   border-bottom: 1px solid $orange;
 }
 
-a {
-  border-bottom: 1px solid $darkgray;
+blockquote p {
+  color: $darkgray;
+  margin: 1em 0 2em 2rem;
 }
+
 .container {
   margin: 4em auto;
   max-width: 1600px;
