@@ -131,6 +131,19 @@
       margin-bottom: 1em;
     }
   }
+  &.lynn1, &.lynn2, &.lynn3 {
+    font-family: $lynn-font;
+    font-size: 22px;
+
+    article.article {
+      p {
+        font-family: $lynn-font;
+        font-size: 24px;
+        line-height: 1.3em;
+      }
+    }
+
+  }
 }
 
 

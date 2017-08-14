@@ -177,8 +177,9 @@ export default ({currentSection, inventory, cards}) => {
                 Committee.
             </p>
             <p>
-              The basement beneath the Center was modern, if unfinished, but a wall had been punched out of the
-              concrete which revealed a narrow earthen tunnel framed by timber. It was easy to forget that these
+              The basement beneath the Center was modern, if unfinished, with multiple exits in all directions.
+              A car-sized hole had been punched out of the
+              concrete wall, revealing narrow earthen tunnel framed by timber. It was easy to forget that these
               utopians had no real machinery of any kind—everything they built had to be done by hand. I put my
               palm up against one of the struts; it felt damp but strong.
             </p>
@@ -206,7 +207,7 @@ export default ({currentSection, inventory, cards}) => {
 
           </div>,
           archaeologist: <div>
-            <blockquote className="elsie-font">May the beam lead us only forward. — November 23, 1889</blockquote>
+            <blockquote className="elsie-font">May the beam lead me only forward. — November 23, 1889</blockquote>
             <p>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife.</p>
             <p>
               The tunnel extended another ten feet, before ending at an even rougher hole that disappeared into
@@ -231,7 +232,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           archaeologist: <div>
             <p>
-              I lowered the flashlight beam to retrieve <Map from={inventory.c2_direction}
+              I lowered the flashlight to retrieve <Map from={inventory.c2_direction}
                 to={{
                   curiosity: "Walter's",
                   dean: "Ella's"
@@ -256,7 +257,9 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <Reader inventory={inventory} docs={[docs.lynn1]} />
+          </div>
         }} />
     </section>,
     <section>
@@ -307,7 +310,39 @@ export default ({currentSection, inventory, cards}) => {
             <p>"Sure," I said. "But does his home have a window?"</p>
             <NextChapter chapter={8} />
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <p>There was a loose page in the middle and the paper felt stiff and dry, but before I could inspect it, I
+                heard <Map from={inventory.c2_direction}
+                              to={{
+                                curiosity: "Walter",
+                                dean: "Ella" }} /> call
+                                my name, softly, followed by a crash. I hurried back out of the tunnel, the notebook safely in my arms.
+            </p>
+            <p>"Are you okay?" I asked.</p>
+            <p>
+              <Map from={inventory.c2_direction}
+                              to={{
+                                curiosity: <span>"I'm fine," he said, grimacing. "I gave you my only flashlight."</span>,
+                                dean: <span>"Thank you, I'm all right," she said, rubbing her shin. "I didn't have time to find my other flashlight." </span>
+                              }} />
+            </p>
+            <p>
+              "Look, I found <List expansions={[["Lynn's journal—"], ["—"]]} tag="c7_journal" />"
+            </p>
+
+          </div>
+        }} />
+    </section>,
+    <section>
+      <Map from={inventory.c5_direction}
+        to={{
+          there: <div></div>,
+          burglary: <div></div>,
+          archaeologist: <div>
+            <p>"There isn't time," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> said. "Some inspectors from the city are on their way
+            down here.
+            I heard them in the Dean's office. She's going ahead with the next phase of the construction project tomorrow."</p>
+          </div>
         }} />
     </section>
 

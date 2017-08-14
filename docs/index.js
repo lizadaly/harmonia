@@ -8,6 +8,7 @@ import mizora from './mizora'
 import hence from './hence'
 import {frag1, frag2, frag3, frag4, frag5, frag6} from './frags'
 import {paper1, paper2, paper3} from './newspaper'
+import {lynn1} from './lynn'
 
 export const docs = {
   frag1: {
@@ -114,5 +115,8 @@ export const docs = {
     page: "58",
     text: hence,
     type: "book"
+  },
+  lynn1: {
+    author: "August 30, 1999", title: "", id: "lynn1", year: 1999, text: lynn1, type: "notebook", page: null
   }
 }
