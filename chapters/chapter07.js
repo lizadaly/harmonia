@@ -61,7 +61,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               The weather had turned icy-wet again, so I bundled up and skulked out by the quad where I could get a
-              good view of the English department. There were student protestors setting up tables <ListCard expansions={["signs"]}
+              good view of the English department. There were student protestors setting up tables and <ListCard expansions={["signs"]}
                 tag="c7-tables"
                 card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
@@ -70,7 +70,25 @@ export default ({currentSection, inventory, cards}) => {
             <Reader inventory={inventory} docs={[docs.paper3]} />
 
           </div>,
-          archaeologist: ""
+          archaeologist: <div>
+            <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
+              Lynn's office now, but I was assuming she'd already removed the interesting material there anyway.
+              Besides, I had a friend to visit.
+            </p>
+            <p>
+              I finished class, a little distracted, and took Lillian aside to tell her my plan. "Just go to your
+              classes as usual. I'll stop by your dorm room later."
+            </p>
+            <p>
+              The weather had turned ice-wet again, so I bundled up and trudged across the quad.
+              There were student protestors setting up tables and <ListCard expansions={["signs"]}
+                tag="c7-tables"
+                card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
+              someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
+              handed me a flyer printed on cardstock, adorned with a sticker:
+              </p>
+              <Reader inventory={inventory} docs={[docs.paper3]} />
+          </div>
         }} />
 
     </section>,
@@ -99,7 +117,24 @@ export default ({currentSection, inventory, cards}) => {
                 }} />
             </p>
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <p>I thanked the girl and followed the downhill path to the administration building.
+              The Dean wasn't in, which was fine as I wasn't looking for her.
+            </p>
+            <p>
+            <Map from={inventory.c2_direction}
+              to={{
+                curiosity: <span>
+                  "Hi Walter," I said, when her assistant came out to greet me.
+                </span>,
+                dean: <span>
+                  "Hi Ella," I said, poking my head into the Exhibit Hall.
+                </span>
+              }} /> "Say, can I <ListCard expansions={["ask"]} tag="c7-ask" nextUnit="section"
+                card={<span>One of the simplest things you can do to be successful is befriend the people who are always crapped on.</span>} /> you
+                 a favor?"
+            </p>
+          </div>
         }} />
 
     </section>,
@@ -127,7 +162,31 @@ export default ({currentSection, inventory, cards}) => {
                 tag="c7_numbers" card={<span>Reader, I got her number.</span>} /> sometime!"
             </p>
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <heading>
+              <h6>* * * </h6>
+            </heading>
+            <p>
+              I didn't want <Map from={inventory.c2_direction}
+                to={{
+                  curiosity: "Walter",
+                  dean: "the archivist"
+                }} /> to get into trouble for letting me down into the Science Center excavation so I refused the kind
+                offer to accompany me. I did accept a flashlight and a key to the storage crate
+                where construction workers had been told to put any material that might be of interest to the Historical
+                Committee.
+            </p>
+            <p>
+              The basement beneath the Center was modern, if unfinished, but a wall had been punched out of the
+              concrete which revealed a narrow earthen tunnel framed by timber. It was easy to forget that these
+              utopians had no real machinery of any kind—everything they built had to be done by hand. I put my
+              palm up against one of the struts; it felt damp but strong.
+            </p>
+            <p>
+              There was some hand-penciled graffiti on one of the struts. I leaned in to <List expansions={[["examine"], ["examine"]]}
+                tag="c7-beam" /> it.
+            </p>
+          </div>
         }} />
 
     </section>,
@@ -146,7 +205,16 @@ export default ({currentSection, inventory, cards}) => {
             </p>
 
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <blockquote className="elsie-font">May the beam lead us only forward. — November 23, 1889</blockquote>
+            <p>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife.</p>
+            <p>
+              The tunnel extended another ten feet, before ending at an even rougher hole that disappeared into
+              darkness and was surrounded by loose bricks. An old trough ran along one side, half-filled with <ListCard tag="c7-sand" expansions={["sand"]}
+              card={<span>Turnips and other root vegetables would have been buried here; the sand would keep out the natural damp.</span>} />.
+              A modern wooden <List expansions={[["crate"], ["crate"]]} tag="c7-crate" /> was pushed up the opposite wall.
+            </p>
+          </div>
         }} />
     </section>,
     <section>
@@ -161,7 +229,20 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <Reader inventory={inventory} docs={[docs.frag5]} />
           </div>,
-          archaeologist: <div></div>
+          archaeologist: <div>
+            <p>
+              I lowered the flashlight beam to retrieve <Map from={inventory.c2_direction}
+                to={{
+                  curiosity: "Walter's",
+                  dean: "Ella's"
+                }} /> key and had the first twist of real fear when the tunnel was swallowed up in darkness. The crate
+                contained mostly old <ListCard tag="c7-metal" expansions={["pieces of metal"]} card={<span>Most were
+                identifiable, if primitive, nails and clasps, but some were twisted or charred beyond recognition.</span>} /> and
+                other junk, but I found what I was really looking for: <List expansions={[["Lynn's notebook"], ["Lynn's notebook"]]}
+                  tag="c7_lynn_notebook" />.
+            </p>
+
+          </div>
         }} />
     </section>,
     <section>
