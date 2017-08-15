@@ -153,7 +153,8 @@ export const frag5 = () =>  (
 export const frag6 = () =>  (
   <div>
     <h1>February 25, 1887</h1>
-    <p>Have completed our trials with chickens and then dogs.  For the most part, they have all returned
+    <p>I have completed our experiments with small animals: first chickens, and then dogs.
+      For the most part, they have all returned
       successfully, and as such I am convinced of the readiness of the device for a human being.
     </p>
     <p>Of course, it would be foolish for <i>me</i> to be the first to enter—if something were to go awry,
@@ -161,8 +162,8 @@ export const frag6 = () =>  (
       we would not have seen the departure of so many families this year.
     </p>
     <p>
-      As I have detailed in the <ListCard author="lynn" expansions={["blueprint"]}
-        tag="frag-blueprint" card={<span>Cataloged as SP-05-9. Given the sensitivity, I am keeping this
+      As I have detailed in the <ListCard author="lynn" expansions={["blueprint"]}  nextUnit="section"
+        tag="frag_blueprint" card={<span>Cataloged as SP-05-9. Given the sensitivity, I am keeping this
           in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
       design). After a final disagreeable conversation, we entered the work-space via
       the <ListCard author="lynn" expansions={["eastern tunnel"]}
@@ -170,7 +171,6 @@ export const frag6 = () =>  (
       engine. While achieving sufficient rotational speed, the engine exceeds the tolerance of its
       brass enclosure—stronger rivets are required, I believe. But I succeeded, and E- underwent
       the <ListCard author="lynn" expansions={["transfiguration"]}
-        nextUnit="section"
         tag="tag-transformation" card={<span>Frustrating lack of detail here!</span>} /> of her spirit
          as planned, and I returned her to our world as we agreed, no more than ten minutes thence.
     </p>

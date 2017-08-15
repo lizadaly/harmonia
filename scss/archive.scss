@@ -84,7 +84,7 @@ blockquote {
     font-family: $sign-font;
   }
   p {
-    background: none;
+    background: none !important;
     color: $white;
     text-align: justify;
   }
