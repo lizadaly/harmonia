@@ -361,7 +361,7 @@ export default ({currentSection, inventory, cards}) => {
             <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. "An unpublished fantastical novel," she said. "Jeffrey and I agreed that it
               wasn't surprising to find. It's natural that the Futurians would try out their ideas in <ListCard expansions={["story"]}
                 tag="c7-backward" card={<span>Lynn had assigned Bellamy's <i>Looking Backward</i>, a novel
-                so popular in its time that it spawned dozens of responses and even some sequels—a kind of 19th century
+                  so popular in its time that it spawned dozens of responses and even some sequels—a kind of 19th century
                 utopian fan fiction.</span>} /> form."
             </p>
             <p>
@@ -391,7 +391,7 @@ export default ({currentSection, inventory, cards}) => {
             <Map from={inventory.c2_direction}
               to={{
                 curiosity: <p>"If it's on campus, I know someone who does."</p>,
-                dean: <p>"I talked my way through one locked door," I said. "I'll talk my way into another one."</p>
+                dean: <p>"I talked my way through one locked door," I said. "I can figure out another one."</p>
               }} />
             <NextChapter chapter={8} />
           </div>,
