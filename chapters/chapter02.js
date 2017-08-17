@@ -222,24 +222,18 @@ export default ({currentSection, inventory, cards}) => {
   <blockquote className="typewritten">
     PLEASE NOTE:
     As part of the Science Center expansion, the Astrolith will
-    be <Map from={inventory.c2_graffiti}
-      to={{
-        _undefined: " relocated",
-          graffiti: <span><ListCard tag="c2_graffiti"
-            author="students"
-            expansions={[" relocated"]}
-            card={<span>Say NO to removal! Keep Blithesdale weird!</span>} /></span>
-      }}
-       /> to the Museum of Science in Boston.
+    be extracted and relocated to the Museum of Science in Boston.
     We apologize for any inconvenience.
   </blockquote>
   <p>
     And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["roughly penned graffiti"]]}
-      tag="c2_graffiti"
-                                         />, presumably added by a student.
+      tag="c2_graffiti" />, presumably added by a student.
   </p>
 </section>,
 <section>
+  <blockquote className="students-font">
+    Say NO to removal and keep Blithesdale weird!
+  </blockquote>
   <p>
     A trail of construction debris lead uphill to a dreary concrete building marked SCIENCE CENTER.
     One wing of the building

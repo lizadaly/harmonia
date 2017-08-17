@@ -34,13 +34,13 @@ export default ({currentSection, inventory, cards}) => {
               the construction project back on track before winter set in.
             </p>
             <p>The construction crew had unearthed the smaller, secondary tunnel
-              sometime this summer. Lynn saw significance in it, but it had been
-              <ListCard tag="c8-bricked"
+              sometime this summer. Lynn saw significance in it, but it had
+              been <ListCard tag="c8-bricked"
                 expansions={["bricked up"]}
                 card={<span>Why, and by whom?</span>} /> in the utopians' era.
-              Lynn also felt the pressure of time,
+              Lynn had also felt the pressure of time,
               and without waiting for permission,
-              smashed through it.
+              smashed through it. And then filled it back up again.
             </p>
             <p>
               The notebook ended in August, but he didn't disappear until at least a week into

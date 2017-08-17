@@ -43,7 +43,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>"Thank you, María, that was an excellent example." She blushed.</p>
       <p>The door in the back of the lecture hall opened, and to my surprise, Alice Gilman slid in and
       took a seat towards the back. I nodded to her in acknowledgment, but she didn't respond.</p>
-      <p>I addressed the class again. "Remember," I said, "this was time before refrigeration, when
+      <p>I addressed the class again. "Remember, this was time before refrigeration, when
         food products were frequently spoiled or adulterated. The idea of substituting real foods with
       artificial ones was considered a huge step forward."</p>
       <p>
@@ -51,21 +51,27 @@ export default ({currentSection, inventory, cards}) => {
         "And believed science was an absolute good."
       </p>
       <p>"With reason," Gilman said, unexpectedly. A couple students turned around and glared at her.</p>
-      <p>"Still," María ventured, "I understand vegetarianism, but why go to the extreme of
-        eradicating all of them. Didn't people have pets—"</p>
-      <p>"Because animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
+      <p>"I understand vegetarianism," María ventured, "but it's hard to imagine anyone today wishing
+        to eradicate all animals—"</p>
+      <p>"Most animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
+      <p>
+        There was an awkward silence.
+      </p>
       <p>"Thank you for joining us, Ms. Gilman," I said, <ListCard tag="c6_smiling"
         expansions={["smiling"]} card={<span>Through gritted teeth.</span>} />. <Map from={inventory.c5_direction}
           to={{
             there: "I'd already decided I needed to speak to her, so I asked her to stay through the end of lecture.",
             burglary: "I'd planned on breaking into Lynn's office after class, so I'd need to send her on some kind of errand to keep her out of the way.",
-            archaeologist: "I was annoyed she interrupted my class but I didn't need her for what I planned next."
-          }} /> "Other common themes that you found surprising?" I asked the students.
+            archaeologist: "I was annoyed she interrupted my class and since I decided not to seek her help, I'd rather have her out of my way while I went journal-hunting."
+          }} />
       </p>
       <p>
-        "Education," Charlotte volunteered. "A lot of time is spent on the subject of universal schooling, especially
+        "Other recurring themes that you found surprising?" I asked the students.
+      </p>
+      <p>
+        "Education," Charlotte volunteered. "A lot of novels mention the subject of universal schooling, especially
         in the books <ListCard tag="c6_authors" expansions={["authored by women"]} card={<span>I had expanded
-        Lynn's reading list quite a bit; it was heavy on the dudes.</span>} />."
+        Lynn's reading list quite a bit; it was heavy on the men.</span>} />."
       </p>
       <p>
         "Terrific point, and critical to understanding the history of this college. What's an example?"
@@ -92,9 +98,10 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         "Ella Merchant, the librarian, gave me this the other day, when I was helping her set up the exhibit. She
-        knew I was taking this class and thought we might find it interesting." She stood up, and read
-        in a <ListCard expansions={["more confident voice"]} tag="c6_voice" card={<span>I admit,
-          I was proud.</span>} nextUnit="section"/>.
+        knew I was taking this class and wasn't sure what book it was
+        from—she'd just found it among some utopian papers." She stood up, and read
+        in a <ListCard expansions={["more confident voice"]} tag="c6_voice" card={<span>I have to admit,
+          she made me proud.</span>} nextUnit="section"/>:
       </p>
     </section>,
     <section>
@@ -107,8 +114,8 @@ export default ({currentSection, inventory, cards}) => {
         </p>
       </blockquote>
       <p>"Isn't that interesting, Ms. Fuller?" she asked me. "It reminded me of the one by Annie Cridge—"</p>
-      <p>Gilman had risen, her arm outstretched. "María," she said, "may I see that—" </p>
-      <p>But I was closer and took the paper from her first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}
+      <p>Gilman had risen. "María," she said, "may I see that—" </p>
+      <p>But I was closer and snatched the paper from the girl first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}
         to={{
           there: "Perhaps we can return this to Lynn's other documents, after lecture?",
           burglary: "I'll ensure this is kept somewhere safe.",
@@ -116,24 +123,19 @@ export default ({currentSection, inventory, cards}) => {
         }} />"
       </p>
       <p>
-        I <List expansions={[["looked down"], ["looked down"]]} tag="c6-page" /> at the page, confirming that it was from Cadwell's journal.
+        I <List expansions={[["looked down"], ["looked down"]]} tag="c6-page" /> at the page. This was an original
+        19th century document, written in one familiar hand and heavily annotated in another:
       </p>
     </section>,
     <section>
-      <p>This was no facsimile, and
-        was heavily annotated with pencil in a familiar hand:
-      </p>
       <Reader inventory={inventory} docs={[docs.frag4]} note={true} />
     </section>,
     <section>
       <p>Lots of conversations were happening at once now. María was asking if anyone else though the story sounded like a
         description of Blithesdale itself. Charlotte was asking if this book was on the assigned reading list.
-        Lillian was saying nothing, but was sitting very still.
+        Lillian was saying nothing, but staring at me very deliberately.
       </p>
-      <p>"Thank you, María," I said, watching as Gilman slowly backed towards the door. "I found that very illuminating."</p>
-      <p>
-        Now I really didn't believe Professor Ignatius Cadwell had built a bomb.
-      </p>
+      <p>"Thank you, María," I said, watching as Gilman backed towards the door. "I found that very illuminating."</p>
       <NextChapter chapter={7} />
     </section>
   ]

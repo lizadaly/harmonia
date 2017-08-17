@@ -39,7 +39,7 @@ export default ({currentSection, inventory}) => {
     <p>
       "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
         expansions={["silently"]}
-        card={<span>People like her do this to trick you into <List expansions={[["talking too much"], ["talking too much. I fell for it."]]}
+        card={<span>People like her do this to trick you into <List expansions={[["talking too much."], ["talking too much. I fell for it."]]}
                tag="c4_talking_too" /></span>} />.
     </p>
 
@@ -192,14 +192,23 @@ export default ({currentSection, inventory}) => {
       "I believe he found something down there that was too good to pass up
       and ran off with it." She leaned back. "I have an army of
       lawyers who will not be happy to see college property show up in a museum
-      or at some auction. He'll <ListCard expansions={["regret"]} tag="c3-regret"
-        nextUnit="section"
-        card={<span>I did not doubt this.</span>} /> it."
+      or at some auction."
     </p>
+    <p>
+      I frowned. "When I took this assignment I assumed he'd simply left for another job without
+      much notice. Has he been reported missing?"
+    </p>
+    <p>
+      The Dean shrugged. "I'm not his mother." She narrowed her eyes. "You don't <List expansions={[["approve"], ["approve"]]}
+        tag="c3_approve" /> of how
+      I've handled this, Ms. Fuller?"
+    </p>
+
   </section>,
   <section>
+    <p>"It's not for me to say," I replied neutrally.</p>
     <p>
-      She stood up, and this meant I did too. "Now you'll have to excuse me, Ms. Fuller.
+      She stood up, and this meant I did too. "You'll have to excuse me, Ms. Fuller.
       I have an appointment with a donor."
     </p>
     <p>"Thank you again Dean—"</p>

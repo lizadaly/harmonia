@@ -74,7 +74,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           archaeologist: <div>
             <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
-              Lynn's office, but I was counting on the notion that there were more journal entries to be found elsewhere.
+              Lynn's office to clean it out, but I hoped there were more journal entries to be found elsewhere.
               Besides, I had a friend to visit.
             </p>
             <p>
@@ -210,7 +210,7 @@ export default ({currentSection, inventory, cards}) => {
                   to={{
                     curiosity: "Walter",
                     dean: "Ella"
-                  }} /> had said that its discovery was an accident, revealed when the construction team had moved to
+                  }} /> had said that its discovery was an accident, revealed when the construction team had gone in to
                   extend the foundation.</span>} /> that been punched out of the
               concrete wall, revealing an earthen tunnel framed by timber.
             </p>
@@ -281,12 +281,11 @@ export default ({currentSection, inventory, cards}) => {
 
             <p>
               The tunnel extended another ten feet, before ending at an even rougher hole that disappeared into
-              darkness and was surrounded by loose bricks.
+              darkness and was surrounded by loose bricks. I peeked inside but was disappointed—it was full of debris and dead-ended quickly.
             </p>
-            <p>I peeked into the small tunnel, but it was full of debris and dead-ended quickly.</p>
             <p>An old trough ran along one side of the corridor, half-filled with <ListCard tag="c7-sand" expansions={["sand"]}
               card={<span>Turnips and other root vegetables would have been buried here; the sand would keep out the natural damp.</span>} />.
-              A modern wooden <List expansions={[["crate"], ["crate"]]} tag="c7-crate" /> was pushed up the opposite wall.
+              A modern plastic crate, secured with a <List expansions={[["padlock"], ["padlock"]]} tag="c7-crate" />, was pushed up the opposite wall.
             </p>
           </div>
         }} />
@@ -318,12 +317,15 @@ export default ({currentSection, inventory, cards}) => {
                 to={{
                   curiosity: "Walter's",
                   dean: "Ella's"
-                }} /> key and had the first twist of real fear when the tunnel was swallowed up in darkness. The crate
+                }} /> key and the tunnel was briefly swallowed up in darkness. The crate
                 contained mostly old <ListCard tag="c7-metal" expansions={["pieces of metal"]} card={<span>Most were
-                identifiable, if primitive, nails and clasps, but some were twisted or charred beyond recognition.</span>} /> and
+                identifiable as primitive nails and clasps, but some were twisted or charred beyond recognition.</span>} /> and
                 other junk, but I found what I was really looking for: a notebook that belonged to Lynn.
-                Most of it was meaningless scribbles, phone numbers, some class notes. I flipped to
-                the <List expansions={[["last page"], ["last page, a fully-formed diary entry"]]}
+              </p>
+              <p>
+                Most of the pages were scarcely used, with meaningless scribbles, phone numbers, or illegible class notes.
+                I flipped to
+                the <List expansions={[["last one"], ["last one, a fully-formed diary entry"]]}
                   tag="c7_lynn_notebook" />:
             </p>
 
@@ -438,7 +440,7 @@ export default ({currentSection, inventory, cards}) => {
             <NextChapter chapter={8} />
           </div>,
           archaeologist: <div>
-            <p>The sentence just ended there. All the remaining pages were blank, and, to my frustration, there was nothing in it resembling a blueprint.</p>
+            <p>The sentence just ended there. All the remaining pages were blank.</p>
 
             <p>"Ally?"</p>
 
@@ -470,7 +472,8 @@ export default ({currentSection, inventory, cards}) => {
           burglary: <div></div>,
           archaeologist: <div>
             <p>"You need to get out of here," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> said. "Some inspectors from the city are on their way
-            down into this floor—I heard them in the Dean's office. If they approve the permit she's going ahead with the next phase of the construction project tomorrow."</p>
+            down in this basement—I heard them in the Dean's office. If they approve the permit, she's going ahead with
+            the next phase of the construction project tomorrow. That tunnel will be demolished."</p>
 
             <NextChapter chapter={8} />
           </div>

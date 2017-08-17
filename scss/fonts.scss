@@ -8,6 +8,12 @@ $elsie-font: 'Julee', sans-serif;
 
 $students-font: 'Comic Sans', Chalkboard, sans-serif;
 
+.students-font {
+  font-family: $students-font;
+  color: $students-color;
+  font-size: 22px;
+}
+
 $card-font: 'Archivo Narrow', sans-serif;
 
 .card-font {

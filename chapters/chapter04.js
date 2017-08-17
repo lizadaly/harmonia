@@ -33,8 +33,12 @@ export default ({currentSection, inventory, cards}) => {
         the faculty dining room. This late in the afternoon, only a few professors still at lunch. They greeted me
         coolly—more so, I felt, after I recited my <ListCard expansions={["academic credentials"]} tag="c4-creds"
           card={<span>All state and commuter schools, but I still worked my ass off.</span>} />. After a round of
-        polite introductions and tepid small talk, they went back to their private conversations. I finished lunch
+        polite introductions and tepid small talk, they went back to their private conversations. I ate my lunch
         in silence.
+      </p>
+      <p>
+        As I was putting away my tray, I saw Alice Gilman open the double doors to the dining hall and then
+        abruptly back out again. I would swear she'd caught my eye first.
       </p>
       <p>
         I found Lillian seated on the steps leading up to the library, seemingly oblivious to the
@@ -76,21 +80,22 @@ export default ({currentSection, inventory, cards}) => {
           tag="c4-library-date"
           card={<span>The Futurians, I would learn, had an impressive library for a farming community,
             but that small wooden structure had been
-          replaced many times over.</span>} />  back to the 60s, with the accompanying hints of Brutalism,
-        but it was generally a quiet and pleasant place to study, with abundant natural
-        light and a view overlooking the small apple orchard at the edge of campus.
+          replaced many times over.</span>} />  back to the 1960s. Like a lot of school libraries, there
+          was a strong Brutalist vibe that clashed with the rest of the college architecture.
+        Otherwise it was a quiet and pleasant place to study, with abundant natural
+        light and a wall of glass that overlooked the small cemetery at the edge of campus.
       </p>
-      <p>Naturally we were headed for the windowless basement.
+      <p>Naturally we were headed for the windowless basement instead.
       </p>
       <p>
         "Most of the utopians' buildings were wood," Lillian explained. "It was the one resource they had in abundance.
         They were all replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
-        led me in. "The only original buildings left are the few that were made of stone, and most of those are
-        faculty residences. They let me use this room for my independent study."
+        led me in. "The only original structures left are the few that were made of stone, and those are
+        faculty residences. I get this little space for my independent study."
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal volume of library books and
-        janitorial equipment. "What did you want to show me?" I said, trying to hurry this along.
+        janitorial equipment. "What did you want to show me?" I said, pushing a rolling bucket out of my way.
       </p>
       <p>
         "Here, <List expansions={[["read"], ["read"]]} tag="c4-read" /> these," she said. She watched me carefully as I did.
@@ -111,8 +116,6 @@ export default ({currentSection, inventory, cards}) => {
             <Reader inventory={inventory} docs={[docs.paper1]} />
           </div>
         }} />
-      </section>,
-      <section>
       <Map from={inventory.c2_direction}
         to={{
           dean: <div>
@@ -121,15 +124,12 @@ export default ({currentSection, inventory, cards}) => {
 
         }} />
       <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899.
-        He was quite sure they belonged to a community member named Cadwell, an amateur scientist and one of the founding members.
+        He attributed them to a community leader named Cadwell, an amateur scientist.
         Not all of the fragments were recoverable—some were damaged by water or mold. Many were singed by fire."
       </p>
-      <p>"The fire that destroyed the building over the quad? The <List expansions={[["Phila—"], ["Phono—"], "Phanto—"]} tag="c4-phila" />"</p>
-    </section>,
-    <section>
-      <p>Lillian rolled her eyes. "The Phalanstery, yes." She nodded towards the second paper in
-        my hand. "<List expansions={[["Look"], ["Look"]]}
-                    tag="c4-look" /> at the other journal entry."
+      <p>"The fire that destroyed the hall over the quad?"</p>
+      <p>"Maybe, we don't know. Now <List expansions={[["read"], ["read"]]}
+                    tag="c4-look" /> the other one."
       </p>
     </section>,
     <section>
@@ -137,7 +137,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>I pointed out the note in the
-      margin, in colored pencil and almost illegible. "Who wrote this?"</p>
+      margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's handwriting, and it looks old."</p>
       <p>"I don't know, maybe another utopian? Does it matter?" She tapped the page. "On November 23, 1889—the day
         after this was written—the Phalanstery burned down. It took a lot of other
         structures with it, and some livestock, maybe even some people. The community went
@@ -149,9 +149,9 @@ export default ({currentSection, inventory, cards}) => {
       <p>"I don't think anyone else was involved. Many of them stayed to rebuild and
       found Blithesdale. Cadwell and his wife, though, they disappear from the historical record after this."</p>
       <p>"So you think he set fire to their hall?"</p>
-      <p>"Or blew it up," she said. Even though all these people were long dead, I admit I got chills.</p>
+      <p>"Or blew it up," she said. I didn't know what to say to that.</p>
       <p>Lillian snatched the papers from my hands and shook them. "What if Professor Lynn found something
-        that Cadwell built that was dangerous or still explosive?  Maybe he didn't disappear—maybe he's hurt down there,
+        that Cadwell built that was dangerous?  Maybe he didn't disappear—maybe he's hurt down there,
       in some old cellar. People accidentally dig up old mines all the time."</p>
       <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
         tag="c4-time" />"</p>
@@ -160,11 +160,11 @@ export default ({currentSection, inventory, cards}) => {
       <p>"You're not listening! They're going to resume construction on the Science Center any day now. What if
       they rupture something explosive? People could get injured or worse."</p>
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
-      <p>"As his replacement, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
-      I can't go to the Dean without any iron-clad evidence. Please," she said, "I don't know who else to ask."</p>
+      <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
+      the Dean isn't interested in anything that holds up the renovations. Please," she said, "I don't know who else to ask."</p>
       <p>I'd like to say that in her passion and conviction she reminded myself of her when I was
-        younger, but she wasn't that much younger than me. I felt old before my time, a washed-up English professor
-        just a few years out of school.
+        younger, but she wasn't that much younger than me. I was just a few years out of school myself
+        and already felt like my career was a dead-end with nothing to look forward to besides more debt.
       </p>
       <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />

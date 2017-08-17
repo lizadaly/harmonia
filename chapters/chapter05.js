@@ -58,7 +58,7 @@ export default ({currentSection, inventory, cards}) => {
         But both Lynn and I assumed it was a draft of a fantastical story, and that made for curious timing.
         Who takes a break from
         their grand destructive plan to <ListCard expansions={["work on their novel"]}
-          card={<span>Even I was not as creative in ways to put off my dissertation.</span>}
+          card={<span>My efforts to put off my dissertation notwithstanding.</span>}
                                           tag="c5-dream" />?
       </p>
       <p>I needed to get those fragments back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
