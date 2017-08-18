@@ -281,7 +281,7 @@ export default ({currentSection, inventory, cards}) => {
 
             <p>
               The tunnel extended another ten feet, before ending at an even rougher hole that disappeared into
-              darkness and was surrounded by loose bricks. I peeked inside but was disappointed—it was full of debris and dead-ended quickly.
+              darkness and was surrounded by loose bricks.
             </p>
             <p>An old trough ran along one side of the corridor, half-filled with <ListCard tag="c7-sand" expansions={["sand"]}
               card={<span>Turnips and other root vegetables would have been buried here; the sand would keep out the natural damp.</span>} />.
@@ -448,7 +448,8 @@ export default ({currentSection, inventory, cards}) => {
                               to={{
                                 curiosity: "Walter",
                                 dean: "Ella" }} />'s voice calling
-                                my name, hesitantly, followed by a crashing sound. I hurried back out of the tunnel, the notebook safely in my arms.
+                                my name, hesitantly, followed by a crashing sound. With a longing glance at the
+                                narrow passage Lynn had dug out, I hurried back out of the tunnel.
             </p>
             <p>"Are you okay?" I asked.</p>
             <p>
