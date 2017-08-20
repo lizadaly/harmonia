@@ -111,3 +111,45 @@ export const paper3 = () => {
     </div>
   </div>
 }
+
+export const paper4 = () => (
+
+  <div>
+    <header>
+      <img src="images/header-glyph.png" />
+      <h1>The Circular</h1>
+      <img src="images/angel.png" />
+      <h2>Together We Shall Shine a Light ~ November 14, 1889</h2>
+    </header>
+    <div className="paper-container">
+      <h4>A Note to Our Readers</h4>
+      <p>
+        <span className="first-letter">S</span>AD DAY! This will be the last edition of The Circular
+        for the year, possibly for-ever.
+      </p>
+      <p>
+        It is no longer possible to put up a brave face: our experiment is at an end. We are perplexed by
+        debts, by want of capital to carry on any business. We lose more members than we gain, a trend
+        that began several years past that we have been powerless to reverse. We are unable to
+        supply our own needs from our gardens, and we produce naught but milk and hay whose prices
+        do not sustain us, no matter how many luxuries we forgo.
+      </p>
+      <p>The governing
+        council has voted to disband the joint-stock company; all existing shareholders will be paid out
+        the fair value of their investment.
+      </p>
+      <p>
+        We invite those who own or wish to buy their homes to stay. Our sole successful venture has been
+        our school, and many of us seek to continue that work, or even to extend it. We have seen the
+        benefits that equal education for boys and girls bring, and we believe there is yet more work to do
+        there.
+      </p>
+      <h4>Plea for a Safe Return</h4>
+      <p>Our own Mr. A— writes, "If any man has taken it upon himself to remove my chickens from their
+        enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
+      </p>
+    </div>
+
+  </div>
+
+)

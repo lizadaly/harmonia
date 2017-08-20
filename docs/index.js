@@ -7,7 +7,7 @@ import {astrolith1} from './astrolith'
 import mizora from './mizora'
 import hence from './hence'
 import {frag1, frag2, frag3, frag4, frag5, frag6} from './frags'
-import {paper1, paper2, paper3} from './newspaper'
+import {paper1, paper2, paper3, paper4} from './newspaper'
 import {lynn1} from './lynn'
 
 export const docs = {
@@ -80,6 +80,9 @@ export const docs = {
   },
   paper3: {
     author: "Together We Shall Shine a Light", year: "1884", title: "Spring, 1884", id: "paper3", text: paper3, type: "paper"
+  },
+  paper4: {
+    author: "Together We Shall Shine a Light", year: "1889", title: "Fall, 1889", id: "paper4", text: paper4, type: "paper"
   },
   brooks: {
     author: "Byron A. Brooks",

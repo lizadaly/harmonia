@@ -154,9 +154,7 @@ export default ({currentSection, inventory, cards}) => {
               to={{
 
                 barrels: <div>
-                  <p>"Do these old houses have air conditioning?" I asked.</p>
-                  <p>"If they did, it'd be a window unit," the archivist said.</p>
-                  <p>"It was still warm when he disappeared. That one's probably not locked." I motioned to Lillian, who stabilized one of the plastic bins while I
+                  <p>"It was still warm when he disappeared. That window might be unlocked." I motioned to Lillian, who stabilized one of the plastic bins while I
                     clambered awkwardly up onto it. It wobbled in an alarming way, but I was able to
                     slide the window up and hoist myself through.
                   </p>
@@ -231,7 +229,7 @@ export default ({currentSection, inventory, cards}) => {
               "No way, I—"
             </p>
             <p>
-              "You'll get expelled, and good luck getting into another school. Go home."
+              "You'll get expelled, and I don't think the Dean will write a nice recommendation letter. Go home."
             </p>
             <p>
               "No," she said, folding her arms.
@@ -254,7 +252,10 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        The cellar wasn't deep—only about five shallow steps and I was standing on a packed earth floor.
+        Lillian bit her lip. "I'll be in the library." Then she left.
+      </p>
+      <p>
+        The cellar wasn't deep—I descended only about five shallow steps to stand on a packed earth floor.
         The <Map from={inventory.c8_search}
           to={{
             _undefined: "ceiling",
@@ -297,6 +298,52 @@ export default ({currentSection, inventory, cards}) => {
             _any: "."
           }} />
       </p>
+      <p>
+        The tunnel was obviously hand-dug, and surprisingly long; it wasn't just a connector to another nearby cellar.
+        It was framed in wood, but inexpertly, with boards nailed together at all angles. The planks
+        overhead sagged and a few had been split by tree roots which burst out from the cracks and hung
+        freely. I was clearly descending, and my sense of orientation told me I was moving <i>into</i> the
+        slope of the hill. This did not feel safe.
+      </p>
+      <p>
+        I stepped forward slowly, trying to brush the dangling roots and loose boards aside with minimal force.
+        One of the boards fell off under my touch, landing on the ground with a dull thud. Soil spilled down
+        on my head and I held my breath, but gradually subsided, and the tunnel was silent.
+      </p>
+      <p>
+        The board I'd dislodged had some <List expansions={[["handwritten graffiti"], ["handwritten graffiti"]]} tag="c8_graffiti" /> on it:
+      </p>
+    </section>,
+    <section>
+      <blockquote className="elsie-font">Blessed are those who see the brightest <ListCard expansions={["light"]}
+        tag="c7_forward"
+        nextUnit="section"
+        card={<span>
+          <Map from={inventory.c5_direction}
+            to={{
+              archaeologist: "Same handwriting as in the other tunnel: Elsie Cadwell.",
+              _any: "I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife."
+            }} /></span>} />. — November 23, 1889</blockquote>
+    </section>,
+    <section>
+
+      <p>
+        After five or six meters the tunnel made a sharp left-hand <ListCard expansions={["turn"]} card={[`I didn't even see the turn and walked straight into the wall. I yelped
+      in surprise. There was no echo; the sound was deadened by the encroaching earth.`]} tag="c8-wall" /> and dropped even further.
+        After a few more paces,
+        it opened into a space that felt very, very large.
+      </p>
+      <p>
+        I trained the flashlight around the room but the beam was insufficient and nothing I saw made any sense.  I could only perceive disjointed scenes that didn't form a coherent whole:
+        roots bursting out from earthen walls; curved metal plates, heavily corroded and pitted; cables and hoses snaking
+        upwards—so far up. Motes of dirt hung in the air,
+        and the weak light only served to reflect them back at me like snow. I called out, weakly, but my voice died
+        completely when the dull echo told me the opposite wall was far, far away.
+      </p>
+      <p>
+        I wasn't in a cellar. This was a cavern.
+      </p>
+      <NextChapter chapter={9} />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections}  />
