@@ -102,7 +102,7 @@ class _ListCard extends React.Component {
   }
 
 // TODO call a re-render on the SVG after a window resize event
-// This doens't work
+// This doesn't work
   componentDidMount() {
 //    window.addEventListener('resize', this.reRender)
   }
@@ -116,7 +116,8 @@ class _ListCard extends React.Component {
   }
 
   positionTargetY(source, target) {
-    // Move the card down if necessary to avoid overlapping other cards
+    // Move the card down if necessary to avoid overlapping other cards;
+    // TODO fix bug where this is triggered unnecessarily by elements on different sides.
 
     let cards = Array.from(document.getElementsByClassName('card'))
     cards.reverse()
