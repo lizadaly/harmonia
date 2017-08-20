@@ -59,10 +59,10 @@
     line-height: 1.2em;
   }
   &.elsie {
-    font-family: $elsie-font;
+    font-family: $elsie-font !important;
     font-size: 24px;
     line-height: 1.1em;
-    color: $elsie-color;
+    color: $elsie-color !important;
   }
   &.students {
     font-family: $students-font;
@@ -73,6 +73,7 @@
     color: $black;
     width: 100%;
     margin-top: 10rem;
+    text-align: center;
   }
 }
 

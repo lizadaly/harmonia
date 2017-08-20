@@ -254,12 +254,12 @@ export default ({currentSection, inventory, cards}) => {
                   <p>"Who's this?" I said, jerking my head at the other woman.</p>
                   <p>"I'm Ella Merchant, the college archivist," she said kindly. </p>
                   <p>I apologized for being brusque. "I understand. It seems like you're having a tough first week."</p>
-              </div>
+                </div>
               }} />
-              <p>"Did you find Lynn's papers yet?" Lillian cut in.</p>
-              <p>"<i>No</i>, I was dealing with Gilman and
-                I <List expansions={[["can't find anything in this mess—"], ["can't find—"]]} tag="c7-find" />"
-              </p>
+            <p>"Did you find Lynn's papers yet?" Lillian cut in.</p>
+            <p>"<i>No</i>, I was dealing with Gilman and
+              I <List expansions={[["can't find anything in this mess—"], ["can't find—"]]} tag="c7-find" />"
+            </p>
 
           </div>,
           burglary: <div>
@@ -277,7 +277,7 @@ export default ({currentSection, inventory, cards}) => {
             <blockquote className="elsie-font">May the beam lead me only <ListCard expansions={["forward"]}
               tag="c7_forward"
               card={<span>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife.</span>} />
-              . — November 23, 1889</blockquote>
+            . — November 23, 1889</blockquote>
 
             <p>
               The tunnel extended another ten feet, before ending at an even rougher hole that disappeared into

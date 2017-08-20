@@ -128,10 +128,12 @@ export const paper4 = () => (
         for the year, possibly for-ever.
       </p>
       <p>
-        It is no longer possible to put up a brave face: our experiment is at an end. We are perplexed by
-        debts, by want of capital to carry on any business. We lose more members than we gain, a trend
-        that began several years past that we have been powerless to reverse. We are unable to
-        supply our own needs from our gardens, and we produce naught but milk and hay whose prices
+        It is no longer possible to put up a brave face: our experiment is at an end. We are perplexed
+        by <ListCard author="lynn"
+          tag="paper4-debt" expansions={["debts"]}
+          card={<span>The debt would exceed more than $30,000, a vast sum in those days, including the losses
+          incurred by the fire at the (uninsured) Great Hall.</span>} />, by want of capital to carry on any business. We lose more members than we gain; we are unable to
+        supply our own needs from our gardens, and we sell naught but milk and hay whose prices
         do not sustain us, no matter how many luxuries we forgo.
       </p>
       <p>The governing
@@ -139,14 +141,31 @@ export const paper4 = () => (
         the fair value of their investment.
       </p>
       <p>
-        We invite those who own or wish to buy their homes to stay. Our sole successful venture has been
+        We invite those who own or wish to buy their homes to <ListCard author="lynn"
+          tag="paper4-stay" expansions={["stay"]}
+          card={<span>Only a dozen colonists took this offer up after the devasting loss of the Great Hall.</span>} />. Our sole profitable venture has been
         our school, and many of us seek to continue that work, or even to extend it. We have seen the
-        benefits that equal education for boys and girls bring, and we believe there is yet more work to do
+        benefits that equal education for <ListCard author="lynn"
+          tag="paper4-boys" expansions={["boys and girls"]}
+          card={<span>Blithesdale was co-ed until 1906, when a new charter was established.</span>} /> bring, and we believe there is yet more work to do
         there.
       </p>
       <h4>Plea for a Safe Return</h4>
       <p>Our own Mr. A— writes, "If any man has taken it upon himself to remove my chickens from their
         enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
+      </p>
+      <h4>The Study of the Unknown </h4>
+      <p>
+        <ListCard author="lynn"
+          tag="paper4-anon" expansions={["Anon"]}
+          nextUnit="section"
+          card={<span>Certain that Cadwell was the author here: fragments of this text appear on the
+          back of the device diagram (attached).</span>} />. writes, "I speak to you of minute and invisible particles of matter, endowed with attributes
+        such as we are wont to associate with larger masses that are capable of being seen. If you
+        find difficulty in imagining this, remember that every grain of sand is a microcosm, sharing in the
+        innate motions which pulsate through the Universe; and remember further that there are specks,
+        infinitely smaller than grains of sand, in which a heart beats, and blood circulates, and all the
+        functions of an exuberant vitality are exercised—"
       </p>
     </div>
 

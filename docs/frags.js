@@ -164,18 +164,38 @@ export const frag6 = () =>  (
     <p>
       As I have detailed in the <ListCard author="lynn" expansions={["blueprint"]}  nextUnit="section"
         tag="frag_blueprint" card={<span>Cataloged as SP-05-9. Given the sensitivity, I am keeping this
-          in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
+        in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
       design). After a final disagreeable conversation, we entered the work-space via
       the <ListCard author="lynn" expansions={["eastern tunnel"]}
-      tag="frag-tunnel" card={<span>No excavation of this tunnel to date, if the work-space is where I believe it to be.</span>} />. E- ascended to the platform, and I engaged the galvanic
+        tag="frag-tunnel" card={<span>No excavation of this tunnel to date, if the work-space is where I believe it to be.</span>} />. E- ascended to the platform, and I engaged the galvanic
       engine. While achieving sufficient rotational speed, the engine exceeds the tolerance of its
       brass enclosure—stronger rivets are required, I believe. But I succeeded, and E- underwent
       the <ListCard author="lynn" expansions={["transfiguration"]}
         tag="tag-transformation" card={<span>Frustrating lack of detail here!</span>} /> of her spirit
-         as planned, and I returned her to our world as we agreed, no more than ten minutes thence.
+      as planned, and I returned her to our world as we agreed, no more than ten minutes thence.
     </p>
     <p>
       "I have no words," she said, upon return, all her former doubts extinguished, "Truly it is a New Eden."
     </p>
+  </div>
+)
+
+export const diagram1 = () => (
+  <div>
+    <img src="images/machine.jpg"/>
+    <div className="elsie-font">
+      every grain of sand a <ListCard tag="diag1-micro" forceDir="down"
+        expansions={["microcosm"]}
+        card={<span><span style={{maxWidth: "20em", display: "inline-block"}}>Beneath Elsie's transcription on the page, she'd added another <ListCard expansions={["note"]}
+          tag="diag1-note"
+          author="elsie"
+          nextUnit="chapter"
+          forceDir="down"
+          card={<span>I hope you burned with the rest of them.</span>} />, at a later date.
+        </span>
+        </span>} />
+
+    </div>
+
   </div>
 )
