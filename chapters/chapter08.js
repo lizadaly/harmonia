@@ -416,7 +416,7 @@ export default ({currentSection, inventory, cards}) => {
           to={{
             _undefined: '',
             _any: ` One of the boards fell off under my touch, landing on the ground with a dull thud. Soil spilled down
-                  on my head and I held my breath, but gradually subsided, and the tunnel was silent.`
+                  on my head and I held my breath, but the falling dirt gradually subsided and the tunnel was silent again.`
           }} />
       </p>
     <Map from={inventory.c8_brush}
@@ -456,28 +456,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         I wasn't in a cellar. This was a cavern.
       </p>
-      <p>
-        Right by the tunnel entrance there were signs of modern intrusion: several plastic milkcrates, some rubber gloves, a few
-        empty bags of potato chips. The milkcrates were stuffed full of
-        notebooks and papers and as I knelt down, flashlight tucked under one arm, I almost wept with joy.
-        I'd been collecting these one-by-one like a scavenger hunt and here was a small library.
-      </p>
-      <p>
-        One crate was entirely full of issues of <i>The Circular</i>. Lynn had <ListCard expansions={[["annotated"], ["annotated"]]}
-          tag="c9_paper"
-          nextUnit="section"
-          card={<span>This edition was from the end of the community's existence, when the full-length newspaper had
-          shrunk to a single double-sided broadsheet.</span>} /> an issue that was placed into a manilla folder with a few other pages:
-      </p>
-    </section>,
-    <section>
-      <Reader inventory={inventory} docs={[docs.paper4]}/>
-    </section>,
-    <section>
-      <p>
-        There was another paper behind the broadsheet. It was also old, but very, very different:
-      </p>
-      <Reader inventory={inventory} docs={[docs.diagram1]}/>
+      <NextChapter chapter={9} />
     </section>
 
   ]

@@ -189,7 +189,7 @@ export const diagram1 = () => (
         card={<span><span style={{maxWidth: "20em", display: "inline-block"}}>Beneath Elsie's transcription on the page, she'd added another <ListCard expansions={["note"]}
           tag="diag1-note"
           author="elsie"
-          nextUnit="chapter"
+          nextUnit="section"
           forceDir="down"
           card={<span>I hope you burned with the rest of them.</span>} />, at a later date.
         </span>
