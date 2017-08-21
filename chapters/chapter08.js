@@ -61,7 +61,7 @@ export default ({currentSection, inventory, cards}) => {
           burglary: <div>
             <p>
               We waited until after dark to meet up by the row of picturesque stone houses along the west side
-              of campus, by the main thoroughfare. They were four, all neatly hewn stone cubes that, over the
+              of campus, by the main thoroughfare. They were five, all neatly hewn stone cubes that, over the
               years, had been extended and renovated in slightly different ways. Lynn's house was one of the
               smaller ones, set back a bit.
             </p>
@@ -77,7 +77,38 @@ export default ({currentSection, inventory, cards}) => {
               ]} tag="c8_entrances" />," she said.
             </p>
           </div>,
-          there: <div></div>
+          there: <div>
+            <p>
+              I was lucky to have caught Walter before he left for the day, but he didn't much like my request when I called him up.
+            </p>
+            <p>
+              "I'd get fired if anyone found out I gave you those keys," he said, worried.
+            </p>
+            <p>
+              "I'll make sure that doesn't happen."
+            </p>
+            <p>
+              There was a long silence on the other end of the line. "They'll be in your <ListCard expansions={["faculty mailbox"]}
+                tag="c8-mailbox" card={<span>I learned I have a faculty mailbox.</span>} /> in an hour."
+            </p>
+            <p>
+              "Thank you Walter, I owe you one."
+            </p>
+            <p>
+              We waited until after dark to meet up by the row of picturesque stone houses along the west side
+              of campus, by the main thoroughfare. They were five, all neatly hewn stone cubes that, over the
+              years, had been extended and renovated in slightly different ways. Lynn's house was one of the
+              smaller ones, set back a bit.
+            </p>
+            <p>
+              "Are we all okay with doing this?" I asked.
+            </p>
+            <p>Ella Merchant looked unsure, but then sighed. "Jeffrey would want us to find out what happened to him," she said.
+            Lillian nodded in agreement.</p>
+            <p>"Okay then."</p>
+            <p>Lillian had brought flashlights for all of us. We kept them off until I put the key in the lock and <List expansions={[["opened"], ["opened"]]}
+            tag="c8-breakin" /> Lynn's door.</p>
+          </div>
         }} />
     </section>,
     <section>
@@ -200,7 +231,21 @@ export default ({currentSection, inventory, cards}) => {
                 </div>
               }} />
           </div>,
-          there: <div></div>
+          there: <div>
+            <p>
+              The whole house was smaller than some apartments I've had—just three rooms plus a small modern addition containing the bathroom.
+              The furnishings were generic and had probably come with the housing. It looked barely lived-in;
+              he must've spent most of his time at his office.
+            </p>
+            <p>
+              I explored the kitchen following the <ListCard tag="c8-spoiled-food" expansions={["scent of neglected garbage"]} card={<span>I was relieved
+              to smell nothing worse.</span>} />. The flashlight beam illuminated a barely stocked kitchen, consistent with someone who ate mostly
+              at the dining hall. A <List expansions={[["cellar door"], ["cellar door"]]} tag="c8_door" /> had been
+              left open.
+            </p>
+          </div>
+
+
         }} />
 
     </section>,
@@ -240,7 +285,8 @@ export default ({currentSection, inventory, cards}) => {
           burglary: <div>
             <p>
               The cellar door was next to the old stone hearth, now filled with boxes of unpacked belongings rather than
-              a spit and cast-iron bots. It was a small door, obviously original, and very dark.
+              a spit and cast-iron bots. It was a small entrance, obviously original, and there was no light switch by the
+              top of the stairs.
             </p>
             <p>
               I thanked <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> for her help in
@@ -271,7 +317,41 @@ export default ({currentSection, inventory, cards}) => {
             </p>
 
           </div>,
-          there: <div></div>
+          there: <div>
+            <p>
+              The door was next to the old stone hearth, now filled with boxes of unpacked belongings rather than
+              a spit and cast-iron bots. It was a small entrance, obviously original, and there was no light switch by the
+              top of the stairs.
+            </p>
+            <p>
+              I thanked <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> for her help so far and
+               told her to go home. "I don't want anyone else losing their job over this." She looked
+              grateful and promised to assist us in any way with whatever materials we came back with.
+            </p>
+            <p>
+              I turned to Lillian. "You too."
+            </p>
+            <p>
+              "No way, I—"
+            </p>
+            <p>
+              "You'll get expelled, and I don't think the Dean will write a nice recommendation letter. Go home."
+            </p>
+            <p>
+              "No," she said, folding her arms.
+            </p>
+            <p>
+              "Then wait outside."
+            </p>
+            <p>
+              "It's freezing."
+            </p>
+            <p>
+              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I guess I was so adamant because I
+              recognized how stupid this was.</span>} />."
+            </p>
+
+          </div>
         }} />
 
     </section>,
