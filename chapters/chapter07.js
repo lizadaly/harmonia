@@ -448,8 +448,8 @@ export default ({currentSection, inventory, cards}) => {
                               to={{
                                 curiosity: "Walter",
                                 dean: "Ella" }} />'s voice calling
-                                my name, hesitantly, followed by a crashing sound. With a longing glance at the
-                                narrow passage Lynn had dug out, I hurried back out of the tunnel.
+                                my name, hesitantly, followed by a crashing sound. I looked longingly at the
+                                narrow passage Lynn had dug out, but hurried back out of the tunnel.
             </p>
             <p>"Are you okay?" I asked.</p>
             <p>
@@ -460,7 +460,7 @@ export default ({currentSection, inventory, cards}) => {
                               }} />
             </p>
             <p>
-              "Look, I found <List expansions={[["Lynn's journal—"], ["—"]]} tag="c7_journal" />"
+              "Look, I found<List expansions={[[" Lynn's journal—"], ["—"]]} tag="c7_journal" />"
             </p>
 
           </div>
@@ -472,7 +472,7 @@ export default ({currentSection, inventory, cards}) => {
           there: <div></div>,
           burglary: <div></div>,
           archaeologist: <div>
-            <p>"You need to get out of here," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> said. "Some inspectors from the city are on their way
+            <p>"You need to get out of here," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> interrupted. "Some inspectors from the city are on their way
             down in this basement—I heard them in the Dean's office. If they approve the permit, she's going ahead with
             the next phase of the construction project tomorrow. That tunnel will be demolished."</p>
 

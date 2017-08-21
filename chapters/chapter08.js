@@ -43,18 +43,16 @@ export default ({currentSection, inventory, cards}) => {
               smashed through it. I didn't get to see what was inside.
             </p>
             <p>
-              The notebook ended in August, but he didn't disappear until at least a week into
+              The entries in that notebook stopped in August, but Lynn didn't disappear until at least a week into
               September. Surely he had more <ListCard tag="c8-notes"
                 expansions={["notes"]}
                 card={<span>If he was anything like me, his work was spread over
-                multiple notebooks, computer files, and napkins.</span>}/> on the artifacts he recovered from whatever
-              device it was that he found in the chamber beyond the tunnel.
+                multiple notebooks, computer files, and napkins.</span>}/> on whatever he found in the chamber beyond the tunnel.
             </p>
             <p>I <ListCard expansions={["jumped"]} card={<span>I hadn't even realized I had a phone.</span>} tag="c8-phone" /> as the phone in my room rang. "Hello?"
           </p>
-          <p>"It's me," said Lillian. "Listen, I think I know where Professor Lynn might've kept more documents."</p>
-          <p>When she didn't immediately continue, I said, "Okay, where?"</p>
-          <p>"Just—" I heard her cover the phone and talk to someone else. "Meet me down by Adams House."</p>
+          <p>"It's me," said Lillian. "Listen, I think I know where Professor Lynn might've kept more documents."
+            I heard her cover the phone and talk to someone else. "Meet me down by Adams House."</p>
           <p>"I have no idea where that is."</p>
           <p>"One of the stone houses by the gymnasium. I'll wait for you outside. Bring a <ListCard expansions={["flashlight"]} tag="c8-light"
             nextUnit="section"
@@ -89,38 +87,36 @@ export default ({currentSection, inventory, cards}) => {
             <p>* * * *</p>
 
             <p>
-              When I remembered her telling me that the old stone homes were faculty residences, it was immediately obvious where I was going.
+              I remembered that Lillian said the old stone homes were faculty residences and felt foolish.
               Why hadn't I <ListCard expansions={["thought"]} tag="c8-thought" card={<span>Maybe because my experience in burglary was on par with my
               professorial ones.</span>} /> to search Lynn's house?
             </p>
             <p>
-              Lillian was shuffling her feet in the cold crisp air, flashlight pointed at the ground. Standing very close to her
+            I found Lillian near the gym, shuffling her feet in the cold crisp air, flashlight pointed at the ground. Standing very close to her
               was <Map from={inventory.c2_direction}
                 to={{
                                   curiosity: "Walter, to my surprise",
-                dean: "a young man, much to my surprise" }}  />.
+                dean: "a young man—not a common sight on this campus" }}  />.
             </p>
             <Map from={inventory.c2_direction}
               to={{
                 curiosity: <div>
                   <p>I tilted my head curiously and he took a couple of steps away from her, looking embarrassed. I suppressed a smile.</p>
-                  <p>Lillian said, "Walter told me what you found in the cellar. I wish I'd gone down there sooner."</p>
+                  <p>Lillian said, "Walter told me what you found under the Science Center. Professor Lynn never let me accompany him, but I wish I'd gone anyway."</p>
                 </div>,
                 dean: <div>
                   <p>"This is Walter," Lillian said. "Dean Orellana's assistant."</p>
                   <p>"Nice to meet you," I said. He was a little older than Lillian, probably my age, with a serious-looking face
-                  and a dapper winter coat. "I assume the Dean doesn't know you're here?"</p>
-                  <p>"No," Lillian said with emphasis.</p>
-                  <p>"Don't worry about me," I said. "I'm sure I'll need to call in a favor from you sometime." I tried to smile at him reassuringly.</p>
-                  <p>Lillian continued, "Ella told me what you found in the cellar. I wish I'd gone down there sooner."</p>
+                  and a dapper winter coat. He didn't seem to entirely trust me.</p>
+                  <p>Lillian continued, "Ella told me what you found under the Science Center. Professor Lynn never let me accompany him, but I wish I'd gone anyway."</p>
                 </div> }}  />
             <p>
-              "Do you think it's safe now?"
+              "We could go back now."
             </p>
             <p>
-              "It doesn't matter, the entrance has been locked," Walter said. "City orders, it's off-limit now except for the construction crew."
+              Walter shook his head. "The entrance has been locked. City orders, it's off-limit now except for the construction team."
             </p>
-            <p>"So that's why we're going to break into Lynn's house?"</p>
+            <p>"So instead we break into Lynn's house?"</p>
             <p>"No need," Lillian said, looking up a little adoringly at Walter. "We have a key."</p>
             <p>"Technically that's<List expansions={[[" still breaking—"], ["—"]]} tag="c8_breaking" nextUnit="none"/>"</p>
             <Map from={inventory.c8_breaking}
@@ -128,22 +124,22 @@ export default ({currentSection, inventory, cards}) => {
                 _undefined: "",
                   _any: <div>
                     <p>
-                      "So it's fine, let's go," Lillian said, leaving the two of us behind and walking straight into Lynn's house.
+                      "Let's go," Lillian said, leaving the two of us behind and walking straight into Lynn's house.
                     </p>
                     <p><Map from={inventory.c2_direction}
                       to={{
                       dean: "My new buddy " }} /> Walter and I exchanged a look and followed her, turning on our flashlights as we
-                      entered the home.
+                      entered.
                     </p>
                     <p>
-                      The house was smaller than some apartments I've had—just one floor, and three rooms with a modern addition containing the bathroom.
-                      The furnishings were generic and had probably come with the housing. I was disappointed as there were no signs of scholarly
-                      work happening here; he must've done it all at the office.
+                      The whole house was smaller than some apartments I've had—just three rooms plus a small modern addition containing the bathroom.
+                      The furnishings were generic and had probably come with the housing. It looked barely lived-in;
+                      he must've spent most of his time at his office.
                     </p>
                     <p>
-                      I went into the kitchen following the <ListCard tag="c8-spoiled-food" expansions={["scent of spoiled food"]} card={<span>It was a relief
-                      to smell nothing worse.</span>} />. The flashlight beam illuminated a barely stocked kitchen, consistent with someone who mostly
-                      at the dining hall. One thing stuck out—a  <List expansions={[["cellar door"], ["cellar door"]]} tag="c8_door" /> that had been
+                      I explored the kitchen following the <ListCard tag="c8-spoiled-food" expansions={["scent of neglected garbage"]} card={<span>I was relieved
+                      to smell nothing worse.</span>} />. The flashlight beam illuminated a barely stocked kitchen, consistent with someone who ate mostly
+                      at the dining hall. A <List expansions={[["cellar door"], ["cellar door"]]} tag="c8_door" /> had been
                       left open.
                     </p>
                   </div>
@@ -211,7 +207,36 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Map from={inventory.c5_direction}
         to={{
-          archaeologist: <div></div>,
+          archaeologist: <div>
+            <p>"Nothing in his bedroom," Lillian said, entering. Walter stood behind her, looking uncertain.
+            </p>
+            <p>I nodded towards the cellar. "You should leave. I don't want anyone else losing their job over this."</p>
+            <p>Walter nodded but didn't move, probably not wanting to leave his lady friend behind.</p>
+            <p>"She's right," Lillian said. "I can say we crawled through a window or something. I'll call you tonight."</p>
+            <p>
+              I turned to Lillian. "You too."
+            </p>
+            <p>
+              "No way, I—"
+            </p>
+            <p>
+              "You'll get expelled, and I don't think the Dean will write a nice recommendation letter. Go home."
+            </p>
+            <p>"Thank you," Walter said to me.</p>
+            <p>
+              "No," she said, folding her arms.
+            </p>
+            <p>
+              "Then wait outside."
+            </p>
+            <p>
+              "It's freezing."
+            </p>
+            <p>
+              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I guess I was so adamant because I
+              recognized how stupid this was.</span>} />."
+            </p>
+          </div>,
           burglary: <div>
             <p>
               The cellar door was next to the old stone hearth, now filled with boxes of unpacked belongings rather than
@@ -252,21 +277,21 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        Lillian bit her lip. "I'll be in the library." Then she left.
+        Lillian bit her lip. "I'll be in the library." Then she left. I was alone.
       </p>
       <p>
-        The cellar wasn't deep—I descended only about five shallow steps to stand on a packed earth floor.
-        The <Map from={inventory.c8_search}
+        The cellar wasn't far down—I descended only about ten shallow steps and
+        the <Map from={inventory.c8_search}
           to={{
             _undefined: "ceiling",
-              _any: <span><ListCard expansions={["ceiling"]} tag="c8_ceiling" card={<span>Nailed-studded
+              _any: <span><ListCard expansions={["ceiling"]} tag="c8_ceiling" card={<span>Cobweb-infested
               struts, interrupted by an occasional load-bearing brick pillar.</span>}/></span>
           }} />  brushed
         the top of my head. The <Map from={inventory.c8_search}
           to={{
             _undefined: "floor",
               _any: <span><ListCard expansions={["floor"]} tag="c8_floor" card={<span>When I aimed the flashlight
-              beam directly on the floor, a set of prints emerged, clustered around one of the boxes in the far corner.</span>}/></span>
+              beam directly at the ground, a set of prints were visible, clustered around one of the boxes in the far corner.</span>}/></span>
           }} />  had been filling with earth over time, probably after successive floods, and the
         various  <Map from={inventory.c8_search}
           to={{
@@ -285,16 +310,16 @@ export default ({currentSection, inventory, cards}) => {
         enough to have belonged to Lynn.
       </p>
       <p>
-        Yet the door had been <List expansions={[["open"], ["open. Someone had been down here. I'd have to search"]]} tag="c8_search"
-                                nextUnit="none" />.
+        Yet the door had been open—<em>someone</em> had been down here. I'd just have to <List expansions={[["search"], ["search"]]} tag="c8_search"
+                                nextUnit="none" /> carefully.
       </p>
     </section>,
     <section>
       <p>I slid the box away from the wall, which was quite easy as it had clearly been dragged this way before. Moving
         the box revealed a narrow tunnel into further darkness<Map from={inventory.c5_direction}
           to={{
-            archaeologist: `, a fact which did not surprise me in the least. It was the size and shape of the bricked-up
-                     tunnel under the science center, but this one was open. `,
+            archaeologist: `, a fact which did not surprise me in the least. It was the same size and shape of the bricked-up
+                     tunnel under the Science Center. `,
             _any: "."
           }} />
       </p>
@@ -306,13 +331,21 @@ export default ({currentSection, inventory, cards}) => {
         slope of the hill. This did not feel safe.
       </p>
       <p>
-        I stepped forward slowly, trying to brush the dangling roots and loose boards aside with minimal force.
-        One of the boards fell off under my touch, landing on the ground with a dull thud. Soil spilled down
-        on my head and I held my breath, but gradually subsided, and the tunnel was silent.
+        I stepped forward slowly, trying to <List expansions={[["brush"], ["brush"]]} tag="c8_brush" nextUnit="none" /> the dangling roots and loose boards aside with minimal force.
+        <Map from={inventory.c8_brush}
+          to={{
+            _undefined: '',
+            _any: ` One of the boards fell off under my touch, landing on the ground with a dull thud. Soil spilled down
+                  on my head and I held my breath, but gradually subsided, and the tunnel was silent.`
+          }} />
       </p>
-      <p>
-        The board I'd dislodged had some <List expansions={[["handwritten graffiti"], ["handwritten graffiti"]]} tag="c8_graffiti" /> on it:
-      </p>
+    <Map from={inventory.c8_brush}
+      to={{
+        _undefined: '',
+        _any: <p>
+              The board I'd dislodged had some <List expansions={[["handwritten graffiti"], ["handwritten graffiti"]]} tag="c8_graffiti" /> on it:
+        </p>
+    }} />
     </section>,
     <section>
       <blockquote className="elsie-font">Blessed are those who see the brightest <ListCard expansions={["light"]}
@@ -329,22 +362,22 @@ export default ({currentSection, inventory, cards}) => {
 
       <p>
         After five or six meters the tunnel made a sharp left-hand <ListCard expansions={["turn"]} card={[`I didn't even see the turn and walked straight into the wall. I yelped
-      in surprise. There was no echo; the sound was deadened by the encroaching earth.`]} tag="c8-wall" /> and dropped even further.
+      in surprise. There was no echo; the sound was deadened by the encroaching earth.`]} tag="c8-wall" /> and descended even further.
         After a few more paces,
         it opened into a space that felt very, very large.
       </p>
       <p>
         I trained the flashlight around the room but the beam was insufficient and nothing I saw made any sense.  I could only perceive disjointed scenes that didn't form a coherent whole:
         roots bursting out from earthen walls; curved metal plates, heavily corroded and pitted; cables and hoses snaking
-        upwards—so far up. Motes of dirt hung in the air,
-        and the weak light only served to reflect them back at me like snow. I called out, weakly, but my voice died
+        upwards and out of sight. Motes of dirt hung in the air,
+        and the weak light only served to reflect them back at me like snow—a disorienting visual static. I called out, weakly, but my voice died
         completely when the dull echo told me the opposite wall was far, far away.
       </p>
       <p>
         I wasn't in a cellar. This was a cavern.
       </p>
       <p>
-        I looked down around me, and saw signs of modern intrusion: several plastic milkcrates, some rubber gloves, a few
+        Right by the tunnel entrance there were signs of modern intrusion: several plastic milkcrates, some rubber gloves, a few
         empty bags of potato chips. The milkcrates were stuffed full of
         notebooks and papers and as I knelt down, flashlight tucked under one arm, I almost wept with joy.
         I'd been collecting these one-by-one like a scavenger hunt and here was a small library.
@@ -353,7 +386,7 @@ export default ({currentSection, inventory, cards}) => {
         One crate was entirely full of issues of <i>The Circular</i>. Lynn had <ListCard expansions={[["annotated"], ["annotated"]]}
           tag="c9_paper"
           nextUnit="section"
-          card={<span>By this time, near the end of the colony's existence, the full-length newspaper had
+          card={<span>This edition was from the end of the community's existence, when the full-length newspaper had
           shrunk to a single double-sided broadsheet.</span>} /> an issue that was placed into a manilla folder with a few other pages:
       </p>
     </section>,

@@ -137,7 +137,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>I pointed out the note in the
-      margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's handwriting, and it looks old."</p>
+      margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's handwriting."</p>
       <p>"I don't know, maybe another utopian? Does it matter?" She tapped the page. "On November 23, 1889—the day
         after this was written—the Phalanstery burned down. It took a lot of other
         structures with it, and some livestock, maybe even some people. The community went

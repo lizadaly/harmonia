@@ -143,7 +143,7 @@ export const paper4 = () => (
       <p>
         We invite those who own or wish to buy their homes to <ListCard author="lynn"
           tag="paper4-stay" expansions={["stay"]}
-          card={<span>Only a dozen colonists took this offer up after the devasting loss of the Great Hall.</span>} />. Our sole profitable venture has been
+          card={<span>Only a dozen colonists did so, but that was enough to sustain them through the founding of the college.</span>} />. Our sole profitable venture has been
         our school, and many of us seek to continue that work, or even to extend it. We have seen the
         benefits that equal education for <ListCard author="lynn"
           tag="paper4-boys" expansions={["boys and girls"]}
