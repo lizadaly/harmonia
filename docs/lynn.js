@@ -30,10 +30,13 @@ export const lynn1 = () => (
 export const lynn2 = () => (
   <div>
     <p>
-      Alice has been wonderful; what would I do without her? She has managed to locate all the materials we
+      Alice has been wonderful. She has managed to locate all the materials we
       need—where do you even find coal? And by bringing them down in the dead of night, she has thusfar
       avoided drawing any attention to this work. The amount of scholarship that will flow from
-      this discovery seems literally infinite. I should get her something, flowers?
+      this discovery is unimaginable. I will need to <ListCard expansions={["reward her"]}
+        tag="lynn-flowers"
+        author="lynn"
+        card={<span>Perhaps a bouquet of flowers?</span>} /> generously for her efforts.
     </p>
     <p>
       We have been working in the cavern now almost nonstop. I'm afraid I may have missed some classes.
@@ -66,7 +69,7 @@ export const lynn3 = () => (
       for I don't know what—I found him. Cadwell.
     </p>
     <p>
-      I assume, anyway, it was no more than a skeleton, of course. Dry rags of clothes still hung from it,
+      I assume it's him, anyway, it was no more than a skeleton, of course. Dry rags of clothes still hung from it,
       a tin cup and bucket by his side. His water supply, long-depleted?
     </p>
     <p>

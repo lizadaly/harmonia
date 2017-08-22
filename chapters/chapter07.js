@@ -31,7 +31,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               When I got outside I spotted Gilman hurrying across the quad. She was dressed about the
-              same as when I met her—long skirt, plain brown boots—but now her hair was pulled back in an
+              same as when I met her—long skirt, leather bag, plain brown boots—but now her hair was pulled back in an
               elaborate coil that made her stand out among the easy-going students. The weather had
               turned to icy rain again which stung my face as I trotted after her. I was feeling bold, so when she
               reached the doors of the English department, I stepped in right behind her before she could close them.
@@ -43,7 +43,7 @@ export default ({currentSection, inventory, cards}) => {
               She stiffened. Two <ListCard
                 expansions={["faculty members"]} tag="c7-faculty" card={<span>I recognized one who'd spurned me in
                 the dining hall. I doubted they liked Gilman any more than they liked me.</span>} /> were
-              in the halls; they paused, sensing tension. I was happy to have an audience.
+              in the halls; they paused, sensing tension.
             </p>
             <p>
               "Let's talk in Professor Lynn's office." I smiled. "At the Dean's request."
@@ -161,9 +161,9 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           there: <div>
             <p>"Your mother went to Blithesdale?"</p>
-            <p>"We founded Blithesdale," she replied sharply. Before I could respond, a student appeared in the doorway, grinning.
+            <p>"My grandmother did," she replied. Before I could respond, a student appeared in the doorway, grinning.
           </p>
-          <p>"Rally at dawn to save the astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!" It was a reproduction of the
+          <p>"Rally at dawn to save the Astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!" It was a reproduction of the
             utopians' newsletter; a student had placed a cheerful sticker in one corner:
           </p>
           <Reader inventory={inventory} docs={[docs.paper3]} />
@@ -338,7 +338,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               "Lynn's annotations are undated," Merchant said, "but this looks to be one of his earlier finds." She
               held up the second document. "These notes were
-              made more recently—I'm sure of that because I recovered this fragment myself, in late August."
+              made more recently. I recovered this fragment myself, in late August."
             </p>
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
@@ -385,13 +385,13 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>"No, Dean had me catalog all the college property in his office after he disappeared. His home, maybe?"</p>
             <p>"Do you know where that is?"</p>
-            <p>"Adams House," she said readily. The name didn't mean anything to me, but to Lillian it did.</p>
-            <p>"It's right on campus," she explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
+            <p>"Adams House," she said readily. The name didn't mean anything to me.</p>
+            <p>"Oh, that's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
               card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Futurian buildings."</p>
             <p>"I have keys to some offices," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, "but not to anyone's private home."</p>
             <Map from={inventory.c2_direction}
               to={{
-                curiosity: <p>I said, "If it's on campus, I know someone who does."</p>,
+                curiosity: <p>I said, "If it's on campus, I know someone who can get us in."</p>,
                 dean: <p>"I talked my way through one locked door," I said. "I can figure out another one."</p>
               }} />
             <NextChapter chapter={8} />
@@ -431,8 +431,8 @@ export default ({currentSection, inventory, cards}) => {
               "We didn't find any more journal entries," Lillian said. "Though it looks like you did."
             </p>
             <p>I gave the papers to Lillian and asked Ella, "Do you know where Lynn lived?"</p>
-            <p>"Adams House," she said. The name didn't mean anything to me, but Lillian let out a small gasp.</p>
-            <p>"It's right on campus," she said. "One of the <ListCard expansions={["original"]} tag="c7_house"
+            <p>"Adams House," she said. The name didn't mean anything to me.</p>
+            <p>"Oh, that's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
               card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Futurian buildings."</p>
             <p>"I don't have keys to people's homes," Ella said.</p>
             <p>"Sure," I said. "But does his home have a window?"</p>

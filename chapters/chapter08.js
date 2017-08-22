@@ -79,7 +79,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           there: <div>
             <p>
-              I was lucky to have caught Walter before he left for the day, but he didn't much like my request when I called him up.
+              I was lucky that Walter picked up the phone before he left for the day, but he didn't much like my request.
             </p>
             <p>
               "I'd get fired if anyone found out I gave you those keys," he said, worried.
@@ -95,8 +95,8 @@ export default ({currentSection, inventory, cards}) => {
               "Thank you Walter, I owe you one."
             </p>
             <p>
-              We waited until after dark to meet up by the row of picturesque stone houses along the west side
-              of campus, by the main thoroughfare. They were five, all neatly hewn stone cubes that, over the
+              I waited until after dark to meet up with my fellow burglars by the row of picturesque stone houses along the west side
+              of campus. They were five neatly hewn stone cubes that, over the
               years, had been extended and renovated in slightly different ways. Lynn's house was one of the
               smaller ones, set back a bit.
             </p>
@@ -164,7 +164,7 @@ export default ({currentSection, inventory, cards}) => {
                     </p>
                     <p>
                       The whole house was smaller than some apartments I've had—just three rooms plus a small modern addition containing the bathroom.
-                      The furnishings were generic and had probably come with the housing. It looked barely lived-in;
+                      The furnishings were generic and probably belonged to the college. It looked barely lived-in;
                       he must've spent most of his time at his office.
                     </p>
                     <p>
@@ -284,14 +284,13 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           burglary: <div>
             <p>
-              The cellar door was next to the old stone hearth, now filled with boxes of unpacked belongings rather than
-              a spit and cast-iron bots. It was a small entrance, obviously original, and there was no light switch by the
+              The cellar door was next to the old stone hearth.  It was a small entrance, obviously original, and there was no light switch by the
               top of the stairs.
             </p>
             <p>
               I thanked <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> for her help in
               getting us inside and told her to go home. "I don't want anyone else losing their job over this." She looked
-              grateful and promised to assist us in any way with whatever materials we came back with.
+              grateful and promised to assist us in any way with whatever materials we recovered.
             </p>
             <p>
               I turned to Lillian. "You too."
@@ -300,7 +299,7 @@ export default ({currentSection, inventory, cards}) => {
               "No way, I—"
             </p>
             <p>
-              "You'll get expelled, and I don't think the Dean will write a nice recommendation letter. Go home."
+              "You'll get expelled, and I don't think the Dean will write a recommendation letter. Go home."
             </p>
             <p>
               "No," she said, folding her arms.
@@ -386,7 +385,7 @@ export default ({currentSection, inventory, cards}) => {
                                                                                                 tag="c8_move_box" />.
                   </span>}/>
                 }} /></span>
-          }} /> and tools were all partially buried, and coated in a thick layer of brown dirt. Nothing looked new
+          }} /> and tools were all partially buried in a thick layer of brown dirt. Nothing looked new
         enough to have belonged to Lynn.
       </p>
       <p>
@@ -395,8 +394,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
-      <p>I slid the box away from the wall, which was quite easy as it had clearly been dragged this way before. Moving
-        the box revealed a narrow tunnel into further darkness<Map from={inventory.c5_direction}
+      <p>I slid the box away from the wall, which revealed a narrow tunnel into further darkness<Map from={inventory.c5_direction}
           to={{
             archaeologist: `, a fact which did not surprise me in the least. It was the same size and shape of the bricked-up
                      tunnel under the Science Center. `,
@@ -407,7 +405,7 @@ export default ({currentSection, inventory, cards}) => {
         The tunnel was obviously hand-dug, and surprisingly long; it wasn't just a connector to another nearby cellar.
         It was framed in wood, but inexpertly, with boards nailed together at all angles. The planks
         overhead sagged and a few had been split by tree roots which burst out from the cracks and hung
-        freely. I was clearly descending, and my sense of orientation told me I was moving <i>into</i> the
+        freely. I was descending, and my sense of orientation told me I was moving <i>into</i> the
         slope of the hill. This did not feel safe.
       </p>
       <p>

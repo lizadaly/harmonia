@@ -22,7 +22,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Right by the tunnel entrance there were signs of modern intrusion: several plastic milkcrates, some rubber gloves, a few
         empty bags of potato chips, a gas generator. The milkcrates were stuffed full of
-        notebooks and papers and as I knelt down, flashlight tucked under one arm, I almost wept with joy.
+        notebooks and papers. I knelt down, flashlight tucked under one arm, and almost wept with joy.
         I'd been collecting these one-by-one like a scavenger hunt and here was a small library.
       </p>
       <p>
@@ -58,14 +58,18 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        The generator roared to life and three connected tripod-mounted spotlights lit up in sequence.
+        The generator roared to life and three tripod-mounted spotlights lit up in sequence.
         My knees went weak and I had to sit down on a crate to take it all in. The drawing was real.
       </p>
       <p>
         I was, in fact, within an enormous cavern—surely natural in origin—sunken into the slope on which the
         college was built. The space was dominated by a pockmarked black boulder the size of a house,
-        which protruded from the ceiling and disappeared into the floor, half still buried in the wall of
+        which protruded from the ceiling and disappeared into the floor, half its girth buried in the wall of
         the cavern.
+      </p>
+      <p>"The Astrolith," I said, wonderingly. The <ListCard expansions={["tip"]} tag="c9-tip"
+        card={<span>The estimate on the meteorite's plaque put its weight at 30 tons. It was more likely to be
+        3,000.</span>} /> above the surface was unmistakable in its profile.
       </p>
       <p>
         The machinery depicted in the sketch was all here, but in gross disrepair. Rubber tubes had cracked or
@@ -84,19 +88,10 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I approached the great machine. Surely this was no bomb, or it would've been itself destroyed in the
-        explosion. As I got closer, I realized I had been so distracted by the machine that I'd
-        failed to really take in the massive <List expansions={[["rock"], ["rock"]]} tag="c9_rock" />.
-      </p>
-    </section>,
-    <section>
-      <p>"The Astrolith," I said, wonderingly. The <ListCard expansions={["tip"]} tag="c9-tip"
-        card={<span>The estimate on the meteorite's plaque put its weight at 30 tons. It was more likely to be
-        3,000.</span>} /> above the surface was unmistakable in its profile.
-      </p>
-      <p>
-        Up close, I could see that the wooden platform had in fact already been repaired in places, and
-        with some skill. Also repaired was the enormous lever by the base—it moved along a half-moon
+        I approached the great machine. Surely this was no bomb, or it would've been destroyed in the
+        explosion.
+        Up close, I could see that the wooden platform had already been repaired in places, and
+        with considerable skill. Also repaired was the enormous lever by the base—it moved along a half-moon
         track like a <ListCard expansions={["railway switch"]} tag="c9_switch"
           card={<span>The original mechanism was, in fact, a railroad switch stand.</span>} />.
           A handcart full of fresh coal rested next to a cast-iron stove.
@@ -126,16 +121,16 @@ export default ({currentSection, inventory, cards}) => {
               I'd risked so much already, why stop now?
             </p>
             <p>
-              I shook the ladder—hard. It wobbled but held. This close I could see how much of it had been
-              replaced; there were new steps and shiny anchors bolted to the surface of the meteroite. I climbed up a few
-              tentative steps, and it held. I continued to rise.
+              I shook the ladder—hard. It wobbled but held. There were new steps and shiny anchors bolted to the surface of the meteorite.
+              I climbed up a few
+              tentative steps, and it held. I continued to ascend.
             </p>
             <p>
-              At the top of the main platform was a small work area. Another milkcrate, this time upside-down as a
-              seat, with a gas camping lamp and a notebook atop a wobbly stool. Nearby I could see the huge
-              wheel-like mechanism, gleaming new copper threads interwoven with the old. From afar it had seemed like
-              a solid piece of engineering; this close it was obvious how much the machine had been pieced together
-              from spare parts, some recognizable farm machinery, others utterly mysterious.
+              At the top of the main platform was a small work area. Another milkcrate, this time flipped upside-down for use as a
+              seat, next to a gas camping lamp and a notebook. From here I was close to the huge
+              wheel-like mechanism and could make out gleaming new copper threads interwoven with the old.
+              It was obvious how much the machine had been pieced together
+              from spare parts.
             </p>
             <p>
               I picked up the notebook. It had a recent date on the cover in Lynn's handwriting. It was largely
@@ -156,7 +151,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        Another loud slam sound from the entrance tunnel. I put the paper down, and watched, without surprise,
+        I heard another loud door slam, probably the cellar door this time. I put the paper down, and watched, without surprise,
         as Alice Gilman emerged through the passage.
       </p>
       <p>
@@ -165,7 +160,7 @@ export default ({currentSection, inventory, cards}) => {
         which I'd forgotten.</span>} />," I said. "Is Gilman your maiden name?"
       </p>
       <p>
-        "Yes," she said, approaching slowly.
+        She shrugged.
       </p>
       <p>
         There were two entrances to the cavern, <Map from={inventory.c9_climb || inventory.c9_search}
@@ -181,13 +176,13 @@ export default ({currentSection, inventory, cards}) => {
         "I think you'd call it a time machine. We called it the Instrument."
       </p>
       <p>
-        "And <List expansions={[["Cadwell created it to—"], ["Cadwell—"]]} tag="c9-made it" />
+        "And <List expansions={[["how did Cadwell create—"], ["how did—"]]} tag="c9-made it" />
       </p>
     </section>,
     <section>
       <p>
-        "<i>I</i> created it," she corrected me. "Ignatius was an idiot, a college dropout who never did a day's work in his life.
-        He dreamt up with nonsense and left it to me to make it a reality."
+        "<i>I</i> created it," she corrected me. "Ignatius was an idiot, a college dropout who never did a hard day's work in his life.
+        He dreamt up nonsense and left it to me to make it a reality."
       </p>
       <p><Map from={inventory.c9_climb || inventory.c9_search}
         to={{
@@ -202,7 +197,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>"And Cadwell?"</p>
       <p>Even from here I could see her scowl. "He didn't belong here."</p>
 
-      <p>She finished loading the stove and struck a match to light it. Smoke began leaking out of the seams in the chimney.
+      <p>She finished loading the stove and struck a match to light it. Smoke began leaking out of the seams in its chimney.
         She crossed over to the main mechanism and began winding it.
       </p>
       <p>
@@ -219,7 +214,7 @@ export default ({currentSection, inventory, cards}) => {
         the attached arm rotating along with it faster and faster. The static discharge intensified; my
         clothes seemed to float away from my body. The entire platform vibrated, and over the roar of the
         device I could hear the ping-ping of rivets popping out of their sockets. I wasn't sure this
-        machine could run much longer without tearing itself apart.
+        machine could run for long without tearing itself apart.
       </p>
       <p>
         Gilman moved to the massive lever, leaning on it but not yet pushing. "Get inside," she yelled.
@@ -236,40 +231,42 @@ export default ({currentSection, inventory, cards}) => {
             climb: `I glanced behind me at the
             chamber inside the meteorite. `,
             search: `I backed awkwardly up the stairs to the last platform and looked inside the chamber.`
-          }} /> Thinly-woven copper fibers descended from the ceiling, ending in a
-          copper pull-cord with handle. There was a matching copper plate on the floor. All of them were
-          shiny and new. I stepped away from her a bit more, but didn't cross the threshold.
+          }} /> Thickly-woven metal fibers descended from the ceiling, ending in a
+          copper handle. There was a matching copper plate on the floor. All of them were
+          shiny and new. I stepped towards it, but didn't cross the threshold.
       </p>
       <p>"You <ListCard expansions={["want to go in"]}
         tag="c9-want"
         nextUnit="section"
         card={<span>She was right, of course. I mean, wouldn't you?</span>} />! How can you not?" she yelled. "Either way, I'm not
-        going back, and I won't be made a freak. Get in, or stay there and watch me brick up the last entrance."
-        She gestured around the space. "You see how unstable it is. Those bulldozers will come through tomorrow,
-        start digging expecting an ordinary boulder, and this will all cave in. And if it doesn't, well, I've set off explosives before."
+        going back, and I won't be made a freak. Get in, or stay where you are and watch me brick up the last entrance."
+        She gestured around the space. "You see how unstable this all is. Those bulldozers will start work tomorrow morning,
+        expecting an ordinary boulder, and this will all cave in. And if it doesn't, well, I've set off explosives before."
         </p>
     </section>,
     <section>
       <p>
         "What will happen to Lillian?" I said, taking the smallest of steps backwards into the chamber. The shaking
-        had gotten worse and moments later one of the supports on the platform snapped in two. The lower platform tilted
-        violently, and I could feel the strain on the upper platform, pulled hard to the left. I wasn't even sure I
+        had gotten worse. One of the supports on the platform snapped in two and the lower platform heaved
+        violently. The upper platform groaned in response and I wasn't even sure I
         could get back down now if I wanted to.
       </p>
       <p>
-        "After tomorrow, this will be a caved-in pile of twisted metal, another example of laughable utopian
-        pseudo-science. Without proof I'll have nothing to fear."
+        "Nothing will happen to her. After tomorrow, this will be a caved-in pile of broken metal, another example of laughable utopian
+        pseudo-science. Without proof I'll have nothing to fear.
       </p>
       <p>
-        This was utter madness. I took another step back, positioned my feet on the floor plate, and grabbed on to the
-        handle. I nodded.
+        "You'll be fine too, you know. I mean, probably. Better chance there than here." Despite her outward calm, her nerves must've
+        finally snapped because she held
+        up the gun at me with both hands and shouted, "Do it, now!"
       </p>
-      <p>She grimaced and threw the lever.</p>
+      <p>
+        I closed my eyes, stepped back, and blindly gripped the handle.
+      </p>
+      <p>I couldn't hear it over the roar of the machine, but I guess she pushed that lever.</p>
+      <NextChapter chapter={10} />
     </section>
-
-
-    ]
-
-      return <RenderSection currentSection={currentSection} sections={sections}  />
+  ]
+  return <RenderSection currentSection={currentSection} sections={sections}  />
 
 }

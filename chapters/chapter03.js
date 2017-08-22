@@ -135,14 +135,12 @@ export default ({currentSection, inventory}) => {
           <p>
             "Most of the first founders drifted away over time; the soil up here is poor and the winters are brutal."
             She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then their
-            Great Hall caught fire.
-            It's possible it was deliberate—many
-            fringe religious groups of the time believed the world was about to end and some members may have wanted to hasten it along."
+            Great Hall caught fire. Several peopel died, we don't have a full accounting of it.
           </p>
           <p>
-            "Was anyone hurt?"
+            "How did the fire start?"
           </p>
-          <p>"We don't really know." She paused. "You asked about Lynn too. Jeffrey was leading the committee that cataloged the
+          <p>"We don't really know." She paused. "Jeffrey was leading the committee that cataloged the
             material we'd been turning up in the construction. He'd always been interested in the events leading up to
             that fire. Prior to this
             excavation, there hadn't been much material about the community's last days—few letters, no journals,
@@ -208,12 +206,7 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>"It's not for me to say," I replied neutrally.</p>
     <p>
-      She stood up, and this meant I did too. "You'll have to excuse me, Ms. Fuller.
-      I have an appointment with a donor."
-    </p>
-    <p>"Thank you again Dean—"</p>
-    <p>
-      "You seem bright, Abby. I'd like to see you succeed with us. Why don't you speak
+      She stood up, and this meant I did too. "You seem bright, Abby. I'd like to see you succeed with us. Why don't you speak
       with Alice Gilman, Lynn's research assistant? You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
         card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class."
@@ -240,7 +233,7 @@ export default ({currentSection, inventory}) => {
           <p>"I'm not surprised, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
             haunting the campus at night."
           </p>
-          <p>Now I felt sorry for her. "If she hadn't been
+          <p>"If she hadn't been
             there I would've spent my first night sleeping in my car."
           </p>
           <p>

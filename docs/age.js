@@ -4,9 +4,6 @@ import ListCard from '../components/listCard'
 
 const age = ({nextDoc, prevDoc}) =>  {
   return <div>
-    <h1>A Crystal Age</h1>
-    <h4>by</h4>
-    <h3>W.H. Hudson</h3>
     <p>
       <br/>
       I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
@@ -15,6 +12,7 @@ const age = ({nextDoc, prevDoc}) =>  {
       precipitating me below. The fall was a very considerable one—probably thirty or forty feet, or more,
       and I was <ListCard author="lynn"
         tag="age1-unconscious"
+        nextUnit="section"
         expansions={["rendered unconscious"]}
         card={<span>Another case of "fall asleep, wake in future." Discuss with class!</span>}
                 />.
@@ -28,11 +26,7 @@ const age = ({nextDoc, prevDoc}) =>  {
       I found myself standing in an immense pit. It looked as if the solid earth
       had been indulging in some curious transformation during those moments of insensibility.
       I had a great mass of small fibrous rootlets tightly woven about
-      my whole person; it appeared as if the roots had <ListCard expansions={["grown round me"]}
-        tag="age1-roots"
-        author="lynn"
-        nextUnit="section"
-        card={<span>Echoes of Manuscript SP-X05? Did this work influence that novel?</span>} />.
+      my whole person; it appeared as if the roots had grown round me.
     </p>
   </div>
 }

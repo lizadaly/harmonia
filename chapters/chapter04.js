@@ -63,8 +63,8 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>"This book belonged to Lynn," I said.</p>
       <p>"Yes, how did you know?"</p>
-      <p>"I recognize his handwriting. What is SP-X05, a catalog number? Lynn referenced it in a note."</p>
-      <p>"It's part of our special collections," she said, taking the book back. "That's what I want
+      <p>"I recognize his handwriting. Who is Cadwell? Lynn referenced their journal in the margins."</p>
+      <p>"It's part of Special Collections," she said, taking the book back. "That's what I want
       to show—"</p>
 
       <p>A student with a clipboard and a stack of flyers suddenly accosted us. "Help save the Blithesdale Astrolith!"
@@ -80,21 +80,21 @@ export default ({currentSection, inventory, cards}) => {
           tag="c4-library-date"
           card={<span>The Futurians, I would learn, had an impressive library for a farming community,
             but that small wooden structure had been
-          replaced many times over.</span>} />  back to the 1960s. Like a lot of school libraries, there
-          was a strong Brutalist vibe that clashed with the rest of the college architecture.
-        Otherwise it was a quiet and pleasant place to study, with abundant natural
+          replaced many times over.</span>} />  back to the 1960s.
+          It had a strong Brutalist aesthetic that didn't much harmonize with the rest of the campus architecture,
+          but it was a quiet and pleasant place to study, with abundant natural
         light and a wall of glass that overlooked the small cemetery at the edge of campus.
       </p>
       <p>Naturally we were headed for the windowless basement instead.
       </p>
       <p>
-        "Most of the utopians' buildings were wood," Lillian explained. "It was the one resource they had in abundance.
+        "Most of the utopians' buildings were wooden," Lillian explained. "It was the one resource they had in abundance.
         They were all replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
-        led me in. "The only original structures left are the few that were made of stone, and those are
-        faculty residences. I get this little space for my independent study."
+        led me in. "The only original structures that are still standing are a few stone houses used as
+        faculty residences. Meanwhile I get this crappy little space for my independent study."
       </p>
       <p>
-        The office was barely bigger than a storage closet and was crammed with equal volume of library books and
+        The office was barely bigger than a storage closet and was crammed with equal amounts of library books and
         janitorial equipment. "What did you want to show me?" I said, pushing a rolling bucket out of my way.
       </p>
       <p>
@@ -123,9 +123,17 @@ export default ({currentSection, inventory, cards}) => {
           </div>
 
         }} />
-      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899.
-        He attributed them to a community leader named Cadwell, an amateur scientist.
-        Not all of the fragments were recoverable—some were damaged by water or mold. Many were singed by fire."
+      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899."</p>
+      <p>"This looks like a page from a utopian novel that I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
+      tag="c4-notes" /></p>
+    </section>,
+    <section>
+      <p>Lillian frowned. "These are definitely
+        from a community member—Cadwell, an amateur scientist. Bit of a blowhard if you ask me."
+      </p>
+      <p>"Maybe he was also a frustrated novelist."</p>
+      <p>She laughed. "That'd explain a lot. Anyway it's possible he also wrote fiction, he seemed
+        to think he could do anything. And not all of the fragments were recoverable—some were damaged by water or mold—even fire."
       </p>
       <p>"The fire that destroyed the hall over the quad?"</p>
       <p>"Maybe, we don't know. Now <List expansions={[["read"], ["read"]]}
@@ -139,7 +147,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>I pointed out the note in the
       margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's handwriting."</p>
       <p>"I don't know, maybe another utopian? Does it matter?" She tapped the page. "On November 23, 1889—the day
-        after this was written—the Phalanstery burned down. It took a lot of other
+        after this was written—the Great Hall burned down. It took a lot of other
         structures with it, and some livestock, maybe even some people. The community went
         bankrupt.<Map from={inventory.c2_brook} to={{_undefined: "", _any: " Just like Brook Farm did."}} />"</p>
       <p>"But the fire was probably an accident."</p>
@@ -149,8 +157,10 @@ export default ({currentSection, inventory, cards}) => {
       <p>"I don't think anyone else was involved. Many of them stayed to rebuild and
       found Blithesdale. Cadwell and his wife, though, they disappear from the historical record after this."</p>
       <p>"So you think he set fire to their hall?"</p>
-      <p>"Or blew it up," she said. I didn't know what to say to that.</p>
-      <p>Lillian snatched the papers from my hands and shook them. "What if Professor Lynn found something
+      <p>"There's only first-person account we know of, a letter by one of the teachers to her cousin." she said.
+        "It mentions an explosion, just before the fire. Maybe Cadwell had built a bomb."</p>
+      <p>I didn't know what to say to that.</p>
+      <p>Lillian snatched the papers from my hands. "What if Professor Lynn found something
         that Cadwell built that was dangerous?  Maybe he didn't disappear—maybe he's hurt down there,
       in some old cellar. People accidentally dig up old mines all the time."</p>
       <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}

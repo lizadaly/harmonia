@@ -45,7 +45,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         There was ample evidence in her documents that Cadwell was building something that he wished to keep secret, something
-        that caused rumbles in the night, acrid smells, and prolonged absences from community meetings. The
+        that caused rumbles in the night, acrid smells, and prolonged absences from community obligations. The
         Futurians <ListCard tag="c5-trade" expansions={["traded"]} card={<span>Like many intentional communities, the
         population was dominated by intellectuals, not farmers, and struggled to feed itself through the long winters.</span>} /> extensively
         with the local villages, and Cadwell's purchases were quite strange for a fledgling farm community: large quantities of
@@ -53,15 +53,14 @@ export default ({currentSection, inventory, cards}) => {
         struggled for hours to climb the steep roads to the village." But I wasn't sure he was building a bomb.
       </p>
       <p>
-        I kept coming back to that journal fragment I found in Lynn's office the night I arrived. He'd catalogued
-        it as SP-X05, same as Cadwell's journals, and what I remembered of the handwriting was a match.
-        But both Lynn and I assumed it was a draft of a fantastical story, and that made for curious timing.
+        I kept coming back to that journal fragment I found in Lynn's office the night I arrived.
+        Both Lynn and I had assumed it was a draft of a fantastical story, and that made for curious timing.
         Who takes a break from
         their grand destructive plan to <ListCard expansions={["work on their novel"]}
           card={<span>My efforts to put off my dissertation notwithstanding.</span>}
                                           tag="c5-dream" />?
       </p>
-      <p>I needed to get those fragments back somehow, and find more of them. Surely Lynn, an academic, kept a journal of
+      <p>I needed to get that fragment back and find more of them, if they existed. Surely Lynn, an academic, kept a journal of
         his own—at the very least he'd have extensive documentation of the materials recovered from the construction.
       </p>
       <p>
@@ -117,7 +116,7 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>I knew what I needed to do, but first I'd sleep on it.</p>
+     <p>I might regret it, but at least I had a plan.</p>
      <NextChapter chapter={6} />
    </section>
 

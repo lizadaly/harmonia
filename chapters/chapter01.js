@@ -128,7 +128,8 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p> "Excuse me, what are you doing?" I looked up to
       see a woman regarding me with suspicion from the doorway.
-      Her hair was long and unstyled, and she wore an ankle-length plain blue dress and carried a flashlight.
+      Her hair was long and unstyled, and she wore an ankle-length solid blue dress
+      and carried a flashlight and leather satchel.
       The beam was pointed directly into my face.
     </p>
     <p>I reminded myself that I was invited here and didn't need to <ListCard

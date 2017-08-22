@@ -6,27 +6,26 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
   return <div>
     <h1>September 30, 1889</h1>
     <p> At last! The veil between the worlds seemed especially
-      thin, the weather fine, and my spirits uplifted. I was determined that this was the day to
-      try again. E— was less willing, but ever is she so. What will it take to convince her?
+      thin, the weather fine, and my spirits uplifted. I was determined that this was the day
+      my journal along the beam. E. was hesistant, but ever is she so. She must be made to understand
+      that this is my destiny.
     </p>
     <p>Once the machine was engaged, the familiar shadow fell across my vision and the
-      nerves in my extremities became excited. I felt the roots of the cellar floor grow up beneath
-      my legs, enveloping my feet and then my upper legs. At the same time I could feel myself pulled upward,
-      toward the great rock.
+      nerves in my extremities became excited. I felt the galvanic force pass through
+      my palm and out my feet, then reverse, and then the feeling of sudden dissolution
+      of the Spirit, like a dandelion head, gone to seed and blown by a sudden puff of breath.
     </p>
-    <p>I was pinned in place between these two forces of Nature. How long
-      this went on I cannot say, but at last the cosmic force receded and I was released.
-      My sensibilities
-      were wholly in the New Paradise.
+    <p>How long I existed in this atomized state I cannot say,
+      but at last the cosmic force receded and I was reconstituted, weak and shattered.
+      My sensibilities, though, were wholly in the New Eden.
     </p>
-    <p>E— of course, was gone, and everything around me was covered in a thick layer of dust and
-      debris. I freed myself from the earth and set about exploring <ListCard expansions={["this miraculous place"]}
+    <p>E. of course, was gone, and everything around me was covered in a thick layer of dust and
+      debris. I clambered out of the device and set about exploring <ListCard expansions={["this miraculous place"]}
         tag="frag1_first"
         author="lynn"
-        card={<span>Historical Committee brought this novel? manuscript? letter? to my attention. Did
-          one of the Futurians write it? Where are the rest of the pages?
-          <br/>      <br/>
-          [Cataloged as SP-X05-4]
+        card={<span>Historical Committee brought this fragment of an epistolary novel (?) to my attention.
+          Another good example of waking in the future, but I can't attribute this to any
+          known utopian writer. Did one of the Futurians write it?
         </span>} /> again.
     </p>
     <p>I was struck this time by the carriages: great enclosures of iron and glass, which moved without the aid
@@ -71,7 +70,7 @@ export const frag3 = ({inventory}) =>  {
       that we have failed. The pull of the <i>now</i> is too great, my founding family has left us,
       and our once-great experiment dissolves faster each day.
     </p>
-    <p>E— and I will descend beneath the Phalanstery, where I will say my final words to this world,
+    <p>E— and I will descend beneath the Great Hall, where I will say my final words to this world,
       and together we will operate the device. I only hope to find a way for her to <ListCard
         author="elsie"
         tag="frag3-z"
@@ -163,7 +162,7 @@ export const frag6 = () =>  (
     </p>
     <p>
       As I have detailed in the <ListCard author="lynn" expansions={["blueprint"]}  nextUnit="section"
-        tag="frag_blueprint" card={<span>Cataloged as SP-05-9. Given the sensitivity, I am keeping this
+        tag="frag_blueprint" card={<span>Given the sensitivity, I am keeping this
         in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
       design). After a final disagreeable conversation, we entered the work-space via
       the <ListCard author="lynn" expansions={["eastern tunnel"]}

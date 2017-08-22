@@ -15,7 +15,7 @@ const brooks = ({nextDoc, prevDoc}) => {
           <br/>        <br/>
           Note: same time span appears
           in <nobr><List tag="brooks_x"
-            expansions={[["SP-X05"], ["SP-X05"]]} /></nobr>
+            expansions={[["Cadwell's journal"], ["Cadwell's journal"]]} /></nobr>
 
         </span>} />.
     </p>

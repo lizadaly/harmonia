@@ -13,8 +13,8 @@ const mizora = ({}) =>  (
       will find a marked change economically in dispensing with your <ListCard expansions={["beasts of burden"]}
       tag="miz-beasts"
       nextUnit="section"
-      card={<span>19th century utopian fantasies didn't include flying cars because cars hadn't been invented.
-        They mostly envisioned tractors.</span>} />. Fully four-fifths
+      card={<span>19th century futurists tended to be much more practical than their counterparts a
+        century later. Fewer flying cars, more motorized tractors and clean sidewalks.</span>} />. Fully four-fifths
       that you raise on your farms is required to feed your domestic animals. If your agriculture was devoted
       entirely to human food, it would make it more plentiful for the poor."
     </p>

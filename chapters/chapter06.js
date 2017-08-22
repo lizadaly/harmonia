@@ -47,15 +47,14 @@ export default ({currentSection, inventory, cards}) => {
         food products were frequently spoiled or adulterated. The idea of substituting real foods with
       artificial ones was considered a huge step forward."</p>
       <p>
-        "Many of the actual utopian communities of the time practiced vegetarianism," Lillian added.
-        "And believed science was an absolute good."
+        "Many of the actual utopian communities, including ours here, practiced vegetarianism," Lillian added.
       </p>
       <p>"With reason," Gilman said, unexpectedly. A couple students turned around and glared at her.</p>
       <p>"I understand vegetarianism," María ventured, "but it's hard to imagine anyone today wishing
         to eradicate all animals—"</p>
-      <p>"Most animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
+      <p>"Animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
       <p>
-        There was an awkward silence.
+        There was an <ListCard expansions={["awkward"]} card={<span>Gilman must be fun at faculty parties.</span>} tag="c6-parties" /> silence.
       </p>
       <p>"Thank you for joining us, Ms. Gilman," I said, <ListCard tag="c6_smiling"
         expansions={["smiling"]} card={<span>Through gritted teeth.</span>} />. <Map from={inventory.c5_direction}
@@ -71,7 +70,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "Education," Charlotte volunteered. "A lot of novels mention the subject of universal schooling, especially
         in the books <ListCard tag="c6_authors" expansions={["authored by women"]} card={<span>I had expanded
-        Lynn's reading list quite a bit; it was heavy on the men.</span>} />."
+        Lynn's male-dominated reading list quite a bit.</span>} />."
       </p>
       <p>
         "Terrific point, and critical to understanding the history of this college. What's an example?"
@@ -117,7 +116,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>Gilman had risen. "María," she said, "may I see that—" </p>
       <p>But I was closer and snatched the paper from the girl first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}
         to={{
-          there: "Perhaps we can return this to Lynn's other documents, after lecture?",
+          there: "Perhaps we can return this to Lynn's full collection of documents, after lecture?",
           burglary: "I'll ensure this is kept somewhere safe.",
           archaeologist: "I'll ensure this is kept somewhere safe."
         }} />"
