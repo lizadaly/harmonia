@@ -15,17 +15,69 @@ export const lynn1 = () => (
       man. Hunched over as I was, I wasn't able to take in the chamber
       until I was fully inside it, and then...
     </p>
-    <p>What a wonder.
+    <p>
+      What a wonder.
     </p>
     <p>
       Despite all my research, everything I've risked to my reputation, the neglect of my students... I guess
-      I didn't fully believe it would be real. But it is, just as Cadwell described. I can't wait to show Alice.
+      I didn't fully believe it would be real. But it is, just as Cadwell described. I can't wait to show Alice—I
+      hope that she will aid me in <List expansions={[["repairing"], ["repairing"]]} tag="lynn-aid" />
+    </p>
+  </div>
+)
+
+
+export const lynn2 = () => (
+  <div>
+    <p>
+      Alice has been wonderful; what would I do without her? She has managed to locate all the materials we
+      need—where do you even find coal? And by bringing them down in the dead of night, she has thusfar
+      avoided drawing any attention to this work. The amount of scholarship that will flow from
+      this discovery seems literally infinite. I should get her something, flowers?
     </p>
     <p>
-      I gaped at the device for what seemed like hours, afraid that if I touched it or even moved, I'd awaken
-      from the dream—one of those deep utopian novel sleeps. At last
-      I shook myself out of my reverie and approached it. That's when I stumbled over <List expansions={[["Cadwell's"], ["Cadwell's"]]}
-        tag="lynn-decribed" />
+      We have been working in the cavern now almost nonstop. I'm afraid I may have missed some classes.
+      The students will understand, surely.
+    </p>
+    <p>
+      Of course the right thing to do would be to go public immediately and get a team of professionals down
+      here. But the moment I do so, I lose control. And while it seems mad, I can't shake the belief that
+      it's <i>almost</i> ready to try.
+    </p>
+    <p>
+      I write this now by the hum of the generator. Alice said she found another one of Cadwell's journals
+      that detailed the last step of the process: how to re-wind the intricate copper coils and
+      tighten the springs inside the rotor. She thinks we're only a few days away from success—how she
+      can be so certain, I don't know.
+    </p>
+  </div>
+)
+
+export const lynn3 = () => (
+  <div>
+    <p>
+      I am in shock. I thought—I'd just help out, clean out some of the piles of debris, I don't know.
+      I've had almost nothing to do lately, it's all been Alice, working all through the day and night,
+      in a kind of trance. I don't see her consulting any of Cadwell's papers anymore, as if—
+    </p>
+    <p>
+      I've been avoiding the obvious conclusion for so long. If I'm honest with myself I would have
+      continued in my self-deception except, when I started digging through the pile of old bricks—looking
+      for I don't know what—I found him. Cadwell.
+    </p>
+    <p>
+      I assume, anyway, it was no more than a skeleton, of course. Dry rags of clothes still hung from it,
+      a tin cup and bucket by his side. His water supply, long-depleted?
+    </p>
+    <p>
+      When I found the first entrance it had been bricked up. The second entrance, under my house,
+      also sealed. I hadn't really thought much about why—Cadwell keeping his own secrets, I suppose.
+    </p>
+    <p>
+      I was almost right. The secret was Cadwell, walled in here for a hundred years.
+    </p>
+    <p>
+      I hear Alice coming now. My <List expansions={[["fate is—"], ["fate is"]]} tag="lynn-fate" />
     </p>
   </div>
 )
