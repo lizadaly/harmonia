@@ -123,7 +123,7 @@ export default ({currentSection, inventory, cards}) => {
               professorial ones.</span>} /> to search Lynn's house?
             </p>
             <p>
-            I found Lillian near the gym, shuffling her feet in the cold crisp air, flashlight pointed at the ground. Standing very close to her
+              I found Lillian near the gym, shuffling her feet in the cold crisp air, flashlight pointed at the ground. Standing very close to her
               was <Map from={inventory.c2_direction}
                 to={{
                                   curiosity: "Walter, to my surprise",
@@ -427,7 +427,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <blockquote className="elsie-font">Blessed are those who see the brightest <ListCard expansions={["light"]}
-        tag="c7_forward"
+        tag="c8_light"
         nextUnit="section"
         card={<span>
           <Map from={inventory.c5_direction}

@@ -144,9 +144,9 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       I smiled and thanked her. After that rocky start,
       the class went pretty well. Lillian even stayed after class to welcome me to the college.
-      I started to think this gig was going to turn
-      out <ListCard
-        expansions={["okay."]}
+      I started to think this gig was going to
+      be <ListCard
+        expansions={["easy."]}
         forceDir="center-down"
         tag="c3-okay"
         card={<span>It wasn't.</span>}
@@ -227,7 +227,7 @@ export default ({currentSection, inventory, cards}) => {
   </blockquote>
   <p>
     And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["roughly penned graffiti"]]}
-      tag="c2_graffiti" />, presumably added by a student.
+                      tag="c2_graffiti" />, presumably added by a student.
   </p>
 </section>,
 <section>
@@ -379,9 +379,7 @@ export default ({currentSection, inventory, cards}) => {
 </section>,
 <section>
   <Reader inventory={inventory} docs={[docs.paper1]} />
-</section>,
-<section>
-
+  
   <p>
     We were interrupted by an unhappy-looking woman in the doorway. "Why are there still boxes everywhere, Ella?"
   </p>

@@ -29,7 +29,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Her evidence that there was a deliberate violent act at work was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised in the newspaper column.</span>} /> was
-        indeed one of the founding members of the Futurians. He'd answered an <List expansions={[["classified ad"], ["classified ad"]]}
+        indeed one of the founding members of the Futurians. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
           tag="c5-ad" /> for recruits posted in one of the many
         Spiritualist newspapers at the time.
       </p>

@@ -294,7 +294,7 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           there: <div>
             <p>"He kept his important papers in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
-              producing two journal entries.</p>
+            producing two journal entries.</p>
             <p>"Thanks," I said, feeling stupid.</p>
             <p>"Next time just ask! Finding documents is my job."</p>
             <p>
@@ -317,14 +317,13 @@ export default ({currentSection, inventory, cards}) => {
                   curiosity: "Walter's",
                   dean: "Ella's"
                 }} /> key and the tunnel was briefly swallowed up in darkness. The crate
-                contained mostly old <ListCard tag="c7-metal" expansions={["pieces of metal"]} card={<span>Most were
-                identifiable as primitive nails and clasps, but some were twisted or charred beyond recognition.</span>} /> and
-                other junk, but I found what I was really looking for: a notebook that belonged to Lynn.
-              </p>
-              <p>
-                Most of the pages were scarcely used, with meaningless scribbles, phone numbers, or illegible class notes.
-                I flipped to
-                the <List expansions={[["last one"], ["last one, a fully-formed diary entry"]]}
+              contained mostly old <ListCard tag="c7-metal" expansions={["pieces of metal"]} card={<span>Most were
+              identifiable as primitive nails and clasps, but some were twisted or charred beyond recognition.</span>} /> and
+              other junk, but I found what I was really looking for: a notebook that belonged to Lynn.
+            </p>
+            <p>
+              Most of the pages were scarcely used, with meaningless scribbles, phone numbers, or illegible class notes.
+              Two loose pages <List expansions={[["fell out"], ["fell out"]]}
                   tag="c7_lynn_notebook" />:
             </p>
 
@@ -350,7 +349,8 @@ export default ({currentSection, inventory, cards}) => {
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
           archaeologist: <div>
-            <Reader inventory={inventory} docs={[docs.lynn1]} />
+            <Reader inventory={inventory} docs={[docs.frag5]} />
+            <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>
         }} />
     </section>,
@@ -402,7 +402,7 @@ export default ({currentSection, inventory, cards}) => {
               even consider hiding before Lillian and <Map from={inventory.c2_direction}
                 to={{
                   curiosity: "an older woman",
-                  dean: "Ella Merchant" }} /> entered.
+                dean: "Ella Merchant" }} /> entered.
 
             </p>
             <p>
@@ -410,23 +410,23 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               "I have a key," <Map from={inventory.c2_direction}
-                              to={{
+                to={{
                                 curiosity: "the woman said.",
-                                dean: <span>Ella replied. "You know, if you need to get in somewhere in the school, just ask."
-                                She eyed the open window. "Unless that would spoil the adventure.</span>}} />
+                                  dean: <span>Ella replied. "You know, if you need to get in somewhere in the school, just ask."
+                                  She eyed the open window. "Unless that would spoil the adventure.</span>}} />
 
 
             </p>
             <Map from={inventory.c2_direction}
-                              to={{
-                                curiosity:  <div>
-                                  <p>"Who are you?" I said, holding the papers slightly behind my back.</p>
-                                  <p>"This is Ms. Merchant," Lillian said, in a tone that suggested I should've known this.</p>
-                                  <p>"You're the librarian?" I said.</p>
-                                  <p>"Archivist." She eyed the open window and my flushed appearance. "You know if you ever need to get anywhere
-                                    in the school, just ask." She paused. "I'll probably say yes."</p>
-                                  </div>
-                              }} />
+              to={{
+                curiosity:  <div>
+                  <p>"Who are you?" I said, holding the papers slightly behind my back.</p>
+                  <p>"This is Ms. Merchant," Lillian said, in a tone that suggested I should've known this.</p>
+                  <p>"You're the librarian?" I said.</p>
+                  <p>"Archivist." She eyed the open window and my flushed appearance. "You know if you ever need to get anywhere
+                  in the school, just ask." She paused. "I'll probably say yes."</p>
+                </div>
+              }} />
             <p>
               "We didn't find any more journal entries," Lillian said. "Though it looks like you did."
             </p>
@@ -439,8 +439,7 @@ export default ({currentSection, inventory, cards}) => {
             <NextChapter chapter={8} />
           </div>,
           archaeologist: <div>
-            <p>The sentence just ended there. All the remaining pages were blank.</p>
-
+            
             <p>"Ally?"</p>
 
             <p>It was  <Map from={inventory.c2_direction}

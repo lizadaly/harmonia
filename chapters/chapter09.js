@@ -59,13 +59,13 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>
         The generator roared to life and three tripod-mounted spotlights lit up in sequence.
-        My knees went weak and I had to sit down on a crate to take it all in. The drawing was real.
+        What I saw made me need to sit down.
       </p>
       <p>
         I was, in fact, within an enormous cavern—surely natural in origin—sunken into the slope on which the
         college was built. The space was dominated by a pockmarked black boulder the size of a house,
         which protruded from the ceiling and disappeared into the floor, half its girth buried in the wall of
-        the cavern.
+        the cavern. Just like in the drawing.
       </p>
       <p>"The Astrolith," I said, wonderingly. The <ListCard expansions={["tip"]} tag="c9-tip"
         card={<span>The estimate on the meteorite's plaque put its weight at 30 tons. It was more likely to be
@@ -88,11 +88,10 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I approached the great machine. Surely this was no bomb, or it would've been destroyed in the
-        explosion.
+        I approached the machine. Surely this was no Hall-exploding bomb, or it would've been destroyed itself.
         Up close, I could see that the wooden platform had already been repaired in places, and
         with considerable skill. Also repaired was the enormous lever by the base—it moved along a half-moon
-        track like a <ListCard expansions={["railway switch"]} tag="c9_switch"
+        track like a <ListCard expansions={["giant 'on' switch"]} tag="c9_switch"
           card={<span>The original mechanism was, in fact, a railroad switch stand.</span>} />.
           A handcart full of fresh coal rested next to a cast-iron stove.
       </p>
@@ -134,16 +133,18 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               I picked up the notebook. It had a recent date on the cover in Lynn's handwriting. It was largely
-              blank, just two short fragments, hastily written:
+              blank, just three short fragments, hastily written:
             </p>
+            <Reader inventory={inventory} docs={[docs.lynn1]} />
             <Reader inventory={inventory} docs={[docs.lynn2]} />
             <Reader inventory={inventory} docs={[docs.lynn3]} />
           </div>,
           search: <div>
             <p>
-              With effort, I turned back to the crates of documents and quickly found a notebook with a recent date
-              on it in Lynn's handwriting. It was largely blank, just two short fragments, hastily written:
+              With effort, I turned back to the crates of documents and located a notebook with a recent date
+              on it in Lynn's handwriting. It was largely blank, just three short fragments, hastily written:
             </p>
+            <Reader inventory={inventory} docs={[docs.lynn1]} />
             <Reader inventory={inventory} docs={[docs.lynn2]} />
             <Reader inventory={inventory} docs={[docs.lynn3]} />
           </div>
@@ -157,7 +158,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "You're <ListCard expansions={["Elsie Cadwell"]} tag="c9-short"
           card={<span><i>Elsie</i> is a diminitive for both Elizabeth, which I'd known, and Alice,
-        which I'd forgotten.</span>} />," I said. "Is Gilman your maiden name?"
+          which I'd forgotten.</span>} />," I said. "I suppose Gilman is your maiden name?"
       </p>
       <p>
         She shrugged.
@@ -166,11 +167,11 @@ export default ({currentSection, inventory, cards}) => {
         There were two entrances to the cavern, <Map from={inventory.c9_climb || inventory.c9_search}
           to={{
             climb: "both unreachable from the platform where I stood",
-            search: " and one was nearby, but when I looked inside, it had been bricked up. Recently."
+            search: " and one was nearby, but when I looked inside, it was bricked up. With new bricks"
           }} />.
       </p>
       <p>
-        "And this is—"
+        "And this device is—"
       </p>
       <p>
         "I think you'd call it a time machine. We called it the Instrument."
@@ -204,7 +205,7 @@ export default ({currentSection, inventory, cards}) => {
         "You can't believe it until you experience it," she said.
       </p>
       <p>
-        "Experience what? The machine?" I could feel the hair on my arms begin to <ListCard expansions={["stand up"]}
+        "Experience what?" I could feel the hair on my arms begin to <ListCard expansions={["stand up"]}
           tag="c9-hair" card={<span>I thought this was fear, but then realized it was the air—static electricity
           was building up around the machine.</span>} />.
       </p>
@@ -230,7 +231,7 @@ export default ({currentSection, inventory, cards}) => {
           to={{
             climb: `I glanced behind me at the
             chamber inside the meteorite. `,
-            search: `I backed awkwardly up the stairs to the last platform and looked inside the chamber.`
+            search: `I clambered backwards up the stairs to the last platform where I could finally see inside the chamber.`
           }} /> Thickly-woven metal fibers descended from the ceiling, ending in a
           copper handle. There was a matching copper plate on the floor. All of them were
           shiny and new. I stepped towards it, but didn't cross the threshold.

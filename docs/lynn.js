@@ -80,7 +80,8 @@ export const lynn3 = () => (
       I was almost right. The secret was Cadwell, walled in here for a hundred years.
     </p>
     <p>
-      I hear Alice coming now. My <List expansions={[["fate is—"], ["fate is"]]} tag="lynn-fate" />
+      To my shame, I covered him back up. If she knows that I know—well, I guess I can see for himself.
+      But if I play along just a little longer, I'll be able to see that which I've only <List expansions={[["dreamt—"], ["dreamt"]]} tag="lynn-fate" />
     </p>
   </div>
 )
