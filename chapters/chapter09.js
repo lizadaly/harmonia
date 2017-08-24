@@ -62,17 +62,17 @@ export default ({currentSection, inventory, cards}) => {
         What I saw made me need to sit down.
       </p>
       <p>
-        I was, in fact, within an enormous cavern—surely natural in origin—sunken into the slope on which the
+        I was, in fact, within an enormous cavern—surely natural in origin—sunken deep into the slope on which the
         college was built. The space was dominated by a pockmarked black boulder the size of a house,
         which protruded from the ceiling and disappeared into the floor, half its girth buried in the wall of
-        the cavern. Just like in the drawing.
+        the cavern. It look like an immense ebony tooth wrapped in brass and iron, just like in the drawing.
       </p>
-      <p>"The Astrolith," I said, wonderingly. The <ListCard expansions={["tip"]} tag="c9-tip"
-        card={<span>The estimate on the meteorite's plaque put its weight at 30 tons. It was more likely to be
-        3,000.</span>} /> above the surface was unmistakable in its profile.
+      <p>"The Astrolith," I murmured. The color and composition of the rock was the same, and the shape of the <ListCard expansions={["peak"]} tag="c9-tip"
+        card={<span>The plaque by the meteorite estimated its weight at 30 tons, assuming the bulk of it was
+          above-ground. The drawing demonstrated that this was laughably wrong.</span>} /> in the sketch was unmistakable.
       </p>
       <p>
-        The machinery depicted in the sketch was all here, but in gross disrepair. Rubber tubes had cracked or
+        The machinery depicted in the drawing was all here but in serious disrepair. Rubber tubes had cracked or
         sprung from their sockets. The
         brass cranks and gears were coated in a thick patina. The wooden platform looked especially unstable,
         and the enormous wheel and crankshaft
@@ -82,16 +82,15 @@ export default ({currentSection, inventory, cards}) => {
         And yet, <ListCard expansions={["someone"]} tag="c9_repair"
           nextUnit="section"
           card={<span>Lynn, surely, though he must've been pretty handy for an English professor.</span>} /> had
-          been repairing it. All along the edge of the cavern were modern tools and
+          been fixing it. All along the edge of the cavern were modern tools and
           materials—shiny new wire spools, a tablesaw, neat stacks of fresh lumber.
       </p>
     </section>,
     <section>
       <p>
-        I approached the machine. Surely this was no Hall-exploding bomb, or it would've been destroyed itself.
-        Up close, I could see that the wooden platform had already been repaired in places, and
-        with considerable skill. Also repaired was the enormous lever by the base—it moved along a half-moon
-        track like a <ListCard expansions={["giant 'on' switch"]} tag="c9_switch"
+        I approached the machine. Surely this was no bomb.
+        Up close, I could see that the wooden platform was partially rebuilt. There was a new handle on the enormous lever by the base,
+        mounted on a half-moon track like a <ListCard expansions={["giant 'on' switch"]} tag="c9_switch"
           card={<span>The original mechanism was, in fact, a railroad switch stand.</span>} />.
           A handcart full of fresh coal rested next to a cast-iron stove.
       </p>
@@ -126,7 +125,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               At the top of the main platform was a small work area. Another milkcrate, this time flipped upside-down for use as a
-              seat, next to a gas camping lamp and a notebook. From here I was close to the huge
+              seat, next to a gas camping lamp and a notebook. I was close to the huge
               wheel-like mechanism and could make out gleaming new copper threads interwoven with the old.
               It was obvious how much the machine had been pieced together
               from spare parts.

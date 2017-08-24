@@ -1,4 +1,6 @@
 const React = require('react')
+import {debounce} from 'underscore'
+
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -38,6 +40,10 @@ class _ListCard extends React.Component {
       this.expansions.push(props.expansions[0])
     }
     this.onRender = this.onRender.bind(this)
+    this.reRender = debounce(function () {
+      this.onRender
+      j.repaintEverything()
+    }, 100)
 
     // Wait until we're sure everything has rendered before firing this
     window.setTimeout(this.onRender, 2000)
@@ -49,11 +55,13 @@ class _ListCard extends React.Component {
 
   onRender() {
     window.requestAnimationFrame(() => {
-      // console.log("Updating ", this.props.tag)
+
       var sourceId = 'source-' + this.props.tag
       var targetId = 'card-' + this.props.tag
       var source = document.getElementById(sourceId)
       var target = document.getElementById(targetId)
+
+      j.deleteConnectionsForElement(sourceId)
 
       // If we're going to target the parent node, go up two steps to get the usual block-level parent.
       if (this.props.targetParent) {
@@ -63,37 +71,48 @@ class _ListCard extends React.Component {
       }
 
       if (source && target) { // Gross
+        console.log("Updating ", this.props.tag)
+
         var pos = this.positionTargetX(source)
-        var anchors = ["Right", "Left"]
+        var anchors
 
-        if (pos === 'right') {
-          target.classList.add('right')
-          target.classList.remove('left')
+        if (this.props.forceDir) {
+          pos = this.props.forceDir
         }
 
-        else {
-          target.classList.add('left')
-          target.classList.remove('right')
-          anchors = ["Left", "Right"]
-        }
+        target.classList.remove('left', 'right', 'center')
 
-        if (this.props.forceDir === 'down') {
-          anchors = ["Left", "Top"]
-        }
-        else if (this.props.forceDir === 'center-down') {
-          anchors = ["Left", "Left"]
-          target.classList.remove('left', 'right')
-          target.classList.add('center')
+        switch (pos) {
+
+          case 'right':
+            target.classList.add('right')
+            anchors = ["Right", "Left"]
+            break
+
+          case 'left':
+            target.classList.add('left')
+            anchors = ["Left", "Right"]
+            break
+
+          case 'down':
+            target.classList.add('left')
+            anchors = ["Left", "Top"]
+            break
+
+          case 'center-down':
+            anchors = ["Left", "Left"]
+            target.classList.add('center')
+            break
         }
 
         this.positionTargetY(source, target)
-
         j.connect({
           source: sourceId,
           target: targetId,
           endpoint: "Blank",
           anchor: ["Perimeter", { shape:"Ellipse" } ]
         })
+
       }
       else {
         j.deleteConnectionsForElement(sourceId)
@@ -101,10 +120,11 @@ class _ListCard extends React.Component {
     })
   }
 
+
 // TODO call a re-render on the SVG after a window resize event
 // This doesn't work
   componentDidMount() {
-//    window.addEventListener('resize', this.reRender)
+    window.addEventListener('resize', this.reRender)
   }
   componentDidUpdate() {
     this.onRender()
@@ -112,7 +132,7 @@ class _ListCard extends React.Component {
   componentWillUnmount() {
     var sourceId = 'source-' + this.props.tag
     j.deleteConnectionsForElement(sourceId)
-//    window.removeEventListener("resize", this.reRender)
+    window.removeEventListener("resize", this.reRender)
   }
 
   positionTargetY(source, target) {

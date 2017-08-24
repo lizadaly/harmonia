@@ -11,6 +11,30 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
+      <p>
+        I was a <ListCard expansions={["puff"]}
+          tag="c10-d1"
+          forceDir="down"
+          card={<span>of <ListCard expansions={["atoms"]}
+            tag="c10-d2"
+            forceDir="left"
+            card={<span>rushing through a tunnel
+            </span>} /> <Map from={inventory["c10-d2"]}
+              to={{
+                _undefined: "",
+                _any: <span>or a cloud of <ListCard expansions={["dust"]}
+                  tag="c10-d3"
+                  forceDir="right"
+                  card={<span>floating in a hot room
+                  </span>} />
+                </span>
+
+              }} />
+
+          </span>} />
+      </p>
+    </section>,
+    <section>
       <heading>
         <h2>Chapter 10</h2>
         <h3>November 20, 1889</h3>
@@ -20,11 +44,6 @@ export default ({currentSection, inventory, cards}) => {
           —Personal letter, Marianne Dwight, resident of Brook Farm (1844)
         </blockquote>
       </heading>
-      <p>
-        Cadwell had described the feeling well—like dandelion seeds blown into the wind. I can't do better,
-        except to add the subsequent sense of being absorbed into the core of the meteorite, and
-        ejected back out again.
-      </p>
       <p>
         When I returned to myself, I felt completely numb, like I'd slept on all my limbs simultaneously.
         I was lying on the floor of the chamber. There was no roar of the machine; the room was silent and still.
