@@ -21,22 +21,31 @@ export default ({currentSection, inventory, cards}) => {
             card={<span>rushing through a tunnel
             </span>} /> <Map from={inventory["c10-d2"]}
               to={{
-                _undefined: "",
-                _any: <span>or a cloud of <ListCard expansions={["dust"]}
-                  tag="c10-d3"
-                  forceDir="right"
-                  card={<span>floating in a hot room
-                  </span>} />
-                </span>
-
+                  _undefined: "",
+                    atoms: <span>and a cloud of <ListCard expansions={["dust"]}
+                      tag="c10-d3"
+                      forceDir="right"
+                      card={<span>floating in a still room
+                      </span>} />
+                    </span>
               }} />
-
+            <Map from={inventory["c10-d3"]}
+              to={{
+                    _undefined: "",
+                      _any: <span><br/><br/> and a spray of <ListCard expansions={["mist"]}
+                        tag="c10-d4"
+                        forceDir="center-down"
+                        nextUnit="section"
+                        card={<span>from a wave.
+                        </span>} />
+                      </span>
+              }} />
           </span>} />
       </p>
     </section>,
     <section>
       <heading>
-        <h2>Chapter 10</h2>
+        <h2 style={{marginTop: "15em"}}>Chapter 10</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
           "I would not exchange this life for any I have ever led. I could not feel content with the life of
@@ -45,29 +54,31 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>
-        When I returned to myself, I felt completely numb, like I'd slept on all my limbs simultaneously.
+        When I returned to myself my body was a useless marionnette, like I'd slept on all my limbs at once.
         I was lying on the floor of the chamber. There was no roar of the machine; the room was silent and still.
       </p>
       <p>
-        I managed to drag myself onto the wooden platform, now magically intact. The wood was new but not
-        perfectly hewn. I could see because the room was dotted with small kerosene lamps. They were flickering,
+        The chamber door was unlocked now; I clumsily fumbled it open and dragged myself out. The upper platform
+        was intact and smelled of fresh wood. Small kerosene lamps lit the cavern but they were flickering,
         soon to go out.
       </p>
       <p>
-        I descended the platform carefully, mostly crawling. I fell the last few feet off the ladder and landed
-        in a heap. I was lucky to not twist an ankle.
+        I descended the platform mostly by crawling. I fell the last few feet off the ladder and landed
+        in a <ListCard expansions={["painful heap"]} tag="c10-heap"
+          card={<span>I was lucky to not twist an ankle.</span>}/>. Feeling was coming back in my extremities,
+        along with a powerful thirst.
       </p>
       <p>
-        The machine gleamed; so much shiny brass and copper that the weak lamps were amplified in a brilliant
+        The machine gleamed with so much shiny brass and copper that the cavern was saturated by a warm
         gold glow.
       </p>
       <p>
-        In a far corner, a dead man was slumped against the wall. He had exuberant brown muttonchops that were tinged with gray,
-        and was dressed in a simple wool vest, collared shirt, and trousers. I assumed this was Ignatius Cadwell.
+        By the eastern tunnel, a dead man was slumped against the wall. He had exuberant brown muttonchops that were tinged with gray,
+        small silver-framed glasses, and was dressed in a simple wool vest, collared shirt, and trousers. I assumed this was Ignatius Cadwell.
       </p>
       <p>
-        I was able to stand now, barely, and made my way across the cavern like a toddler, grabbing pieces of the
-        device for stability as I went. Next to <ListCard expansions={["Cadwell"]}
+        I was able to stand now, barely, and made my way across the cavern like a toddler, grabbing at
+        objects hand-over-hand for stability. Next to Cadwell's <ListCard expansions={["body"]}
           tag="c10-cadwell"
           card={<span>I'd seen the dead, but only at funerals. I avoided looking directly at him,
             but I didn't see any obvious wound or injury. I assumed, like Lynn had, that he'd died of <ListCard expansions={["dehyrdration"]}
@@ -81,17 +92,17 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I recognized that handwriting. "Lynn?" I called out, my voice echoing in the massive chamber.
+        I recognized the handwriting in that note. "Lynn?" I called out, my voice echoing in the massive chamber.
       </p>
       <p>
         A weak voice replied from far off: "In here."
       </p>
-      <p>The tunnel from which I'd entered the cavern was fully blocked, but the other entrance had been
-        imperfectly cleared. I kicked bricks and boards aside and pushed my way through until the
-        tunnel was clear. I'd forgotten to bring a lamp; everything was absolutely black. I emerged
+      <p>I'd entered from the southern tunnel and it was indeed fully blocked, but the other was just
+        barely passable. I kicked rocks and boards aside and squeezed my way through, emerging
+
         in   <Map from={inventory.c5_direction}
           to={{
-            archaeologist: "what I recognized as the old cellar beneath the Science Center",
+            archaeologist: "what I recognized as the old root cellar beneath the Science Center",
             _any: "an old root cellar, flanked on one side by a wooden trough full of sand and wooden storage crates on the other"
           }}
              />.
@@ -99,28 +110,29 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         <Map from={inventory.c5_direction}
           to={{
-            archaeologist: "Instead of ending in a hole that led to a modern basement, the storage room ",
+            archaeologist: "This time, the storage room ",
             _any: "The storage room "
           }}
-        /> ended in an earthen staircase topped with wood boards, and closed door. The space was lit by
+        /> ended in an earthen staircase leading to a closed door. The stairwell was lit by
         a flickering gas lantern and a tantalizing rectangle of sunlight around the doorframe.
       </p>
       <p>
         A man I presumed was Professor Jeffrey Lynn lay at the top of the stairs. He looked much more
-        like an idealized college professor than I did, with a Santa Claus white beard and serious
-        glasses. His wild
-        expression suggested he thought he was hallucinating.
+        like an idealized college professor than I did, with a Santa Claus beard and a crumpled bowtie.
+        His wild
+        expression suggested he thought I was a hallucination.
       </p>
       <p>"My name's Abby Fuller," I said. "I'm your substitute teacher."</p>
       <p>
-        He barked a laugh and struggled to sit up. "Does my substitute teacher have any water?"
+        He barked a laugh and struggled to sit up. "Does my substitute teacher have any water?" His voice was in tatters.
       </p>
       <p>
-        "I'm afraid I didn't pack appropriately." I nodded at the door. "May I?"
+        "I'm afraid I didn't pack appropriately." I pointed at the door. "May I?" He nodded and slid over to accommodate
+        me at the top of the steps.
       </p>
       <p>
         The knob turned freely but the door didn't budge when I pushed on it. "I think it's barracaded on the other side,"
-        Lynn said. "I spent, I dunno, a day, maybe, just getting through the bricks. I was just too tired to—"
+        Lynn said. "I spent, I dunno, a day, maybe more, just getting through the tunnel. I was just too tired to—"
       </p>
       <p>
         "I'm not tired," I lied. I <List
@@ -129,14 +141,17 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        A metal bar that had been braced up against it clattered to the floor, and the cellar door popped open.
+        A scorched metal bar had been braced up against it; it clattered to the floor and the cellar door popped open.
       </p>
       <p>
-        Immediately my senses were assaulted by the foul smell of burnt wood and rubber. The room itself was
+        Immediately my senses were assaulted by the foul smell of burnt wood and rubber. The walls were
         stone and had survived the worst of it, but everything was covered in a layer of blackened soot.
-        It was sunlit because the ceiling had collapsed, and all the windows were empty of glass. I could see through to more
+        Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass. I could see through to more
         broken rooms, arranged around a central space completely littered with the remains of the roof.
-        The peak of the Astrolith was just visible among the ruins. Nobody was around.
+        The peak of the Astrolith was just visible among the ruins.
+      </p>
+      <p>Nobody was around. The air was drier and
+        warmer than—when I'd left.
       </p>
       <p>
         "Ah, yes, the <ListCard tag="c10-hall"
@@ -145,10 +160,12 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         "I'll find some water," I said. I noticed that he was dressed archaically, with a
-        simple vest and pocketwatch. "I guess you're better dressed for the occasion."
+        simple <ListCard expansions={["vest"]}
+          tag="c10-dressed" card={<span>A pocketwatch dangled from his vest, which I found obscurely
+          charming yet, in a way, fundamentally useless.</span>} /> and wool pants. "I guess you were prepared to meet the locals."
       </p>
       <p>
-        "We agreed I'd go for just an hour—" he said, his voice a whisper. "But I knew when I saw her face as she threw the
+        "We agreed I'd go for just an hour, my first time," he said, his voice a whisper. "But I saw her face as she threw the
         lever; she had no intention of bringing me back."
       </p>
       <p>

@@ -183,38 +183,41 @@ export const frag7 = () => (
     <h1>November ??, 1889</h1>
     <p>
       It seems that no one is coming. Elsie left several—four?—days ago. I can no longer speak from
-      shouting and pounding on solid brick or rock is a pointless expenditure of vital energy.
+      shouting, and pounding on solid rock is a pointless waste of energy.
       Now I simply wait, and reflect.
     </p>
     <p>
       We had been quarreling for days but I admit I did not see it as more than the usual
       harping of a jealous wife. She convinced me that it was "unfair" for only me to
-      use the Instrument now that I have perfected it. She accused me of undermining her.
+      use the Instrument now that it was perfected. She accused me of diminishing her.
       I told her, "Do we celebrate the carpenter as we do the architect?" Perhaps that was unwise.
     </p>
     <p>
-      I went through, those four mornings ago, for my usual survey of the New Eden. When I
-      returned, she was in a strange temper. She grabbed hold of me, with such passion,
-      apologized for her recent behavior, and begged me to let her go one more time. Because I am a kind and
-      generous husband, I foolishly agreed, with the condition that she go for only one hour.
+      I went forward, those four mornings ago, for my usual survey of the New Eden. When I
+      returned, she was in a strange temper. She grabbed hold of me—with such passion!—and apologized
+      for her recent behavior, then begged me to let her go "one more time." Because I am a kind and
+      generous husband, I agreed—so foolish!
       I feared the journeys were too exhausting for her nervous disposition, you see,
       and I wonder now whether her earlier trips
       had caused some kind of mental derangement. Certainly there is nothing else to account for her
       recent turn.
     </p>
     <p>
-      After she went through there was an explosion—the Great Hall, I fear? Smoke wafted through the
-      tunnels and then subsided. I do not know the cause. I would suspect that Elsie was
-      somehow trying to destroy the entrances, but where would she have learned to do such a thing?
+      After she went through there was an explosion. Smoke wafted through the
+      tunnels and then subsided. When I attempted to investigate, I discovered that the tunnels
+      were blocked by debris.
     </p>
     <p>
-      I got up to investigate the sound and it was then I discovered the extent of her deceit.
-      In retrospect I should have set about immediately removing the debris blocking the
-      exits—I made some headway on the <ListCard author="lynn"
+      In retrospect I should have set about immediately removing it, but I assumed that a rescue
+      would be soon forthcoming. There has not been. I do not know the extent of the damage above;
+      perhaps the entire village is in ashes.
+    </p>
+    <p>
+      I made some headway in clearing the <ListCard author="lynn"
         tag="frag-tunneleastern"
         expansions={["eastern tunnel"]}
         nextUnit="section"
-        card={<span>Then that is where I will start.</span>} /> but Elsie prepared well and left almost
+        card={<span>Then that is where I will start.</span>} />, but too little—Elsie prepared well and left almost
       nothing behind that would serve as a useful tool.
       (She left the supply of water, I suppose to convince herself that she gave me a fair chance.)
     </p>

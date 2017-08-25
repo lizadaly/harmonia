@@ -51,7 +51,7 @@ export default ({currentSection, inventory, cards}) => {
         I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs of brandy"]}
           tag="c1-cider"
           card={<span>I admit I was hazy on what real professors did in their free time.</span>} /> with
-        the rest of the faculty and argue about transcendalism. At the very least I needed to
+        the rest of the faculty and argue about transcendentalism. At the very least I needed to
         know where I'd be sleeping. Nobody was here to welcome me; the buildings were dark and
         shuttered, with only slivers of weak light peaking out through the storm.
       </p>
