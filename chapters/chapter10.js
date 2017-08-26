@@ -45,7 +45,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <heading>
-        <h2 style={{marginTop: "15em"}}>Chapter 10</h2>
+        <h2 style={{marginTop: "10em"}}>Chapter 10</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
           "I would not exchange this life for any I have ever led. I could not feel content with the life of
@@ -83,7 +83,7 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>I'd seen the dead, but only at funerals. I avoided looking directly at him,
             but I didn't see any obvious wound or injury. I assumed, like Lynn had, that he'd died of <ListCard expansions={["dehyrdration"]}
               tag="c10-dehydr" forceDir="down"
-              card={<span>And if he'd been trapped down here, I was too.</span>} />.
+              card={<span>And if we were both trapped down here, I might too.</span>} />.
           </span>}/> lay a bucket, a tin cup, and, crucially, a <List expansions={[["journal"], ["journal"]]} tag="c10-journal" />.
       </p>
     </section>,
@@ -154,9 +154,10 @@ export default ({currentSection, inventory, cards}) => {
         warmer than—when I'd left.
       </p>
       <p>
-        "Ah, yes, the <ListCard tag="c10-hall"
-          expansions={["Great Hall"]}
-          card={<span>Even with a time machine, Lynn had arrived too late to witness his life's passion.</span>} />," Lynn said sourly. He slid himself out through the doorway but then rested against the lintel.
+        "Ah, yes, the Great Hall," Lynn said <ListCard tag="c10-hall"
+          expansions={["sourly"]}
+          card={<span>I understood his despair. Even if a time machine, he didn't get to see the subject of his life's work.</span>} />.
+        He slid himself out through the doorway but then rested against the lintel.
       </p>
       <p>
         "I'll find some water," I said. I noticed that he was dressed archaically, with a
@@ -165,11 +166,144 @@ export default ({currentSection, inventory, cards}) => {
           charming yet, in a way, fundamentally useless.</span>} /> and wool pants. "I guess you were prepared to meet the locals."
       </p>
       <p>
-        "We agreed I'd go for just an hour, my first time," he said, his voice a whisper. "But I saw her face as she threw the
+        "It was my first time through; we agreed I'd go for just an hour," he said, his voice a whisper. "But I saw her face as she threw the
         lever; she had no intention of bringing me back."
       </p>
       <p>
-        I nodded grimly. "I'll have to try not to be seen," I said. "But I'll be back soon, I promise."
+        I nodded grimly. "I'll have to try not to be seen," I said. "But I'll <List expansions={[["return"], ["return"]]}
+                                                                                tag="c10-return" /> soon, I promise."
+      </p>
+    </section>,
+    <section>
+      <p>***</p>
+      <p>
+        It was a bright, cloudless day, warm but with a stiff cool breeze, probably late September. Without the
+        Astrolith as an anchor I'd have never recognized where I was. The imposing brick edifices were gone, as were
+        most of the tall trees. Instead of a tidy monolithic green lawn, the ground was covered in a patchwork of
+        dirt, clover, and crabgrass. The air smelled of horses.
+      </p>
+      <p>
+        Cadwell described the future as quiet, but I suppose it's what you're used to. For me, this was true quiet—
+        no distant
+        buzz of airplanes, low-frequency hum of HVAC systems, or slopping idling of trucks.
+        The laughter of crows, the sigh and shuffling of farm animals,
+        the sound of a slow wagon crunching over gravel, that was the modern cacophany of life for him.
+        To me, these were the sounds of peace, and retreat.
+      </p>
+      <p>
+        The slope was steeper now, and even the flatter areas were sinuous and bumpy. Where the gymnasium stood for
+        me was here a large vegetable garden, shaded by a few twisted pear trees and bordered on one end by
+        row of yews. A woman in a plain white
+        cap was pulling up greenish pumpkins from a mass of vines. I let her see me.
+      </p>
+      <p>
+        "Hello," I said, cautiously. I smiled and held out my hands, palms up.
+      </p>
+      <p>
+        "Hello," she said. She eyed my clothes, lingering on my jeans, but said nothing more.
+      </p>
+      <p>
+        "Do you know where I could get some water?"
+      </p>
+      <p>
+        "There's no more running water since the Phalanstery burned. There's a cistern there," she said, nodding
+        towards the row of <ListCard expansions={["stone houses"]} tag="c10-houses"
+          card={<span>I hadn't noticed them behind the yew trees. There were eight now. </span>} />.
+        "Here, take this," and emptied a pail of
+      pears into her basket of pumpkins.</p>
+      <p>I leaned into the garden and took the pail from her gratefully. She was at least a head shorter than me.
+        Tendrils of her blonde hair poked out from beneath the cap,
+        and up close I could see that her neck was deeply <ListCard expansions={["scarred"]} tag="c10-scar"
+          card={<span>Remnants of some infection I almost certainly had never needed to worry about.</span>} />.
+        "Which community are you from which allows such reformed attire?"
+      </p>
+      <p>
+        "Blithesdale Farms," I improvised. "Please excuse me, I need to bring this to my friend urgently." My own thirst
+        was now overwhelming.
+      </p>
+      <p>
+        She nodded, disappointed. "If you want my advice, you'll leave soon as you can," she said, in a low voice.
+        "This is no place for a woman like you."
+      </p>
+      <p>
+        I wanted to say I'd return to thank her again, but I didn't want to lie. I just nodded, and scrambled over a hedgerow
+        and between the yew trees. A young girl in a neat brown dress, about six years old, and a boy of the same age were playing in the dirt behind the Adams
+        house; they saw me, wide-eyed, but said nothing.
+      </p>
+      <p>
+        The cistern was just a circular stone hole, roughly mortared inside, next to the largest of the stone houses
+        (which didn't exist in my time). A lead pipe ran down the length of the house and disappeared into the
+        hole. I couldn't see any water inside, but there was a rope with a <List expansions={[["hook"], ["hook"]]}
+                                                                             tag="c10-hook" /> affixed nearby.
+      </p>
+    </section>,
+    <section>
+      <p>
+        I put the hook over the handle on my pail and lowered it hand-over-hand while the girl watched. Eventually I
+        felt it hit the surface of water I could tell the pail just flopped over and floated. The lightweight tin wasn't heavy
+        enough.
+      </p>
+      <p>
+        Almost sobbing I pulled it back up again and gratefully drank the inch of sandy water at the bottom.
+        The girl had approached me, and I saw she held a heavy smooth stone in his hand. For one wild moment I
+        thought she meant to hit me with it, but when she  <List expansions={[["held it out"], ["held it out"]]}
+                                                           tag="c10-held" /> I understood.
+      </p>
+
+    </section>,
+    <section>
+      <p>I dropped the stone in the bucket and lowered it again. This time I heard the satisfying <i>plunk</i> as
+        the pail sunk below the water. Once full, it was surprisingly heavy. I braced myself against the side of the cistern
+        and pulled harder. The girl, who had still said not a word, reached down and pulled with me. The boy
+        just watched from afar.
+      </p>
+      <p>
+        When the pail emerged into daylight I reached down and hoisted it the rest of the way. This time the water,
+        drawn from further below, was clean and cool.
+      </p>
+      <p>
+        "Thank you," I said to her. The pail was still mostly full and I carefully retraced my steps towards the Great Hall,
+        trying not to spill. She trotted along beside me, the boy forgotten.
+      </p>
+      <p>
+        "What's your name?" I said.
+      </p>
+      <p>
+        "Lillian," she replied.
+      </p>
+      <p>
+        "I know a young woman named Lillian," I said. "You <List expansions={[["remind me a little of her—"], ["remind me—"]]}
+                                                             tag="c10-remind" />
+      </p>
+    </section>,
+    <section>
+      <p>The girl grabbed my arm suddenly. "This way," she said. Instead of crossing the broad open field to the burnt-out
+        husk, she pulled me into a narrow one-story clapboard building, shaped like a stable.
+      </p>
+      <p>
+        The interior was effectively a single room, a long communal kitchen. A dozen women, most dressed in loose pants
+        under skirts, moved between the two stone hearths and several massive work tables. There were stations for bread
+        and stations for soup and large cabinets full of white plates; I didn't see any meat. Most women were bare-headed, their hair
+        tied back in loose buns. I
+        stopped short at the entrance,
+        and they slowly began to notice me, pausing their work to just stare at me.
+      </p>
+      <p>
+        "Come through here," little Lillian urged. I weaved between the women, muttering apologies. The girl led me out a wide
+        barn-like doorway, where a few horses and wagons were tied, and then immediately into another large
+        communal building.
+      </p>
+      <p>
+        "This is the Children's Hall," she explained. The rooms reminded me a bit of my faculty residence, but
+        rather than individual bedrooms, each was filled with cots and cradles. "I live here," she added.
+      </p>
+      <p>
+        "You don't live with your parents?" I asked, and she looked at me with such confusion that I changed
+        tack. "Why did you take me this way?"
+      </p>
+      <p>
+        We exited through the other end of the nursery and arrived at rear of the
+        Great Hall. "So the men wouldn't find you," she said.
       </p>
     </section>
 
