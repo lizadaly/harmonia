@@ -55,10 +55,13 @@ export default ({currentSection, inventory, cards}) => {
       </heading>
       <p>
         When I returned to myself my body was a useless marionnette, like I'd slept on all my limbs at once.
-        I was lying on the floor of the chamber. There was no roar of the machine; the room was silent and still.
+        I was lying on the floor of the chamber. The machine was still churning, making sounds like
+        pieces of itself were banging together, like a pair of shoes in a tumble dryer.
+        Eventually the banging became less frequent, until there was a final clatter of heavy metal on
+        metal, a resigned wheeze of steam, and then the room was silent and still.
       </p>
       <p>
-        The chamber door was unlocked now; I clumsily fumbled it open and dragged myself out. The upper platform
+        The chamber door was unsealed. I clumsily fumbled it open and dragged myself out. The upper platform
         was intact and smelled of fresh wood. Small kerosene lamps lit the cavern but they were flickering,
         soon to go out.
       </p>
@@ -305,6 +308,7 @@ export default ({currentSection, inventory, cards}) => {
         We exited through the other end of the nursery and arrived at rear of the
         Great Hall. "So the men wouldn't find you," she said.
       </p>
+      <NextChapter chapter={11} />
     </section>
 
   ]

@@ -95,24 +95,13 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           there: <div>
             <p>"Thank you for your help the other night," I said, even as I walked around his office, casually
-            browsing through the papers on his desks.
-          </p>
-          <p>"Of course," she replied. Her accent was hard to place.</p>
-          <p>
-            "I'm curious—where did you study before you came to assist Professor Lynn?"
-          </p>
-          <p>"I don't have a degree. The Dean is waiving my tuition
-            while I support Professor Lynn's research."
-          </p>
-          <p>
-            That was unexpected. "Why would she <ListCard expansions={["do that"]}
-              tag="c7-do-that" card={<span>The Dean did not strike me as a particularly generous woman, especially when it
-              came to school fees.</span>} />?"
-          </p>
-          <p>"I'm a <ListCard expansions={["legacy admission"]}
-            tag="c7-legacy" nextUnit="section"
-            card={<span>American colleges have a tradition of admitting descendants of alumni, often without regards for
-            merit. Kids like me hate legacy admissions.</span>} />," she said, lifting her chin. I stared at her incredulously.</p>
+              browsing through the papers on his desks.
+            </p>
+            <p>"Of course," she replied. Her accent was hard to place.</p>
+            <p>
+              "I'm curious—where did you study before you came to assist Professor Lynn?" [FIXME]
+            </p>
+
           </div>,
           burglary: <div>
             <p>After a cold and damp wait, I saw Gilman exit the building through a rear door and disappear behind
@@ -160,8 +149,7 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"Your mother went to Blithesdale?"</p>
-            <p>"My grandmother did," she replied. Before I could respond, a student appeared in the doorway, grinning.
+            <p>[FIXME] Before I could respond, a student appeared in the doorway, grinning.
           </p>
           <p>"Rally at dawn to save the Astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!" It was a reproduction of the
             utopians' newsletter; a student had placed a cheerful sticker in one corner:
@@ -439,7 +427,7 @@ export default ({currentSection, inventory, cards}) => {
             <NextChapter chapter={8} />
           </div>,
           archaeologist: <div>
-            
+
             <p>"Ally?"</p>
 
             <p>It was  <Map from={inventory.c2_direction}

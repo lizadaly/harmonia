@@ -81,8 +81,8 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>The Futurians, I would learn, had an impressive library for a farming community,
             but that small wooden structure had been
           replaced many times over.</span>} />  back to the 1960s.
-          It had a strong Brutalist aesthetic that didn't much harmonize with the rest of the campus architecture,
-          but it was a quiet and pleasant place to study, with abundant natural
+        It had a strong Brutalist aesthetic that didn't much harmonize with the rest of the campus architecture,
+        but it was a quiet and pleasant place to study, with abundant natural
         light and a wall of glass that overlooked the small cemetery at the edge of campus.
       </p>
       <p>Naturally we were headed for the windowless basement instead.
@@ -95,10 +95,19 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal amounts of library books and
-        janitorial equipment. "What did you want to show me?" I said, pushing a rolling bucket out of my way.
+        janitorial equipment. "Why are you so interested in the history of the school?" I asked. I made
+        room for myself by pushing a rolling bucket aside.
+      </p>
+      <p>"I'm a <ListCard expansions={["legacy admission"]}
+        tag="c7-legacy" nextUnit="section"
+        card={<span>American universities have a tradition of admitting descendants of alumni. I find the
+        practice distasteful, but mostly because I'm the first in my family to ever go to college.</span>} />,"
+      she said, a little embarrassed.</p>
+      <p>
+        "Your mom went here?"
       </p>
       <p>
-        "Here, <List expansions={[["read"], ["read"]]} tag="c4-read" /> these," she said. She watched me carefully as I did.
+        "And my grandmother."  This part she said with pride. "Here, <List expansions={[["read"], ["read"]]} tag="c4-read" /> these," she said. She watched me carefully as I did.
       </p>
     </section>,
     <section>
