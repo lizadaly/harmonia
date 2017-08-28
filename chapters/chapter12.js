@@ -30,11 +30,10 @@ export default ({currentSection, inventory, cards}) => {
               There were men <ListCard expansions={["waiting"]}
                 tag="c12-waiting"
                 card={<span>For which I could thank Lillian Cadwell's traitorous little friend Saul.</span>} /> for
-              me when I emerged outside, but the girl had done her job and kept them distracted, wailing unconsolably
-              among the ruins of the Great Hall. They looked at me in astonishment when I emerged, but that
+              me when I emerged outside. They looked at me in astonishment, but that
               was soon followed by a greater shock—an enormous sinkhole was opening
-              beneath one end of the ruin. The resulting cloud of dust and soot could be seen all across the valley.
-              I can't know for sure, but I think machine shook the earth
+              beneath the Great Hall. The resulting cloud of dust and soot could be seen all across the valley.
+              I think machine shook the earth
               so hard that the cavern collapsed, dragging the stone and timber of the <ListCard expansions={["ruin"]}
                 tag="c12-ruin"
                 nextUnit="section"
@@ -57,18 +56,17 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c11_return}
         to={{
           him: <div>
-            <p>The community, the site of multiple successive tragedies, was near collapse. Miss Adams, about whom
+            <p>This community, now the site of multiple successive tragedies, was near collapse. Miss Adams, about whom
               Lillian was indifferent anyway, was easy to convince to give up her charge—her family wanted to move
-              west, to a Shaker colony in Indiana, and the utopian ideals of the community were not immune to
-              the realities of probate law. Lillian Cadwell was an <ListCard expansions={["orphan"]}
+              west and to travel light. To the law, Lillian Cadwell was an <ListCard expansions={["orphan"]}
                 tag="c12-orphan"
-                card={<span>I'm sorry to say I was never able to find out who your <ListCard expansions={["great-great-grandmother"]}
+                card={<span>I'm sorry to say I was never able to find what happened to her birth <ListCard expansions={["mother"]}
                   tag="c12-grandmother"
                   author="lillian"
                   forceDir="down"
-                  card={<span>I've narrowed it to down to two possibilities—Cecila Parker or Jane Noyes.
-                  More research needed!</span>} /> was.</span>} />,
-              and Ignatius, useless as he was, left a respectable inheritance for his daughter.
+                  card={<span>I did! She joined the Shakers, which meant she had no further children. I am one of
+                  her only direct descendants.</span>} />.</span>} />,
+              and Ignatius, useless as he was, had managed to leave a respectable inheritance for his daughter.
             </p>
             <p>
               Everyone accepted my story—I was a widow who recently left a cooperative in New York. People back then
@@ -77,9 +75,11 @@ export default ({currentSection, inventory, cards}) => {
               identity is mutable. Everyone lies, everyone reinvents.
             </p>
             <p>
-              It turns out you don't need to remember much history to be successful at investing. I've done pretty
+              It turns out you don't need to remember much history to be a successful investor. I've done pretty
               well for our family; my adopted daughter and granddaughter will never need to
-              depend on anyone. I set up a trust, for all their descendants, when each one turns twenty-five.
+              depend on anyone. I never married; I've met many kind <ListCard expansions={["men"]}
+                tag="c12-men"
+                card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time. I set up a trust, for all their descendants, when each one turns twenty-five.
               Are you <ListCard expansions={["twenty-five"]}
                 tag="c12-25"
                 card={<span>In my mind, you're always 23, like when we met. I hope you find this <ListCard expansions={["soon"]}
@@ -91,14 +91,28 @@ export default ({currentSection, inventory, cards}) => {
               Lillian?
             </p>
             <p>
-              We never talked about your mom, my <i>great</i>-grandchild, who I will probably never meet. Was she happy? Are you happy? That's all I <ListCard expansions={["worry"]}
+              You and I never talked about your mom, my <i>great</i>-grandchild, who I will probably never meet. Was she happy? Are you happy? That is all I <ListCard expansions={["worry"]}
                 tag="c12-worry"
                 card={<span>I used to worry about smallpox, but I guess got lucky.</span>} /> about now.
             </p>
             <p>
               There's a thing you need to understand about your family and where you come from. These utopians
-              were flawed.
+              were flawed and foolish, sometimes irreedemably so. They were also unafraid. This old America, where
+              I've lived half my life, is a far weirder place than yours—people think nothing of rewriting
+              history, scribbling over the past, erasing and even unerasing, to reckon with what was lost.
+              Draw upon this great cacophony of possibility. Do not confine your dreams to what is adjacent and feasible.
+              Live in the America as you'd like it to be.
             </p>
+            <p>
+              I am sorry only that we did not meet again.
+            </p>
+            <p>
+              Abby
+            </p>
+            <heading>
+              <blockquote>
+              </blockquote>
+            </heading>
           </div>,
           me: <div></div>
         }} />
