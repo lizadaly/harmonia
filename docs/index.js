@@ -9,6 +9,7 @@ import hence from './hence'
 import {frag1, frag2, frag3, frag4, frag5, frag6, frag7, diagram1} from './frags'
 import {paper1, paper2, paper3, paper4} from './newspaper'
 import {lynn1, lynn2, lynn3} from './lynn'
+import {lillian1} from './lillian'
 
 export const docs = {
   frag1: {
@@ -134,6 +135,8 @@ export const docs = {
   },
   lynn3: {
     author: "September 10, 1998", title: "", id: "lynn3", year: 1998, text: lynn3, type: "notebook", page: null
+  },
+  lillian1: {
+    author: "May 5, 1919", title: "", id: "lillian1", year: 1919, text: lillian1, type: "frag", page: null
   }
-
 }

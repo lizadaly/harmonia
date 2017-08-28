@@ -45,37 +45,53 @@ export default ({currentSection, inventory, cards}) => {
           me: <div>
 
             <heading>
-              <h3>May 9, 1999</h3>
+              <h3>January 8, 1999</h3>
             </heading>
             <p>
-              Spring comes late in New England, especially in the mountains. The dirty snow is washed away by weeks of soaking rain
-              and then the summer is out in force. It doesn't matter to the students. Exams are
-              over, and vacation has already started for them, at least in their minds. The campus has the
-              breezy feel of the last day of camp. Today is sunny, and everyone is smiling.
+              I'm in my <ListCard expansions={["office"]} tag="c12-office"
+                card={<span>Not Lynn's, that's reserved for other professors. I get to share Lillian's
+                basement closet until the Dean rules on my fate.</span>} /> grading papers when there's a
+              gentle knock. I've come to recognize this as Ella Merchant's. She enters and I notice
+              she's not wearing a coat and doesn't look cold. I need to ask her where all these secret underground passages are.
             </p>
             <p>
-              I'm happier than all of them. I've just left the Dean's office, with my contract for next year.
-              I'd given up correcting the students who <ListCard expansions={["addressed"]}
-                tag="c12-prof" card={<span>It still gives me a little thrill, though.</span>} /> me as "Professor Fuller,"
-              but now I didn't have to feel bad about it.
+              "Lillian's out today, right?" she asks.
             </p>
             <p>
-              "I suppose you've earned this," Dean Orellana said, magnimously. On my way of her office I was nearly
-              levitating, and almost failed to notice <Map from={inventory.c2_direction}
-                to={{
-                  curiosity: "Walter",
-                  dean: "her assistant"
-                }} /> chasing me down the grand staircase. "Lillian dropped off a note while you were in the meeting," he said.
+              "She went to visit a friend at Amherst, why?"
             </p>
             <p>
-              I'm outside the administration building, on the broad steps that lead down into the quad. It's not
-              exactly a quad anymore; the new Science Center wing cuts across it in an awkward diagonal. The
-              backhoes and bulldozers had gamely trundled around the Astrolith for weeks until the construction
-              team gave up. "This damn rock goes on forever," I heard the foreman complain. A few weeks later
-              the old plans were scrapped and the wing was redirected. The meteorite, once again, was unharmed.
+              Ella closes the door behind her. "I've been waiting for a good time to show you this."
             </p>
             <p>
-              I <List expansions={[["unfold"], ["unfold"]]} tag="c12-unfold" /> Lillian's note:
+              "I'm intrigued."
+            </p>
+            <p>
+              She and I had become close after the events of the fall. When I came back through, she was <ListCard expansions={["there"]}
+                tag="c12-there"
+                card={<span>Lillian called her when I didn't meet up in the library. Phoning the archivist was a
+                way of not breaking her promise to me.</span>} />,
+              staring with open-mouthed astonishment at the device until I yelled at her to <ListCard expansions={["help me down"]}
+                tag="c12-help" card={<span>The ladders had completely collapsed and the cavern
+                was filling with black coal-smoke. She broke my fall when I tumbled off the platform.</span>} />.
+            </p>
+            <p>
+              The next morning, as scheduled, the bulldozers and backhoes went to work on removing the meteorite, until one of them tipped
+              forward into a <ListCard expansions={["sinkhole"]}
+                tag="c12-sinkhole" card={<span>No injuries, but a lot of blame to go around among the surveyors, architects, and
+                construction workers.</span>} /> and then the first snowfall hit. Construction should resume soon—the
+              Astrolith will remain where it is, and the Science Center extension will now <ListCard expansions={["jut"]}
+                tag="c12-dean" card={<span>The Dean has been wrathful, which I've enjoyed watching from afar.</span>} /> into the
+              quad at a funny angle. They didn't dig long enough to realize the full extent of the boulder.
+
+            </p>
+            <p>
+              All the tunnels have completely caved in. We checked.
+            </p>
+            <p>
+              "Here," Ella said. She handed me a slightly yellowed envelope. In a very neat, formal hand,
+              it said, "To Abigail Fuller." I looked at her quizzically, and then <List expansions={["opened"]}
+                                                                                    tag="c12-opened" /> it.
             </p>
           </div>
         }} />
@@ -148,18 +164,7 @@ export default ({currentSection, inventory, cards}) => {
             </heading>
           </div>,
           me: <div>
-            <blockquote className="lillian-style">
-              "Come meet me down by the cemetery." — L
-            </blockquote>
-            <p>
-              The Blithesdale cemetery is at the base of the hill, where the campus transitions first into woods and then
-              into the village proper. It's hemmed in by a wrought iron fence and hasn't been used for active burials
-              in fifty years. The community-era stones are simple, often just a name, some years, and a
-              simple flourish or design. Many of them are so worn as to be unreadable. It's peaceful.
-            </p>
-            <p>
-              Lillian was
-            </p>
+            <Reader inventory={inventory} docs={[docs.lillian1]} />
           </div>
         }} />
     </section>
