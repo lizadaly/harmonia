@@ -89,9 +89,13 @@ export default ({currentSection, inventory, cards}) => {
               All the tunnels have completely caved in. We checked.
             </p>
             <p>
-              "Here," Ella said. She handed me a slightly yellowed envelope. In a very neat, formal hand,
-              it said, "To Abigail Fuller." I looked at her quizzically, and then <List expansions={["opened"]}
-                                                                                    tag="c12-opened" /> it.
+              "Here," Ella says. She hands me a slightly yellowed envelope; in a very neat, formal hand,
+              it reads, "To Abigail Fuller." I look at her quizzically.
+            </p>
+            <p>"It's been part of the college archives for years. The author was one of our earliest instructors,
+            and an important board member. I didn't make the connection with your name until—"</p>
+            <p>I <List expansions={["open"]}
+              tag="c12-opened" /> the letter.
             </p>
           </div>
         }} />
@@ -122,10 +126,10 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               It turns out you don't need to remember much history to be a successful investor. I've done pretty
               well for our family, and my adopted daughter and granddaughter will never need to
-              depend on anyone. I never married; I've met many kind <ListCard expansions={["men"]}
+              depend on anyone. I didn't marry; I've met many kind <ListCard expansions={["men"]}
                 tag="c12-men"
                 card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time.
-              I paid for those steps around the Astrolith, you know. I remember how much you enjoyed them.
+              I also paid for those steps around the Astrolith. I remember how much you enjoyed them.
             </p>
             <p>
               Then I set up a trust, for all their descendants, when each one turns twenty-five.

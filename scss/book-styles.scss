@@ -159,6 +159,25 @@
       display: none;
     }
   }
+  &.lillian1 {
+    width: 110%;
+    margin-left: -5%;
+    .recto, .verso {
+      text-transform: none;
+    }
+    article.article {
+      p {
+        font-family: $lillian-old-font;
+        font-color: $lillian-color;
+        font-size: 22px;
+        line-height: 1.3em;
+      }
+    }
+    font-family: $lillian-old-font;
+    font-color: $lillian-color;
+  }
+
+
 }
 
 
