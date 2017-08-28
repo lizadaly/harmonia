@@ -212,7 +212,7 @@ export default ({currentSection, inventory, cards}) => {
       The hall's destruction by fire in 1899 precipitated the end of the community; however, the stone Astrolith was undamaged.
     </p>
     <p>
-      The circular seating was added in 1968 by the gift of an anonymous donor.
+      The circular seating was added in 1931 by the gift of an anonymous donor.
       The meteorite is estimated to weigh 30 tons, though it has never been fully excavated.
     </p>
   </blockquote>
@@ -379,7 +379,7 @@ export default ({currentSection, inventory, cards}) => {
 </section>,
 <section>
   <Reader inventory={inventory} docs={[docs.paper1]} />
-  
+
   <p>
     We were interrupted by an unhappy-looking woman in the doorway. "Why are there still boxes everywhere, Ella?"
   </p>

@@ -141,13 +141,13 @@ export default ({currentSection, inventory, cards}) => {
         worried for the girl, who was in no way my responsibility.
       </p>
       <p>
-        I decided the best thing I could do would be give Cadwell a semblance of a kind of <ListCard expansions={["burial"]}
+        I decided the best thing I could do would be give Cadwell a semblance of a <ListCard expansions={["burial"]}
           tag="c11-burial"
           card={<span>Though if I'm being honest, it was mostly for our benefit—to not have to look at him.</span>} />.
         One of the collapsed tunnels had been lined with bricks and they had spilled out into the cavern. I used them
         to make a crude  <ListCard expansions={["cairn"]}
           tag="c11-cairn"
-          card={<span>I did not realize until much later that Lynn would find this and assume that it was the work of
+          card={<span>Lynn would find this, in 1998, and assume that it was the work of
           Cadwell's wife.</span>} />.
       </p>
       <p>
@@ -155,7 +155,7 @@ export default ({currentSection, inventory, cards}) => {
         reached full pressurization." This meant some waiting around, and then a lot of winding of spools and
         rotating of gears. I hadn't taken notice of the array of gauges
         under the giant copper wheel, but
-        he spent yet more time running around machine adjusting things until he was satisfied with their readouts.
+        he spent yet more time adjusting things until he was satisfied with their readouts.
         He stroked his long white beard thoughtfully and looked over the contraption. "I think it's ready," he yelled
         over the din.
         "For you."
@@ -171,12 +171,12 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         Lynn started to argue and then ducked as a rivet came shooting out of the machine like a bullet. "There's not
-        going to be another chance. This thing is flying apart at the seams." On cue, the device let out a percussive bang
-        like a dozen cars backfiring.
+        going to be another chance. This thing is flying apart at the seams." On cue, the device let out a percussive,
+        polyphonic bang like a dozen cars backfiring.
       </p>
       <p>
-        "Okay, fine, you win." Now I had to positively lean into his ear to be heard. "But I think the handle came loose," I lied.
-        "In the chamber. Can you check it for me?"
+        "Okay," I said. I had to lean into his ear to be heard. "But I think the handle came loose," I lied.
+        "The one in the chamber. Can you check it for me?"
       </p>
       <p>
         "Sure," he said, agreeably. Together we climbed up to the top <ListCard expansions={["platform"]}
@@ -189,17 +189,46 @@ export default ({currentSection, inventory, cards}) => {
         chamber door.
       </p>
       <p>
-        All I needed to do was shut the door and lock it, as Alice had done to me.
+        All I needed to do was shut the door and lock it, as Alice had done.
         One of us was going back. It could be <List expansions={[["him", "me"], ["him", "me"]]} tag="c11_return" conjunction="or"/>.
       </p>
     </section>,
     <section>
       <Map from={inventory.c11_return}
         to={{
-          him: <div></div>,
+          him: <div>
+            <p>
+              I closed the chamber door quietly and pulled on the lever that engaged the lock. "It's definitely fine—"
+              Lynn said, looking up at the handle, and then saw what I'd done. "No!" he mouthed, putting his hand
+              up against the glass.
+            </p>
+            <p>
+              I had no idea if anyone was waiting for him in 1998. I'd never asked if he had parents or siblings
+              or even children who might miss him. That was selfish of me. I'm telling the story, but it's his story too.
+            </p>
+            <p>
+              When I reached the ground, one of the rubber hoses had snapped loose and was whipping around rabidly;
+              the coal stove was shaking
+              like a thing alive. Lynn was right—there would be no next journey. From the base I could just barely see
+              him looking down at me. He nodded—I like to think he meant in thanks—and grasped the handle
+              in the chamber. I nodded back, then with two hands and all my
+              strength, <List expansions={[["pulled"], ["pulled"]]} tag="c11-lever" /> hard on the massive lever.
+            </p>
+          </div>,
           me:  <div></div>
-          
+
         }} />
+
+    </section>,
+    <section>
+      <Map from={inventory.c11_return}
+        to={{
+          him: <div>
+            <p>He was atomized before my eyes, like a dandelion blown by the wind.</p>
+          </div>,
+          me: <div></div>
+        }} />
+      <NextChapter chapter={12} />
 
     </section>
     ]
