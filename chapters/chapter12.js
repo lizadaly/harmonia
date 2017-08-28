@@ -47,7 +47,36 @@ export default ({currentSection, inventory, cards}) => {
             <heading>
               <h3>May 9, 1999</h3>
             </heading>
-
+            <p>
+              Spring comes late in New England, especially in the mountains. The dirty snow is washed away by weeks of soaking rain
+              and then the summer is out in force. It doesn't matter to the students. Exams are
+              over, and vacation has already started for them, at least in their minds. The campus has the
+              breezy feel of the last day of camp. Today is sunny, and everyone is smiling.
+            </p>
+            <p>
+              I'm happier than all of them. I've just left the Dean's office, with my contract for next year.
+              I'd given up correcting the students who <ListCard expansions={["addressed"]}
+                tag="c12-prof" card={<span>It still gives me a little thrill, though.</span>} /> me as "Professor Fuller,"
+              but now I didn't have to feel bad about it.
+            </p>
+            <p>
+              "I suppose you've earned this," Dean Orellana said, magnimously. On my way of her office I was nearly
+              levitating, and almost failed to notice <Map from={inventory.c2_direction}
+                to={{
+                  curiosity: "Walter",
+                  dean: "her assistant"
+                }} /> chasing me down the grand staircase. "Lillian dropped off a note while you were in the meeting," he said.
+            </p>
+            <p>
+              I'm outside the administration building, on the broad steps that lead down into the quad. It's not
+              exactly a quad anymore; the new Science Center wing cuts across it in an awkward diagonal. The
+              backhoes and bulldozers had gamely trundled around the Astrolith for weeks until the construction
+              team gave up. "This damn rock goes on forever," I heard the foreman complain. A few weeks later
+              the old plans were scrapped and the wing was redirected. The meteorite, once again, was unharmed.
+            </p>
+            <p>
+              I <List expansions={[["unfold"], ["unfold"]]} tag="c12-unfold" /> Lillian's note:
+            </p>
           </div>
         }} />
 
@@ -76,10 +105,14 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               It turns out you don't need to remember much history to be a successful investor. I've done pretty
-              well for our family; my adopted daughter and granddaughter will never need to
+              well for our family, and my adopted daughter and granddaughter will never need to
               depend on anyone. I never married; I've met many kind <ListCard expansions={["men"]}
                 tag="c12-men"
-                card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time. I set up a trust, for all their descendants, when each one turns twenty-five.
+                card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time.
+              I paid for those steps around the Astrolith, you know. I remember how much you enjoyed them.
+            </p>
+            <p>
+              Then I set up a trust, for all their descendants, when each one turns twenty-five.
               Are you <ListCard expansions={["twenty-five"]}
                 tag="c12-25"
                 card={<span>In my mind, you're always 23, like when we met. I hope you find this <ListCard expansions={["soon"]}
@@ -114,7 +147,20 @@ export default ({currentSection, inventory, cards}) => {
               </blockquote>
             </heading>
           </div>,
-          me: <div></div>
+          me: <div>
+            <blockquote className="lillian-style">
+              "Come meet me down by the cemetery." — L
+            </blockquote>
+            <p>
+              The Blithesdale cemetery is at the base of the hill, where the campus transitions first into woods and then
+              into the village proper. It's hemmed in by a wrought iron fence and hasn't been used for active burials
+              in fifty years. The community-era stones are simple, often just a name, some years, and a
+              simple flourish or design. Many of them are so worn as to be unreadable. It's peaceful.
+            </p>
+            <p>
+              Lillian was
+            </p>
+          </div>
         }} />
     </section>
   ]

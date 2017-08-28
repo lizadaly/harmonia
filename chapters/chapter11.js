@@ -198,8 +198,8 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           him: <div>
             <p>
-              I closed the chamber door quietly and pulled on the lever that engaged the lock. "It's definitely fine—"
-              Lynn said, looking up at the handle, and then saw what I'd done. "No!" he mouthed, putting his hand
+              I closed the chamber door quietly and pulled on the lever that engaged the lock. "Okay, I've tightened it—"
+              Lynn said, turning back around and realizing he was trapped. "No!" he mouthed, putting his hand
               up against the glass.
             </p>
             <p>
@@ -207,15 +207,26 @@ export default ({currentSection, inventory, cards}) => {
               or even children who might miss him. That was selfish of me. I'm telling the story, but it's his story too.
             </p>
             <p>
-              When I reached the ground, one of the rubber hoses had snapped loose and was whipping around rabidly;
+              When I reached the ground, one of the rubber hoses had snapped loose and whip-snapped over my head;
               the coal stove was shaking
-              like a thing alive. Lynn was right—there would be no next journey. From the base I could just barely see
-              him looking down at me. He nodded—I like to think he meant in thanks—and grasped the handle
-              in the chamber. I nodded back, then with two hands and all my
+              like a thing alive. Lynn was right—there could be no next journey. I looked up at the chamber and
+              he nodded snowly—I like to think he meant to thank me, after all—and grasped the handle. I nodded back,
+              then with two hands and all my
               strength, <List expansions={[["pulled"], ["pulled"]]} tag="c11-lever" /> hard on the massive lever.
             </p>
           </div>,
-          me:  <div></div>
+          me:  <div>
+            <p>
+              My hand lingered on the door for a moment and then <ListCard expansions={["fell"]}
+                tag="c11-fell"
+                card={<span>I'd like to believe I was just respecting his wishes, but mostly I was scared.</span>} />. "Okay, I tightened the handle—"
+              Lynn shouted, turning back to me. He looked suspicious for a moment, and then stepped out. "Go ahead."
+            </p>
+            <p>
+              "Thank you," I started. "You don't have <List expansions={[["to do this—"], ["to —"]]}
+                                                          tag="c11-do" />
+            </p>
+          </div>
 
         }} />
 
@@ -226,7 +237,16 @@ export default ({currentSection, inventory, cards}) => {
           him: <div>
             <p>He was atomized before my eyes, like a dandelion blown by the wind.</p>
           </div>,
-          me: <div></div>
+          me: <div>
+            <p>"This is what I want," he said. I could barely hear him now. The platform shifted under his feet, and
+              he stumbled, grabbing on the railing. "Abby, it has to be now." He closed and sealed the chamber door without
+            waiting for my answer.</p>
+            <p>
+              I yelled out: "Take care of the girl."
+              I don't know if he heard.
+            </p>
+            <p>A moment later he pulled the giant lever and I was blown apart like a dandelion in the wind.</p>            
+          </div>
         }} />
       <NextChapter chapter={12} />
 
