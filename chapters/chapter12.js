@@ -45,56 +45,71 @@ export default ({currentSection, inventory, cards}) => {
           me: <div>
 
             <heading>
-              <h3>January 8, 1999</h3>
+              <h3>May 28, 1999</h3>
             </heading>
             <p>
-              I'm in my <ListCard expansions={["office"]} tag="c12-office"
-                card={<span>Not Lynn's, that's reserved for other professors. I get to share Lillian's
-                basement closet until the Dean rules on my fate.</span>} /> grading papers when there's a
-              gentle knock. I've come to recognize this as Ella Merchant's. She enters and I notice
-              she's not wearing a coat and doesn't look cold. I need to ask her where all these secret underground passages are.
+              Up here in Western Massachusetts, spring lasts about a day but can be utterly glorious. It's not
+              cold, it's not humid, and sometimes it's not even raining. Today is one of those days,
+              the perfect weather coupled with the effervescent mania of students who've just finished
+              exams. Unfortunately for me, that means several days of non-stop grading and occasional
+              weeping when those grades are posted.
             </p>
             <p>
-              "Lillian's out today, right?" she asks.
+              In spite of the workload, I'm giddy too. I've been informed I'll be back next year—an
+              assistant professor, for real. I can stop correcting the girls who call me "Prof."
             </p>
             <p>
-              "She went to visit a friend at Amherst, why?"
+              I'm grading at a picnic table near the crest of the foothill. From here I can see
+              the full expanse of the campus and down into the valley, the ghostly outlines of the
+              utopian fields and foundations clearly visible. I can see it even more clearly in my mind's eye.
             </p>
             <p>
-              Ella closes the door behind her. "I've been waiting for a good time to show you this."
+              "Ally," a voice behind me says, and I get chills.
             </p>
             <p>
-              "I'm intrigued."
+              Alice Gilman is regarding me in that curious way she has. I have
+              not seen her since autumn, when <Map from={inventory.c5_direction}
+                to={{
+                  there: "she ran from me in Lynn's office and I found her device",
+                  _any: "she left my classroom and I found her device"
+                }} />. When I came back through it, she was no longer in the cavern. In her place
+              was Lillian,
+              staring with open-mouthed astonishment at the machine until I yelled at her to help me down—
+              the ladders had completely collapsed and the cavern
+              was filling with black coal-smoke.
             </p>
             <p>
-              She and I had become close after the events of the fall. When I came back through, she was <ListCard expansions={["there"]}
-                tag="c12-there"
-                card={<span>Lillian called her when I didn't meet up in the library. Phoning the archivist was a
-                way of not breaking her promise to me.</span>} />,
-              staring with open-mouthed astonishment at the device until I yelled at her to <ListCard expansions={["help me down"]}
-                tag="c12-help" card={<span>The ladders had completely collapsed and the cavern
-                was filling with black coal-smoke. She broke my fall when I tumbled off the platform.</span>} />.
+              The next morning, as scheduled, the bulldozers went to work on removing the meteorite, until one of them tipped
+              forward into an unexpected and massive sinkhole.
+              No injuries, but a lot of blame to go around among the surveyors, architects, and
+              construction workers. The Science Center extension was re-routed around the
+              Astrolith at awkward angle. The Dean was furious but now claims it all went per plan.
+              Lillian, Ella, and I checked several times: the cavern entrances were all destroyed.
+              And Alice Gilman was nowhere to be found.
             </p>
             <p>
-              The next morning, as scheduled, the bulldozers and backhoes went to work on removing the meteorite, until one of them tipped
-              forward into a <ListCard expansions={["sinkhole"]}
-                tag="c12-sinkhole" card={<span>No injuries, but a lot of blame to go around among the surveyors, architects, and
-                construction workers.</span>} /> and then the first snowfall hit. Construction should resume soon—the
-              Astrolith will remain where it is, and the Science Center extension will now <ListCard expansions={["jut"]}
-                tag="c12-dean" card={<span>The Dean has been wrathful, which I've enjoyed watching from afar.</span>} /> into the
-              quad at a funny angle. They didn't dig long enough to realize the full extent of the boulder.
-
-            </p>
-            <p>
-              All the tunnels have completely caved in. We checked.
-            </p>
-            <p>
-              "Here," Ella says. She hands me a slightly yellowed envelope; in a very neat, formal hand,
+              "Here," Alice says now, without preamble. She hands me a yellowed envelope; in a very neat, formal hand,
               it reads, "To Abigail Fuller." I look at her quizzically.
             </p>
-            <p>"It's been part of the college archives for years. The author was one of our earliest instructors,
-            and an important board member. I didn't make the connection with your name until—"</p>
-            <p>I <List expansions={["open"]}
+            <p>"It was found in the college archive years ago. When it finally came through Lynn's office, I kept it for myself.
+              When you told me your name, the night you arrived, I knew—"
+            </p>
+            <p>
+              She stops, for so long I thought she wasn't going to continue. "I did care for her, even though she wasn't mine,"
+              Alice says, in that flat affect of hers. "They
+              did not think I was fit to be a mother. But when I read this, I knew she'd have people, if they went back—"
+            </p>
+            <p>
+              "I could have died," I say, not even angry anymore.
+            </p>
+            <p>
+              "Yes," she acknowledges. She looks like she wants to leave, and then says: "I'm still glad we tried it all, you know—
+              the community. Even though they treated me badly. I don't think
+              I belong here either. I thought, after so many years, things would be better. I know you laugh at us,
+              but you take only such small steps."
+              She turns, and walks away over the hillside.
+            </p>
+            <p>I <List expansions={["read"]}
               tag="c12-opened" /> the letter.
             </p>
           </div>
@@ -169,6 +184,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
+
           </div>
         }} />
     </section>

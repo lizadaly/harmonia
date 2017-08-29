@@ -30,8 +30,8 @@ export default ({currentSection, inventory, cards}) => {
           Massachusetts like a bookmark.</span>} />. This little village would be my home now.
       </p>
       <p>
-        A substitute teaching position was not exactly the breakthrough in academia I'd wanted,
-        but at least for now, it was consistent with my paltry credentials, experience, and savings account.
+        A substitute teaching position was not exactly a breakthrough in academia,
+        but it was consistent with my credentials, experience, and savings account: unimpressive.
 
         I'd received a letter extending the offer, had a brief phone call with
         the <ListCard expansions={["dean"]}
@@ -48,15 +48,15 @@ export default ({currentSection, inventory, cards}) => {
         aging car was fishtailing everywhere and I nearly sideswiped a
       couple trees.</p>
       <p>
-        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs of brandy"]}
+        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs"]}
           tag="c1-cider"
-          card={<span>I admit I was hazy on what real professors did in their free time.</span>} /> with
+          card={<span>I admit I was hazy on what real professors did in their free time.</span>} />  of brandy with
         the rest of the faculty and argue about transcendentalism. At the very least I needed to
         know where I'd be sleeping. Nobody was here to welcome me; the buildings were dark and
-        shuttered, with only slivers of weak light peaking out through the storm.
+        shuttered, with only slivers of weak light holding the night at bay.
       </p>
       <p>
-        I couldn't find the main entrance, but spotted a sign for the English department and
+        I couldn't find the main entrance but I spotted a sign for the English department and
         parked there.
 
         I unclenched my hands from the steering wheel, took a deep breath, and hurried up
@@ -66,7 +66,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
   <section>
-    <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the the names of
+    <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the names of
     professors and adjuncts. I called out a hello, but no one answered.</p>
     <p>I recognized a few names here and there but I was hunting for one door in particular—the missing
       instructor I'd been hired to
@@ -138,7 +138,7 @@ export default ({currentSection, inventory, cards}) => {
       card={<span>I guess technically I was trespassing in someone's office.</span>} />.
       "I'm Abby Fuller. I'm substituting for Jeffrey Lynn."
     </p>
-    <p>"Oh," she said, lowering the light. "I heard a replacement had been found."
+    <p>Something about this answer rattled her, but she lowered the flashlight. "Oh, of course."
     </p>
     <p>
       "That's right," I said cautiously. "There was no one here when I arrived and—
@@ -153,7 +153,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       The faculty residence was as dark and quiet as the rest of the campus. If anyone else was living there,
-      they weren't night owls. "Let's put you in here," she said, gesturing into a room with a single small window
+      they weren't night owls. "You can stay here," she said, gesturing into a room with a single small window
       and <ListCard expansions={["spartan"]} tag="c2-room"
         card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wooden furnishings.
       I dropped everything on the floor, mumbled my thanks, and collapsed on the bed as she closed the door. Only
