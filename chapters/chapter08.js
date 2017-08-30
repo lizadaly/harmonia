@@ -311,20 +311,20 @@ export default ({currentSection, inventory, cards}) => {
               "It's freezing."
             </p>
             <p>
-              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I guess I was so adamant because I
-              recognized how stupid this was.</span>} />."
+              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I felt responsible for the girl,
+              despite the fact that she got me into this mess.</span>} />."
             </p>
 
           </div>,
           there: <div>
             <p>
-              The door was next to the old stone hearth, now filled with boxes of unpacked belongings rather than
-              a spit and cast-iron bots. It was a small entrance, obviously original, and there was no light switch by the
+              The door was next to the old stone hearth. The doorframe was narrow and low, obviously original to the property,
+              and there was no light switch by the
               top of the stairs.
             </p>
             <p>
               I thanked <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> for her help so far and
-               told her to go home. "I don't want anyone else losing their job over this." She looked
+              told her to go home. "I don't want anyone else losing their job over this." She looked
               grateful and promised to assist us in any way with whatever materials we came back with.
             </p>
             <p>
@@ -346,8 +346,8 @@ export default ({currentSection, inventory, cards}) => {
               "It's freezing."
             </p>
             <p>
-              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I guess I was so adamant because I
-              recognized how stupid this was.</span>} />."
+              "Then go <ListCard tag="c8-gohome" expansions={["home"]} nextUnit="section" card={<span>I felt responsible for the girl,
+              despite the fact that she got me into this mess.</span>} />."
             </p>
 
           </div>
@@ -359,8 +359,7 @@ export default ({currentSection, inventory, cards}) => {
         Lillian bit her lip. "I'll be in the library." Then she left. I was alone.
       </p>
       <p>
-        The cellar wasn't far down—I descended only about ten shallow steps and
-        the <Map from={inventory.c8_search}
+        The cellar was far smaller than a modern basement, and the <Map from={inventory.c8_search}
           to={{
             _undefined: "ceiling",
               _any: <span><ListCard expansions={["ceiling"]} tag="c8_ceiling" card={<span>Cobweb-infested
@@ -395,11 +394,11 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>I slid the box away from the wall, which revealed a narrow tunnel into further darkness<Map from={inventory.c5_direction}
-          to={{
+        to={{
             archaeologist: `, a fact which did not surprise me in the least. It was the same size and shape of the bricked-up
                      tunnel under the Science Center. `,
             _any: "."
-          }} />
+        }} />
       </p>
       <p>
         The tunnel was obviously hand-dug, and surprisingly long; it wasn't just a connector to another nearby cellar.
@@ -409,7 +408,7 @@ export default ({currentSection, inventory, cards}) => {
         slope of the hill. This did not feel safe.
       </p>
       <p>
-        I stepped forward slowly, trying to <List expansions={[["brush"], ["brush"]]} tag="c8_brush" nextUnit="none" /> the dangling roots and loose boards aside with minimal force.
+        I inched through it carefully, trying to <List expansions={[["brush"], ["brush"]]} tag="c8_brush" nextUnit="none" /> the dangling roots and loose boards aside with minimal force.
         <Map from={inventory.c8_brush}
           to={{
             _undefined: '',
@@ -441,18 +440,21 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         After five or six meters the tunnel made a sharp left-hand <ListCard expansions={["turn"]} card={[`I didn't even see the turn and walked straight into the wall. I yelped
       in surprise. There was no echo; the sound was deadened by the encroaching earth.`]} tag="c8-wall" /> and descended even further.
-        After a few more paces,
-        it opened into a space that felt very, very large.
+      </p>
+      <p>
+        Once I turned the corner, I heard a deep mechanical humming. From this point on the tunnel was getting wider, until I
+        stumbled down a short step and I was no longer in a tunnel at all.
       </p>
       <p>
         I trained the flashlight around the room but the beam was insufficient and nothing I saw made any sense.  I could only perceive disjointed scenes that didn't form a coherent whole:
-        roots bursting out from earthen walls; curved metal plates, heavily corroded and pitted; cables and hoses snaking
-        upwards and out of sight. Motes of dirt hung in the air,
-        and the weak light only served to reflect them back at me like snow—a disorienting visual static. I called out, weakly, but my voice died
-        completely when the dull echo told me the opposite wall was far, far away.
+        curved metal plates, heavily corroded and pitted, vibrating furiously; cables and hoses snaking
+        upwards and out of sight, giving off steam and dirty smoke. Motes of dust and soot churned in the air,
+        and my weak light only served to reflect them back at me like snow—a disorienting visual static. I called out
+        but my voice was swallowed by the mechanical churning; if anyone was there they could not hear me.
+        I could not make out the scale of the space but the resonant sound told me the walls—and ceiling—we far, far away.
       </p>
       <p>
-        I wasn't in a cellar. This was a cavern.
+        I wasn't in a root cellar anymore. This was a cavern, filled with a great machine.
       </p>
       <NextChapter chapter={9} />
     </section>

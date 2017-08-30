@@ -26,25 +26,25 @@ export default ({currentSection, inventory, cards}) => {
         I realized I hadn't eaten all day and,
         <Map from={inventory.c2_direction}
           to={{
-            curiosity: " after asking Walter for directions, stopped by  ",
-            dean: " after promising to meet Lillian at the library as soon as I could, stopped by "
+            curiosity: " after asking Walter for directions, I stopped by  ",
+            dean: " after promising to meet Lillian at the library as soon as I could, I stopped by "
           }} />
 
-        the faculty dining room. This late in the afternoon, only a few professors still at lunch. They greeted me
-        coolly—more so, I felt, after I recited my <ListCard expansions={["academic credentials"]} tag="c4-creds"
+        the faculty dining room. Only a few professors were still at lunch this late. They greeted me
+        coolly—more so, I felt, after I recited my unremarkable <ListCard expansions={["academic credentials"]} tag="c4-creds"
           card={<span>All state and commuter schools, but I still worked my ass off.</span>} />. After a round of
         polite introductions and tepid small talk, they went back to their private conversations. I ate my lunch
         in silence.
       </p>
       <p>
-        As I was putting away my tray, I saw Alice Gilman open the double doors to the dining hall and then
-        abruptly back out again. I would swear she'd caught my eye first.
+        As I was putting away my tray, I saw Alice Gilman open the double doors to the dining hall, notice me, and then
+        abruptly back out again.
       </p>
       <p>
-        I found Lillian seated on the steps leading up to the library, seemingly oblivious to the
+        I found Lillian seated on the steps around the Astrolith, seemingly oblivious to the
         blistery weather. <Map from={inventory.c2_direction}
           to={{
-                    curiosity: `"I tried to catch up with you at the dean's office, but the dean's assistant said you'd gone to lunch," she explained.`,
+                    curiosity: `"I tried to catch up with you at the dean's office, but Walter—I mean, the dean's assistant—said you'd gone to lunch."`,
                     dean: `"It's sunny," she shrugged. "I decided to just wait for you here."`
           }} />
       </p>
@@ -52,7 +52,7 @@ export default ({currentSection, inventory, cards}) => {
         "I'm supposed to be meeting with Alice Gilman
         <Map from={inventory.c2_direction}
           to={{
-            curiosity: " here.",
+            curiosity: " now.",
               dean: " now."
           }} />"</p>
       <p>
@@ -62,9 +62,9 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"This book belonged to Lynn," I said.</p>
-      <p>"Yes, how did you know?"</p>
-      <p>"I recognize his handwriting. Who is Cadwell? Lynn referenced their journal in the margins."</p>
-      <p>"It's part of Special Collections," she said, taking the book back. "That's what I want
+      <p>"How could you tell?"</p>
+      <p>"I recognize his handwriting. Who is Cadwell?"</p>
+      <p>"That's what I want
       to show—"</p>
 
       <p>A student with a clipboard and a stack of flyers suddenly accosted us. "Help save the Blithesdale Astrolith!"
@@ -72,24 +72,21 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.astrolith1]} />
     </section>,
     <section>
-      <p>"Thanks," Lillian said dismissively, crumpled the flyer in her hand, and pulled open the doors to the library.</p>
-      <p>"You don't agree?"</p>
+      <p>"Yeah thanks," Lillian said. Once the student was out of sight she crumpled the flyer in her hand
+      and stalked off towards the library.</p>
+      <p>"You don't agree?" I asked, jogging to keep up.</p>
       <p>"I do, but not for the same reasons," she said, without elaborating.</p>
       <p>
-        The current library building <ListCard expansions={["dated"]}
-          tag="c4-library-date"
-          card={<span>The Futurians, I would learn, had an impressive library for a farming community,
-            but that small wooden structure had been
-          replaced many times over.</span>} />  back to the 1960s.
-        It had a strong Brutalist aesthetic that didn't much harmonize with the rest of the campus architecture,
-        but it was a quiet and pleasant place to study, with abundant natural
-        light and a wall of glass that overlooked the small cemetery at the edge of campus.
+        The current library structure was a Brutalist relic of the 1960s and didn't exactly
+        harmonize with the rest of the campus. In spite of that,
+        it was a quiet and pleasant place to study, with abundant natural
+        light and a wall of glass that overlooked the small orchard at the edge of campus.
       </p>
       <p>Naturally we were headed for the windowless basement instead.
       </p>
       <p>
-        "Most of the utopians' buildings were wooden," Lillian explained. "It was the one resource they had in abundance.
-        They were all replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
+        "Most of the utopians' buildings were made out of wood," Lillian explained. "It was the one resource they had in abundance.
+        They'd all been replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
         led me in. "The only original structures that are still standing are a few stone houses used as
         faculty residences. Meanwhile I get this crappy little space for my independent study."
       </p>
@@ -100,14 +97,21 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>"I'm a <ListCard expansions={["legacy admission"]}
         tag="c7-legacy" nextUnit="section"
-        card={<span>American universities have a tradition of admitting descendants of alumni. I find the
-        practice distasteful, but mostly because I'm the first in my family to ever go to college.</span>} />,"
+        card={<span>American universities give special preference to descendants of alumni. Not having illustrious ancestors of my own,
+          I find the practice distasteful. But I couldn't begrudge
+        Lillian for being a proud child of women scholars.</span>} />,"
       she said, a little embarrassed.</p>
       <p>
         "Your mom went here?"
       </p>
       <p>
-        "And my grandmother."  This part she said with pride. "Here, <List expansions={[["read"], ["read"]]} tag="c4-read" /> these," she said. She watched me carefully as I did.
+        "And my grandmother."
+      </p>
+      <p>
+        "That's great, Lillian. It's okay to be proud of that."
+      </p>
+      <p>
+        She blushed a little but shrugged it off. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
       </p>
     </section>,
     <section>
@@ -132,20 +136,19 @@ export default ({currentSection, inventory, cards}) => {
           </div>
 
         }} />
-      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899."</p>
-      <p>"This looks like a page from a utopian novel that I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
-      tag="c4-notes" /></p>
+      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899. I'd been helping him
+      analyze them all summer, trying to fit them to a timeline that matched with the decline of the community."</p>
+      <p>"Are you sure this is from someone's <i>journal</i>?" I asked. "This looks like a page from a <i>novel</i> that
+        I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
+                      tag="c4-notes" />"</p>
     </section>,
     <section>
-      <p>Lillian frowned. "These are definitely
-        from a community member—Cadwell, an amateur scientist. Bit of a blowhard if you ask me."
+      <p>"No, this is definitely the personal diary
+        of a community member—Cadwell, an amateur scientist. Bit of a blowhard if you ask me."
       </p>
       <p>"Maybe he was also a frustrated novelist."</p>
-      <p>She laughed. "That'd explain a lot. Anyway it's possible he also wrote fiction, he seemed
-        to think he could do anything. And not all of the fragments were recoverable—some were damaged by water or mold—even fire."
-      </p>
-      <p>"The fire that destroyed the hall over the quad?"</p>
-      <p>"Maybe, we don't know. Now <List expansions={[["read"], ["read"]]}
+      <p>She laughed. "That'd explain a lot; he seemed
+        to think he could do anything. Now <List expansions={[["read"], ["read"]]}
                     tag="c4-look" /> the other one."
       </p>
     </section>,
@@ -163,14 +166,12 @@ export default ({currentSection, inventory, cards}) => {
       <p>"Was it? If you read between the lines there—<i>there's no turning back</i>—that sounds like
       something planned. What if this guy Cadwell decided his community wasn't going to make it, and wanted to—"</p>
       <p>"Take everyone with him? Like a suicide pact?"</p>
-      <p>"I don't think anyone else was involved. Many of them stayed to rebuild and
-      found Blithesdale. Cadwell and his wife, though, they disappear from the historical record after this."</p>
-      <p>"So you think he set fire to their hall?"</p>
-      <p>"There's only first-person account we know of, a letter by one of the teachers to her cousin." she said.
-        "It mentions an explosion, just before the fire. Maybe Cadwell had built a bomb."</p>
+
+      <p>"I've only found one first-person account of the fire and she mentions hearing an explosion, not some
+      oil lamp tipping over. Maybe that device Cadwell built was a kind of bomb."</p>
       <p>I didn't know what to say to that.</p>
-      <p>Lillian snatched the papers from my hands. "What if Professor Lynn found something
-        that Cadwell built that was dangerous?  Maybe he didn't disappear—maybe he's hurt down there,
+      <p>Lillian snatched the papers from my hands. "Professor Lynn could have found something
+        dangerous. Maybe he didn't run off—maybe he was injured down there,
       in some old cellar. People accidentally dig up old mines all the time."</p>
       <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
         tag="c4-time" />"</p>
@@ -181,9 +182,9 @@ export default ({currentSection, inventory, cards}) => {
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
       <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
       the Dean isn't interested in anything that holds up the renovations. Please," she said, "I don't know who else to ask."</p>
-      <p>I'd like to say that in her passion and conviction she reminded myself of her when I was
-        younger, but she wasn't that much younger than me. I was just a few years out of school myself
-        and already felt like my career was a dead-end with nothing to look forward to besides more debt.
+      <p>I'd like to say that in her passion and conviction she reminded me of my younger self, 
+        but she wasn't that much younger than me. It felt good, though, to feel needed—to
+        find someone who thought I could be useful, maybe even heroic.
       </p>
       <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />

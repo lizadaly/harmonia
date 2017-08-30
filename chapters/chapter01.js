@@ -153,7 +153,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       The faculty residence was as dark and quiet as the rest of the campus. If anyone else was living there,
-      they weren't night owls. "You can stay here," she said, gesturing into a room with a single small window
+      they weren't living it up. "You can stay here," she said, gesturing into a room with a single small window
       and <ListCard expansions={["spartan"]} tag="c2-room"
         card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wooden furnishings.
       I dropped everything on the floor, mumbled my thanks, and collapsed on the bed as she closed the door. Only

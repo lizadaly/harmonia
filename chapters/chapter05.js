@@ -27,7 +27,8 @@ export default ({currentSection, inventory, cards}) => {
         one by one.
       </p>
       <p>
-        Her evidence that there was a deliberate violent act at work was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
+        Her hypothesis that there had been a deliberate violent act
+        towards the community was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised in the newspaper column.</span>} /> was
         indeed one of the founding members of the Futurians. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
           tag="c5-ad" /> for recruits posted in one of the many
@@ -77,8 +78,8 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <p>In fact I should've done this already, but I was starting to get the sense that this woman
-      was avoiding me. This made me uneasy.
+    <p>In fact I should've done this already—I really needed that syllabus—but I was starting to get the sense that this woman
+      was avoiding me.
     </p>
     <p className="card-inline">
       2. <List expansions={[["Break"], ["Break"]]}
@@ -89,7 +90,7 @@ export default ({currentSection, inventory, cards}) => {
     <p id="target-c5_testline">Did I know how to do this? I did not.</p>
     <p className="card-inline">
       3. <List expansions={[["Forget"], ["Forget"]]}
-        tag="c5_explore" /> the papers and go exploring.
+           tag="c5_explore" /> Lynn's papers and search the campus for others.
     </p>
   </section>,
    <section>

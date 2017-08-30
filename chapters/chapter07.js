@@ -32,9 +32,9 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               When I got outside I spotted Gilman hurrying across the quad. She was dressed about the
               same as when I met her—long skirt, leather bag, plain brown boots—but now her hair was pulled back in an
-              elaborate coil that made her stand out among the easy-going students. The weather had
+              elaborate coil that made her stand out among the students. The weather had
               turned to icy rain again which stung my face as I trotted after her. I was feeling bold, so when she
-              reached the doors of the English department, I stepped in right behind her before she could close them.
+              reached the doors of the English department, I stepped in before she could close them.
             </p>
             <p>
               "Hi, Alice," I said. "You know, I meant it when I said wanted to catch up after class."
@@ -49,8 +49,8 @@ export default ({currentSection, inventory, cards}) => {
               "Let's talk in Professor Lynn's office." I smiled. "At the Dean's request."
             </p>
             <p>Gilman was trapped and she knew it. "All right," she said. I followed her down the hall, where
-                she <List expansions={[["unlocked Lynn's office."],
-            ["unlocked Lynn's office. We were finally alone."]]} tag="c7_opendoor" /></p>
+              she <List expansions={[["unlocked Lynn's office."],
+              ["unlocked Lynn's office. We were finally alone."]]} tag="c7_opendoor" /></p>
           </div>,
           burglary: <div>
             <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
@@ -84,8 +84,8 @@ export default ({currentSection, inventory, cards}) => {
                 card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
               handed me a flyer printed on cardstock, adorned with a sticker:
-              </p>
-              <Reader inventory={inventory} docs={[docs.paper3]} />
+            </p>
+            <Reader inventory={inventory} docs={[docs.paper3]} />
           </div>
         }} />
 
@@ -97,11 +97,18 @@ export default ({currentSection, inventory, cards}) => {
             <p>"Thank you for your help the other night," I said, even as I walked around his office, casually
               browsing through the papers on his desks.
             </p>
-            <p>"Of course," she replied. Her accent was hard to place.</p>
+            <p>"You're welcome," she replied. </p>
             <p>
-              "I'm curious—where did you study before you came to assist Professor Lynn?" [FIXME]
+              "Forgive my curiosity, but where are you from? I don't recognize your accent."
             </p>
-
+            <p>
+              The question was rude and she responded in kind. "Not far from here. You're from, where? Lowell?"
+            </p>
+            <p>
+              "<ListCard expansions={["Something"]} tag="c7-lowell"
+                nextUnit="section"
+                card={<span>Exactly like that, but I didn't want to give her the satisfaction.</span>} /> like that."
+            </p>
           </div>,
           burglary: <div>
             <p>After a cold and damp wait, I saw Gilman exit the building through a rear door and disappear behind
@@ -149,17 +156,19 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>[FIXME] Before I could respond, a student appeared in the doorway, grinning.
-          </p>
-          <p>"Rally at dawn to save the Astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!" It was a reproduction of the
-            utopians' newsletter; a student had placed a cheerful sticker in one corner:
-          </p>
-          <Reader inventory={inventory} docs={[docs.paper3]} />
+            <p>Before she could respond with what I assumed would be snobbery, a student appeared in the doorway, grinning and
+              full of annoying verve.
+            </p>
+            <p>"Rally at dawn to save the Astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!"
+              The flyer was a reproduction of the
+              utopians' newsletter; a student had placed a cheerful sticker in one corner:
+            </p>
+            <Reader inventory={inventory} docs={[docs.paper3]} />
           </div>,
           burglary: <div>
             <p>This time the noise attracted a woman in the office across the hall. I didn't <ListCard tag="c7_reminded"
               expansions={["recognize"]} card={<span>Though she had a strong working-class Boston accent that
-                painfully reminded me of home.</span>} /> her from any of my
+              painfully reminded me of home.</span>} /> her from any of my
               dining hall visits. "Oh,
               are you Abby Fuller?" she asked.
             </p>
@@ -186,17 +195,17 @@ export default ({currentSection, inventory, cards}) => {
                   curiosity: "Walter",
                   dean: "the archivist"
                 }} /> to get into trouble for letting me down into the Science Center excavation so I refused the kind
-                offer to accompany me. I did accept a flashlight and a key to the storage crate
-                where construction workers had been told to put any material that might be of interest to the Historical
-                Committee.
+              offer to accompany me. I did accept a flashlight and a key to the storage crate
+              where construction workers had been told to put any material that might be of interest to the Historical
+              Committee.
             </p>
             <p>
               The basement beneath the Center was modern, if unfinished, and notable for one reason:
               the car-sized <ListCard expansions={["hole"]}
-              tag="c7_punched" card={<span>
-                <Map from={inventory.c2_direction}
-                  to={{
-                    curiosity: "Walter",
+                tag="c7_punched" card={<span>
+                  <Map from={inventory.c2_direction}
+                    to={{
+                      curiosity: "Walter",
                     dean: "Ella"
                   }} /> had said that its discovery was an accident, revealed when the construction team had gone in to
                   extend the foundation.</span>} /> that been punched out of the
@@ -281,8 +290,8 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"He kept his important papers in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
-            producing two journal entries.</p>
+            <p>"His current research id kept in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
+            producing two annotated journal entries from among other paperwork.</p>
             <p>"Thanks," I said, feeling stupid.</p>
             <p>"Next time just ask! Finding documents is my job."</p>
             <p>
@@ -347,11 +356,12 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           there: <div>
             <p>"What did you think this was when you found it?" I asked.</p>
-            <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. "An unpublished fantastical novel," she said. "Jeffrey and I agreed that it
+            <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. "One of the colonists drafting a fantastical story,"
+              she said. "Jeffrey and I agreed that it
               wasn't surprising to find. It's natural that the Futurians would try out their ideas in <ListCard expansions={["story"]}
-                tag="c7-backward" card={<span>Lynn had assigned Bellamy's <i>Looking Backward</i>, a novel
-                  so popular in its time that it spawned dozens of responses and even some sequels—a kind of 19th century
-                utopian fan fiction.</span>} /> form."
+                tag="c7-backward" card={<span>This cross-pollination between fiction and real-life communities
+                  happened frequently. Whole societies rose and fell around stories like <i>Looking Backward</i> and
+                  <i>Travels in Icaria</i>.</span>} /> form."
             </p>
             <p>
               Lillian and I exchanged a look, but said nothing.
@@ -371,12 +381,12 @@ export default ({currentSection, inventory, cards}) => {
                 _any: "If Lynn put that in a 'private collection,' where would that be?"
               }} /> Would he have kept papers like that here?"
             </p>
-            <p>"No, Dean had me catalog all the college property in his office after he disappeared. His home, maybe?"</p>
-            <p>"Do you know where that is?"</p>
-            <p>"Adams House," she said readily. The name didn't mean anything to me.</p>
-            <p>"Oh, that's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
+            <p>"No, Dean had me catalog all the college property in his office after he disappeared and I
+            don't recall anything like a blueprint. His home, maybe? He lived in Adams House."</p>
+
+            <p> The name was meaningless to me. "That's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
               card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Futurian buildings."</p>
-            <p>"I have keys to some offices," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, "but not to anyone's private home."</p>
+            <p>"I have keys to some offices," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, "but not to anyone's private residence."</p>
             <Map from={inventory.c2_direction}
               to={{
                 curiosity: <p>I said, "If it's on campus, I know someone who can get us in."</p>,

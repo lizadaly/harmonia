@@ -34,7 +34,8 @@ export default ({currentSection, inventory, cards}) => {
     <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
       My name is <ListCard expansions={["Abby Fuller"]}
         tag="c1-name"
-        card={<span>Not yet <i>Doctor Fuller</i>—my thesis was at a bit of a standstill.</span>} />."
+        card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
+        since I was only a sub.</span>} />."
       Their undivided attention was disconcerting; I'd never taught college students solo, nor had I led an all-women class.
     </p>
     <p>
@@ -96,7 +97,7 @@ export default ({currentSection, inventory, cards}) => {
           <p>"We talked about the Shakers and the other religious colonies," the girl named Lillian said, "and we were supposed to
             cover  <ListCard expansions={["Brook Farm"]}
               tag="c2_brook"
-              card={<span>A Transcendalist community located just outside of Boston, which was moderately successful until
+              card={<span>A Transcendentalist community located just outside of Boston, which was moderately successful until
               a fire destroyed their central meeting hall and bankrupted the village.</span>} /> and the pre-Blithedale community next."</p>
           <p>"The who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
@@ -143,13 +144,16 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       I smiled and thanked her. After that rocky start,
-      the class went pretty well. Lillian even stayed after class to welcome me to the college.
+      the class went pretty well. Lillian even stayed after class to <ListCard expansions={["welcome"]}
+        tag="c2-welcome"
+        card={<span>She came from a notable family with deep local roots, but seemed inclined to treat me with respect. "My grandmom was
+        named Abigail too."</span>} /> me to the college.
       I started to think this gig was going to
       be <ListCard
         expansions={["easy."]}
         forceDir="center-down"
         tag="c3-okay"
-        card={<span>It wasn't.</span>}
+        card={<span>I was wrong.</span>}
             nextUnit="section" />
     </p>
   </section>,
@@ -160,41 +164,39 @@ export default ({currentSection, inventory, cards}) => {
 
     </heading>
     <p>
-      On the night of my arrival the campus had seemed
-      unwelcoming. In fact it was quite pleasant, if a bit odd.
+      On the night of my arrival the campus had seemed creepy and
+      unwelcoming. In fact it was quite pleasant, if a bit unusual.
     </p>
     <p>
       The school was laid out along a long tiered slope,
-      with two narrow
-      paved roads running down the length. Gravel footpaths and stone steps
-      switched back and forth between buildings. You could stand almost anywhere and look
-      down into the valley, but there wasn't much to see beyond
-      a few chimneys and steeples that poked above the canopy. The nearest village, where most of the
+      accessible by gravel footpaths and stone steps that
+      switched between buildings. Almost every spot on campus afforded gorgeous views down into the valley,
+      with chimneys and steeples poked above the canopy. The nearest village, where most of the
       faculty lived, was down at the base of the hill.
     </p>
     <p>
-      The largest area of level ground was a grassy quadrangle, and many of the
+      The largest area of level ground was the grassy central quadrangle, and many of the
       campus buildings, including my residence, faced out onto it.
       Most structures were ivy-covered brick, though a few small ones were made of rougher gray stone
-      and pockmarked with lichen.
+      splashed with pastel lichen and moss.
     </p>
     <p>A clock somewhere chimed noon and students poured out of the
-      buildings, <ListCard expansions={["trudging up and down"]}
+      buildings, <ListCard expansions={["trudging"]}
         tag="c3-steps"
         card={<span>It was popular to arrange one's schedule such that each subsequent
-        class was further downslope.</span>} /> the steps to their next classes.
+        class was further downslope.</span>} /> up and down the steps to their next classes.
     </p>
     <p>
-      I drifted into the quad, which was delineated at each corner by low wooden posts.
+      I drifted into the quad.
       Footpaths through the grass all veered
-      around a central clearing, a sunken circle of steps around a curious stone bench:
+      around a central clearing, a sunken circle of steps around a curious stone peak:
     </p>
     <figure>
       <img src="images/meteorite.jpg" />
     </figure>
     <p>
-      It was a rectangular boulder, a couple meters square and one meter tall. There were bumps and cavities
-      across its surface which had been smoothed by age. The top was largely flat, inviting one to sit.
+      It was an inky black boulder, a dozen meters around the base and pointed like a pint-sized mountain. There were bumps and cavities
+      across its surface which had been smoothed by age.
       The earth had been dug out around it in a
       circular depression, with concentric rings of steps, like a tiny Greek ampitheater. I stooped to read
       a small nearby <List expansions={[["plaque"], ["plaque"]]} tag="c3_plaque" />:
@@ -208,7 +210,7 @@ export default ({currentSection, inventory, cards}) => {
       who christened it "The Astrolith" and believed it imbued their village with spirtual vitality.
     </p>
     <p>It was originally enclosed by the so-called Phalanstery,
-      a large communal hall. The four posts around the quadrangle mark the outline of the original construction.
+      a large, multi-story communal hall and prayer center.
       The hall's destruction by fire in 1899 precipitated the end of the community; however, the stone Astrolith was undamaged.
     </p>
     <p>
@@ -241,15 +243,16 @@ export default ({currentSection, inventory, cards}) => {
     lying in wait.
   </p>
   <p>
-    Downhill, a paved path ran between the meteorite and the administration building. I assumed that included the Dean's office;
-    she was almost certainly expecting me to check in.
+    A paved path ran between the meteorite and the largest building on campus, where the administrative staff worked.
+    The Dean's office was there; she was expecting me to check in.
   </p>
   <p>
     Amid the students coming and going from the Science Center, I recognized the <ListCard expansions={["odd woman"]}
       tag="c2_woman"
-      card={<span>I wanted to thank her for last night, but also knew she had keys to Lynn's office
+      card={<span>I wanted to thank her for the other night, and ask her for the keys to Lynn's office
       and his teaching material.</span>} /> who
-    had let me in the building last night.
+    had let me in the building last night. She paused at the entrance to the building, looked around, almost as if she
+    was afraid of being followed, and disappeared inside.
 
   </p>
   <p>
@@ -266,13 +269,13 @@ export default ({currentSection, inventory, cards}) => {
           swathed in plastic sheeting and warning tape, and sawdust was everywhere. The floor was covered by layers of protective
           tan paper, dirtied by boot marks from workers.
         </p>
-        <p>I didn't see the woman immediately so I followed the path of heaviest footprints down the hallway.
+        <p>I didn't see the woman so I followed the path of heaviest footprints down the hallway.
           The newer rooms seemed to be
           unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Everything
         was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
           leading up were incomplete and without handrails. The stairs leading down were crisscrossed with
-          tape and "No Admittance" signs, but they looked easy enough to <List expansions={[["duck under, so reached to lift the tape—"], ["duck under—"]]} tag="c2_cellar" />
+          tape and "No Admittance" signs, but they looked easy enough to duck under, if I reached out to <List expansions={[["lift the tape—"], ["lift—"]]} tag="c2_cellar" />
         </p>
       </div>,
       'dean': <div>
@@ -320,44 +323,39 @@ export default ({currentSection, inventory, cards}) => {
             card={<span>Current fashion standards at most colleges did not rise much above pajamas.</span>} />.
         "Oh, sorry, I'm probably not supposed to be here am I?"</p>
         <p>
-          He smiled. "Not really, but I won't tell. Are you Abby Fuller?"
+          He smiled. "Not really, but I won't tell. Are you Abigail Fuller?"
         </p>
         <p>
           "I am," I said, shaking hands.
         </p>
-        <p>"I'm Walter Browne, Dean Orellana's assistant." He paused. "She's looking for you and I thought it'd be better
+        <p>"I'm Walter Browne, Dean Orellana's assistant. She's looking for you." He smiled wryly. "I thought it'd be better
         if you came of your own accord."</p>
 
         <p>"Am I in trouble already?"</p>
-        <p>"It's okay. Things are a bit upside-down right now," he said, leading
+        <p>"Probably not, it's just that things are a bit tense right now." he said, leading
           me away from the stairwell. "This wing
           should've been opened in time for the start of the school year but there was a... complication."
         </p>
         <p>
-          "Oh?" I asked.
+          I expected him to go on, but his silence suggested it was better that I just hear it from the Dean.
         </p>
-        <p>
-          "You've heard about the history of the college, right? When they broke ground on this building last spring,
-          they found some old tunnels nobody knew about—mostly root cellars and
-          personal storage for the utopians—all beneath the modern basements and dug way into the
-          hillside. Apparently a whole vault is under the quad."
-        </p>
-        <p>"I saw the sign about the meteorite."</p>
-        <p>He sighed. "The dean's pretty angry that's still not done, but the faculty and the county were both
-          insistent that the excavations be completed first. Then things started to get weird."
-        </p>
-        <p>I wanted to ask what he meant by that, but by now we'd <ListCard expansions={["passed"]}
+        <p>We <ListCard expansions={["passed"]}
           tag="c2-passed"
           card={<span>We'd travelled through connecting corridors without actually going outside, a neat
           concession to New England winters.</span>} />  from the sterile research center to the
-          warm, Victorian-era administrative building.
-          The Dean's office was near the main visitors' entrance, beside a grand winding staircase and a room marked "Special Exhibits."
+          warm neo-Victorian administrative building.
+          To visit the Dean's office meant ascending a grand winding staircase, flanked by
+          portraits of distinguished faculty and former students. The family names were mostly of the
+          sturdy Yankee type: Abbot, Page, Bradley, <ListCard expansions={["Horace"]}
+            tag="c2-horace"
+            card={<span>This one caught my eye—the resemblance to Lillian was obvious. Her grandmother
+            was apparently a keen squash player.</span>} />. Nearly all of them were white, which
+          disappointed but didn't surprise me.
         </p>
-        <p>"I expected her sooner, Walter," I heard the Dean call out. "I have a call at one."</p>
+        <p>When we reached the landing, I heard the Dean call out from her office. "I expected her sooner, Walter." </p>
         <p>He gave me an apologetic look. "Good luck."</p>
-        <p>"Thanks for the tour," I said, and <List expansions={[["went to meet my new boss"], ["went to meet my new boss"]]}
-          tag="c3_dean_meet" nextUnit="chapter" />.
-        </p>
+        <p><NextChapter chapter={3} /></p>
+
       </div>,
       dean: <div>
         <p>"Come here, you'll find this so interesting," she interrupted. "Do you know

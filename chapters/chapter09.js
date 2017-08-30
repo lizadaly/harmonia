@@ -20,7 +20,7 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>
-        Right by the tunnel entrance there were signs of modern intrusion: several plastic milkcrates, some rubber gloves, a few
+        Right by the tunnel entrance there were signs of modern intrusion: plastic milkcrates, some rubber gloves, a few
         empty bags of potato chips, a gas generator. The milkcrates were stuffed full of
         notebooks and papers. I knelt down, flashlight tucked under one arm, and almost wept with joy.
         I'd been collecting these one-by-one like a scavenger hunt and here was a small library.

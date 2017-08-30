@@ -31,10 +31,10 @@ export default ({currentSection, inventory}) => {
     <p>
       "I heard your first class went reasonably well," she said, without looking up. She was
       {inventory.c2_direction.endsWith("curiosity") ? " also " : ""} younger than I expected—mid 40s,
-      though with the demeanor of an older person.
+      curly hair, crimson power suit that was a bit out of place in this backwater.
     </p>
     <p>
-      "I'm glad to hear; I thought it did too." I paused. "Thank you again for offering me this position," I said.
+      "I'm glad to hear; I thought it did too." I paused. "Thank you again for offering me this position."
     </p>
     <p>
       "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
@@ -47,38 +47,55 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       "<List expansions={[["I think—"], ["I mean I'm wondering—"], ["What are your—"],
-        ["Can you tell me what your expectations are for me?"]]}
-        tag="c3_expectations" />"
+      ["Can you tell me what your expectations are for me?"]]}
+         tag="c3_expectations" />"
     </p>
   </section>,
   <section>
     <p>
       "Expectations? I expect you to teach Utopian Literature to undergrads. Then I expect
       to decide whether to bring you back next semester—despite your <ListCard expansions={["less-than-stellar"]}
-        tag="c3-back" card={<span>She really could turn on the charm.</span>} /> qualifications."
+        tag="c3-back" card={<span>I was a foster kid from an old mill town, but sure, be all judgy.</span>} /> qualifications."
     </p>
     <p>
-      "I guess it would just help me if
-      you could—"
+      "I understand," I said. "If you could just give me a little more background on my situation, I think
+      it would help my teaching quite a bit—"
     </p>
     <p>
-      "Ms. Fuller, I am very busy and have an appointment in 10 minutes. You're going
-      to have to be <List expansions={[["specific"], ["specific"]]}
-        tag="c4_specific" nextUnit="none"/>."
+      She frowned as if she didn't understand, though I felt some of this was disingenuous. "Don't you have a
+      full syllabus from Professor Lynn? That is the material you've been hired to teach."
     </p>
+    <p>
+      "Well, actually, I don't, <List expansions={[["but in addition to that—"], ["but—"]]}
+                                  tag="c3-but" />
+    </p>
+  </section>,
+  <section>
+    <p>"I'm surprised I need to tell you such a basic thing. Perhaps hiring someone so underqualified was a mistake."</p>
+
     <Map from={inventory.c4_specific}
       to={{
-        specific: <p>"Could you tell me more about <List expansions={[["the history of the college?",
-        "what happened to Professor Lynn?"], "_last"]}
+        _undefined: <p>"I will get the syllabus right after this meeting, but I feel I also need to better understand
+          both the history of this college and have some background on what happened to Professor Lynn."
+        </p>,
+        _any: <p>"I will get the syllabus right after this meeting, but I feel I also need to better understand
+          both <List expansions={[["the history of this college",
+            "what happened to Professor Lynn"], ["the history of this college",
+          "what happened to Professor Lynn"]]}
+
             tag="c4_question"
-            conjunction="Or, wait, no, " />"
-        </p>
+                 conjunction="and have some background on" />.</p>
       }} />
+    <p>
+      "Ms. Fuller, I am very busy and have an appointment in 10 minutes. You're going
+      to have to <List expansions={[["pick one"], ["pick one"]]}
+                      tag="c4_specific" nextUnit="none"/>."
+    </p>
   </section>,
   <section>
     <Map from={inventory.c4_question}
       to={{
-        "lynn?": <div>
+        "lynn": <div>
           <p>
             She paused, and then told me to close the door. "Jeffrey Lynn had been teaching
             here for over 10 years. His class on utopianism is a signature one for the college, given our history.
@@ -112,7 +129,7 @@ export default ({currentSection, inventory}) => {
               card={<span>I told myself a dean would not actually murder a faculty member for going off schedule.</span>} />.
           </p>
         </div>,
-        "college?": <div> <p> She leaned back and I could tell this was a story she told often. "As you may know the college was
+        "college": <div> <p> She leaned back and I could tell this was a story she told often. "As you may know the college was
           founded on the grounds of an old utopian community. They called themselves the Futurians."
         </p>
           <p>
@@ -127,56 +144,43 @@ export default ({currentSection, inventory}) => {
           <p>She nodded
             towards the oil painting. "The initial colonists uncovered that meteorite when they were tilling the fields.
             The founders decided it
-            was a sign. They built their great hall around it, as a place of communal worship."
-          </p>
-          <p>
-            "What happened to the community?"
+            was a sign. They built their great hall around it, as a place of communal worship.
           </p>
           <p>
             "Most of the first founders drifted away over time; the soil up here is poor and the winters are brutal."
             She stared at the painting before continuing. "Things were starting to fall apart in 1899, and then their
-            Great Hall caught fire. Several peopel died, we don't have a full accounting of it.
+            Great Hall caught fire. There were some deaths, and bankrupcy soon followed."
           </p>
           <p>
             "How did the fire start?"
           </p>
-          <p>"We don't really know." She paused. "Jeffrey was leading the committee that cataloged the
-            material we'd been turning up in the construction. He'd always been interested in the events leading up to
-            that fire. Prior to this
-            excavation, there hadn't been much material about the community's last days—few letters, no journals,
-            and their homegrown <Map from={inventory.c2_direction}
+          <p>"We don't really know." She paused. "Jeffrey Lynn was our leading scholar of the utopian period.
+            To be honest, it's not something I like to promote about the school. It was a long time ago and
+          they had some—unconventional ideas.</p>
+
+          <p>
+            "Nevertheless, this expansion of our Science Center has involved quite a bit of archaeological
+            excavation. Up until these old cellars and storerooms were dug up, we didn't have much material
+            about the community's last year, aside accounts in their homegrown <Map from={inventory.c2_direction}
               to={{
-                curiosity: " newspaper ",
+                curiosity: "newspaper",
                   dean: <span><ListCard expansions={["newspaper"]}
                     tag="c3-newspaper"
                     card={<span>This must've been what Ella had shown me.</span>} /></span>
-              }} /> had
-            stopped publication by then. Jeffrey was obsessed with that fire, with proving that it was <ListCard expansions={["arson or worse"]}
-              tag="c3-arson" card={<span>What's worse than arson?</span>} />.
+              }} />. Jeffrey became obsessed with that fire; he swore to me he was on the trailing of
+            proving that it was arson, or even something <ListCard expansions={["worse"]}
+              tag="c3-arson" card={<span>What's worse than arson?</span>} />."
           </p>
-          <p>"Regardless of what happened that night, the community mostly disbanded after the fire. Some moved to the Shaker
-            community in Haverhill. A few of the
-            teachers remained and worked to turn it into a women's school. But nobody wrote much about how it ended."
-          </p>
-          <p>
-            "That's so fascinating. I had no idea," I said.
-          </p>
-          <p>
-            She studied me. "Lynn thought so too. He was always digging into the college
-            history, looking for material for his class. And when we broke ground on this Science Center extension,
-            his curiosity turned into an obsession."
-          </p>
+
           <p>"And is that what he<List expansions={[[" was doing before he disappeared?"], ["—"]]} tag="c3-disappeared" />"</p>
         </div>
       }} />
   </section>,
   <section>
     <p>
-      She sniffed. "He halted the construction project abruptly—went out one morning and stood in front of the
+      "Just after term started, he halted the construction project—went out one morning and stood in front of the
       bulldozers, said everything had to stop. I was furious. I demanded that he meet me right away,
-      but he never showed.
-    </p>
-    <p>"This was just after term started," she explained. "As far as I was concerned he was already on probation.
+      but he didn't show up. As far as I was concerned he was fired, tenure be damned.
       He'd missed a few classes, and stopped joining the
       regular meetings with the Historical Committee. <Map from={inventory.c2_direction}
         to={{
@@ -184,9 +188,9 @@ export default ({currentSection, inventory}) => {
           dean: <span>You met Ella, she's the committee chair, she </span>
 
         }} /> says he'd started going through materials from one of the old cellars by himself and not
-        involving the group.
-      </p>
-      <p>
+      involving the group.
+    </p>
+    <p>
       "I believe he found something down there that was too good to pass up
       and ran off with it." She leaned back. "I have an army of
       lawyers who will not be happy to see college property show up in a museum
@@ -194,7 +198,7 @@ export default ({currentSection, inventory}) => {
     </p>
     <p>
       I frowned. "When I took this assignment I assumed he'd simply left for another job without
-      much notice. Has he been reported missing?"
+      much notice. You said he disappeared. Has he been reported missing?"
     </p>
     <p>
       The Dean shrugged. "I'm not his mother." She narrowed her eyes. "You don't <List expansions={[["approve"], ["approve"]]}
@@ -204,25 +208,25 @@ export default ({currentSection, inventory}) => {
 
   </section>,
   <section>
-    <p>"It's not for me to say," I replied neutrally.</p>
+    <p>"It's not for me to say," I said neutrally.</p>
     <p>
-      She stood up, and this meant I did too. "You seem bright, Abby. I'd like to see you succeed with us. Why don't you speak
-      with Alice Gilman, Lynn's research assistant? You met her the night you arrived. She can probably help answer some of your
+      She stood up, and this meant I did too. "You seem bright, Abby. I'd like to see you succeed with us.
+      Speak with Alice Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
-        card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class."
+        card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class.
+      And she'll have that syllabus"
     </p>
     <Map from={inventory.c2_direction}
       to={{
         curiosity: <div>
           <p>
             I thanked the dean and closed the door behind me. Walter came immediately out of his small adjacent office.
-            I didn't mind that he'd been listening.
           </p>
           <p>
-            "That could've been worse," he said.
+            "That could've been worse," he said. "Sorry, walls are thin."
           </p>
           <p>
-            "If you say so," I said. "So what do you know about Alice Gilman? The Dean told me to find her."
+            "If you say so," I said. "What do you know about Alice Gilman? The Dean told me to find her."
           </p>
           <p>
             He made a face. "She kinda gives me the creeps. Not just me, a lot of the students find her strange."
@@ -230,15 +234,12 @@ export default ({currentSection, inventory}) => {
           <p>
             "I met her the night I arrived."
           </p>
-          <p>"I'm not surprised, she never seems to sleep. Seniors tell freshman she's the ghost of a long-dead utopian,
-            haunting the campus at night."
+          <p>"I'm not surprised, she never seems to sleep. Seniors tell freshmen she's the ghost of a long-dead utopian."
           </p>
-          <p>"If she hadn't been
-            there I would've spent my first night sleeping in my car."
+          <p>"If not for her, I would've spent my first night sleeping in my car."
           </p>
           <p>
-            He was unmoved. "She still weirds me out. Anyway, she's usually in the library
-            if she's not meeting with students. I'll show you where it is."
+            He was unmoved. "I still don't like her."
           </p>
         </div>,
         dean: <div>
