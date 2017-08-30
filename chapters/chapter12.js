@@ -120,17 +120,17 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c11_return}
         to={{
           him: <div>
-            <p>This community, now the site of multiple successive tragedies, was near collapse. Miss Adams, about whom
+            <p>The community, now the site of multiple tragedies, was near collapse. Miss Adams, about whom
               Lillian was indifferent anyway, was easy to convince to give up her charge—her family wanted to move
-              west and to travel light. To the law, Lillian Cadwell was an <ListCard expansions={["orphan"]}
+              west and to travel light. To the law, Lillian Gilman Cadwell was the <ListCard expansions={["orphan"]}
                 tag="c12-orphan"
-                card={<span>I'm sorry to say I was never able to find what happened to her birth <ListCard expansions={["mother"]}
+                card={<span>I'm sorry to say I was never able to find what happened to her real birth <ListCard expansions={["mother"]}
                   tag="c12-grandmother"
                   author="lillian"
                   forceDir="down"
                   card={<span>I did! She joined the Shakers, which meant she had no further children. I am one of
-                  her only direct descendants.</span>} />.</span>} />,
-              and Ignatius, useless as he was, had managed to leave a respectable inheritance for his daughter.
+                  her only direct descendants.</span>} />.</span>} /> of Alice and Ignatius. Ignatius,
+              useless as he was otherwise, had managed to leave a respectable inheritance for his daughter.
             </p>
             <p>
               Everyone accepted my story—I was a widow who recently left a cooperative in New York. People back then
@@ -144,7 +144,7 @@ export default ({currentSection, inventory, cards}) => {
               depend on anyone. I didn't marry; I've met many kind <ListCard expansions={["men"]}
                 tag="c12-men"
                 card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time.
-              I also paid for those steps around the Astrolith. I remember how much you enjoyed them.
+              And I'm the anonymous donor who funded those steps around the Astrolith—I remember how much you enjoyed them.
             </p>
             <p>
               Then I set up a trust, for all their descendants, when each one turns twenty-five.
@@ -172,7 +172,10 @@ export default ({currentSection, inventory, cards}) => {
               Live in the America as you'd like it to be.
             </p>
             <p>
-              I am sorry only that we did not meet again.
+              I am sorry only that we did not <ListCard expansions={["meet"]}
+                tag="c12-meet"
+                author="lillian"
+                card={<span>We have, though—right here.</span>} /> again.
             </p>
             <p>
               Abby

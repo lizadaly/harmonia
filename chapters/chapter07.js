@@ -290,7 +290,7 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"His current research id kept in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
+            <p>"His current research is kept in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
             producing two annotated journal entries from among other paperwork.</p>
             <p>"Thanks," I said, feeling stupid.</p>
             <p>"Next time just ask! Finding documents is my job."</p>

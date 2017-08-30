@@ -92,7 +92,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal amounts of library books and
-        janitorial equipment. "Why are you so interested in the history of the school?" I asked. I made
+        janitorial equipment. [FIXME add conditional]"Why are you so interested in the history of the school?" I asked. I made
         room for myself by pushing a rolling bucket aside.
       </p>
       <p>"I'm a <ListCard expansions={["legacy admission"]}
@@ -182,7 +182,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
       <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
       the Dean isn't interested in anything that holds up the renovations. Please," she said, "I don't know who else to ask."</p>
-      <p>I'd like to say that in her passion and conviction she reminded me of my younger self, 
+      <p>I'd like to say that in her passion and conviction she reminded me of my younger self,
         but she wasn't that much younger than me. It felt good, though, to feel needed—to
         find someone who thought I could be useful, maybe even heroic.
       </p>

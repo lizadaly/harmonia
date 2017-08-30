@@ -217,7 +217,7 @@ export const frag7 = () => (
         tag="frag-tunneleastern"
         expansions={["eastern tunnel"]}
         nextUnit="section"
-        card={<span>Then that is where I will start.</span>} />, but too little—Elsie prepared well and left almost
+        card={<span>Then that is where I will start digging.</span>} />, but too little—Elsie prepared well and left almost
       nothing behind that would serve as a useful tool.
       (She left the supply of water, I suppose to convince herself that she gave me a fair chance.)
     </p>

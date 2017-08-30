@@ -59,29 +59,26 @@ export const lynn2 = () => (
 export const lynn3 = () => (
   <div>
     <p>
-      I am in shock. I thought—I'd just help out, clean out some of the piles of debris, I don't know.
-      I've had almost nothing to do lately, it's all been Alice, working all through the day and night,
-      in a kind of trance. I don't see her consulting any of Cadwell's papers anymore, as if—
+      I came down this morning after she'd gone to bed. I thought—I'd just help out,
+      take out the food trash, I don't know. I guess I was spying on her. She'd asked me to stay
+      out of her way while she worked on the repairs all through the day and night,
+      in a kind of trance. She said she didn't want to be disturbed, "That's all,"
+      but I know it was because she'd long stopped consulting Cadwell's papers anymore, as if—
     </p>
     <p>
-      I've been avoiding the obvious conclusion for so long. If I'm honest with myself I would have
-      continued in my self-deception except, when I started digging through the pile of old bricks—looking
-      for I don't know what—I found him. Cadwell.
+      That large pile of stones in the back, she'd warned me over and over, "Be careful back there, it's unstable."
+      Fishy, I thought. I decided to just—clean them up. I didn't have to spend much time digging through until I found
+      Cadwell.
+    </p>
+    <p>I assume it's him, anyway, there's little more than a skeleton. Dry rags of clothes still hang from it,
+      a tin cup and bucket by his side. And of course his journal.
     </p>
     <p>
-      I assume it's him, anyway, it was no more than a skeleton, of course. Dry rags of clothes still hung from it,
-      a tin cup and bucket by his side. His water supply, long-depleted?
+      Someone deliberately buried him, but he died here first. I read it, and I—I guess I'd known for a long time.
     </p>
     <p>
-      When I found the first entrance it had been bricked up. The second entrance, under my house,
-      also sealed. I hadn't really thought much about why—Cadwell keeping his own secrets, I suppose.
-    </p>
-    <p>
-      I was almost right. The secret was Cadwell, walled in here for a hundred years.
-    </p>
-    <p>
-      To my shame, I covered him back up. If she knows that I know—well, I guess I can see for himself.
-      But if I play along just a little longer, I'll be able to see that which I've only <List expansions={[["dreamt—"], ["dreamt"]]} tag="lynn-fate" />
+      I covered him back up. If she knows that I found him, and her secret, well, I guess I can see what will happen to me.
+      But if I play along, I'll get the chance to experience what I've only <List expansions={[["dreamt of—"], ["dreamt of"]]} tag="lynn-fate" />
     </p>
   </div>
 )

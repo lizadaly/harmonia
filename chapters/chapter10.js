@@ -54,15 +54,14 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>
-        When I returned to myself my body was a useless marionnette, like I'd slept on all my limbs at once.
-        I was lying on the floor of the chamber. The machine was still
-        churning, making sounds like
-        pieces of itself were banging together, like a pair of shoes in a tumble dryer.
+        When I returned to myself my body was a useless marionnette lying on the floor of the chamber. The machine was still
+        churning, emiting irregular banging sounds like a pair of shoes in a tumble dryer.
         Eventually the banging became less frequent, until there was a final clatter of heavy metal on
-        metal, a resigned wheeze of steam, and then the room was silent and still.
+        metal and a resigned wheeze of steam, and then the room was silent and still.
       </p>
       <p>
-        The chamber door was unsealed. I clumsily fumbled it open and dragged myself out. The upper platform
+        The chamber door was unsealed and ajar. I clumsily fumbled it all the way open and dragged myself out.
+        The upper platform
         was intact and smelled of fresh wood. Small kerosene lamps lit the cavern but they were flickering,
         soon to go out.
       </p>
@@ -85,9 +84,7 @@ export default ({currentSection, inventory, cards}) => {
         objects hand-over-hand for stability. Next to Cadwell's <ListCard expansions={["body"]}
           tag="c10-cadwell"
           card={<span>I'd seen the dead, but only at funerals. I avoided looking directly at him,
-            but I didn't see any obvious wound or injury. I assumed, like Lynn had, that he'd died of <ListCard expansions={["dehyrdration"]}
-              tag="c10-dehydr" forceDir="down"
-              card={<span>And if we were both trapped down here, I might too.</span>} />.
+            but I didn't see any obvious injury.
           </span>}/> lay a bucket, a tin cup, and, crucially, a <List expansions={[["journal"], ["journal"]]} tag="c10-journal" />.
       </p>
     </section>,
@@ -99,30 +96,27 @@ export default ({currentSection, inventory, cards}) => {
         I recognized the handwriting in that note. "Lynn?" I called out, my voice echoing in the massive chamber.
       </p>
       <p>
-        A weak voice replied from far off: "In here."
+        A weak reply from far off: "In here."
       </p>
       <p>I'd entered from the southern tunnel and it was indeed fully blocked, but the other was just
         barely passable. I kicked rocks and boards aside and squeezed my way through, emerging
 
         in   <Map from={inventory.c5_direction}
           to={{
-            archaeologist: "what I recognized as the old root cellar beneath the Science Center",
-            _any: "an old root cellar, flanked on one side by a wooden trough full of sand and wooden storage crates on the other"
+            archaeologist: "what I recognized as the old root cellar (not so old now) beneath the Science Center",
+            _any: "a root cellar, flanked on one side by a trough full of sand and wooden storage crates on the other"
           }}
-             />.
-      </p>
-      <p>
-        <Map from={inventory.c5_direction}
-          to={{
-            archaeologist: "This time, the storage room ",
-            _any: "The storage room "
-          }}
-        /> ended in an earthen staircase leading to a closed door. The stairwell was lit by
+             />.  <Map from={inventory.c5_direction}
+               to={{
+                 archaeologist: "This time, the storage room ",
+                 _any: "The storage room "
+               }}
+                  /> ended in an earthen staircase leading to a closed door. The stairwell was lit by
         a flickering gas lantern and a tantalizing rectangle of sunlight around the doorframe.
       </p>
       <p>
         A man I presumed was Professor Jeffrey Lynn lay at the top of the stairs. He looked much more
-        like an idealized college professor than I did, with a Santa Claus beard and a crumpled bowtie.
+        like a college professor than I did, with a Santa Claus beard and a crumpled bowtie.
         His wild
         expression suggested he thought I was a hallucination.
       </p>
@@ -136,23 +130,24 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The knob turned freely but the door didn't budge when I pushed on it. "I think it's barracaded on the other side,"
-        Lynn said. "I spent, I dunno, a day, maybe more, just getting through the tunnel. I was just too tired to—"
+        Lynn said. "I spent, I think, a day, maybe more, just getting through the tunnel. I was just too tired to—"
       </p>
       <p>
         "I'm not tired," I lied. I <List
-          tag="c10-door" expansions={[["pushed—"], ["pushed hard—"], ["rolled my eyes and slammed into the door with my shoulder."]]} />
+          tag="c10-door" expansions={[["pushed—"], ["pushed harder—"], ["stepped back and slammed into the door with my shoulder."]]} />
       </p>
     </section>,
     <section>
       <p>
-        A scorched metal bar had been braced up against it; it clattered to the floor and the cellar door popped open.
+        A scorched metal bar had been braced up against it; it clattered to the floor and the cellar door popped open
+        into the ruin of a pantry.
       </p>
       <p>
         Immediately my senses were assaulted by the foul smell of burnt wood and rubber. The walls were
         stone and had survived the worst of it, but everything was covered in a layer of blackened soot.
         Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass. I could see through to more
         broken rooms, arranged around a central space completely littered with the remains of the roof.
-        The peak of the Astrolith was just visible among the ruins.
+        The peak of the Astrolith was just visible among burnt beams and scorched furniture.
       </p>
       <p>Nobody was around. The air was drier and
         warmer than—when I'd left.
@@ -160,7 +155,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "Ah, yes, the Great Hall," Lynn said <ListCard tag="c10-hall"
           expansions={["sourly"]}
-          card={<span>I understood his despair. Even if a time machine, he didn't get to see the subject of his life's work.</span>} />.
+          card={<span>I understood his despair. Even with a time machine, he didn't get to see the subject of his life's work.</span>} />.
         He slid himself out through the doorway but then rested against the lintel.
       </p>
       <p>
@@ -182,20 +177,20 @@ export default ({currentSection, inventory, cards}) => {
       <p>***</p>
       <p>
         It was a bright, cloudless day, warm but with a stiff cool breeze, probably late September. Without the
-        Astrolith as an anchor I'd have never recognized where I was. The imposing brick edifices were gone, as were
+        Astrolith as an anchor I'd have never recognized where I was. The imposing brick edifices of the college were absent, as were
         most of the tall trees. Instead of a tidy monolithic green lawn, the ground was covered in a patchwork of
         dirt, clover, and crabgrass. The air smelled of horses.
       </p>
       <p>
         Cadwell described the future as quiet, but I suppose it's what you're used to. For me, this was true quiet—
         no distant
-        buzz of airplanes, low-frequency hum of HVAC systems, or slopping idling of trucks.
+        buzz of airplanes, low-frequency hum of HVAC systems, or sloppy idling of trucks.
         The laughter of crows, the sigh and shuffling of farm animals,
         the sound of a slow wagon crunching over gravel, that was the modern cacophany of life for him.
         To me, these were the sounds of peace, and retreat.
       </p>
       <p>
-        The slope was steeper now, and even the flatter areas were sinuous and bumpy. Where the gymnasium stood for
+        The hillside seemed steeper now, and even the flatter areas were sinuous and bumpy. Where the gymnasium stood for
         me was here a large vegetable garden, shaded by a few twisted pear trees and bordered on one end by
         row of yews. A woman in a plain white
         cap was pulling up greenish pumpkins from a mass of vines. I let her see me.
@@ -219,7 +214,7 @@ export default ({currentSection, inventory, cards}) => {
         Tendrils of her blonde hair poked out from beneath the cap,
         and up close I could see that her neck was deeply <ListCard expansions={["scarred"]} tag="c10-scar"
           card={<span>Remnants of some infection I almost certainly had never needed to worry about.</span>} />.
-        "Which community are you from which allows such reformed attire?"
+        She was inspecting me in turn, which was only fair. She asked, "Which community are you from which allows such reformed attire?"
       </p>
       <p>
         "Blithesdale Farms," I improvised. "Please excuse me, I need to bring this to my friend urgently." My own thirst
@@ -231,7 +226,8 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         I wanted to say I'd return to thank her again, but I didn't want to lie. I just nodded, and scrambled over a hedgerow
-        and between the yew trees. A young girl in a neat brown dress, about six years old, and a boy of the same age were playing in the dirt behind the Adams
+        and between the yew trees. A young girl in a neat brown dress, about six years old, and a boy of the same age were playing in the dirt behind
+        what I clearly recognized as the Adams
         house; they saw me, wide-eyed, but said nothing.
       </p>
       <p>
@@ -262,7 +258,7 @@ export default ({currentSection, inventory, cards}) => {
         just watched from afar.
       </p>
       <p>
-        When the pail emerged into daylight I reached down and hoisted it the rest of the way. This time the water,
+        When the pail emerged into daylight I reached down and hoisted it the rest of the way. This time when I drank, the water,
         drawn from further below, was clean and cool.
       </p>
       <p>
@@ -273,16 +269,16 @@ export default ({currentSection, inventory, cards}) => {
         "What's your name?" I said.
       </p>
       <p>
-        "Lillian," she replied.
+        "Lilly," she replied.
       </p>
       <p>
         "I know a young woman named Lillian," I said. "You <List expansions={[["remind me a little of her—"], ["remind me—"]]}
-                                                             tag="c10-remind" />
+                                                             tag="c10-remind" />"
       </p>
     </section>,
     <section>
-      <p>The girl grabbed my arm suddenly. "This way," she said. Instead of crossing the broad open field to the burnt-out
-        husk, she pulled me into a narrow one-story clapboard building, shaped like a stable.
+      <p>The girl grabbed my arm suddenly. "This way," she said. Instead of crossing the broad open field to the
+        ruin of the hall, she pulled me into a narrow one-story clapboard building, shaped like a stable.
       </p>
       <p>
         The interior was effectively a single room, a long communal kitchen. A dozen women, most dressed in loose pants
@@ -290,7 +286,7 @@ export default ({currentSection, inventory, cards}) => {
         and stations for soup and large cabinets full of white plates; I didn't see any meat. Most women were bare-headed, their hair
         tied back in loose buns. I
         stopped short at the entrance,
-        and they slowly began to notice me, pausing their work to just stare at me.
+        and they slowly began to notice me, pausing their work to just stare.
       </p>
       <p>
         "Come through here," little Lillian urged. I weaved between the women, muttering apologies. The girl led me out a wide

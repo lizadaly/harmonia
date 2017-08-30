@@ -13,7 +13,6 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <heading>
         <h2>Chapter 11</h2>
-        <h3>November 20, 1889</h3>
         <blockquote>
           "God did not make us perfect. He left us something to do for ourselves."
 
@@ -25,27 +24,29 @@ export default ({currentSection, inventory, cards}) => {
         climb up and over the Astrolith like it was a jungle gym.
       </p>
       <p>
-        "I asked her who her parents were," I said. "She said she didn't know."
+        "Her name is Lilly. I asked her who her parents were," I said. "She said she didn't know."
       </p>
       <p>
         He was already looking better, but he remained seated on the floor, the pail gripped in both hands.
         "They raised their children communally," he said, then paused. "Raise, I guess."
       </p>
       <p>
-        "I saw, but still shouldn't she—"
+        "So I gathered, but still, shouldn't she—"
       </p>
       <p>
-        "They practiced eugenics," he said, and then quickly added, "Not so bad as you might be thinking, but, still."
-        He considered the girl. "More like selective breeding. Women were...<ListCard expansions={["encouraged"]}
+        "They practiced eugenics," he said, and then quickly added, "Not so bad as you might be thinking, but, still. More
+        like selective breeding. Women were <ListCard expansions={["encouraged"]}
           tag="c11-encouraged"
           nextUnit="section"
-          card={<span>Lynn seemed like a good person, but I doubt many women would describe that arrangement as "not so bad."</span>} />—to
+          card={<span>Lynn seemed like a good person, but I doubt many women would describe that arrangement as "not so bad."</span>} />,
+        I guess they'd say, to
         take the sexual partners assigned by the Association."
       </p>
     </section>,
     <section>
       <p>
-        "She's Cadwell's daughter," I said. "She said Cadwell was her surname, but it just didn't mean anything to her."
+        "She said Cadwell was her surname, but she didn't connect that with any individual adults. She understands
+        what parent are, I think, but just doesn't believe she has them."
       </p>
       <p>
         He sat up in alarm. "So she's also—"
@@ -56,16 +57,16 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "You don't even know her," he retorted. "Not that I did either, it seems."
       </p>
-      <p>I shrugged, unable to explain. "Do you know how to work the device?"</p>
+      <p>I shrugged, unwilling to argue over a point I was hardly sure of myself. "Do you know how to work the device?"</p>
       <p>
         "I think so, assuming it's still intact. It's doesn't have much in the way of controls. There's no big dial with years on it.
         You go forward if you're back, or back if you're forward. Each trip lands you a little further ahead in time.
-        Cadwell never understood how the thing worked."
-        He stopped, remembering that Cadwell seemed to know very little. "Maybe Alice did, I don't know."
+        Cadwell never really understood how the thing worked."
+        He sighed. "I guess he didn't really build much of it at all."
       </p>
       <p>
-        "That's good enough for me," I said. I looked back at the girl, who had stopped playing and was just watching us.
-        "You know," I said thoughtfully, "Lillian Horace, your student...she's a legacy admission. She said her
+        "I guess we'll have to take our chances," I said. I looked back at the girl, who had stopped playing and was just watching us.
+        "Lillian Horace, your student, she said her
         mother and grandmother both—"
       </p>
       <p>
@@ -95,7 +96,7 @@ export default ({currentSection, inventory, cards}) => {
         enough space for an adult to squeeze past. I grabbed a few loose planks and leaned them up against it.
       </p>
       <p>
-        "Lillian, this is very important. Are you listening?"
+        "Lilly, this is very important. Are you listening?"
       </p>
       <p>
         She nodded seriously.
@@ -106,10 +107,11 @@ export default ({currentSection, inventory, cards}) => {
         Nobody else can know about this entrance, and you <i>can't follow me</i>. Do you understand?"
       </p>
       <p>
-        She nodded again. I was anxious to get to the machine, but—"Lillian, do you know if you're going to...leave this place?"
+        She nodded again. I was anxious to get to the machine, but—"Lilly, do you know if you're going to stay here, after
+        that a big fire?"
       </p>
       <p>
-        "Miss Adams said I might go live with her and Saul. <ListCard expansions={["Saul's"]} tag="c11-saul"
+        "Miss Adams said I might go live with her and Saul. <ListCard expansions={["He's"]} tag="c11-saul"
           card={<span>I assumed this was the boy with whom she was playing.</span>} /> my friend."
       </p>
       <p>
@@ -119,7 +121,7 @@ export default ({currentSection, inventory, cards}) => {
         The girl <ListCard expansions={["shrugged"]}
           tag="c11-shrug"
           card={<span>Raised communally, one adult was probably the same to her as any other.</span>} />. I got down to her eye
-        level. "Well, it was very nice to meet you, Miss Lillian. If I don't see you again, take care of yourself."
+        level. "Well, it was very nice to meet you, Miss Lilly. If I don't see you again, take care of yourself."
       </p>
       <p>
         She looked down shyly. "Yes ma'am."
@@ -137,13 +139,13 @@ export default ({currentSection, inventory, cards}) => {
         direction you go. I'm almost certain it's worse since you came through."
       </p>
       <p>
-        "Sorry, that was careless of me," I said. That was spiteful but I was frustrated. I was
-        worried for the girl, who was in no way my responsibility.
+        "Sorry, that was careless of me," I said irritably. I was
+        worried for the girl, even though she was in no way my responsibility.
       </p>
       <p>
-        I decided the best thing I could do would be give Cadwell a semblance of a <ListCard expansions={["burial"]}
+        I decided the best thing I could do with my nervous energy was to give Cadwell a semblance of a <ListCard expansions={["burial"]}
           tag="c11-burial"
-          card={<span>Though if I'm being honest, it was mostly for our benefit—to not have to look at him.</span>} />.
+          card={<span>Though if I'm being honest, it was mostly for my benefit—to not have to look at him.</span>} />.
         One of the collapsed tunnels had been lined with bricks and they had spilled out into the cavern. I used them
         to make a crude  <ListCard expansions={["cairn"]}
           tag="c11-cairn"
@@ -167,7 +169,7 @@ export default ({currentSection, inventory, cards}) => {
         "I <i>want</i> to stay. I've been studying Futuria my entire life, preparing for this without even realizing it."
       </p>
       <p>
-        "I'll follow you, I'll get someone else to—"
+        "No, <i>you</i> go and I'll follow, I'll get someone else, maybe the girl, to—"
       </p>
       <p>
         Lynn started to argue and then ducked as a rivet came shooting out of the machine like a bullet. "There's not
@@ -198,9 +200,9 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           him: <div>
             <p>
-              I closed the chamber door quietly and pulled on the lever that engaged the lock. "Okay, I've tightened it—"
+              I closed the chamber door and pulled on the lever that engaged the lock. "Okay, I've tightened it—"
               Lynn said, turning back around and realizing he was trapped. "No!" he mouthed, putting his hand
-              up against the glass.
+              up against the glass. He sounded far away already.
             </p>
             <p>
               I had no idea if anyone was waiting for him in 1998. I'd never asked if he had parents or siblings
@@ -209,8 +211,8 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               When I reached the ground, one of the rubber hoses had snapped loose and whip-snapped over my head;
               the coal stove was shaking
-              like a thing alive. Lynn was right—there could be no next journey. I looked up at the chamber and
-              he nodded snowly—I like to think he meant to thank me, after all—and grasped the handle. I nodded back,
+              like a thing alive. Lynn was right: there could be no next journey. I looked up at the chamber and
+              he nodded—I like to think he meant to thank me—and grasped the handle. I nodded back,
               then with two hands and all my
               strength, <List expansions={[["pulled"], ["pulled"]]} tag="c11-lever" /> hard on the massive lever.
             </p>
@@ -245,7 +247,7 @@ export default ({currentSection, inventory, cards}) => {
               I yelled out: "Take care of the girl."
               I don't know if he heard.
             </p>
-            <p>A moment later he pulled the giant lever and I was blown apart like a dandelion in the wind.</p>            
+            <p>A moment later he pulled the giant lever and I was blown apart like a dandelion in the wind.</p>
           </div>
         }} />
       <NextChapter chapter={12} />
