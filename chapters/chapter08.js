@@ -226,7 +226,7 @@ export default ({currentSection, inventory, cards}) => {
                     "I'll go," Lillian said, immediately disappearing into the cellar.
                   </p>
                   <p>The archivist and I waited by the entrance for several long minutes. Just as I started to worry,
-                    Lillian opened the front door, her face grave. "You're gonna want to see this."
+                    Lillian opened the front door, her face grave. "You're gonna want to <List expansions={[["come down"], ["come down"]]} tag="c8_see" /> into this basement."
                   </p>
                 </div>
               }} />
@@ -286,6 +286,9 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               The cellar door was next to the old stone hearth.  It was a small entrance, obviously original, and there was no light switch by the
               top of the stairs.
+            </p>
+            <p>
+              "The bulkhead led straight down there through a different entrance," Lillian said. "I could hear something running, like a machine. Something big."
             </p>
             <p>
               I thanked <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> for her help in
@@ -384,11 +387,12 @@ export default ({currentSection, inventory, cards}) => {
                                                                                                 tag="c8_move_box" />.
                   </span>}/>
                 }} /></span>
-          }} /> and tools were all partially buried in a thick layer of brown dirt. Nothing looked new
-        enough to have belonged to Lynn.
+          }} /> and tools were all partially buried in a thick layer of brown dirt. I could hear a rumbling deep in the earth—not necessarily below me, but almost
+        all around me. Nothing looked new
+        enough to have belonged to Lynn and I didn't see any other promising exits.
       </p>
       <p>
-        Yet the door had been open—<em>someone</em> had been down here. I'd just have to <List expansions={[["search"], ["search"]]} tag="c8_search"
+        Yet the door had been open—<em>someone</em> had been down here, and that sound—I'd just have to <List expansions={[["search"], ["search"]]} tag="c8_search"
                                 nextUnit="none" /> carefully.
       </p>
     </section>,
@@ -442,16 +446,16 @@ export default ({currentSection, inventory, cards}) => {
       in surprise. There was no echo; the sound was deadened by the encroaching earth.`]} tag="c8-wall" /> and descended even further.
       </p>
       <p>
-        Once I turned the corner, I heard a deep mechanical humming. From this point on the tunnel was getting wider, until I
+        Once I turned the corner, the deep mechanical humming intensified. From this point on the tunnel was getting wider, until I
         stumbled down a short step and I was no longer in a tunnel at all.
       </p>
       <p>
         I trained the flashlight around the room but the beam was insufficient and nothing I saw made any sense.  I could only perceive disjointed scenes that didn't form a coherent whole:
         curved metal plates, heavily corroded and pitted, vibrating furiously; cables and hoses snaking
         upwards and out of sight, giving off steam and dirty smoke. Motes of dust and soot churned in the air,
-        and my weak light only served to reflect them back at me like snow—a disorienting visual static. I called out
-        but my voice was swallowed by the mechanical churning; if anyone was there they could not hear me.
-        I could not make out the scale of the space but the resonant sound told me the walls—and ceiling—we far, far away.
+        and my weak light only served to reflect them back at me in a disorienting visual static. I called out
+        but the sound of my voice was swallowed by the mechanical churning.
+        I could not make out the scale of the space but the resonant sound told me the walls—and ceiling—were far, far away.
       </p>
       <p>
         I wasn't in a root cellar anymore. This was a cavern, filled with a great machine.

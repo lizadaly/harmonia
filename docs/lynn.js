@@ -10,8 +10,9 @@ export const lynn1 = () => (
       her way this will all be rubble in the end.
     </p>
     <p>
-      The demolition was easy work: the brick encasing the final tunnel was shoddy and the mortar
-      had almost distintegrated. The hard part was actually crawling through—the tunnel wasn't dug wide enough to accommodate a sedentary modern
+      The excavation was tedious but uncomplicated work: loose soil, rocks, and fragments of burnt timber—I assume
+      these were parts of the Great Hall.
+      The hard part was actually crawling through—the original tunnel wasn't dug wide enough to accommodate a sedentary modern
       man. Hunched over as I was, I wasn't able to take in the chamber
       until I was fully inside it, and then...
     </p>
@@ -77,7 +78,7 @@ export const lynn3 = () => (
       Someone deliberately buried him, but he died here first. I read it, and I—I guess I'd known for a long time.
     </p>
     <p>
-      I covered him back up. If she knows that I found him, and her secret, well, I guess I can see what will happen to me.
+      I covered him back up. If she knows that I found him, and her secret, well, I can see what will happen to me.
       But if I play along, I'll get the chance to experience what I've only <List expansions={[["dreamt of—"], ["dreamt of"]]} tag="lynn-fate" />
     </p>
   </div>

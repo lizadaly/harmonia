@@ -54,10 +54,10 @@ export default ({currentSection, inventory, cards}) => {
         </blockquote>
       </heading>
       <p>
-        When I returned to myself my body was a useless marionnette lying on the floor of the chamber. The machine was still
+        When I returned to myself, my body was a numb marionnette on the floor of the chamber. The machine was still
         churning, emiting irregular banging sounds like a pair of shoes in a tumble dryer.
-        Eventually the banging became less frequent, until there was a final clatter of heavy metal on
-        metal and a resigned wheeze of steam, and then the room was silent and still.
+        Eventually the banging became less frequent, until there was a final clatter of metal on
+        metal and a resigned wheeze of steam, and then the room was silent.
       </p>
       <p>
         The chamber door was unsealed and ajar. I clumsily fumbled it all the way open and dragged myself out.
@@ -143,8 +143,8 @@ export default ({currentSection, inventory, cards}) => {
         into the ruin of a pantry.
       </p>
       <p>
-        Immediately my senses were assaulted by the foul smell of burnt wood and rubber. The walls were
-        stone and had survived the worst of it, but everything was covered in a layer of blackened soot.
+        Immediately my senses were assaulted by the smell of burnt wood and rubber. The walls were
+        stone and had survived the worst of it, but everything else was singed or powdered in soot.
         Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass. I could see through to more
         broken rooms, arranged around a central space completely littered with the remains of the roof.
         The peak of the Astrolith was just visible among burnt beams and scorched furniture.
@@ -153,23 +153,23 @@ export default ({currentSection, inventory, cards}) => {
         warmer than—when I'd left.
       </p>
       <p>
-        "Ah, yes, the Great Hall," Lynn said <ListCard tag="c10-hall"
+        "Ah, yes, I finally get to see the Great Hall," Lynn said <ListCard tag="c10-hall"
           expansions={["sourly"]}
-          card={<span>I understood his despair. Even with a time machine, he didn't get to see the subject of his life's work.</span>} />.
-        He slid himself out through the doorway but then rested against the lintel.
+          card={<span>I understood his despair. He arrived too late to see it, even with a time machine.</span>} />.
+        He tried to stand but couldn't, and rested against the lintel.
       </p>
       <p>
         "I'll find some water," I said. I noticed that he was dressed archaically, with a
         simple <ListCard expansions={["vest"]}
           tag="c10-dressed" card={<span>A pocketwatch dangled from his vest, which I found obscurely
-          charming yet, in a way, fundamentally useless.</span>} /> and wool pants. "I guess you were prepared to meet the locals."
+          charming yet, in a way, weirdly useless.</span>} /> and wool pants. "I guess you were prepared to meet the locals."
       </p>
       <p>
-        "It was my first time through; we agreed I'd go for just an hour," he said, his voice a whisper. "But I saw her face as she threw the
+        "It to be my first time through," he said, his voice a whisper. "But I saw her face as she threw the
         lever; she had no intention of bringing me back."
       </p>
       <p>
-        I nodded grimly. "I'll have to try not to be seen," I said. "But I'll <List expansions={[["return"], ["return"]]}
+        I nodded grimly. "I'll have to avoid being seen," I said. "But I'll <List expansions={[["return"], ["return"]]}
                                                                                 tag="c10-return" /> soon, I promise."
       </p>
     </section>,
@@ -177,24 +177,24 @@ export default ({currentSection, inventory, cards}) => {
       <p>***</p>
       <p>
         It was a bright, cloudless day, warm but with a stiff cool breeze, probably late September. Without the
-        Astrolith as an anchor I'd have never recognized where I was. The imposing brick edifices of the college were absent, as were
+        Astrolith as a reference point I'd have never recognized where I was. The imposing brick edifices of the college were absent, as were
         most of the tall trees. Instead of a tidy monolithic green lawn, the ground was covered in a patchwork of
         dirt, clover, and crabgrass. The air smelled of horses.
       </p>
       <p>
-        Cadwell described the future as quiet, but I suppose it's what you're used to. For me, this was true quiet—
-        no distant
-        buzz of airplanes, low-frequency hum of HVAC systems, or sloppy idling of trucks.
+        Cadwell described our future as quiet, but I suppose it's what you're used to. For me, this was true quiet—no distant
+        buzz of airplanes, hum of HVAC systems, or sloppy idling of trucks.
         The laughter of crows, the sigh and shuffling of farm animals,
         the sound of a slow wagon crunching over gravel, that was the modern cacophany of life for him.
         To me, these were the sounds of peace, and retreat.
       </p>
       <p>
-        The hillside seemed steeper now, and even the flatter areas were sinuous and bumpy. Where the gymnasium stood for
-        me was here a large vegetable garden, shaded by a few twisted pear trees and bordered on one end by
-        row of yews. A woman in a plain white
-        cap was pulling up greenish pumpkins from a mass of vines. I let her see me.
+        In place of the college gymnasium was a large vegetable garden, shaded by a few twisted pear trees and bordered on one end by
+        a tidy hedge. A woman in a plain white
+        cap was pulling up greenish pumpkins from a mass of vines. It might be safe to approach her; she looked otherwise alone.
+        TODO path here
       </p>
+
       <p>
         "Hello," I said, cautiously. I smiled and held out my hands, palms up.
       </p>
@@ -217,7 +217,7 @@ export default ({currentSection, inventory, cards}) => {
         She was inspecting me in turn, which was only fair. She asked, "Which community are you from which allows such reformed attire?"
       </p>
       <p>
-        "Blithesdale Farms," I improvised. "Please excuse me, I need to bring this to my friend urgently." My own thirst
+        "Blithedale Farms," I improvised. "Please excuse me, I need to bring this to my friend urgently." My own thirst
         was now overwhelming.
       </p>
       <p>

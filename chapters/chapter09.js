@@ -68,10 +68,10 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>"The Astrolith," I murmured. The color and composition of the rock was the same, and the shape of the <ListCard expansions={["peak"]} tag="c9-tip"
         card={<span>The plaque by the meteorite estimated its weight at 30 tons, assuming the bulk of it was
-        above-ground. What I saw in front of me indicating this was laughably wrong.</span>} /> in the sketch was unmistakable.
+        above-ground. What I saw in front of me demonstrated that to be laughably wrong.</span>} /> in the sketch was unmistakable.
       </p>
       <p>
-        The machinery depicted in the drawing was all, in serious disrepair but demonstrably still functional. Rubber tubes had cracked or
+        The machinery depicted in the drawing was in serious disrepair but demonstrably still functional. Rubber tubes had cracked or
         sprung from their sockets. The
         brass cranks and gears were coated in a thick patina. The wooden platform looked especially unstable,
         and the enormous wheel and crankshaft
@@ -79,7 +79,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         Yet <ListCard expansions={["someone"]} tag="c9_repair"
-          card={<span>Lynn, surely, though he must've been pretty handy for an English professor.</span>} /> had
+          card={<span>Lynn, presumably, though he must've been pretty handy for an English professor.</span>} /> had
         been restoring it. All along the edge of the cavern were modern tools and
         materials—shiny new wire spools, a tablesaw, neat stacks of fresh lumber.
       </p>
@@ -90,33 +90,32 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I approached the thig carefully, as one would a lion in a cage. Surely this was no bomb.
+        I approached the device carefully, as one would a lion in a cage. Surely this was no bomb.
         Up close, I could see that the wooden platform was mostly rebuilt. There was a new handle on the enormous lever by the base,
-        mounted on a half-moon track like a <ListCard expansions={["giant 'on' switch"]} tag="c9_switch"
-          card={<span>The original mechanism was, in fact, a railroad switch stand.</span>} />.
+        mounted on a half-moon track like a <ListCard expansions={["railroad track switch"]} tag="c9_switch"
+          card={<span>For good reason—the machine was largely pieced together from farm and railroad parts.</span>} />.
         A handcart full of fresh coal rested next to a cast-iron stove.
       </p>
-      <p>Tantalizingly, the ladder led up to a two-stage platform which seemed to disappear into the
-        meteor itself. I climbed up a few rungs, just to get a <List expansions={[["better look over the edge—"], ["better look—"]]}
+      <p>Tantalizingly, the ladder led up to a two-stage platform. The upper platform ended in a chamber which seemed carved out of the
+        meteor itself. I climbed up the rungs, just to get a <List expansions={[["better look over the edge—"], ["better look—"]]}
                                                                  tag="c9-look" />
       </p>
     </section>,
     <section>
       <p>
-        On the first platform was a small work area. Another milkcrate, this time flipped upside-down for use as a
-        seat, next to a gas camping lamp and a notebook. This was starting to feel staged, as if these notebooks were
-        props leading me on. I <ListCard expansions={["climbed up"]}
+        I looked over the edge of the first platform. Someone had it set up a small work area: another milk crate, a gas camping lamp,
+        and a notebook—so perfectly arranged that they felt like props. I <ListCard expansions={["climbed up"]}
           tag="c9-climbed"
           nextUnit="section"
           card={<span>I don't regret walking into this trap, not for one moment.</span>} /> anyway.
       </p>
     </section>,
     <section>
-      <p>About ten feet up, I was close to the huge
-        wheel-like mechanism and could make out gleaming new copper threads interwoven with the old.
+      <p>I was about about ten feet off the ground now, and close to the huge
+        wheel-like mechanism.
         The wheel seemed designed to rotate freely but was just vibrating now, as if in anticipation.
-        It was obvious how much the machine had been pieced together
-        from spare parts.
+        I could make out gleaming new copper threads interwoven with the old. From this distance, it was
+        obvious how much the machine had been pieced together from 19th century spare parts.
       </p>
       <p>Looking up, I could see the meteorite disappear into the top of the cavern, which was
         held together just by packed dirt and a dense web of roots. I sensed that the cavern itself was natural,
@@ -124,10 +123,17 @@ export default ({currentSection, inventory, cards}) => {
         years ago.
       </p>
       <p>
-        I picked up the notebook. It had a recent date on the cover in Lynn's handwriting. It was largely
-        blank, just two short fragments, hastily written:
+        I picked up the notebook. It had a recent date on the cover in Lynn's handwriting—this was the personal
+        journal I'd been searching for. To my disappointment, it was largely
+        blank, just two short <List expansions={[["fragments"], ["fragments"]]}
+                                tag="c9-frag" />, hastily written:
       </p>
+    </section>,
+    <section>
       <Reader inventory={inventory} docs={[docs.lynn1]} />
+    </section>,
+    <section>
+      <p>That entry just stopped. The next page picked up a few days later:</p>
       <Reader inventory={inventory} docs={[docs.lynn2]} />
 
       <p>
@@ -161,12 +167,12 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I felt a shove and I stumbled into the chamber. The chamber door was slammed shut. I heard a
-        curious sucking noise and felt my ears pop. The rumble of the engine was still audible, but muted,
-        yet I could also <i>feel</i> it, soothing and calm, through the meteor itself.
+        Someone shoved me from behind and I stumbled into the chamber. The door was slammed shut. I heard a
+        curious sucking noise and felt my ears pop. The rumble of the engine was muted but still audible,
+        yet I could also <i>feel</i> it, strangely soothing, even calm, eminating through the meteor itself.
       </p>
       <p>
-        Alice Gilman regarded me blankly through the glass of the chamber.
+        Alice Gilman regarded me blankly through the sealed glass door.
       </p>
       <p>
         "You're <ListCard expansions={["Elsie Cadwell"]} tag="c9-short"
@@ -183,7 +189,7 @@ export default ({currentSection, inventory, cards}) => {
         you'll grab that handle. I'm going to pull the lever now."
       </p>
       <p>
-        The chamber went utterly silent, a vaccuum of sound and perfectly still. I grasped the handle
+        The chamber went utterly silent, a vaccuum of sound and perfectly still air. I grasped the handle
         with both hands. I didn't hear a thing, but I guess she pulled that lever.
       </p>
       <NextChapter chapter={10} />

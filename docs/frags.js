@@ -7,10 +7,10 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
     <h1>September 30, 1889</h1>
     <p> At last! The veil between the worlds seemed especially
       thin, the weather fine, and my spirits uplifted. I was determined that this was the day
-      my journal along the beam. E. was hesistant, but ever is she so. She must be made to understand
+      for my first journey in the Instrument. E. was hesistant, but ever is she so. She must be made to understand
       that this is my destiny.
     </p>
-    <p>Once the machine was engaged, the familiar shadow fell across my vision and the
+    <p>Once the machine was engaged, a shadow fell across my vision and the
       nerves in my extremities became excited. I felt the galvanic force pass through
       my palm and out my feet, then reverse, and then the feeling of sudden dissolution
       of the Spirit, like a dandelion head, gone to seed and blown by a sudden puff of breath.
@@ -26,9 +26,9 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
         card={<span>Historical Committee brought this fragment of an epistolary novel (?) to my attention.
           Another good example of waking in the future, but I can't attribute this to any
           known utopian writer. Did one of the Futurians write it?
-        </span>} /> again.
+        </span>} />.
     </p>
-    <p>I was struck this time by the carriages: great enclosures of iron and glass, which moved without the aid
+    <p>I was astonished first by the carriages: great enclosures of iron and glass, which moved without the aid
       of <Map from={inventory.frag1_first}
         to={{ _undefined: "beasts or men, and which gave off no steam.",
           _any: <span>
@@ -43,7 +43,7 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
 
 export const frag2 = ({inventory}) =>  {
   return <div>
-    <h1>September 17, 1889</h1>
+    <h1>July 17, 1889</h1>
     <p>
       I resume after a lull in my work; our neighbors were becoming more <ListCard author="lynn"
         tag="frag2-vocal"
@@ -127,7 +127,7 @@ export const frag4 = ({inventory, note=false}) =>  {
 
 export const frag5 = () =>  (
   <div>
-    <h1>June 2, 1887</h1>
+    <h1>June 2, 1889</h1>
     <p>
       Is there anything more beautiful than Futuria in the summer? We are in high spirits, as yet more members
       have <ListCard author="lynn" expansions={["joined"]} tag="frag-pop" author="lynn"
@@ -151,7 +151,7 @@ export const frag5 = () =>  (
 
 export const frag6 = () =>  (
   <div>
-    <h1>February 25, 1887</h1>
+    <h1>August 1, 1889</h1>
     <p>I have completed our experiments with small animals: first chickens, and then dogs.
       For the most part, they have all returned
       successfully, and as such I am convinced of the readiness of the device for a human being.
@@ -197,20 +197,24 @@ export const frag7 = () => (
       returned, she was in a strange temper. She grabbed hold of me—with such passion!—and apologized
       for her recent behavior, then begged me to let her go "one more time." Because I am a kind and
       generous husband, I agreed—so foolish!
-      I feared the journeys were too exhausting for her nervous disposition, you see,
-      and I wonder now whether her earlier trips
+      I feared the journeys had been a drain on her nervous disposition, you see,
+      and I wonder now whether these trips
       had caused some kind of mental derangement. Certainly there is nothing else to account for her
       recent turn.
     </p>
     <p>
-      After she went through there was an explosion. Smoke wafted through the
-      tunnels and then subsided. When I attempted to investigate, I discovered that the tunnels
-      were blocked by debris.
+      When I pulled the lever, she dissipated as usual but thence followed a distant explosion. Dirt wafted through the
+      tunnels, briefly choking me. When I attempted to investigate, I discovered that the tunnels
+      were blocked by debris. Within an hour, tendrils of smoke were curling into the chamber, and I
+      realized the Great Hall must be aflame.
     </p>
     <p>
       In retrospect I should have set about immediately removing it, but I assumed that a rescue
-      would be soon forthcoming. There has not been. I do not know the extent of the damage above;
-      perhaps the entire village is in ashes.
+      would be soon forthcoming. There wasn't one; and of course there would not be. We had taken such
+      care for our work to remain hidden.
+    </p>
+    <p>I do not know the extent of the damage above me;
+      perhaps the entire community is in ashes.
     </p>
     <p>
       I made some headway in clearing the <ListCard author="lynn"
@@ -219,7 +223,7 @@ export const frag7 = () => (
         nextUnit="section"
         card={<span>Then that is where I will start digging.</span>} />, but too little—Elsie prepared well and left almost
       nothing behind that would serve as a useful tool.
-      (She left the supply of water, I suppose to convince herself that she gave me a fair chance.)
+      (She left the supply of water, I suppose to convince herself that she gave me a fair chance. It is long gone now.)
     </p>
 
     <p>

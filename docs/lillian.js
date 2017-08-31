@@ -20,7 +20,7 @@ export const lillian1 = () => (
       Uncle not arrived at our community. (I know he is not my real Uncle, but that is what I call him.)
     </p>
     <p>
-      If not for you, I would not have been able to stay here and attend what is now Blithesdale College. It
+      If not for you, I would not have been able to stay here and attend what is now Blithedale College. It
       is likely I would have attended no college at all. If it is one thing my unconventional
       upbringing has taught me, it is the importance of education.
       Uncle was adamant that I be part of the first graduating class.

@@ -24,7 +24,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>It was nearly midnight when I finally arrived on campus and the weather was
         getting worse. The last hour of the drive was a dark and lonely ascent into
         deeply forested foothills. I hadn't seen a town for miles when I finally
-        came up on the sign for <ListCard expansions={["Blithedale College"]}
+        came upon the sign for <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
           Massachusetts like a bookmark.</span>} />. This little village would be my home now.
@@ -48,10 +48,10 @@ export default ({currentSection, inventory, cards}) => {
         aging car was fishtailing everywhere and I nearly sideswiped a
       couple trees.</p>
       <p>
-        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm mugs"]}
+        I'd hoped to arrive hours earlier, to <ListCard expansions={["sip warm brandy"]}
           tag="c1-cider"
-          card={<span>I admit I was hazy on what real professors did in their free time.</span>} />  of brandy with
-        the rest of the faculty and argue about transcendentalism. At the very least I needed to
+          card={<span>I admit I was hazy on what real professors did in their free time.</span>} /> with
+        the faculty and argue about transcendentalism. At the very least I needed to
         know where I'd be sleeping. Nobody was here to welcome me; the buildings were dark and
         shuttered, with only slivers of weak light holding the night at bay.
       </p>
@@ -68,7 +68,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the names of
     professors and adjuncts. I called out a hello, but no one answered.</p>
-    <p>I recognized a few names here and there but I was hunting for one door in particular—the missing
+    <p>I recognized a few names here and there but I was hunting for one door in particular—the absent
       instructor I'd been hired to
       replace. I found it at the
       end of the row: <ListCard expansions={['"Professor Jeffrey Lynn"']}
@@ -87,7 +87,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       His desk was a special kind of academic disaster, but a small worktable by the doorway held just a single stack of papers.
-      I recognized a draft of my class syllabus and <ListCard expansions={["picked it up"]}
+      I recognized a draft of his class syllabus and <ListCard expansions={["picked it up"]}
         tag="c1_syllabus"
         nextUnit="section"
         card={<span>Look, if he didn't want somebody going through his things, he shouldn't
@@ -114,7 +114,7 @@ export default ({currentSection, inventory, cards}) => {
     <Reader inventory={inventory} docs={[docs.age1]} />
   </section>,
   <section>
-    <p>Curious, I turned to the last page on the pile. It wasn't the last novel from the syllabus,
+    <p>Curious, I turned to the final page in the pile. It wasn't the third novel from the syllabus,
       but instead a fragile piece of
       yellowed writing paper, <ListCard expansions={["handwritten"]}
         tag="c2_writing"
@@ -126,11 +126,11 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>The papers were abruptly snatched out of my hand.
     </p>
-    <p> "Excuse me, what are you doing?" I looked up to
-      see a woman regarding me with suspicion from the doorway.
-      Her hair was long and unstyled, and she wore an ankle-length solid blue dress
+    <p> "Excuse me, what are you doing?" A woman was silhouetted in the doorway,
+      regarding me with suspicion.
+      Her hair was long and plain; she wore an ankle-length solid blue dress
       and carried a flashlight and leather satchel.
-      The beam was pointed directly into my face.
+      The beam was pointed directly at my face.
     </p>
     <p>I reminded myself that I was invited here and didn't need to <ListCard
       expansions={["apologize"]}
@@ -153,9 +153,9 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>
       The faculty residence was as dark and quiet as the rest of the campus. If anyone else was living there,
-      they weren't living it up. "You can stay here," she said, gesturing into a room with a single small window
+      they kept to themselves. "You can stay here," she said, gesturing at a room with a single small window
       and <ListCard expansions={["spartan"]} tag="c2-room"
-        card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wooden furnishings.
+        card={<span>Honestly I was just happy I wasn't in a snow-filled ditch on the side of the road.</span>} /> wood furnishings.
       I dropped everything on the floor, mumbled my thanks, and collapsed on the bed as she closed the door. Only
       as I was drifting off did I realize she'd never
       told me her name.

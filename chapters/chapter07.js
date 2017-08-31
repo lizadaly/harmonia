@@ -55,7 +55,7 @@ export default ({currentSection, inventory, cards}) => {
           burglary: <div>
             <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
               Lynn's office now and I'd just have to hope there was still material to find after she'd done a sweep.
-              I'd just have to wait for her to leave, and anyway I needed time to figure out how one broke into an office.
+              Anyway I needed time to figure out how one broke into an office.
             </p>
             <p>
               I finished class, a little distracted, and took Lillian aside to tell her to meet with the librarian. "Obviously
@@ -167,17 +167,15 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           burglary: <div>
             <p>This time the noise attracted a woman in the office across the hall. I didn't <ListCard tag="c7_reminded"
-              expansions={["recognize"]} card={<span>Though she had a strong working-class Boston accent that
-              painfully reminded me of home.</span>} /> her from any of my
+              expansions={["recognize"]} card={<span>Like me, she had a working-class accent—maybe Brooklyn?</span>} /> her from any of my
               dining hall visits. "Oh,
               are you Abby Fuller?" she asked.
             </p>
-            <p>Her name was __ and she taught Creative Writing. Since she already knew who I was,
-              I didn't bother with the long implausible story
-              I'd been formulating in case I was caught, and simply said I'd lost Lynn's key.
+            <p>Her name was Lois and she taught Creative Writing. I'd come up with a long implausible story
+              in case I was caught, but in the moment I panicked and simply said I'd lost Lynn's key.
             </p>
             <p>"I'm afraid all the locks are different so my key won't help," she said, and then added, slyly, "But the windows don't lock at all."</p>
-            <p>Minutes later I was murmuring thanks to 20th century building codes, and dropped into Lynn's office through
+            <p>She lead me around the back of the building and waited to see if I made it, all despite the freezing rain. Minutes later, thanks to 20th century building codes, I had dropped into Lynn's office through
             a window off the fire escape.</p>
             <p>
               "Nice meeting you," I heard her yell out. "<ListCard expansions={["Call me"]}
@@ -301,7 +299,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           burglary: <div>
             <p>
-              I found what I was looking for in the <FromInventory from={inventory.c7_search} />, hidden inside
+              I found what I was looking for, hidden inside
               some <ListCard expansions={["library books"]} tag="c7_library" card={<span>Now quite overdue.</span>} />:
               two journal entries, heavily annotated by Lynn himself:
             </p>
@@ -411,7 +409,7 @@ export default ({currentSection, inventory, cards}) => {
                 to={{
                                 curiosity: "the woman said.",
                                   dean: <span>Ella replied. "You know, if you need to get in somewhere in the school, just ask."
-                                  She eyed the open window. "Unless that would spoil the adventure.</span>}} />
+                                  She eyed the open window. "Unless that would spoil the adventure."</span>}} />
 
 
             </p>

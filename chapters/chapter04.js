@@ -67,7 +67,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>"That's what I want
       to show—"</p>
 
-      <p>A student with a clipboard and a stack of flyers suddenly accosted us. "Help save the Blithesdale Astrolith!"
+      <p>A student with a clipboard and a stack of flyers suddenly accosted us. "Help save the Blithedale Astrolith!"
       </p>
       <Reader inventory={inventory} docs={[docs.astrolith1]} />
     </section>,
@@ -75,9 +75,9 @@ export default ({currentSection, inventory, cards}) => {
       <p>"Yeah thanks," Lillian said. Once the student was out of sight she crumpled the flyer in her hand
       and stalked off towards the library.</p>
       <p>"You don't agree?" I asked, jogging to keep up.</p>
-      <p>"I do, but not for the same reasons," she said, without elaborating.</p>
+      <p>"I don't have time for theatrics," she said airily.</p>
       <p>
-        The current library structure was a Brutalist relic of the 1960s and didn't exactly
+        The current library building was a Brutalist relic of the 1960s and didn't exactly
         harmonize with the rest of the campus. In spite of that,
         it was a quiet and pleasant place to study, with abundant natural
         light and a wall of glass that overlooked the small orchard at the edge of campus.
@@ -92,23 +92,27 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The office was barely bigger than a storage closet and was crammed with equal amounts of library books and
-        janitorial equipment. [FIXME add conditional]"Why are you so interested in the history of the school?" I asked. I made
-        room for myself by pushing a rolling bucket aside.
+        janitorial equipment. <Map from={inventory.c2_direction}
+          to={{
+            curiosity: `"I saw a portrait of your grandmother, I think? By the dean's office. She looks remarkably like you."`,
+              dean: `"You mentioned your family attended Blithedale?"`
+          }} />
+
       </p>
-      <p>"I'm a <ListCard expansions={["legacy admission"]}
-        tag="c7-legacy" nextUnit="section"
-        card={<span>American universities give special preference to descendants of alumni. Not having illustrious ancestors of my own,
-          I find the practice distasteful. But I couldn't begrudge
-        Lillian for being a proud child of women scholars.</span>} />,"
+      <p>"Yeah, I come from a long line of <ListCard expansions={["alumna"]}
+        tag="c7-legacy"
+        card={<span>American universities give special preference to descendants of graduates. Not having illustrious ancestors of my own,
+        I find the practice irritating.</span>} />,"
       she said, a little embarrassed.</p>
       <p>
         "Your mom went here?"
       </p>
       <p>
-        "And my grandmother."
+        "Right, and my grandmother, and all the way back to the start of the college. They call us Founder's Daughters;
+        there's a whole social club. I find it all completely boring."
       </p>
       <p>
-        "That's great, Lillian. It's okay to be proud of that."
+        "Not many women come from a line of women scholars, Lillian. It's okay to be proud of that."
       </p>
       <p>
         She blushed a little but shrugged it off. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
@@ -136,7 +140,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>
 
         }} />
-      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1899. I'd been helping him
+      <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1889. I'd been helping him
       analyze them all summer, trying to fit them to a timeline that matched with the decline of the community."</p>
       <p>"Are you sure this is from someone's <i>journal</i>?" I asked. "This looks like a page from a <i>novel</i> that
         I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
@@ -181,10 +185,10 @@ export default ({currentSection, inventory, cards}) => {
       they rupture something explosive? People could get injured or worse."</p>
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
       <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
-      the Dean isn't interested in anything that holds up the renovations. Please," she said, "I don't know who else to ask."</p>
+      the Dean isn't interested in anything that delays the construction. Please," she said, "I don't know who else to ask."</p>
       <p>I'd like to say that in her passion and conviction she reminded me of my younger self,
         but she wasn't that much younger than me. It felt good, though, to feel needed—to
-        find someone who thought I could be useful, maybe even heroic.
+        find someone who thought I could be useful, maybe even a little heroic.
       </p>
       <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />

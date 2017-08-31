@@ -146,7 +146,7 @@ export const paper4 = () => (
         our school, and many of us seek to continue that work, or even to extend it. We have seen the
         benefits that equal education for <ListCard author="lynn"
           tag="paper4-boys" expansions={["boys and girls"]}
-          card={<span>Blithesdale was co-ed until 1906, when a new charter was established.</span>} /> bring, and we believe there is yet more work to do
+          card={<span>Blithedale was co-ed until 1906, when a new charter was established.</span>} /> bring, and we believe there is yet more work to do
         there.
       </p>
       <h4>Plea for a Safe Return</h4>

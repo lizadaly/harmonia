@@ -34,12 +34,15 @@ export default ({currentSection, inventory}) => {
       curly hair, crimson power suit that was a bit out of place in this backwater.
     </p>
     <p>
-      "I'm glad to hear; I thought it did too." I paused. "Thank you again for offering me this position."
+      "I'm glad to hear; I thought it did too." I <ListCard expansions={["paused"]}
+        tag="c3-paused"
+        card={<span>I've been told I don't show sufficient deference to authority to be successful in
+        academia.</span>} />. "Thank you again for offering me this position."
     </p>
     <p>
       "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
         expansions={["silently"]}
-        card={<span>People like her do this to trick you into <List expansions={[["talking too much."], ["talking too much. I fell for it."]]}
+        card={<span>People like her do this to trick you into <List expansions={[["talking too much."], ["talking too much. I fell for it, stuttering over myself."]]}
                tag="c4_talking_too" /></span>} />.
     </p>
 
@@ -62,23 +65,24 @@ export default ({currentSection, inventory}) => {
       it would help my teaching quite a bit—"
     </p>
     <p>
-      She frowned as if she didn't understand, though I felt some of this was disingenuous. "Don't you have a
-      full syllabus from Professor Lynn? That is the material you've been hired to teach."
+      She feigned confusion. "Don't you have a
+      full syllabus from Professor Lynn? That's what I'm paying you to teach."
     </p>
     <p>
       "Well, actually, I don't, <List expansions={[["but in addition to that—"], ["but—"]]}
-                                  tag="c3-but" />
+                                  tag="c3-but" />"
     </p>
   </section>,
   <section>
-    <p>"I'm surprised I need to tell you such a basic thing. Perhaps hiring someone so underqualified was a mistake."</p>
+    <p>"You haven't acquired his material? I'm frankly astonished I'd need to even mention it.
+    Perhaps hiring someone so underqualified was a mistake."</p>
 
     <Map from={inventory.c4_specific}
       to={{
-        _undefined: <p>"I will get the syllabus right after this meeting, but I feel I also need to better understand
+        _undefined: <p>She was just testing me. I took several calming breaths before responding. "I will get the syllabus right after this meeting, but I feel I also need to better understand
           both the history of this college and have some background on what happened to Professor Lynn."
         </p>,
-        _any: <p>"I will get the syllabus right after this meeting, but I feel I also need to better understand
+        _any: <p>She was just testing me. I took several calming breaths before responding. "I will get the syllabus right after this meeting, but I feel I also need to better understand
           both <List expansions={[["the history of this college",
             "what happened to Professor Lynn"], ["the history of this college",
           "what happened to Professor Lynn"]]}
@@ -107,7 +111,9 @@ export default ({currentSection, inventory}) => {
               card={<span>I got the impression that the dean lets very little stand in her way.</span>} />.
           </p>
           <p>
-            "The historical significance of the campus is a great asset to us, but can be a liability
+            "The historical significance of the campus can be an asset to us,
+            though frankly I prefer to downplay it. It was a long time ago and
+            the community had some—unconventional ideas. In addition, any historically significant structures are a liability
             when it comes to modernization and development. I asked Jeffrey to lead the
             conservation team—to protect the artifacts found during the excavations but to balance that
             against an aggressive construction schedule."
@@ -116,11 +122,10 @@ export default ({currentSection, inventory}) => {
             She nodded towards the oil painting. "He was obsessed with that old hall—with finding out why it burned down.
             I don't know why, it was made of wood and people used candles, what other reason do you need?
             But Jeffrey was convinced that the artifacts contained
-            first-person accounts of what happened, or even some physical evidence of arson."
+            first-person accounts of what happened, or even some physical evidence of intentional destruction."
           </p>
           <p>She frowned. "He <i>knew</i> how important it was
-            to me that we open this school year with the building complete, but he kept slowing us down,
-            until the project was almost at a crawl. And then we missed the deadline."
+            to me that we open this school year with the building complete. I was... extremely angry with him."
           </p>
           <p>
             "And what happened to him—?" I <ListCard tag="c3-asked"
@@ -191,14 +196,14 @@ export default ({currentSection, inventory}) => {
       involving the group.
     </p>
     <p>
-      "I believe he found something down there that was too good to pass up
+      "I believe he found some artifact or another down there that was too good to pass up
       and ran off with it." She leaned back. "I have an army of
       lawyers who will not be happy to see college property show up in a museum
       or at some auction."
     </p>
     <p>
       I frowned. "When I took this assignment I assumed he'd simply left for another job without
-      much notice. You said he disappeared. Has he been reported missing?"
+      much notice, but you said he literally disappeared. Has he been reported missing? Are the police involved?"
     </p>
     <p>
       The Dean shrugged. "I'm not his mother." She narrowed her eyes. "You don't <List expansions={[["approve"], ["approve"]]}
@@ -210,11 +215,12 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>"It's not for me to say," I said neutrally.</p>
     <p>
-      She stood up, and this meant I did too. "You seem bright, Abby. I'd like to see you succeed with us.
+      After considering me for another long moment, she stood up, and this meant I did too. "You seem bright enough, Ms. Fuller.
+      If you work hard, you may succeed with us.
       Speak with Alice Gilman, Lynn's research assistant. You met her the night you arrived. She can probably help answer some of your
       questions and <ListCard expansions={["assist"]} tag="c3-assist"
         card={<span>If she was Lynn's assistant, why hadn't she mentioned it that night?</span>} /> with the class.
-      And she'll have that syllabus"
+      And she'll have that syllabus."
     </p>
     <Map from={inventory.c2_direction}
       to={{

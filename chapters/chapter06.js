@@ -130,9 +130,9 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.frag4]} note={true} />
     </section>,
     <section>
-      <p>Commotion erupted in the classroom. María was asking if anyone else though the story sounded like a
-        description of Blithesdale itself. Charlotte was asking if this book was on the assigned reading list.
-        Lillian was scowling, flipping through her own notes wildly. My eyes were fixed on Gilman, who was
+      <p>While I'd been reading, classroom discipline had broken down. María was asking if anyone else though the story sounded like a
+        description of Blithedale itself. Charlotte was asking if this book was on the assigned reading list.
+        Lillian was scowling, flipping through her own notes wildly. I fixed my eyes on Gilman, who was
         backing out towards the door.
       </p>
       <p>"Thank you, María," I said. "I did find that very illuminating."</p>

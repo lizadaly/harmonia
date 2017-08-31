@@ -36,7 +36,8 @@ export default ({currentSection, inventory, cards}) => {
         tag="c1-name"
         card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
         since I was only a sub.</span>} />."
-      Their undivided attention was disconcerting; I'd never taught college students solo, nor had I led an all-women class.
+      Their undivided attention was disconcerting; I'd never led a class myself, much less a class of exquisitely bred
+      Yankee daughters.
     </p>
     <p>
       I also had no idea what material Lynn had already covered or even <ListCard expansions={["how many classes"]}
@@ -65,7 +66,9 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>I could see this was going to be one of those classes.</p>
 
-    <p>"Hi Professor Fuller,  I'm Lillian Horace. It says in my
+    <p>"Hi <ListCard expansions={["Professor Fuller"]}
+      tag="c2-fuller"
+      card={<span>I should've corrected her, but there's only so much debasement I could handle for one morning.</span>} />,  I'm Lillian Horace. It says in my
       notes that <i>Utopia</i> was actually published in 1516."</p>
     <p>"Yes, fine, sorry." Now I was flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many heads nodded. I looked back down at the syllabus I'd thrown together
@@ -164,15 +167,12 @@ export default ({currentSection, inventory, cards}) => {
 
     </heading>
     <p>
-      On the night of my arrival the campus had seemed creepy and
-      unwelcoming. In fact it was quite pleasant, if a bit unusual.
-    </p>
-    <p>
-      The school was laid out along a long tiered slope,
-      accessible by gravel footpaths and stone steps that
-      switched between buildings. Almost every spot on campus afforded gorgeous views down into the valley,
-      with chimneys and steeples poked above the canopy. The nearest village, where most of the
-      faculty lived, was down at the base of the hill.
+      The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
+      It was laid out along one slope of the Berkshires foothills, in an area once cleared for
+      agriculture but now largely forested.
+      Almost every spot on campus afforded gorgeous views down into the valley:
+      a rolling canopy punctuated by chimneys and whitewashed steeples. The nearest village, where most of the
+      staff lived, was situated at the base of the hill.
     </p>
     <p>
       The largest area of level ground was the grassy central quadrangle, and many of the
@@ -189,16 +189,14 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       I drifted into the quad.
       Footpaths through the grass all veered
-      around a central clearing, a sunken circle of steps around a curious stone peak:
+      around a central clearing, where a stepped viewing platform encircled a curious stone peak:
     </p>
     <figure>
       <img src="images/meteorite.jpg" />
     </figure>
     <p>
       It was an inky black boulder, a dozen meters around the base and pointed like a pint-sized mountain. There were bumps and cavities
-      across its surface which had been smoothed by age.
-      The earth had been dug out around it in a
-      circular depression, with concentric rings of steps, like a tiny Greek ampitheater. I stooped to read
+      across its surface which had been smoothed by age.  I stooped to read
       a small nearby <List expansions={[["plaque"], ["plaque"]]} tag="c3_plaque" />:
     </p>
   </section>,
@@ -211,7 +209,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>It was originally enclosed by the so-called Phalanstery,
       a large, multi-story communal hall and prayer center.
-      The hall's destruction by fire in 1899 precipitated the end of the community; however, the stone Astrolith was undamaged.
+      The hall's destruction by fire in 1889 precipitated the end of the community; however, the stone Astrolith was undamaged.
     </p>
     <p>
       The circular seating was added in 1931 by the gift of an anonymous donor.
@@ -228,13 +226,13 @@ export default ({currentSection, inventory, cards}) => {
     We apologize for any inconvenience.
   </blockquote>
   <p>
-    And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["roughly penned graffiti"]]}
+    And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["graffiti"]]}
                       tag="c2_graffiti" />, presumably added by a student.
   </p>
 </section>,
 <section>
   <blockquote className="students-font">
-    Say NO to removal and keep Blithesdale weird!
+    Say NO to removal and keep Blithedale weird!
   </blockquote>
   <p>
     A trail of construction debris lead uphill to a dreary concrete building marked SCIENCE CENTER.
@@ -385,7 +383,7 @@ export default ({currentSection, inventory, cards}) => {
     The archivist apologized. "I'm sorry, Dean, I was showing—"
   </p>
   <p>The dean turned to me. "Who are you?"</p>
-  <p>"I'm your new English professor," I said.</p>
+  <p>"I'm your new English instructor," I said.</p>
   <p>"Hmm." She turned back to Ella. "Some faculty from Harvard will be here this afternoon
   for a symposium. Please have this mess cleaned up before lunch." </p>
   <p>"Yes ma'am."</p>
