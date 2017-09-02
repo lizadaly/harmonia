@@ -108,14 +108,14 @@ export default ({currentSection, inventory, cards}) => {
         "Your mom went here?"
       </p>
       <p>
-        "Right, and my grandmother, and all the way back to the start of the college. They call us Founder's Daughters;
-        there's a whole social club. I find it all completely boring."
+        "And my grandmother, and her mother—I'm named after my great-grandmother who was in the first graduating class.
+        They call us Founder's Daughters; there's a formal social club and everything. I find it all pretty boring."
       </p>
       <p>
-        "Not many women come from a line of women scholars, Lillian. It's okay to be proud of that."
+        "Not many people come from a line of women scholars, Lillian. It's okay to be proud of that."
       </p>
       <p>
-        She blushed a little but shrugged it off. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
+        She smiled a little but shrugged it off. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
       </p>
     </section>,
     <section>

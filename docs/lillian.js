@@ -10,7 +10,7 @@ export const lillian1 = () => (
     </p>
     <p>
       I hope that you remember me after all this time. Uncle Jeffrey assured me
-      that you will, no matter how long I waited, but that I should not write
+      that you will, no matter how long I wait, but that I should not write
       until I have something to say.
       I don't know if this news merits a letter, but I dare not wait much longer. I would
       not want you to be so old that you've forgotten me!
@@ -41,8 +41,8 @@ export const lillian1 = () => (
       and I have named her Abigail.
     </p>
     <p>
-      I do not know where to post this letter, but Uncle had told me, with that familiar twinkle in his eye,
-      to simply keep it safe and eventually you would get it. I don't see how this can be true,
+      I do not know to what address I should post this letter, but Uncle had told me, with that familiar twinkle in his eye,
+      to simply keep it safe and eventually you would read it. I don't see how this can be true,
       but as I said, he comprehended so many wonders.
     </p>
     <p style={{textIndent: 0, textAlign: "left", paddingRight: "5em"}}>
