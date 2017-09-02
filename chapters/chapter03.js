@@ -135,7 +135,7 @@ export default ({currentSection, inventory}) => {
           </p>
         </div>,
         "college": <div> <p> She leaned back and I could tell this was a story she told often. "As you may know the college was
-          founded on the grounds of an old utopian community. They called themselves the Futurians."
+          founded on the grounds of an old utopian community. They called themselves the Harmonians."
         </p>
           <p>
             "What does the name mean?"

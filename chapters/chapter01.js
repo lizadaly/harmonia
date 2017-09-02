@@ -14,13 +14,16 @@ export default ({currentSection, inventory, cards}) => {
       <heading>
         <h2>Chapter One</h2>
         <h6>November 3, 1998</h6>
+        <img src="images/opening.jpg" />
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
           rather than never be mistress of a world, I have made a World of my own. <br/><br/>
           — Preface to <i>The Blazing World</i>, Margaret Lucas Cavendish (1666)
         </blockquote>
+
       </heading>
+
       <p>It was nearly midnight when I finally arrived on campus and the weather was
         getting worse. The last hour of the drive was a dark and lonely ascent into
         deeply forested foothills. I hadn't seen a town for miles when I finally
@@ -144,8 +147,8 @@ export default ({currentSection, inventory, cards}) => {
       "That's right," I said cautiously. "There was no one here when I arrived and—
       look, do you know where I'm supposed to be staying? I'm very tired."
     </p>
-    <p>"I assume the guest faculty quarters. I can take you to them." She turned without saying anything further,
-      tucking the papers under her arm and locking the door on her way out.
+    <p>"I assume the guest faculty quarters. I can take you to them." She returned the papers to the table, face-down,
+      and locked the door on her way out.
     </p>
     <p>We went back to my car to get my things. She didn't offer to help with my <ListCard expansions={["bags"]} tag="c2-bags"
       card={<span>They were pathetically few of them anyway. Shouldn't a grown woman have more <em>stuff</em>?</span>} />.

@@ -30,7 +30,7 @@ export default ({currentSection, inventory, cards}) => {
         Her hypothesis that there had been a deliberate violent act
         towards the community was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised for his experiments in the newspaper column.</span>} /> was
-        indeed one of the founding members of the Futurians. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
+        indeed one of the founding members of the Harmonians. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
                                                                                tag="c5-ad" /> for recruits posted in one of the many
         Spiritualist newspapers at the time. Lynn had a copy:
       </p>
@@ -40,14 +40,14 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Cadwell and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Despite being a colony that
         ostensibly treated women as equals, Elsie Cadwell was featured only sparsely in the records.</span>} /> Elsie moved to the
-        nascent Futuria community in 1885, along with about 75 other would-be utopians. The population waxed and waned
+        nascent Harmonia community in 1885, along with about 75 other would-be utopians. The population waxed and waned
         for several years, peaking at 110 in the summer of 1888, until an irreversible slide meant that only 20
         families remained at the time of the Great Hall fire in November 1889.
       </p>
       <p>
         There was ample evidence in her documents that Cadwell was building something that he wished to keep secret, something
         that caused rumbles in the night, acrid smells, and prolonged absences from community obligations. The
-        Futurians <ListCard tag="c5-trade" expansions={["traded"]} card={<span>Like many intentional communities, the
+        Harmonians <ListCard tag="c5-trade" expansions={["traded"]} card={<span>Like many intentional communities, the
         population was dominated by intellectuals, not farmers, and struggled to feed itself through the long winters.</span>} /> extensively
         with the local villages, and Cadwell's purchases were quite strange for a fledgling farm community: large quantities of
         copper wire, yards of "India rubber," and so many pounds of brass sheeting that "the horse-carts

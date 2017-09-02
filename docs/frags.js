@@ -25,7 +25,7 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
         author="lynn"
         card={<span>Historical Committee brought this fragment of an epistolary novel (?) to my attention.
           Another good example of waking in the future, but I can't attribute this to any
-          known utopian writer. Did one of the Futurians write it?
+          known utopian writer. Did one of the Harmonians write it?
         </span>} />.
     </p>
     <p>I was astonished first by the carriages: great enclosures of iron and glass, which moved without the aid
@@ -76,7 +76,7 @@ export const frag3 = ({inventory}) =>  {
         tag="frag3-z"
         nextUnit="section"
         expansions={["join me"]}
-        card={<span>You always were an insufferable fool</span>} /> in the next world, the true Futuria.
+        card={<span>You always were an insufferable fool</span>} /> in the next world, the true Harmonia.
     </p>
   </div>
 }
@@ -129,7 +129,7 @@ export const frag5 = () =>  (
   <div>
     <h1>June 2, 1889</h1>
     <p>
-      Is there anything more beautiful than Futuria in the summer? We are in high spirits, as yet more members
+      Is there anything more beautiful than Harmonia in the summer? We are in high spirits, as yet more members
       have <ListCard author="lynn" expansions={["joined"]} tag="frag-pop" author="lynn"
         card={<span>This would be the high point of the population for them. Most of these new recruits were gone by winter.</span>} /> us our grand experiment this Spring. The new men are strong and
       capable; their wives and sisters handsome. I am confident our harvest this year will be sufficient
@@ -141,8 +141,8 @@ export const frag5 = () =>  (
         Do these still exist?</span>} /> work-group. Of course I was too busy with my <ListCard  author="lynn" expansions={["galvanic experiments"]}
           tag="frag-mit"
           nextUnit="section"
-          card={<span>Only one Futurian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
-          1882, joined Futuria at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed upon E- to find me a replacement, and she succeeded as she does
+          card={<span>Only one Harmonian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
+          1882, joined Harmonia at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed upon E- to find me a replacement, and she succeeded as she does
       all things. She is so devoted to my work—an example to all of our husbands and wives who seek a more
       Scientific marriage.
     </p>

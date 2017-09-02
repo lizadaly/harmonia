@@ -356,7 +356,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>"What did you think this was when you found it?" I asked.</p>
             <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. "One of the colonists drafting a fantastical story,"
               she said. "Jeffrey and I agreed that it
-              wasn't surprising to find. It's natural that the Futurians would try out their ideas in <ListCard expansions={["story"]}
+              wasn't surprising to find. It's natural that the Harmonians would try out their ideas in <ListCard expansions={["story"]}
                 tag="c7-backward" card={<span>This cross-pollination between fiction and real-life communities
                   happened frequently. Whole societies rose and fell around stories like <i>Looking Backward</i> and
                   <i>Travels in Icaria</i>.</span>} /> form."
@@ -383,7 +383,7 @@ export default ({currentSection, inventory, cards}) => {
             don't recall anything like a blueprint. His home, maybe? He lived in Adams House."</p>
 
             <p> The name was meaningless to me. "That's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
-              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Futurian buildings."</p>
+              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings."</p>
             <p>"I have keys to some offices," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, "but not to anyone's private residence."</p>
             <Map from={inventory.c2_direction}
               to={{
@@ -429,7 +429,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>I gave the papers to Lillian and asked Ella, "Do you know where Lynn lived?"</p>
             <p>"Adams House," she said. The name didn't mean anything to me.</p>
             <p>"Oh, that's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
-              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Futurian buildings."</p>
+              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings."</p>
             <p>"I don't have keys to people's homes," Ella said.</p>
             <p>"Sure," I said. "But does his home have a window?"</p>
             <NextChapter chapter={8} />

@@ -104,7 +104,7 @@ export default ({currentSection, inventory, cards}) => {
               a fire destroyed their central meeting hall and bankrupted the village.</span>} /> and the pre-Blithedale community next."</p>
           <p>"The who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
-          <p>"They called themselves the Futurians," Charlotte added.</p>
+          <p>"They called the community Harmonia," Charlotte added.</p>
           <p>A third girl chimed in: "They believed in equality of the sexes."</p>
           <p>"That's why they founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
@@ -122,7 +122,7 @@ export default ({currentSection, inventory, cards}) => {
           <p>"You mean like Blithedale?" the girl named Lillian asked.</p>
           <p>"Hmm?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
-          <p>"They called themselves the Futurians," Charlotte added.</p>
+          <p>"They called themselves the Harmonians," Charlotte added.</p>
           <p>A third girl chimed in: "They believed in equality of the sexes."</p>
           <p>"That's why they eventually founded a women's college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
@@ -204,7 +204,7 @@ export default ({currentSection, inventory, cards}) => {
   <blockquote className="sign">
     <h4>THE "ASTROLITH"</h4>
     <p>
-      This very large ataxite meteorite formed the centerpiece of the Futurian community,
+      This very large ataxite meteorite formed the centerpiece of the Harmonian community,
       who christened it "The Astrolith" and believed it imbued their village with spirtual vitality.
     </p>
     <p>It was originally enclosed by the so-called Phalanstery,
@@ -287,18 +287,23 @@ export default ({currentSection, inventory, cards}) => {
           a freestanding brass sign that read, "Current Exhibit." I leaned in and knocked on the open door.
         </p>
         <p>
-          An older woman was placing some manuscripts into a glass-topped display case and didn't seem
+          An older woman with jet black hair and a kindly face was placing some manuscripts
+          into a glass-topped display case and didn't seem
           to hear the knock. "Excuse me,"
           I said, as quietly as possible, and she jumped. I introduced myself.
         </p>
         <p>
-          "Oh hello! Sorry I was startled, I get absorbed by my work sometimes!
+          "Oh, nice to meet you, Abby! Sorry I was startled, I get absorbed by my work sometimes!
           I'm Ella Merchant, I'm the college archivist."
         </p>
         <p>
-          The exhibit room was small and square, and probably the first stop on any campus tour. It was divided up
-          by rows of Victorian-style curio cases, most of which were half-filled. Boxes were strewn all over
-          the room.
+          The exhibit room was painted goldenrod and decorated with lush curtains and furnishing,
+          probably the first stop on any campus tour. Visitors could walk between rows of mahogany <ListCard expansions={["curio cases"]}
+            card={<span>Filled with 19th century ephemera: ads for patent medicine,
+            diagrams of obscure farming equipment, and blurry tintypes of serious-looking women.</span>}
+                                                                                                     tag="c2-cases" />,
+          some still empty.
+          Cardboard boxes in the process of being emptied were strewn all over the room.
         </p>
         <p>
           "Thank you," I answered. "Say, do you happen
@@ -356,10 +361,8 @@ export default ({currentSection, inventory, cards}) => {
 
       </div>,
       dean: <div>
-        <p>"Come here, you'll find this so interesting," she interrupted. "Do you know
-        much of the history of the college?"</p>
-        <p>"I've heard it was a utopian colony before it was a university?"</p>
-        <p>"That's right." She retrieved a small and yellowed piece of newsprint from a case and
+        <p>"Come here, you'll find this so interesting," she interrupted. She retrieved a
+          delicate fragment of newsprint from a case and
           put it in my hands. "You may have seen they're expanding the math and science building," she said.
           "The construction project has exposed a network of old tunnels that ran under many of the buildings,
           and we've been finding some wonderful artifacts.
