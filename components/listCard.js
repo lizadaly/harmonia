@@ -36,7 +36,7 @@ class _ListCard extends React.Component {
     this.onRender = this.onRender.bind(this)
     this.reRender = debounce(function () {
       this.onRender
-//      j.repaintEverything()
+      j.repaintEverything()
     }, 100)
 
     // Wait until we're sure everything has rendered before firing this
