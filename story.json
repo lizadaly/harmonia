@@ -1,9 +1,9 @@
 {
-  "title": "Archive Game",
+  "title": "Harmonia",
   "author": "Liza Daly",
-  "identifier": "archive-game-",
+  "identifier": "harmonia-",
   "keywords": "starter windrift javascript react interactive-fiction",
-  "description": "A starter application used for working with the Windrift story framework",
+  "description": "A utopian adventure",
   "license": "CC BY 4.0",
   "version": "1.0.0",
   "pagination": "by-chapter",

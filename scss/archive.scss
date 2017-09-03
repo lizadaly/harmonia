@@ -9,6 +9,10 @@ body {
   color: $black;
   background: $white;
 }
+nav.top-bar {
+  background: none;
+}
+
 a {
   color: inherit;
   border-bottom: 1px solid;
@@ -32,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 header {
+  h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 70px;
+  }
   h2 {
     padding-top: 2rem;
   }
@@ -134,6 +142,43 @@ figure {
   margin-right: -30vw;
 
 }
+
+
+.next-chapter-link {
+    min-height: 100px;
+/*    background: url(../images/dash1.png) no-repeat center center; */
+
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  opacity: 0.50;
+}
+.top-bar-right, .top-bar-title {
+  min-height: 100px;
+  min-width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    border-bottom: none;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 15px;
+  }
+}
+.top-bar-title {
+  background: url(../images/border-right.png) no-repeat right center;
+  background-size: contain;
+
+}
+
+.top-bar-right {
+  background: url(../images/border-left.png) no-repeat left center;
+  background-size: contain;
+
+}
+
 /*
 .chapter section p, .current-chapter section p {
   background: radial-gradient(ellipse at center,

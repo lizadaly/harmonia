@@ -11,18 +11,23 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
+
       <header>
-        <h2>Chapter One</h2>
-        <h6>November 3, 1998</h6>
+
+        <h1>Harmonia</h1>
+        
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
           rather than never be mistress of a world, I have made a World of my own. <br/><br/>
           — Preface to <i>The Blazing World</i>, Margaret Lucas Cavendish (1666)
         </blockquote>
+
         <figure className="chapter-1">
           <img src="images/opening.jpg" />
         </figure>
+
+        <h2>November 3, 1998</h2>
 
       </header>
 
@@ -165,6 +170,7 @@ export default ({currentSection, inventory, cards}) => {
       as I was drifting off did I realize she'd never
       told me her name.
     </p>
+
     <NextChapter chapter={2} />
   </section>
   ]
