@@ -11,7 +11,7 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Four</h2>
         <blockquote>
           Hills and valleys, and sparkling cities veiled in foliage, with their numberless parks and
@@ -21,7 +21,7 @@ export default ({currentSection, inventory, cards}) => {
           <br/>           <br/>
           —<i>Mizora</i>, Mary E. Bradley (1890)
         </blockquote>
-      </heading>
+      </header>
       <p>
         I realized I hadn't eaten all day and,
         <Map from={inventory.c2_direction}

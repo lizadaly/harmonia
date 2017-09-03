@@ -11,13 +11,13 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter 11</h2>
         <blockquote>
           "God did not make us perfect. He left us something to do for ourselves."
 
         </blockquote>
-      </heading>
+      </header>
       <p>
         Lynn was where I'd left him, and he was so grateful for the water that it took him a while
         to notice the girl. She was shy now and refused to get too close to us; instead

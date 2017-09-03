@@ -86,6 +86,23 @@
   }
 }
 
+
+.jtk-connector.drawing > path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes doAnim {
+
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+.jtk-connector.drawing > path {
+  animation: doAnim 4s linear forwards;
+}
+
 .link-source span span {
 /*  background: rgba(255, 255, 0, .2); */
   border-bottom: 1px dotted $gray;

@@ -11,14 +11,14 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Five</h2>
         <blockquote>
           "It was a beautiful world, but it was not my world."
           <br/>
           —<i>Moving the Mountain</i>, Charlotte Perkins Gilman (1911)
         </blockquote>
-      </heading>
+      </header>
       <p>
         Lillian sent me away with a heavy load of books, papers, and troubled thoughts. I retreated to my
         room, my things still largely unpacked, and went through <ListCard expansions={["her documents"]}

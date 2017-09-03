@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   font-weight: bold;
 }
-heading {
+header {
   h2 {
     padding-top: 2rem;
   }
@@ -88,6 +88,23 @@ blockquote {
     color: $white;
     text-align: justify;
   }
+}
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  width: 60vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -30vw;
+  margin-right: -30vw;
+
 }
 /*
 .chapter section p, .current-chapter section p {

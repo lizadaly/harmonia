@@ -12,7 +12,7 @@ export default ({currentSection, inventory, cards}) => {
 
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Seven</h2>
         <blockquote>
           "What is the breath of life?" I ask at last.<br/>
@@ -20,7 +20,7 @@ export default ({currentSection, inventory, cards}) => {
           dear, electricity, which we assimilate into spirit."<br/>
           —<i>Arqtiq</i>, Anna Adolph (1899)
         </blockquote>
-      </heading>
+      </header>
 
       <Map from={inventory.c5_direction}
         to={{
@@ -184,9 +184,9 @@ export default ({currentSection, inventory, cards}) => {
             </p>
           </div>,
           archaeologist: <div>
-            <heading>
+            <header>
               <h6>* * * </h6>
-            </heading>
+            </header>
             <p>
               I didn't want <Map from={inventory.c2_direction}
                 to={{

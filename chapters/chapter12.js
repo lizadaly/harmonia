@@ -14,9 +14,9 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c11_return}
         to={{
           him: <div>
-            <heading>
+            <header>
               <h3>May 9, 1931</h3>
-            </heading>
+            </header>
             <p>
               Lillian,
             </p>
@@ -44,10 +44,10 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           me: <div>
 
-            <heading>
+            <header>
               <h2>May 28, 1999</h2>
               <h3><br/></h3>
-            </heading>
+            </header>
             <p>
               Up here in Western Massachusetts, spring lasts about a day but can be utterly glorious—neither
               cold nor humid, and sometimes not even raining. Today is one of those days,
@@ -190,10 +190,10 @@ export default ({currentSection, inventory, cards}) => {
               Your "professor," <br/>
               Abby
             </p>
-            <heading>
+            <header>
               <blockquote>
               </blockquote>
-            </heading>
+            </header>
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />

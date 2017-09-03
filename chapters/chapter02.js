@@ -11,14 +11,14 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
   <section>
-    <heading>
+    <header>
       <h2>Chapter Two</h2>
       <blockquote>
         Their educational system was a peculiar one, and, as it was the chief interest of the country,
         I shall describe it before proceeding farther with this narrative.<br/>
         - <i>Mizora: A Prophesy</i>, Mary E. Bradley (1889)
       </blockquote>
-    </heading>
+    </header>
 
     <p>
       I'd driven a hundred miles for this job and now I was late to my first class.
@@ -161,11 +161,11 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <heading>
+    <header>
 
       <h6  style={{marginTop: '10rem'}}>* * * </h6>
 
-    </heading>
+    </header>
     <p>
       The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
       It was laid out along one slope of the Berkshires foothills, in an area once cleared for

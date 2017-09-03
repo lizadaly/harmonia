@@ -11,14 +11,14 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Nine</h2>
         <blockquote>
           "There were no policemen, for there was no disorder, but thrift, sobriety, and decorum ruled,
           and the days passed in calm monotony."<br/>
           —<i>A Divided Republic</i>, Lillie Blake (1887)
         </blockquote>
-      </heading>
+      </header>
       <p>
         By my feet lay evidence of recent habitation: plastic milkcrates, some rubber gloves, a few
         empty bags of potato chips, a gas generator. The generator was off; something else was driving the mechanized

@@ -44,7 +44,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
-      <heading>
+      <header>
         <h2 style={{marginTop: "10em"}}>Chapter 10</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
@@ -52,7 +52,7 @@ export default ({currentSection, inventory, cards}) => {
           isolated houses and the conventions of civilization."<br/>
           —Personal letter, Marianne Dwight, resident of Brook Farm (1844)
         </blockquote>
-      </heading>
+      </header>
       <p>
         When I returned to myself, my body was a numb marionnette on the floor of the chamber. The machine was still
         churning, emiting irregular banging sounds like a pair of shoes in a tumble dryer.

@@ -10,7 +10,7 @@ import ListCard from '../components/listCard'
 export default ({currentSection, inventory}) => {
   const sections = [<section>
 
-    <heading>
+    <header>
       <h2>Chapter Three</h2>
       <blockquote>
         I was filled with astonishment at women who, qualified by nature and fortune to have the world almost
@@ -18,7 +18,7 @@ export default ({currentSection, inventory}) => {
         new one for themselves. <br/>
         —<i>Millennium Hall</i>, Sarah Scott (1762)
       </blockquote>
-    </heading>
+    </header>
     <p>
       Dean Orellana's office was spacious, comfortably furnished, and adorned with vintage college memorabilia:
       group photos of serious-looking young women in bloomers, field hockey trophies, awards for comportment and elocution.

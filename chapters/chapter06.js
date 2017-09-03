@@ -11,13 +11,13 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Six</h2>
         <blockquote>
           “It was an experiment. We all risked something, and must bear our losses as we can." <br/>
           - <i>Transcendental Wild Oats</i>, Louisa May Alcott (1873)
         </blockquote>
-      </heading>
+      </header>
       <p>
         "One of the unique properties of speculative fiction is the way it reflects the social
         context in which it was written," I lectured. "Can anyone give me some examples from the

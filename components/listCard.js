@@ -33,16 +33,10 @@ class _ListCard extends React.Component {
   constructor(props) {
     super(props)
     this.onComplete = this.onComplete.bind(this)
-    this.expansions = props.expansions
-
-    // If the expansions list is one item long, double it (usually these won't change)
-    if (props.expansions.length === 1) {
-      this.expansions.push(props.expansions[0])
-    }
     this.onRender = this.onRender.bind(this)
     this.reRender = debounce(function () {
       this.onRender
-      j.repaintEverything()
+//      j.repaintEverything()
     }, 100)
 
     // Wait until we're sure everything has rendered before firing this
@@ -53,7 +47,7 @@ class _ListCard extends React.Component {
     this.props.onAddCard(this.props.tag)
   }
 
-  onRender() {
+  onRender(animate=false) {
     window.requestAnimationFrame(() => {
 
       var sourceId = 'source-' + this.props.tag
@@ -71,7 +65,7 @@ class _ListCard extends React.Component {
       }
 
       if (source && target) { // Gross
-        console.log("Updating ", this.props.tag)
+//        console.log("Updating ", this.props.tag)
 
         var pos = this.positionTargetX(source)
         var anchors
@@ -106,13 +100,15 @@ class _ListCard extends React.Component {
         }
 
         this.positionTargetY(source, target)
-        j.connect({
-          source: sourceId,
-          target: targetId,
+
+        var foo = j.connect({
+          // Target/source swapped for animation
+          target: sourceId,
+          source: targetId,
+          cssClass: animate ? "drawing" : "",
           endpoint: "Blank",
           anchor: ["Perimeter", { shape:"Ellipse" } ]
         })
-
       }
       else {
         j.deleteConnectionsForElement(sourceId)
@@ -121,13 +117,17 @@ class _ListCard extends React.Component {
   }
 
 
-// TODO call a re-render on the SVG after a window resize event
-// This doesn't work
   componentDidMount() {
     window.addEventListener('resize', this.reRender)
   }
-  componentDidUpdate() {
-    this.onRender()
+  shouldComponentUpdate(props) {
+    return props.added && !this.props.added
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("updating " + this.props.tag)
+    console.log(prevProps)
+    console.log(this.props)
+    this.onRender(true)
   }
   componentWillUnmount() {
     var sourceId = 'source-' + this.props.tag
@@ -176,10 +176,11 @@ class _ListCard extends React.Component {
   }
 
   render() {
+
     // Stick the element in a stupid nobr so jsPlumb doesn't get confused about the bounding box
     return <span>
       <nobr className="link-source" id={'source-' + this.props.tag}>
-        <List {...this.props} expansions={this.expansions} onComplete={this.onComplete} />
+        <List {...this.props} expansions={[[this.props.expansions[0]], [this.props.expansions[0]]]} onComplete={this.onComplete} />
       </nobr>
       <Card text={this.props.card}
             tag={this.props.tag}

@@ -11,7 +11,7 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <heading>
+      <header>
         <h2>Chapter Eight</h2>
         <blockquote>
           "It will be obvious that the old state of society
@@ -20,7 +20,7 @@ export default ({currentSection, inventory, cards}) => {
           rushing too precipitously from the old to the new." <br/>
           —<i>A New View of Society</i>, Robert Owen (1813)
         </blockquote>
-      </heading>
+      </header>
 
       <Map from={inventory.c5_direction}
         to={{
