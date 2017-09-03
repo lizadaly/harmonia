@@ -26,7 +26,7 @@ export default ({currentSection, inventory, cards}) => {
 
       </header>
 
-      <p>It was nearly midnight when I finally arrived on campus and the weather was
+      <p>It was midnight when I arrived on campus and the weather was
         getting worse. The last hour of the drive was a dark and lonely ascent into
         deeply forested foothills. I hadn't seen a town for miles when I finally
         came upon the sign for <ListCard expansions={["Blithedale College"]}
@@ -35,17 +35,17 @@ export default ({currentSection, inventory, cards}) => {
           Massachusetts like a bookmark.</span>} />. This little village would be my home now.
       </p>
       <p>
-        A substitute teaching position was not exactly a breakthrough in academia,
-        but it was consistent with my credentials, experience, and savings account: unimpressive.
+        A substitute teaching position was not the big break I'd been hoping for,
+        but it was consistent with my academic credentials, work experience, and current finances: unimpressive.
 
         I'd received a letter extending the offer, had a brief phone call with
         the <ListCard expansions={["dean"]}
           tag="c1-dean"
           card={<span>Dean Orellana had made it clear: if I didn't accept the offer
-          promptly, she had plenty more takers on hand.</span>} />, and—unencumbered by
-        any other employment—had started packing.
-        I left Boston this morning, stopping twice when the icy rain
-        escalated to the point of zero visibility.
+          promptly, she had plenty more takers on hand.</span>} />, and, unencumbered by
+        other employment, had started packing.
+        I left Boston this morning, stopping whenever the icy rain
+        escalated to zero visibility.
       </p>
       <p>
         The road to campus was steep and barely paved, and by now the early winter
