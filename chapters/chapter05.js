@@ -78,7 +78,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <p>In fact I should've done this already—I really needed that syllabus—but I was starting to get the sense that this woman
+    <p>In fact I should've done this already—I really needed that syllabus—but I was was sensing that this woman
       was avoiding me.
     </p>
     <p className="card-inline">
@@ -90,7 +90,7 @@ export default ({currentSection, inventory, cards}) => {
     <p id="target-c5_testline">Did I know how to do this? I did not.</p>
     <p className="card-inline">
       3. <List expansions={[["Forget"], ["Forget"]]}
-           tag="c5_explore" /> Lynn's papers and search the campus for others.
+           tag="c5_explore" /> Lynn's existing papers and search the campus for others.
     </p>
   </section>,
    <section>
@@ -109,7 +109,8 @@ export default ({currentSection, inventory, cards}) => {
      </p>
    </section>,
    <section>
-     <p>But since that's what I'd end up doing when one of the others inevitably failed or led to a dead-end,
+     <p>Almost inevitably, this investigation would lead to a dead-end, so I'd come to this choice eventually,
+       and I couldn't bare to disappoint Lillian so soon.
        I was left to choose between <List expansions={[
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],

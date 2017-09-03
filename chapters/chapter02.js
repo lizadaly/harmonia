@@ -205,11 +205,11 @@ export default ({currentSection, inventory, cards}) => {
     <h4>THE "ASTROLITH"</h4>
     <p>
       This very large ataxite meteorite formed the centerpiece of the Harmonian community,
-      who christened it "The Astrolith" and believed it imbued their village with spirtual vitality.
+      who christened it the "Astrolith" and believed it imbued their village with "Scientific Vitality."
     </p>
     <p>It was originally enclosed by the so-called Phalanstery,
-      a large, multi-story communal hall and prayer center.
-      The hall's destruction by fire in 1889 precipitated the end of the community; however, the stone Astrolith was undamaged.
+      a large, multi-story communal hall.  The hall's destruction by fire in 1889 precipitated the end of the community but
+      the Astrolith was undamaged.
     </p>
     <p>
       The circular seating was added in 1931 by the gift of an anonymous donor.
@@ -235,7 +235,7 @@ export default ({currentSection, inventory, cards}) => {
     Say NO to removal and keep Blithedale weird!
   </blockquote>
   <p>
-    A trail of construction debris lead uphill to a dreary concrete building marked SCIENCE CENTER.
+    A trail of earth removal gear lead uphill to a dreary concrete building marked SCIENCE CENTER.
     One wing of the building
     looked brand new, its gray blocks gleaming but no less ugly. A backhoe was parked nearby,
     lying in wait.
@@ -263,16 +263,17 @@ export default ({currentSection, inventory, cards}) => {
     to={{
       "curiosity": <div>
         <p>The dean would have to wait.</p>
-        <p>The atrium of the Science Center was only partially finished. Hallways were still
-          swathed in plastic sheeting and warning tape, and sawdust was everywhere. The floor was covered by layers of protective
+        <p>The atrium of the Science Center was only partially finished, still
+          swathed in plastic sheeting and warning tape, with sawdust was everywhere. The floor was covered by layers of protective
           tan paper, dirtied by boot marks from workers.
         </p>
         <p>I didn't see the woman so I followed the path of heaviest footprints down the hallway.
           The newer rooms seemed to be
-          unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Everything
-        was bright white, a striking contrast to the ivy-league aspiration of the rest of the campus.</p>
+          unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Walls and chairs
+          and benches were all sharp-edged and bright white, very much a contrast to the ivy-league aspirations of
+        the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
-          leading up were incomplete and without handrails. The stairs leading down were crisscrossed with
+          leading up were incomplete. The stairs leading down were crisscrossed with
           tape and "No Admittance" signs, but they looked easy enough to duck under, if I reached out to <List expansions={[["lift the tape—"], ["lift—"]]} tag="c2_cellar" />
         </p>
       </div>,
@@ -326,21 +327,17 @@ export default ({currentSection, inventory, cards}) => {
             card={<span>Current fashion standards at most colleges did not rise much above pajamas.</span>} />.
         "Oh, sorry, I'm probably not supposed to be here am I?"</p>
         <p>
-          He smiled. "Not really, but I won't tell. Are you Abigail Fuller?"
-        </p>
-        <p>
-          "I am," I said, shaking hands.
-        </p>
-        <p>"I'm Walter Browne, Dean Orellana's assistant. She's looking for you." He smiled wryly. "I thought it'd be better
+          "No, but I won't tell. I'm Walter Browne, Dean Orellana's assistant, and you're the new sub?
+          She's looking for you." He smiled. "It'd be better
         if you came of your own accord."</p>
 
         <p>"Am I in trouble already?"</p>
-        <p>"Probably not, it's just that things are a bit tense right now." he said, leading
+        <p>"No, it's just that tensions are running a bit high right now." he said, leading
           me away from the stairwell. "This wing
           should've been opened in time for the start of the school year but there was a... complication."
         </p>
         <p>
-          I expected him to go on, but his silence suggested it was better that I just hear it from the Dean.
+          He didn't explain, so I didn't ask.
         </p>
         <p>We <ListCard expansions={["passed"]}
           tag="c2-passed"
@@ -352,11 +349,9 @@ export default ({currentSection, inventory, cards}) => {
           sturdy Yankee type: Abbot, Page, Bradley, <ListCard expansions={["Horace"]}
             tag="c2-horace"
             card={<span>This one caught my eye—the resemblance to Lillian was obvious. Her grandmother
-            was apparently a keen squash player.</span>} />. Nearly all of them were white, which
-          disappointed but didn't surprise me.
+            was apparently a keen squash player.</span>} />.
         </p>
-        <p>When we reached the landing, I heard the Dean call out from her office. "I expected her sooner, Walter." </p>
-        <p>He gave me an apologetic look. "Good luck."</p>
+        <p>We reached the upper landing and the office of the Dean. Walter the assistant gave me an apologetic look. "Good luck."</p>
         <p><NextChapter chapter={3} /></p>
 
       </div>,

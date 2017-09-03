@@ -78,7 +78,7 @@ export const paper2 = () => {
     <img src="images/hands.png" alt="Woodcut of linked hands in a 19th century style" />
     <h4>A New Paradise</h4>
     <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
-      Join like-minded free thinkers as we build a futuristic way of living—as equals before God and Man,
+      Join like-minded free thinkers as we build a Scientific Way of living—as equals before God and Man,
       guided by Science and Spirit alike. <small>Inquire at 10 Broad St. Boston, MA</small>.
     </p>
   </div>
@@ -99,13 +99,13 @@ export const paper3 = () => {
           tag="paper-join"
           nextUnit="section"
           author="students"
-          card={<span>100 years to the day! Keep Blithedale weird! See you in the quad tomorrow!</span>} />  in the Great Hall to celebrate the commencement of our great
-        journey together.
+          card={<span>100 years to the day! Keep Blithedale weird! See you in the quad tomorrow!</span>} />  in the Phalanstery
+        to celebrate the commencement of our spiritual journey together.
       </p>
       <p>
-        The Astrolith—symbol of our divine providence and rightness of our
-        endeavor—has been unveiled. Prayers, speeches, and readings will
-        continue through the evening. All are welcome.
+        The Astrolith, symbol of our divine providence and infusor of vitality—has been unveiled.
+        Demonstrations of the power of Magnetism, Galvonic Forces, and Spiritual Science will be
+        provided by Professor C. Prayers, speeches, and readings will continue through the evening. All are welcome.
       </p>
     </div>
   </div>

@@ -184,8 +184,10 @@ export default ({currentSection, inventory, cards}) => {
             </p>
           </div>,
           archaeologist: <div>
-            <header>
-              <h6>* * * </h6>
+            <header className="section-divider">
+              <svg className="divider" fill="white" stroke="black">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+              </svg>
             </header>
             <p>
               I didn't want <Map from={inventory.c2_direction}

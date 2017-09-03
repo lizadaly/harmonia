@@ -112,10 +112,12 @@ export default ({currentSection, inventory, cards}) => {
         They call us Founder's Daughters; there's a formal social club and everything. I find it all pretty boring."
       </p>
       <p>
-        "Not many people come from a line of women scholars, Lillian. It's okay to be proud of that."
+        "Not many people come from a line of women scholars, Lillian. It's <ListCard expansions={["okay"]}
+          tag="c4-okay"
+          card={<span>I sound so square sometimes.</span>} /> to be proud of that."
       </p>
       <p>
-        She smiled a little but shrugged it off. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
+        She seemed embarrassed. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
       </p>
     </section>,
     <section>
@@ -127,7 +129,7 @@ export default ({currentSection, inventory, cards}) => {
 
           curiosity: <div>
             <p>"The Circular?" I asked.</p>
-            <p>"The utopians published a monthly newsletter. The library has almost a complete archive."
+            <p>"The utopians published a newsletter. The library has almost a complete archive."
               From one of her folders she produced a reproduction of a broadsheet:
             </p>
             <Reader inventory={inventory} docs={[docs.paper1]} />
@@ -142,7 +144,7 @@ export default ({currentSection, inventory, cards}) => {
         }} />
       <p>"Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1889. I'd been helping him
       analyze them all summer, trying to fit them to a timeline that matched with the decline of the community."</p>
-      <p>"Are you sure this is from someone's <i>journal</i>?" I asked. "This looks like a page from a <i>novel</i> that
+      <p>"Are you sure this is from someone's journal?" I asked. "This looks like a page from a <i>novel</i> that
         I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
                       tag="c4-notes" />"</p>
     </section>,
@@ -167,16 +169,13 @@ export default ({currentSection, inventory, cards}) => {
         structures with it, and some livestock, maybe even some people. The community went
         bankrupt.<Map from={inventory.c2_brook} to={{_undefined: "", _any: " Just like Brook Farm did."}} />"</p>
       <p>"But the fire was probably an accident."</p>
-      <p>"Was it? If you read between the lines there—<i>there's no turning back</i>—that sounds like
-      something planned. What if this guy Cadwell decided his community wasn't going to make it, and wanted to—"</p>
-      <p>"Take everyone with him? Like a suicide pact?"</p>
-
       <p>"I've only found one first-person account of the fire and she mentions hearing an explosion, not some
-      oil lamp tipping over. Maybe that device Cadwell built was a kind of bomb."</p>
+        oil lamp tipping over. If you read between the lines there—<i>there's no turning back</i>—that sounds like
+      he was planning something extreme. Maybe Cadwell built a kind of bomb to finish off a utopian dream that failed."</p>
       <p>I didn't know what to say to that.</p>
-      <p>Lillian snatched the papers from my hands. "Professor Lynn could have found something
-        dangerous. Maybe he didn't run off—maybe he was injured down there,
-      in some old cellar. People accidentally dig up old mines all the time."</p>
+      <p>Lillian took the papers out of my hands. "Professor Lynn could have found something
+        dangerous in those tunnels. I don't think he was the kind of person who'd run off with stolen artifacts—maybe he was injured down
+      in some cellar. People accidentally dig up old mines all the time."</p>
       <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
         tag="c4-time" />"</p>
     </section>,
@@ -186,9 +185,8 @@ export default ({currentSection, inventory, cards}) => {
       <p>I sighed. "Lillian, what do you expect me to do? I just got here two days ago!"</p>
       <p>"As his substitute, you have access to Lynn's private papers. I've asked for them, but Ms. Gilman won't let me see them, and
       the Dean isn't interested in anything that delays the construction. Please," she said, "I don't know who else to ask."</p>
-      <p>I'd like to say that in her passion and conviction she reminded me of my younger self,
-        but she wasn't that much younger than me. It felt good, though, to feel needed—to
-        find someone who thought I could be useful, maybe even a little heroic.
+      <p>I'd say that her passion and conviction reminded me of my younger self,
+        but if I'm honest I was never very idealistic. It felt good to be needed, and I liked Lillian.
       </p>
       <p>"Okay," I said finally. "Let me see what you've got."</p>
       <NextChapter chapter={5} />

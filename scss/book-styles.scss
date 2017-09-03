@@ -98,7 +98,7 @@
     p {
       font-family: $utopian-font;
       font-size: 1.1rem;
-      line-height: 1.3rem;
+      line-height: 1.4rem;
       text-indent: 0;
       text-align: justify;
     }
@@ -131,7 +131,7 @@
       margin-bottom: 1em;
     }
   }
-  &.paper4 {
+  &.paper3, &.paper4 {
     max-width: 100%;
   }
   &.lynn1, &.lynn2, &.lynn3 {

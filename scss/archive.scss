@@ -10,8 +10,8 @@ body {
   background: $white;
 }
 a {
-  color: $darkgray;
-  border-bottom: 1px solid $darkgray;
+  color: inherit;
+  border-bottom: 1px solid;
 }
 a:hover {
   color: $orange;
@@ -46,6 +46,33 @@ header {
     padding-left: 2rem;
   }
 }
+@keyframes lineAnim {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+header.section-divider {
+
+  svg {
+    filter: url(#filter-line-wiggle);
+    -webkit-filter: url(#filter-line-wiggle);
+    height: 1rem;
+    margin: 2rem 0 1rem 0;
+    line {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: lineAnim 4s linear forwards;
+    }
+  }
+  img {
+    max-width: 33vw;
+    max-height: 25px;
+    margin: 3rem 0 2rem 0;
+    opacity: 0.15;
+  }
+}
+
 
 p {
   font-family: 'Lora', serif;
@@ -79,7 +106,7 @@ blockquote {
   color: $white;
   padding: 2rem;
   text-align: center;
-
+  margin: 1.5em 0;
   h4 {
     font-family: $sign-font;
   }
@@ -87,6 +114,7 @@ blockquote {
     background: none !important;
     color: $white;
     text-align: justify;
+    margin: 1em 0 0 0;
   }
 }
 body {
