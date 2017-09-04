@@ -14,8 +14,9 @@ export default ({currentSection, inventory, cards}) => {
 
       <header>
 
-        <h1>Harmonia</h1>
-        
+        <div className="title">
+          <h1>Harmonia</h1>
+        </div>
         <blockquote>
           I have neither power, time, nor occasion to be a great conqueror.
           Since Fortune and the Fates would give me none,
