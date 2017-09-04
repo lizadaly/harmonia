@@ -151,9 +151,9 @@ class _ListCard extends React.Component {
       return
     }
 
-    let cards = Array.from(document.getElementsByClassName('card'))
+    var cards = Array.from(document.getElementsByClassName('card'))
     cards = cards.filter((c) => {
-      if (c.classList.contains(cardSide)) {
+      if (c.classList.contains(cardSide) && c.id != card.id) {
         return c
       }
     })
@@ -168,20 +168,15 @@ class _ListCard extends React.Component {
         let testBottom = testTop + test.getBoundingClientRect().height
 
         console.log("comparing", card.id, "on side", cardSide, parseInt(cardTop), "/", parseInt(cardBottom), test.id, "at top/bottom", parseInt(testTop), "/", parseInt(testBottom))
-        if (testBottom > cardTop && testBottom < cardBottom) {
+        if (cardBottom > testTop && (cardBottom <= testBottom || cardTop <= testBottom)) {
           // Move the target down until it doesn't overlap
           console.log("moving due to collision with", test.id, "to", testBottom + 50)
           card.style.top = (testBottom + 50) + 'px'
           card.style.marginTop = 0
           // Try positioning the next card?
-          var that = this
-          window.setTimeout(function (cards) {
-            console.log("Repositioning card ", cards[i+1].id)
-            that.positionCardY(cards[i+1])
-          }, 10)
-
+          console.log(cards)
+          window.setTimeout(() => {}, 100)
         }
-
       }
     }
   }
