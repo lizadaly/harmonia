@@ -99,9 +99,9 @@ class _ListCard extends React.Component {
             break
         }
 
-        this.positionTargetY(source, target)
+        this.positionCardY(target)
 
-        var foo = j.connect({
+        j.connect({
           // Target/source swapped for animation
           target: sourceId,
           source: targetId,
@@ -124,9 +124,6 @@ class _ListCard extends React.Component {
     return props.added && !this.props.added
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log("updating " + this.props.tag)
-    console.log(prevProps)
-    console.log(this.props)
     this.onRender(true)
   }
   componentWillUnmount() {
@@ -135,28 +132,56 @@ class _ListCard extends React.Component {
     window.removeEventListener("resize", this.reRender)
   }
 
-  positionTargetY(source, target) {
+  positionCardY(card) {
     // Move the card down if necessary to avoid overlapping other cards;
     // TODO fix bug where this is triggered unnecessarily by elements on different sides.
 
+
+    let cardTop = card.getBoundingClientRect().top + window.scrollY
+    let cardBottom = cardTop + card.getBoundingClientRect().height
+    let cardSide = undefined
+    if (card.classList.contains("right")) {
+      cardSide = "right"
+    }
+    else if (card.classList.contains("left")) {
+      cardSide = "left"
+    }
+    // If this is a special case card, don't eval other positions
+    if (!cardSide) {
+      return
+    }
+
     let cards = Array.from(document.getElementsByClassName('card'))
+    cards = cards.filter((c) => {
+      if (c.classList.contains(cardSide)) {
+        return c
+      }
+    })
     cards.reverse()
-    let targetTop = target.getBoundingClientRect().top + window.scrollY
-    let targetBottom = targetTop + target.getBoundingClientRect().height
 
-    for (let card of cards) {
+    for (var i=0;i<cards.length;i++) {
+      let test = cards[i]
 
-      if (card.id != target.id) {
-        let box = card.getBoundingClientRect()
-        let cardBottom = card.getBoundingClientRect().top + window.scrollY + card.getBoundingClientRect().height
-        if (cardBottom > targetTop && cardBottom < targetBottom) {
-                    // Move the target down until it doesn't overlap
-          target.style.top = (cardBottom + 50) + 'px'
-          target.style.marginTop = 0
+      if (test.id != card.id) {
+        let box = test.getBoundingClientRect()
+        let testTop = test.getBoundingClientRect().top + window.scrollY
+        let testBottom = testTop + test.getBoundingClientRect().height
+
+        console.log("comparing", card.id, "on side", cardSide, parseInt(cardTop), "/", parseInt(cardBottom), test.id, "at top/bottom", parseInt(testTop), "/", parseInt(testBottom))
+        if (testBottom > cardTop && testBottom < cardBottom) {
+          // Move the target down until it doesn't overlap
+          console.log("moving due to collision with", test.id, "to", testBottom + 50)
+          card.style.top = (testBottom + 50) + 'px'
+          card.style.marginTop = 0
+          // Try positioning the next card?
+          var that = this
+          window.setTimeout(function (cards) {
+            console.log("Repositioning card ", cards[i+1].id)
+            that.positionCardY(cards[i+1])
+          }, 10)
+
         }
-        else {
-          break
-        }
+
       }
     }
   }
@@ -176,19 +201,17 @@ class _ListCard extends React.Component {
   }
 
   render() {
-
     // Stick the element in a stupid nobr so jsPlumb doesn't get confused about the bounding box
     return <span>
       <nobr className="link-source" id={'source-' + this.props.tag}>
         <List {...this.props} expansions={[[this.props.expansions[0]], [this.props.expansions[0]]]} onComplete={this.onComplete} />
       </nobr>
       <Card text={this.props.card}
-            tag={this.props.tag}
-            visible={this.props.added}
-            author={this.props.author}
-            forceDir={this.props.forceDir}/>
+        tag={this.props.tag}
+        visible={this.props.added}
+        author={this.props.author}
+        forceDir={this.props.forceDir}/>
     </span>
-
   }
 }
 _ListCard.propTypes = {

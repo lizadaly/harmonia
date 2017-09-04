@@ -118,9 +118,9 @@ export default ({currentSection, inventory, cards}) => {
     <Reader inventory={inventory} docs={[docs.bellamy]} />
   </section>,
   <section>
-    <p>The next excerpt was from an English utopian novel. I assumed he was
-      setting up a lecture on the mechanisms by which these travelers
-      discover the "perfect society":
+    <p>The next excerpt was from an English utopian novel. I assumed he intended to
+      lecture on the mechanisms by which these travelers
+      discover their "perfect" society:
     </p>
     <Reader inventory={inventory} docs={[docs.age1]} />
   </section>,

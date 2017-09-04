@@ -21,7 +21,7 @@ export default ({currentSection, inventory}) => {
     </header>
     <p>
       Dean Orellana's office was spacious, comfortably furnished, and adorned with vintage college memorabilia:
-      group photos of serious-looking young women in bloomers, field hockey trophies, awards for comportment and elocution.
+      group photos of serious young women in bloomers, field hockey trophies, awards for comportment and elocution.
       A large <ListCard expansions={["oil painting"]}
         tag="c4_painting"
         card={<span>A moody rendition of the college campus. In place of the quad was a massive
@@ -58,7 +58,7 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       "I expect you to teach Utopian Literature to undergrads. Then I expect
-      to decide whether to bring you back next semester—despite your <ListCard expansions={["less-than-stellar"]}
+      to decide whether to bring you back next semester, despite your <ListCard expansions={["less-than-stellar"]}
         tag="c3-back" card={<span>I was a foster kid from an old mill town, but sure, be all judgy.</span>} /> qualifications."
     </p>
     <p>
@@ -70,7 +70,7 @@ export default ({currentSection, inventory}) => {
       full syllabus from Professor Lynn? That's what I'm paying you to teach."
     </p>
     <p>
-      "Well, actually, I don't, <List expansions={[["but in addition to that—"], ["but—"]]}
+      "Well, I don't, <List expansions={[["but in addition to that—"], ["but—"]]}
                                   tag="c3-but" />"
     </p>
   </section>,

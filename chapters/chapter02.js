@@ -15,7 +15,7 @@ export default ({currentSection, inventory, cards}) => {
       <h2>Chapter Two</h2>
       <blockquote>
         Their educational system was a peculiar one, and, as it was the chief interest of the country,
-        I shall describe it before proceeding farther with this narrative.<br/>
+        I shall describe it before proceeding farther with this narrative.<br/><br/>
         - <i>Mizora: A Prophesy</i>, Mary E. Bradley (1889)
       </blockquote>
     </header>
