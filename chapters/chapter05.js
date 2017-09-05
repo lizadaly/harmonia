@@ -15,7 +15,7 @@ export default ({currentSection, inventory, cards}) => {
         <h2>Chapter Five</h2>
         <blockquote>
           "It was a beautiful world, but it was not my world."
-          <br/>
+          <br/>          <br/>
           —<i>Moving the Mountain</i>, Charlotte Perkins Gilman (1911)
         </blockquote>
       </header>
@@ -30,7 +30,7 @@ export default ({currentSection, inventory, cards}) => {
         Her hypothesis that there had been a deliberate violent act
         towards the community was suggestive but not quite convincing. <ListCard expansions={["Ignatius Cadwell"]}
           tag="c5-ignatius" card={<span>This was the "Professor C—" chastised for his experiments in the newspaper column.</span>} /> was
-        indeed one of the founding members of the Harmonians. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
+        indeed one of the founding members of Harmonia. He'd answered a <List expansions={[["classified ad"], ["classified ad"]]}
                                                                                tag="c5-ad" /> for recruits posted in one of the many
         Spiritualist newspapers at the time. Lynn had a copy:
       </p>
@@ -38,8 +38,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <Reader inventory={inventory} docs={[docs.paper2]} />
       <p>
-        Cadwell and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Despite being a colony that
-        ostensibly treated women as equals, Elsie Cadwell was featured only sparsely in the records.</span>} /> Elsie moved to the
+        Cadwell and his <ListCard tag="c5-wife" expansions={["wife"]} card={<span>Elsie Cadwell was featured only sparsely in the records.</span>} /> Elsie moved to the
         nascent Harmonia community in 1885, along with about 75 other would-be utopians. The population waxed and waned
         for several years, peaking at 110 in the summer of 1888, until an irreversible slide meant that only 20
         families remained at the time of the Great Hall fire in November 1889.
@@ -62,7 +61,7 @@ export default ({currentSection, inventory, cards}) => {
                                           tag="c5-dream" />?
       </p>
       <p>I needed to get that fragment back and find more of them, if they existed. Surely Lynn, an academic, kept a journal of
-        his own—at the very least he'd have extensive documentation of the materials recovered from the construction.
+        his own. At the very least he ought to have documentation of the materials recovered from the excavations.
       </p>
       <p>
         Collecting my thoughts, I <ListCard expansions={["jotted down"]} tag="c5-options"
@@ -78,7 +77,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <p>In fact I should've done this already—I really needed that syllabus—but I was was sensing that this woman
+    <p>In fact I should've done this already—I really needed that syllabus—but I was sensing that this woman
       was avoiding me.
     </p>
     <p className="card-inline">

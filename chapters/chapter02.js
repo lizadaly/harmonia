@@ -68,7 +68,7 @@ export default ({currentSection, inventory, cards}) => {
 
     <p>"Hi <ListCard expansions={["Professor Fuller"]}
       tag="c2-fuller"
-      card={<span>I should've corrected her, but there's only so much debasement I could handle for one morning.</span>} />,  I'm Lillian Horace. It says in my
+      card={<span>I should've corrected her but there's only so many times in one day I can be expected to debase myself.</span>} />,  I'm Lillian Horace. It says in my
       notes that <i>Utopia</i> was actually published in 1516."</p>
     <p>"Yes, fine, sorry." Now I was flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many heads nodded. I looked back down at the syllabus I'd thrown together
@@ -105,8 +105,7 @@ export default ({currentSection, inventory, cards}) => {
           <p>"The who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
           <p>"They called the community Harmonia," Charlotte added.</p>
-          <p>A third girl chimed in: "They believed in equality of the sexes."</p>
-          <p>"That's why they founded a women's college," Lillian finished.</p>
+          <p>"Eventually it failed and some of the women stayed on to found the college," Lillian finished.</p>
           <p>"Huh," I said. "I did <ListCard expansions={["not know that"]} tag="c3_idea"
             card={<span>So much for being the voice of authority.</span>} />."
           </p>
@@ -133,11 +132,12 @@ export default ({currentSection, inventory, cards}) => {
       }}
     />
     <p>
-      Lillian again: "We were supposed to start on Bellamy this week." She paused. "I did the reading already."
+      Lillian again: "We were supposed to start on Bellamy this week." She paused, and considered me for a moment.
+      "I did the reading and I could summarize it now?"
     </p>
-    <p>"Excellent. Could you summarize it for us?"</p>
+    <p>"Excellent, thank you!" I said. I got the sense she was throwing me a softball.</p>
     <p>
-      She looked pleased. "<i>Looking Backward</i> by Edward Bellamy tells the story of a Boston man who <ListCard
+      "<i>Looking Backward</i> by Edward Bellamy tells the story of a Boston man who <ListCard
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
         card={<span>Heroes in utopian novels tend to tumble into holes or
@@ -163,12 +163,15 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <header>
 
-      <h6  style={{marginTop: '10rem'}}>* * * </h6>
-
+      <header className="section-divider" style={{marginTop: '10rem'}}>
+        <svg className="divider" fill="white" stroke="black">
+          <line x1="0" y1="0" x2="100%" y2="0" />
+        </svg>
+      </header>
     </header>
     <p>
       The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
-      It was laid out along one slope of the Berkshires foothills, in an area once cleared for
+      It was laid out along one slope of the Berkshire foothills, in an area once cleared for
       agriculture but now largely forested.
       Almost every spot on campus afforded gorgeous views down into the valley:
       a rolling canopy punctuated by chimneys and whitewashed steeples. The nearest village, where most of the
@@ -189,10 +192,16 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       I drifted into the quad.
       Footpaths through the grass all veered
-      around a central clearing, where a stepped viewing platform encircled a curious stone peak:
+      around a central clearing, where a stepped viewing platform encircled a curious <List expansions={[["stone peak"], ["stone peak"]]}
+                                                                                        tag="c2-astrolith" />:
     </p>
+  </section>,
+  <section>
     <figure>
       <img src="images/meteorite.jpg" />
+      <figcaption>
+        (I've reproduced this and many other sketches from memory.)
+      </figcaption>
     </figure>
     <p>
       It was an inky black boulder, a dozen meters around the base and pointed like a pint-sized mountain. There were bumps and cavities
@@ -235,22 +244,24 @@ export default ({currentSection, inventory, cards}) => {
     Say NO to removal and keep Blithedale weird!
   </blockquote>
   <p>
-    A trail of earth removal gear lead uphill to a dreary concrete building marked SCIENCE CENTER.
+    A trail of construction equipment lead uphill to a dreary concrete building marked SCIENCE CENTER.
     One wing of the building
     looked brand new, its gray blocks gleaming but no less ugly. A backhoe was parked nearby,
     lying in wait.
   </p>
   <p>
     A paved path ran between the meteorite and the largest building on campus, where the administrative staff worked.
-    The Dean's office was there; she was expecting me to check in.
+    More importantly, the dean worked there, and she'd told me to check in as soon as I <ListCard expansions={["arrived"]}
+      tag="c2-arrived"
+      card={<span>Since that was the middle of the night, I hadn't yet had the chance.</span>}/>.
   </p>
   <p>
     Amid the students coming and going from the Science Center, I recognized the <ListCard expansions={["odd woman"]}
       tag="c2_woman"
-      card={<span>I wanted to thank her for the other night, and ask her for the keys to Lynn's office
+      card={<span>I wanted to thank her, and ask her for the keys to Lynn's office
       and his teaching material.</span>} /> who
-    had let me in the building last night. She paused at the entrance to the building, looked around, almost as if she
-    was afraid of being followed, and disappeared inside.
+    had let me in the building last night. She paused at the entrance to the building, looked around as if
+    she didn't want to be seen, and disappeared inside.
 
   </p>
   <p>
@@ -264,17 +275,17 @@ export default ({currentSection, inventory, cards}) => {
       "curiosity": <div>
         <p>The dean would have to wait.</p>
         <p>The atrium of the Science Center was only partially finished, still
-          swathed in plastic sheeting and warning tape, with sawdust was everywhere. The floor was covered by layers of protective
+          swathed in plastic sheeting and warning tape, with sawdust everywhere. The floor was covered by layers of protective
           tan paper, dirtied by boot marks from workers.
         </p>
         <p>I didn't see the woman so I followed the path of heaviest footprints down the hallway.
           The newer rooms seemed to be
           unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Walls and chairs
-          and benches were all sharp-edged and bright white, very much a contrast to the ivy-league aspirations of
+          and benches were all sharp-edged and bright white, in contrast to the ivy-league aspirations of
         the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
           leading up were incomplete. The stairs leading down were crisscrossed with
-          tape and "No Admittance" signs, but they looked easy enough to duck under, if I reached out to <List expansions={[["lift the tape—"], ["lift—"]]} tag="c2_cellar" />
+          tape and "No Admittance" signs, but if I just reached out and <List expansions={[["lifted the tape—"], ["lifted—"]]} tag="c2_cellar" />
         </p>
       </div>,
       'dean': <div>
@@ -291,15 +302,18 @@ export default ({currentSection, inventory, cards}) => {
           An older woman with jet black hair and a kindly face was placing some manuscripts
           into a glass-topped display case and didn't seem
           to hear the knock. "Excuse me,"
-          I said, as quietly as possible, and she jumped. I introduced myself.
+          I said, as quietly as possible, and she jumped.
         </p>
         <p>
-          "Oh, nice to meet you, Abby! Sorry I was startled, I get absorbed by my work sometimes!
-          I'm Ella Merchant, I'm the college archivist."
+          "Sorry to have startled you! I'm Abby Fuller, I'm substituting for Jeffrey Lynn."
         </p>
         <p>
-          The exhibit room was painted goldenrod and decorated with lush curtains and furnishing,
-          probably the first stop on any campus tour. Visitors could walk between rows of mahogany <ListCard expansions={["curio cases"]}
+          "No need to apologize; I tend to get absorbed in my work. I'm Ella Merchant, our resident librarian and archivist.
+          Welcome to our little museum."
+        </p>
+        <p>
+          The showy exhibit room, probably the first stop on any campus tour, was painted goldenrod and decorated
+          with lush curtains and furnishing. Visitors could walk between rows of mahogany <ListCard expansions={["curio cases"]}
             card={<span>Filled with 19th century ephemera: ads for patent medicine,
             diagrams of obscure farming equipment, and blurry tintypes of serious-looking women.</span>}
                                                                                                      tag="c2-cases" />,
@@ -320,32 +334,31 @@ export default ({currentSection, inventory, cards}) => {
   <Map from={inventory.c2_direction}
     to={{
       "curiosity": <div>
-        <p>"Can I help you find something?" a male voice behind me asked. I turned around.</p>
-        <p>He was very young, with a long, serious face. At a co-ed school I might have assumed he was a student
+        <p>"Can I help you find something?" a male voice behind me asked. I turned around, wearing what I assume
+        must be a patently guilty expression.</p>
+        <p>He was very young, but wore a sport coat and tie and a serious expression. At a co-ed school I might have assumed he was a student
           with an affectation for dressing like an <ListCard expansions={["adult"]}
             tag="c2-adult"
             card={<span>Current fashion standards at most colleges did not rise much above pajamas.</span>} />.
-        "Oh, sorry, I'm probably not supposed to be here am I?"</p>
+        "I'm probably not supposed to be here am I?"</p>
         <p>
-          "No, but I won't tell. I'm Walter Browne, Dean Orellana's assistant, and you're the new sub?
-          She's looking for you." He smiled. "It'd be better
-        if you came of your own accord."</p>
-
-        <p>"Am I in trouble already?"</p>
-        <p>"No, it's just that tensions are running a bit high right now." he said, leading
-          me away from the stairwell. "This wing
-          should've been opened in time for the start of the school year but there was a... complication."
+          "No, but I won't tell. I'm Walter Browne, Dean Orellana's assistant, and you're the new sub, I assume?
+          The dean is looking for you." He smiled and looked more like the kid that he was. "It'd be better
+          if you came of your own accord. Tensions are running a bit high right now and she can be somewhat...testy."
         </p>
         <p>
-          He didn't explain, so I didn't ask.
+          He didn't explain and I thought it best not to ask. I <ListCard expansions={["followed"]}
+            tag="c2-site"
+            card={<span>I never did see where the woman had gone.</span>}/> him away from the construction area.
         </p>
         <p>We <ListCard expansions={["passed"]}
           tag="c2-passed"
-          card={<span>We'd travelled through connecting corridors without actually going outside, a neat
+          card={<span>We travelled through connecting corridors without actually going outside, a neat
           concession to New England winters.</span>} />  from the sterile research center to the
           warm neo-Victorian administrative building.
-          To visit the Dean's office meant ascending a grand winding staircase, flanked by
-          portraits of distinguished faculty and former students. The family names were mostly of the
+          To visit the Dean's office meant ascending a grand winding staircase, flanked by    <ListCard expansions={["portraits"]}
+            tag="c2-portraits"
+            card={<span>A fine collection of uniformly white people.</span>}/> of distinguished faculty and former students. The family names were mostly of the
           sturdy Yankee type: Abbot, Page, Bradley, <ListCard expansions={["Horace"]}
             tag="c2-horace"
             card={<span>This one caught my eye—the resemblance to Lillian was obvious. Her grandmother

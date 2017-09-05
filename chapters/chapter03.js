@@ -15,7 +15,7 @@ export default ({currentSection, inventory}) => {
       <blockquote>
         I was filled with astonishment at women who, qualified by nature and fortune to have the world almost
         at their command, chose to seclude themselves from it and make a
-        new one for themselves. <br/>
+        new one for themselves. <br/><br/>
         —<i>Millennium Hall</i>, Sarah Scott (1762)
       </blockquote>
     </header>
@@ -29,16 +29,16 @@ export default ({currentSection, inventory}) => {
 
     </p>
     <p>
-      "I heard your first class went reasonably well," she said, without looking up. She was
+      "I heard your first class went reasonably well," she said without looking up from her work. She was
       younger than I expected, mid 40s,
       but no less intimidating. She wore a tightly fitted crimson suit and I noticed her framed Wharton MBA
       had been positioned to be clearly visible behind her desk.
     </p>
     <p>
-      "I'm glad to hear; I thought it did too." I <ListCard expansions={["paused"]}
+      "I'm glad to hear; I thought it did too." I paused. "<ListCard expansions={["Thank you"]}
         tag="c3-paused"
         card={<span>I've been told I don't show sufficient deference to authority to be successful in
-        academia, so I've been working on that.</span>} />. "Thank you again for offering me this position."
+        academia, so I'd been working on that.</span>} /> again for offering me this position."
     </p>
     <p>
       "You're welcome." She said nothing else, just regarded me <ListCard tag="c4_regarded"
@@ -57,7 +57,7 @@ export default ({currentSection, inventory}) => {
   </section>,
   <section>
     <p>
-      "I expect you to teach Utopian Literature to undergrads. Then I expect
+      She put her hands on her desk and very deliberately folded them. "I expect you to teach Utopian Literature to undergrads. Then I expect
       to decide whether to bring you back next semester, despite your <ListCard expansions={["less-than-stellar"]}
         tag="c3-back" card={<span>I was a foster kid from an old mill town, but sure, be all judgy.</span>} /> qualifications."
     </p>
@@ -70,19 +70,21 @@ export default ({currentSection, inventory}) => {
       full syllabus from Professor Lynn? That's what I'm paying you to teach."
     </p>
     <p>
-      "Well, I don't, <List expansions={[["but in addition to that—"], ["but—"]]}
+      "Not yet, <List expansions={[["but what would also be helpful—"], ["but—"]]}
                                   tag="c3-but" />"
     </p>
   </section>,
   <section>
-
+    <p>
+      "But?"
+    </p>
     <Map from={inventory.c4_specific}
       to={{
-        _undefined: <p>She was just testing me. I started over, more calmly. "I will get the syllabus right after this meeting,
+        _undefined: <p>"I will get the syllabus right after this meeting,
           but to teach I need context. The students expect me to be familiar with
           the history of this college, and to speak confidently about what happened to Professor Lynn."
         </p>,
-        _any: <p>She was just testing me. I started over, more calmly. "I will get the syllabus right after this meeting,
+        _any: <p>"I will get the syllabus right after this meeting,
           but to teach I need context. The students expect me to be familiar with   <Map from={inventory.c4_question1 || inventory.c4_question2}
             to={{
               _undefined: <span>
@@ -94,18 +96,18 @@ export default ({currentSection, inventory}) => {
               </span>,
               _any: <span>the history of this college, and to speak confidently about what happened to Professor Lynn."</span>
             }} />
-          </p>
-          }} />
-          <p>
-            "Ms. Fuller, I am very busy and have an appointment in 10 minutes. You're going
-            to have to <List expansions={[["pick one"], ["pick one"]]}
-                         tag="c4_specific" nextUnit="none"/>."
+        </p>
+      }} />
+    <p>
+      "Ms. Fuller, I am very busy and have an appointment in 10 minutes. What are you  <List expansions={[["asking me"], ["asking me"]]}
+                                                                                         tag="c4_specific" nextUnit="none"/>?"
           </p>
         </section>,
         <section>
           <Map from={inventory.c4_question1 || inventory.c4_question2}
             to={{
               "happened": <div>
+                <p>"I need to know what happened to my predecessor."</p>
                 <p>
                   She paused, and then told me to close the door. "Jeffrey Lynn had been teaching
                   here for over 10 years. His class on utopianism is a signature one for the college, given our history.
@@ -119,7 +121,7 @@ export default ({currentSection, inventory}) => {
                 <p>
                   "The historical significance of the campus can be an asset to us,
                   though frankly I prefer to downplay it. It was a long time ago and
-                  the community had some—unconventional ideas. In addition, any historically significant structures are a liability
+                  the community had some...unconventional ideas. In addition, any historically significant structures are a liability
                   when it comes to modernization and development. I asked Jeffrey to lead the
                   conservation team—to protect the artifacts found during the excavations but to balance that
                   against an aggressive construction schedule."
@@ -141,23 +143,29 @@ export default ({currentSection, inventory}) => {
                 </p>
               </div>,
               "history": <div>
-                <p>"All right. As you may know the college was
-                  founded on the grounds of a failed utopian community called '<ListCard expansions={["Harmonia"]}
+                <p>
+                  "The history of this college is relevant to my class yet I know nothing about it."
+                </p>
+                <p>"All right." She seemed to relax a little. "This had been rural farmland in the early 1800s, but around
+                  1880 it was purchased for use by an emergent utopian community called '<ListCard expansions={["Harmonia"]}
                     tag="c3-harmonia"
                     card={<span>She made visible air quotes here.</span>} />.'
-                  They believed that scientific progress was the key to creating a more peaceful and cooperative society."
+                  They believed that promoting what they considered to be 'scientific progress' was the key to
+                  a more advanced society—that if they structured their society in just the right away, they'd
+                  bring the future to them."
                 </p>
                 <p>She nodded
-                  towards the oil painting. "They uncovered that meteorite early on, when they were tilling their fields
-                  and decided it was a sign. They built their great hall around it, as a kind of paean to the
+                  towards the oil painting. "That meteorite was an annoyance to the early European farmers, but to the
+                  Harmonians it was a sign. They built their great hall around it, as a kind of paean to the
                   mystical nonsense that passed for science back then."
                 </p>
-                <p>"What happened to the community?"</p>
+                <p>"What happened to them?"</p>
                 <p>
                   "Most of these utopian communities were made up of madmen, dreamers, and incompetent farmers.
                   The soil up here is poor and the winters are brutal."
-                  She stared at the painting before continuing. "They made some... poor decisions, and the community
-                  was in decine by 1899, when their Great Hall caught fire. There were some deaths, and bankrupcy soon
+                  She stared at the painting before continuing. "They made some... poor decisions—the community
+                  was in decline anyway—and in 1899 their hall caught fire. There were some deaths, a lot of
+                  property loss, and bankrupcy soon
                   followed."
                 </p>
                 <p>She paused. "Jeffrey Lynn was our leading scholar of the utopian period.
@@ -181,7 +189,7 @@ export default ({currentSection, inventory}) => {
   <section>
     <p>
       "Just after term started, he halted the construction project—went out one morning and stood in front of the
-      bulldozers, said everything had to stop. As far as I was concerned he was fired, tenure be damned.
+      bulldozers, said everything had to stop.
       He'd missed a few classes, and stopped joining the
       regular meetings with the Historical Committee. <Map from={inventory.c2_direction}
         to={{
@@ -189,7 +197,8 @@ export default ({currentSection, inventory}) => {
           dean: <span>You met Ella, she's the committee chair, she </span>
 
         }} /> says he'd started going through materials from one of the old cellars by himself and not
-      involving the group.
+      involving the group. I would've fired him if he showed his face on campus after that, tenure be damned,
+      but he didn't.
     </p>
     <p>
       "I believe he found some artifact or another down there that was too good to pass up
@@ -225,14 +234,14 @@ export default ({currentSection, inventory}) => {
             I thanked the dean and closed the door behind me. Walter came immediately out of his small adjacent office.
           </p>
           <p>
-            "That could've been worse," he said. "Sorry, walls are thin."
+            "Sorry, walls are thin. But that could've been worse."
           </p>
           <p>
-            "If you say so," I said. "What do you know about Alice Gilman? The Dean told me to find her."
+            "If you say so," I replied. "What do you know about Alice Gilman? The Dean told me to find her."
           </p>
           <p>
-            He made a face. "She gives me the creeps. Students joke she's the ghost of a long-dead utopian, because
-            of the way she roams around the college alone at night."
+            He made a face. "Students joke she's the ghost of a long-dead utopian, because
+            of the way she roams around the college alone at night. She gives me the creeps."
           </p>
           <p>
             "I wouldn't say she was friendly, but she did help me the night I arrived."

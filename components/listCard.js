@@ -121,6 +121,10 @@ class _ListCard extends React.Component {
     window.addEventListener('resize', this.reRender)
   }
   shouldComponentUpdate(props) {
+    if (this.props.alwaysEval) {
+      return true
+    }
+
     return props.added && !this.props.added
   }
   componentDidUpdate(prevProps, prevState) {
@@ -173,9 +177,6 @@ class _ListCard extends React.Component {
           console.log("moving due to collision with", test.id, "to", testBottom + 50)
           card.style.top = (testBottom + 50) + 'px'
           card.style.marginTop = 0
-          // Try positioning the next card?
-          console.log(cards)
-          window.setTimeout(() => {}, 100)
         }
       }
     }
@@ -221,11 +222,13 @@ _ListCard.propTypes = {
   onLoad: PropTypes.func,
   // Game-specific
   author: PropTypes.string,
-  forceDir: PropTypes.string
+  forceDir: PropTypes.string,
+  alwaysEval: PropTypes.bool
 }
 _ListCard.defaultProps = {
   nextUnit: "none",
   author: "main",
+  alwaysEval: false
 }
 
 const mapStateToProps = (state, ownProps, added=false) => {

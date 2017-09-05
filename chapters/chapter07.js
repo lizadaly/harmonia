@@ -17,7 +17,7 @@ export default ({currentSection, inventory, cards}) => {
         <blockquote>
           "What is the breath of life?" I ask at last.<br/>
           "Oh, I can answer that; I have found it out since I have been here. It is, my
-          dear, electricity, which we assimilate into spirit."<br/>
+          dear, electricity, which we assimilate into spirit."<br/><br/>
           —<i>Arqtiq</i>, Anna Adolph (1899)
         </blockquote>
       </header>
@@ -112,7 +112,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           burglary: <div>
             <p>After a cold and damp wait, I saw Gilman exit the building through a rear door and disappear behind
-            the gymnasium. I made my move.</p>
+            the gymnasium. She carried that satchel so I couldn't tell if she'd taken any paperwork from his office. I made my move.</p>
             <p>
               It was late afternoon now, and many faculty members were packing up to drive home or down to the village.
               I <List expansions={[["tried"], ["tried"]]}
@@ -166,22 +166,22 @@ export default ({currentSection, inventory, cards}) => {
             <Reader inventory={inventory} docs={[docs.paper3]} />
           </div>,
           burglary: <div>
-            <p>This time the noise attracted a woman in the office across the hall. I didn't <ListCard tag="c7_reminded"
+            <p>This time the noise attracted a woman in the office across the hall who was on her way home. I didn't <ListCard tag="c7_reminded"
               expansions={["recognize"]} card={<span>Like me, she had a working-class accent—maybe Brooklyn?</span>} /> her from any of my
               dining hall visits. "Oh,
               are you Abby Fuller?" she asked.
             </p>
-            <p>Her name was Lois and she taught Creative Writing. I'd come up with a long implausible story
-              in case I was caught, but in the moment I panicked and simply said I'd lost Lynn's key.
+            <p>Her name was Lois. She taught Creative Writing and was extremely pretty. I'd come up with a carefully crafted story
+              in case I was caught, but instead I panicked and said something incoherent about losing Lynn's key.
             </p>
-            <p>"I'm afraid all the locks are different so my key won't help," she said, and then added, slyly, "But the windows don't lock at all."</p>
-            <p>She lead me around the back of the building and waited to see if I made it, all despite the freezing rain. Minutes later, thanks to 20th century building codes, I had dropped into Lynn's office through
-            a window off the fire escape.</p>
-            <p>
-              "Nice meeting you," I heard her yell out. "<ListCard expansions={["Call me"]}
-                nextUnit="section"
-                tag="c7_numbers" card={<span>Reader, I got her number.</span>} /> sometime!"
+            <p>"I'm afraid all the locks are different so my key won't help," she said, and then added, slyly,
+              "But the windows don't lock at all. See you at lunch sometime," and then <ListCard expansions={["winked"]}
+                tag="c7_numbers" card={<span>I swear this part is true.</span>} />.</p>
+            <p>Turns out there was a wrought iron fire escape that led straight past Lynn's office window. It lifted
+              easily, and there was so much clutter that I barely had to <List expansions={[["climb down"], ["climb down"]]}
+                                                                           tag="c7-climb" /> inside.
             </p>
+
           </div>,
           archaeologist: <div>
             <header className="section-divider">
@@ -190,34 +190,25 @@ export default ({currentSection, inventory, cards}) => {
               </svg>
             </header>
             <p>
-              I didn't want <Map from={inventory.c2_direction}
+              After I promised never to reveal my source,  <Map from={inventory.c2_direction}
                 to={{
                   curiosity: "Walter",
                   dean: "the archivist"
-                }} /> to get into trouble for letting me down into the Science Center excavation so I refused the kind
-              offer to accompany me. I did accept a flashlight and a key to the storage crate
+                }} /> lent me a flashlight and a key to the storage crate
               where construction workers had been told to put any material that might be of interest to the Historical
               Committee.
             </p>
             <p>
-              The basement beneath the Center was modern, if unfinished, and notable for one reason:
+              The basement immediately beneath the Center was modern, if unfinished, and notable for one reason:
               the car-sized <ListCard expansions={["hole"]}
                 tag="c7_punched" card={<span>
                   <Map from={inventory.c2_direction}
                     to={{
                       curiosity: "Walter",
-                    dean: "Ella"
-                  }} /> had said that its discovery was an accident, revealed when the construction team had gone in to
-                  extend the foundation.</span>} /> that been punched out of the
-              concrete wall, revealing an earthen tunnel framed by timber.
-            </p>
-            <p> It was easy to forget that these
-              utopians had no motorized machinery of any kind—everything they built had to be done by hand. I put my
-              palm up against one of the struts; it felt damp but strong.
-            </p>
-            <p>
-              I switched on the flashlight, ducked, and entered the tunnel. As it narrowed, I observed
-              some hand-penciled graffiti on one of the support posts. I leaned in to <List expansions={[["examine"], ["examine"]]}
+                      dean: "Ella"
+                    }} /> had said that its discovery was an accident, revealed when the construction team had gone in to
+                extend the foundation.</span>} /> that been punched out of the
+              concrete wall, revealing an earthen tunnel framed by timber. I leaned in to <List expansions={[["examine"], ["examine"]]}
                 tag="c7-beam" /> it.
             </p>
           </div>
@@ -270,7 +261,7 @@ export default ({currentSection, inventory, cards}) => {
 
           </div>,
           archaeologist: <div>
-            <blockquote className="elsie-font">May the beam lead me only <ListCard expansions={["forward"]}
+            <blockquote className="elsie-font">My destiny lies only <ListCard expansions={["forward"]}
               tag="c7_forward"
               card={<span>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife.</span>} />
             . — November 23, 1889</blockquote>
@@ -340,13 +331,14 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           burglary: <div>
             <p>
-              Lynn's annotations were undated, but this seemed to be an early find. The second set of notes were
+              Lynn's annotations were undated, but this seemed to be where he first determined that Cadwell was the
+              journal author. The second set of notes were
               obviously made more recently:
             </p>
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
           archaeologist: <div>
-            <Reader inventory={inventory} docs={[docs.frag5]} />
+            <Reader inventory={inventory} docs={[docs.frag5]} next="none" />
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>
         }} />
@@ -418,19 +410,19 @@ export default ({currentSection, inventory, cards}) => {
             <Map from={inventory.c2_direction}
               to={{
                 curiosity:  <div>
-                  <p>"Who are you?" I said, holding the papers slightly behind my back.</p>
+                  <p>"And who are you?" I held the papers slightly behind my back.</p>
                   <p>"This is Ms. Merchant," Lillian said, in a tone that suggested I should've known this.</p>
                   <p>"You're the librarian?" I said.</p>
                   <p>"Archivist." She eyed the open window and my flushed appearance. "You know if you ever need to get anywhere
-                  in the school, just ask." She paused. "I'll probably say yes."</p>
+                  in the school, I can probably help." She paused. "If you're polite."</p>
                 </div>
               }} />
             <p>
               "We didn't find any more journal entries," Lillian said. "Though it looks like you did."
             </p>
             <p>I gave the papers to Lillian and asked Ella, "Do you know where Lynn lived?"</p>
-            <p>"Adams House," she said. The name didn't mean anything to me.</p>
-            <p>"Oh, that's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
+            <p>"Adams House." The name was meaningless to me.</p>
+            <p>"Oh, that's right on campus," Lillian said. "One of the <ListCard expansions={["original"]} tag="c7_house"
               card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings."</p>
             <p>"I don't have keys to people's homes," Ella said.</p>
             <p>"Sure," I said. "But does his home have a window?"</p>

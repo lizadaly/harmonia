@@ -24,12 +24,17 @@ export default ({currentSection, inventory, cards}) => {
           — Preface to <i>The Blazing World</i>, Margaret Lucas Cavendish (1666)
         </blockquote>
 
+        <p className="begin">
+          <List expansions={[["Begin"], [""]]} tag="c1-begin" />
+        </p>
+      </header>
+    </section>,
+    <section>
+      <header>
         <figure className="chapter-1">
           <img src="images/opening.jpg" />
         </figure>
-
         <h2>November 3, 1998</h2>
-
       </header>
 
       <p>It was midnight when I arrived on campus and the weather was
@@ -38,7 +43,7 @@ export default ({currentSection, inventory, cards}) => {
         came upon the sign for <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
-          Massachusetts like a bookmark.</span>} />. This little village would be my home now.
+          Massachusetts like a bookmark.</span>} />. I had arrived.
       </p>
       <p>
         A substitute teaching position was not the big break I'd been hoping for,
@@ -93,11 +98,15 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>
-      Lynn's office was small, stuffed with an absolute riot of folders, loose notes, and library books.
-      A few old surveyor maps were tacked to the walls. Despite the clutter, the room felt abandoned.
+      Lynn's office was a cramped, almost windowless jumble of mismatched furniture all piled with folders, loose notes, and <ListCard expansions={["books"]}
+        tag="c1-books"
+        card={<span>An odd mix of monographs on 19th century literature and foundational engineering texts.</span>} />.
+      Old surveyor maps of the region were tacked to the walls. The few decorative items were 19th century junk store
+      relics like rusty iron cranks and wooden spindles, repurposed as paperweights.
+      Despite the clutter, the room felt abandoned.
     </p>
     <p>
-      His desk was a special kind of academic disaster, but a small worktable by the doorway held just a single stack of papers.
+      Remarkably, a small worktable by the doorway held just a single stack of papers.
       I recognized a draft of his class syllabus and <ListCard expansions={["picked it up"]}
         tag="c1_syllabus"
         nextUnit="section"

@@ -48,10 +48,10 @@ export const frag2 = ({inventory}) =>  {
       I resume after a lull in my work; our neighbors were becoming more <ListCard author="lynn"
         tag="frag2-vocal"
         expansions={["vocal"]}
-        card={<span>See <List expansions={[["The Circular"], ["The Circular"]]}
+        card={<span>See <List expansions={[["The Harbinger"], ["The Harbinger"]]}
                tag="frag2-circular" /> for numerous examples: reports of strange explosions, sounds, smells!</span>} /> in their
       complaints. I admit difficulty in containing some of the experiments—there have been fires, and I have had
-      to resort to stealing scraps of metal and wood to replace my damaged equipment. By moving the entire apparatus
+      to resort to asking E. to steal scraps of metal and wood to replace my damaged equipment. By moving the entire apparatus
       below-ground, I eliminated the danger of prying eyes (and ears), but progress has slowed due to
       the poor lighting down there and the need to further enlarge the natural work-space.
     </p>
@@ -63,14 +63,15 @@ export const frag3 = ({inventory}) =>  {
     <h1>November 22, 1889</h1>
     <p>
       I write in haste and with great fatigue—I can barely recall what sleep feels like. But there is
-      no more work to be done, and no turning back. The device is complete.
+      no more work to be done, and no turning back. The Instrument is complete.
     </p>
     <p>
-      This community was founded with the goal of realizing the Perfect Future. It is clear
-      that we have failed. The pull of the <i>now</i> is too great, my founding family has left us,
-      and our once-great experiment dissolves faster each day.
+      This community was founded with the goal of realizing a Scientific way of life. It is clear
+      that we have failed. Our founding members have left us,
+      and our once-great experiment dissolves faster each day. It is all too clear to me now that
+      the society of today is too resistant to change.
     </p>
-    <p>E— and I will descend beneath the Great Hall, where I will say my final words to this world,
+    <p>E. and I will descend beneath the Great Hall, where I will say my final words to this world,
       and together we will operate the device. I only hope to find a way for her to <ListCard
         author="elsie"
         tag="frag3-z"
@@ -125,9 +126,9 @@ export const frag4 = ({inventory, note=false}) =>  {
   </div>
 }
 
-export const frag5 = () =>  (
+export const frag5 = ({next="section"}) =>  (
   <div>
-    <h1>June 2, 1889</h1>
+    <h1>June 2, 1888</h1>
     <p>
       Is there anything more beautiful than Harmonia in the summer? We are in high spirits, as yet more members
       have <ListCard author="lynn" expansions={["joined"]} tag="frag-pop" author="lynn"
@@ -137,12 +138,14 @@ export const frag5 = () =>  (
     </p>
     <p>
       This month was my turn at the <ListCard author="lynn" expansions={["digging"]} tag="frag-digging"
-        card={<span>More evidence of a network of supply tunnels and cellars for root storage.
-        Do these still exist?</span>} /> work-group. Of course I was too busy with my <ListCard  author="lynn" expansions={["galvanic experiments"]}
-          tag="frag-mit"
-          nextUnit="section"
-          card={<span>Only one Harmonian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
-          1882, joined Harmonia at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed upon E- to find me a replacement, and she succeeded as she does
+        card={<span>More evidence of a network of supply tunnels and cellars.
+        Do these still exist?</span>} /> work-group. Of course I was too busy with
+
+      my <ListCard  author="lynn" expansions={["galvanic experiments"]}
+        tag="frag-mit"
+        nextUnit={next}
+        card={<span>Only one Harmonian was known to be an engineer: I. Cadwell. Dropped out of MIT in 1878, no record except marriage certificate in
+        1882, joined Harmonia at the founding in 1883.</span>} /> to waste time with manual labor; I prevailed upon E. to find me a replacement, and she succeeded as she does
       all things. She is so devoted to my work—an example to all of our husbands and wives who seek a more
       Scientific marriage.
     </p>
@@ -157,7 +160,7 @@ export const frag6 = () =>  (
       successfully, and as such I am convinced of the readiness of the device for a human being.
     </p>
     <p>Of course, it would be foolish for <i>me</i> to be the first to enter—if something were to go awry,
-      it would hardly be possible for E- to fix it! After much consternation, I convinced E- of the rightness of my plan. If only all our wives were so rational in their thinking,
+      it would hardly be possible for E. to fix it! After much consternation, I convinced E. of the rightness of my plan. If only all our wives were so rational in their thinking,
       we would not have seen the departure of so many families this year.
     </p>
     <p>
@@ -166,9 +169,9 @@ export const frag6 = () =>  (
         in my personal collection for now.</span>} />, the device requires two to operate (a flaw I will address in a subsequent
       design). After a final disagreeable conversation, we entered the work-space via
       the <ListCard author="lynn" expansions={["eastern tunnel"]}
-        tag="frag-tunnel" card={<span>No excavation of this tunnel to date, if the work-space is where I believe it to be.</span>} />. E- ascended to the platform, and I engaged the galvanic
+        tag="frag-tunnel" card={<span>No excavation of this tunnel to date, if the work-space is where I believe it to be.</span>} />. E. ascended to the platform, and I engaged the galvanic
       engine. While achieving sufficient rotational speed, the engine exceeds the tolerance of its
-      brass enclosure—stronger rivets are required, I believe. But I succeeded, and E- underwent
+      brass enclosure. Stronger rivets are required, I believe. But I succeeded, and E. underwent
       the <ListCard author="lynn" expansions={["transfiguration"]}
         tag="tag-transformation" card={<span>Frustrating lack of detail here!</span>} /> of her spirit
       as planned, and I returned her to our world as we agreed, no more than ten minutes thence.

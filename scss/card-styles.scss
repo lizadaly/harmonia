@@ -93,14 +93,13 @@
 }
 
 @keyframes doAnim {
-
     to {
       stroke-dashoffset: 0;
     }
 }
 
 .jtk-connector.drawing > path {
-  animation: doAnim 4s linear forwards;
+  animation: doAnim 3s linear forwards;
 }
 
 .link-source span span {

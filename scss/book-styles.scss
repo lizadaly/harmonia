@@ -110,6 +110,9 @@
       text-transform: uppercase;
       font-family: $utopian-font;
     }
+    h1 {
+      font-size: 3rem;
+    }
     h2 {
       font-size: 1rem;
       font-weight: normal;
@@ -133,6 +136,20 @@
   }
   &.paper3, &.paper4 {
     max-width: 100%;
+  }
+  &.paper3 {
+    header {
+      margin-bottom: 0;
+    }
+    h2 {
+      padding: 0;
+    }
+    img {
+      max-width: 25%;
+    }
+    h4 {
+      margin: .5em 0;
+    }
   }
   &.lynn1, &.lynn2, &.lynn3 {
     font-family: $lynn-font;

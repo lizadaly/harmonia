@@ -60,26 +60,28 @@ export const lynn2 = () => (
 export const lynn3 = () => (
   <div>
     <p>
-      I came down this morning after she'd gone to bed. I thought—I'd just help out,
-      take out the food trash, I don't know. I guess I was spying on her. She'd asked me to stay
-      out of her way while she worked on the repairs all through the day and night,
-      in a kind of trance. She said she didn't want to be disturbed, "That's all,"
-      but I know it was because she'd long stopped consulting Cadwell's papers anymore, as if—
+      I came down this morning after she'd gone to bed. I thought I'd just help out,
+      take out the food waste, I don't know. I guess I was spying on her. She'd asked me to stay
+      out of her way, said she didn't want to be disturbed ("That's all, Jeffrey!")
+      but I know it was because she'd long stopped consulting Cadwell's papers anymore, as if she
+      no longer needed them, or never needed them at all.
     </p>
     <p>
-      That large pile of stones in the back, she'd warned me over and over, "Be careful back there, it's unstable."
-      Fishy, I thought. I decided to just—clean them up. I didn't have to spend much time digging through until I found
-      Cadwell.
+      I asked again about that large pile of stones behind the coal stove and she was evasive as ever: "There's
+      nothing back there, I looked, just old rocks." Fishy, I thought. I decided to just...take a peek.
+      I didn't have to spend much time digging through until I found Cadwell.
     </p>
-    <p>I assume it's him, anyway, there's little more than a skeleton. Dry rags of clothes still hang from it,
+    <p>I assume it's him, anyway. There's little more than a skeleton. Dry rags of clothes still hang from it,
       a tin cup and bucket by his side. And of course his journal.
     </p>
     <p>
-      Someone deliberately buried him, but he died here first. I read it, and I—I guess I'd known for a long time.
+      The journal makes it clear that he died here, and who must have buried him. I guess I've known for a long time;
+      it's no crazier than the device itself.
     </p>
     <p>
-      I covered him back up. If she knows that I found him, and her secret, well, I can see what will happen to me.
-      But if I play along, I'll get the chance to experience what I've only <List expansions={[["dreamt of—"], ["dreamt of"]]} tag="lynn-fate" />
+      God forgive me, I covered him back up. If she knows that I found him, well, I can see what will happen to me.
+      But if I feign ignorance a little longer, I'll get the chance to experience what other
+      historians could only <List expansions={[["dream of—"], ["dream of"]]} tag="lynn-fate" />
     </p>
   </div>
 )

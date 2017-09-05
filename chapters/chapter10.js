@@ -15,9 +15,11 @@ export default ({currentSection, inventory, cards}) => {
         I was a <ListCard expansions={["puff"]}
           tag="c10-d1"
           forceDir="down"
+          alwaysEval={true}
           card={<span>of <ListCard expansions={["atoms"]}
             tag="c10-d2"
             forceDir="left"
+            alwaysEval={true}
             card={<span>rushing through a tunnel
             </span>} /> <Map from={inventory["c10-d2"]}
               to={{
@@ -25,6 +27,7 @@ export default ({currentSection, inventory, cards}) => {
                     atoms: <span>and a cloud of <ListCard expansions={["dust"]}
                       tag="c10-d3"
                       forceDir="right"
+                      alwaysEval={true}
                       card={<span>floating in a still room
                       </span>} />
                     </span>
@@ -36,6 +39,7 @@ export default ({currentSection, inventory, cards}) => {
                         tag="c10-d4"
                         forceDir="center-down"
                         nextUnit="section"
+                        alwaysEval={true}
                         card={<span>from a wave.
                         </span>} />
                       </span>

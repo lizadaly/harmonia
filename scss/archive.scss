@@ -9,7 +9,10 @@ body {
   color: $black;
   background: $white;
 }
+
 nav.top-bar {
+  width: 100%;
+  opacity: 0.50;
   background: none;
 }
 
@@ -53,7 +56,11 @@ header {
     margin: 2rem auto;
     padding-left: 2rem;
     font-family: $utopian-font;
-
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  .begin {
+      font-family: 'Cinzel Decorative', serif;
   }
 }
 @keyframes lineAnim {
@@ -110,7 +117,7 @@ blockquote {
 }
 .sign {
   background: radial-gradient(ellipse farthest-corner at 90% 90%,
-                                    rgba(70, 60, 60, .8) 0%,
+                                    rgba(70, 60, 60, .6) 0%,
                                     rgba(65, 60, 60, 1) 100%);
 
   color: $white;
@@ -142,7 +149,15 @@ figure {
   right: 50%;
   margin-left: -30vw;
   margin-right: -30vw;
-
+  padding-bottom: 2em;
+  figcaption {
+    font-family: $card-font;
+    color: $black;
+    font-size: 16px;
+    text-indent: 0;
+    line-height: 1.3rem;
+    text-align: center;
+  }
 }
 
 
@@ -154,15 +169,8 @@ figure {
 
 
 
-nav {
-  position: absolute;
-  width: 100%;
-  opacity: 0.50;
-}
 
 .top-bar-right, .top-bar-title {
-  min-height: 100px;
-  min-width: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,17 +179,6 @@ nav {
     font-family: 'Cinzel Decorative', sans-serif;
     font-size: 15px;
   }
-}
-.top-bar-title {
-  background: url(../images/border-right.png) no-repeat right center;
-  background-size: contain;
-
-}
-
-.top-bar-right {
-  background: url(../images/border-left.png) no-repeat left center;
-  background-size: contain;
-
 }
 
 /*

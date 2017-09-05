@@ -9,7 +9,7 @@ export const paper1 = () => {
   return <div>
     <header>
       <img src="images/header-glyph.png" />
-      <h1>The Circular</h1>
+      <h1>The Harbinger</h1>
       <img src="images/angel.png" />
       <h2>Together We Shall Shine a Light ~ June 19, 1889</h2>
     </header>
@@ -67,7 +67,8 @@ export const paper1 = () => {
         There is known to be a similarity between electricity and the
         power of the will. It follows, then, that by the galvanic battery, it may be
         possible to put a spirit into soft iron such
-        as our Astrolith and, then to take it out again.
+        as our Astrolith and, then to take it out again. The implications of such
+        an Instrument could be quite profound.
       </p>
     </div>
 
@@ -88,18 +89,18 @@ export const paper3 = () => {
   return <div>
     <header>
       <img src="images/header-glyph.png" />
-      <h1>The Circular</h1>
-      <img src="images/angel.png" />
+      <h1>The Harbinger</h1>
       <h2>Together We Shall Shine a Light ~ November 23, 1884</h2>
     </header>
     <div className="paper-container">
+      <img src="images/trumpet.png" />
       <h4>The Astrolith Emerges</h4>
       <p>
         <span className="first-letter">T</span>HE FUTURE IS NOW! <ListCard expansions={["Join us"]}
           tag="paper-join"
           nextUnit="section"
           author="students"
-          card={<span>100 years to the day! Keep Blithedale weird! See you in the quad tomorrow!</span>} />  in the Phalanstery
+          card={<span>November 23 is Astrolith Day! Keep Blithedale weird! See you in the quad tomorrow!</span>} />  in the Phalanstery
         to celebrate the commencement of our spiritual journey together.
       </p>
       <p>
@@ -116,14 +117,14 @@ export const paper4 = () => (
   <div>
     <header>
       <img src="images/header-glyph.png" />
-      <h1>The Circular</h1>
+      <h1>The Harbinger</h1>
       <img src="images/angel.png" />
       <h2>Together We Shall Shine a Light ~ November 14, 1889</h2>
     </header>
     <div className="paper-container">
       <h4>A Note to Our Readers</h4>
       <p>
-        <span className="first-letter">S</span>AD DAY! This will be the last edition of The Circular
+        <span className="first-letter">S</span>AD DAY! This will be the last edition of The Harbinger
         for the year, possibly for-ever.
       </p>
       <p>
@@ -142,7 +143,7 @@ export const paper4 = () => (
       <p>
         We invite those who own or wish to buy their homes to <ListCard author="lynn"
           tag="paper4-stay" expansions={["stay"]}
-          card={<span>Only a dozen colonists did so, but that was enough to sustain them through the founding of the college.</span>} />. Our sole profitable venture has been
+          card={<span>Only a dozen utopians did so, mostly single women, but that was enough to sustain them through the founding of the college.</span>} />. Our sole profitable venture has been
         our school, and many of us seek to continue that work, or even to extend it. We have seen the
         benefits that equal education for <ListCard author="lynn"
           tag="paper4-boys" expansions={["boys and girls"]}

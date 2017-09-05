@@ -56,14 +56,16 @@ export default ({currentSection, inventory, cards}) => {
               dean: " now."
           }} />"</p>
       <p>
-        "We'll find her later. This is important." She handed me a worn old book, opened towards the front:
+        "We'll find her later. This is important." She handed me a worn old book, <List expansions={[["opened"], ["opened"]]}
+                                                                                    tag="c4-opened" /> towards the front:
       </p>
+    </section>,
+    <section>
+
       <Reader inventory={inventory} docs={[docs.brooks]} />
     </section>,
     <section>
-      <p>"This book belonged to Lynn," I said.</p>
-      <p>"How could you tell?"</p>
-      <p>"I recognize his handwriting. Who is Cadwell?"</p>
+      <p>"This book belonged to Lynn," I said. "I recognize his handwriting. Who is Cadwell?"</p>
       <p>"That's what I want
       to show—"</p>
 
@@ -81,12 +83,11 @@ export default ({currentSection, inventory, cards}) => {
         harmonize with the rest of the campus. In spite of that,
         it was a quiet and pleasant place to study, with abundant natural
         light and a wall of glass that overlooked the small orchard at the edge of campus.
-      </p>
-      <p>Naturally we were headed for the windowless basement instead.
+        Naturally we were headed for the windowless basement instead.
       </p>
       <p>
-        "Most of the utopians' buildings were made out of wood," Lillian explained. "It was the one resource they had in abundance.
-        They'd all been replaced by the 1930s." She unlocked a door marked <i>Library Personnel Only</i> and
+        "Most of the utopians' buildings were made out of wood; it was the one resource they had in abundance," Lillian explained.
+        "They were largely replaced when the college was founded." She unlocked a door marked <i>Library Personnel Only</i> and
         led me in. "The only original structures that are still standing are a few stone houses used as
         faculty residences. Meanwhile I get this crappy little space for my independent study."
       </p>
@@ -94,7 +95,7 @@ export default ({currentSection, inventory, cards}) => {
         The office was barely bigger than a storage closet and was crammed with equal amounts of library books and
         janitorial equipment. <Map from={inventory.c2_direction}
           to={{
-            curiosity: `"I saw a portrait of your grandmother, I think? By the dean's office. She looks remarkably like you."`,
+            curiosity: `"I saw a portrait of your grandmother by the dean's office," I said. "She looks remarkably like you."`,
               dean: `"You mentioned your family attended Blithedale?"`
           }} />
 
@@ -102,22 +103,17 @@ export default ({currentSection, inventory, cards}) => {
       <p>"Yeah, I come from a long line of <ListCard expansions={["alumna"]}
         tag="c7-legacy"
         card={<span>American universities give special preference to descendants of graduates. Not having illustrious ancestors of my own,
-        I find the practice irritating.</span>} />,"
-      she said, a little embarrassed.</p>
-      <p>
-        "Your mom went here?"
-      </p>
-      <p>
-        "And my grandmother, and her mother—I'm named after my great-grandmother who was in the first graduating class.
+        I'm not a fan of the practice.</span>} />. Mom, grandmom, and great-grandmom—I'm named after her. She was in the first
+        graduating class at Blithedale.
         They call us Founder's Daughters; there's a formal social club and everything. I find it all pretty boring."
       </p>
       <p>
         "Not many people come from a line of women scholars, Lillian. It's <ListCard expansions={["okay"]}
           tag="c4-okay"
-          card={<span>I sound so square sometimes.</span>} /> to be proud of that."
+          card={<span>God I sound so square sometimes.</span>} /> to be proud of that."
       </p>
       <p>
-        She seemed embarrassed. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
+        I'd clearly embarrassed her so she changed the subject. "Here, <List expansions={[["this"], ["this"]]} tag="c4-read" /> is what I wanted to show you."
       </p>
     </section>,
     <section>
@@ -128,7 +124,7 @@ export default ({currentSection, inventory, cards}) => {
         to={{
 
           curiosity: <div>
-            <p>"The Circular?" I asked.</p>
+            <p>"The Harbinger?" I asked.</p>
             <p>"The utopians published a newsletter. The library has almost a complete archive."
               From one of her folders she produced a reproduction of a broadsheet:
             </p>
@@ -138,7 +134,7 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c2_direction}
         to={{
           dean: <div>
-            <p>"I've seen The Circular," I said. "It was the utopians' newsletter."</p>
+            <p>"I've seen The Harbinger," I said. "It was the utopians' newsletter."</p>
           </div>
 
         }} />
@@ -150,12 +146,12 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>"No, this is definitely the personal diary
-        of a community member—Cadwell, an amateur scientist. Bit of a blowhard if you ask me."
+        of a community member. His name was Ignatius Cadwell, some kind of amateur scientist. Bit of a blowhard if you ask me."
       </p>
       <p>"Maybe he was also a frustrated novelist."</p>
       <p>She laughed. "That'd explain a lot; he seemed
         to think he could do anything. Now <List expansions={[["read"], ["read"]]}
-                    tag="c4-look" /> the other one."
+                                             tag="c4-look" /> the other one—this is from four months later."
       </p>
     </section>,
     <section>
@@ -163,7 +159,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>I pointed out the note in the
-      margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's handwriting."</p>
+      margin, in colored pencil and almost illegible. "Who added this note? That's not Lynn's writing."</p>
       <p>"I don't know, maybe another utopian? Does it matter?" She tapped the page. "On November 23, 1889—the day
         after this was written—the Great Hall burned down. It took a lot of other
         structures with it, and some livestock, maybe even some people. The community went
@@ -171,7 +167,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>"But the fire was probably an accident."</p>
       <p>"I've only found one first-person account of the fire and she mentions hearing an explosion, not some
         oil lamp tipping over. If you read between the lines there—<i>there's no turning back</i>—that sounds like
-      he was planning something extreme. Maybe Cadwell built a kind of bomb to finish off a utopian dream that failed."</p>
+      he was planning something extreme. Maybe Cadwell built a kind of bomb, to finish off a utopian dream that failed."</p>
       <p>I didn't know what to say to that.</p>
       <p>Lillian took the papers out of my hands. "Professor Lynn could have found something
         dangerous in those tunnels. I don't think he was the kind of person who'd run off with stolen artifacts—maybe he was injured down

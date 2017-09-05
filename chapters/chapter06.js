@@ -30,7 +30,7 @@ export default ({currentSection, inventory, cards}) => {
         "Good, can you find a relevant passage?" I asked.
       </p>
       <p>
-        She nodded and <ListCard expansions={[["read aloud"], ["read aloud"]]} tag="c6-mizora"
+        She nodded and <ListCard expansions={["read aloud"]} tag="c6-mizora"
           nextUnit="section"
           card={<span>I liked to ask shy kids to read out loud as a way of getting them comfortable
           with speaking in class.</span>} />:
@@ -44,13 +44,13 @@ export default ({currentSection, inventory, cards}) => {
       <p>The door in the back of the lecture hall opened, and to my surprise, Alice Gilman slid in and
       took a seat towards the back. I nodded to her in acknowledgment, but she didn't respond.</p>
       <p>I addressed the class again. "Remember, this was time before refrigeration, when
-        food products were frequently spoiled or adulterated. The idea of substituting real foods with
+        food products were frequently spoiled or adulterated. Strange as it seems to us, the idea of substituting real foods with
       artificial ones was considered a huge step forward."</p>
       <p>
         "Many of the actual utopian communities, including ours here, practiced vegetarianism," Lillian added.
       </p>
       <p>"With reason," Gilman said, unexpectedly. A couple students turned around and glared at her.</p>
-      <p>"I understand vegetarianism," María ventured, "but it's hard to imagine anyone today wishing
+      <p>"I understand not wanting to eat meat," María ventured, "but it's hard to imagine anyone today wishing
       to eradicate all animals—"</p>
       <p>"Animals stink," Gilman said. "Civilized people shouldn't live with that filth."</p>
       <p>
@@ -87,8 +87,8 @@ export default ({currentSection, inventory, cards}) => {
         being formed in the mid-1800s. And while we might take universal free education for granted as
         obvious social good, some thinkers
         in the 19th century—even women—saw education mostly as an opportunity to <ListCard expansions={["remake"]}
-          tag="c6_remake" card={<span>Or worse—many of these utopian novels are enthusiastically eugenicist. I wasn't
-          quite ready to tackle that topic with the class.</span>} /> minority and immigrant populations
+          tag="c6_remake" card={<span>Or worse—many of these utopian novels, and the real-life communities,
+          were enthusiastically eugenicist.</span>} /> minority and immigrant populations
       in their own idealized image."</p>
       <p>Gilman was frowning and sat with her arms crossed, but remained silent. It was María who spoke up
       again: "Can I read from something else?"</p>
@@ -98,7 +98,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         "Ella Merchant, the librarian, gave me this the other day. She
         knew I was taking this class and wasn't sure what book it was
-        from—she'd just found it among some utopian papers." She stood up, and read
+        from—she'd just found it among some Harmonian papers." She stood up, and read
         in a <ListCard expansions={["more confident voice"]} tag="c6_voice" card={<span>I have to admit,
           she made me proud.</span>} nextUnit="section"/>:
       </p>
@@ -117,7 +117,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>But I was closer and snatched the paper from the girl first. "No need, Ms. Gilman. <Map from={inventory.c5_direction}
         to={{
           there: "Perhaps we can return this to Lynn's full collection of documents, after lecture?",
-          burglary: "I'll ensure this is kept somewhere safe.",
+          burglary: "Maybe you could find me similar examples for our next class?",
           archaeologist: "I'll ensure this is kept somewhere safe."
         }} />"
       </p>
@@ -130,9 +130,9 @@ export default ({currentSection, inventory, cards}) => {
       <Reader inventory={inventory} docs={[docs.frag4]} note={true} />
     </section>,
     <section>
-      <p>While I'd been reading, classroom discipline had broken down. María was asking if anyone else though the story sounded like a
-        description of Blithedale itself. Charlotte was asking if this book was on the assigned reading list.
-        Lillian was scowling, flipping through her own notes wildly. I fixed my eyes on Gilman, who was
+      <p>Many of the students were talking at once. Charlotte was asking if this book was on the assigned reading list.
+        María noted that the story sounded like a
+        description of Blithedale itself. Lillian was scowling, flipping through her own notes. I fixed my eyes on Gilman, who was
         backing out towards the door.
       </p>
       <p>"Thank you, María," I said. "I did find that very illuminating."</p>
