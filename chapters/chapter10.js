@@ -11,63 +11,51 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <p>
-        I was a <ListCard expansions={["puff"]}
+      <p className="travel">
+        I became a <ListCard expansions={["cloud"]}
           tag="c10-d1"
           forceDir="down"
-          alwaysEval={true}
           card={<span>of <ListCard expansions={["atoms"]}
             tag="c10-d2"
-            forceDir="left"
-            alwaysEval={true}
-            card={<span>rushing through a tunnel
-            </span>} /> <Map from={inventory["c10-d2"]}
-              to={{
-                  _undefined: "",
-                    atoms: <span>and a cloud of <ListCard expansions={["dust"]}
-                      tag="c10-d3"
-                      forceDir="right"
-                      alwaysEval={true}
-                      card={<span>floating in a still room
-                      </span>} />
-                    </span>
-              }} />
-            <Map from={inventory["c10-d3"]}
-              to={{
-                    _undefined: "",
-                      _any: <span><br/><br/> and a spray of <ListCard expansions={["mist"]}
-                        tag="c10-d4"
-                        forceDir="center-down"
-                        nextUnit="section"
-                        alwaysEval={true}
-                        card={<span>from a wave.
-                        </span>} />
-                      </span>
-              }} />
-          </span>} />
+            forceDir="down"
+            card={<span>rushing through a <ListCard expansions={["tunnel"]}
+              tag="c10-d3"
+              forceDir="right"
+              card={<span>of stone and <ListCard expansions={["spirit"]}
+                tag="c10-d4"
+                forceDir="down"
+                card={<span>
+                  which landed with a <List expansions={[["sigh"], ["sigh"]]}
+                                        tag="c10-sigh" />.
+                </span>} />
+
+              </span>} />
+            </span>} /></span>
+          } />
+
       </p>
     </section>,
     <section>
       <header>
-        <h2 style={{marginTop: "10em"}}>Chapter 10</h2>
+        <h2 style={{marginTop: "12em"}}>Chapter 10</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
-          "I would not exchange this life for any I have ever led. I could not feel content with the life of
-          isolated houses and the conventions of civilization."<br/>
-          —Personal letter, Marianne Dwight, resident of Brook Farm (1844)
+          I would not exchange this life for any I have ever led. I could not feel content with the life of
+          isolated houses and the conventions of civilization.<br/><br/>
+          —Marianne Dwight, resident of Brook Farm in West Roxbury, MA (1844)
         </blockquote>
       </header>
       <p>
-        When I returned to myself, my body was a numb marionnette on the floor of the chamber. The machine was still
-        churning, emiting irregular banging sounds like a pair of shoes in a tumble dryer.
-        Eventually the banging became less frequent, until there was a final clatter of metal on
+        When I returned to myself, I lay on floor of the chamber, my limbs numb and near-useless. The machine was still
+        churning, emitting irregular banging sounds like a pair of shoes in a tumble dryer.
+        Eventually the noise became less frequent, until there was a final clatter of metal on
         metal and a resigned wheeze of steam, and then the room was silent.
       </p>
       <p>
-        The chamber door was unsealed and ajar. I clumsily fumbled it all the way open and dragged myself out.
+        The chamber door was unsealed. I clumsily fumbled it open and dragged myself out.
         The upper platform
         was intact and smelled of fresh wood. Small kerosene lamps lit the cavern but they were flickering,
-        soon to go out.
+        low on fuel.
       </p>
       <p>
         I descended the platform mostly by crawling. I fell the last few feet off the ladder and landed
@@ -80,14 +68,14 @@ export default ({currentSection, inventory, cards}) => {
         gold glow.
       </p>
       <p>
-        By the eastern tunnel, a dead man was slumped against the wall. He had exuberant brown muttonchops that were tinged with gray,
-        small silver-framed glasses, and was dressed in a simple wool vest, collared shirt, and trousers. I assumed this was Ignatius Cadwell.
+        By the eastern tunnel, a dead man was slumped against the wall. His face was framed by overgrown brown muttonchops
+        that were tinged with gray, and small silver glasses, and was dressed in a simple wool vest, collared shirt, and trousers. I assumed this was Ignatius Cadwell.
       </p>
       <p>
         I was able to stand now, barely, and made my way across the cavern like a toddler, grabbing at
         objects hand-over-hand for stability. Next to Cadwell's <ListCard expansions={["body"]}
           tag="c10-cadwell"
-          card={<span>I'd seen the dead, but only at funerals. I avoided looking directly at him,
+          card={<span>I'd seen the dead, but only at funerals. I didn't like to examine him,
             but I didn't see any obvious injury.
           </span>}/> lay a bucket, a tin cup, and, crucially, a <List expansions={[["journal"], ["journal"]]} tag="c10-journal" />.
       </p>
@@ -97,25 +85,24 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I recognized the handwriting in that note. "Lynn?" I called out, my voice echoing in the massive chamber.
+        I recognized the handwriting in that note. "Lynn?" I called out.
       </p>
       <p>
         A weak reply from far off: "In here."
       </p>
-      <p>I'd entered from the southern tunnel and it was indeed fully blocked, but the other was just
-        barely passable. I kicked rocks and boards aside and squeezed my way through, emerging
+      <p>I kicked rocks and boards aside and squeezed my way through the barely passable eastern tunnel, emerging
 
         in   <Map from={inventory.c5_direction}
           to={{
-            archaeologist: "what I recognized as the old root cellar (not so old now) beneath the Science Center",
+            archaeologist: "what I recognized as the old root cellar (not so old now) beneath the (not yet built) Science Center",
             _any: "a root cellar, flanked on one side by a trough full of sand and wooden storage crates on the other"
           }}
              />.  <Map from={inventory.c5_direction}
                to={{
-                 archaeologist: "This time, the storage room ",
+                 archaeologist: "In this time, the storage room ",
                  _any: "The storage room "
                }}
-                  /> ended in an earthen staircase leading to a closed door. The stairwell was lit by
+                  /> ended in a staircase leading to a closed door. The cellar was lit by
         a flickering gas lantern and a tantalizing rectangle of sunlight around the doorframe.
       </p>
       <p>
@@ -129,16 +116,16 @@ export default ({currentSection, inventory, cards}) => {
         He barked a laugh and struggled to sit up. "Does my substitute teacher have any water?" His voice was in tatters.
       </p>
       <p>
-        "I'm afraid I didn't pack appropriately." I pointed at the door. "May I?" He nodded and slid over to accommodate
+        "Not yet." I pointed at the door. "May I?" He nodded and slid over to accommodate
         me at the top of the steps.
       </p>
       <p>
-        The knob turned freely but the door didn't budge when I pushed on it. "I think it's barracaded on the other side,"
-        Lynn said. "I spent, I think, a day, maybe more, just getting through the tunnel. I was just too tired to—"
+        The knob turned freely but the door didn't budge. "I think it's barracaded on the other side,"
+        Lynn said. "I spent a day, maybe more, just getting through the tunnel. I was just too tired to—"
       </p>
       <p>
         "I'm not tired," I lied. I <List
-          tag="c10-door" expansions={[["pushed—"], ["pushed harder—"], ["stepped back and slammed into the door with my shoulder."]]} />
+          tag="c10-door" expansions={[["pushed—"], ["pushed harder—"], ["slammed into the door with my shoulder."]]} />
       </p>
     </section>,
     <section>
@@ -147,14 +134,11 @@ export default ({currentSection, inventory, cards}) => {
         into the ruin of a pantry.
       </p>
       <p>
-        Immediately my senses were assaulted by the smell of burnt wood and rubber. The walls were
-        stone and had survived the worst of it, but everything else was singed or powdered in soot.
+        The air stank of burnt wood and melted rubber. The sandstone walls had survived the worst of it, but
+        everything else was singed or powdered in soot.
         Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass. I could see through to more
-        broken rooms, arranged around a central space completely littered with the remains of the roof.
-        The peak of the Astrolith was just visible among burnt beams and scorched furniture.
-      </p>
-      <p>Nobody was around. The air was drier and
-        warmer than—when I'd left.
+        broken rooms, arranged around a central space littered with the remains of the roof.
+        The peak of the Astrolith was just visible among blackened beams and scorched furniture. Nobody was around.
       </p>
       <p>
         "Ah, yes, I finally get to see the Great Hall," Lynn said <ListCard tag="c10-hall"
@@ -163,37 +147,41 @@ export default ({currentSection, inventory, cards}) => {
         He tried to stand but couldn't, and rested against the lintel.
       </p>
       <p>
-        "I'll find some water," I said. I noticed that he was dressed archaically, with a
-        simple <ListCard expansions={["vest"]}
-          tag="c10-dressed" card={<span>A pocketwatch dangled from his vest, which I found obscurely
-          charming yet, in a way, weirdly useless.</span>} /> and wool pants. "I guess you were prepared to meet the locals."
+        "I'll find some water," I said. In the bright sunlight I could see how archaically he was dressed, with a
+        simple vest, pocketwatch, and wool pants.
       </p>
       <p>
         "It to be my first time through," he said, his voice a whisper. "But I saw her face as she threw the
         lever; she had no intention of bringing me back."
       </p>
       <p>
-        I nodded grimly. "I'll have to avoid being seen," I said. "But I'll <List expansions={[["return"], ["return"]]}
+        I nodded grimly. "I'll have to avoid being seen, but I'll <List expansions={[["return"], ["return"]]}
                                                                                 tag="c10-return" /> soon, I promise."
       </p>
     </section>,
     <section>
-      <p>***</p>
+      <header className="section-divider">
+        <svg className="divider" fill="white" stroke="black">
+          <line x1="0" y1="0" x2="100%" y2="0" />
+        </svg>
+      </header>
       <p>
-        It was a bright, cloudless December day, the threat of frost in the air. Without the
-        Astrolith as a reference point I'd have never recognized where I was. The imposing brick edifices of the college were absent, as were
-        most of the tall trees. Instead of a tidy monolithic green lawn, the ground was covered in a patchwork of
-        dirt, clover, and crabgrass. The air smelled of horses.
+        It was a bright, cloudless December day, with frost in the air. Without the
+        Astrolith as a reference I'd have never recognized where I was. The solemn brick edifices of the college were absent,
+        and the trees were few and small. Instead of a tidy green lawn, the ground was covered in a patchwork of
+        dirt, clover, and crabgrass. The odor of horses and hay was noticable.
+      </p>
+
+
+      <p>
+        Cadwell described our future as quiet, but I suppose it's what you're used to.
+        To him, the laughter of crows, the sighs and shuffling of farm animals,
+        the sound of a slow wagon crunching over gravel, was the modern cacophany of life he sought to escape.
+        What I heard most was an absence: no drone of distant airplanes, hum of ventilation systems, or trucks idling sloppily.
+        Those other sounds were peaceful.
       </p>
       <p>
-        Cadwell described our future as quiet, but I suppose it's what you're used to. For me, this was true quiet—no distant
-        buzz of airplanes, hum of HVAC systems, or sloppy idling of trucks.
-        The laughter of crows, the sigh and shuffling of farm animals,
-        the sound of a slow wagon crunching over gravel, that was the modern cacophany of life for him.
-        To me, these were the sounds of peace, and retreat.
-      </p>
-      <p>
-        In place of the college gymnasium was a large vegetable garden, shaded by a few twisted pear trees and bordered on one end by
+        In place of the college gymnasium was a large vegetable garden, shaded by a few gnarled pear trees and bordered on one end by
         a tidy hedge. A woman in a plain white
         cap was pulling up greenish pumpkins from a mass of vines.  <Map from={inventory.c10_woman || inventory.c10_men}
           to={{
@@ -281,12 +269,12 @@ export default ({currentSection, inventory, cards}) => {
               so I ran around the other, towards the voices. Wagons and horses were tied up by an open doorway.
               The horses stood in front of a drinking trough; I was desperate enough to consider getting water from it,
               but it was <ListCard expansions={["dry"]}
-                tag="c10-dry" card={<span>Many of the wells had been emptied as part of the fruitless attempt to
+                tag="c10-dry" card={<span>Many water sources had been emptied as part of the fruitless attempt to
                 save the Great Hall.</span>} />. Further away, I could make out the row of stone houses,
               and what appeared to be a large well.
             </p>
             <p>
-              I peeked into the doorway. Half a dozen men, all with luxurious and comical facial hair,
+              I peeked into the doorway. Half a dozen men, all with luxurious facial hair,
               were having some kind of impromptu meeting. Some looked comfortable seated on hay bales and
               barrels; others stood, fussily adjusting their appearance and seeming to object to everything.
             </p>
@@ -296,7 +284,10 @@ export default ({currentSection, inventory, cards}) => {
               and I for one will not sink a single additional penny into this fever dream."
             </p>
             <p>
-              "You'd feel differently, Williams, if you'd embraced Scientific Marriage." This was said by dapper fellow
+              "You'd feel differently, Williams, if you'd embraced <ListCard expansions={["Scientific Marriage"]}
+                tag="c10-marriage"
+                card={<span>I'd encountered this term in the archives a few times now, but never found a definition.</span>} />." This was said by a skinny
+              young fellow
               reclining pointedly in the hay.
             </p>
             <p>
@@ -312,7 +303,9 @@ export default ({currentSection, inventory, cards}) => {
               unsung genius not one year ago."
             </p>
             <p>
-              The dapper young man laughed unpleasantly. "Whenever that oaf opened his mouth I wanted to cringe.
+              The <ListCard expansions={["young man"]}
+                tag="c10-young-man"
+                card={<span>He was sallow and oily, with a stupid blond moustache and a punchable face.</span>} /> laughed unpleasantly. "Whenever that oaf opened his mouth I wanted to cringe.
               And don't get me started on his witch—I lay blame entirely at her feet for poisoning the minds of the other wives."
             </p>
             <p>
@@ -322,7 +315,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               "Then let us accept the offer from the ladies to independently incorporate the community school,"
-              Owen said, holding out his hands. Williams started to object, but was cut off: "They have raised over fifty-thousand
+              Owen said, his hands held out in a calming gesture. Williams started to object, but was cut off: "They have raised over fifty-thousand
               from various benefactors in Albany and Boston. That should be more than sufficient to recoop your investments."
             </p>
             <p>
@@ -336,7 +329,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               The gathering was breaking up, but I'd heard enough anyway. While the men huddled close to shake hands
               and otherwise congratulate each other on escaping the paradise they'd built for themselves,
-              I <List expansions={[["dashed"], ["dashed"]]} tag="c10-cross" /> to the row of stone houses.
+              I stole a nearby tin pail and <List expansions={[["dashed"], ["dashed"]]} tag="c10-cross" /> to the row of stone houses.
 
             </p>
 
@@ -365,8 +358,8 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I put the hook over the handle on my pail and lowered it hand-over-hand while the girl watched. Eventually I
-        felt it hit the surface of water I could tell the pail just flopped over and floated. The lightweight tin wasn't heavy
+        I put the hook over the handle on my pail and lowered it hand-over-hand while the girl watched.  I
+        felt it hit the surface of water and could tell it just flopped over and floated. The lightweight tin wasn't heavy
         enough.
       </p>
       <p>
@@ -380,8 +373,8 @@ export default ({currentSection, inventory, cards}) => {
       </section>,
     <section>
       <p>I dropped the stone in the bucket and lowered it again. This time I heard the satisfying <i>plunk</i> as
-        the pail sunk below the water. Once full, it was surprisingly heavy. I braced myself against the side of the cistern
-        and pulled harder. The girl, who had still said not a word, reached down and pulled with me. The boy
+        the pail sunk below the water. Once full, it was surprisingly heavy. The girl, who had still said not a word,
+        reached down and pulled with me. The boy
         just watched from afar.
       </p>
       <p>
@@ -400,7 +393,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
-      <p>The girl grabbed my arm suddenly. "Come this way," she said. She pulled me into a narrow one-story clapboard building,
+      <p>The sound of men's voices carried over the fields, and the girl grabbed my arm. "Come this way," she said. She pulled me into a narrow one-story clapboard building,
         long and low like a stable, painted white with black trim.
       </p>
       <p>
@@ -421,12 +414,10 @@ export default ({currentSection, inventory, cards}) => {
         bedrooms, but each was filled with cots and cradles.
       </p>
       <p>
-        "You don't live with your parents?" I asked, and she looked at me with such confusion that I changed
-        tack. "Why did you pull me off the road?"
+        "You don't live with your parents?" I asked.
       </p>
       <p>
-        We exited through the other end of the nursery and arrived at rear of the
-        Great Hall. "So the men wouldn't find you," she said.
+        She looked at me with honest puzzlement. "What are those?"
       </p>
       <NextChapter chapter={11} />
     </section>

@@ -118,7 +118,6 @@ export const paper4 = () => (
     <header>
       <img src="images/header-glyph.png" />
       <h1>The Harbinger</h1>
-      <img src="images/angel.png" />
       <h2>Together We Shall Shine a Light ~ November 14, 1889</h2>
     </header>
     <div className="paper-container">
@@ -151,10 +150,12 @@ export const paper4 = () => (
         there.
       </p>
       <h4>Plea for a Safe Return</h4>
+      <img src="images/rooster.png" style={{float: "right", paddingLeft: "2em"}}/>
+
       <p>Our own Mr. A— writes, "If any man has taken it upon himself to remove my chickens from their
         enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
       </p>
-      <h4>The Study of the Unknown </h4>
+      <h4 style={{clear: "both"}}>The Study of the Unknown </h4>
       <p>
         <ListCard author="lynn"
           tag="paper4-anon" expansions={["Anon"]}

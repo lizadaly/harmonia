@@ -197,26 +197,18 @@ export const frag7 = () => (
     </p>
     <p>
       I went forward, those four mornings ago, for my usual survey of the New Eden. When I
-      returned, she was in a strange temper. She grabbed hold of me—with such passion!—and apologized
+      returned, she was in a strange temper. She grabbed hold of me, with unusual passion, and apologized
       for her recent behavior, then begged me to let her go "one more time." Because I am a kind and
-      generous husband, I agreed—so foolish!
-      I feared the journeys had been a drain on her nervous disposition, you see,
-      and I wonder now whether these trips
+      generous husband, I agreed. That was foolish, and I wonder now whether these trips
       had caused some kind of mental derangement. Certainly there is nothing else to account for her
       recent turn.
     </p>
     <p>
       When I pulled the lever, she dissipated as usual but thence followed a distant explosion. Dirt wafted through the
-      tunnels, briefly choking me. When I attempted to investigate, I discovered that the tunnels
+      tunnels, choking the air in here. When I attempted to investigate, I discovered that the tunnels
       were blocked by debris. Within an hour, tendrils of smoke were curling into the chamber, and I
       realized the Great Hall must be aflame.
-    </p>
-    <p>
-      In retrospect I should have set about immediately removing it, but I assumed that a rescue
-      would be soon forthcoming. There wasn't one; and of course there would not be. We had taken such
-      care for our work to remain hidden.
-    </p>
-    <p>I do not know the extent of the damage above me;
+      I do not know the extent of the damage above me;
       perhaps the entire community is in ashes.
     </p>
     <p>
@@ -224,9 +216,9 @@ export const frag7 = () => (
         tag="frag-tunneleastern"
         expansions={["eastern tunnel"]}
         nextUnit="section"
-        card={<span>Then that is where I will start digging.</span>} />, but too little—Elsie prepared well and left almost
+        card={<span>Then that is where I will start digging.</span>} />, but not enough—I am too exhausted to carry on. Elsie prepared well and left almost
       nothing behind that would serve as a useful tool.
-      (She left the supply of water, I suppose to convince herself that she gave me a fair chance. It is long gone now.)
+      She left the supply of water, I suppose to convince herself that she gave me a fair chance. It is long gone now.
     </p>
 
     <p>

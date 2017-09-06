@@ -1,0 +1,18 @@
+nav.top-bar {
+  width: 100%;
+  opacity: 0.50;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar-right, .top-bar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  a {
+    border-bottom: none;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 15px;
+  }
+}

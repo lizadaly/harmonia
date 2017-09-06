@@ -25,16 +25,15 @@ export const lillian1 = () => (
       upbringing has taught me, it is the importance of education.
       Uncle was adamant that I be part of the first graduating class.
     </p>
-    <p>
-      It may sound ungrateful, but I was saddened that once I came of age, he left—he did so fondly, but firmly.
-      "There is so much here I need to see for myself," he said, in his mysterious way. He asked me to
-      tell you that he'd fulfilled your request. He assured me you'd know what he meant.
-    </p>
+
     <p>
       You should know he has passed on.  I was
       only a few years out of school and newly married; I stayed here to teach the next generation of girls.
+      When I came of age, he left, saying, "There is so much here I need to see for myself."
       He had made it all the way to Wyoming—can you
       imagine! It has been years but I still miss him. His knowledge of the world seemed boundless.
+      (He asked me to
+      tell you that he'd fulfilled your request. He assured me you'd know what he meant.)
     </p>
     <p>
       As such, I have no family with whom to share my latest news, but for you. We have had our first child! It is a girl,
@@ -43,7 +42,7 @@ export const lillian1 = () => (
     <p>
       I do not know to what address I should post this letter, but Uncle had told me, with that familiar twinkle in his eye,
       to simply keep it safe and eventually you would read it. I don't see how this can be true,
-      but as I said, he comprehended so many wonders.
+      but as I said, he comprehended so many mysteries.
     </p>
     <p style={{textIndent: 0, textAlign: "left", paddingRight: "5em"}}>
       Yours, <br/>

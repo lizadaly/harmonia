@@ -1,3 +1,4 @@
+@import 'nav';
 @import 'book-styles';
 @import 'card-styles';
 @import 'colors';
@@ -8,16 +9,15 @@
 body {
   color: $black;
   background: $white;
+  overflow-x: hidden;
 }
-
-nav.top-bar {
-  width: 100%;
-  opacity: 0.50;
-  background: none;
+img {
+  max-width: 100%;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
   border-bottom: 1px solid;
 }
 a:hover {
@@ -69,6 +69,7 @@ header {
     }
 }
 
+
 header.section-divider {
 
   svg {
@@ -92,7 +93,8 @@ header.section-divider {
 
 
 p {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.5em;
   font-size: 18px;
 }
 
@@ -134,13 +136,7 @@ blockquote {
     margin: 1em 0 0 0;
   }
 }
-body {
-  overflow-x: hidden;
-}
 
-img {
-  max-width: 100%;
-}
 
 figure {
   width: 60vw;
@@ -170,16 +166,6 @@ figure {
 
 
 
-.top-bar-right, .top-bar-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    border-bottom: none;
-    font-family: 'Cinzel Decorative', sans-serif;
-    font-size: 15px;
-  }
-}
 
 /*
 .chapter section p, .current-chapter section p {

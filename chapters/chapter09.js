@@ -26,7 +26,7 @@ export default ({currentSection, inventory, cards}) => {
         with my flashlight beam; they led to a series of tripod-mounted spotlights, all dark, positioned around the
         cave. Lying on top of the generator, as if deliberately placed there to be impossible to miss, was a manilla folder.
         I opened it, tucking the flashlight under my arm to free both hands. The first
-        was an original issue of The Harbinger, <ListCard expansions={[["annotated"], ["annotated"]]}
+        was an original issue of The Harbinger, <ListCard expansions={["annotated"]}
           tag="c9_paper"
           nextUnit="section"
           card={<span>This edition was from the end of the community's existence, when the full-length newspaper had

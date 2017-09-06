@@ -3,7 +3,13 @@ $lillian-old-font: 'Arapey', serif;
   font-family: $lillian-old-font;
   color: $lillian-color;
   font-size: 22px;
+}
+$lillian-new-font: 'Caveat', sans-serif;
 
+.lillian-new-font {
+  font-family: $lillian-new-font;
+  color: $lillian-color;
+  font-size: 30px;
 }
 
 $elsie-font: 'Julee', sans-serif;

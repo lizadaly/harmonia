@@ -14,6 +14,10 @@
   padding-left: 3em;
 }
 
+p.travel {
+  @extend .card-style;
+}
+
 .card {
   @extend .card-style;
   position: absolute;
@@ -68,10 +72,22 @@
     font-family: $students-font;
     color: $students-color;
   }
-  &.force-down {
-    font-family: 'Archivo Narrow', sans-serif;
-    color: $black;
+  &.lillian {
+    text-align: left !important;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: $lillian-new-font;
+    color: $lillian-new-color;
+    font-size: 22px;
+  }
+  &.lillian-center {
+    font-family: $lillian-new-font;
+    color: $lillian-new-color;
+    font-size: 22px;
+  }
+  &.force-down {
+    width: 80%;
     margin-top: 10rem;
     text-align: center;
   }

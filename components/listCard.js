@@ -40,7 +40,7 @@ class _ListCard extends React.Component {
     }, 100)
 
     // Wait until we're sure everything has rendered before firing this
-    window.setTimeout(this.onRender, 2000)
+    window.setTimeout(this.onRender, 200)
   }
 
   onComplete() {
@@ -121,10 +121,6 @@ class _ListCard extends React.Component {
     window.addEventListener('resize', this.reRender)
   }
   shouldComponentUpdate(props) {
-    if (this.props.alwaysEval) {
-      return true
-    }
-
     return props.added && !this.props.added
   }
   componentDidUpdate(prevProps, prevState) {

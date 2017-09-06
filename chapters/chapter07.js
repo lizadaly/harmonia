@@ -430,7 +430,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           archaeologist: <div>
 
-            <p>"Ally?"</p>
+            <p>"Abby?"</p>
 
             <p>It was  <Map from={inventory.c2_direction}
                               to={{

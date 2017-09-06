@@ -161,14 +161,13 @@ export default ({currentSection, inventory, cards}) => {
     </p>
   </section>,
   <section>
-    <header>
 
-      <header className="section-divider" style={{marginTop: '10rem'}}>
-        <svg className="divider" fill="white" stroke="black">
-          <line x1="0" y1="0" x2="100%" y2="0" />
-        </svg>
-      </header>
+    <header className="section-divider" style={{marginTop: '10rem'}}>
+      <svg className="divider" fill="white" stroke="black">
+        <line x1="0" y1="0" x2="100%" y2="0" />
+      </svg>
     </header>
+    
     <p>
       The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
       It was laid out along one slope of the Berkshire foothills, in an area once cleared for
