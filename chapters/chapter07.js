@@ -362,15 +362,16 @@ export default ({currentSection, inventory, cards}) => {
               "Where are those tunnels that Lynn refers to in his note?"
             </p>
             <p>
-              "If he was writing in August, he was probably talking about the one under the Science Center. He
-              halted the expansion of the foundation when they broke through into an old root cellar." She paused.
-              "That's when Jeffrey started going down there alone. I didn't like it, but I couldn't stop him
+              "If he was writing in August, he was probably talking about the one under the Science Center," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said.
+              "He
+              halted the expansion of the foundation when they broke through into an old root cellar.
+              That's when Jeffrey started going down there alone. I didn't like it, but I couldn't stop him
               without involving the Dean."
             </p>
             <p>"The last entry mentions a blueprint. <Map from={inventory.frag_blueprint}
               to={{
-                _undefined: "Lynn's note says he put it in his private collection.",
-                _any: "If Lynn put that in a 'private collection,' where would that be?"
+                _undefined: "Lynn's note says he put it in his personal collection.",
+                _any: "If Lynn put that in a 'personal collection,' where would that be?"
               }} /> Would he have kept papers like that here?"
             </p>
             <p>"No, Dean had me catalog all the college property in his office after he disappeared and I

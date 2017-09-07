@@ -26,15 +26,15 @@ export default ({currentSection, inventory, cards}) => {
     <p>
       Twelve young women, seated in neat
       rows, stared back at me.
-      I dropped my armful of papers on the lecturn and most of them slid off and fanned
+      I dropped my armful of papers on the lectern and most of them slid off and fanned
       out onto the floor. I brushed my hair out of my face.
     </p>
-    <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
+    <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I mumbled.</p>
     <p>"Can't hear you," said someone in the back.</p>
     <p>"Sorry! Welcome to <i>Nineteenth Century Utopian Literature</i>. My name is <ListCard expansions={["Abby Fuller"]}
-        tag="c1-name"
-        card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
-        since I was only a sub.</span>} />."
+      tag="c1-name"
+      card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
+      since I was only a sub.</span>} />."
       Their undivided attention was disconcerting; I'd never led a class myself, much less a class of exquisitely bred
       Yankee daughters.
     </p>
@@ -139,7 +139,7 @@ export default ({currentSection, inventory, cards}) => {
         expansions={["falls into a deep sleep"]}
         tag="c2-hole"
         card={<span>Heroes in utopian novels tend to tumble into holes or
-          trances that magically transport them to the glorious socialist future. <br/><br/>The 19th century wasn't big on exposition.</span>} /> in 1887 and awakens
+        trances that magically transport them to the glorious socialist future.</span>} /> in 1887 and awakens
       in the year 2000. Most of the novel is a dialogue between the time-traveler and the future Bostonians who find him,
       outlining the author's ideas about a more just society."
     </p>
@@ -170,7 +170,7 @@ export default ({currentSection, inventory, cards}) => {
       The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
       It was laid out along one slope of the Berkshire foothills, in an area once cleared for
       agriculture but now largely forested.
-      Almost every spot on campus afforded gorgeous views down into the valley:
+      Almost every spot on campus afforded gorgeous views down into the valley,
       a rolling canopy punctuated by chimneys and whitewashed steeples. The nearest village, where most of the
       staff lived, was situated at the base of the hill.
     </p>
@@ -229,6 +229,7 @@ export default ({currentSection, inventory, cards}) => {
     PLEASE NOTE:
     As part of the Science Center expansion, the Astrolith will
     be extracted and relocated to the Museum of Science in Boston.
+    Construction is scheduled to begin in late November.
     We apologize for any inconvenience.
   </blockquote>
   <p>
@@ -278,7 +279,7 @@ export default ({currentSection, inventory, cards}) => {
         <p>I didn't see the woman so I followed the path of heaviest footprints down the hallway.
           The newer rooms seemed to be
           unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Walls and chairs
-          and benches were all sharp-edged and bright white, in contrast to the ivy-league aspirations of
+          and benches were all sharp-edged and bright white, in contrast to the Ivy League aspirations of
         the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs
           leading up were incomplete. The stairs leading down were crisscrossed with
@@ -313,7 +314,7 @@ export default ({currentSection, inventory, cards}) => {
           with lush curtains and furnishing. Visitors could walk between rows of mahogany <ListCard expansions={["curio cases"]}
             card={<span>Filled with 19th century ephemera: ads for patent medicine,
             diagrams of obscure farming equipment, and blurry tintypes of serious-looking women.</span>}
-                                                                                                     tag="c2-cases" />,
+                                                                                            tag="c2-cases" />,
           some still empty.
           Cardboard boxes in the process of being emptied were strewn all over the room.
         </p>
@@ -344,16 +345,17 @@ export default ({currentSection, inventory, cards}) => {
           if you came of your own accord. Tensions are running a bit high right now and she can be somewhat...testy."
         </p>
         <p>
-          He didn't explain and I thought it best not to ask. I <ListCard expansions={["followed"]}
+          He didn't explain and I thought it best not to ask. He lead me away from the
+          construction area and I <ListCard expansions={["followed"]}
             tag="c2-site"
-            card={<span>I never did see where the woman had gone.</span>}/> him away from the construction area.
+            card={<span>I never did see where the woman had gone.</span>}/>.
         </p>
         <p>We <ListCard expansions={["passed"]}
           tag="c2-passed"
           card={<span>We travelled through connecting corridors without actually going outside, a neat
           concession to New England winters.</span>} />  from the sterile research center to the
           warm neo-Victorian administrative building.
-          To visit the Dean's office meant ascending a grand winding staircase, flanked by    <ListCard expansions={["portraits"]}
+          Visiting the Dean's office meant ascending a grand winding staircase, flanked by    <ListCard expansions={["portraits"]}
             tag="c2-portraits"
             card={<span>A fine collection of uniformly white people.</span>}/> of distinguished faculty and former students. The family names were mostly of the
           sturdy Yankee type: Abbot, Page, Bradley, <ListCard expansions={["Horace"]}

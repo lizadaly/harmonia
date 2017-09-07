@@ -100,12 +100,6 @@ header.section-divider {
       animation: lineAnim 4s linear forwards;
     }
   }
-  img {
-    max-width: 33vw;
-    max-height: 25px;
-    margin: 3rem 0 2rem 0;
-    opacity: 0.15;
-  }
 }
 
 
@@ -173,7 +167,12 @@ figure {
     text-align: center;
   }
 }
-
+footer figure {
+  padding-top: 2rem;
+  width: 80vw;
+  margin-left: -40vw;
+  margin-right: -40vw;
+}
 
 .next-chapter-link {
     font-family: 'Cinzel Decorative', serif;

@@ -41,7 +41,7 @@ export default ({currentSection, inventory, cards}) => {
         abruptly back out again.
       </p>
       <p>
-        I found Lillian seated on the steps around the Astrolith, seemingly oblivious to the
+        I found Lillian Horace, my helpful student, seated on the steps around the Astrolith, seemingly oblivious to the
         blistery weather. <Map from={inventory.c2_direction}
           to={{
                     curiosity: `"I tried to catch up with you at the dean's office, but Walter—I mean, the dean's assistant—said you'd gone to lunch."`,
@@ -172,7 +172,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>Lillian took the papers out of my hands. "Professor Lynn could have found something
         dangerous in those tunnels. I don't think he was the kind of person who'd run off with stolen artifacts—maybe he was injured down
       in some cellar. People accidentally dig up old mines all the time."</p>
-      <p>"Well, yes, in some places but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
+      <p>"Well, yes, in some places, but even then I'd hardly say it was<List expansions={[[` all the time—`], "—"]}
         tag="c4-time" />"</p>
     </section>,
     <section>

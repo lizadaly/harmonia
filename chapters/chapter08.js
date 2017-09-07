@@ -156,7 +156,7 @@ export default ({currentSection, inventory, cards}) => {
                       he must've spent most of his time at his office.
                     </p>
                     <p>
-                      I explored the kitchen following the <ListCard tag="c8-spoiled-food" expansions={["scent of neglected garbage"]} card={<span>I was relieved
+                      I explored the kitchen, following the <ListCard tag="c8-spoiled-food" expansions={["scent of neglected garbage"]} card={<span>I was relieved
                       to smell nothing worse.</span>} />. The flashlight beam illuminated a barely stocked kitchen, consistent with someone who ate mostly
                       at the dining hall. A <List expansions={[["cellar door"], ["cellar door"]]} tag="c8_door" /> had been
                       left open.
@@ -377,7 +377,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
-      <p>I slid the box away from the wall, which revealed a narrow tunnel into further darkness<Map from={inventory.c5_direction}
+      <p>I slid the box away from the wall, revealing a narrow tunnel into further darkness<Map from={inventory.c5_direction}
         to={{
             archaeologist: `, a fact which did not surprise me in the least. It was the same size and shape of the bricked-up
                      tunnel under the Science Center. `,
@@ -422,16 +422,17 @@ export default ({currentSection, inventory, cards}) => {
     <section>
 
       <p>
-        After five or six meters the tunnel made a sharp left-hand and descended even further.
+        After five or six meters the tunnel made a sharp left-hand turn and descended even further.
       </p>
       <p>
         Once I turned the corner, the deep mechanical humming intensified. From this point on the tunnel was getting wider, until I
         stumbled down a short step and I was no longer in a tunnel at all.
       </p>
       <p>
-        I trained the flashlight around the room but the beam was insufficient and nothing I saw made any sense.  I could only perceive disjointed scenes that didn't form a coherent whole:
-        curved metal plates, heavily corroded and pitted, vibrating furiously; cables and hoses snaking
-        upwards and out of sight, giving off steam and dirty smoke. Motes of dust and soot churned in the air,
+        I aimed the flashlight around but the beam was insufficient and nothing I saw made any sense.  I could
+        perceive only disjointed scenes that didn't form a coherent whole:
+        curved metal plates that vibrated, cables and hoses snaking
+        upwards and out of sight that belched steam and smoke. Motes of dust and soot churned in the air,
         and my weak light only served to reflect them back at me in a disorienting visual static. I called out
         but the sound of my voice was swallowed by the mechanical churning.
         I could not make out the scale of the space but the resonant sound told me the walls—and ceiling—were far, far away.

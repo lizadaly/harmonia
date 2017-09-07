@@ -19,14 +19,14 @@ export const paper1 = () => {
         <span className="first-letter">F</span>RIGHTFUL ACCIDENT! Between
         twelve and one o'clock last night, the whole neighborhood was
         thrown into the utmost alarm by a terrible explosion in the vicinity
-        of Prof. C—'s Laboratory. On entering that establishment a
+        of Prof. C's Laboratory. On entering that establishment a
         scene of devastation plainly indicated that a scene of terrific
         violence had occurred. At first no trace of the Professor could be
         found—except a cloth cap which he was accustomed to wear while
         engaged in his occult investigations. Fortunately he was found
         several hours later, beneath the Phalanstery.
       </p>
-      <p>Professor C—! You are known to be engaged in analyzing new compounds
+      <p>Professor C! You are known to be engaged in analyzing new compounds
         and processes of exceedingly dangerous character. While the
         Community applauds your continued curiousity and Scientific
         pursuits, we implore you to take heed of our concerns. We
@@ -35,7 +35,7 @@ export const paper1 = () => {
       </p>
       <h4>The Best Time to Cut Hay</h4>
       <p>
-        Our own Mr. A— writes, "The best method I have found is to
+        Our own Mr. A writes, "The best method I have found is to
         commence about the 10th of June and finish by the 25th.
         Sometimes weather prevents so I cannot finish until the
         first days of July. The quality of the butter derived from
@@ -48,7 +48,7 @@ export const paper1 = () => {
         <span className="first-letter">M</span>AGNETISM. It might be
         said that that the magnet is a body having a spirit in it.
         Besides the body of the iron there is, in and around it,
-        an influence—a vibration or something which is entirely
+        an influence—a vibration which is entirely
         invisible and intangible yet has power to act at a considerable
         distance. It can operate right through a man's blood, bones, and
         muscles.
@@ -60,14 +60,14 @@ export const paper1 = () => {
         flowing out from them an influence
         as intangible and yet as effective as that of a magnet. Indeed,
         our ability to control our muscles is known to be due to a
-        nervous influence similar to electricity, which is similar to
+        nervous influence similar to electricity, which has many properties of
         magnetism.
       </p>
       <p>
-        There is known to be a similarity between electricity and the
+        There is known to be a relationship between electricity and the
         power of the will. It follows, then, that by the galvanic battery, it may be
-        possible to put a spirit into soft iron such
-        as our Astrolith and, then to take it out again. The implications of such
+        possible to distill one's spirit into magnetic iron such
+        as our Astrolith and, then to decant it again. The implications of such
         an Instrument could be quite profound.
       </p>
     </div>
@@ -105,7 +105,7 @@ export const paper3 = () => {
       </p>
       <p>
         The Astrolith, symbol of our divine providence and infusor of vitality—has been unveiled.
-        Demonstrations of the power of Magnetism, Galvonic Forces, and Spiritual Science will be
+        Demonstrations of the power of Magnetism, Galvanic Forces, and Spiritual Science will be
         provided by Professor C. Prayers, speeches, and readings will continue through the evening. All are welcome.
       </p>
     </div>
@@ -152,7 +152,7 @@ export const paper4 = () => (
       <h4>Plea for a Safe Return</h4>
       <img src="images/rooster.png" style={{float: "right", paddingLeft: "2em"}}/>
 
-      <p>Our own Mr. A— writes, "If any man has taken it upon himself to remove my chickens from their
+      <p>Mr. M writes, "If any man has taken it upon himself to remove my chickens from their
         enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
       </p>
       <h4 style={{clear: "both"}}>To the Instrument!</h4>

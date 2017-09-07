@@ -56,8 +56,8 @@ export default ({currentSection, inventory, cards}) => {
           card={<span>Dean Orellana had made it clear: if I didn't accept the offer
           promptly, she had plenty more takers on hand.</span>} />, and, unencumbered by
         other employment, had started packing.
-        I left Boston this morning, stopping whenever the icy rain
-        escalated to zero visibility.
+        I had left Boston this morning, stopping whenever the icy rain
+        left zero visibility.
       </p>
       <p>
         The road to campus was steep and barely paved, and by now the early winter
@@ -83,7 +83,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
   <section>
-    <p>The interior looked like I expected: old money New England, wood-panelled walls, rows of office doors embossed with the names of
+    <p>The interior looked like I expected: old money New England, wood-paneled walls, rows of office doors embossed with the names of
     professors and adjuncts. I called out a hello, but no one answered.</p>
     <p>I recognized a few names here and there but I was hunting for one door in particular—the absent
       instructor I'd been hired to
@@ -136,8 +136,8 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>Curious, I turned to the final page in the pile. It wasn't the third novel from the syllabus,
-      but instead a fragile piece of
-      yellowed writing paper, <ListCard expansions={["handwritten"]}
+      but instead what looked to be an original draft of a different one,
+      <ListCard expansions={["handwritten"]}
         tag="c2_writing"
         card={<span>I've reproduced it here in type to make it more readable.</span>} />  in a looping, archaic style:
       </p>
@@ -162,7 +162,7 @@ export default ({currentSection, inventory, cards}) => {
     <p>Something about this answer rattled her, but she lowered the flashlight. "Oh, of course."
     </p>
     <p>
-      "That's right," I said cautiously. "There was no one here when I arrived and—
+      "Thanks," I said cautiously. "There was no one here when I arrived and—
       look, do you know where I'm supposed to be staying? I'm very tired."
     </p>
     <p>"I assume the guest faculty quarters. I can take you to them." She returned the papers to the table, face-down,

@@ -5,7 +5,7 @@ import ListCard from '../components/listCard'
 const mizora = ({}) =>  (
   <div>
     <p>Animals and domestic fowls had long been extinct in Mizora. This was one cause of the weird silence that so
-      impressed me on my first view of their capital city. Invention had superceded the usefulness of animals in
+      impressed me on my first view of their capital city. Invention had superseded the usefulness of animals in
       all departments: in the field and the chemistry of food. Artificial power was utilized for all vehicles.
     </p>
     <p>

@@ -15,7 +15,8 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           him: <div>
             <header>
-              <h3>May 9, 1931</h3>
+              <h2>May 9, 1931</h2>
+
             </header>
             <p>
               Lillian,
@@ -80,7 +81,7 @@ export default ({currentSection, inventory, cards}) => {
               the bulldozers went to work on removing what they believed to be a 30 ton meteorite.
               An hour into the proceeding, which obviously could not have succeeded in any case, a backhoe tipped
               forward into an unexpected and massive sinkhole.
-              No injuries, but a round-robin of blame ensued among the surveyors, architects, and
+              There were no injuries, but a round-robin of blame ensued among the surveyors, architects, and
               construction workers. The Science Center extension was postponed, maybe for good.
             </p>
             <p>
@@ -182,23 +183,23 @@ export default ({currentSection, inventory, cards}) => {
               My life has been an incredible adventure. I am only sorry that we could not meet again.
             </p>
             <p>
-              Your <ListCard expansions={["friend"]}
-                author="lillian-center"
-                tag="c12-friend"
-                forceDir="down"
-                card={<span>And Professor.</span>} />, <br/>
+              Your friend, <br/>
               Abby
             </p>
-            <header>
-              <blockquote>
-                We are still chaotic, and unformed, and unredeemed, and unregenerate. But we are
-                tremendously alive.<br/><br/>
-                —<i>The Republic of the Future</i>, Anna Bowman Dodd (1887)
-              </blockquote>
-            </header>
+            <footer>
+              <figure>
+                <img src="images/past-final.jpg" />
+              </figure>
+
+            </footer>
+
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
+
+            <header>
+
+            </header>
 
           </div>
         }} />

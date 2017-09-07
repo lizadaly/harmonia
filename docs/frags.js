@@ -117,7 +117,7 @@ export const frag4 = ({inventory, note=false}) =>  {
     <p> As the village awakened, I was aware of a profound absence: I saw no men at all.
       Had they all been {card2} in
       this time and place? Eventually they did appear, but so few, doing mostly menial work, while
-      tall {card3} in strange clothing—some wearing trousers, or next to nothing at all—drift
+      tall {card3} in strange clothing—some wearing trousers, or next to nothing at all—drifted
       impassively along without a care in the world.
     </p>
     <p>Then all at once, I became aware of my sense of smell. Gone was the {card4}, and it was not replaced with coal-smoke or even the
@@ -133,7 +133,7 @@ export const frag5 = ({next="section"}) =>  (
       Is there anything more beautiful than Harmonia in the summer? We are in high spirits, as yet more members
       have <ListCard author="lynn" expansions={["joined"]} tag="frag-pop" author="lynn"
         card={<span>This would be the high point of the population for them. Most of these new recruits were gone by winter.</span>} /> us our grand experiment this Spring. The new men are strong and
-      capable; their wives and sisters handsome. I am confident our harvest this year will be sufficient
+      capable, their wives and sisters handsome. I am confident our harvest this year will be sufficient
       to all but eliminate our dependence on supplies from North Adams and elsewhere.
     </p>
     <p>

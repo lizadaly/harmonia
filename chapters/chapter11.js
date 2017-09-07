@@ -193,7 +193,7 @@ export default ({currentSection, inventory, cards}) => {
             sounded brave but not entirely convincing.
           </p>
           <p>
-            "No, <i>you</i> go and I'll follow. I'll get someone else, maybe the girl, to—"
+            "No, <i>you</i> go and I'll follow. I'll get someone else to operate it, maybe the girl Lilly can—"
           </p>
           <p>
             Lynn started to argue and then ducked as a rivet came shooting out of the machine like a bullet. "There's not
@@ -201,8 +201,8 @@ export default ({currentSection, inventory, cards}) => {
             polyphonic bang, a sound like a dozen cars backfiring.
           </p>
           <p>
-            "Okay, fine!" I had to lean into his ear to be heard. "But I'm scared. I don't remember what
-            to do when I'm in the chamber."
+            "Okay, fine!" I had to lean into his ear to be heard. I came up with a quick plan on the spot.
+            "Jeffrey, wait—I don't remember what to do when I'm in the chamber."
           </p>
           <p>
             "You just need to—"

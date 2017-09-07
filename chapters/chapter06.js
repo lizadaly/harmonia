@@ -108,7 +108,7 @@ export default ({currentSection, inventory, cards}) => {
         <p>As the village awakened, I was aware of a profound absence: I saw no men at all.
           Had they all been eliminated in
           this time and place? Eventually they did appear, but so few, doing mostly menial work, while
-          tall women in strange clothing—some wearing trousers, or next to nothing at all—drift
+          tall women in strange clothing—some wearing trousers, or next to nothing at all—drifted
           impassively along without a care in the world.
         </p>
       </blockquote>

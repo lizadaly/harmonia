@@ -30,7 +30,7 @@ export const lillian1 = () => (
       You should know he has passed on.  I was
       only a few years out of school and newly married; I stayed here to teach the next generation of girls.
       When I came of age, he left, saying, "There is so much here I need to see for myself."
-      He had made it all the way to Wyoming—can you
+      He made it all the way to Wyoming—can you
       imagine! It has been years but I still miss him. His knowledge of the world seemed boundless.
       (He asked me to
       tell you that he'd fulfilled your request. He assured me you'd know what he meant.)

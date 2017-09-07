@@ -32,7 +32,7 @@ export const lynn2 = () => (
   <div>
     <p>
       Alice has been wonderful. She has managed to locate all the materials we
-      need—where do you even find coal? And by bringing them down in the dead of night, she has thusfar
+      need—where do you even find coal? And by bringing them down in the dead of night, she has thus far
       avoided drawing any attention to this work. The amount of scholarship that will flow from
       this discovery is unimaginable. I will need to <ListCard expansions={["reward her"]}
         tag="lynn-flowers"
@@ -72,11 +72,8 @@ export const lynn3 = () => (
       I didn't have to spend much time digging through until I found Cadwell.
     </p>
     <p>I assume it's him, anyway. There's little more than a skeleton. Dry rags of clothes still hang from it,
-      a tin cup and bucket by his side. And of course his journal.
-    </p>
-    <p>
-      The journal makes it clear that he died here, and who must have buried him. I guess I've known for a long time;
-      it's no crazier than the device itself.
+      a tin cup and bucket by his side. And of course his journal, which makes it clear that he died
+      here in this room. At least she thought to give him a kind of burial.
     </p>
     <p>
       God forgive me, I covered him back up. If she knows that I found him, well, I can see what will happen to me.

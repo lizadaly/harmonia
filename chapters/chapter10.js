@@ -29,7 +29,7 @@ export default ({currentSection, inventory, cards}) => {
                     until I landed with a <List expansions={[["sigh"], ["sigh"]]}
                                             tag="c10-sigh" />.
                   </span>} />
-                  
+
                 </span>} />
               </span>} /></span>
             } />
@@ -40,7 +40,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <header>
         <h2 style={{marginTop: "500px"}}>Chapter Ten</h2>
-        <h3>November 20, 1889</h3>
+        <h3>December 2, 1889</h3>
         <blockquote>
           They have great moments, now and then, when a few people are gathered together,
           and their thought becomes electrical and their minds mingle as you have seen the
@@ -71,7 +71,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         The machine gleamed with so much shiny brass and copper that the cavern was saturated by a warm
-        gold glow.
+        gold glow. It was brand new, which meant I was really here, when this strange Instrument was born.
       </p>
       <p>
         By the eastern tunnel, a dead man was slumped against the wall. His face was framed by overgrown brown muttonchops
@@ -126,7 +126,7 @@ export default ({currentSection, inventory, cards}) => {
         me at the top of the steps.
       </p>
       <p>
-        The knob turned freely but the door didn't budge. "I think it's barracaded on the other side,"
+        The knob turned freely but the door didn't budge. "I think it's barricaded on the other side,"
         Lynn said. "I spent a day, maybe more, just getting through the tunnel. I was just too tired to—"
       </p>
       <p>
@@ -175,16 +175,15 @@ export default ({currentSection, inventory, cards}) => {
         It was a bright, cloudless December day, with frost in the air. Without the
         Astrolith as a reference I'd have never recognized where I was. The solemn brick edifices of the college were absent,
         and the trees were few and small. Instead of a tidy green lawn, the ground was covered in a patchwork of
-        dirt, clover, and crabgrass. The odor of horses and hay was noticable.
+        dirt, clover, and crabgrass. The odor of horses and hay was noticeable.
       </p>
 
 
       <p>
         Cadwell described our future as quiet, but I suppose it's what you're used to.
         To him, the laughter of crows, the sighs and shuffling of farm animals,
-        the sound of a slow wagon crunching over gravel, was the modern cacophany of life he sought to escape.
+        the sound of a slow wagon crunching over gravel, was the modern cacophony of life he sought to escape.
         What I heard most was an absence: no drone of distant airplanes, hum of ventilation systems, or trucks idling sloppily.
-        Those other sounds were peaceful.
       </p>
       <p>
         In place of the college gymnasium was a large vegetable garden, shaded by a few gnarled pear trees and bordered on one end by
@@ -238,18 +237,18 @@ export default ({currentSection, inventory, cards}) => {
               "This is no longer a place for women."
             </p>
             <p>
-              I started to ask why but she stopped suddenly, listening. She then crouched, pointing at the hedgerow:
-              <i>Make yourself scarce.</i> I did as she bid me, and heard the voices of men pass on the other side of the hedge:
+              I started to ask why but she stopped suddenly, listening. She then crouched, pointing at the hedgerow. <i>Make yourself scarce.</i>
+              I did as she bid me, and heard the voices of men pass on the other side of the hedge:
             </p>
             <p>
               The first voice: "We can debate philosophy all day, and I know that you will, Owen. That does not change the fact
               that the bank is foreclosing on this land
-              any day now. I intend to take back what I put in to this foolhearty experiment."
+              any day now. I intend to take back what I put in to this foolhardy experiment."
             </p>
             <p>
               The reply, presumably from the man named Owen: "Then let us accept the offer from the ladies to
               incorporate the community school. They have raised over fifty-thousand
-              from various benefactors in Albany and Boston. That should be more than sufficient to recoop your investments."
+              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments."
             </p>
             <p>
               There was a braying and ugly laugh from a third voice. "A college for women will just breed more crones
@@ -260,8 +259,8 @@ export default ({currentSection, inventory, cards}) => {
               "Tomorrow we will go down to the village and send word to the bank."
             </p>
             <p>
-              The voices faded, and I caught the eye of the woman. She nodded towards the houses, and I
-              <List expansions={[["dashed"], ["dashed"]]} tag="c10-cross" /> across, wishing I could thank her better.
+              The voices faded, and I caught the eye of the woman. She nodded towards the houses, and
+              I <List expansions={[["dashed"], ["dashed"]]} tag="c10-cross" /> across, wishing I could thank her better.
             </p>
           </div>,
           barn: <div>
@@ -317,12 +316,12 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               Williams raised his voice. "We can debate philosophy all day, and I know those of you who will if
               no one puts a stopper in you. That does not change the fact that the bank is foreclosing
-              any day now. I intend to take back what I put in to this foolhearty experiment."
+              any day now. I intend to take back what I put in to this foolhardy experiment."
             </p>
             <p>
               "Then let us accept the offer from the ladies to independently incorporate the community school,"
               Owen said, his hands held out in a calming gesture. Williams started to object, but was cut off: "They have raised over fifty-thousand
-              from various benefactors in Albany and Boston. That should be more than sufficient to recoop your investments."
+              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments."
             </p>
             <p>
               The young man laughed again. "A college for women will just breed more of the same."
@@ -365,7 +364,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>
         I put the hook over the handle on my pail and lowered it hand-over-hand while the girl watched.  I
-        felt it hit the surface of water and could tell it just flopped over and floated. The lightweight tin wasn't heavy
+        felt it hit the surface of water and could tell that it just flopped over and floated. The lightweight tin wasn't heavy
         enough.
       </p>
       <p>

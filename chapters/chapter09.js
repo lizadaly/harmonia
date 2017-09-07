@@ -27,7 +27,7 @@ export default ({currentSection, inventory, cards}) => {
         drone filling the room. I followed the cables snaking out of it
         with my flashlight beam; they led to a series of tripod-mounted spotlights, all dark, positioned around the
         cave. Lying on top of the generator, as if deliberately placed there to be impossible to miss, was a manilla folder.
-        I opened it, tucking the flashlight under my arm to free both hands. The first
+        I opened it, tucking the flashlight under my arm to free both hands. The first page inside
         was an original issue of The Harbinger, <ListCard expansions={["annotated"]}
           tag="c9_paper"
           nextUnit="section"
@@ -93,20 +93,20 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <p>
         I approached the device carefully, as one would a wild animal. Surely this was no bomb.
-        Up close, I could see that the bits that had been replaced, including the ladders and much of the platforms. There was a new handle on the enormous lever by the base,
+        Up close, I could see what parts had been replaced, including the ladders and much of the platforms. There was a new handle on the enormous lever by the base,
         mounted on a half-moon track like a <ListCard expansions={["railroad track switch"]} tag="c9_switch"
           card={<span>For good reason—the machine was largely pieced together from farm and railroad parts.</span>} />.
         A handcart full of fresh coal rested next to a cast-iron stove.
       </p>
       <p>Tantalizingly, the ladder led up to a two-stage platform. The upper platform ended in a chamber which seemed carved out of the
-        meteor itself. I climbed up the rungs, just to get a <List expansions={[["better look over the edge—"], ["better look—"]]}
-                                                                 tag="c9-look" />
+        meteor itself. I climbed up the rungs, just to get a <List expansions={[["better look over the edge—"], ["better look over the edge."]]}
+                                                               tag="c9-look" />
       </p>
     </section>,
     <section>
 
       <p>
-        I peered over the edge of the first platform. Someone had it set up a small work area: another milk crate, a gas camping lamp,
+        I peered over the edge of the first platform. A small work area was staged here: another milk crate, a gas camping lamp,
         and a notebook—so perfectly arranged that they felt like props. I <ListCard expansions={["climbed up"]}
           tag="c9-climbed"
           nextUnit="section"
@@ -157,7 +157,7 @@ export default ({currentSection, inventory, cards}) => {
         machine was intense; my teeth ached and the wooden structure on which I stood swayed noticably.
       </p>
       <p>
-        Rubber cables snaked through the doorframe and attached to a socket in the chamber ceiling. A thickly-woven
+        Rubber cables snaked through the doorframe and attached at a socket in the chamber ceiling. A thickly-woven
         metal cord hung down, ending in a <ListCard expansions={["brass handle"]}
           tag="c9-handle"
           card={<span>Absurdly, I was reminded of an old-fashioned toilet flush.</span>} />. Directly over the handle
@@ -176,7 +176,7 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         Someone shoved me from behind and I stumbled into the chamber. The door was slammed shut on me, and locked. I heard a
         curious sucking noise and felt my ears pop. The rumble of the engine became muted
-        yet I could also now <i>feel</i> it, oddly calming. It eminated from the meteor itself.
+        yet I could also now <i>feel</i> it, oddly calming. It emanated from the meteor itself.
       </p>
       <p>
         Alice Gilman regarded me blankly through the sealed glass door.

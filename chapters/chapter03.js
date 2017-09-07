@@ -23,13 +23,13 @@ export default ({currentSection, inventory}) => {
       A large <ListCard expansions={["oil painting"]}
         tag="c4_painting"
         card={<span>A moody rendition of the college campus. In place of the quad was a massive
-        barn-shaped wooden building. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)"</span>} /> hung over a stone fireplace.
+        barn-shaped wooden building. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)."</span>} /> hung over a stone fireplace.
 
     </p>
     <p>
       "I heard your first class went reasonably well," she said without looking up from her work. She was
-      younger than I expected, mid 40s,
-      but no less intimidating. She wore a tightly fitted crimson suit and I noticed her framed Wharton MBA
+      younger than I expected, mid-forties,
+      but no less intimidating. She wore a tightly fitted crimson suit and I noticed that her framed Wharton MBA
       had been positioned to be clearly visible behind her desk.
     </p>
     <p>
