@@ -363,16 +363,11 @@ export default ({currentSection, inventory, cards}) => {
         various  <Map from={inventory.c8_search}
           to={{
             _undefined: "boxes",
-              _any: <span><Map from={inventory.c8_floor}
-                to={{
-                  _undefined: <ListCard expansions={["boxes"]} tag="c8_box1" alwaysEval={true} card={<span>Cracked wooden crates,
-                  mostly empty or full of more dirt-covered tools.</span>}/>,
-                  _any: <ListCard expansions={["boxes"]} tag="c8_box1" alwaysEval={true} card={<span>Cracked wooden crates,
-                    mostly empty or full of more dirt-covered tools.<br/><br/>
-                    The footprints were clustered around one box pushed up against the cellar <List expansions={[["wall"], ["wall"]]}
-                                                                                                tag="c8_move_box" />.
-                  </span>}/>
-                }} /></span>
+              _any: <span><ListCard expansions={["boxes"]} tag="c8_box1" alwaysEval={true} card={<span>Cracked wooden crates,
+                mostly empty or full of more dirt-covered tools.<br/><br/>
+                The footprints were clustered around one box pushed up against the cellar <List expansions={[["wall"], ["wall"]]}
+                                                                                            tag="c8_move_box" />.
+              </span>} /></span>
           }} /> and tools were all crusted with dirt. I could hear a rumbling and feel the vibration through the ground—not necessarily
         from below me, but seemingly from all around. Nothing looked new
         enough to have belonged to Lynn and I didn't see any other promising exits.

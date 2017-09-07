@@ -38,14 +38,14 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        There was another paper behind the broadsheet. It was also old:
+        There was another paper behind the broadsheet. It was quite damaged and stained, as if from frequent use:
       </p>
       <Reader inventory={inventory} docs={[docs.diagram1]}/>
     </section>,
     <section>
       <p style={{marginTop: "20em"}}>
         I put the folder aside, my hands shaking a little. "All right," I hollered over the industrial din,
-        "If there's someone in here, I'm turning on the lights now." I <List expansions={[["pulled the starter cord—"], ["pulled the starter cord."]]} tag="c9-start1" />
+        "If there's someone in here, I'm turning on the lights now." I <List expansions={[["pulled the starter cord on the generator—"], ["pulled the starter cord on the generator."]]} tag="c9-start1" />
       </p>
     </section>,
     <section>
@@ -85,7 +85,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         Someone had restored it and now the machine was <List expansions={[["humming"], ["humming"]]}
-                                              tag="c9-humming" /> and alive.
+                                                          tag="c9-humming" /> and alive.
       </p>
     </section>,
     <section>
@@ -102,6 +102,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
+
       <p>
         I peered over the edge of the first platform. Someone had it set up a small work area: another milk crate, a gas camping lamp,
         and a notebook—so perfectly arranged that they felt like props. I <ListCard expansions={["climbed up"]}
@@ -111,9 +112,12 @@ export default ({currentSection, inventory, cards}) => {
       </p>
     </section>,
     <section>
+      <figure>
+        <img src="images/machine-detail.jpg" />
+      </figure>
       <p>I was about about ten feet off the ground now, and close to the huge
         wheel-like mechanism.
-        The wheel seemed designed to rotate freely but was just vibrating now, as if in anticipation.
+        The wheel seemed designed to rotate freely but was just vibrating now, throwing off occasional blue-white sparks.
         I could make out gleaming new copper threads interwoven with the old. From this distance, it was
         obvious how much the machine had been pieced together from 19th century spare parts.
       </p>

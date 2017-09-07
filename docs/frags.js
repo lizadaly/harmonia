@@ -230,17 +230,18 @@ export const frag7 = () => (
 export const diagram1 = () => (
   <div>
     <img src="images/machine.jpg"/>
-    <div className="elsie-font">
-      every grain of sand a <ListCard tag="diag1-micro" forceDir="down"
+
+    <div className="elsie-font diagram-note">
+      "every grain of sand a <ListCard tag="diag1-micro" forceDir="down"
         expansions={["microcosm"]}
-        card={<span><span style={{maxWidth: "20em", display: "inline-block"}}>Beneath Elsie's transcription on the page, she'd added another <ListCard expansions={["note"]}
+        card={<span><span style={{width: "100%", display: "inline-block", textAlign: "center"}}>Beneath Elsie's transcription on the page, she'd added another <ListCard expansions={["note"]}
           tag="diag1-note"
           author="elsie"
           nextUnit="section"
           forceDir="down"
-          card={<span>I hope you burned with the rest of them.</span>} />, at a later date.
+          card={<span><span style={{width: "100%", display: "inline-block", textAlign: "center"}}>I hope you burned with the rest of them.</span></span>} />, at a later date.
         </span>
-        </span>} />
+        </span>} />" will he ever shut up
 
     </div>
 

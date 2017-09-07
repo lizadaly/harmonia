@@ -23,8 +23,8 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               I've left this journal for you to find, or <ListCard expansions={["not find"]}
                 tag="c12-not"
-                card={<span>If not, I hope the one who does find them enjoys the puzzle that it presents.</span>} />,
-              however Fate decides. I like to believe you will find it.
+                card={<span>If not, I hope whoever who does find it enjoys the puzzle that it presents.</span>} />,
+              however Fate decides. I like to believe it will reach you.
             </p>
             <p>
               There were men <ListCard expansions={["waiting"]}
@@ -176,7 +176,7 @@ export default ({currentSection, inventory, cards}) => {
               I've lived most of my life, is a far wilder place than yours. People think nothing of writing themselves
               a new future, scribbling over their mistakes, erasing and even unerasing as a way of forging new truths.
               Draw upon this great cacophony of possibility. Do not confine your dreams to what is feasible and adjacent.
-              Scribble over the worst of our society, and rewrite it as you'd like it to be.
+              The future into which I was born is so, so small! Cut, paste, deface, delete the worst of it, and rewrite it as you'd like it to be.
             </p>
             <p>
               My life has been an incredible adventure. I am only sorry that we could not meet again.
@@ -186,7 +186,7 @@ export default ({currentSection, inventory, cards}) => {
                 author="lillian-center"
                 tag="c12-friend"
                 forceDir="down"
-                card={<span>I will always think of you as my Professor.</span>} />, <br/>
+                card={<span>And Professor.</span>} />, <br/>
               Abby
             </p>
             <header>

@@ -12,10 +12,15 @@ export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
       <header>
-        <h2>Chapter 11</h2>
+        <h2>Chapter Eleven</h2>
         <blockquote>
-          "God did not make us perfect. He left us something to do for ourselves."
-
+          They have great moments, now and then, when a few people are gathered together,
+          and their thought becomes electrical and their minds mingle as you have seen the
+          glances of eyes mingle in a language more eloquent than speech.
+          We ourselves have such moments, but the difference is:
+          they appreciate the value of them and hold them fast,
+          while we open our hands and let them fly away like uncoveted birds, or worthless butterflies.<br/><br/>
+          —<i>Unveiling a Parallel</i>, Alice Jones and E. Merchant (1893)
         </blockquote>
       </header>
       <p>
@@ -39,14 +44,14 @@ export default ({currentSection, inventory, cards}) => {
           nextUnit="section"
           card={<span>Lynn seemed like a good person, but the euphemism grated on me.</span>} />,
         I guess they'd say, to
-        take the sexual partners assigned by the community for the purposes of superior children.
+        take sexual partners assigned by the community for the purposes of producing superior children.
         The children were to be raised by the group, without particular attachment to any one adult.
         They called the whole arrangement Scientific Marriage."
       </p>
     </section>,
     <section>
       <p>
-        "That's repellent," I said. "I missed that detail in the Blithedale brochure."
+        "That's repellent," I said. "I don't suppose that factoid appears in the Blithedale brochure."
       </p>
       <p>
         "Most of our deans have found aspects of the history inconvenient," he acknowledged. "Scientific Marriage
@@ -56,7 +61,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
 
       <p>
-        "Buy or breed," I said. I watched the girl for a long moment. "She's Cadwell's daughter."
+        "Buy or breed," I said. I watched the girl for a long moment. "She's Cadwell's daughter, you know."
       </p>
       <p>
         "Good lord, are you sure?"
@@ -82,21 +87,19 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>I shrugged, unwilling to argue over a point I was hardly sure of myself. "Do you know how to work the device?"</p>
       <p>
-        "I think so, assuming it's still intact. It's doesn't have much in the way of controls—there's no big dial with years on it.
+        "I think so, assuming it's still intact. It's doesn't have much in the way of controls—there's no dial with the year 1998 on it.
         You go forward if you're back, or back if you're forward. Each trip lands you a little further ahead in time.
         Cadwell never really understood how the thing worked."
         He sighed. "I suppose it was really Alice's invention after all."
       </p>
       <p>
-        I looked back at Lilly.
-        "Lillian Horace, your student, said her great-grandmother was one of the earliest graduates, and that she's named after her—"
+        I was still looking at the girl. "Lillian Horace, your student, said her great-grandmother was one of the earliest graduates, and that she's named after her—"
       </p>
       <p>
-        "Yeah," he said, finally getting to his feet. "I was wondering the same thing." He turned to go back down into the
-        tunnel but paused. "You know, even if I get it working—"
+        "Yeah," he said, finally getting to his feet. "I was wondering the same thing. Abby, listen, even if I get it working—"
       </p>
       <p>
-        I finished for him: "The machine requires someone else to operate it. One of us will have to <List expansions={[["stay"], ["stay"]]} tag="c11-stay" />."
+        I finished for him: "The machine requires someone to operate it. One of us will have to <List expansions={[["stay"], ["stay"]]} tag="c11-stay" />."
       </p>
     </section>,
         <section>
@@ -106,12 +109,9 @@ export default ({currentSection, inventory, cards}) => {
             </svg>
           </header>
           <p>
-            I told Lynn I'd follow him in a minute. Once he was gone, the girl clambered over
-            the wreckage in the main atrium and stood beside me. She peeked into the
-            darkness of the cellar doorway.
-          </p>
-          <p>
-            I found a shell of a wooden cupboard. "Help me move this," I said.
+            I told Lynn I'd follow him down in a minute. Once he was gone, the girl quietly stole into the room
+            and stood beside me. She peeked into the
+            darkness of the cellar while I found a shell of a tall cupboard. "Help me move this," I said.
           </p>
           <p>
             Together we dragged it across the floor and slid it in front of the tunnel entrance, leaving just
@@ -124,13 +124,13 @@ export default ({currentSection, inventory, cards}) => {
             She nodded.
           </p>
           <p>
-            "Very soon, either I or Mr. Lynn are going to come back through that doorway. But if for some reason neither
+            "Very soon, either I or Mr. Lynn are going to come back through that door. But if for some reason neither
             of us does, after one hour you need to push this cupboard as hard as you can.
             Nobody else can know about this entrance, and you <i>can't follow me</i>. Do you understand?"
           </p>
           <p>
-            She nodded again. I was anxious to get to the machine, but—"Lilly, do you know if you're going to stay here, after
-            that big fire?"
+            She nodded again. I was anxious to get to the machine, but—"Lilly, do you know if you're going to stay here
+            in Harmonia?"
           </p>
           <p>
             "Miss Adams said I might go live with her and my friend <ListCard expansions={["Saul"]} tag="c11-saul"
@@ -214,7 +214,7 @@ export default ({currentSection, inventory, cards}) => {
           <p>
             "Sure," he said, agreeably. Together we climbed up to the top <ListCard expansions={["platform"]}
               tag="c11-platform"
-              card={<span>It was shuddering so violently at this point I thought zero of us would make it.</span>}/>, and
+              card={<span>It was shuddering so violently at this point I thought neither of us would be going back.</span>}/>, and
             he stepped through the threshold of the chamber. "You just need to put both feet on the metal plate
             here, and hold on to the handle. Both hands, to be safe."
           </p>
@@ -234,7 +234,7 @@ export default ({currentSection, inventory, cards}) => {
                 </p>
                 <p>
                   I had no idea if anyone was waiting for him in 1998. I'd never asked if he had parents or siblings
-                  or even children who might miss him. That was selfish of me. I'm telling the story, but it's his story too.
+                  or even children who might miss him. That was selfish of me. I'm telling this story, but it's his story too.
                 </p>
                 <p>
                   By the time I'd climbed down to the floor of the cavern, one of the rubber hoses had snapped loose and
@@ -266,7 +266,8 @@ export default ({currentSection, inventory, cards}) => {
           <Map from={inventory.c11_return}
             to={{
               him: <div>
-                <p>He was dissolved before my eyes. It was horrifying. I left the cave, which had started to fall apart.</p>
+                <p>He dissolved before my eyes. It didn't matter that he was probably safe; it was terrifying to watch.
+                I left the cave, which was starting to fall apart.</p>
               </div>,
               me: <div>
                 <p>"This is what I want." He closed and sealed the chamber door.</p>

@@ -10,6 +10,11 @@ body {
   color: $black;
   background: $white;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: .25rem 0 .5rem;
 }
 img {
   max-width: 100%;
@@ -25,15 +30,27 @@ a:hover {
   border-bottom: 1px solid $orange;
 }
 
-blockquote p {
-  color: $darkgray;
-  margin: 1em 0 2em 2rem;
+p {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.6em;
+  font-size: 18px;
+}
+li {
+  font-family: $card-font;
+  font-size: 18px;
+  line-height: 1.6em;
 }
 
 .container {
   margin: 4em auto;
   max-width: 1600px;
 }
+
+blockquote p {
+  color: $darkgray;
+  margin: 1em 0 2em 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   font-weight: bold;
@@ -44,7 +61,7 @@ header {
     font-size: 70px;
   }
   h2 {
-    padding-top: 2rem;
+
   }
   text-align: center;
   h6 {
@@ -60,7 +77,7 @@ header {
     line-height: 1.4em;
   }
   .begin {
-      font-family: 'Cinzel Decorative', serif;
+       font-family: 'Cinzel Decorative', serif;
   }
 }
 @keyframes lineAnim {
@@ -92,12 +109,6 @@ header.section-divider {
 }
 
 
-p {
-  font-family: 'Lora', Georgia, serif;
-  line-height: 1.5em;
-  font-size: 18px;
-}
-
 .current-section > section,
 .section > section {
   width: 55%;
@@ -128,6 +139,10 @@ blockquote {
   margin: 1.5em 0;
   h4 {
     font-family: $sign-font;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+
   }
   p {
     background: none !important;
@@ -135,6 +150,9 @@ blockquote {
     text-align: justify;
     margin: 1em 0 0 0;
   }
+}
+blockquote.typewritten {
+  line-height: 1.4em;
 }
 
 
@@ -158,20 +176,6 @@ figure {
 
 
 .next-chapter-link {
-    min-height: 100px;
-/*    background: url(../images/dash1.png) no-repeat center center; */
-
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
 }
-
-
-
-
-
-/*
-.chapter section p, .current-chapter section p {
-  background: radial-gradient(ellipse at center,
-            rgba(255, 255, 255, .8) 80%,
-            rgba(255, 255, 255, 0)
-  );
-}
-*/

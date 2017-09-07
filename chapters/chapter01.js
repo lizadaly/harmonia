@@ -34,7 +34,8 @@ export default ({currentSection, inventory, cards}) => {
         <figure className="chapter-1">
           <img src="images/opening.jpg" />
         </figure>
-        <h2>November 3, 1998</h2>
+        <h2>Chapter One</h2>
+        <h3>November 3, 1998</h3>
       </header>
 
       <p>It was midnight when I arrived on campus and the weather was

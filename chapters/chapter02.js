@@ -31,8 +31,7 @@ export default ({currentSection, inventory, cards}) => {
     </p>
     <p>"Welcome to <i>Nineteenth Century Utopian Literature</i>," I began.</p>
     <p>"Can't hear you," said someone in the back.</p>
-    <p>"Right, sorry." I coughed. "Welcome to <i>Nineteenth Century Utopian Literature</i>.
-      My name is <ListCard expansions={["Abby Fuller"]}
+    <p>"Sorry! Welcome to <i>Nineteenth Century Utopian Literature</i>. My name is <ListCard expansions={["Abby Fuller"]}
         tag="c1-name"
         card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
         since I was only a sub.</span>} />."
@@ -102,7 +101,7 @@ export default ({currentSection, inventory, cards}) => {
               tag="c2_brook"
               card={<span>A Transcendentalist community located just outside of Boston, which was moderately successful until
               a fire destroyed their central meeting hall and bankrupted the village.</span>} /> and the pre-Blithedale community next."</p>
-          <p>"The who?"</p>
+          <p>"Who?"</p>
           <p>"Blithedale College was founded on the grounds of an old utopian colony."</p>
           <p>"They called the community Harmonia," Charlotte added.</p>
           <p>"Eventually it failed and some of the women stayed on to found the college," Lillian finished.</p>
@@ -132,10 +131,9 @@ export default ({currentSection, inventory, cards}) => {
       }}
     />
     <p>
-      Lillian again: "We were supposed to start on Bellamy this week." She paused, and considered me for a moment.
-      "I did the reading and I could summarize it now?"
+      Lillian again: "We were supposed to start on Bellamy this week. I did the reading and I could summarize it now?"
     </p>
-    <p>"Excellent, thank you!" I said. I got the sense she was throwing me a softball.</p>
+    <p>"Excellent, thank you!" I said. I got the sense she was taking pity on me.</p>
     <p>
       "<i>Looking Backward</i> by Edward Bellamy tells the story of a Boston man who <ListCard
         expansions={["falls into a deep sleep"]}
@@ -146,10 +144,10 @@ export default ({currentSection, inventory, cards}) => {
       outlining the author's ideas about a more just society."
     </p>
     <p>
-      I smiled and thanked her. After that rocky start,
+      After that rocky start,
       the class went pretty well. Lillian even stayed after class to <ListCard expansions={["welcome"]}
         tag="c2-welcome"
-        card={<span>She came from a notable family with deep local roots, but seemed inclined to treat me with respect. "My grandmom was
+        card={<span>She came from a notable family with deep local roots. "My grandmom was
         named Abigail too."</span>} /> me to the college.
       I started to think this gig was going to
       be <ListCard
@@ -167,7 +165,7 @@ export default ({currentSection, inventory, cards}) => {
         <line x1="0" y1="0" x2="100%" y2="0" />
       </svg>
     </header>
-    
+
     <p>
       The campus, which had seemed unwelcoming in the dead of night, was actually quite pleasant.
       It was laid out along one slope of the Berkshire foothills, in an area once cleared for

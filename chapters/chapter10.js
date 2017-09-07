@@ -11,33 +11,35 @@ import { docs } from '../docs'
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section>
-      <p className="travel">
-        I became a <ListCard expansions={["cloud"]}
-          tag="c10-d1"
-          forceDir="down"
-          card={<span>of <ListCard expansions={["atoms"]}
-            tag="c10-d2"
+      <div>
+        <p className="travel">
+          I became a <ListCard expansions={["cloud"]}
+            tag="c10-d1"
             forceDir="down"
-            card={<span>rushing through a <ListCard expansions={["tunnel"]}
-              tag="c10-d3"
-              forceDir="right"
-              card={<span>of stone and <ListCard expansions={["spirit"]}
-                tag="c10-d4"
-                forceDir="down"
-                card={<span>
-                  which landed with a <List expansions={[["sigh"], ["sigh"]]}
-                                        tag="c10-sigh" />.
+            card={<span>of <ListCard expansions={["atoms"]}
+              tag="c10-d2"
+              forceDir="down"
+              card={<span>rushing through a <ListCard expansions={["tunnel"]}
+                tag="c10-d3"
+                forceDir="right"
+                card={<span>of stone and <ListCard expansions={["spirit"]}
+                  tag="c10-d4"
+                  forceDir="down"
+                  card={<span>
+                    which landed with a <List expansions={[["sigh"], ["sigh"]]}
+                                          tag="c10-sigh" />.
+                  </span>} />
+
                 </span>} />
+              </span>} /></span>
+            } />
 
-              </span>} />
-            </span>} /></span>
-          } />
-
-      </p>
-    </section>,
+        </p>
+      </div>
+      </section>,
     <section>
       <header>
-        <h2 style={{marginTop: "12em"}}>Chapter 10</h2>
+        <h2 style={{marginTop: "500px"}}>Chapter Ten</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
           I would not exchange this life for any I have ever led. I could not feel content with the life of

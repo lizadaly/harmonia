@@ -77,10 +77,10 @@ export default ({currentSection, inventory, cards}) => {
       <p>"Yeah thanks," Lillian said. Once the student was out of sight she crumpled the flyer in her hand
       and stalked off towards the library.</p>
       <p>"You don't agree?" I asked, jogging to keep up.</p>
-      <p>"I don't have time for theatrics," she said airily.</p>
+      <p>"I don't have time."</p>
       <p>
         The current library building was a Brutalist relic of the 1960s and didn't exactly
-        harmonize with the rest of the campus. In spite of that,
+        gel with the rest of the campus. In spite of that,
         it was a quiet and pleasant place to study, with abundant natural
         light and a wall of glass that overlooked the small orchard at the edge of campus.
         Naturally we were headed for the windowless basement instead.

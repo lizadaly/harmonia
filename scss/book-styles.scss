@@ -31,9 +31,19 @@
     font-family: $word-font;
   }
   &.astrolith1 {
+    .recto, .verso {
+      display: none;
+    }
     article.article {
       h1, h2, h3, h4, h5, h6 {
         font-family: $students-font;
+        margin-bottom: 1em;
+        padding: 0;
+        text-align: center;
+      }
+      h3 {
+
+
       }
     }
   }
@@ -77,6 +87,9 @@
       font-size: 1rem;
       font-weight: normal;
       font-style: italic;
+    }
+    h4 {
+      font-size: 1.5rem;
     }
     header {
         border-bottom: 1px solid $gray;
@@ -133,6 +146,9 @@
     img {
       margin-bottom: 1em;
     }
+    h4 {
+      font-size: 2rem;
+    }
   }
   &.paper3, &.paper4 {
     max-width: 100%;
@@ -141,23 +157,27 @@
     }
     h2 {
       padding: 0;
+      font-size: 1rem;
     }
     img {
       max-width: 25%;
     }
     h4 {
       margin: .5em 0;
+      font-size: 1.5rem;
     }
   }
   &.lynn1, &.lynn2, &.lynn3 {
     font-family: $lynn-font;
     font-size: 22px;
-
+    font-weight: lighter;
     article.article {
       p {
         font-family: $lynn-font;
         font-size: 24px;
         line-height: 1.3em;
+        color: $lynn-color;
+
       }
     }
 
@@ -172,6 +192,11 @@
     }
     .recto, .verso {
       display: none;
+    }
+    .diagram-note {
+      opacity: 0.75;
+      text-align: right;
+      padding: 1rem;
     }
   }
   &.lillian1 {

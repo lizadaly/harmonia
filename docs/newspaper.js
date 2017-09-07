@@ -146,7 +146,7 @@ export const paper4 = () => (
         our school, and many of us seek to continue that work, or even to extend it. We have seen the
         benefits that equal education for <ListCard author="lynn"
           tag="paper4-boys" expansions={["boys and girls"]}
-          card={<span>Blithedale was co-ed until 1906, when a new charter was established.</span>} /> bring, and we believe there is yet more work to do
+          card={<span>Blithedale was co-ed until 1906, when a new charter was established after a bitter debate.</span>} /> bring, and we believe there is yet more work to do
         there.
       </p>
       <h4>Plea for a Safe Return</h4>
@@ -155,18 +155,22 @@ export const paper4 = () => (
       <p>Our own Mr. A— writes, "If any man has taken it upon himself to remove my chickens from their
         enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
       </p>
-      <h4 style={{clear: "both"}}>The Study of the Unknown </h4>
+      <h4 style={{clear: "both"}}>To the Instrument!</h4>
       <p>
         <ListCard author="lynn"
           tag="paper4-anon" expansions={["Anon"]}
           nextUnit="section"
           card={<span>Certain that Cadwell was the author here: fragments of this text appear on the
-          back of the device diagram (attached).</span>} />. writes, "I speak to you of minute and invisible particles of matter, endowed with attributes
-        such as we are wont to associate with larger masses that are capable of being seen. If you
+          back of the device diagram (attached).</span>} />. writes, "As we grapple with the dissolution of our
+        grand experiment, I call upon our community remember the grand Scientific Discoveries we have
+        made together. Remember that we are composed of minute and invisible particles of matter, endowed with attributes
+      such as we are wont to associate with larger masses.</p>
+      <p>If you
         find difficulty in imagining this, remember that every grain of sand is a microcosm, sharing in the
         innate motions which pulsate through the Universe; and remember further that there are specks,
         infinitely smaller than grains of sand, in which a heart beats, and blood circulates, and all the
-        functions of an exuberant vitality are exercised—"
+        functions of an exuberant vitality are exercised. All of this can be Instrumented, with the aid of a
+        great ancient Spiritual and Scientific force."
       </p>
     </div>
 

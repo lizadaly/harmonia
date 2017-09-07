@@ -31,12 +31,18 @@ p.travel {
     text-align: left;
     padding: 0 0 0 20px;
     visibility: visible;
+    &.force-down {
+      text-align: left;
+    }
   }
   &.left {
     left: 2%;
     text-align: left;
     padding: 0 20px 0 0;
     visibility: visible;
+    &.force-down {
+      text-align: left;
+    }
   }
   &.center {
     left: 50%; /* position the left edge of the element at the middle of the parent */
@@ -85,14 +91,24 @@ p.travel {
     font-family: $lillian-new-font;
     color: $lillian-new-color;
     font-size: 22px;
+    text-align: center;
+    width: 100%;
   }
   &.force-down {
     width: 80%;
     margin-top: 10rem;
-    text-align: center;
+    text-align: center !important;
+  }
+  &.lillian {
+    text-align: left !important; /* Keep this here! */
+  }
+
+}
+.travel {
+  .force-down {
+    text-align: center !important;
   }
 }
-
 .jtk-connector {
   z-index: -1;
   filter: url(#filter-line-wiggle);
@@ -115,7 +131,7 @@ p.travel {
 }
 
 .jtk-connector.drawing > path {
-  animation: doAnim 3s linear forwards;
+  animation: doAnim 2s linear forwards;
 }
 
 .link-source span span {
