@@ -15,10 +15,10 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Seven</h2>
         <blockquote>
-          "What is the breath of life?" I ask at last.<br/>
-          "Oh, I can answer that; I have found it out since I have been here. It is, my
-          dear, electricity, which we assimilate into spirit."<br/><br/>
-          —<i>Arqtiq</i>, Anna Adolph (1899)
+          I was filled with astonishment at women who, qualified by nature and fortune to have the world almost
+          at their command, chose to seclude themselves from it and make a
+          new one for themselves. <br/><br/>
+          —<i>Millennium Hall</i>, Sarah Scott (1762)
         </blockquote>
       </header>
 

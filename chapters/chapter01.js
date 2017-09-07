@@ -39,12 +39,12 @@ export default ({currentSection, inventory, cards}) => {
       </header>
 
       <p>It was midnight when I arrived on campus and the weather was
-        getting worse. The last hour of the drive was a dark and lonely ascent into
+        getting worse. Hours of driving led to a dark and lonely ascent into
         deeply forested foothills. I hadn't seen a town for miles when I finally
         came upon the sign for <ListCard expansions={["Blithedale College"]}
           tag="c1-college-name"
           card={<span>An obscure women's college, tucked in the upper corner of
-          Massachusetts like a bookmark.</span>} />. I had arrived.
+          Massachusetts like a bookmark.</span>} />. This far-away place would be my home now.
       </p>
       <p>
         A substitute teaching position was not the big break I'd been hoping for,

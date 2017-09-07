@@ -14,13 +14,12 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Eleven</h2>
         <blockquote>
-          They have great moments, now and then, when a few people are gathered together,
-          and their thought becomes electrical and their minds mingle as you have seen the
-          glances of eyes mingle in a language more eloquent than speech.
-          We ourselves have such moments, but the difference is:
-          they appreciate the value of them and hold them fast,
-          while we open our hands and let them fly away like uncoveted birds, or worthless butterflies.<br/><br/>
-          —<i>Unveiling a Parallel</i>, Alice Jones and E. Merchant (1893)
+          Then despite all entreaties and expostulations and even
+          threats—which the men at some point vainly tried—the women, every one, departed, and after a few days,
+          in all the great Atlantic seaboard, from the pine
+          forests of Maine to the wave-washed Florida Keys,
+          there was not a woman to be seen.<br/><br/>
+          —<i>A Divided Republic</i>, Lillie Blake (1887)
         </blockquote>
       </header>
       <p>
@@ -266,8 +265,8 @@ export default ({currentSection, inventory, cards}) => {
           <Map from={inventory.c11_return}
             to={{
               him: <div>
-                <p>He dissolved before my eyes. It didn't matter that he was probably safe; it was terrifying to watch.
-                I left the cave, which was starting to fall apart.</p>
+                <p>He just vanished, in the space of a blink.</p>
+                <p>This far-away place would be my home now.</p>
               </div>,
               me: <div>
                 <p>"This is what I want." He closed and sealed the chamber door.</p>

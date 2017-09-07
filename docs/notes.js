@@ -19,9 +19,9 @@ const notes = ({nextDoc, prevDoc}) => {
         that shaped utopian thinking, and be prepared to discuss utopians' influence on later
         fantasy and science fiction.
       </p>
-      <h6>
+      <h4>
         Preliminary reading list
-      </h6>
+      </h4>
       <ul>
         <li><ListCard expansions={["Looking Backwards"]}
           tag="r1_bellamy"

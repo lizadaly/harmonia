@@ -13,12 +13,11 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <header>
         <h2>Chapter Eight</h2>
+
         <blockquote>
-          It will be obvious that the old state of society
-          will not bear one moment’s comparison with the new, and that
-          the only practical difficulty will be to restrain men from
-          rushing too precipitously from the old to the new. <br/> <br/>
-          —<i>A New View of Society</i>, Robert Owen (1813)
+          "It was a beautiful world, but it was not my world."
+          <br/>          <br/>
+          —<i>Moving the Mountain</i>, Charlotte Perkins Gilman (1911)
         </blockquote>
       </header>
 

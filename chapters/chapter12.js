@@ -191,6 +191,9 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <header>
               <blockquote>
+                We are still chaotic, and unformed, and unredeemed, and unregenerate. But we are
+                tremendously alive.<br/><br/>
+                —<i>The Republic of the Future</i>, Anna Bowman Dodd (1887)
               </blockquote>
             </header>
           </div>,

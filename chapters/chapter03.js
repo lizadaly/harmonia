@@ -13,10 +13,8 @@ export default ({currentSection, inventory}) => {
     <header>
       <h2>Chapter Three</h2>
       <blockquote>
-        I was filled with astonishment at women who, qualified by nature and fortune to have the world almost
-        at their command, chose to seclude themselves from it and make a
-        new one for themselves. <br/><br/>
-        —<i>Millennium Hall</i>, Sarah Scott (1762)
+        It was an experiment. We all risked something, and must bear our losses as we can. <br/><br/>
+        - <i>Transcendental Wild Oats</i>, Louisa May Alcott (1873)
       </blockquote>
     </header>
     <p>

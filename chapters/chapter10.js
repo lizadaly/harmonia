@@ -26,25 +26,29 @@ export default ({currentSection, inventory, cards}) => {
                   tag="c10-d4"
                   forceDir="down"
                   card={<span>
-                    which landed with a <List expansions={[["sigh"], ["sigh"]]}
-                                          tag="c10-sigh" />.
+                    until I landed with a <List expansions={[["sigh"], ["sigh"]]}
+                                            tag="c10-sigh" />.
                   </span>} />
-
+                  
                 </span>} />
               </span>} /></span>
             } />
 
         </p>
       </div>
-      </section>,
+    </section>,
     <section>
       <header>
         <h2 style={{marginTop: "500px"}}>Chapter Ten</h2>
         <h3>November 20, 1889</h3>
         <blockquote>
-          I would not exchange this life for any I have ever led. I could not feel content with the life of
-          isolated houses and the conventions of civilization.<br/><br/>
-          —Marianne Dwight, resident of Brook Farm in West Roxbury, MA (1844)
+          They have great moments, now and then, when a few people are gathered together,
+          and their thought becomes electrical and their minds mingle as you have seen the
+          glances of eyes mingle in a language more eloquent than speech.
+          We ourselves have such moments, but the difference is:
+          they appreciate the value of them and hold them fast,
+          while we open our hands and let them fly away like uncoveted birds, or worthless butterflies.<br/><br/>
+          —<i>Unveiling a Parallel</i>, Alice Jones and E. Merchant (1893)
         </blockquote>
       </header>
       <p>

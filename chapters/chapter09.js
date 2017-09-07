@@ -14,10 +14,12 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Nine</h2>
         <blockquote>
-          There were no policemen, for there was no disorder, but thrift, sobriety, and decorum ruled,
-          and the days passed in calm monotony.<br/><br/>
-          —<i>A Divided Republic</i>, Lillie Blake (1887)
+          "What is the breath of life?" I ask at last.<br/>
+          "Oh, I can answer that; I have found it out since I have been here. It is, my
+          dear, electricity, which we assimilate into spirit."<br/><br/>
+          —<i>Arqtiq</i>, Anna Adolph (1899)
         </blockquote>
+
       </header>
       <p>
         By my feet lay evidence of recent habitation: plastic milkcrates, some rubber gloves, a few

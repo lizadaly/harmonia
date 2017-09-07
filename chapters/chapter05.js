@@ -14,11 +14,14 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Five</h2>
         <blockquote>
-          "It was a beautiful world, but it was not my world."
-          <br/>          <br/>
-          —<i>Moving the Mountain</i>, Charlotte Perkins Gilman (1911)
+          There was one moment, whilst the whole frame yet stood, that surpassed all else. It was fire throughout.
+          It seemed like a magnificent temple of molten gold, or a crystallized fire. The smoke as it settled off the horizon
+          gave the effect of sublime mountain scenery; and during the burning, the trees, the woods shone magically to their
+          minutest twigs, in lead, silver, and gold.<br/><br/>
+          — Marianne Dwight, resident of Brook Farm in West Roxbury, MA (1846)
         </blockquote>
-      </header>
+        
+          </header>
       <p>
         Lillian sent me away with a heavy load of books, papers, and troubled thoughts. I retreated to my
         room, my things still largely unpacked, and went through <ListCard expansions={["her documents"]}
