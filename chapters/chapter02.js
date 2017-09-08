@@ -67,7 +67,7 @@ export default ({currentSection, inventory, cards}) => {
 
     <p>"Hi <ListCard expansions={["Professor Fuller"]}
       tag="c2-fuller"
-      card={<span>I should've corrected her but there's only so many times in one day I can be expected to debase myself.</span>} />,  I'm Lillian Horace. It says in my
+      card={<span>I should've corrected her but there's only so many times in one day I can be expected to debase myself.</span>} />,  I'm Lillian Horace-Ripley. It says in my
       notes that <i>Utopia</i> was actually published in 1516."</p>
     <p>"Yes, fine, sorry." Now I was flustered. "Did Professor Lynn already cover this material?"</p>
     <p>Many heads nodded. I looked back down at the syllabus I'd thrown together
@@ -360,7 +360,7 @@ export default ({currentSection, inventory, cards}) => {
             card={<span>A fine collection of uniformly white people.</span>}/> of distinguished faculty and former students. The family names were mostly of the
           sturdy Yankee type: Abbot, Page, Bradley, <ListCard expansions={["Horace"]}
             tag="c2-horace"
-            card={<span>This one caught my eye—the resemblance to Lillian was obvious. Her grandmother
+            card={<span>This one caught my eye—the resemblance to my student Lillian was obvious. Her grandmother
             was apparently a keen squash player.</span>} />.
         </p>
         <p>We reached the upper landing and the office of the Dean. Walter the assistant gave me an apologetic look. "Good luck."</p>

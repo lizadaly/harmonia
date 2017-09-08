@@ -190,17 +190,25 @@ export default ({currentSection, inventory, cards}) => {
               <figure>
                 <img src="images/past-final.jpg" />
               </figure>
-
+              <p className="begin">
+                <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
+              </p>
+              
             </footer>
-
+            <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
 
-            <header>
+            <footer>
+              <figure>
+                <img src="images/present-final.jpg" />
+              </figure>
+              <p className="begin">
+                <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
+              </p>
 
-            </header>
-
+            </footer>
           </div>
         }} />
     </section>
