@@ -136,8 +136,7 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <p>Curious, I turned to the final page in the pile. It wasn't the third novel from the syllabus,
-      but instead what looked to be an original draft of a different one,
-      <ListCard expansions={["handwritten"]}
+      but instead what looked to be an original draft of a different one,     <ListCard expansions={["handwritten"]}
         tag="c2_writing"
         card={<span>I've reproduced it here in type to make it more readable.</span>} />  in a looping, archaic style:
       </p>
