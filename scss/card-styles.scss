@@ -111,13 +111,16 @@ p.travel {
 }
 .jtk-connector {
   z-index: -1;
-  filter: url(#filter-line-wiggle);
-  -webkit-filter: url(#filter-line-wiggle);
   path {
     stroke: rgba(0, 0, 0, .5);
   }
 }
-
+body.squiggle {
+  .jtk-connector {
+    filter: url(#filter-line-wiggle);
+    -webkit-filter: url(#filter-line-wiggle);
+  }
+}
 
 .jtk-connector.drawing > path {
   stroke-dasharray: 1000;

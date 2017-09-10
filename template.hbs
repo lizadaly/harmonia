@@ -18,7 +18,14 @@
   </head>
 
   <body class="pagination-{{ htmlWebpackPlugin.options.pagination }}">
-
+    <svg version="1.1" id="filter-effects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <defs>
+          <filter id="filter-line-wiggle">
+              <feTurbulence result="TURBULENCE" baseFrequency="0.01" numOctaves="5" seed="1" />
+              <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
+          </filter>
+        </defs>
+      </svg>
       <nav class="top-bar">
         <div class="top-bar-left">
           <div><a href="#" onClick="showAbout()">About</a></div>
@@ -41,14 +48,7 @@
         <article id="article"></article>
       </div>
 
-      <svg version="1.1" id="filter-effects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-          <defs>
-            <filter id="filter-line-wiggle">
-                <feTurbulence result="TURBULENCE" baseFrequency="0.01" numOctaves="5" seed="1" />
-                <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
-            </filter>
-          </defs>
-        </svg>
+
   </body>
 
 </html>
