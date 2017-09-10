@@ -167,10 +167,10 @@ class _ListCard extends React.Component {
         let testTop = test.getBoundingClientRect().top + window.scrollY
         let testBottom = testTop + test.getBoundingClientRect().height
 
-        console.log("comparing", card.id, "on side", cardSide, parseInt(cardTop), "/", parseInt(cardBottom), test.id, "at top/bottom", parseInt(testTop), "/", parseInt(testBottom))
+//        console.log("comparing", card.id, "on side", cardSide, parseInt(cardTop), "/", parseInt(cardBottom), test.id, "at top/bottom", parseInt(testTop), "/", parseInt(testBottom))
         if (cardBottom > testTop && (cardBottom <= testBottom || cardTop <= testBottom)) {
           // Move the target down until it doesn't overlap
-          console.log("moving due to collision with", test.id, "to", testBottom + 50)
+//          console.log("moving due to collision with", test.id, "to", testBottom + 50)
           card.style.top = (testBottom + 50) + 'px'
           card.style.marginTop = 0
         }

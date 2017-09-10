@@ -30,6 +30,13 @@
         </div>
       </nav>
 
+      <div id="small-viewport-message">
+        <p>
+          This story requires a larger screen than is available on a mobile device. It should work
+          well on tablets or full-size computers.
+        </p>
+      </div>
+
       <div class="container" id="container">
         <article id="article"></article>
       </div>
@@ -40,11 +47,6 @@
                 <feTurbulence result="TURBULENCE" baseFrequency="0.01" numOctaves="5" seed="1" />
                 <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
             </filter>
-            <filter id="filter-line-warp">
-                <feTurbulence result="TURBULENCE" baseFrequency="0.001" numOctaves="5" seed="1" />
-                <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="9" />
-            </filter>
-
           </defs>
         </svg>
   </body>

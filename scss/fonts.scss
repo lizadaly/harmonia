@@ -49,10 +49,6 @@ $word-font: 'Arial', 'Helvetica', sans-serif;
   font-family: $word-font;
 }
 
-.warp {
-  filter: url(#filter-line-warp);
-  -webkit-filter: url(#filter-line-warp);
-}
 
 $sign-font: 'Cinzel Decorative', cursive;
 
@@ -65,15 +61,6 @@ $typewritten-font: 'Inconsolata', monospace;
 .typewritten {
   font-family: $typewritten-font;
 }
-/*
-@font-face {
-    font-family: 'giglio_wfregular';
-    src: url('fonts/giglio-webfont.woff2') format('woff2'),
-         url('fonts/giglio-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 
 $utopian-font: 'EB Garamond', serif;
 

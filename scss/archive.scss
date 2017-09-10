@@ -44,6 +44,9 @@ li {
 .container {
   margin: 4em auto;
   max-width: 1600px;
+  @media (max-width: 450px)  {
+    display: none;
+  }
 }
 
 blockquote p {
@@ -202,5 +205,20 @@ footer {
       font-size: 13px;
       line-height: 1.2em;
     }
+  }
+}
+
+/* Shame message over small viewports */
+#small-viewport-message {
+
+  display: none;
+  margin: auto;
+  padding: 1em;
+  font-size: larger;
+  text-align: center;
+  background: red;
+  color: white;
+  @media (max-width: 450px) {
+    display: block;
   }
 }

@@ -10,6 +10,18 @@ const extractSass = new ExtractTextPlugin({
 
 var PROD = (process.env.NODE_ENV === 'production')
 
+var prodPlugin = PROD ? new webpack.optimize.UglifyJsPlugin({
+    compress: {
+      warnings: false,
+      screw_ie8: true
+    },
+    comments: false
+    }) : new webpack.DefinePlugin({
+     "process.env": {
+         NODE_ENV: JSON.stringify("production")
+        }
+    })
+
 var config = require("./story.json");
 const path = require('path')
 
@@ -58,13 +70,7 @@ module.exports = [{
       pagination: config.pagination,
       template: 'template.hbs'
     }),
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false,
-          screw_ie8: true
-        },
-        comments: false
-    }),
+    prodPlugin,
     // Copy all static assets during a built to the dist/ directory.
     // If you add other directory names, they'll go in here.
     new CopyWebpackPlugin([
