@@ -193,9 +193,9 @@ export default ({currentSection, inventory, cards}) => {
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
               </p>
-              
+
             </footer>
-            <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
+            
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
@@ -214,5 +214,5 @@ export default ({currentSection, inventory, cards}) => {
     </section>
   ]
 
-  return <RenderSection currentSection={currentSection} sections={sections}  />
+    return <RenderSection currentSection={currentSection} sections={sections}  />
 }
