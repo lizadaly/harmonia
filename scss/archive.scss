@@ -9,7 +9,7 @@
 body {
   color: $black;
   background: $white;
-  overflow-x: hidden;
+/*  overflow-x: hidden; */
   text-rendering: optimizeLegibility;
 
 }
@@ -34,6 +34,9 @@ p {
   font-family: 'Lora', Georgia, serif;
   line-height: 1.6em;
   font-size: 18px;
+  @media (max-width: 770px)  {
+    font-size: 1rem;
+  }
 }
 li {
   font-family: $card-font;
@@ -42,11 +45,12 @@ li {
 }
 
 .container {
-  margin: 4em auto;
+  margin: 4rem auto;
   max-width: 1600px;
   @media (max-width: 450px)  {
     display: none;
   }
+
 }
 
 blockquote p {
@@ -61,7 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 header {
   h1 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 70px;
+    font-size: 5rem;
+    @media (max-width: 770px)  {
+      font-size: 2rem;
+    }
   }
   h2 {
 
@@ -78,6 +85,11 @@ header {
     font-family: $utopian-font;
     font-size: 18px;
     line-height: 1.4em;
+    @media (max-width: 770px)  {
+      padding: 0;
+      margin: 0;
+    }
+
   }
   .begin {
        font-family: 'Cinzel Decorative', serif;
