@@ -1,6 +1,14 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].[contenthash].css",
+    disable: process.env.NODE_ENV === "development"
+});
+
+var PROD = (process.env.NODE_ENV === 'production')
 
 var config = require("./story.json");
 const path = require('path')
@@ -24,23 +32,18 @@ module.exports = [{
               { test: /\.json$/, loader: 'json-loader' },
               { test: /\.html$/, loader: 'html-loader'},
               { test: /\.hbs/, loader: 'handlebars-loader'},
-              { test: /\.scss/, loaders: [
-                {
-                  loader: 'style-loader',
-                  options: {url: false}
-                },
-                {
-                  loader: 'css-loader',
-                  options: {url: false}
-                },
-
-                {
-                  loader: 'sass-loader',
-                  options: {url: false}
-                }
-                ]},
+              { test: /\.scss/, use: extractSass.extract({
+                use: [{
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }],
+                // use style-loader in development
+                fallback: "style-loader"
+              })
+              },
               { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
-              { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"}
+              { test: /\.(png|jpg|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"}
     ]
   },
   plugins: [
@@ -55,19 +58,28 @@ module.exports = [{
       pagination: config.pagination,
       template: 'template.hbs'
     }),
+    new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false,
+          screw_ie8: true
+        },
+        comments: false
+    }),
     // Copy all static assets during a built to the dist/ directory.
     // If you add other directory names, they'll go in here.
     new CopyWebpackPlugin([
       { from: 'css', to: 'css' },
       { from: 'images', to: 'images' },
-      { from: 'fonts', to: 'fonts'},
       { from: 'story.json'}
-    ])
+    ]),
+    extractSass
+
+
   ]
 }];
 
 function getEntrySources(sources) {
-    if (process.env.NODE_ENV !== 'production') {
+    if (PROD) {
         sources.push('webpack-dev-server/client?http://localhost:8080');
     }
     return sources;
