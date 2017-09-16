@@ -31,10 +31,10 @@ export default ({currentSection, inventory, cards}) => {
               There were men <ListCard expansions={["waiting"]}
                 tag="c12-waiting"
                 card={<span>For which I could thank Lilly Cadwell's traitorous little friend Saul.</span>} /> for
-              me when I emerged outside. They looked at me in astonishment, but while muttering amongst themselves,
+              me when I emerged outside. They looked at me in astonishment, but while they muttered amongst themselves,
               an enormous sinkhole opened
               beneath the Great Hall. The resulting cloud of dust and soot could be seen all across the valley.
-              (I think machine shook the earth
+              (I think the machine shook the earth
               so hard that the cavern collapsed, dragging the stone and timber of the <ListCard expansions={["ruin"]}
                 tag="c12-ruin"
                 nextUnit="section"

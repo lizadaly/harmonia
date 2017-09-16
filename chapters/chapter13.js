@@ -86,7 +86,6 @@ export default ({currentSection, inventory, cards}) => {
             tag="c-moving"
             card={<span>You'll never believe this, but the
               story begins with a guy falling into a hole.
-              Extremely eugencist.
             </span>}/>, Charlotte Perkins Gilman (1911) <a className="link" href="https://ebooks.adelaide.edu.au/g/gilman/charlotte_perkins/moving/">text</a>
 
         </p>

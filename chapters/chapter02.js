@@ -294,7 +294,7 @@ export default ({currentSection, inventory, cards}) => {
           The administration building was a grand old brick edifice, fronted with tidy columns and an oversized door.
           The entry hall was obviously designed to impress parents and donors and was dominated by a majestic curved
           stairwell with elaborate banisters and railings. Directly next to the stairs, a doorway was flanked by
-          a freestanding brass sign that read, "Current Exhibit." I leaned in and knocked on the open door.
+          a freestanding brass sign that read "Current Exhibit." I leaned in and knocked on the open door.
         </p>
         <p>
           An older woman with jet black hair and a kindly face was placing some manuscripts
