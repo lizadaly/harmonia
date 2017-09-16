@@ -20,12 +20,17 @@ export default ({currentSection, inventory}) => {
     <p>
       Dean Orellana's office was spacious, comfortably furnished, and adorned with vintage college memorabilia:
       group photos of serious young women in bloomers, field hockey trophies, awards for comportment and elocution.
-      A large <ListCard expansions={["oil painting"]}
-        tag="c4_painting"
-        card={<span>A moody rendition of the college campus. In place of the quad was a massive
-        barn-shaped wooden building. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)."</span>} /> hung over a stone fireplace.
-
+      A large <List expansions={[["oil painting"], ["oil painting"]]} tag="c3-painting"/> hung over a stone fireplace.
     </p>
+  </section>,
+  <section>
+    <figure>
+      <img src="images/painting.jpg" alt="" />
+      <figcaption>
+        A cheerful 19th century rendition of the college campus, with a multi-story building
+        where the quad would be today. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)."
+      </figcaption>
+    </figure>
     <p>
       "I heard your first class went reasonably well," she said without looking up from her work. She was
       younger than I expected, mid-forties,
