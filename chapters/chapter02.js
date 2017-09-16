@@ -195,7 +195,7 @@ export default ({currentSection, inventory, cards}) => {
   </section>,
   <section>
     <figure>
-      <img src="images/meteorite.jpg" />
+      <img src="images/meteorite.jpg" alt="A sketch of a large black meteorite set in the quad between college buildings. A plaque reads 'The Astrolith'"/>
       <figcaption>
         (I've reproduced this and many other sketches from memory.)
       </figcaption>

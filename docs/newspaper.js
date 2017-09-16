@@ -8,9 +8,9 @@ export const paper1 = () => {
 
   return <div>
     <header>
-      <img src="images/header-glyph.png" />
+      <img src="images/header-glyph.png" alt="A woodcut decorative design"/>
       <h1>The Harbinger</h1>
-      <img src="images/angel.png" />
+      <img src="images/angel.png" alt="A woodcut of an angel blowing a trumpet"/>
       <h2>Together We Shall Shine a Light ~ June 19, 1889</h2>
     </header>
     <div className="paper-container">
@@ -88,12 +88,12 @@ export const paper2 = () => {
 export const paper3 = () => {
   return <div>
     <header>
-      <img src="images/header-glyph.png" />
+      <img src="images/header-glyph.png" alt="A woodcut decorative design" />
       <h1>The Harbinger</h1>
       <h2>Together We Shall Shine a Light ~ November 23, 1884</h2>
     </header>
     <div className="paper-container">
-      <img src="images/trumpet.png" />
+      <img src="images/trumpet.png" alt="A woodcut of a decorative trumpet"/>
       <h4>The Astrolith Emerges</h4>
       <p>
         <span className="first-letter">T</span>HE FUTURE IS NOW! <ListCard expansions={["Join us"]}
@@ -116,7 +116,7 @@ export const paper4 = () => (
 
   <div>
     <header>
-      <img src="images/header-glyph.png" />
+      <img src="images/header-glyph.png" alt="A woodcut decorative design"/>
       <h1>The Harbinger</h1>
       <h2>Together We Shall Shine a Light ~ November 14, 1889</h2>
     </header>
@@ -150,7 +150,7 @@ export const paper4 = () => (
         there.
       </p>
       <h4>Plea for a Safe Return</h4>
-      <img src="images/rooster.png" style={{float: "right", paddingLeft: "2em"}}/>
+      <img src="images/rooster.png" style={{float: "right", paddingLeft: "2em"}} alt="A woodcut of a rooster"/>
 
       <p>Mr. M writes, "If any man has taken it upon himself to remove my chickens from their
         enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."

@@ -229,7 +229,7 @@ export const frag7 = () => (
 
 export const diagram1 = () => (
   <div>
-    <img src="images/machine.jpg"/>
+    <img src="images/machine.jpg" alt="A sketch of a massive meteorite, as tall as a house. A strange machine is built all around it, made of spare parts and cogs and vents. A man is seen entering the meteor from a platform at the top, and a woman is pulling a large lever."/>
 
     <div className="elsie-font diagram-note">
       "every grain of sand a <ListCard tag="diag1-micro" forceDir="down"

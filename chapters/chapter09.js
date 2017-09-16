@@ -115,7 +115,7 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <figure>
-        <img src="images/machine-detail.jpg" />
+        <img src="images/machine-detail.jpg" alt="A sketch of the time machine up close. A large wheel made of copper is visible, as is a small table with a notebook and stairs going up into a chamber inside the meteor."/>
       </figure>
       <p>I was about about ten feet off the ground now, and close to the huge
         wheel-like mechanism.

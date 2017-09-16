@@ -188,21 +188,21 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <footer>
               <figure>
-                <img src="images/past-final.jpg" />
+                <img src="images/past-final.jpg" alt="A sketch of a large burnt building"/>
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
               </p>
 
             </footer>
-            
+
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
 
             <footer>
               <figure>
-                <img src="images/present-final.jpg" />
+                <img src="images/present-final.jpg" alt="A sketch of the college campus from a distance. The quad and many brick buildings are visible."/>
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />

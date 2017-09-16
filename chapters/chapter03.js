@@ -25,7 +25,7 @@ export default ({currentSection, inventory}) => {
   </section>,
   <section>
     <figure>
-      <img src="images/painting.jpg" alt="" />
+      <img src="images/painting.jpg" alt="A sketch of a large wooden building surrounded by farms and people in 19th century dress riding horses and carriages." />
       <figcaption>
         A cheerful 19th century rendition of the college campus, with a multi-story building
         where the quad would be today. A brass label at the bottom read, "The Phalanstery: Our Great Hall (1889)."
