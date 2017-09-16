@@ -4,7 +4,7 @@
   "identifier": "harmonia-",
   "keywords": "starter windrift javascript react interactive-fiction",
   "description": "A utopian adventure",
-  "license": "CC BY 4.0",
+  "license": "Copyright 2017 Liza Daly",
   "version": "1.0.0",
   "pagination": "by-chapter",
   "enableUndo": true
