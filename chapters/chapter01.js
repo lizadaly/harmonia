@@ -32,7 +32,7 @@ export default ({currentSection, inventory, cards}) => {
     <section>
       <header>
         <figure className="chapter-1">
-          <img src="images/opening.jpg" />
+          <img src="images/opening.jpg" alt="A pencil sketch of a college campus, with trees and paths in the foreground. In the distance are brick buildings, and a black pointed rock." />
         </figure>
         <h2>Chapter One</h2>
         <h3>November 3, 1998</h3>
