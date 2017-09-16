@@ -14,13 +14,24 @@
 
       <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Lora|Playfair+Display|BenchNine|Cinzel+Decorative|Inconsolata|EB+Garamond|Julee|Arapey|Caveat" rel="stylesheet"/>
       <link rel="stylesheet" href="css/windrift.css" />
-
+      <script>
+      var about = function(e) {
+          e.preventDefault();
+          document.getElementById('about-modal').classList.toggle('open');
+          document.getElementById('about-toggle').classList.toggle('open');
+      }
+      </script>
   </head>
 
   <body class="pagination-{{ htmlWebpackPlugin.options.pagination }}">
       <nav class="top-bar">
         <div class="top-bar-left">
-          <div><a href="#" onClick="showAbout()">About</a></div>
+          <div><a id="about-toggle" class="open" href="#" onClick="about(event)">About</a></div>
+            <aside id="about-modal" class="about-modal">
+                <i>Harmonia</i> is an interactive short story by <a href="https://lizadaly.com/">Liza Daly</a> entered into the <a href="https://ifcomp.org">2017 Interactive Fiction Competition</a>.
+                Feedback welcomed at <a href="mailto:liza@lizadaly.com">liza@lizadaly.com</a>.
+                <div class="close"><a href="#" onClick="about(event)"><small>CLOSE</small></a></div>
+            </aside>
         </div>
         <div>
           <div class="top-bar-right">

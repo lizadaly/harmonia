@@ -1,6 +1,8 @@
+@import 'colors';
+@import 'fonts';
+
 nav.top-bar {
   width: 100%;
-  opacity: 0.50;
   background: none;
   display: flex;
   justify-content: space-between;
@@ -11,8 +13,43 @@ nav.top-bar {
   align-items: center;
   padding: 1rem;
   a {
-    border-bottom: none;
+    border-bottom: 1px solid rgba(0,0,0,0);
     font-family: 'Cinzel Decorative', sans-serif;
     font-size: 15px;
+  }
+
+}
+#about-toggle {
+  visibility: hidden;
+  &.open {
+    visibility: visible;
+  }
+}
+.about-modal {
+  display: none;
+  position: absolute;
+  border: 1px solid $lightgray;
+  font-family: $utopian-font;
+  top: 2rem;
+  left: 1rem;
+  width: 15rem;
+  padding: 1rem;
+  line-height: 1.5em;
+  z-index: 99;
+  background: $white;
+  a {
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: 1px dotted $darkgray;
+  }
+  .close {
+    font-family: 'Cinzel Decorative', sans-serif;
+    a {
+      border-bottom: none;
+    }
+    text-align: right;
+  }
+  &.open {
+    display: block;
   }
 }
