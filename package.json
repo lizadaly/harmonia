@@ -22,7 +22,7 @@
   "dependencies": {
     "jsplumb": "^2.4.3",
     "underscore": "^1.8.3",
-    "windrift": "file:../windrift/windrift-1.0.6.tgz"
+    "windrift": "1.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
