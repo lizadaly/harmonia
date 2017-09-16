@@ -7,5 +7,5 @@
   "license": "CC BY 4.0",
   "version": "1.0.0",
   "pagination": "by-chapter",
-  "enableUndo": false
+  "enableUndo": true
 }
