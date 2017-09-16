@@ -45,7 +45,11 @@ class _ListCard extends React.Component {
 
   onComplete() {
     this.props.onAddCard(this.props.tag)
-    this.props.onSetBookmark(0)
+    // Only fire this if nextSection is null; otherwise
+    // this will be handled by the default section behavior
+    if (this.props.nextUnit != "section" && this.props.nextUnit != "chapter") {
+      this.props.onSetBookmark(0)
+    }
   }
 
   onRender(animate=false) {
@@ -136,9 +140,6 @@ class _ListCard extends React.Component {
 
   positionCardY(card) {
     // Move the card down if necessary to avoid overlapping other cards;
-    // TODO fix bug where this is triggered unnecessarily by elements on different sides.
-
-
     let cardTop = card.getBoundingClientRect().top + window.scrollY
     let cardBottom = cardTop + card.getBoundingClientRect().height
     let cardSide = undefined
