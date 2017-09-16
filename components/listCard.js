@@ -4,7 +4,7 @@ import {debounce} from 'underscore'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { List } from 'windrift'
+import { List, showNextSection } from 'windrift'
 import * as actions from '../actions'
 
 import jsPlumb from 'jsPlumb'
@@ -45,6 +45,7 @@ class _ListCard extends React.Component {
 
   onComplete() {
     this.props.onAddCard(this.props.tag)
+    this.props.onSetBookmark(0)
   }
 
   onRender(animate=false) {
@@ -121,7 +122,8 @@ class _ListCard extends React.Component {
     window.addEventListener('resize', this.reRender)
   }
   shouldComponentUpdate(props) {
-    return props.added && !this.props.added
+    var shouldUpdate = props.added != this.props.added
+    return shouldUpdate
   }
   componentDidUpdate(prevProps, prevState) {
     this.onRender(true)
@@ -239,7 +241,8 @@ const mapStateToProps = (state, ownProps, added=false) => {
 const ListCard = connect(
   mapStateToProps,
   {
-    onAddCard: actions.cardCreated
+    onAddCard: actions.cardCreated,
+    onSetBookmark: showNextSection
   }
 )(_ListCard)
 

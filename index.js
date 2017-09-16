@@ -5,8 +5,6 @@ import { cards } from './reducers'
 
 require('./scss/archive.scss')
 
-
-
 function start() {
   var chaptersList = require.context('./chapters', true, /\.js$/)
   var game = <Game chaptersList={chaptersList} config={config} />
