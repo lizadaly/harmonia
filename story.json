@@ -1,8 +1,8 @@
 {
-  "title": "Harmonia",
+  "title": "Harmonia: An interactive utopian tale",
   "author": "Liza Daly",
   "identifier": "harmonia-",
-  "keywords": "starter windrift javascript react interactive-fiction",
+  "keywords": "windrift javascript react interactive-fiction ifcomp utopia",
   "description": "A utopian tale, and an entry in the 2017 Interactive Fiction Competition",
   "license": "Copyright 2017 Liza Daly",
   "version": "1.0.0",
