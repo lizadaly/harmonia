@@ -14,7 +14,7 @@ const brooks = ({nextDoc, prevDoc}) => {
         card={<span>100 years also the time span in
           in <List tag="brooks_x"
             expansions={[["Cadwell's journal"], ["Cadwell's journal"]]} />—is this shorthand like a Biblical 40 years?
-          
+
         </span>} />.
     </p>
     <p>
@@ -23,8 +23,8 @@ const brooks = ({nextDoc, prevDoc}) => {
       the strange scenes I had witnessed. I should not have been surprised to see them all disappear
       like the mirage of the desert.
     </p>
-    <p>"But even then," I reflected, "I cannot doubt my own existence: <i>I am</i>.
-      My dying prayer has been granted. This is the same world that I have lived in; but how changed!"
+    <p>“But even then,” I reflected, “I cannot doubt my own existence: <i>I am</i>.
+      My dying prayer has been granted. This is the same world that I have lived in; but how changed!”
     </p>
   </div>
 }

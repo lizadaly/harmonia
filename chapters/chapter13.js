@@ -43,7 +43,7 @@ export default ({currentSection, inventory, cards}) => {
         <p><ListCard expansions={["The Republic of the Future"]}
           tag="c-republic"
           card={<span>Technically a dystopian novel, which is probably why
-            it's my favorite of the bunch. An obvious predecessor to <i>1984</i>.
+            it’s my favorite of the bunch. An obvious predecessor to <i>1984</i>.
           </span>} />, Anna Bowman Dodd (1887) <a className="link" href="https://archive.org/stream/republicfutureo00doddgoog">text</a>
         </p>
         <p>
@@ -52,8 +52,8 @@ export default ({currentSection, inventory, cards}) => {
         <p><ListCard expansions={["Unveiling a Parallel"]}
           tag="c-parallel"
           card={<span>19th century ladyporn:
-            "I neared my journey's end, when the planet's pink envelope interposed its soft resistance...
-            the sensation was the most ecstatic I have ever experienced."
+            “I neared my journey’s end, when the planet’s pink envelope interposed its soft resistance…
+            the sensation was the most ecstatic I have ever experienced.”
           </span>} />,
           Alice Ilgenfritz Jones & Ella Merchant (1893) <a className="link" href="http://www.sacred-texts.com/wmn/uap/index.htm">text</a>
         </p>
@@ -84,7 +84,7 @@ export default ({currentSection, inventory, cards}) => {
         <p>
           <ListCard expansions={["Moving the Mountain"]}
             tag="c-moving"
-            card={<span>You'll never believe this, but the
+            card={<span>You’ll never believe this, but the
               story begins with a guy falling into a hole.
             </span>}/>, Charlotte Perkins Gilman (1911) <a className="link" href="https://ebooks.adelaide.edu.au/g/gilman/charlotte_perkins/moving/">text</a>
 
@@ -93,7 +93,7 @@ export default ({currentSection, inventory, cards}) => {
       </div>
 
       <p>
-        The Harmonians' newspaper is based on the <a href="http://www.iapsop.com/archive/materials/harbinger/">The Harbinger</a>,
+        The Harmonians’ newspaper is based on the <a href="http://www.iapsop.com/archive/materials/harbinger/">The Harbinger</a>,
         produced at Brook Farm, and <a href="https://babel.hathitrust.org/cgi/pt?id=nyp.33433003156373;view=1up;seq=7">The Circular</a>,
         produced by the Oneida Community. Some of the newspaper text in this story is taken near-verbatim from The Circular.
 
@@ -103,7 +103,7 @@ export default ({currentSection, inventory, cards}) => {
           <img src="images/cover-full.jpg" alt="A torn old postcard featuring a large wooden building, the word Harmonia written across the card" />
         </figure>
       </footer>
-      <p>
+      <p style={{textAlign: "center"}}>
         <small>Copyright 2017 Liza Daly</small>
       </p>
 

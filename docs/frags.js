@@ -24,7 +24,7 @@ export const frag1 = ({nextDoc, prevDoc, inventory}) =>  {
         tag="frag1_first"
         author="lynn"
         card={<span>Historical Committee brought this fragment of an epistolary novel (?) to my attention.
-          Another good example of waking in the future, but I can't attribute this to any
+          Another good example of waking in the future, but I can’t attribute this to any
           known utopian writer. Did one of the Harmonians write it?
         </span>} />.
     </p>
@@ -108,7 +108,7 @@ export const frag4 = ({inventory, note=false}) =>  {
   return <div>
     <h1>October 13, 1889</h1>
     <p>I arrive this time in daylight and not darkness. To fully convey the strangeness of my journey, I shall
-      describe each sense's impression in turn:
+      describe each sense’s impression in turn:
     </p>
     <p>It was dawn, yet there was a deep
       quiet—no roosters, nor soft murmuring of cows, nor sounds of my neighbors
@@ -177,7 +177,7 @@ export const frag6 = () =>  (
       as planned, and I returned her to our world as we agreed, no more than ten minutes thence.
     </p>
     <p>
-      "I have no words," she said, upon return, all her former doubts extinguished, "Truly it is a New Eden."
+      “I have no words,” she said, upon return, all her former doubts extinguished, “Truly it is a New Eden.”
     </p>
   </div>
 )
@@ -191,14 +191,14 @@ export const frag7 = () => (
     </p>
     <p>
       We had been quarreling for days but I admit I did not see it as more than the usual
-      harping of a jealous wife. She convinced me that it was "unfair" for only me to
+      harping of a jealous wife. She convinced me that it was “unfair” for only me to
       use the Instrument now that it was perfected. She accused me of diminishing her.
-      I told her, "Do we celebrate the carpenter as we do the architect?" Perhaps that was unwise.
+      I told her, “Do we celebrate the carpenter as we do the architect?” Perhaps that was unwise.
     </p>
     <p>
       I went forward, those four mornings ago, for my usual survey of the New Eden. When I
       returned, she was in a strange temper. She grabbed hold of me, with unusual passion, and apologized
-      for her recent behavior, then begged me to let her go "one more time." Because I am a kind and
+      for her recent behavior, then begged me to let her go “one more time.” Because I am a kind and
       generous husband, I agreed. That was foolish, and I wonder now whether these trips
       had caused some kind of mental derangement. Certainly there is nothing else to account for her
       recent turn.
@@ -232,16 +232,16 @@ export const diagram1 = () => (
     <img src="images/machine.jpg" alt="A sketch of a massive meteorite, as tall as a house. A strange machine is built all around it, made of spare parts and cogs and vents. A man is seen entering the meteor from a platform at the top, and a woman is pulling a large lever."/>
 
     <div className="elsie-font diagram-note">
-      "every grain of sand a <ListCard tag="diag1-micro" forceDir="down"
+      “every grain of sand a <ListCard tag="diag1-micro" forceDir="down"
         expansions={["microcosm"]}
-        card={<span><span style={{width: "100%", display: "inline-block", textAlign: "center"}}>Beneath Elsie's transcription on the page, she'd added another <ListCard expansions={["note"]}
+        card={<span><span style={{width: "100%", display: "inline-block", textAlign: "center"}}>Beneath Elsie’s transcription on the page, she’d added another <ListCard expansions={["note"]}
           tag="diag1-note"
           author="elsie"
           nextUnit="section"
           forceDir="down"
           card={<span><span style={{width: "100%", display: "inline-block", textAlign: "center"}}>I hope you burned with the rest of them.</span></span>} />, at a later date.
         </span>
-        </span>} />" will he ever shut up
+        </span>} />” will I ever be free of him
 
     </div>
 

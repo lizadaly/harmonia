@@ -14,9 +14,9 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Nine</h2>
         <blockquote>
-          "What is the breath of life?" I ask at last.<br/>
-          "Oh, I can answer that; I have found it out since I have been here. It is, my
-          dear, electricity, which we assimilate into spirit."<br/><br/>
+          “What is the breath of life?” I ask at last.<br/>
+          “Oh, I can answer that; I have found it out since I have been here. It is, my
+          dear, electricity, which we assimilate into spirit.”<br/><br/>
           —<i>Arqtiq</i>, Anna Adolph (1899)
         </blockquote>
 
@@ -31,7 +31,7 @@ export default ({currentSection, inventory, cards}) => {
         was an original issue of The Harbinger, <ListCard expansions={["annotated"]}
           tag="c9_paper"
           nextUnit="section"
-          card={<span>This edition was from the end of the community's existence, when the full-length newspaper had
+          card={<span>This edition was from the end of the community’s existence, when the full-length newspaper had
           shrunk to a single double-sided broadsheet.</span>} /> by Lynn:
       </p>
     </section>,
@@ -46,13 +46,13 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p style={{marginTop: "20em"}}>
-        I put the folder aside, my hands shaking a little. "All right," I hollered over the industrial din,
-        "If there's someone in here, I'm turning on the lights now." I <List expansions={[["pulled the starter cord on the generator—"], ["pulled the starter cord on the generator."]]} tag="c9-start1" />
+        I put the folder aside, my hands shaking a little. “All right,” I hollered over the industrial din,
+        “If there’s someone in here, I’m turning on the lights now.” I <List expansions={[["pulled the starter cord on the generator—"], ["pulled the starter cord on the generator."]]} tag="c9-start1" />
       </p>
     </section>,
     <section>
       <p>
-        The motor shuddered but didn't rev up. I waited, but there was only that continual hum and room-filling vibration.
+        The motor shuddered but didn’t rev up. I waited, but there was only that continual hum and room-filling vibration.
         I <List expansions={[["yanked"], ["yanked"]]} tag="c9-start2" /> on the cord again,
         this time both harder and faster.
       </p>
@@ -68,7 +68,7 @@ export default ({currentSection, inventory, cards}) => {
         which protruded from the ceiling and disappeared into the floor, half its girth buried in the wall of
         the cavern. It look like an immense ebony tooth wrapped in brass and iron.
       </p>
-      <p>"The Astrolith," I murmured. The color and composition of the rock was the same, and the shape of the <ListCard expansions={["peak"]} tag="c9-tip"
+      <p>“The Astrolith,” I murmured. The color and composition of the rock was the same, and the shape of the <ListCard expansions={["peak"]} tag="c9-tip"
         card={<span>The plaque by the meteorite estimated its weight at 30 tons, assuming the bulk of it was
         above-ground. What I saw in front of me demonstrated that to be laughably wrong.</span>} /> in the sketch was unmistakable.
       </p>
@@ -81,7 +81,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         Yet <ListCard expansions={["someone"]} tag="c9_repair"
-          card={<span>Lynn, presumably, though he must've been pretty handy for an English professor.</span>} /> had
+          card={<span>Lynn, presumably, though he must’ve been pretty handy for an English professor.</span>} /> had
         been restoring it. All along the edge of the cavern were modern tools and
         materials—shiny new wire spools, a tablesaw, neat stacks of fresh lumber.
       </p>
@@ -129,8 +129,8 @@ export default ({currentSection, inventory, cards}) => {
         years ago.
       </p>
       <p>
-        I picked up the notebook. It had a recent date on the cover in Lynn's handwriting—this was the personal
-        journal I'd been searching for. To my disappointment, it was largely
+        I picked up the notebook. It had a recent date on the cover in Lynn’s handwriting—this was the personal
+        journal I’d been searching for. To my disappointment, it was largely
         blank, just two short <List expansions={[["fragments"], ["fragments"]]}
                                 tag="c9-frag" />, hastily written:
       </p>
@@ -165,7 +165,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         Naturally, lying on the plate was another journal <List expansions={[["entry"], ["entry"]]}
-                                                            tag="c9-lastentry" /> in Lynn's hand. I
+                                                            tag="c9-lastentry" /> in Lynn’s hand. I
         was obviously following deliberate breadcrumbs.
       </p>
     </section>,
@@ -182,22 +182,22 @@ export default ({currentSection, inventory, cards}) => {
         Alice Gilman regarded me blankly through the sealed glass door.
       </p>
       <p>
-        "You're <ListCard expansions={["Elsie Cadwell"]} tag="c9-short"
-          card={<span><i>Elsie</i> is a diminitive for both Elizabeth, which I'd known, and Alice,
-          which I'd forgotten. I found out later that Gilman was her maiden name.</span>} />," I yelled, not caring if she couldn't hear.
+        “You’re <ListCard expansions={["Elsie Cadwell"]} tag="c9-short"
+          card={<span><i>Elsie</i> is a diminitive for both Elizabeth, which I’d known, and Alice,
+          which I’d forgotten. I found out later that Gilman was her maiden name.</span>} />,” I yelled, not caring if she couldn’t hear.
       </p>
       <p>
-        She turned away from me. I pounded on the glass with my fists. She didn't respond, just climbed down the platform and
+        She turned away from me. I pounded on the glass with my fists. She didn’t respond, just climbed down the platform and
         out of sight.
       </p>
       <p>
-        "I named it the Instrument," her voice said. I couldn't see her, but her words resonated through the
-        solid rock, as clear as if she whispered beside me. "I think you'd call it a time machine. If you want to survive
-        you'll grab that handle. I'm going to pull the lever now."
+        “I named it the Instrument,” her voice said. I couldn’t see her, but her words resonated through the
+        solid rock, as clear as if she whispered beside me. “I think you’d call it a time machine. If you want to survive
+        you’ll grab that handle. I’m going to pull the lever now.”
       </p>
       <p>
         The chamber went utterly silent—no vibration, no noise, perfectly still air. I grasped the handle
-        with both hands. I didn't hear a thing, but I guess she pulled that lever.
+        with both hands. I didn’t hear a thing, but I guess she pulled that lever.
       </p>
       <NextChapter chapter={10} />
     </section>

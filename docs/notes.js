@@ -16,7 +16,7 @@ const notes = ({nextDoc, prevDoc}) => {
         on storytelling and characterization.
       </p>
       <p>Students should come away with an understanding of the political landscapes
-        that shaped utopian thinking, and be prepared to discuss utopians' influence on later
+        that shaped utopian thinking, and be prepared to discuss utopians’ influence on later
         fantasy and science fiction.
       </p>
       <h4>
@@ -26,7 +26,7 @@ const notes = ({nextDoc, prevDoc}) => {
         <li><ListCard expansions={["Looking Backwards"]}
           tag="r1_bellamy"
           nextUnit="section"
-          card={<span>I thought this was a natural choice: it's pretty
+          card={<span>I thought this was a natural choice: it’s pretty
           readable and it spawned many imitators.</span>} />, Bellamy (1888)</li>
         <li><i>A Crystal Age</i>, Hudson (1887)</li>
         <li><i>Earth Revisited</i>, Brooks (1893)</li>

@@ -25,7 +25,7 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>Gilman slipped out moments later. I didn't want her to get far, so I <ListCard tag="c7-ended" expansions={["ended class"]}
+            <p>Gilman slipped out moments later. I didn’t want her to get far, so I <ListCard tag="c7-ended" expansions={["ended class"]}
               card={<span>The students raised no objections, unsurprisingly.</span>} /> early.
               I pulled Lillian aside and instructed her to talk to the librarian and collect any more stray journal entries.
             </p>
@@ -37,35 +37,35 @@ export default ({currentSection, inventory, cards}) => {
               reached the doors of the English department, I stepped in before she could close them.
             </p>
             <p>
-              "Hi, Alice," I said. "You know, I meant it when I said wanted to catch up after class."
+              “Hi, Alice,” I said. “You know, I meant it when I said wanted to catch up after class.”
             </p>
             <p>
               She stiffened. Two <ListCard
-                expansions={["faculty members"]} tag="c7-faculty" card={<span>I recognized one who'd spurned me in
+                expansions={["faculty members"]} tag="c7-faculty" card={<span>I recognized one who’d spurned me in
                 the dining hall. I doubted they liked Gilman any more than they liked me.</span>} /> were
               in the halls; they paused, sensing tension.
             </p>
             <p>
-              "Let's talk in Professor Lynn's office." I smiled. "At the Dean's request."
+              “Let’s talk in Professor Lynn’s office.” I smiled. “At the Dean’s request.”
             </p>
-            <p>Gilman was trapped and she knew it. "All right," she said. I followed her down the hall, where
-              she <List expansions={[["unlocked Lynn's office."],
-              ["unlocked Lynn's office. We were finally alone."]]} tag="c7_opendoor" /></p>
+            <p>Gilman was trapped and she knew it. “All right,” she said. I followed her down the hall, where
+              she <List expansions={[["unlocked Lynn’s office."],
+              ["unlocked Lynn’s office. We were finally alone."]]} tag="c7_opendoor" /></p>
           </div>,
           burglary: <div>
             <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
-              Lynn's office now and I'd just have to hope there was still material to find after she'd done a sweep.
+              Lynn’s office now and I’d just have to hope there was still material to find after she’d done a sweep.
               Anyway I needed time to figure out how one broke into an office.
             </p>
             <p>
-              I finished class, a little distracted, and took Lillian aside to tell her to meet with the librarian. "Obviously
-              there were more pages from Cadwell's journal than Lynn found," I said. "See what else she hasn't cataloged yet."
+              I finished class, a little distracted, and took Lillian aside to tell her to meet with the librarian. “Obviously
+              there were more pages from Cadwell’s journal than Lynn found,” I said. “See what else she hasn’t cataloged yet.”
             </p>
             <p>
               The weather had turned icy-wet again, so I bundled up and skulked out by the quad where I could get a
               good view of the English department. There were student protestors setting up tables and <ListCard expansions={["signs"]}
                 tag="c7-tables"
-                card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
+                card={<span>“Rally tomorrow: rain or shine!”</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
               handed me a flyer printed on cardstock, adorned with a sticker:
             </p>
@@ -74,14 +74,14 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           archaeologist: <div>
             <p>Gilman slipped out moments later and I let her go. There was a good chance she was headed to
-              Lynn's office to clean it out, but I hoped there were more journal entries to be found elsewhere.
+              Lynn’s office to clean it out, but I hoped there were more journal entries to be found elsewhere.
               Besides, I had a friend to visit.
             </p>
             <p>
               The weather had turned ice-wet again, so I bundled up and trudged across the quad.
               There were student protestors setting up tables and <ListCard expansions={["signs"]}
                 tag="c7-tables"
-                card={<span>"Rally tomorrow: rain or shine!"</span>} /> by the meteorite;
+                card={<span>“Rally tomorrow: rain or shine!”</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
               handed me a flyer printed on cardstock, adorned with a sticker:
             </p>
@@ -94,59 +94,59 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"Thank you for your help the other night," I said, even as I walked around his office, casually
+            <p>“Thank you for your help the other night,” I said, even as I walked around his office, casually
               browsing through the papers on his desks.
             </p>
-            <p>"You're welcome," she replied. </p>
+            <p>“You’re welcome,” she replied. </p>
             <p>
-              "Forgive my curiosity, but where are you from? I don't recognize your accent."
+              “Forgive my curiosity, but where are you from? I don’t recognize your accent.”
             </p>
             <p>
-              The question was rude and she responded in kind. "Not far from here. You're from, where? Lowell?"
+              The question was rude and she responded in kind. “Not far from here. You’re from, where? Lowell?”
             </p>
             <p>
               "<ListCard expansions={["Something"]} tag="c7-lowell"
                 nextUnit="section"
-                card={<span>Exactly like that, but I didn't want to give her the satisfaction.</span>} /> like that."
+                card={<span>Exactly like that, but I didn’t want to give her the satisfaction.</span>} /> like that.”
             </p>
           </div>,
           burglary: <div>
             <p>After a cold and damp wait, I saw Gilman exit the building through a rear door and disappear behind
-            the gymnasium. She carried that satchel so I couldn't tell if she'd taken any paperwork from his office. I made my move.</p>
+            the gymnasium. She carried that satchel so I couldn’t tell if she’d taken any paperwork from his office. I made my move.</p>
             <p>
               It was late afternoon now, and many faculty members were packing up to drive home or down to the village.
               I <List expansions={[["tried"], ["tried"]]}
                 nextUnit="none"
-                  tag="c7_door" /> Lynn's door<Map from={inventory.c7_door}
+                  tag="c7_door" /> Lynn’s door<Map from={inventory.c7_door}
                     to={{
                       _undefined: ", ",
-                      _any: <List expansions={[[" again, "], [" again, "]]}
+                        _any: <List expansions={[[" again, "], [" again, "]]}
                                 tag="c7_door_again" />
                     }} /> rattling the handle.
               <Map from={inventory.c7_door}
                 to={{
                   _undefined: "",
-                  _any: <span> <ListCard expansions={["Nothing"]} tag="c7_nothing" card={<span>Unfortunately,
-                    "try opening the door" was about as far as I'd gotten formulating my burglary plan.</span>} />.</span>
+                    _any: <span> <ListCard expansions={["Nothing"]} tag="c7_nothing" card={<span>Unfortunately,
+                    “try opening the door” was about as far as I’d gotten formulating my burglary plan.</span>} />.</span>
                 }} />
             </p>
           </div>,
           archaeologist: <div>
             <p>I thanked the girl and followed the downhill path to the administration building.
-              The Dean wasn't in, which was fine as I wasn't looking for her.
+              The Dean wasn’t in, which was fine as I wasn’t looking for her.
             </p>
             <p>
-            <Map from={inventory.c2_direction}
-              to={{
-                curiosity: <span>
-                  "Hi Walter," I said, when her assistant came out to greet me.
-                </span>,
-                dean: <span>
-                  "Hi Ella," I said, poking my head into the Exhibit Hall.
-                </span>
-              }} /> "Say, can I <ListCard expansions={["ask"]} tag="c7-ask" nextUnit="section"
-                card={<span>One of the simplest things you can do to be successful is befriend the people who are always crapped on.</span>} /> you
-                 a favor?"
+              <Map from={inventory.c2_direction}
+                to={{
+                  curiosity: <span>
+                    “Hi Walter,” I said, when her assistant came out to greet me.
+                  </span>,
+                  dean: <span>
+                    “Hi Ella,” I said, poking my head into the Exhibit Hall.
+                  </span>
+                }} /> “Say, can I <ListCard expansions={["ask"]} tag="c7-ask" nextUnit="section"
+                  card={<span>One of the simplest things you can do to be successful is befriend the people who are always crapped on.</span>} /> you
+              a favor?”
             </p>
           </div>
         }} />
@@ -159,25 +159,25 @@ export default ({currentSection, inventory, cards}) => {
             <p>Before she could respond with what I assumed would be snobbery, a student appeared in the doorway, grinning and
               full of annoying verve.
             </p>
-            <p>"Rally at dawn to save the Astrolith!" she said, pushing a flyer at me. "Construction resumes tomorrow if we don't stop it!"
+            <p>“Rally at dawn to save the Astrolith!” she said, pushing a flyer at me. “Construction resumes tomorrow if we don’t stop it!”
               The flyer was a reproduction of the
-              utopians' newsletter; a student had placed a cheerful sticker in one corner:
+              utopians’ newsletter; a student had placed a cheerful sticker in one corner:
             </p>
             <Reader inventory={inventory} docs={[docs.paper3]} />
           </div>,
           burglary: <div>
-            <p>This time the noise attracted a woman in the office across the hall who was on her way home. I didn't <ListCard tag="c7_reminded"
+            <p>This time the noise attracted a woman in the office across the hall who was on her way home. I didn’t <ListCard tag="c7_reminded"
               expansions={["recognize"]} card={<span>Like me, she had a working-class accent—maybe Brooklyn?</span>} /> her from any of my
-              dining hall visits. "Oh,
-              are you Abby Fuller?" she asked.
+              dining hall visits. “Oh,
+              are you Abby Fuller?” she asked.
             </p>
-            <p>Her name was Lois. She taught Creative Writing and was extremely pretty. I'd come up with a carefully crafted story
-              in case I was caught, but instead I panicked and said something incoherent about losing Lynn's key.
+            <p>Her name was Lois. She taught Creative Writing and was extremely pretty. I’d come up with a carefully crafted story
+              in case I was caught, but instead I panicked and said something incoherent about losing Lynn’s key.
             </p>
-            <p>"I'm afraid all the locks are different so my key won't help," she said, and then added, slyly,
-              "But the windows don't lock at all. See you at lunch sometime," and then <ListCard expansions={["winked"]}
+            <p>“I’m afraid all the locks are different so my key won’t help,” she said, and then added, slyly,
+              “But the windows don’t lock at all. See you at lunch sometime,” and then <ListCard expansions={["winked"]}
                 tag="c7_numbers" card={<span>I swear this part is true.</span>} />.</p>
-            <p>Turns out there was a wrought iron fire escape that led straight past Lynn's office window. It lifted
+            <p>Turns out there was a wrought iron fire escape that led straight past Lynn’s office window. It lifted
               easily, and there was so much clutter that I barely had to <List expansions={[["climb down"], ["climb down"]]}
                                                                            tag="c7-climb" /> inside.
             </p>
@@ -219,9 +219,9 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"What construction?" Gilman said, her voice wavering a bit. "The digging was halted at least until the spring."</p>
-            <p>The girl shrugged. "I dunno, that's just what everybody's saying. Guys with hardhats, inspectors—they're
-              all over the Science Center now."
+            <p>“What construction?” Gilman said, her voice wavering a bit. “The digging was halted at least until the spring.”</p>
+            <p>The girl shrugged. “I dunno, that’s just what everybody’s saying. Guys with hardhats, inspectors—they’re
+              all over the Science Center now.”
             </p>
             <p>
               Gilman stormed past both of us, startling the girl, only to run straight into Lillian and <Map from={inventory.c2_direction}
@@ -231,28 +231,28 @@ export default ({currentSection, inventory, cards}) => {
                 }} />. She nudged them aside without a word and disappeared down the hall.
             </p>
             <p>
-              "What was that about?" Lillian said, exasperated, then abruptly <ListCard tag="c7-shut"
-                card={<span>This would've been funny under any other circumstance.</span>} expansions={["shut"]} /> Lynn's door in the bewildered student's face.
+              “What was that about?” Lillian said, exasperated, then abruptly <ListCard tag="c7-shut"
+                card={<span>This would've been funny under any other circumstance.</span>} expansions={["shut"]} /> Lynn’s door in the bewildered student’s face.
 
             </p>
             <Map from={inventory.c2_direction}
               to={{
                 curiosity: <div>
-                  <p>"Who's this?" I said, jerking my head at the other woman.</p>
-                  <p>"I'm Ella Merchant, the college archivist," she said kindly. "It seems like you're having a tough first week."</p>
+                  <p>“Who’s this?” I said, jerking my head at the other woman.</p>
+                  <p>“I’m Ella Merchant, the college archivist,” she said kindly. “It seems like you’re having a tough first week.”</p>
                   <p>I apologized for being brusque.</p>
                 </div>
               }} />
-            <p>"Did you find Lynn's papers yet?" Lillian cut in.</p>
-            <p>"No, I was dealing with Gilman and
-              I <List expansions={[["can't find anything in this mess—"], ["can't find—"]]} tag="c7-find" />"
+            <p>“Did you find Lynn’s papers yet?” Lillian cut in.</p>
+            <p>“No, I was dealing with Gilman and
+              I <List expansions={[["can't find anything in this mess—"], ["can't find—"]]} tag="c7-find" />”
             </p>
 
           </div>,
           burglary: <div>
-            <p>Lynn's office was a mess now. The neat stacks of paper were pooled on the floor, all sense of
+            <p>Lynn’s office was a mess now. The neat stacks of paper were pooled on the floor, all sense of
               order destroyed. I assumed Gilman had been through these as thoroughly as I could be, so I
-              started looking in places she hadn't checked: <List expansions={[["behind cabinets", "under desks", "in drawers"],
+              started looking in places she hadn’t checked: <List expansions={[["behind cabinets", "under desks", "in drawers"],
               ["behind cabinets", "under desks", "in drawers"]]}
                 tag="c7_search"
                                                             />.
@@ -263,7 +263,7 @@ export default ({currentSection, inventory, cards}) => {
           archaeologist: <div>
             <blockquote className="elsie-font">My destiny lies only <ListCard expansions={["forward"]}
               tag="c7_forward"
-              card={<span>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell's wife.</span>} />
+              card={<span>I was quite sure by now that this handwriting belonged to Elsie Cadwell, Ignatius Cadwell’s wife.</span>} />
             . — November 23, 1889</blockquote>
 
             <p>
@@ -281,10 +281,10 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"His current research is kept in this cabinet," Merchant said, pulling open an unmarked drawer, as if at random, and
+            <p>“His current research is kept in this cabinet,” Merchant said, pulling open an unmarked drawer, as if at random, and
             producing two annotated journal entries from among other paperwork.</p>
-            <p>"Thanks," I said, feeling stupid.</p>
-            <p>"Next time just ask! Finding documents is my job."</p>
+            <p>“Thanks,” I said, feeling stupid.</p>
+            <p>“Next time just ask! Finding documents is my job.”</p>
             <p>
               We laid them out on a table and read them together:
             </p>
@@ -323,15 +323,15 @@ export default ({currentSection, inventory, cards}) => {
         to={{
           there: <div>
             <p>
-              "Lynn's annotations are undated," Merchant said, "but this looks to be one of his earlier finds." She
-              held up the second document. "These notes were
-              made more recently. I recovered this fragment myself, in late August."
+              “Lynn’s annotations are undated,” Merchant said, “but this looks to be one of his earlier finds.” She
+              held up the second document. “These notes were
+              made more recently. I recovered this fragment myself, in late August.”
             </p>
             <Reader inventory={inventory} docs={[docs.frag6]} />
           </div>,
           burglary: <div>
             <p>
-              Lynn's annotations were undated, but this seemed to be where he first determined that Cadwell was the
+              Lynn’s annotations were undated, but this seemed to be where he first determined that Cadwell was the
               journal author. The second set of notes were
               obviously made more recently:
             </p>
@@ -347,49 +347,49 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c5_direction}
         to={{
           there: <div>
-            <p>"What did you think this was when you found it?" I asked.</p>
-            <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. "One of the colonists drafting a fantastical story,"
-              she said. "Jeffrey and I agreed that it
-              wasn't surprising to find. It's natural that the Harmonians would try out their ideas in <ListCard expansions={["story"]}
+            <p>“What did you think this was when you found it?” I asked.</p>
+            <p> <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> looked puzzled. “One of the colonists drafting a fantastical story,”
+              she said. “Jeffrey and I agreed that it
+              wasn’t surprising to find. It’s natural that the Harmonians would try out their ideas in <ListCard expansions={["story"]}
                 tag="c7-backward" card={<span>This cross-pollination between fiction and real-life communities
                   happened frequently. Whole societies rose and fell around stories like <i>Looking Backward</i> and
-                  <i>Travels in Icaria</i>.</span>} /> form."
+                  <i>Travels in Icaria</i>.</span>} /> form.”
             </p>
             <p>
               Lillian and I exchanged a look, but said nothing.
             </p>
             <p>
-              "Where are those tunnels that Lynn refers to in his note?"
+              “Where are those tunnels that Lynn refers to in his note?”
             </p>
             <p>
-              "If he was writing in August, he was probably talking about the one under the Science Center," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said.
-              "He
+              “If he was writing in August, he was probably talking about the one under the Science Center,” <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said.
+              “He
               halted the expansion of the foundation when they broke through into an old root cellar.
-              That's when Jeffrey started going down there alone. I didn't like it, but I couldn't stop him
-              without involving the Dean."
+              That’s when Jeffrey started going down there alone. I didn’t like it, but I couldn’t stop him
+              without involving the Dean.”
             </p>
-            <p>"The last entry mentions a blueprint. <Map from={inventory.frag_blueprint}
+            <p>“The last entry mentions a blueprint. <Map from={inventory.frag_blueprint}
               to={{
-                _undefined: "Lynn's note says he put it in his personal collection.",
-                _any: "If Lynn put that in a 'personal collection,' where would that be?"
-              }} /> Would he have kept papers like that here?"
+                _undefined: "Lynn’s note says he put it in his personal collection.",
+                _any: "If Lynn put that in a ‘personal collection,’ where would that be?"
+              }} /> Would he have kept papers like that here?”
             </p>
-            <p>"No, Dean had me catalog all the college property in his office after he disappeared and I
-            don't recall anything like a blueprint. His home, maybe? He lived in Adams House."</p>
+            <p>“No, Dean had me catalog all the college property in his office after he disappeared and I
+            don’t recall anything like a blueprint. His home, maybe? He lived in Adams House.”</p>
 
-            <p> The name was meaningless to me. "That's right on campus," Lillian explained. "One of the <ListCard expansions={["original"]} tag="c7_house"
-              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings."</p>
-            <p>"I have keys to some offices," <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, "but not to anyone's private residence."</p>
+            <p> The name was meaningless to me. “That’s right on campus,” Lillian explained. “One of the <ListCard expansions={["original"]} tag="c7_house"
+              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings.”</p>
+            <p>“I have keys to some offices,” <Map from={inventory.c2_direction} to={{curiosity: "Merchant", dean: "Ella"}} /> said, “but not to anyone’s private residence.”</p>
             <Map from={inventory.c2_direction}
               to={{
-                curiosity: <p>I said, "If it's on campus, I know someone who can get us in."</p>,
-                dean: <p>"I talked my way through one locked door," I said. "I can figure out another one."</p>
+                curiosity: <p>I said, “If it’s on campus, I know someone who can get us in.”</p>,
+                dean: <p>“I talked my way through one locked door,” I said. “I can figure out another one.”</p>
               }} />
             <NextChapter chapter={8} />
           </div>,
           burglary: <div>
             <p>
-              I was startled by the door to Lynn's office unlocking and opening. I didn't have time to
+              I was startled by the door to Lynn’s office unlocking and opening. I didn’t have time to
               even consider hiding before Lillian and <Map from={inventory.c2_direction}
                 to={{
                   curiosity: "an older woman",
@@ -397,59 +397,59 @@ export default ({currentSection, inventory, cards}) => {
 
             </p>
             <p>
-              "How did you get in?" I said.
+              “How did you get in?” I said.
             </p>
             <p>
-              "I have a key," <Map from={inventory.c2_direction}
+              “I have a key," <Map from={inventory.c2_direction}
                 to={{
                                 curiosity: "the woman said.",
-                                  dean: <span>Ella replied. "You know, if you need to get in somewhere in the school, just ask."
-                                  She eyed the open window. "Unless that would spoil the adventure."</span>}} />
+                                  dean: <span>Ella replied. “You know, if you need to get in somewhere in the school, just ask.”
+                                  She eyed the open window. “Unless that would spoil the adventure.”</span>}} />
 
 
             </p>
             <Map from={inventory.c2_direction}
               to={{
                 curiosity:  <div>
-                  <p>"And who are you?" I held the papers slightly behind my back.</p>
-                  <p>"This is Ms. Merchant," Lillian said, in a tone that suggested I should've known this.</p>
-                  <p>"You're the librarian?" I said.</p>
-                  <p>"Archivist." She eyed the open window and my flushed appearance. "You know if you ever need to get anywhere
-                  in the school, I can probably help." She paused. "If you're polite."</p>
+                  <p>“And who are you?” I held the papers slightly behind my back.</p>
+                  <p>“This is Ms. Merchant,” Lillian said, in a tone that suggested I should’ve known this.</p>
+                  <p>“You’re the librarian?” I said.</p>
+                  <p>“Archivist.” She eyed the open window and my flushed appearance. “You know if you ever need to get anywhere
+                  in the school, I can probably help.” She paused. “If you’re polite.”</p>
                 </div>
               }} />
             <p>
-              "We didn't find any more journal entries," Lillian said. "Though it looks like you did."
+              “We didn’t find any more journal entries,” Lillian said. “Though it looks like you did.”
             </p>
-            <p>I gave the papers to Lillian and asked Ella, "Do you know where Lynn lived?"</p>
-            <p>"Adams House." The name was meaningless to me.</p>
-            <p>"Oh, that's right on campus," Lillian said. "One of the <ListCard expansions={["original"]} tag="c7_house"
-              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings."</p>
-            <p>"I don't have keys to people's homes," Ella said.</p>
-            <p>"Sure," I said. "But does his home have a window?"</p>
+            <p>I gave the papers to Lillian and asked Ella, “Do you know where Lynn lived?”</p>
+            <p>“Adams House.” The name was meaningless to me.</p>
+            <p>“Oh, that’s right on campus,” Lillian said. “One of the <ListCard expansions={["original"]} tag="c7_house"
+              card={<span>The five extant utopian homes were named after the families who had built them.</span>} /> stone Harmonian buildings.”</p>
+            <p>“I don’t have keys to people’s homes,” Ella said.</p>
+            <p>“Sure,” I said. “But does his home have a window?”</p>
             <NextChapter chapter={8} />
           </div>,
           archaeologist: <div>
 
-            <p>"Abby?"</p>
+            <p>“Abby?”</p>
 
             <p>It was  <Map from={inventory.c2_direction}
-                              to={{
+              to={{
                                 curiosity: "Walter",
-                                dean: "Ella" }} />'s voice calling
-                                my name, hesitantly, followed by a crashing sound. I looked longingly at the
-                                narrow passage Lynn had dug out, but hurried back out of the tunnel.
+              dean: "Ella" }} />‘s voice calling
+              my name, hesitantly, followed by a crashing sound. I looked longingly at the
+              narrow passage Lynn had dug out, but hurried back out of the tunnel.
             </p>
-            <p>"Are you okay?" I asked.</p>
+            <p>“Are you okay?” I asked.</p>
             <p>
               <Map from={inventory.c2_direction}
-                              to={{
-                                curiosity: <span>"I'm fine," he said, grimacing. "I gave you my only flashlight so I just tripped over some paint cans."</span>,
-                                dean: <span>"Thank you, I'm all right," she said, rubbing her shin. "I didn't have time to find my other flashlight and I tripped over a paint can." </span>
-                              }} />
+                to={{
+                  curiosity: <span>“I’m fine,” he said, grimacing. “I gave you my only flashlight so I just tripped over some paint cans.”</span>,
+                  dean: <span>“Thank you, I’m all right,” she said, rubbing her shin. “I didn’t have time to find my other flashlight and I tripped over a paint can.” </span>
+                }} />
             </p>
             <p>
-              "Look, I found<List expansions={[[" Lynn's journal—"], ["—"]]} tag="c7_journal" />"
+              “Look, I found<List expansions={[[" Lynn’s journal—"], ["—"]]} tag="c7_journal" />”
             </p>
 
           </div>
@@ -461,9 +461,9 @@ export default ({currentSection, inventory, cards}) => {
           there: <div></div>,
           burglary: <div></div>,
           archaeologist: <div>
-            <p>"You need to get out of here," <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> interrupted. "Some inspectors from the city are on their way
-            down in this basement—I heard them in the Dean's office. If they approve the permit, she's going ahead with
-            the next phase of the construction project tomorrow. That tunnel will be demolished."</p>
+            <p>“You need to get out of here,” <Map from={inventory.c2_direction} to={{curiosity: "he", dean: "she" }} /> interrupted. “Some inspectors from the city are on their way
+              down in this basement—I heard them in the Dean’s office. If they approve the permit, she’s going ahead with
+            the next phase of the construction project tomorrow. That tunnel will be demolished.”</p>
 
             <NextChapter chapter={8} />
           </div>

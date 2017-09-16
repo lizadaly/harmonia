@@ -12,8 +12,8 @@ export const lillian1 = () => (
       I hope that you remember me after all this time. Uncle Jeffrey assured me
       that you will, no matter how long I wait, but that I should not write
       until I have something to say.
-      I don't know if this news merits a letter, but I dare not wait much longer. I would
-      not want you to be so old that you've forgotten me!
+      I don’t know if this news merits a letter, but I dare not wait much longer. I would
+      not want you to be so old that you’ve forgotten me!
     </p>
     <p>
       I am grateful for our chance meeting. I would have had a very different life had you and
@@ -29,11 +29,11 @@ export const lillian1 = () => (
     <p>
       You should know he has passed on.  I was
       only a few years out of school and newly married; I stayed here to teach the next generation of girls.
-      When I came of age, he left, saying, "There is so much here I need to see for myself."
+      When I came of age, he left, saying, “There is so much here I need to see for myself.”
       He made it all the way to Wyoming—can you
       imagine! It has been years but I still miss him. His knowledge of the world seemed boundless.
       (He asked me to
-      tell you that he'd fulfilled your request. He assured me you'd know what he meant.)
+      tell you that he’d fulfilled your request. He assured me you’d know what he meant.)
     </p>
     <p>
       As such, I have no family with whom to share my latest news, but for you. We have had our first child! It is a girl,
@@ -41,7 +41,7 @@ export const lillian1 = () => (
     </p>
     <p>
       I do not know to what address I should post this letter, but Uncle had told me, with that familiar twinkle in his eye,
-      to simply keep it safe and eventually you would read it. I don't see how this can be true,
+      to simply keep it safe and eventually you would read it. I don’t see how this can be true,
       but as I said, he comprehended so many mysteries.
     </p>
     <p style={{textIndent: 0, textAlign: "left", paddingRight: "5em"}}>

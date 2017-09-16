@@ -79,10 +79,10 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         I was able to stand now, barely, and made my way across the cavern like a toddler, grabbing at
-        objects hand-over-hand for stability. Next to Cadwell's <ListCard expansions={["body"]}
+        objects hand-over-hand for stability. Next to Cadwell’s <ListCard expansions={["body"]}
           tag="c10-cadwell"
-          card={<span>I'd seen the dead, but only at funerals. I didn't like to examine him,
-            but I didn't see any obvious injury.
+          card={<span>I’d seen the dead, but only at funerals. I didn’t like to examine him,
+            but I didn’t see any obvious injury.
           </span>}/> lay a bucket, a tin cup, and, crucially, a <List expansions={[["journal"], ["journal"]]} tag="c10-journal" />.
       </p>
     </section>,
@@ -91,10 +91,10 @@ export default ({currentSection, inventory, cards}) => {
     </section>,
     <section>
       <p>
-        I recognized the handwriting in that note. "Lynn?" I called out.
+        I recognized the handwriting in that note. “Lynn?” I called out.
       </p>
       <p>
-        A weak reply from far off: "In here."
+        A weak reply from far off: “In here.”
       </p>
       <p>I kicked rocks and boards aside and squeezed my way through the barely passable eastern tunnel, emerging
 
@@ -117,20 +117,20 @@ export default ({currentSection, inventory, cards}) => {
         His wild
         expression suggested he thought I was a hallucination.
       </p>
-      <p>"My name's Abby Fuller," I said. "I'm your substitute teacher."</p>
+      <p>“My name’s Abby Fuller,” I said. “I’m your substitute teacher.”</p>
       <p>
-        He barked a laugh and struggled to sit up. "Does my substitute teacher have any water?" His voice was in tatters.
+        He barked a laugh and struggled to sit up. “Does my substitute teacher have any water?” His voice was in tatters.
       </p>
       <p>
-        "Not yet." I pointed at the door. "May I?" He nodded and slid over to accommodate
+        “Not yet.” I pointed at the door. “May I?” He nodded and slid over to accommodate
         me at the top of the steps.
       </p>
       <p>
-        The knob turned freely but the door didn't budge. "I think it's barricaded on the other side,"
-        Lynn said. "I spent a day, maybe more, just getting through the tunnel. I was just too tired to—"
+        The knob turned freely but the door didn’t budge. “I think it’s barricaded on the other side,”
+        Lynn said. “I spent a day, maybe more, just getting through the tunnel. I was just too tired to—"
       </p>
       <p>
-        "I'm not tired," I lied. I <List
+        “I’m not tired,” I lied. I <List
           tag="c10-door" expansions={[["pushed—"], ["pushed harder—"], ["slammed into the door with my shoulder."]]} />
       </p>
     </section>,
@@ -147,22 +147,22 @@ export default ({currentSection, inventory, cards}) => {
         The peak of the Astrolith was just visible among blackened beams and scorched furniture. Nobody was around.
       </p>
       <p>
-        "Ah, yes, I finally get to see the Great Hall," Lynn said <ListCard tag="c10-hall"
+        “Ah, yes, I finally get to see the Great Hall,” Lynn said <ListCard tag="c10-hall"
           expansions={["sourly"]}
           card={<span>I understood his despair. He arrived too late to see it, even with a time machine.</span>} />.
-        He tried to stand but couldn't, and rested against the lintel.
+        He tried to stand but couldn’t, and rested against the lintel.
       </p>
       <p>
-        "I'll find some water," I said. In the bright sunlight I could see how archaically he was dressed, with a
+        “I’ll find some water,” I said. In the bright sunlight I could see how archaically he was dressed, with a
         simple vest, pocketwatch, and wool pants.
       </p>
       <p>
-        "It to be my first time through," he said, his voice a whisper. "But I saw her face as she threw the
-        lever; she had no intention of bringing me back."
+        “It to be my first time through,” he said, his voice a whisper. “But I saw her face as she threw the
+        lever; she had no intention of bringing me back.”
       </p>
       <p>
-        I nodded grimly. "I'll have to avoid being seen, but I'll <List expansions={[["return"], ["return"]]}
-                                                                                tag="c10-return" /> soon, I promise."
+        I nodded grimly. “I’ll have to avoid being seen, but I’ll <List expansions={[["return"], ["return"]]}
+                                                                    tag="c10-return" /> soon, I promise.”
       </p>
     </section>,
     <section>
@@ -173,14 +173,14 @@ export default ({currentSection, inventory, cards}) => {
       </header>
       <p>
         It was a bright, cloudless December day, with frost in the air. Without the
-        Astrolith as a reference I'd have never recognized where I was. The solemn brick edifices of the college were absent,
+        Astrolith as a reference I’d have never recognized where I was. The solemn brick edifices of the college were absent,
         and the trees were few and small. Instead of a tidy green lawn, the ground was covered in a patchwork of
         dirt, clover, and crabgrass. The odor of horses and hay was noticeable.
       </p>
 
 
       <p>
-        Cadwell described our future as quiet, but I suppose it's what you're used to.
+        Cadwell described our future as quiet, but I suppose it’s what you’re used to.
         To him, the laughter of crows, the sighs and shuffling of farm animals,
         the sound of a slow wagon crunching over gravel, was the modern cacophony of life he sought to escape.
         What I heard most was an absence: no drone of distant airplanes, hum of ventilation systems, or trucks idling sloppily.
@@ -193,12 +193,12 @@ export default ({currentSection, inventory, cards}) => {
             _undefined: <span>
               She looked otherwise alone, potentially safe to <List expansions={[["approach"], ["approach"]]}
                                                                 tag="c10_woman" />.
-              I could also hear men's voices, many of them, from a nearby <List expansions={[["barn"], ["barn"]]}
+              I could also hear men’s voices, many of them, from a nearby <List expansions={[["barn"], ["barn"]]}
                                                                             tag="c10_men" />.
             </span>,
             _any: <span>
               She looked otherwise alone, potentially safe to approach.
-              I could also hear men's voices, many of them, from a nearby barn.
+              I could also hear men’s voices, many of them, from a nearby barn.
             </span>
           }}
         />
@@ -208,55 +208,55 @@ export default ({currentSection, inventory, cards}) => {
       <Map from={inventory.c10_woman || inventory.c10_men}
         to={{
           approach: <div>      <p>
-            "Hello," I said, cautiously. I smiled and held out my hands, palms up.
+            “Hello,” I said, cautiously. I smiled and held out my hands, palms up.
           </p>
             <p>
-              "Hello," she said. She eyed my clothes, lingering on my jeans, but said nothing more.
+              “Hello,” she said. She eyed my clothes, lingering on my jeans, but said nothing more.
             </p>
             <p>
-              "Do you know where I could get some water?"
+              “Do you know where I could get some water?”
             </p>
             <p>
-              "There's no more running water since the Phalanstery burned. There's a cistern there," she said, nodding
+              “There’s no more running water since the Phalanstery burned. There’s a cistern there,” she said, nodding
               towards the row of <ListCard expansions={["stone houses"]} tag="c10-houses"
-                card={<span>I hadn't noticed them behind the hedges. There were eight now. </span>} />.
-              "Here, take this," and emptied a pail of
+                card={<span>I hadn’t noticed them behind the hedges. There were eight now. </span>} />.
+              “Here, take this,” and emptied a pail of
             pears into her basket of pumpkins.</p>
             <p>I leaned into the garden and took the pail from her gratefully. She was at least a head shorter than me.
               Tendrils of her blonde hair poked out from beneath the cap,
               and up close I could see that her neck was deeply <ListCard expansions={["scarred"]} tag="c10-scar"
                 card={<span>Remnants of some infection I almost certainly had never needed to worry about.</span>} />.
-              She was inspecting me in turn, which was only fair. She asked, "Which community are you from which allows such reformed attire?"
+              She was inspecting me in turn, which was only fair. She asked, “Which community are you from which allows such reformed attire?”
             </p>
             <p>
-              "Blithedale Farms," I improvised. "Please excuse me, I need to bring this to my friend urgently." My own thirst
+              “Blithedale Farms,” I improvised. “Please excuse me, I need to bring this to my friend urgently.” My own thirst
               was now overwhelming.
             </p>
             <p>
-              She nodded, disappointed. "If you want my advice, you'll leave soon as you can," she said, in a low voice.
-              "This is no longer a place for women."
+              She nodded, disappointed. “If you want my advice, you’ll leave soon as you can,” she said, in a low voice.
+              “This is no longer a place for women.”
             </p>
             <p>
-              I started to ask why but she stopped suddenly, listening. She then crouched, pointing at the hedgerow. <i>Make yourself scarce.</i>
-              I did as she bid me, and heard the voices of men pass on the other side of the hedge:
+              I started to ask why but she stopped suddenly, listening. She then crouched, pointing at the hedgerow: <i>Make yourself
+              scarce.</i> I did as she bid me, and heard the voices of men pass on the other side of the hedge.
             </p>
             <p>
-              The first voice: "We can debate philosophy all day, and I know that you will, Owen. That does not change the fact
+              The first voice: “We can debate philosophy all day, and I know that you will, Owen. That does not change the fact
               that the bank is foreclosing on this land
-              any day now. I intend to take back what I put in to this foolhardy experiment."
+              any day now. I intend to take back what I put in to this foolhardy experiment.”
             </p>
             <p>
-              The reply, presumably from the man named Owen: "Then let us accept the offer from the ladies to
+              The reply, presumably from the man named Owen: “Then let us accept the offer from the ladies to
               incorporate the community school. They have raised over fifty-thousand
-              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments."
+              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments.”
             </p>
             <p>
-              There was a braying and ugly laugh from a third voice. "A college for women will just breed more crones
-              like Cadwell's."
+              There was a braying and ugly laugh from a third voice. “A college for women will just breed more crones
+              like Cadwell’s.”
             </p>
-            <p>"What concern is that of yours?" Owen said. "Let them carp and heckle each other to death. Your wife has no such flaw."
-              The other man barked a laugh again. "This all sounds settled to me," Owen concluded.
-              "Tomorrow we will go down to the village and send word to the bank."
+            <p>“What concern is that of yours?” Owen said. “Let them carp and heckle each other to death. Your wife has no such flaw.”
+              The other man barked a laugh again. “This all sounds settled to me,” Owen concluded.
+              “Tomorrow we will go down to the village and send word to the bank.”
             </p>
             <p>
               The voices faded, and I caught the eye of the woman. She nodded towards the houses, and
@@ -265,7 +265,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>,
           barn: <div>
             <p>
-              The barn was huge, much bigger than the picturesque suburban barns I'd seen on my drive to Blithedale.
+              The barn was huge, much bigger than the picturesque suburban barns I’d seen on my drive to Blithedale.
               It was painted chocolate brown and had few windows save for an unusual
               turret at one end, with windows on all sides. It looked disconcertingly like a prison watchtower.
             </p>
@@ -284,56 +284,56 @@ export default ({currentSection, inventory, cards}) => {
               barrels; others stood, fussily adjusting their appearance and seeming to object to everything.
             </p>
             <p>
-              "I don't see a viable alternative to disbanding the trust," one of the gruffer gentlemen complained.
-              "We are wholly without capital,
-              and I for one will not sink a single additional penny into this fever dream."
+              “I don’t see a viable alternative to disbanding the trust,” one of the gruffer gentlemen complained.
+              “We are wholly without capital,
+              and I for one will not sink a single additional penny into this fever dream.”
             </p>
             <p>
-              "You'd feel differently, Williams, if you'd embraced <ListCard expansions={["Scientific Marriage"]}
+              “You’d feel differently, Williams, if you’d embraced <ListCard expansions={["Scientific Marriage"]}
                 tag="c10-marriage"
-                card={<span>I'd encountered this term in the archives a few times now, but never found a definition.</span>} />." This was said by a skinny
+                card={<span>I'd encountered this term in the archives a few times now, but never found a definition.</span>} />.” This was said by a skinny
               young fellow
               reclining pointedly in the hay.
             </p>
             <p>
-              "The community was doing fine before your like introduced that nonsense," the other retorted.
-              "The women won't stand for it—"
+              “The community was doing fine before your like introduced that nonsense,” the other retorted.
+              “The women won’t stand for it—"
             </p>
             <p>
-              "We just needed more time," a third man complained. "We should've expelled Cadwell and his harridan
+              “We just needed more time,” a third man complained. “We should’ve expelled Cadwell and his harridan
               years ago—"
             </p>
             <p>
-              The man named Williams scoffed. "Easy to say now, Owen. I recall your paper extolling him as an
-              unsung genius not one year ago."
+              The man named Williams scoffed. “Easy to say now, Owen. I recall your paper extolling him as an
+              unsung genius not one year ago.”
             </p>
             <p>
               The <ListCard expansions={["young man"]}
                 tag="c10-young-man"
-                card={<span>He was sallow and oily, with a stupid blond moustache and a punchable face.</span>} /> laughed unpleasantly. "Whenever that oaf opened his mouth I wanted to cringe.
-              And don't get me started on his witch—I lay blame entirely at her feet for poisoning the minds of the other wives."
+                card={<span>He was sallow and oily, with a stupid blond moustache and a punchable face.</span>} /> laughed unpleasantly. “Whenever that oaf opened his mouth I wanted to cringe.
+              And don’t get me started on his witch—I lay blame entirely at her feet for poisoning the minds of the other wives.”
             </p>
             <p>
-              Williams raised his voice. "We can debate philosophy all day, and I know those of you who will if
+              Williams raised his voice. “We can debate philosophy all day, and I know those of you who will if
               no one puts a stopper in you. That does not change the fact that the bank is foreclosing
-              any day now. I intend to take back what I put in to this foolhardy experiment."
+              any day now. I intend to take back what I put in to this foolhardy experiment.”
             </p>
             <p>
-              "Then let us accept the offer from the ladies to independently incorporate the community school,"
-              Owen said, his hands held out in a calming gesture. Williams started to object, but was cut off: "They have raised over fifty-thousand
-              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments."
+              “Then let us accept the offer from the ladies to independently incorporate the community school,”
+              Owen said, his hands held out in a calming gesture. Williams started to object, but was cut off: “They have raised over fifty-thousand
+              from various benefactors in Albany and Boston. That should be more than sufficient to recoup your investments.”
             </p>
             <p>
-              The young man laughed again. "A college for women will just breed more of the same."
+              The young man laughed again. “A college for women will just breed more of the same.”
             </p>
             <p>
-              "What concern is that of yours?" Owen said. "Let them carp and heckle each other to death. Your wife has no such flaw."
-              The other man bowed theatrically, as if acknowledging a compliment. "This all sounds settled to me," Owen concluded.
-              "Tomorrow we will go down to the village and send word to the bank."
+              “What concern is that of yours?” Owen said. “Let them carp and heckle each other to death. Your wife has no such flaw.”
+              The other man bowed theatrically, as if acknowledging a compliment. “This all sounds settled to me,” Owen concluded.
+              “Tomorrow we will go down to the village and send word to the bank.”
             </p>
             <p>
-              The gathering was breaking up, but I'd heard enough anyway. While the men huddled close to shake hands
-              and otherwise congratulate each other on escaping the paradise they'd built for themselves,
+              The gathering was breaking up, but I’d heard enough anyway. While the men huddled close to shake hands
+              and otherwise congratulate each other on escaping the paradise they’d built for themselves,
               I stole a nearby tin pail and <List expansions={[["dashed"], ["dashed"]]} tag="c10-cross" /> to the row of stone houses.
 
             </p>
@@ -357,14 +357,14 @@ export default ({currentSection, inventory, cards}) => {
               tag="c10-largest"
               card={<span>In my time, this house was a squash court.</span>}/>.
         A lead pipe ran down the length of the house and disappeared into the
-        hole. I couldn't see any water inside, but there was a rope with a <List expansions={[["hook"], ["hook"]]}
+        hole. I couldn’t see any water inside, but there was a rope with a <List expansions={[["hook"], ["hook"]]}
                                                                              tag="c10-hook" /> affixed nearby.
       </p>
     </section>,
     <section>
       <p>
         I put the hook over the handle on my pail and lowered it hand-over-hand while the girl watched.  I
-        felt it hit the surface of water and could tell that it just flopped over and floated. The lightweight tin wasn't heavy
+        felt it hit the surface of water and could tell that it just flopped over and floated. The lightweight tin wasn’t heavy
         enough.
       </p>
       <p>
@@ -383,46 +383,46 @@ export default ({currentSection, inventory, cards}) => {
         just watched from afar.
       </p>
       <p>
-        "Thank you," I said to her, and gratefully drank straight from the pail. Together we refilled it, and then
+        “Thank you,” I said to her, and gratefully drank straight from the pail. Together we refilled it, and then
         I began to return to the Great Hall by following a winding gravel road. She trotted along beside me, the boy forgotten.
       </p>
       <p>
-        "What's your name?" I said.
+        “What’s your name?” I said.
       </p>
       <p>
-        "Lilly."
+        “Lilly.”
       </p>
       <p>
-        "I know a young woman named Lillian," I said. "You <List expansions={[["remind me a little of her—"], ["remind me—"]]}
-                                                             tag="c10-remind" />"
+        “I know a young woman named Lillian,” I said. “You <List expansions={[["remind me a little of her—"], ["remind me—"]]}
+                                                             tag="c10-remind" />”
       </p>
     </section>,
     <section>
-      <p>The sound of men's voices carried over the fields, and the girl grabbed my arm. "Come this way," she said. She pulled me into a narrow one-story clapboard building,
+      <p>The sound of men’s voices carried over the fields, and the girl grabbed my arm. “Come this way,” she said. She pulled me into a narrow one-story clapboard building,
         long and low like a stable, painted white with black trim.
       </p>
       <p>
         The interior was effectively a single room, a long communal kitchen. A dozen women, most dressed in loose pants
         under skirts, moved between the two stone hearths and several massive work tables. There were stations for bread
-        and stations for soup and large cabinets full of white plates; I didn't see any meat. Most women were bare-headed, their hair
+        and stations for soup and large cabinets full of white plates; I didn’t see any meat. Most women were bare-headed, their hair
         tied back in loose buns. I
         stopped short at the entrance,
         and they slowly began to notice me, pausing their work to just stare.
       </p>
       <p>
-        "Come through here," Lilly urged. I weaved between the women, muttering apologies. The girl led me out a wide
+        “Through here,” Lilly urged. I weaved between the women, muttering apologies. The girl led me out a wide
         barn-like doorway, where a few horses and wagons were tied, and then immediately into another large
         communal building.
       </p>
       <p>
-        "This is the Children's Hall where we live," she explained. Like my faculty residence, it was made up of many individual
+        “This is the Children’s Hall where we live,” she explained. Like my faculty residence, it was made up of many individual
         bedrooms, but each was filled with cots and cradles.
       </p>
       <p>
-        "You don't live with your parents?" I asked.
+        “You don’t live with your parents?” I asked.
       </p>
       <p>
-        She looked at me with honest puzzlement. "What are those?"
+        She looked at me with honest puzzlement. “What are those?”
       </p>
       <NextChapter chapter={11} />
     </section>

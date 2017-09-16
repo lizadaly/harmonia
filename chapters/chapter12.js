@@ -22,7 +22,7 @@ export default ({currentSection, inventory, cards}) => {
               Lillian,
             </p>
             <p>
-              I've left this journal for you to find, or <ListCard expansions={["not find"]}
+              I’ve left this journal for you to find, or <ListCard expansions={["not find"]}
                 tag="c12-not"
                 card={<span>If not, I hope whoever who does find it enjoys the puzzle that it presents.</span>} />,
               however Fate decides. I like to believe it will reach you.
@@ -30,7 +30,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               There were men <ListCard expansions={["waiting"]}
                 tag="c12-waiting"
-                card={<span>For which I could thank Lilly Cadwell's traitorous little friend Saul.</span>} /> for
+                card={<span>For which I could thank Lilly Cadwell’s traitorous little friend Saul.</span>} /> for
               me when I emerged outside. They looked at me in astonishment, but while they muttered amongst themselves,
               an enormous sinkhole opened
               beneath the Great Hall. The resulting cloud of dust and soot could be seen all across the valley.
@@ -52,21 +52,21 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               Up here in Western Massachusetts, spring lasts about a day but can be utterly glorious—neither
               cold nor humid, and sometimes not even raining. Today is one of those days,
-              the perfect weather coupled with the effervescent mania of students who've just finished
-              exams. Unfortunately for me, I have to grade them.
+              the perfect weather coupled with the effervescent mania of students who’ve just finished
+              exams. Sadly, I have to grade them.
             </p>
             <p>
-              In spite of the workload, I'm giddy too. I've been informed I'll be back next year—as a real
-              assistant professor. I can stop correcting the girls who call me "Prof."
+              In spite of the workload, I’m giddy too. I’ve been informed I’ll be back next year—as a real
+              assistant professor. I can stop correcting the girls who call me “Prof.”
             </p>
             <p>
-              I'm grading at a picnic table near the crest of the foothill. From here I can see
+              I’m grading at a picnic table near the crest of the foothill. From here I can see
               the full expanse of the campus and down into the valley, the ghostly outlines of the
-              utopians' fences and foundations made visible. In my mind's eye I can easily fill them
+              utopians’ fences and foundations made visible. In my mind’s eye I can easily fill them
               in, with golden crops and slow horses and grand optimistic halls.
             </p>
             <p>
-              "Abby," a voice behind me says, and I get chills.
+              “Abby,” a voice behind me says, and I get chills.
             </p>
             <p>
               Alice Gilman is regarding me in that curious way she has. I have
@@ -86,34 +86,34 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               Lillian, Ella, and I have checked several times: the underground tunnels were all obliterated by the
-              collapse of the cavern. They're now
+              collapse of the cavern. They’re now
             just forgotten crawlspaces that lead nowhere. Up in the quad, the sinkhole was filled with dirt and sod rolled over in its place.</p>
 
             <p>Alice Gilman vanished from campus, and was not missed.
             </p>
             <p>
-              "Here," she says now, without preamble. She hands me a yellowed envelope; in a very neat, formal hand,
-              it reads, "To Abigail Fuller." I do not recognize the writing.
+              “Here,” she says now, without preamble. She hands me a yellowed envelope; in a very neat, formal hand,
+              it reads, “To Abigail Fuller.” I do not recognize the writing.
             </p>
-            <p>"It was found in the college archive about five years ago. I did not know who it was addressed to,
-              until the night you arrived when you told me your name."
-            </p>
-            <p>
-              She stops, for so long I think she isn't going to continue. "They
-              did not think I was fit to be a mother. I still cared for her, even though she wasn't mine.
-              After I read this, I knew she could have people who would love her, if I sent them back."
+            <p>“It was found in the college archive about five years ago. I did not know who it was addressed to,
+              until the night you arrived when you told me your name.”
             </p>
             <p>
-              "I could have died," I say, but I'm not even angry anymore.
+              She stops, for so long I think she isn’t going to continue. “They
+              did not think I was fit to be a mother. I still cared for her, even though she wasn’t mine.
+              After I read this, I knew she could have people who would love her, if I sent them back.”
             </p>
             <p>
-              "Yes," she acknowledges. She looks like she's about to leave, and then says, "I thought,
-              after a hundred years, I would find my place, but you've made a loud and fearful world,
+              “I could have died,” I say, but I’m not even angry anymore.
+            </p>
+            <p>
+              “Yes,” she acknowledges. She looks like she’s about to leave, and then says, “I thought,
+              after a hundred years, I would find my place, but you’ve made a loud and fearful world,
               and I do not much like this one either.
             </p>
             <p>
-              "I know you laugh at us, at our ridiculous pseudoscience and
-              idealistic experiments. But I built a true wonder, and you take only such small steps."
+              “I know you laugh at us, at our ridiculous pseudoscience and
+              idealistic experiments. But I built a true wonder, and you take only such small steps.”
               Without waiting for a response, she turns and walks down the hillside.
             </p>
             <p>I open and <List expansions={[["read"], ["read"]]}
@@ -131,7 +131,7 @@ export default ({currentSection, inventory, cards}) => {
               Lilly was indifferent anyway, was easy to convince to give up her charge—her family wanted to move
               west and to travel light. To the law, Lillian Gilman Cadwell was the <ListCard expansions={["orphan"]}
                 tag="c12-orphan"
-                card={<span>I'm sorry to say I was never able to find what happened to her real birth <ListCard expansions={["mother"]}
+                card={<span>I’m sorry to say I was never able to find what happened to her real birth <ListCard expansions={["mother"]}
                   tag="c12-grandmother"
                   author="lillian"
                   forceDir="down"
@@ -142,23 +142,23 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               Everyone accepted my story: I was a widow schoolteacher from New York looking to start a new life.
-              You, Lillian, live in a world where disappearing is hard; I've lived where
+              You, Lillian, live in a world where disappearing is hard; I’ve lived where
               identity is mutable. These people reinvented themselves, and the future, as easy as breathing.
             </p>
             <p>
-              Turns out you don't need to remember much history to be a successful investor. I've done pretty
+              Turns out you don’t need to remember much history to be a successful investor. I’ve done pretty
               well for our family, and my adopted daughter and granddaughter will never need to
-              depend on anyone. I didn't marry; I've met many pleasant <ListCard expansions={["men"]}
+              depend on anyone. I didn’t marry; I’ve met many pleasant <ListCard expansions={["men"]}
                 tag="c12-men"
                 card={<span>And the women—well, those stories are not in this journal.</span>} /> but they are all of their time.
 
             </p>
             <p>
-              I set up a trust for all of Lilly's descendants to become available when they turn twenty-five.
+              I set up a trust for all of Lilly’s descendants to become available when they turn twenty-five.
               If all goes well, it should last many generations.
               Are you <ListCard expansions={["twenty-five"]}
                 tag="c12-25"
-                card={<span>In my mind, you're always 23, your age when we met. I hope you find this <ListCard expansions={["soon"]}
+                card={<span>In my mind, you’re always 23, your age when we met. I hope you find this <ListCard expansions={["soon"]}
                   tag="c12-leave"
                   forceDir="down"
                   author="lillian"
@@ -170,14 +170,14 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               You and I never talked about your mom, my <i>great</i>-grandchild, who I will probably never meet. Was she happy? Are you happy? That is all I <ListCard expansions={["worry"]}
                 tag="c12-worry"
-                card={<span>I used to worry about smallpox, but I'm 72 now and can probably stop.</span>} /> about now.
+                card={<span>I used to worry about smallpox, but I’m 72 now and can probably stop.</span>} /> about now.
             </p>
             <p>
-              There's a thing you need to understand about your family and where you come from. This old America, where
-              I've lived most of my life, is a far wilder place than yours. People think nothing of writing themselves
+              There’s a thing you need to understand about your family and where you come from. This old America, where
+              I’ve lived most of my life, is a far wilder place than yours. People think nothing of writing themselves
               a new future, scribbling over their mistakes, erasing and even unerasing as a way of forging new truths.
               Draw upon this great cacophony of possibility. Do not confine your dreams to what is feasible and adjacent.
-              The future into which I was born is so, so small! Cut, paste, deface, delete the worst of it, and rewrite it as you'd like it to be.
+              The future into which I was born is so, so small! Cut, paste, deface, delete the worst of it, and rewrite it as you’d like it to be.
             </p>
             <p>
               My life has been an incredible adventure. I am only sorry that we could not meet again.
@@ -188,21 +188,20 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <footer>
               <figure>
-                <img src="images/past-final.jpg" alt="A sketch of a large burnt building"/>
+                <img src="images/past-final.jpg" />
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
               </p>
 
             </footer>
-
           </div>,
           me: <div>
             <Reader inventory={inventory} docs={[docs.lillian1]} />
 
             <footer>
               <figure>
-                <img src="images/present-final.jpg" alt="A sketch of the college campus from a distance. The quad and many brick buildings are visible."/>
+                <img src="images/present-final.jpg" />
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />

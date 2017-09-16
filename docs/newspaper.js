@@ -17,9 +17,9 @@ export const paper1 = () => {
       <h4>Chemistry Under Difficulties</h4>
       <p>
         <span className="first-letter">F</span>RIGHTFUL ACCIDENT! Between
-        twelve and one o'clock last night, the whole neighborhood was
+        twelve and one o’clock last night, the whole neighborhood was
         thrown into the utmost alarm by a terrible explosion in the vicinity
-        of Prof. C's Laboratory. On entering that establishment a
+        of Prof. C’s Laboratory. On entering that establishment a
         scene of devastation plainly indicated that a scene of terrific
         violence had occurred. At first no trace of the Professor could be
         found—except a cloth cap which he was accustomed to wear while
@@ -35,12 +35,12 @@ export const paper1 = () => {
       </p>
       <h4>The Best Time to Cut Hay</h4>
       <p>
-        Our own Mr. A writes, "The best method I have found is to
+        Our own Mr. A writes, “The best method I have found is to
         commence about the 10th of June and finish by the 25th.
         Sometimes weather prevents so I cannot finish until the
         first days of July. The quality of the butter derived from
         this early cutting will in no time convince you to lay aside
-        old customs and adopt this better one."
+        old customs and adopt this better one.”
       </p>
 
       <h4>Spirituality Rises</h4>
@@ -50,7 +50,7 @@ export const paper1 = () => {
         Besides the body of the iron there is, in and around it,
         an influence—a vibration which is entirely
         invisible and intangible yet has power to act at a considerable
-        distance. It can operate right through a man's blood, bones, and
+        distance. It can operate right through a man’s blood, bones, and
         muscles.
       </p>
       <p>
@@ -66,7 +66,7 @@ export const paper1 = () => {
       <p>
         There is known to be a relationship between electricity and the
         power of the will. It follows, then, that by the galvanic battery, it may be
-        possible to distill one's spirit into magnetic iron such
+        possible to distill one’s spirit into magnetic iron such
         as our Astrolith and, then to decant it again. The implications of such
         an Instrument could be quite profound.
       </p>
@@ -77,7 +77,7 @@ export const paper1 = () => {
 export const paper2 = () => {
   return <div>
     <img src="images/hands.png" alt="Woodcut of linked hands in a 19th century style" />
-    <h4>A New Paradise</h4>
+    <h4>A New Eden</h4>
     <p>Learned men with open minds and sturdy backs! You are wanted for a new community.
       Join like-minded free thinkers as we build a Scientific Way of living—as equals before God and Man,
       guided by Science and Spirit alike. <small>Inquire at 10 Broad St. Boston, MA</small>.
@@ -152,8 +152,8 @@ export const paper4 = () => (
       <h4>Plea for a Safe Return</h4>
       <img src="images/rooster.png" style={{float: "right", paddingLeft: "2em"}} alt="A woodcut of a rooster"/>
 
-      <p>Mr. M writes, "If any man has taken it upon himself to remove my chickens from their
-        enclosure, I promise before the community to lay no claims on him if they are but returned unharmed."
+      <p>Mr. M writes, “If any man has taken it upon himself to remove my chickens from their
+        enclosure, I promise before the community to lay no claims on him if they are but returned unharmed.”
       </p>
       <h4 style={{clear: "both"}}>To the Instrument!</h4>
       <p>
@@ -161,7 +161,7 @@ export const paper4 = () => (
           tag="paper4-anon" expansions={["Anon"]}
           nextUnit="section"
           card={<span>Certain that Cadwell was the author here: fragments of this text appear on the
-          back of the device diagram (attached).</span>} />. writes, "As we grapple with the dissolution of our
+          back of the device diagram (attached).</span>} />. writes, “As we grapple with the dissolution of our
         grand experiment, I call upon our community remember the grand Scientific Discoveries we have
         made together. Remember that we are composed of minute and invisible particles of matter, endowed with attributes
       such as we are wont to associate with larger masses.</p>
@@ -170,7 +170,7 @@ export const paper4 = () => (
         innate motions which pulsate through the Universe; and remember further that there are specks,
         infinitely smaller than grains of sand, in which a heart beats, and blood circulates, and all the
         functions of an exuberant vitality are exercised. All of this can be Instrumented, with the aid of a
-        great ancient Spiritual and Scientific force."
+        great ancient Spiritual and Scientific force.”
       </p>
     </div>
 

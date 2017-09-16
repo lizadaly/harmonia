@@ -14,7 +14,7 @@ const age = ({nextDoc, prevDoc}) =>  {
         tag="age1-unconscious"
         nextUnit="section"
         expansions={["rendered unconscious"]}
-        card={<span>Another case of "fall asleep, wake in future." Discuss with class!</span>}
+        card={<span>Another case of “fall asleep, wake in future.” Discuss with class!</span>}
                 />.
     </p>
     <p>

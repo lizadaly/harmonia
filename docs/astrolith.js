@@ -6,7 +6,7 @@ export const astrolith1 = () => {
     return <div>
       <h3>Save the Astrolith!</h3>
       <h4>Stop the removal of our most famous monument</h4>
-      <p>Citing bogus excuses for "modernization," Blithedale plans to excavate and remove
+      <p>Citing bogus excuses for “modernization,” Blithedale plans to excavate and remove
         the beating heart of our school. The Astrolith is one of the few reminders of
         the values on which we were founded: equality, optimism, and spirituality.
       </p>
