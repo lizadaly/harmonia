@@ -197,7 +197,7 @@ export default ({currentSection, inventory, cards}) => {
     <figure>
       <img src="images/meteorite.jpg" alt="A sketch of a large black meteorite set in the quad between college buildings. A plaque reads 'The Astrolith'"/>
       <figcaption>
-        (I hope these occasional sketches are helpful; I find it soothing to make them.)
+        (I hope these occasional sketches are helpful; I find drawing as soothing as obsessive journaling.)
       </figcaption>
     </figure>
     <p>
