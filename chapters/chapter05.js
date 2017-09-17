@@ -70,8 +70,8 @@ export default ({currentSection, inventory, cards}) => {
         Collecting my thoughts, I <ListCard expansions={["jotted down"]} tag="c5-options"
           card={<span><Map from={inventory.c2_pen}
             to={{
-              _undefined: "Personal motto: Always have a pen.",
-              _any: "I said I always have a pen!"
+              _undefined: "As you may have noticed, I'm always scribbling things down.",
+              _any: "As I said, I'm always scribbling things down."
             }} /></span>} /> three options:
       </p>
       <p className="card-inline">

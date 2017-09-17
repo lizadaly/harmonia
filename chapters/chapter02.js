@@ -35,7 +35,7 @@ export default ({currentSection, inventory, cards}) => {
       tag="c1-name"
       card={<span>Not yet <i>Doctor Fuller</i>, as my thesis was at a bit of a standstill, nor <i>Professor Fuller</i>,
       since I was only a sub.</span>} />.”
-      Their undivided attention was disconcerting; I’d never led a class myself, much less a class of exquisitely bred
+      Their undivided attention was disconcerting; I’d never led a class of exquisitely bred
       Yankee daughters.
     </p>
     <p>
@@ -87,7 +87,7 @@ export default ({currentSection, inventory, cards}) => {
   <section>
     <p>I <ListCard expansions={["struck a line"]}
       tag="c2_pen"
-      card={<span>I may not be perfect, but I always have a pen.</span>} /> through
+      card={<span>I am a compulsive scribbler, but you may have figured that out by now.</span>} /> through
     the first lecture. </p>
     <p>“Did he cover <List expansions={[["intentional communities", "would you like me to go over that"], ["intentional communities"]]}
       conjunction="or" tag="c1_correction2" /> as well?” {inventory.c1_correction2 === "intentional communities" ? "More nods." : ""}</p>
@@ -181,10 +181,10 @@ export default ({currentSection, inventory, cards}) => {
       splashed with pastel lichen and moss.
     </p>
     <p>A clock somewhere chimed noon and students poured out of the
-      buildings, <ListCard expansions={["trudging"]}
+      buildings, trudging up and <ListCard expansions={["down"]}
         tag="c3-steps"
         card={<span>It was popular to arrange one’s schedule such that each subsequent
-        class was further downslope.</span>} /> up and down the steps to their next classes.
+        class was further downslope.</span>} />  the steps to their next classes.
     </p>
     <p>
       I drifted into the quad.
@@ -197,7 +197,7 @@ export default ({currentSection, inventory, cards}) => {
     <figure>
       <img src="images/meteorite.jpg" alt="A sketch of a large black meteorite set in the quad between college buildings. A plaque reads 'The Astrolith'"/>
       <figcaption>
-        (I’ve reproduced this and many other sketches from memory.)
+        (I hope these occasional sketches are helpful; I find it soothing to make them.)
       </figcaption>
     </figure>
     <p>
@@ -333,7 +333,7 @@ export default ({currentSection, inventory, cards}) => {
     to={{
       "curiosity": <div>
         <p>“Can I help you find something?” a male voice behind me asked. I turned around, wearing what I assume
-        must be a patently guilty expression.</p>
+        must have been a patently guilty expression.</p>
         <p>He was very young, but wore a sport coat and tie and a serious expression. At a co-ed school I might have assumed he was a student
           with an affectation for dressing like an <ListCard expansions={["adult"]}
             tag="c2-adult"

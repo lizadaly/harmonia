@@ -157,7 +157,7 @@ export default ({currentSection, inventory, cards}) => {
         simple vest, pocketwatch, and wool pants.
       </p>
       <p>
-        “It to be my first time through,” he said, his voice a whisper. “But I saw her face as she threw the
+        “It was to be my first time through,” he said, his voice a whisper. “But I saw her face as she threw the
         lever; she had no intention of bringing me back.”
       </p>
       <p>

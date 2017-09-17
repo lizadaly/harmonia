@@ -23,7 +23,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <h2>Acknowledgments</h2>
       <p>
-        Thank you to Dan Schmidt for story feedback and testing.
+        Thank you to Dan Schmidt and Stephen Granade for story feedback and testing.
       </p>
       <h2>Bibliography</h2>
       <p>
