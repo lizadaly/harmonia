@@ -169,7 +169,7 @@ export default ({currentSection, inventory}) => {
             The soil up here is poor and the winters are brutal.”
             She stared at the painting before continuing. “They made some… poor decisions—the community
             was in decline anyway—and in 1899 their hall caught fire. There were some deaths, a lot of
-            property loss, and bankrupcy soon
+            property loss, and bankruptcy soon
             followed.”
           </p>
           <p>She paused. “Jeffrey Lynn was our leading scholar of the utopian period.

@@ -154,7 +154,7 @@ export default ({currentSection, inventory, cards}) => {
 
       <p>
         The final platform was small, barely wider than the doorframe. Up this high, the vibration of the idling
-        machine was intense; my teeth ached and the wooden structure on which I stood swayed noticably.
+        machine was intense; my teeth ached and the wooden structure on which I stood swayed noticeably.
       </p>
       <p>
         Rubber cables snaked through the doorframe and attached at a socket in the chamber ceiling. A thickly-woven
@@ -183,7 +183,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <p>
         “You’re <ListCard expansions={["Elsie Cadwell"]} tag="c9-short"
-          card={<span><i>Elsie</i> is a diminitive for both Elizabeth, which I’d known, and Alice,
+          card={<span><i>Elsie</i> is a diminutive for both Elizabeth, which I’d known, and Alice,
           which I’d forgotten. I found out later that Gilman was her maiden name.</span>} />,” I yelled, not caring if she couldn’t hear.
       </p>
       <p>

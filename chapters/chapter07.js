@@ -67,7 +67,7 @@ export default ({currentSection, inventory, cards}) => {
                 tag="c7-tables"
                 card={<span>“Rally tomorrow: rain or shine!”</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
-              handed me a flyer printed on cardstock, adorned with a sticker:
+              handed me a flyer printed on card-stock, adorned with a sticker:
             </p>
             <Reader inventory={inventory} docs={[docs.paper3]} />
 
@@ -83,7 +83,7 @@ export default ({currentSection, inventory, cards}) => {
                 tag="c7-tables"
                 card={<span>“Rally tomorrow: rain or shine!”</span>} /> by the meteorite;
               someone had draped the little backhoe in origami birds and Tibetan prayer flags. One of the students
-              handed me a flyer printed on cardstock, adorned with a sticker:
+              handed me a flyer printed on card-stock, adorned with a sticker:
             </p>
             <Reader inventory={inventory} docs={[docs.paper3]} />
           </div>

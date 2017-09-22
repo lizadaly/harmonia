@@ -142,14 +142,20 @@ export default ({currentSection, inventory, cards}) => {
       <p>
         The air stank of burnt wood and melted rubber. The sandstone walls had survived the worst of it, but
         everything else was singed or powdered in soot.
-        Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass. I could see through to more
+        Sunlight streamed down through the collapsed ceiling, and all the windows were empty of glass.
+        I could see through to more
         broken rooms, arranged around a central space littered with the remains of the roof.
-        The peak of the Astrolith was just visible among blackened beams and scorched furniture. Nobody was around.
+        The peak of the Astrolith was just visible among blackened beams and scorched furniture.
       </p>
       <p>
-        “Ah, yes, I finally get to see the Great Hall,” Lynn said <ListCard tag="c10-hall"
+        I was inside the ruin of the Great Hall. I’d seen the Dean’s painting, but it did not adequately
+        convey the scale of this place. The Hall had been an embodiment of their community, a massive building even by
+        modern standards, all built by hand.
+      </p>
+      <p>
+        “Ah, yes, finally, the Phalanstery,” Lynn said <ListCard tag="c10-hall"
           expansions={["sourly"]}
-          card={<span>I understood his despair. He arrived too late to see it, even with a time machine.</span>} />.
+          card={<span>He arrived too late to see it, even with a time machine.</span>} />.
         He tried to stand but couldn’t, and rested against the lintel.
       </p>
       <p>
@@ -177,8 +183,6 @@ export default ({currentSection, inventory, cards}) => {
         and the trees were few and small. Instead of a tidy green lawn, the ground was covered in a patchwork of
         dirt, clover, and crabgrass. The odor of horses and hay was noticeable.
       </p>
-
-
       <p>
         Cadwell described our future as quiet, but I suppose it’s what you’re used to.
         To him, the laughter of crows, the sighs and shuffling of farm animals,
@@ -310,7 +314,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               The <ListCard expansions={["young man"]}
                 tag="c10-young-man"
-                card={<span>He was sallow and oily, with a stupid blond moustache and a punchable face.</span>} /> laughed unpleasantly. “Whenever that oaf opened his mouth I wanted to cringe.
+                card={<span>He was sallow and oily, with a stupid blond mustache and a punchable face.</span>} /> laughed unpleasantly. “Whenever that oaf opened his mouth I wanted to cringe.
               And don’t get me started on his witch—I lay blame entirely at her feet for poisoning the minds of the other wives.”
             </p>
             <p>

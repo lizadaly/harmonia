@@ -106,11 +106,13 @@ class _ListCard extends React.Component {
 
         this.positionCardY(target)
 
+        const lineClass = (animate ? "drawing " : " ") + pos
+
         j.connect({
           // Target/source swapped for animation
           target: sourceId,
           source: targetId,
-          cssClass: animate ? "drawing" : "",
+          cssClass: lineClass,
           endpoint: "Blank",
           anchor: ["Perimeter", { shape:"Ellipse" } ]
         })

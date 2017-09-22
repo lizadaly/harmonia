@@ -147,7 +147,7 @@ export default ({currentSection, inventory, cards}) => {
       After that rocky start,
       the class went pretty well. Lillian even stayed after class to <ListCard expansions={["welcome"]}
         tag="c2-welcome"
-        card={<span>She came from a notable family with deep local roots. "My grandmom was
+        card={<span>She came from a notable family with deep local roots. "My grandmother was
         named Abigail too."</span>} /> me to the college.
       I started to think this gig was going to
       be <ListCard
@@ -155,7 +155,7 @@ export default ({currentSection, inventory, cards}) => {
         forceDir="center-down"
         tag="c3-okay"
         card={<span>I was wrong.</span>}
-            nextUnit="section" />
+         nextUnit="section" />
     </p>
   </section>,
   <section>
@@ -234,7 +234,7 @@ export default ({currentSection, inventory, cards}) => {
   </blockquote>
   <p>
     And scrawled on <i>that</i> was some <List expansions={[["graffiti"], ["graffiti"]]}
-                      tag="c2_graffiti" />, presumably added by a student.
+                                         tag="c2_graffiti" />, presumably added by a student.
   </p>
 </section>,
 <section>
@@ -264,7 +264,7 @@ export default ({currentSection, inventory, cards}) => {
   </p>
   <p>
     I hesitated, torn between <List expansions={[["following my curiosity", "meeting with the dean"], ["following my curiosity", "meeting with the dean"]]}
-                                tag="c2_direction" />.
+                              tag="c2_direction" />.
   </p>
 </section>,
 <section>
@@ -278,7 +278,7 @@ export default ({currentSection, inventory, cards}) => {
         </p>
         <p>I didn’t see the woman so I followed the path of heaviest footprints down the hallway.
           The newer rooms seemed to be
-          unfinished labs and other functional spaces, with cabling dangling from unpanelled ceilings. Walls and chairs
+          unfinished labs and other functional spaces, with cabling dangling from ceiling holes. Walls and chairs
           and benches were all sharp-edged and bright white, in contrast to the Ivy League aspirations of
         the rest of the campus.</p>
         <p>The hall turned back on itself in a U-shape, towards the quad, ending in a fireproof stairwell. The stairs

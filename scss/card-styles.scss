@@ -109,16 +109,24 @@ p.travel {
     text-align: center !important;
   }
 }
+
 .jtk-connector {
   z-index: -1;
   path {
     stroke: rgba(0, 0, 0, .5);
   }
 }
+
 body.squiggle {
   .jtk-connector {
     filter: url(#filter-line-wiggle);
     -webkit-filter: url(#filter-line-wiggle);
+    &.left path {
+      stroke: url(#left-line-gradient);
+    }
+    &.right path {
+      stroke: url(#right-line-gradient);
+    }
   }
 }
 

@@ -36,7 +36,7 @@ export const lillian1 = () => (
       tell you that he’d fulfilled your request. He assured me you’d know what he meant.)
     </p>
     <p>
-      As such, I have no family with whom to share my latest news, but for you. We have had our first child! It is a girl,
+      As such, I have no other family with whom to share my latest news. We have had our first child! It is a girl,
       and I have named her Abigail.
     </p>
     <p>

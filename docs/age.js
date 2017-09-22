@@ -8,7 +8,7 @@ const age = ({nextDoc, prevDoc}) =>  {
       <br/>
       I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition.
       While hunting for some variety of plants in the mountains, I sat down to rest on the edge of a ravine.
-      The ground suddently gave way all about me,
+      The ground suddenly gave way all about me,
       precipitating me below. The fall was a very considerable one—probably thirty or forty feet, or more,
       and I was <ListCard author="lynn"
         tag="age1-unconscious"

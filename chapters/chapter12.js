@@ -78,7 +78,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <p>
               The next morning, on schedule and in spite of a small but noisy band of student protestors,
-              the bulldozers went to work on removing what they believed to be a 30 ton meteorite.
+              the bulldozers went to work on removing what they believed to be a moderately-sized meteorite.
               An hour into the proceeding, which obviously could not have succeeded in any case, a backhoe tipped
               forward into an unexpected and massive sinkhole.
               There were no injuries, but a round-robin of blame ensued among the surveyors, architects, and
@@ -92,32 +92,38 @@ export default ({currentSection, inventory, cards}) => {
             <p>Alice Gilman vanished from campus, and was not missed.
             </p>
             <p>
-              “Here,” she says now, without preamble. She hands me a yellowed envelope; in a very neat, formal hand,
-              it reads, “To Abigail Fuller.” I do not recognize the writing.
+              “Here,” she says now, without preamble. She hands me a yellowed envelope; in a very neat hand
+              with faded ink, it reads, “To Abigail Fuller.” I do not recognize the writing.
             </p>
-            <p>“It was found in the college archive about five years ago. I did not know who it was addressed to,
+            <p>“It was found in the college archive about five years ago. I did not know the person it was addressed to,
               until the night you arrived when you told me your name.”
             </p>
             <p>
               She stops, for so long I think she isn’t going to continue. “They
-              did not think I was fit to be a mother. I still cared for her, even though she wasn’t mine.
+              did not believe I was fit to breed their children, but I still cared for her, even though she wasn’t mine.
               After I read this, I knew she could have people who would love her, if I sent them back.”
             </p>
             <p>
-              “I could have died,” I say, but I’m not even angry anymore.
+              “I could have died,” I say, but I’m not even angry anymore. I didn’t die, and Lynn said it was
+              what he wanted. I’ve chosen to believe him.
             </p>
             <p>
-              “Yes,” she acknowledges. She looks like she’s about to leave, and then says, “I thought,
-              after a hundred years, I would find my place, but you’ve made a loud and fearful world,
-              and I do not much like this one either.
+              “Yes,” she acknowledges. She looks like she’s about to leave—we both know I have neither
+              ability nor cause to stop her—and then says, “I thought,
+              after a hundred years, I would find my place. You’ve made a loud and fearful world,
+              and I do not much like this one either.”
             </p>
             <p>
-              “I know you laugh at us, at our ridiculous pseudoscience and
-              idealistic experiments. But I built a true wonder, and you take only such small steps.”
+              “I’m sorry they treated you badly.”
+            </p>
+            <p>
+              She shook her head. “It’s easy to laugh at us, at our ridiculous pseudoscience and
+            idealistic experiments. I laughed at my husband, once I stopped fearing him.</p>
+            <p>“And then I built a true wonder. In this world, you take only such small steps.”
               Without waiting for a response, she turns and walks down the hillside.
             </p>
-            <p>I open and <List expansions={[["read"], ["read"]]}
-              tag="c12-opened" /> the letter.
+            <p>I look down at the letter in my hands, and then <List expansions={[["read"], ["read"]]}
+                                                               tag="c12-opened" /> it.
             </p>
           </div>
         }} />
@@ -170,7 +176,7 @@ export default ({currentSection, inventory, cards}) => {
             <p>
               You and I never talked about your mom, my <i>great</i>-grandchild, who I will probably never meet. Was she happy? Are you happy? That is all I <ListCard expansions={["worry"]}
                 tag="c12-worry"
-                card={<span>I used to worry about smallpox, but I’m 72 now and can probably stop.</span>} /> about now.
+                card={<span>I used to worry about smallpox, but I’m 72 now and can probably relax.</span>} /> about now.
             </p>
             <p>
               There’s a thing you need to understand about your family and where you come from. This old America, where

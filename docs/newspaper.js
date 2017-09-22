@@ -28,7 +28,7 @@ export const paper1 = () => {
       </p>
       <p>Professor C! You are known to be engaged in analyzing new compounds
         and processes of exceedingly dangerous character. While the
-        Community applauds your continued curiousity and Scientific
+        Community applauds your continued curiosity and Scientific
         pursuits, we implore you to take heed of our concerns. We
         have taken the liberty of attaching large bolts to your door,
         securing them by means of bars through the door-posts.
@@ -104,7 +104,7 @@ export const paper3 = () => {
         to celebrate the commencement of our spiritual journey together.
       </p>
       <p>
-        The Astrolith, symbol of our divine providence and infusor of vitality—has been unveiled.
+        The Astrolith, symbol of our divine providence and infuser of vitality—has been unveiled.
         Demonstrations of the power of Magnetism, Galvanic Forces, and Spiritual Science will be
         provided by Professor C. Prayers, speeches, and readings will continue through the evening. All are welcome.
       </p>
