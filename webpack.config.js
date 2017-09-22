@@ -3,24 +3,33 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var PROD = (process.env.NODE_ENV === 'production')
+
 const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
     disable: process.env.NODE_ENV === "development"
 });
 
-var PROD = (process.env.NODE_ENV === 'production')
 
-var prodPlugin = PROD ? new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: false,
-      screw_ie8: true
-    },
-    comments: false
-    }) : new webpack.DefinePlugin({
-     "process.env": {
-         NODE_ENV: JSON.stringify("production")
+var prodPlugins = PROD ? [
+    new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false,
+          screw_ie8: true
+        },
+        comments: false
+    }),
+   new webpack.DefinePlugin({
+        "process.env": {
+            NODE_ENV: JSON.stringify("production")
+           }
+   })
+  ] : [new webpack.DefinePlugin({
+        "process.env": {
+          NODE_ENV: JSON.stringify("develop")
         }
-    })
+      })
+    ]
 
 var config = require("./story.json");
 const path = require('path')
@@ -34,7 +43,7 @@ module.exports = [{
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "story.js"
+    filename: PROD ? 'story.min.js' : 'story.js'
   },
   module: {
     loaders: [{ test: /.js/,
@@ -70,7 +79,6 @@ module.exports = [{
       pagination: config.pagination,
       template: 'template.hbs'
     }),
-    prodPlugin,
     // Copy all static assets during a built to the dist/ directory.
     // If you add other directory names, they'll go in here.
     new CopyWebpackPlugin([
@@ -79,13 +87,12 @@ module.exports = [{
       { from: 'story.json'}
     ]),
     extractSass
+  ].concat(prodPlugins)
 
-
-  ]
 }];
 
 function getEntrySources(sources) {
-    if (PROD) {
+    if (!PROD) {
         sources.push('webpack-dev-server/client?http://localhost:8080');
     }
     return sources;
