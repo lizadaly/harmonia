@@ -108,19 +108,22 @@ export default ({currentSection, inventory, cards}) => {
               what he wanted. I’ve chosen to believe him.
             </p>
             <p>
-              “Yes,” she acknowledges. She looks like she’s about to leave—we both know I have neither
-              ability nor cause to stop her—and then says, “I thought,
-              after a hundred years, I would find my place. You’ve made a loud and fearful world,
-              and I do not much like this one either.”
+              “Yes,” she acknowledges. She looks like she’s about to leave—we both know I have no
+              ability to stop her—and then says, “I thought,
+              after a hundred years, I would find my place, but this is a loud and fearful world,
+              and I do not much like it either.”
             </p>
             <p>
-              “I’m sorry they treated you badly.”
+              “I am truly sorry they treated you badly,” I find myself saying.
             </p>
             <p>
-              She shook her head. “It’s easy to laugh at us, at our ridiculous pseudoscience and
-            idealistic experiments. I laughed at my husband, once I stopped fearing him.</p>
-            <p>“And then I built a true wonder. In this world, you take only such small steps.”
-              Without waiting for a response, she turns and walks down the hillside.
+              She nods, just a bit. “I know it is easy to laugh at us, at our ridiculous and
+              idealistic experiments. I laughed at my husband, once I stopped fearing him.
+              Yet we shaped a society, with our own hands, as we wished it to be. For a time,
+            it was a fair place, better than most.</p>
+            <p>
+              “We dreamed of a New Eden, and I built a true wonder. You take only such small steps.”
+              Without waiting for my response, she turns and descends along the hillside.
             </p>
             <p>I look down at the letter in my hands, and then <List expansions={[["read"], ["read"]]}
                                                                tag="c12-opened" /> it.
