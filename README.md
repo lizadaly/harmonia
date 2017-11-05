@@ -6,7 +6,7 @@ Read online: _[Harmonia](https://harmonia-game.com/)_
 
 An entry in the [2017 Interactive Fiction Competition](https://ifcomp.org)
 
-![Harmonia cover](https://harmonia-game.com/images/cover-full.jpg)
+![Harmonia cover](https://harmonia-game.com/images/cover-small.jpg)
 
 For a discussion of some of the design considerations for this game, see [Marginalia and
 annotations in hypertext fiction](https://medium.com/@liza/marginalia-and-annotation-in-hypertext-fiction-f39424877d73)
