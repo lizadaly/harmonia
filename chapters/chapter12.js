@@ -74,7 +74,11 @@ export default ({currentSection, inventory, cards}) => {
               was Lillian,
               staring around the room with open-mouthed astonishment until I yelled at her to help me down—
               the ladders had completely collapsed and the cavern
-              was filling with black coal-smoke. We fled together with little time to spare before the room became a furnace.
+            was filling with black coal-smoke. </p>
+
+            <p>
+              I ran to the main lever and pulled, hoping he’d been able to follow me through, but the machine did
+              nothing and I could barely breathe. We fled together with little time to spare before the room became a furnace.
             </p>
             <p>
               The next morning, on schedule and in spite of a small but noisy band of student protestors,

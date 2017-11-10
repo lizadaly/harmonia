@@ -98,7 +98,17 @@ export default ({currentSection, inventory, cards}) => {
         “Yeah,” he said, finally getting to his feet. “I was wondering the same thing. Abby, listen, even if I get it working—”
       </p>
       <p>
-        I finished for him: “The machine requires someone to operate it. One of us will have to <List expansions={[["stay"], ["stay"]]} tag="c11-stay" />.”
+        “The machine requires someone to operate it.”
+      </p>
+      <p>
+        He nodded. “The Cadwells would agree on an elapsed time when he would re-enter the machine and she would pull the
+        lever again, to return him—“
+      </p>
+      <p>
+        “But it's not going to hold together that long."
+      </p>
+      <p>
+        “We can try, but I think—I think one of us has to <List expansions={[["stay"], ["stay"]]} tag="c11-stay" />.”
       </p>
     </section>,
         <section>
