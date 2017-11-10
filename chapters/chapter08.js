@@ -73,22 +73,68 @@ export default ({currentSection, inventory, cards}) => {
             </p>
           </div>,
           there: <div>
-            <p>
-              I was lucky that Walter picked up the phone before he left for the day, but he didn’t much like my request.
-            </p>
-            <p>
-              “I’d get fired if anyone found out I gave you those keys,” he said, worried.
-            </p>
-            <p>
-              “I’ll make sure that doesn’t happen.”
-            </p>
-            <p>
-              There was a long silence on the other end of the line. “They’ll be in your <ListCard expansions={["faculty mailbox"]}
-                tag="c8-mailbox" card={<span>I learned I have a faculty mailbox.</span>} /> in an hour.”
-            </p>
-            <p>
-              “Thank you Walter, I owe you one.”
-            </p>
+            <Map from={inventory.c2_direction}
+              to={{
+                curiosity: <div>
+                  <p>
+                    I was lucky that the Dean’s assistant picked up the phone before he left for the day, but he didn’t much like my request.
+                  </p>
+                  <p>
+                    “I’d get fired if anyone found out I gave you those keys,” he said, worried.
+                  </p>
+                  <p>
+                    “I’ll make sure that doesn’t happen.”
+                  </p>
+                  <p>
+                    There was a long silence on the other end of the line. “They’ll be in your <ListCard expansions={["faculty mailbox"]}
+                      tag="c8-mailbox" card={<span>I learned I have a faculty mailbox.</span>} /> in an hour.”
+                  </p>
+                  <p>
+                    “Thank you Walter, I owe you one.”
+                  </p>
+                </div>,
+                dean: <div>
+                  <p>
+                    I skulked around outside the Dean’s office until I saw her leaving for the day. In
+                    my head I rehearsed a dramatic story in which I needed materials from Lynn’s home due to
+                    a “<ListCard expansions={["teaching emergency"]} tag="c8-teaching-emergency"
+                      card={<span>For some reason this wasn’t coming together all that convincingly.</span>} />”.
+                  </p>
+                  <p>
+                    As the dean put on her coat I approached her, and received a
+                    disapproving scowl when she seemed to remember something and turned back. She began berating her
+                    young assistant, who was also packing up for the day.
+                  </p>
+                  <p>
+                    “Walter, did you finish assembling that press packet yet?”
+                  </p>
+                  <p>
+                    He froze, with the look of someone who knows there will be no good answer to this question. “I was going to
+                    put it together tonight at home—”
+                  </p>
+                  <p>
+                    “I don’t want those materials leaving the campus. This isn’t a free-for-all where faculty and staff can just
+                    waltz off with whatever they like.” She looked <ListCard expansions={["pointedly"]}
+                      tag="c8-pointedly" card={<span>I doubt she thought I’d <i>already</i> stolen from them,
+                      but that sooner or later I inevitably would.</span>} /> at me before jangling her keys. “Stay
+                    here until it’s finished,” she said, and left.
+                  </p>
+                  <p>
+                    Walter sat down with the deliberate slowness of someone who has been here many times before. “Can I help?” I said.
+                  </p>
+                  <p>
+                    “No, it’s fine. You’re Abby Fuller, the new instructor?”
+                  </p>
+                  <p>
+                    “Yes. And I need a pretty big favor from you, so really—let me help.”
+                  </p>
+                </div>
+              }} />
+            <header className="section-divider">
+              <svg className="divider" fill="white" stroke="black">
+                <line x1="0" y1="0" x2="100%" y2="0" />
+              </svg>
+            </header>
             <p>
               I waited until after dark to meet up with my fellow burglars by the row of picturesque stone houses along the west side
               of campus. They were five neatly hewn stone cubes that, over the
@@ -101,8 +147,8 @@ export default ({currentSection, inventory, cards}) => {
             <p>Ella Merchant looked unsure, but then sighed. “Jeffrey would want us to find out what happened to him,” she said.
             Lillian nodded in agreement.</p>
             <p>“Okay then.”</p>
-            <p>Lillian had brought flashlights for all of us. We kept them off until I put the key in the lock and <List expansions={[["opened"], ["opened"]]}
-              tag="c8-breakin" /> Lynn’s door.</p>
+            <p>Lillian had brought flashlights for all of us. We kept them off until I put the key I got from Walter in the lock and <List expansions={[["opened"], ["opened"]]}
+                                                                                                                   tag="c8-breakin" /> Lynn’s door.</p>
           </div>
         }} />
     </section>,
