@@ -4,7 +4,7 @@
 
 Read online: _[Harmonia](https://harmonia-game.com/)_
 
-An entry in the [2017 Interactive Fiction Competition](https://ifcomp.org)
+An entry in the [2017 Interactive Fiction Competition](https://ifcomp.org), coming in 3rd place.
 
 ![Harmonia cover](https://harmonia-game.com/images/cover-small.jpg)
 
