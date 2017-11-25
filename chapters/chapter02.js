@@ -314,7 +314,7 @@ export default ({currentSection, inventory, cards}) => {
           with lush curtains and furnishing. Visitors could walk between rows of mahogany <ListCard expansions={["curio cases"]}
             card={<span>Filled with 19th century ephemera: ads for patent medicine,
             diagrams of obscure farming equipment, and blurry tintypes of serious-looking women.</span>}
-                                                                                            tag="c2-cases" />,
+                                                                                          tag="c2-cases" />,
           some still empty.
           Cardboard boxes in the process of being emptied were strewn all over the room.
         </p>
@@ -345,7 +345,7 @@ export default ({currentSection, inventory, cards}) => {
           if you came of your own accord. Tensions are running a bit high right now and she can be somewhat…testy.”
         </p>
         <p>
-          He didn’t explain and I thought it best not to ask. He lead me away from the
+          He didn’t explain and I thought it best not to ask. He led me away from the
           construction area and I <ListCard expansions={["followed"]}
             tag="c2-site"
             card={<span>I never did see where the woman had gone.</span>}/>.

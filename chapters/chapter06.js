@@ -14,8 +14,8 @@ export default ({currentSection, inventory, cards}) => {
       <header>
         <h2>Chapter Six</h2>
         <blockquote>
-          It was an experiment. We all risked something, and must bear our losses as we can. <br/><br/>
-          - <i>Transcendental Wild Oats</i>, Louisa May Alcott (1873)
+          God did not make us perfect. He left us something to do for ourselves. <br/><br/>
+          - <i>Unveiling a Parallel</i>, Alice Jones and E. Merchant (1893)
         </blockquote>
       </header>
       <p>

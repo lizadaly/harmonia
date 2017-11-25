@@ -138,7 +138,7 @@ export default ({currentSection, inventory, cards}) => {
           </div>
 
         }} />
-      <p>“Professor Lynn found dozens of those journal fragments, dating from between 1895 and 1889. I’d been helping him
+      <p>“Professor Lynn found dozens of those journal fragments, dating from between 1885 and 1889. I’d been helping him
       analyze them all summer, trying to fit them to a timeline that matched with the decline of the community.”</p>
       <p>“Are you sure this is from someone’s journal?” I asked. “This looks like a page from a <i>novel</i> that
         I found with<List expansions={[[" Lynn's notes—"], ["—"]]}
