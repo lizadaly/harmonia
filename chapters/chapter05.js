@@ -112,7 +112,7 @@ export default ({currentSection, inventory, cards}) => {
    </section>,
    <section>
      <p>Almost inevitably, this investigation would lead to a dead-end, so I’d come to this choice eventually,
-       and I couldn’t bare to disappoint Lillian so soon.
+       and I couldn’t bear to disappoint Lillian so soon.
        I was left to choose between <List expansions={[
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
        ["talking my way in there", "committing some light burglary", "playing archaeologist"],
