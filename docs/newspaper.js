@@ -162,7 +162,7 @@ export const paper4 = () => (
           nextUnit="section"
           card={<span>Certain that Cadwell was the author here: fragments of this text appear on the
           back of the device diagram (attached).</span>} />. writes, “As we grapple with the dissolution of our
-        grand experiment, I call upon our community remember the grand Scientific Discoveries we have
+        grand experiment, I call upon our community to remember the grand Scientific Discoveries we have
         made together. Remember that we are composed of minute and invisible particles of matter, endowed with attributes
       such as we are wont to associate with larger masses.</p>
       <p>If you
