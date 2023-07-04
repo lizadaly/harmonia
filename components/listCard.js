@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 import { List, showNextSection } from 'windrift'
 import * as actions from '../actions'
 
-import jsPlumb from 'jsPlumb'
+import jsPlumb from 'jsplumb'
 
 var j = jsPlumb.jsPlumb
 j.setContainer(document.getElementById("container"))
