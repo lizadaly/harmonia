@@ -1,24 +1,24 @@
 {
-  "name": "utopia-game",
+  "name": "harmonia",
   "version": "1.0.0",
-  "description": "A simple framework for getting started with a Windrift story",
+    "description": "Harmonia: an interactive story",
   "main": "index.js",
   "scripts": {
     "test": "test",
     "start": "webpack-dev-server --progress --colors",
-    "build": "webpack --config webpack.prod.js"
+    "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lizadaly/windrift-starter.git"
+    "url": "git+https://github.com/lizadaly/harmonia.git"
   },
   "author": "Liza Daly",
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/lizadaly/archive-game/issues"
+    "url": "https://github.com/lizadaly/harmonia/issues"
   },
-  "homepage": "https://github.com/lizadaly/archive-game#readme",
+  "homepage": "https://harmonia-game.com",
   "dependencies": {
     "jsplumb": "^2.4.3",
     "underscore": "^1.8.3",
