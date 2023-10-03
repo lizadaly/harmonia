@@ -38,7 +38,7 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^3.5.0",
     "copy-webpack-plugin": "^4.5.1",
-    "css-loader": "^0.28.11",
+    "css-loader": "^6.8.1",
     "enzyme": "^2.8.2",
     "enzyme-redux": "^0.1.6",
     "extract-text-webpack-plugin": "^3.0.2",
