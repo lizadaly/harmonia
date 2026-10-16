@@ -48,7 +48,7 @@ test('every self-hosted font should load', async ({ page }) => {
     await Promise.allSettled(faces.map((f) => f.load()))
     return faces.map((f) => [f.family, f.status])
   })
-  expect(fonts).toHaveLength(10)
+  expect(fonts).toHaveLength(11)
   for (const [family, status] of fonts) {
     expect(status, family).toBe('loaded')
   }
