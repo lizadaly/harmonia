@@ -18,13 +18,15 @@ const advanceTo = async (page, text) => {
 let pageErrors
 let externalRequests
 
-test.beforeEach(async ({ page, baseURL }) => {
+test.beforeEach(async ({ page, baseURL, javaScriptEnabled }) => {
   pageErrors = []
   externalRequests = []
   page.on('pageerror', (e) => pageErrors.push(e.message))
   page.on('request', (r) => r.url().startsWith(baseURL) || externalRequests.push(r.url()))
-  await page.goto('/')
-  await expect(page.locator('#article h1')).toHaveText('Harmonia')
+  if (javaScriptEnabled) {
+    await page.goto('/')
+    await expect(page.locator('#article h1')).toHaveText('Harmonia')
+  }
 })
 
 test.afterEach(() => {
@@ -83,7 +85,7 @@ test('restart should return to the beginning of the story', async ({ page }) => 
   const before = await articleText(page)
   await advanceTo(page, 'Chapter Two')
   page.once('dialog', (dialog) => dialog.accept())
-  await page.locator('nav a[onclick^="resetGame"]').click()
+  await page.locator('#restart').click()
   await expect.poll(() => articleText(page)).toBe(before)
 })
 
@@ -93,4 +95,13 @@ test('the about panel should open and close', async ({ page }) => {
   await expect(modal).toHaveClass(/open/)
   await modal.locator('.close a').click()
   await expect(modal).not.toHaveClass(/open/)
+})
+
+test.describe('without JavaScript', () => {
+  test.use({ javaScriptEnabled: false })
+
+  test('the page should explain that JavaScript is required', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('#article p')).toContainText('JavaScript')
+  })
 })

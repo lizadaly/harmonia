@@ -12,10 +12,21 @@ function start() {
   startGame(game, reducers)
 }
 
+const toggleAbout = (e) => {
+  e.preventDefault()
+  document.getElementById('about-modal').classList.toggle('open')
+  document.getElementById('about-toggle').classList.toggle('open')
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (isChrome) {
     document.body.classList.add("squiggle")
   }
+  // Nav handlers live here rather than inline in template.hbs so the CSP needs no 'unsafe-inline' scripts
+  document.getElementById('about-toggle').addEventListener('click', toggleAbout)
+  document.querySelector('#about-modal .close a').addEventListener('click', toggleAbout)
+  // windrift sets window.resetGame but doesn't export it
+  document.getElementById('restart').addEventListener('click', window.resetGame)
   start()
 })
