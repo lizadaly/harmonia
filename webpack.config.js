@@ -33,6 +33,12 @@ var prodPlugins = PROD ? [
 
 var config = require("./story.json");
 const path = require('path')
+const fs = require('fs')
+
+// Every image the story's chapters and documents reference, so the page can fetch them ahead of the reader
+const storyImages = [...new Set(['chapters', 'docs']
+  .flatMap((dir) => fs.readdirSync(path.join(__dirname, dir)).map((f) => fs.readFileSync(path.join(__dirname, dir, f), 'utf8')))
+  .flatMap((source) => source.match(/images\/[\w-]+\.(?:jpg|png)/g) || []))]
 
 module.exports = [{
   context: __dirname,
@@ -85,7 +91,8 @@ module.exports = [{
       { from: 'images', to: 'images' },
       { from: 'story.json'}
     ]),
-    extractSass
+    extractSass,
+    new webpack.DefinePlugin({ STORY_IMAGES: JSON.stringify(storyImages) })
   ].concat(prodPlugins)
 
 }];

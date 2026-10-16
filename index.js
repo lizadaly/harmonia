@@ -24,6 +24,18 @@ const toggleAbout = (e) => {
   document.getElementById('about-toggle').classList.toggle('open')
 }
 
+// Readers reach every illustration eventually; fetch them once the page has loaded so they're cached by then.
+// Holding the Image objects keeps the browser from dropping their downloads when they'd otherwise be collected.
+const precachedImages = []
+window.addEventListener('load', () => {
+  STORY_IMAGES.forEach((src) => {
+    const img = new Image()
+    img.fetchPriority = 'low'
+    img.src = src
+    precachedImages.push(img)
+  })
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (isChrome) {
