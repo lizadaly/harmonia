@@ -16,6 +16,14 @@
 }
 
 @font-face {
+  font-family: "Archivo Narrow";
+  src: url(fonts/archivo-narrow-latin-400-italic.woff2) format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "BenchNine";
   src: url(fonts/benchnine-latin-400-normal.woff2) format("woff2");
   font-style: normal;
@@ -57,6 +65,14 @@
 }
 
 @font-face {
+  font-family: "EB Garamond";
+  src: url(fonts/eb-garamond-latin-400-italic.woff2) format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Inconsolata";
   src: url(fonts/inconsolata-latin-400-normal.woff2) format("woff2");
   font-style: normal;
@@ -81,9 +97,25 @@
 }
 
 @font-face {
+  font-family: "Lora";
+  src: url(fonts/lora-latin-400-italic.woff2) format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Playfair Display";
   src: url(fonts/playfair-display-latin-400-normal.woff2) format("woff2");
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(fonts/playfair-display-latin-400-italic.woff2) format("woff2");
+  font-style: italic;
   font-weight: 400;
   font-display: swap;
 }
