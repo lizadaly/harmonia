@@ -201,7 +201,7 @@ export default ({currentSection, inventory, cards}) => {
             </p>
             <footer>
               <figure>
-                <img src="images/past-final.jpg" />
+                <img src="images/past-final.jpg" width="1400" height="896" />
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />
@@ -214,7 +214,7 @@ export default ({currentSection, inventory, cards}) => {
 
             <footer>
               <figure>
-                <img src="images/present-final.jpg" />
+                <img src="images/present-final.jpg" width="1400" height="896" />
               </figure>
               <p className="begin">
                 <List expansions={[["Credits"], [""]]} tag="c12-credits" nextUnit="chapter" />

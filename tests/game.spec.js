@@ -54,6 +54,43 @@ test('every self-hosted font should load', async ({ page }) => {
   }
 })
 
+// Plays to the credits, returning the src and rendered size of every illustration on the way
+const playCollectingImages = async (page) => {
+  const images = new Map()
+  for (let clicks = 0; !(await heading(page, 'Credits').count()); clicks++) {
+    expect(clicks, 'stuck before the credits').toBeLessThan(200)
+    for (const [src, size] of await page.locator('#article img').evaluateAll((imgs) => imgs.map((img) =>
+      [img.getAttribute('src'), { width: img.width, height: img.height, attrWidth: +img.getAttribute('width'), attrHeight: +img.getAttribute('height') }]))) {
+      images.set(src, size)
+    }
+    await nextChoice(page).click()
+  }
+  return images
+}
+
+test('illustrations should reserve their space before they load', async ({ page }) => {
+  // Hold every image response so sizes are measured while the images are still loading
+  await page.route(/\/images\//, () => {})
+  const images = await playCollectingImages(page)
+  expect(images.size).toBeGreaterThan(0)
+  for (const [src, { width, height, attrWidth, attrHeight }] of images) {
+    expect(width, src).toBeGreaterThan(0)
+    expect(Math.abs(height - width * attrHeight / attrWidth), src).toBeLessThanOrEqual(1)
+  }
+})
+
+test('every illustration should be fetched once, before the reader reaches it', async ({ page }) => {
+  const requested = []
+  page.on('request', (r) => /\/images\//.test(r.url()) && requested.push(new URL(r.url()).pathname.slice(1)))
+  await page.reload()
+  await expect.poll(() => requested.length).toBeGreaterThan(1)
+  await page.waitForLoadState('networkidle')
+  const beforePlaying = [...requested]
+  const images = await playCollectingImages(page)
+  expect(beforePlaying).toEqual(expect.arrayContaining([...images.keys()]))
+  expect(requested).toEqual(beforePlaying)
+})
+
 test('clicking an annotated link should reveal its margin card', async ({ page }) => {
   await advanceTo(page, 'Chapter One')
   const card = page.locator('#card-c1-college-name')

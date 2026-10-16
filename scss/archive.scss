@@ -18,6 +18,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 img {
   max-width: 100%;
+  // With width/height attributes, reserves the image's space at its scaled size before it loads
+  height: auto;
 }
 
 a {
