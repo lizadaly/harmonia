@@ -35,4 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // windrift sets window.resetGame but doesn't export it
   document.getElementById('restart').addEventListener('click', window.resetGame)
   start()
+  if (process.env.NODE_ENV !== 'production') {
+    require('./debug').startDebug()
+  }
 })
