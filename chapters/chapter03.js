@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { Map, List, FromInventory, RenderSection, NextChapter, AllButSelection} from 'windrift'
 
 import { docs } from '../docs'
-import jsxToString from 'jsx-to-string'
 import ListCard from '../components/listCard'
 
 
