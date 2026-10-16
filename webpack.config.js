@@ -43,7 +43,7 @@ module.exports = [{
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: PROD ? 'story.min.js' : 'story.js'
+    filename: PROD ? 'story.[chunkhash].min.js' : 'story.js'
   },
   module: {
     loaders: [{ test: /.js/,

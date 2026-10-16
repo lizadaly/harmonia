@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
   <head>
       <meta charset="utf-8" />
-      <meta http-equiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>{{ htmlWebpackPlugin.options.title }}</title>
+      <link rel="canonical" href="https://harmonia-game.com/" />
 
       <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
@@ -39,39 +39,35 @@
       <meta name="twitter:image:alt" content="{{ htmlWebpackPlugin.options.description }}">
 
       <meta property="og:image" content="https://harmonia-game.com/images/cover-full.png">
-      <meta property="og:url" content="https://harmonia-game.com"  />
+      <meta property="og:image:width" content="1400">
+      <meta property="og:image:height" content="1006">
+      <meta property="og:url" content="https://harmonia-game.com/" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="{{ htmlWebpackPlugin.options.title }}" />
       <meta property="og:description" content="{{ htmlWebpackPlugin.options.description }}" />
+      <meta property="og:locale" content="en_US" />
 
       <link rel="stylesheet" href="css/fonts.css" />
       <link rel="stylesheet" href="css/windrift.css" />
-      <script>
-      var about = function(e) {
-          e.preventDefault();
-          document.getElementById('about-modal').classList.toggle('open');
-          document.getElementById('about-toggle').classList.toggle('open');
-      }
-      </script>
   </head>
 
   <body class="pagination-{{ htmlWebpackPlugin.options.pagination }}">
       <nav class="top-bar">
         <div class="top-bar-left">
-          <div><a id="about-toggle" class="open" href="#" onClick="about(event)">About</a></div>
+          <div><a id="about-toggle" class="open" href="#">About</a></div>
             <aside id="about-modal" class="about-modal">
                 <i>Harmonia</i> is an interactive short story
                 by <a href="https://lizadaly.com/">Liza Daly</a>. It
                 placed third in the <a href="https://ifcomp.org">2017
                 Interactive Fiction Competition</a> and won two <a href="http://xyzzyawards.org/">XYZZY
-                awards</a>. <a href="https://lizadaly.com/pages/harmonia/">More
+                awards</a>. <a href="https://lizadaly.com/interactive-fiction/harmonia/">More
                 about the story</a>.
-                <div class="close"><a href="#" onClick="about(event)"><small>CLOSE</small></a></div>
+                <div class="close"><a href="#"><small>CLOSE</small></a></div>
             </aside>
         </div>
         <div>
           <div class="top-bar-right">
-            <div><a href="#" onClick="resetGame(event)">Restart</a></div>
+            <div><a id="restart" href="#">Restart</a></div>
           </div>
         </div>
       </nav>
@@ -84,7 +80,9 @@
       </div>
 
       <div class="container" id="container">
-        <article id="article"></article>
+        <article id="article">
+          <noscript><p>Harmonia is an interactive story and needs JavaScript to run.</p></noscript>
+        </article>
       </div>
 
       <svg version="1.1" id="filter-effects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
