@@ -60,7 +60,8 @@ blockquote p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
-  font-weight: bold;
+  // Only regular weights are self-hosted; avoid the browser's synthesized bold
+  font-weight: normal;
 }
 header {
   h1 {
