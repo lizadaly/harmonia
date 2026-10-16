@@ -64,13 +64,28 @@ test('clicking an annotated link should reveal its margin card', async ({ page }
   await expect(page.locator('svg.jtk-connector')).toHaveCount(1)
 })
 
-test('progress should survive a reload', async ({ page }) => {
-  await advanceTo(page, 'Chapter Two')
-  const before = await articleText(page)
-  await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('harmonia-bookmarks')).present.length)).toBe(2)
-  await page.reload()
-  await expect.poll(() => articleText(page)).toBe(before)
-})
+const reopenings = {
+  reload: async (page) => {
+    await page.reload()
+    return page
+  },
+  // A new tab has no history.state, unlike a reload
+  'a new tab': async (page) => {
+    const tab = await page.context().newPage()
+    await tab.goto('/')
+    return tab
+  }
+}
+
+for (const [name, reopen] of Object.entries(reopenings)) {
+  test(`progress should survive ${name}`, async ({ page }) => {
+    await advanceTo(page, 'Chapter Two')
+    const before = await articleText(page)
+    await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('harmonia-bookmarks')).present.length)).toBe(2)
+    const reopened = await reopen(page)
+    await expect.poll(() => articleText(reopened)).toBe(before)
+  })
+}
 
 test('the back button should undo the last choice', async ({ page }) => {
   await advanceTo(page, 'Chapter One')
