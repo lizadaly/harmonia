@@ -1,0 +1,80 @@
+/* Self-hosted fonts (SIL OFL 1.1, see fonts/OFL-*.txt), latin subset from @fontsource */
+@font-face {
+  font-family: "Arapey";
+  src: url(fonts/arapey-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url(fonts/archivo-narrow-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BenchNine";
+  src: url(fonts/benchnine-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(fonts/caveat-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url(fonts/cinzel-decorative-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url(fonts/eb-garamond-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(fonts/inconsolata-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Julee";
+  src: url(fonts/julee-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(fonts/lora-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(fonts/playfair-display-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
