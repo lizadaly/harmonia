@@ -123,6 +123,7 @@ export const docs = {
     author: "Mary Griffith",
     year: "1836",
     title: "Three Hundred Years Hence",
+    id: "hence",
     page: "58",
     text: hence,
     type: "book"
