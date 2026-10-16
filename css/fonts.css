@@ -23,6 +23,15 @@
   font-display: swap;
 }
 
+/* Lynn's notebook uses font-weight: lighter */
+@font-face {
+  font-family: "BenchNine";
+  src: url(fonts/benchnine-latin-300-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Caveat";
   src: url(fonts/caveat-latin-400-normal.woff2) format("woff2");
