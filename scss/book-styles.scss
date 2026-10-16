@@ -171,6 +171,7 @@
     font-family: $lynn-font;
     font-size: 22px;
     font-weight: lighter;
+    color: $lynn-color;
     article.article {
       p {
         font-family: $lynn-font;
@@ -208,13 +209,13 @@
     article.article {
       p {
         font-family: $lillian-old-font;
-        font-color: $lillian-color;
+        color: $lillian-color;
         font-size: 22px;
         line-height: 1.3em;
       }
     }
     font-family: $lillian-old-font;
-    font-color: $lillian-color;
+    color: $lillian-color;
   }
 
 
