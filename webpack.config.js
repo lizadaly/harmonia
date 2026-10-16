@@ -38,7 +38,7 @@ const fs = require('fs')
 // Every image the story's chapters and documents reference, so the page can fetch them ahead of the reader
 const storyImages = [...new Set(['chapters', 'docs']
   .flatMap((dir) => fs.readdirSync(path.join(__dirname, dir)).map((f) => fs.readFileSync(path.join(__dirname, dir, f), 'utf8')))
-  .flatMap((source) => source.match(/images\/[\w-]+\.(?:jpg|png)/g) || []))]
+  .flatMap((source) => source.match(/images\/[\w-]+\.(?:jpg|png|webp)/g) || []))]
 
 module.exports = [{
   context: __dirname,

@@ -104,7 +104,7 @@ export default ({currentSection, inventory, cards}) => {
       </p>
       <footer>
         <figure>
-          <img src="images/cover-full.png" width="1400" height="1006" alt="A torn old postcard featuring a large wooden building, the word Harmonia written across the card" />
+          <img src="images/cover-full.webp" width="1400" height="1006" alt="A torn old postcard featuring a large wooden building, the word Harmonia written across the card" />
         </figure>
       </footer>
       <p style={{textAlign: "center"}}>
