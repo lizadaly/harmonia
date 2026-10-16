@@ -51,7 +51,6 @@ module.exports = [{
                 loader: 'babel-loader?cacheDirectory'
               },
               { test: /\.json$/, loader: 'json-loader' },
-              { test: /\.html$/, loader: 'html-loader'},
               { test: /\.hbs/, loader: 'handlebars-loader'},
               { test: /\.scss/, use: extractSass.extract({
                 use: [{
