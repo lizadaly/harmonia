@@ -4,7 +4,7 @@
   "description": "Harmonia: an interactive story",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "playwright test",
     "start": "webpack-dev-server --progress --colors",
     "build": "NODE_ENV=production webpack"
   },
@@ -27,6 +27,7 @@
     "windrift": "1.0.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "ajv": "^6.4.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

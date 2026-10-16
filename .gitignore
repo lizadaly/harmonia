@@ -39,3 +39,7 @@ dist
 .DS_Store
 
 deploy.sh
+CLAUDE.local.md
+.playwright-mcp
+test-results
+playwright-report
