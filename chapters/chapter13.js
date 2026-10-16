@@ -7,10 +7,14 @@ import * as actions from '../actions'
 import ListCard from '../components/listCard'
 import Reader  from '../components/reader'
 import { docs } from '../docs'
+import { hasCheckpoint, RestoreLink } from '../components/checkpoint'
 
 export default ({currentSection, inventory, cards}) => {
   const sections = [
     <section className="credits">
+      {hasCheckpoint() && <p className="restore-checkpoint">
+        (You may also <RestoreLink>rewind</RestoreLink> to read the other ending to the story.)
+      </p>}
       <h2>Credits</h2>
       <p>
         Story and programming by <a href="https://lizadaly.com/">Liza Daly</a>.

@@ -7,6 +7,7 @@ import * as actions from '../actions'
 import ListCard from '../components/listCard'
 import Reader  from '../components/reader'
 import { docs } from '../docs'
+import { Checkpoint } from '../components/checkpoint'
 
 export default ({currentSection, inventory, cards}) => {
   const sections = [
@@ -230,7 +231,7 @@ export default ({currentSection, inventory, cards}) => {
           <p>
             I put my hand on the
             chamber door.  All I needed to do was close and lock it, as Alice had done.
-            One of us was going back—I just had to decide whether it was  <List expansions={[["him", "me"], ["him", "me"]]} tag="c11_return" conjunction="or"/>.
+            One of us was going back—I just had to decide whether it was  <Checkpoint><List expansions={[["him", "me"], ["him", "me"]]} tag="c11_return" conjunction="or"/></Checkpoint>.
           </p>
         </section>,
         <section>

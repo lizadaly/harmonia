@@ -6,6 +6,12 @@ import { cards } from './reducers'
 require('./scss/archive.scss')
 
 function start() {
+  // windrift dispatches an undo jump before rehydration whenever history.state holds its counter. That first
+  // action initializes the redux-undo slices; without it, autoRehydrate sees them as already modified and skips
+  // restoring them, so a new tab would start the story over. A zero counter makes the jump a no-op.
+  if (!history.state) {
+    history.replaceState({ [config.identifier]: 0 }, '')
+  }
   var chaptersList = require.context('./chapters', true, /\.js$/)
   var game = <Game chaptersList={chaptersList} config={config} />
   var reducers = { cards }
@@ -29,4 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // windrift sets window.resetGame but doesn't export it
   document.getElementById('restart').addEventListener('click', window.resetGame)
   start()
+  if (process.env.NODE_ENV !== 'production') {
+    require('./debug').startDebug()
+  }
 })

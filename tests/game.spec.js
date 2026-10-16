@@ -64,13 +64,52 @@ test('clicking an annotated link should reveal its margin card', async ({ page }
   await expect(page.locator('svg.jtk-connector')).toHaveCount(1)
 })
 
-test('progress should survive a reload', async ({ page }) => {
-  await advanceTo(page, 'Chapter Two')
-  const before = await articleText(page)
-  await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('harmonia-bookmarks')).present.length)).toBe(2)
-  await page.reload()
-  await expect.poll(() => articleText(page)).toBe(before)
+test('the credits should lead back to the ending choice', async ({ page }) => {
+  const choice = (text) => page.locator('#article a[href="#"]', { hasText: new RegExp(`^${text}$`) })
+  const persisted = () => page.evaluate(() => JSON.stringify(Object.entries(localStorage).filter(([k]) => k.startsWith('harmonia-'))))
+  await advanceTo(page, 'Chapter Eleven')
+  while (!(await choice('him').count())) {
+    await nextChoice(page).click()
+  }
+  // The checkpoint copies localStorage, which redux-persist writes just after each click
+  await expect.poll(async () => {
+    const before = await persisted()
+    await page.waitForTimeout(50)
+    return before === (await persisted())
+  }).toBe(true)
+  await choice('me').click()
+  await advanceTo(page, 'Credits')
+  await expect(heading(page, 'May 9, 1931')).toHaveCount(0)
+
+  await page.locator('.restore-checkpoint a').click()
+  await expect(choice('him')).toBeInViewport()
+  await choice('him').click()
+  await advanceTo(page, 'May 9, 1931')
+  await advanceTo(page, 'Credits')
 })
+
+const reopenings = {
+  reload: async (page) => {
+    await page.reload()
+    return page
+  },
+  // A new tab has no history.state, unlike a reload
+  'a new tab': async (page) => {
+    const tab = await page.context().newPage()
+    await tab.goto('/')
+    return tab
+  }
+}
+
+for (const [name, reopen] of Object.entries(reopenings)) {
+  test(`progress should survive ${name}`, async ({ page }) => {
+    await advanceTo(page, 'Chapter Two')
+    const before = await articleText(page)
+    await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('harmonia-bookmarks')).present.length)).toBe(2)
+    const reopened = await reopen(page)
+    await expect.poll(() => articleText(reopened)).toBe(before)
+  })
+}
 
 test('the back button should undo the last choice', async ({ page }) => {
   await advanceTo(page, 'Chapter One')
